@@ -1,0 +1,264 @@
+{
+  "sectionId": "alphabet",
+  "title": {
+    "es": "Del Alfabeto",
+    "en": "The Alphabet",
+    "fr": "L'Alphabet"
+  },
+  "introduction": {
+    "es": "El alfabeto benga consta de veintitrés letras. El acento marca su sonido peculiar solo en las vocales á, é, ü que denominamos largas. La elisión es muy frecuente al fin del vocablo. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+  },
+  "consonantsDescription": {
+    "es": "Carece de las consonantes c, ch, ll, ñ, q, r, x, z del castellano."
+  },
+  "lettersList": {
+    "es": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y"
+  },
+  "vowelsInfo": {
+    "es": "El benga admite nueve sonidos vocales: a, â, e, ē, i, o, u, ū, y"
+  },
+  "specialLetters": [
+    {
+      "letter": "y",
+      "type": "vowel-consonant",
+      "description": {
+        "es": "Entre las vocales, la y es a la par vocal y consonante. Será consonante siempre que, seguida de vocal, empieza la dicción o la sílaba. Su sonido de i como vocal tiene lugar cuando en medio de la dicción viene herida por la consonante que la precede."
+      },
+      "examples": [
+        {
+          "type": "consonant",
+          "label": "Es consonante en:",
+          "words": [
+            {
+              "word": "yakia",
+              "meaning": "nuevo",
+              "audioId": "yakia"
+            },
+            {
+              "word": "yâkâ",
+              "meaning": "uno",
+              "audioId": "yaka"
+            },
+            {
+              "word": "yongo",
+              "meaning": "mayordomo",
+              "audioId": "yongo"
+            },
+            {
+              "word": "manyungâ",
+              "meaning": "leche",
+              "audioId": "manyunga"
+            },
+            {
+              "word": "yēmē",
+              "meaning": "cojera",
+              "audioId": "yeme"
+            }
+          ]
+        },
+        {
+          "type": "vowel",
+          "label": "Es vocal en:",
+          "words": [
+            {
+              "word": "byelele",
+              "meaning": "polilla",
+              "audioId": "byelele"
+            },
+            {
+              "word": "myadi",
+              "meaning": "agonía",
+              "audioId": "myadi"
+            },
+            {
+              "word": "myongo",
+              "meaning": "los muertos",
+              "audioId": "myongo"
+            },
+            {
+              "word": "vyâ",
+              "meaning": "sereno",
+              "audioId": "vy_a_"
+            },
+            {
+              "word": "vyâdu",
+              "meaning": "gamuza",
+              "audioId": "vyadu"
+            },
+            {
+              "word": "kya",
+              "meaning": "ahora",
+              "audioId": "kya"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vowels": [
+    {
+      "benga": "a",
+      "soundsLike": {
+        "es": "a como en la voz castellana 'patata'",
+        "en": "a in father",
+        "fr": "a dans papa"
+      },
+      "examples": [
+        {
+          "word": "kalaka",
+          "meaning": "hablar",
+          "audioId": "test"
+        },
+        {
+          "word": "tataka",
+          "meaning": "guardar",
+          "audioId": "tataka"
+        },
+        {
+          "word": "ta",
+          "meaning": "junto",
+          "audioId": "ta"
+        }
+      ]
+    },
+    {
+      "benga": "â",
+      "soundsLike": {
+        "es": "o como en 'celo' (larga)",
+        "en": "aw in law",
+        "fr": "o dans mort"
+      },
+      "isLong": true,
+      "examples": [
+        {
+          "word": "tânâdkâ",
+          "meaning": "amar",
+          "audioId": "tanodku"
+        }
+      ]
+    },
+    {
+      "benga": "e",
+      "soundsLike": {
+        "es": "e como en 'mire'",
+        "en": "e in me",
+        "fr": "é dans été"
+      },
+      "examples": [
+        {
+          "word": "bembe",
+          "meaning": "ganado vacuno",
+          "audioId": "bembe"
+        }
+      ]
+    },
+    {
+      "benga": "ē",
+      "soundsLike": {
+        "es": "é como en 'mérito' (larga)",
+        "en": "ay in say",
+        "fr": "è dans très"
+      },
+      "isLong": true,
+      "examples": [
+        {
+          "word": "kēnyēngē",
+          "meaning": "casto",
+          "audioId": "k_e_ny_e_ng_e_"
+        }
+      ]
+    },
+    {
+      "benga": "i",
+      "soundsLike": {
+        "es": "i como en 'quinta'",
+        "en": "i in machine",
+        "fr": "i dans lit"
+      },
+      "examples": [
+        {
+          "word": "ipivi",
+          "meaning": "pensamiento",
+          "audioId": "ipivi"
+        }
+      ]
+    },
+    {
+      "benga": "o",
+      "soundsLike": {
+        "es": "o como en 'tope'",
+        "en": "o in rope",
+        "fr": "o dans pot"
+      },
+      "examples": [
+        {
+          "word": "kodokodo",
+          "meaning": "palpitación",
+          "audioId": "kodokodo"
+        }
+      ]
+    },
+    {
+      "benga": "u",
+      "soundsLike": {
+        "es": "u como en 'sucinto'",
+        "en": "u in boot",
+        "fr": "ou dans tout"
+      },
+      "examples": [
+        {
+          "word": "itutu",
+          "meaning": "humo",
+          "audioId": "itutu"
+        }
+      ]
+    },
+    {
+      "benga": "ū",
+      "soundsLike": {
+        "es": "u como en 'bula' (larga)",
+        "en": "u in put",
+        "fr": "u dans tu"
+      },
+      "isLong": true,
+      "examples": [
+        {
+          "word": "būamu",
+          "meaning": "bueno",
+          "audioId": "buamu"
+        }
+      ]
+    },
+    {
+      "benga": "y",
+      "soundsLike": {
+        "es": "i como en 'alegría'",
+        "en": "y in yes",
+        "fr": "i dans il"
+      },
+      "examples": [
+        {
+          "word": "mbyu",
+          "meaning": "gozo",
+          "audioId": "mbyu"
+        },
+        {
+          "word": "vyâ",
+          "meaning": "sereno",
+          "audioId": "vy_a_"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "clarityNote": {
+      "es": "Todas las vocales forman un sonido simple (por sí solas) suenan como en castellano excepto la â, la ē y la ū, que a veces se presentan acentuadas, y por lo mismo las denominaremos largas."
+    },
+    "elisionNote": {
+      "es": "La elisión es muy frecuente al fin del vocablo. El apóstrofo se emplea como signo de elisión."
+    },
+    "pronunciationNote": {
+      "es": "Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+    }
+  }
+}

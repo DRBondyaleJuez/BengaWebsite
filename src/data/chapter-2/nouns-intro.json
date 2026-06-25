@@ -1,0 +1,85 @@
+{
+  "title": "Clasificación de los Nombres",
+  "subtitle": "Introducción a las siete clases nominales del Benga",
+  "intro": "La clasificación de los nombres depende del modo con que forman sus plurales y toman sus correspondientes adjuntos. Esta es, sin duda, la parte más interesante de la lengua Benga.",
+  "keyPrinciples": [
+    {
+      "principle": "Plural Formation",
+      "description": "Los nombres que forman su plural bajo una misma forma, se reunirán bajo en una clase.",
+      "detail": "Estos tomarán, sin excepción, los mismos o semejantes adjuntos."
+    },
+    {
+      "principle": "Adjunct Agreement",
+      "description": "La concordancia entre nombres y adjuntos es rigurosa necesidad en la lengua Benga.",
+      "detail": "Los adjetivos toman diversas inflexiones o variantes, según sea la clase del nombre a que van agregados."
+    },
+    {
+      "principle": "Radical Changes",
+      "description": "El cambio en la formación del plural está en la radical, no en la terminación.",
+      "detail": "A diferencia de las lenguas romances, el cambio ocurre en el inicio de la palabra, no al final."
+    }
+  ],
+  "sevenClasses": [
+    {
+      "class": 1,
+      "title": "Primera Clase",
+      "singularPattern": "Empieza con 'e'",
+      "pluralPattern": "Antepone 'b' (Be-)",
+      "example": "Ejanganangobo → Bejanganangobo (Libro → Libros)"
+    },
+    {
+      "class": 2,
+      "title": "Segunda Clase",
+      "singularPattern": "Empieza con 'i' o 'di'",
+      "pluralPattern": "Cambia primera sílaba a 'ma'",
+      "example": "Ibaké → Mabaké (Cuidado → Cuidados)"
+    },
+    {
+      "class": 3,
+      "title": "Tercera Clase",
+      "singularPattern": "Empieza con 'u' o 'mú'",
+      "pluralPattern": "Cambia a 'me' o 'mi'",
+      "example": "Ubáki → Mebáki (Hacha → Hachas)"
+    },
+    {
+      "class": 4,
+      "title": "Cuarta Clase",
+      "singularPattern": "Empieza con 'bo' o 'ba'",
+      "pluralPattern": "Cambia a 'mi'",
+      "example": "Bobako → Mibako (Vaina → Vainas)"
+    },
+    {
+      "class": 5,
+      "title": "Quinta Clase",
+      "singularPattern": "Radical 'mo' en singular",
+      "pluralPattern": "Cambia 'mo' a 'ba'",
+      "example": "Momo → Bamo (Hombre → Hombres)"
+    },
+    {
+      "class": 6,
+      "title": "Sexta Clase",
+      "singularPattern": "Empieza con 'v'",
+      "pluralPattern": "Cambia 'v' a 'l'",
+      "example": "Veya → Leya (Fuego → Fuegos)"
+    },
+    {
+      "class": 7,
+      "title": "Séptima Clase",
+      "singularPattern": "Forma invariable",
+      "pluralPattern": "Mismo singular y plural",
+      "example": "Fala → Fala (Francés - invariable)"
+    }
+  ],
+  "complexityNote": "De trece diferentes maneras pueden formarse los plurales en la lengua Benga. Sin embargo, se reducen a siete clases principales para simplificar el aprendizaje.",
+  "methodologyNote": "Se reunen bajo una misma clase todos los nombres que toman los mismos adjuntos, aunque no formen el plural del mismo modo. Esto es necesario porque la lengua Benga se rige por los adjuntos.",
+  "exercises": {
+    "title": "Conceptos Clave",
+    "items": [
+      "Comprender cómo cambia la forma del nombre en plural",
+      "Identificar la clase de un nombre por su patrón singular",
+      "Aplicar el cambio correcto según la clase nominal",
+      "Entender la concordancia con adjetivos",
+      "Distinguir entre cambios radicales y terminaciones"
+    ]
+  }
+}

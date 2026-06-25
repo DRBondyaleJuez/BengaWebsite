@@ -1,0 +1,165 @@
+{
+  "sectionId": "irregular-nouns",
+  "title": "Nombres Irregulares",
+  "subtitle": "Sustantivos sin singular o sin plural",
+  "introduction": {
+    "es": "Algunos sustantivos en Benga carecen de forma singular o plural, rupiendo los patrones estándar de las siete clases. Estos nombres irregulares representan casos excepcionales pero importan para la comprensión completa del sistema nominal."
+  },
+  "irregularTypes": [
+    {
+      "type": "Nombres sin singular",
+      "description": {
+        "es": "Estos sustantivos existen únicamente en forma plural. No tienen correlativo singular en la lengua actual."
+      },
+      "examples": [
+        {
+          "word": "hosá",
+          "meaning": "bienes, posesiones",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "honji",
+          "meaning": "amigos",
+          "usage": "Siempre plural; singular: honfi (raro)"
+        },
+        {
+          "word": "jubu",
+          "meaning": "reglas, normas",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "mavule",
+          "meaning": "maletas",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "miba",
+          "meaning": "cosas",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "makiya",
+          "meaning": "viejos",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "maku",
+          "meaning": "armas, implementos",
+          "usage": "Siempre plural"
+        },
+        {
+          "word": "tito",
+          "meaning": "hormigas",
+          "usage": "Mayormente plural"
+        }
+      ]
+    },
+    {
+      "type": "Nombres sin plural",
+      "description": {
+        "es": "Estos sustantivos existen únicamente en forma singular. Son invariables en la mayoría de contextos."
+      },
+      "examples": [
+        {
+          "word": "háká",
+          "meaning": "piedra",
+          "usage": "Siempre singular"
+        },
+        {
+          "word": "un",
+          "meaning": "él, ella",
+          "usage": "Pronombre invariable"
+        },
+        {
+          "word": "yadi",
+          "meaning": "espíritu",
+          "usage": "Mayormente singular"
+        },
+        {
+          "word": "ngabo",
+          "meaning": "médico, curandero",
+          "usage": "Siempre singular"
+        },
+        {
+          "word": "tina",
+          "meaning": "leña",
+          "usage": "Masa/colección singular"
+        },
+        {
+          "word": "pákaipaka",
+          "meaning": "confusión",
+          "usage": "Concepto invariable"
+        },
+        {
+          "word": "kála",
+          "meaning": "bien, propiedad",
+          "usage": "Invariable"
+        },
+        {
+          "word": "ndiba",
+          "meaning": "medicina",
+          "usage": "Masa singular"
+        },
+        {
+          "word": "kapi",
+          "meaning": "café",
+          "usage": "Sustancia invariable"
+        },
+        {
+          "word": "kama",
+          "meaning": "cama",
+          "usage": "Objeto definido"
+        },
+        {
+          "word": "nyati",
+          "meaning": "piel",
+          "usage": "Masa invariable"
+        },
+        {
+          "word": "pia",
+          "meaning": "piedad",
+          "usage": "Concepto abstracto"
+        },
+        {
+          "word": "ngaanjangaanja",
+          "meaning": "infantilidad",
+          "usage": "Concepto abstracto"
+        },
+        {
+          "word": "boká",
+          "meaning": "fuerza",
+          "usage": "Concepto abstracto"
+        },
+        {
+          "word": "bulu",
+          "meaning": "clan",
+          "usage": "Grupo definido"
+        }
+      ]
+    }
+  ],
+  "grammaticalNotes": {
+    "es": "Los nombres irregulares suelen ser o bien sustantivos colectivos (que se tratan como masa), conceptos abstractos, o loanwords de otros idiomas que no se han integrado completamente en los sistemas de clasificación nominal. La concordancia con adjetivos sigue patrones especiales o se trata como las clases más cercanas."
+  },
+  "exceptionRules": [
+    {
+      "rule": "Sustantivos Colectivos",
+      "explanation": "Muchos nombres sin plural singular son colectivos que expresan ideas de grupo sin distinción de cantidad"
+    },
+    {
+      "rule": "Palabras Prestadas",
+      "explanation": "Algunos loanwords del español u otras lenguas no siguen los patrones regulares de pluralización benga"
+    },
+    {
+      "rule": "Conceptos Abstractos",
+      "explanation": "Los nombres abstractos frecuentemente carecen de plural porque el concepto no se multiplica fácilmente"
+    },
+    {
+      "rule": "Materiales y Sustancias",
+      "explanation": "Los nombres de materiales (tina = leña, nyati = piel) funcionan como sustantivos de masa y típicamente no se pluralizan"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Aunque los nombres irregulares son excepciones, es importante familiarizarse con ellos para conseguir fluidez. Al encontrar un sustantivo desconocido que no sigue los patrones regulares, consulta referencias especializadas para determinar su clasificación."
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "Portal de Aprendizaje Benga",
+    "subtitle": "Basado en la gramática de Salvado y Cos"
+  },
+  "nav": {
+    "home": "Inicio",
+    "chapters": "Capítulos",
+    "about": "Sobre el Autor",
+    "resources": "Recursos",
+    "download": "Descargar PDF"
+  },
+  "chapters": {
+    "chapter1": {
+      "title": "Capítulo 1: Lecciones Preliminares",
+      "sections": {
+        "alphabet": "Alfabeto",
+        "diphthongs": "Diptongos",
+        "triphthongs": "Triptongos",
+        "consonants": "Consonantes"
+      }
+    },
+    "chapter2": {
+      "title": "Capítulo 2: Del Nombre Sustantivo",
+      "sections": {
+        "intro": "Clasificación de los Nombres",
+        "class1": "Primera Clase (e → be)",
+        "class2": "Segunda Clase (i/di → ma)",
+        "class3": "Tercera Clase (u/mú → me/mi)",
+        "class4": "Cuarta Clase (bo/bú → mi)",
+        "class5": "Quinta Clase (mo → ba)",
+        "class6": "Sexta Clase (v → l)",
+        "class7": "Séptima Clase (invariables)",
+        "irregular": "Nombres Irregulares",
+        "verbal": "Nombres Verbales"
+      }
+    },
+    "chapter3": {
+      "title": "Capítulo 3: Del Nombre Adjetivo",
+      "sections": {
+        "adjectives": "Adjetivos Variables e Invariables"
+      }
+    }
+  },
+  "content": {
+    "singular": "Singular",
+    "plural": "Plural",
+    "meaning": "Significado",
+    "example": "Ejemplo",
+    "examples": "Ejemplos",
+    "note": "Nota",
+    "exception": "Excepción",
+    "exceptions": "Excepciones",
+    "pronunciation": "Pronunciación",
+    "soundsLike": "Suena como",
+    "inSpanish": "en castellano",
+    "lettersList": "Lista de Letras",
+    "totalLetters": "Total",
+    "twentyThreeLetters": "23 letras",
+    "missingConsonants": "Consonantes Ausentes",
+    "vowelSounds": "Sonidos Vocales",
+    "long": "larga",
+    "vowelPronunciation": "Pronunciación de Vocales",
+    "importantNotes": "Notas Importantes",
+    "elision": "Elisión",
+    "longVowel": "Vocal larga",
+    "simpleDiphthongs": "Diptongos Simples",
+    "simpleConsonants": "Consonantes Simples",
+    "triphthongs": "Triptongos",
+    "consonantCombinations": "Combinaciones de Consonantes",
+    "pronunciationGuide": "Guía de Pronunciación",
+    "importantNote": "Nota Importante",
+    "firstConsonantRule": "Regla de la Primera Consonante",
+    "nasalSounds": "Sonidos Nasales",
+    "greekExample": "Ejemplo"
+  },
+  "audio": {
+    "play": "Reproducir pronunciación",
+    "pause": "Pausar",
+    "loading": "Cargando audio...",
+    "unavailable": "Audio no disponible"
+  },
+  "dictionary": {
+    "viewInDictionary": "Ver en el Diccionario Vivo",
+    "linkTitle": "Abrir en Living Dictionary"
+  },
+  "footer": {
+    "copyright": "© {year} Portal de Aprendizaje Benga",
+    "basedOn": "Basado en \"Lengua Benga\" de Salvado y Cos",
+    "contact": "Contacto",
+    "community": "Comunidad Ndowe",
+    "contribute": "Contribuir"
+  },
+  "home": {
+    "welcome": "Bienvenido al Portal de Aprendizaje Benga",
+    "intro": "Aprende la lengua Benga, uno de los idiomas Ndowe hablados en Guinea Ecuatorial y países vecinos.",
+    "startLearning": "Comenzar a Aprender",
+    "aboutProject": "Sobre Este Proyecto",
+    "aboutBenga": "Sobre la Lengua Benga",
+    "languageFamily": "Familia Lingüística",
+    "geography": "Ubicación Geográfica",
+    "heritage": "Patrimonio Lingüístico",
+    "aboutGrammar": "Sobre Esta Gramática",
+    "curriculum": "Estructura del Curso",
+    "features": "Características",
+    "audioSupport": "Pronunciación con Audio",
+    "liveDict": "Diccionario Vivo",
+    "responsive": "Diseño Responsivo",
+    "multiLanguage": "Multilingüe",
+    "systematic": "Método Sistemático",
+    "community": "Comunidad",
+    "readyToLearn": "¿Listo para Comenzar?",
+    "ctaSubtitle": "Inicia tu viaje en el aprendizaje del idioma Benga hoy."
+  },
+  "about": {
+    "title": "Sobre Salvado y Cos",
+    "biographical": "Biografía",
+    "masterwork": "Obra Maestra",
+    "workTitle": "Título de la Obra",
+    "publicationYear": "Año de Publicación",
+    "publisher": "Editorial",
+    "location": "Lugar de Publicación",
+    "pagination": "Páginas",
+    "historicalContext": "Contexto Histórico",
+    "colonialLinguistics": "Lingüística Colonial",
+    "linguisticValue": "Valor Lingüístico",
+    "missionaryWork": "Labor Misionera",
+    "legacy": "Legado",
+    "aboutPortal": "Sobre Este Portal",
+    "originalWork": "Acceso a la Obra Original",
+    "furtherReading": "Lecturas Complementarias",
+    "languageFamily": "Familia Lingüística Ndowe",
+    "livingDictionary": "Living Dictionary",
+    "sil": "SIL International",
+    "guineaInfo": "Guinea Ecuatorial"
+  },
+  "resources": {
+    "subtitle": "Herramientas y referencias para el aprendizaje del Benga",
+    "primarySources": "Fuentes Primarias",
+    "audioFiles": "Archivos de Audio",
+    "learningTools": "Herramientas de Aprendizaje",
+    "references": "Materiales de Referencia",
+    "studyTips": "Consejos para Estudiar Benga"
+  },
+  "chapter1": {
+    "learningOutcomes": "Al Completar Este Capítulo",
+    "sections": "Secciones del Capítulo",
+    "keyConcepts": "Conceptos Clave",
+    "progressTracker": "Seguimiento de Progreso",
+    "studyTips": "Consejos para Este Capítulo",
+    "whatNext": "Próximo Paso: Capítulo 2"
+  }
+}

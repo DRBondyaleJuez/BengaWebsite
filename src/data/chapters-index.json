@@ -1,0 +1,123 @@
+{
+  "chapters": [
+    {
+      "id": "chapter1",
+      "number": 1,
+      "titleKey": "chapters.chapter1.title",
+      "sections": [
+        {
+          "id": "alphabet",
+          "path": "/capitulo-1/alfabeto",
+          "titleKey": "chapters.chapter1.sections.alphabet"
+        },
+        {
+          "id": "diphthongs",
+          "path": "/capitulo-1/diptongos",
+          "titleKey": "chapters.chapter1.sections.diphthongs"
+        },
+        {
+          "id": "triphthongs",
+          "path": "/capitulo-1/triptongos",
+          "titleKey": "chapters.chapter1.sections.triphthongs"
+        },
+        {
+          "id": "consonants",
+          "path": "/capitulo-1/consonantes",
+          "titleKey": "chapters.chapter1.sections.consonants"
+        }
+      ],
+      "path": "/capitulo-1"
+    },
+    {
+      "id": "chapter2",
+      "number": 2,
+      "titleKey": "chapters.chapter2.title",
+      "sections": [
+        {
+          "id": "intro",
+          "path": "/capitulo-2/introduccion",
+          "titleKey": "chapters.chapter2.sections.intro"
+        },
+        {
+          "id": "class1",
+          "path": "/capitulo-2/clase-1",
+          "titleKey": "chapters.chapter2.sections.class1"
+        },
+        {
+          "id": "class2",
+          "path": "/capitulo-2/clase-2",
+          "titleKey": "chapters.chapter2.sections.class2"
+        },
+        {
+          "id": "class3",
+          "path": "/capitulo-2/clase-3",
+          "titleKey": "chapters.chapter2.sections.class3"
+        },
+        {
+          "id": "class4",
+          "path": "/capitulo-2/clase-4",
+          "titleKey": "chapters.chapter2.sections.class4"
+        },
+        {
+          "id": "class5",
+          "path": "/capitulo-2/clase-5",
+          "titleKey": "chapters.chapter2.sections.class5"
+        },
+        {
+          "id": "class6",
+          "path": "/capitulo-2/clase-6",
+          "titleKey": "chapters.chapter2.sections.class6"
+        },
+        {
+          "id": "class7",
+          "path": "/capitulo-2/clase-7",
+          "titleKey": "chapters.chapter2.sections.class7"
+        },
+        {
+          "id": "irregular",
+          "path": "/capitulo-2/irregulares",
+          "titleKey": "chapters.chapter2.sections.irregular"
+        },
+        {
+          "id": "verbal",
+          "path": "/capitulo-2/verbales",
+          "titleKey": "chapters.chapter2.sections.verbal"
+        }
+      ],
+      "path": "/capitulo-2"
+    },
+    {
+      "id": "chapter3",
+      "number": 3,
+      "titleKey": "chapters.chapter3.title",
+      "sections": [
+        {
+          "id": "intro",
+          "path": "/capitulo-3/introduccion",
+          "titleKey": "chapters.chapter3.sections.intro"
+        },
+        {
+          "id": "regular",
+          "path": "/capitulo-3/adjetivos-regulares",
+          "titleKey": "chapters.chapter3.sections.regular"
+        },
+        {
+          "id": "invariable",
+          "path": "/capitulo-3/adjetivos-invariables",
+          "titleKey": "chapters.chapter3.sections.invariable"
+        },
+        {
+          "id": "comparatives",
+          "path": "/capitulo-3/comparativos-superlativos",
+          "titleKey": "chapters.chapter3.sections.comparatives"
+        },
+        {
+          "id": "numerals",
+          "path": "/capitulo-3/numerales-ordinales",
+          "titleKey": "chapters.chapter3.sections.numerals"
+        }
+      ],
+      "path": "/capitulo-3"
+    }
+  ]
+}

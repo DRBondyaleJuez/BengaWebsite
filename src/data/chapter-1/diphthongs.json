@@ -1,0 +1,148 @@
+{
+  "sectionId": "diphthongs",
+  "title": {
+    "es": "Los Diptongos",
+    "en": "Diphthongs",
+    "fr": "Les Diphtongues"
+  },
+  "introduction": {
+    "es": "Podemos combinar dos vocales anteriormente descritas para formar diptongos. Algunos de los comunes en Benga son los siguientes:."
+  },
+  "simpleDiphthongs": [
+    {
+      "diphthong": "ai",
+      "soundsLike": {
+        "es": "ai como en 'gaita'",
+        "en": "ai in aisle",
+        "fr": "aille dans paille"
+      },
+      "examples": [
+        {
+          "word": "tekai",
+          "meaning": "cáscara",
+          "audioId": "tekai"
+        }
+      ]
+    },
+    {
+      "diphthong": "au",
+      "soundsLike": {
+        "es": "au como en 'causa'",
+        "en": "ow in bow",
+        "fr": "au dans cause"
+      },
+      "examples": [
+        {
+          "word": "au",
+          "meaning": "pronombre y signo negativo",
+          "audioId": "au"
+        }
+      ]
+    },
+    {
+      "diphthong": "iu",
+      "soundsLike": {
+        "es": "iu como en 'ciudad'",
+        "en": "ew in few",
+        "fr": "ieu dans dieu"
+      },
+      "examples": [
+        {
+          "word": "viu",
+          "meaning": "obscuridad",
+          "audioId": "viu"
+        }
+      ]
+    },
+    {
+      "diphthong": "oi",
+      "soundsLike": {
+        "es": "oi como en 'boina'",
+        "en": "oy in boy",
+        "fr": "oi dans voix"
+      },
+      "examples": [
+        {
+          "word": "mboi",
+          "meaning": "miel",
+          "audioId": "mboi"
+        }
+      ]
+    },
+    {
+      "diphthong": "ūa",
+      "soundsLike": {
+        "es": "úa como 'puas'",
+        "en": "wa in water",
+        "fr": "oua dans pouah"
+      },
+      "examples": [
+        {
+          "word": "mūana",
+          "meaning": "niño, hijo",
+          "audioId": "m_u_ana"
+        }
+      ]
+    },
+    {
+      "diphthong": "ūe",
+      "soundsLike": {
+        "es": "úe en 'acentiúe'",
+        "en": "we in wet",
+        "fr": "ue dans gueule"
+      },
+      "examples": [
+        {
+          "word": "babūe",
+          "meaning": "inteligible",
+          "audioId": "bab_u_e"
+        }
+      ]
+    },
+    {
+      "diphthong": "ūa",
+      "soundsLike": {
+        "es": "ua como en 'guano'",
+        "en": "wa in wand",
+        "fr": "oua dans guano"
+      },
+      "examples": [
+        {
+          "word": "ūaūa",
+          "meaning": "aprisa, pronto",
+          "audioId": "_u_a_u_a"
+        }
+      ]
+    },
+    {
+      "diphthong": "ūē",
+      "soundsLike": {
+        "es": "ue en 'cueva'",
+        "en": "we in well",
+        "fr": "ue dans pluie"
+      },
+      "examples": [
+        {
+          "word": "hūē",
+          "meaning": "nosotros",
+          "audioId": "h_u_e_"
+        }
+      ]
+    },
+    {
+      "diphthong": "ūi",
+      "soundsLike": {
+        "es": "ui en 'cuita'",
+        "en": "ui in suite",
+        "fr": "ui dans fruit"
+      },
+      "examples": [
+        {
+          "word": "mūidi",
+          "meaning": "banco, margen",
+          "audioId": "m_u_idi"
+        }
+      ]
+    }
+  ]
+}

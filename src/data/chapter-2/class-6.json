@@ -1,0 +1,145 @@
+{
+  "classId": 6,
+  "title": "Sexta Clase",
+  "singularPrefix": "v-",
+  "pluralPrefix": "l-",
+  "pattern": {
+    "es": "Empieza con 'v' (singular) → 'l-' (plural)"
+  },
+  "description": {
+    "es": "La sexta clase representa un cambio consonántico notable: la 'v' se transforma en 'l'. Esta es una de las transformaciones más distintivas del Benga."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos comunes",
+      "words": [
+        {
+          "singular": "veya",
+          "plural": "leya",
+          "meaning": "fuego",
+          "audioId": "veya"
+        },
+        {
+          "singular": "vio",
+          "plural": "lio",
+          "meaning": "agua",
+          "audioId": "vio"
+        },
+        {
+          "singular": "vid",
+          "plural": "lid",
+          "meaning": "camino",
+          "audioId": "vid"
+        },
+        {
+          "singular": "viho",
+          "plural": "liho",
+          "meaning": "casa",
+          "audioId": "viho"
+        },
+        {
+          "singular": "vilolombo",
+          "plural": "lilolombo",
+          "meaning": "amiga",
+          "audioId": "vilolombo"
+        },
+        {
+          "singular": "vingangambi",
+          "plural": "lingangambi",
+          "meaning": "prisionero",
+          "audioId": "vingangambi"
+        },
+        {
+          "singular": "vingunguhu",
+          "plural": "lingunguhu",
+          "meaning": "sirviente",
+          "audioId": "vingunguhu"
+        },
+        {
+          "singular": "vipupuñoa",
+          "plural": "lipupuñoa",
+          "meaning": "niño",
+          "audioId": "vipupuoa"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos especiales",
+      "words": [
+        {
+          "singular": "vitña",
+          "plural": "litña",
+          "meaning": "nombre",
+          "audioId": "vitna"
+        },
+        {
+          "singular": "viyonda",
+          "plural": "liyonda",
+          "meaning": "tierra",
+          "audioId": "viyonda"
+        },
+        {
+          "singular": "viyembo",
+          "plural": "liyembo",
+          "meaning": "canción",
+          "audioId": "viyembo"
+        },
+        {
+          "singular": "viaha",
+          "plural": "liaha",
+          "meaning": "rienda",
+          "audioId": "viaha"
+        },
+        {
+          "singular": "vianga",
+          "plural": "lianga",
+          "meaning": "tristeza",
+          "audioId": "vianga"
+        },
+        {
+          "singular": "viyohi",
+          "plural": "liyohi",
+          "meaning": "pobreza",
+          "audioId": "viyohi"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular",
+      "article": "v-",
+      "adjective": "-v",
+      "example": "v-eya v-enene"
+    },
+    {
+      "label": "Plural",
+      "article": "l-",
+      "adjective": "-l",
+      "example": "l-eya l-enene"
+    },
+    {
+      "label": "Excepción",
+      "article": "ba- (en algunos casos)",
+      "adjective": "-ba",
+      "example": "ba-eya ba-enene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Cambio Consonántico Distintivo",
+      "description": "La transformación v- → l- es una característica única que distingue esta clase"
+    },
+    {
+      "title": "Menos Numerosa",
+      "description": "La sexta clase tiene menos ejemplos que la segunda, pero sus palabras son significativas"
+    },
+    {
+      "title": "Excepciones con ba-",
+      "description": "Algunos sustantivos de esta clase forman el plural con 'ba-' en lugar de 'l-'"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Memoriza el cambio v- → l- como un cambio consonántico fundamental. Los ejemplos de la sexta clase son menos numerosos, pero el patrón es muy regular."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "classId": 1,
+  "title": "Primera Clase",
+  "singularPrefix": "e-",
+  "pluralPrefix": "be-",
+  "pattern": {
+    "es": "Empieza con 'e' (singular) → 'be-' (plural)"
+  },
+  "description": {
+    "es": "La primera clase agrupa los nombres que cambian su prefijo de 'e' a 'be' en la formación del plural."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos comunes",
+      "words": [
+        {
+          "singular": "ejanganangobo",
+          "plural": "bejanganangobo",
+          "meaning": "libro",
+          "audioId": "ejanganangobo"
+        },
+        {
+          "singular": "epokolo",
+          "plural": "bepokolo",
+          "meaning": "trabajo, labor",
+          "audioId": "epokolo"
+        },
+        {
+          "singular": "ená",
+          "plural": "bená",
+          "meaning": "agua",
+          "audioId": "ena"
+        },
+        {
+          "singular": "ekái",
+          "plural": "bekái",
+          "meaning": "carne",
+          "audioId": "ekai"
+        },
+        {
+          "singular": "elinga",
+          "plural": "belinga",
+          "meaning": "mercado",
+          "audioId": "elinga"
+        },
+        {
+          "singular": "elombo",
+          "plural": "belombo",
+          "meaning": "cabeza",
+          "audioId": "elombo"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos neutros",
+      "words": [
+        {
+          "singular": "egala",
+          "plural": "begala",
+          "meaning": "fuerte",
+          "audioId": "egala"
+        },
+        {
+          "singular": "elende",
+          "plural": "belende",
+          "meaning": "cosa, asunto",
+          "audioId": "elende"
+        }
+      ]
+    },
+    {
+      "group": "Palabras que comienzan con 'y'",
+      "words": [
+        {
+          "singular": "yaho",
+          "plural": "biyaho",
+          "meaning": "herida",
+          "audioId": "yaho"
+        },
+        {
+          "singular": "yako",
+          "plural": "biyako",
+          "meaning": "problema",
+          "audioId": "yako"
+        },
+        {
+          "singular": "yoma",
+          "plural": "biyoma",
+          "meaning": "vino, bebida",
+          "audioId": "yoma"
+        },
+        {
+          "singular": "yomu",
+          "plural": "biyomu",
+          "meaning": "pueblo",
+          "audioId": "yomu"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular",
+      "article": "e-",
+      "adjective": "-a, -e",
+      "example": "e-janganangobo e-nene"
+    },
+    {
+      "label": "Plural",
+      "article": "be-",
+      "adjective": "-be, -nene",
+      "example": "be-janganangobo be-nene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Patrón de Cambio",
+      "description": "La vocal inicial 'e' en singular se reemplaza por el prefijo 'be' en plural"
+    },
+    {
+      "title": "Coherencia de Prefijo",
+      "description": "Una vez que el nombre adopta 'be' en plural, todos los adjuntos concordantes también adoptan 'be'"
+    },
+    {
+      "title": "Variantes con Y",
+      "description": "Los nombres que comienzan con 'y' (que funciona como consonante) también siguen esta regla, pasando a 'bi' en plural"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Memoriza el cambio e → be como una transformación sistemática. Esta clase es fundamental para comprender los patrones de concordancia nominal en Benga."
+  }
+  "examples": [
+    {
+      "singular": "Ejanganangobo",
+      "plural": "Bejanganangobo",
+      "meaning": "Libro",
+      "audioId": "ejanganangobo"
+    },
+    {
+      "singular": "Epokolo",
+      "plural": "Bepokolo",
+      "meaning": "Sombrero",
+      "audioId": "epokolo"
+    },
+    {
+      "singular": "Eñá",
+      "plural": "Bená",
+      "meaning": "Brazo",
+      "audioId": "ena"
+    },
+    {
+      "singular": "Ekái",
+      "plural": "Bekái",
+      "meaning": "Plátano",
+      "audioId": "ekai"
+    },
+    {
+      "singular": "Elinga",
+      "plural": "Belinga",
+      "meaning": "Cesto",
+      "audioId": "elinga"
+    },
+    {
+      "singular": "Elombo",
+      "plural": "Belombo",
+      "meaning": "Cosa, objeto",
+      "audioId": "elombo"
+    },
+    {
+      "singular": "Egala",
+      "plural": "Begala",
+      "meaning": "Cajón",
+      "audioId": "egala"
+    },
+    {
+      "singular": "Elende",
+      "plural": "Belende",
+      "meaning": "Bote",
+      "audioId": "elende"
+    }
+  ],
+  "note": "También pertenecen a esta clase nombres que comienzan por 'y' en singular, formando el plural mudando la 'y' en 'bi'.",
+  "variantExamples": [
+    {
+      "singular": "Yaho",
+      "plural": "Biaho",
+      "meaning": "Quijada"
+    },
+    {
+      "singular": "Yako",
+      "plural": "Biako",
+      "meaning": "Cama"
+    },
+    {
+      "singular": "Yalo",
+      "plural": "Bialo",
+      "meaning": "Bote europeo"
+    },
+    {
+      "singular": "Yambe",
+      "plural": "Biambe",
+      "meaning": "Cura supersticiosa"
+    },
+    {
+      "singular": "Yapa",
+      "plural": "Biapa",
+      "meaning": "Canasta"
+    },
+    {
+      "singular": "Yáki",
+      "plural": "Biáki",
+      "meaning": "Medicina supersticiosa"
+    },
+    {
+      "singular": "Yzjá",
+      "plural": "Biejá",
+      "meaning": "Medida"
+    },
+    {
+      "singular": "Yeké",
+      "plural": "Biéke",
+      "meaning": "Juicio"
+    },
+    {
+      "singular": "Yima",
+      "plural": "Biima",
+      "meaning": "Egoísmo"
+    },
+    {
+      "singular": "Yoha",
+      "plural": "Bioha",
+      "meaning": "Mono pequeño"
+    },
+    {
+      "singular": "Yoma",
+      "plural": "Bioma",
+      "meaning": "Ñame"
+    },
+    {
+      "singular": "Yomu",
+      "plural": "Biomu",
+      "meaning": "Calor"
+    }
+  ],
+  "concordance": "Epokolo eyamu (Sombrero bueno) → Bepokolo beyamu (Sombreros buenos)",
+  "keyPoints": [
+    "La 'e' inicial se cambia a 'be' o 'bi'",
+    "Los nombres que comienzan con 'y' siguen la regla de transformación a 'bi'",
+    "Mbalanga (ciervo) y Viodu (cierva) son excepciones irregulares en esta clase"
+  ]
+      "plural": { "word": "biomu", "audioId": "biomu" },
+      "meaning": { "es": "calor", "en": "heat", "fr": "chaleur" }
+    }
+  ]
+}

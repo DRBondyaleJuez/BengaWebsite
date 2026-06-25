@@ -1,0 +1,129 @@
+{
+  "sectionId": "comparatives-superlatives",
+  "title": "Comparativos y Superlativos",
+  "subtitle": "Expresiones de comparación y grado",
+  "overview": "Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los objetos se comparan usando una variedad de formas: circunlocución, entonación particular, énfasis consabido, y especialmente las palabras 'kebaka' (sobresalir) y 'ña' (exceder).",
+  "keyWords": [
+    {
+      "bengaForm": "Kebaka",
+      "spanishMeaning": " sobresalir, destacar"
+    },
+    {
+      "bengaForm": "ña",
+      "spanishMeaning": "exceder, superar"
+    }
+  ],
+  "comparatives": [
+    {
+      "spanishMeaning": "Mi sombrero es mejor que el tuyo",
+      "phrases": {
+        "palabras": "Epokolo ami e kebaka ndi edi",
+        "pronunciacion": "Epokol' amé ekebakend edi",
+        "traduccionLiteral": "Sombrero mío sobresale (al) tuyo"
+      }
+    },
+    {
+      "spanishMeaning": "Este pez es más grande que aquél",
+      "phrases": {
+        "palabras": "Ejaka tékai e ndi eniné da na tekayene",
+        "pronunciacion": "Ejaka tekaiendi nént na n'ayene",
+        "traduccionLiteral": "Pez éste es grande, excede aquél"
+      }
+    },
+    {
+      "spanishMeaning": "Matuta es más viejo que Ibiya",
+      "phrases": {
+        "palabras": "Matuta mlbia, Matuta nutodu",
+        "pronunciacion": "Matuta m'Ibia, Matuta m'utodu",
+        "traduccionLiteral": "Matuta é Ibia, Matuta es viejo"
+      }
+    }
+  ],
+  "superlatives": [
+    {
+      "spanishMeaning": "Mi sombrero es el mejor de todos",
+      "phrases": {
+        "palabras": "Epokolo eame e kebake ndi bihépi",
+        "pronunciacion": "Epokol' ame ekebakéndi bihépi",
+        "traduccionLiteral": "Sombrero mío sobresale (a) todos"
+      }
+    },
+    {
+      "spanishMeaning": "Este es el pez más grande que he visto",
+      "phrases": {
+        "palabras": "Ekai emdi edyaka enin? mete e ami e ha yéné vákaé",
+        "pronunciacion": "Ekai'ndi'jaka nént méte cami ehayént vakué",
+        "traduccionLiteral": "Este es pescado grande en verdad, por mí visto jamás"
+      }
+    },
+    {
+      "spanishMeaning": "El mejor de los libros es la Sagrada Escritura",
+      "phrases": {
+        "palabras": "Bible ndi ejanganangobo eyamu da na bihépi",
+        "pronunciacion": "Bible ndi ejanganangobo eyamu da na bihépi",
+        "traduccionLiteral": "Biblia es libro bueno (a) todos"
+      }
+    }
+  ],
+  "alternativeForm": {
+    "description": "Hay una forma más sencilla y acomodada al castellano: usar 'va' en sentido de 'más'. Esta forma se acomoda principalmente con quienes han aprendido inglés, francés, etc.",
+    "examples": [
+      {
+        "spanishMeaning": "Este país es más cálido que el nuestro",
+        "bengaForm": "Ehihí tékae e ndi yomu ña na eyahu"
+      },
+      {
+        "spanishMeaning": "Estos libros son mejores que aquéllos",
+        "bengaForm": "Bejanangobo tékabe bendi ña na Vepúlas ekabens"
+      },
+      {
+        "spanishMeaning": "Ulendo es más grande que aquel niño",
+        "bengaForm": "Ulindá a ndi utodu aa na maa'tikane"
+      },
+      {
+        "spanishMeaning": "Condino es menos lindo que Iquito",
+        "bengaForm": "Ikito elanga aa na Kondinyo"
+      },
+      {
+        "spanishMeaning": "Coto no es mejor que Cuango",
+        "bengaForm": "Koto a bé ua na Kaango"
+      },
+      {
+        "spanishMeaning": "El justo vive más tranquilo que el pecador",
+        "bengaForm": "Ba'yamu bana idiyedi via huat da na babe"
+      }
+    ]
+  },
+  "expressions": [
+    {
+      "spanishMeaning": "La Iglesia de Roma es la más grande de todas",
+      "bengaForm": "Iglesia ja Roma e ndi bonzné da na jehépi"
+    },
+    {
+      "spanishMeaning": "El oro es el más apreciado de los metales",
+      "bengaForm": "Hika'veyu e tándáknindi qa na'kzi y¿hipi"
+    },
+    {
+      "spanishMeaning": "Tu maestro es el más sabio de todos",
+      "bengaForm": "Uyokudi múami a ndi yokuñango úa na bhepi"
+    },
+    {
+      "spanishMeaning": "La caridad es la más excelente de las virtudes",
+      "bengaForm": "Ttándé a ndi baamu bonén? úa na virtudes jeh'pi"
+    },
+    {
+      "spanishMeaning": "El sol es brillantísimo, más que todos los cuerpos luminosos",
+      "bengaForm": "Joba ima bae eit2, da na e panyak: yehepi"
+    },
+    {
+      "spanishMeaning": "La luna no es tan brillante como el sol",
+      "bengaForm": "Ngánd ya sainaka panika joba"
+    }
+  ],
+  "notes": [
+    "Los Bengas usan énfasis y entonación para indicar extremos en calidad y cantidad",
+    "No hay descripción escrita que pueda hacerlo inteligible: se requiere la viva voz",
+    "Las circunlocuciones apropiadas al objeto son frecuentes",
+    "La entonación peculiar y el énfasis son elementales en la expresión de comparación"
+  ]
+}

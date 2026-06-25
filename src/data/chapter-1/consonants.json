@@ -1,0 +1,434 @@
+{
+  "sectionId": "consonants",
+  "title": {
+    "es": "De las Consonantes",
+    "en": "Consonants",
+    "fr": "Les Consonnes"
+  },
+  "introduction": {
+    "es": "Si bien es verdad que las consonantes se nos presentan todas y cada una de ellas con su sonido claro y bien definido; sin embargo, por apartarse algunas de ellas de la pronunciación española, hay que decir algo sobre este punto."
+  },
+  "simpleConsonants": [
+    {
+      "consonant": "B",
+      "soundsLike": {
+        "es": "ba, be, bi, bo, bu, etc., clara y distintamente, como en español",
+        "en": "b as in Spanish (not like English v)",
+        "fr": "b comme en español"
+      },
+      "specialNote": {
+        "es": "No hay que equivocar el sonido de la b con el de la v. Una mala pronunciación podría producir una palabra diferente. El oído del benga es muy delicado en este punto."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "D",
+      "soundsLike": {
+        "es": "sonido dental fuerte",
+        "en": "d as in Spanish (dental)",
+        "fr": "d comme en español"
+      },
+      "specialNote": {
+        "es": "Tanto en principio como en medio de dicción tiene el mismo sonido dental, fuerte como en castellano."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "F",
+      "soundsLike": {
+        "es": "sonido dental fuerte",
+        "en": "f as in Spanish",
+        "fr": "f comme en español"
+      },
+      "examples": []
+    },
+    {
+      "consonant": "G",
+      "soundsLike": {
+        "es": "seguida de vocal tiene igual sonido, así ge y gi suenan gue, gui, como en guerra, guisante",
+        "en": "g before any vowel sounds like gue, gui",
+        "fr": "g comme en guerre"
+      },
+      "specialNote": {
+        "es": "Se pronunciará, pues, ga, ge, gi, go, gu, sin diferencia ninguna. De su sonido, antes de consonante, se tratará en otro lugar."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "H",
+      "soundsLike": {
+        "es": "notablemente aspirada, como la pronunciación inglesa de 'hard'",
+        "en": "h as in English 'hard' (strongly aspirated)",
+        "fr": "h aspiré comme en anglais"
+      },
+      "specialNote": {
+        "es": " No hay que confundir el sonido aspirado (inglés house, hello) con el gutural o velar (español jota, jamón), pues son del todo diferentes."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "J",
+      "soundsLike": {
+        "es": "el de la j francesa: ja, je, ji, jo, ju, suenan como jamais, jet, gilet, joli, juri, en francés",
+        "en": "j as in French 'je' (zh sound)",
+        "fr": "j comme en français"
+      },
+      "specialNote": {
+        "es": "El sonido de ésta es en todos los casos, sin excepción alguna, el de la j francesa."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "K",
+      "soundsLike": {
+        "es": "con su propio sonido invariable",
+        "en": "k with invariable sound",
+        "fr": "k avec son propre invariable"
+      },
+      "specialNote": {
+        "es": "Esta, a más de su propio sonido invariable, suple la ausencia de las consonantes c y q."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "L",
+      "soundsLike": {
+        "es": "seguida de vocal, suena siempre, la, le, lí, lo, lu, como en español",
+        "en": "l as in Spanish",
+        "fr": "l comme en español"
+      },
+      "specialNote": {
+        "es": "La encontramos seguida de vocal como en castellano, pero no en forma líquida acompañando a otra consonante como en flor, blanco, pleno..."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "M",
+      "soundsLike": {
+        "es": "igual sonido que en español",
+        "en": "m as in Spanish",
+        "fr": "m comme en español"
+      },
+      "specialNote": {
+        "es": "Puede aparecer en combinacion con otras consonantes, como mb, de las que se hablará más adelante."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "N",
+      "soundsLike": {
+        "es": "lo mismo que la m, seguida de vocal",
+        "en": "n as in Spanish",
+        "fr": "n comme en español"
+      },
+      "specialNote": {
+        "es": "Puede aparecer en combinacion con otras consonantes, como nd, ng, nj, ny, etc., de las que se hablará más adelante."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "P",
+      "soundsLike": {
+        "es": "pa, pe, pi, po, pu, sin variedad alguna",
+        "en": "p as in Spanish",
+        "fr": "p comme en español"
+      },
+      "examples": []
+    },
+    {
+      "consonant": "S",
+      "soundsLike": {
+        "es": "sonido fuerte, como en saco",
+        "en": "s as in Spanish (always strong)",
+        "fr": "s comme en español"
+      },
+      "specialNote": {
+        "es": "Sólo se halla en principio de dicción y de sílaba; por lo mismo, su sonido es siempre fuerte, como lo es en saco."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "T",
+      "soundsLike": {
+        "es": "ta, te, ti, to, tu",
+        "en": "t as in Spanish",
+        "fr": "t comme en español"
+      },
+      "specialNote": {
+        "es": "Comienza siempre la sílaba, y suena: ta, te, ti, to, tu, exceptuando la voz Tyoli, que suena Tcholi."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "W(Ū)",
+      "soundsLike": {
+        "es": "se halla siempre seguida de otra vocal, con la que forma \"diptongo\" como la w en inglés water",
+        "en": "w forms diphthong with following vowel",
+        "fr": "w forme diphtongue avec voyelle suivante"
+      },
+      "specialNote": {
+        "es": "Fuerza notable y algo más marcada que la que se nota en las palabras hueso, huevo, Huesca."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "V",
+      "soundsLike": {
+        "es": "sonido fuerte de la letra, modulando el labio inferior",
+        "en": "strong fricative sound",
+        "fr": "son fort fricatif"
+      },
+      "specialNote": {
+        "es": "Para acertar con el sonido fuerte de esta letra, es preciso modular el labio inferior, poniéndole en contacto con los dientes superiores, como para pronunciar la letra F, cuidando de no confundirle con el de la b. ejemplo \"bueno\" y \"voluntad\"."
+      },
+      "examples": []
+    },
+    {
+      "consonant": "Y",
+      "soundsLike": {
+        "es": "ya, ye, yi, yo, yu, igual al español",
+        "en": "y as in Spanish",
+        "fr": "y comme en español"
+      },
+      "specialNote": {
+        "es": "Es a la vez vocal y consonante"
+      },
+      "examples": []
+    }
+  ],
+  "consonantCombinations": [
+    {
+      "combination": "Mb",
+      "pronunciation": {
+        "es": "considerar su primera consonante como muda, formando un sonido obscuro como de um",
+        "en": "first consonant is silent, forming obscure um sound",
+        "fr": "première consonne muette, son obscur umm"
+      },
+      "examples": [
+        {
+          "word": "mbambai",
+          "meaning": "en verdad",
+          "audioId": "mbambai"
+        },
+        {
+          "word": "mbeya",
+          "meaning": "marmita",
+          "audioId": "mbeya"
+        },
+        {
+          "word": "mbēba",
+          "meaning": "filo de espada",
+          "audioId": "mb_e_ba"
+        },
+        {
+          "word": "mbimba",
+          "meaning": "cólera",
+          "audioId": "mbimba"
+        },
+        {
+          "word": "mboka",
+          "meaning": "pueblo",
+          "audioId": "mboka"
+        },
+        {
+          "word": "mbute",
+          "meaning": "botella",
+          "audioId": "mbute"
+        },
+        {
+          "word": "mbūedi",
+          "meaning": "cautivo",
+          "audioId": "mb_u_edi"
+        },
+        {
+          "word": "mbūengambūenga",
+          "meaning": "inconstante",
+          "audioId": "mb_u_engamb_u_enga"
+        }
+      ]
+    },
+    {
+      "combination": "Nd",
+      "pronunciation": {
+        "es": "considerar su primera consonante como muda, formando un sonido obscuro como de un",
+        "en": "first consonant is silent, forming obscure un sound",
+        "fr": "première consonne muette, son obscur unn"
+      },
+      "examples": [
+        {
+          "word": "ndabo",
+          "meaning": "casa",
+          "audioId": "ndabo"
+        },
+        {
+          "word": "ndâlâ",
+          "meaning": "sueño",
+          "audioId": "nd_a_l_a_"
+        },
+        {
+          "word": "ndembo",
+          "meaning": "señal",
+          "audioId": "ndembo"
+        },
+        {
+          "word": "ndēmbē",
+          "meaning": "niño",
+          "audioId": "nd_e_emb_e_"
+        },
+        {
+          "word": "nditi",
+          "meaning": "templanza",
+          "audioId": "nditi"
+        },
+        {
+          "word": "ndomi",
+          "meaning": "hermano",
+          "audioId": "ndomi"
+        },
+        {
+          "word": "ndumba",
+          "meaning": "huésped",
+          "audioId": "ndumba"
+        }
+      ]
+    },
+    {
+      "combination": "Ng",
+      "pronunciation": {
+        "es": "sonido nasal vellar",
+        "en": "velar nasal sound",
+        "fr": "son nasal vélaire"
+      },
+      "examples": [
+        {
+          "word": "ngadi",
+          "meaning": "trueno",
+          "audioId": "ngadi"
+        },
+        {
+          "word": "ngânde",
+          "meaning": "luna",
+          "audioId": "ng_a_nde"
+        },
+        {
+          "word": "ngebo",
+          "meaning": "burla",
+          "audioId": "ngebo"
+        },
+        {
+          "word": "ngēbē",
+          "meaning": "compasión",
+          "audioId": "ng_e_b_e_"
+        },
+        {
+          "word": "nginga",
+          "meaning": "selva",
+          "audioId": "nginga"
+        },
+        {
+          "word": "ngonda",
+          "meaning": "pecho",
+          "audioId": "ngonda"
+        },
+        {
+          "word": "ngudi",
+          "meaning": "fuerza, poder",
+          "audioId": "ngudi"
+        },
+        {
+          "word": "ngūahi",
+          "meaning": "vara",
+          "audioId": "ng_u_ahi"
+        },
+        {
+          "word": "ngūea",
+          "meaning": "cerdo",
+          "audioId": "ng_u_ea"
+        }
+      ]
+    },
+    {
+      "combination": "Nj",
+      "pronunciation": {
+        "es": "sonido palatal nasal",
+        "en": "palatal nasal sound",
+        "fr": "son nasal palatal"
+      },
+      "examples": [
+        {
+          "word": "njadi",
+          "meaning": "yunque",
+          "audioId": "njadi"
+        },
+        {
+          "word": "njâku",
+          "meaning": "elefante",
+          "audioId": "njaku"
+        },
+        {
+          "word": "njea",
+          "meaning": "camino",
+          "audioId": "njea"
+        },
+        {
+          "word": "njēngi",
+          "meaning": "helecho",
+          "audioId": "nj_e_ngi"
+        },
+        {
+          "word": "njimbili",
+          "meaning": "estabilidad, firmeza",
+          "audioId": "njimbili"
+        },
+        {
+          "word": "njongo",
+          "meaning": "jeringa",
+          "audioId": "njongo"
+        },
+        {
+          "word": "njunga",
+          "meaning": "mediación",
+          "audioId": "njunga"
+        }
+      ]
+    },
+    {
+      "combination": "Ny",
+      "pronunciation": {
+        "es": "sonido palatal nasal similar a la ñ española",
+        "en": "palatal nasal sound similar to Spanish ñ",
+        "fr": "son nasal palatal comme ñ espagnol"
+      },
+      "examples": [
+        {
+          "word": "nyanda",
+          "meaning": "uña",
+          "audioId": "ny_a_nda"
+        },
+        {
+          "word": "nyândâ",
+          "meaning": "cebolla",
+          "audioId": "ny_a_nd_a_"
+        },
+        {
+          "word": "nyele",
+          "meaning": "ostra",
+          "audioId": "nyele"
+        },
+        {
+          "word": "nyēlēli",
+          "meaning": "estrella",
+          "audioId": "ny_e_l_e_li"
+        },
+        {
+          "word": "nyilo",
+          "meaning": "áncora",
+          "audioId": "nyilo"
+        }
+      ]
+    }
+  ],
+  "combinationNote": {
+    "es": "Para acertar con el verdadero sonido de estas combinaciones se hace casi necesaria la viva voz sigiendo esta regla muy sencilla en muchos de los casos: Considerar su primera consonante como muda. Figúremonos que la m y la n se llaman em, en, y luego que la e precedente desaparece; con esto tendremos ya un sonido obscuro como de um, un, algo nasal, articulándolo con la boca cerrada. A falta de ejemplo en nuestra lengua española, podemos valernos de la voz griega mna que se lee en el Sagrado Evangelio (Luc., XIX, 13, etc.), y tendremos un equivalente."
+  }
+}

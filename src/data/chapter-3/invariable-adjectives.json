@@ -1,0 +1,98 @@
+{
+  "sectionId": "invariable-adjectives",
+  "title": "Adjetivos Invariables",
+  "subtitle": "Formas fijas que no cambian",
+  "overview": "Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, sin experimentar cambio alguno en su única y simple forma, la que no conoce número, género ni clasificación.",
+  "adjectives": [
+    {
+      "bengaForm": "De",
+      "spanishMeaning": "Derecho, recto"
+    },
+    {
+      "bengaForm": "Tanana",
+      "spanishMeaning": "Blanco"
+    },
+    {
+      "bengaForm": "Huhamba",
+      "spanishMeaning": "Desnudo, descubierto"
+    },
+    {
+      "bengaForm": "Pala",
+      "spanishMeaning": "Relleno, atestado"
+    },
+    {
+      "bengaForm": "Nyévi",
+      "spanishMeaning": "Brillante, hermoso"
+    },
+    {
+      "bengaForm": "Pivi",
+      "spanishMeaning": "Espeso, denso"
+    },
+    {
+      "bengaForm": "Péki Péki",
+      "spanishMeaning": "Perpetuo, constante"
+    },
+    {
+      "bengaForm": "Potapota",
+      "spanishMeaning": "Áspero, tosco"
+    },
+    {
+      "bengaForm": "Pojaengo",
+      "spanishMeaning": "Anticuado, viejo"
+    },
+    {
+      "bengaForm": "Bokolo",
+      "spanishMeaning": "Duro, difícil, riguroso"
+    },
+    {
+      "bengaForm": "Veivei",
+      "spanishMeaning": "Rojo, encarnado"
+    },
+    {
+      "bengaForm": "Kopia",
+      "spanishMeaning": "Prieto, avaro"
+    },
+    {
+      "bengaForm": "Ukuge",
+      "spanishMeaning": "Pobre, necesitado"
+    },
+    {
+      "bengaForm": "Poso",
+      "spanishMeaning": "Superior, sobre todo"
+    },
+    {
+      "bengaForm": "Kena",
+      "spanishMeaning": "De tamaño extraordinario"
+    },
+    {
+      "bengaForm": "Pékejomu",
+      "spanishMeaning": "Eterno, sin fin"
+    },
+    {
+      "bengaForm": "Púlálápálálá",
+      "spanishMeaning": "Veloz, con delicadeza"
+    },
+    {
+      "bengaForm": "Tándalánda",
+      "spanishMeaning": "Peculiar, escogido"
+    }
+  ],
+  "examples": [
+    {
+      "bengaSentence": "Bokolo bokolo",
+      "spanishTranslation": "Muy duro, dificilísimo",
+      "explanation": "La repetición intensifica el significado"
+    },
+    {
+      "bengaSentence": "De de de",
+      "spanishTranslation": "Completamente recto",
+      "explanation": "Repeticción para enfatizar"
+    }
+  ],
+  "characteristics": [
+    "No cambian de forma según número, género o clasificación",
+    "Se usan tal como están con cualquier sustantivo",
+    "Algunas pueden repetirse para intensificar su significado",
+    "Ocupan la misma posición que los adjetivos variables en la frase"
+  ]
+}

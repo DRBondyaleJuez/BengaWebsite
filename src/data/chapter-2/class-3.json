@@ -1,0 +1,264 @@
+{
+  "classId": 3,
+  "title": "Tercera Clase",
+  "singularPrefix": "u-, mú-",
+  "pluralPrefix": "me-, mi-",
+  "pattern": {
+    "es": "Empieza con 'u' o 'mú' (singular) → 'me-' o 'mi-' (plural)"
+  },
+  "description": {
+    "es": "La tercera clase agrupa nombres que cambian a 'me' o 'mi' en plural, con patrones particulares según la vocal inicial."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos con prefijo 'u' (w-)",
+      "words": [
+        {
+          "singular": "woaha",
+          "plural": "meaha",
+          "meaning": "fuego",
+          "audioId": "woaha"
+        },
+        {
+          "singular": "woalani",
+          "plural": "mealani",
+          "meaning": "camino",
+          "audioId": "woalani"
+        },
+        {
+          "singular": "woanga",
+          "plural": "meanga",
+          "meaning": "lengua",
+          "audioId": "woanga"
+        },
+        {
+          "singular": "woango",
+          "plural": "meango",
+          "meaning": "género",
+          "audioId": "woango"
+        },
+        {
+          "singular": "wháki",
+          "plural": "meáki",
+          "meaning": "hoja",
+          "audioId": "whaki"
+        },
+        {
+          "singular": "whándá",
+          "plural": "meándá",
+          "meaning": "rama",
+          "audioId": "whanda"
+        },
+        {
+          "singular": "woendi",
+          "plural": "meendi",
+          "meaning": "hueso",
+          "audioId": "woendi"
+        },
+        {
+          "singular": "woedi",
+          "plural": "meedi",
+          "meaning": "sangre",
+          "audioId": "woedi"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos especiales",
+      "words": [
+        {
+          "singular": "woulubulu",
+          "plural": "meulubulu",
+          "meaning": "nido",
+          "audioId": "woulubulu"
+        },
+        {
+          "singular": "woúua",
+          "plural": "meúua",
+          "meaning": "madre",
+          "audioId": "wouua"
+        },
+        {
+          "singular": "wdámbé",
+          "plural": "medámbé",
+          "meaning": "padre",
+          "audioId": "wdambe"
+        },
+        {
+          "singular": "wdumbu",
+          "plural": "medumbu",
+          "meaning": "vientre",
+          "audioId": "wdumbu"
+        },
+        {
+          "singular": "waangano",
+          "plural": "meangano",
+          "meaning": "alumno",
+          "audioId": "waangano"
+        },
+        {
+          "singular": "waul",
+          "plural": "meaul",
+          "meaning": "esposo",
+          "audioId": "waul"
+        },
+        {
+          "singular": "whá",
+          "plural": "meá",
+          "meaning": "nariz",
+          "audioId": "wha"
+        },
+        {
+          "singular": "whéke",
+          "plural": "meéke",
+          "meaning": "estómago",
+          "audioId": "wheke"
+        },
+        {
+          "singular": "whéngé",
+          "plural": "meéngé",
+          "meaning": "brazo",
+          "audioId": "whenge"
+        },
+        {
+          "singular": "whiha",
+          "plural": "meiha",
+          "meaning": "pie",
+          "audioId": "whiha"
+        },
+        {
+          "singular": "whinganakano",
+          "plural": "meinganakano",
+          "meaning": "hermano",
+          "audioId": "whinganakano"
+        },
+        {
+          "singular": "whingi",
+          "plural": "meingi",
+          "meaning": "sobrino",
+          "audioId": "whingi"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos con prefijo 'mú-'",
+      "words": [
+        {
+          "singular": "múadi",
+          "plural": "miadi",
+          "meaning": "hijo",
+          "audioId": "muadi"
+        },
+        {
+          "singular": "muahi",
+          "plural": "miahi",
+          "meaning": "hermana",
+          "audioId": "muahi"
+        },
+        {
+          "singular": "múako",
+          "plural": "miako",
+          "meaning": "tío",
+          "audioId": "muako"
+        },
+        {
+          "singular": "maalika",
+          "plural": "mialika",
+          "meaning": "ángel",
+          "audioId": "maalika"
+        },
+        {
+          "singular": "maambo",
+          "plural": "miambo",
+          "meaning": "cosa",
+          "audioId": "maambo"
+        },
+        {
+          "singular": "maanga",
+          "plural": "mianga",
+          "meaning": "tarea",
+          "audioId": "maanga"
+        },
+        {
+          "singular": "muanjo",
+          "plural": "mianjo",
+          "meaning": "aldea",
+          "audioId": "muanjo"
+        },
+        {
+          "singular": "maemba",
+          "plural": "miemba",
+          "meaning": "miembro",
+          "audioId": "maemba"
+        },
+        {
+          "singular": "múéngi",
+          "plural": "miéngi",
+          "meaning": "hechicero",
+          "audioId": "muengi"
+        },
+        {
+          "singular": "muéñi",
+          "plural": "miéñi",
+          "meaning": "pájaro",
+          "audioId": "mueni"
+        },
+        {
+          "singular": "maidi",
+          "plural": "miidi",
+          "meaning": "arma",
+          "audioId": "maidi"
+        },
+        {
+          "singular": "maindi",
+          "plural": "miindi",
+          "meaning": "belleza",
+          "audioId": "maindi"
+        },
+        {
+          "singular": "maiya",
+          "plural": "miiya",
+          "meaning": "escándalo",
+          "audioId": "maiya"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular con u-",
+      "article": "u-, w-",
+      "adjective": "-u, -o",
+      "example": "u-aha u-nene"
+    },
+    {
+      "label": "Singular con mú-",
+      "article": "mú-",
+      "adjective": "-u, -i",
+      "example": "mú-adi mú-nene"
+    },
+    {
+      "label": "Plural",
+      "article": "me-, mi-",
+      "adjective": "-me, -mi",
+      "example": "me-aha me-nene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Dos Raíces Singulares",
+      "description": "Esta clase tiene tanto sustantivos que comienzan con 'u' como con 'mú', lo que la hace única"
+    },
+    {
+      "title": "Cambio Bifurcado",
+      "description": "Ambas raíces convergen en 'me' o 'mi' en plural, creando una clase nominal coherente"
+    },
+    {
+      "title": "Palabras de Familia",
+      "description": "Muchos términos de parentesco pertenecen a esta clase"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Observa cómo la pronunciación de 'u' como 'w' es importante en esta clase. La tercera clase es especialmente importante para vocabulario de familia y naturaleza."
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "classId": 2,
+  "title": "Segunda Clase",
+  "singularPrefix": "i-, di-",
+  "pluralPrefix": "ma-",
+  "pattern": {
+    "es": "Empieza con 'i' o 'di' (singular) → 'ma-' (plural)"
+  },
+  "description": {
+    "es": "La segunda clase es la más numerosa, agrupando nombres que cambian a 'ma' en plural. Sus ejemplos abundan en la lengua Benga."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos con prefijo 'i'",
+      "words": [
+        {
+          "singular": "ibaké",
+          "plural": "mabaké",
+          "meaning": "cuidado",
+          "audioId": "ibake"
+        },
+        {
+          "singular": "ibala",
+          "plural": "mabala",
+          "meaning": "palabra",
+          "audioId": "ibala"
+        },
+        {
+          "singular": "ibálu",
+          "plural": "mabálu",
+          "meaning": "fuerza",
+          "audioId": "ibalu"
+        },
+        {
+          "singular": "ibánga",
+          "plural": "mabánga",
+          "meaning": "habitación",
+          "audioId": "ibanga"
+        },
+        {
+          "singular": "ibátá",
+          "plural": "mabátá",
+          "meaning": "estera",
+          "audioId": "ibata"
+        },
+        {
+          "singular": "ibeku",
+          "plural": "mabeku",
+          "meaning": "vejez",
+          "audioId": "ibeku"
+        },
+        {
+          "singular": "ibende",
+          "plural": "mabende",
+          "meaning": "pecho",
+          "audioId": "ibende"
+        },
+        {
+          "singular": "ibéke",
+          "plural": "mabéke",
+          "meaning": "alegría",
+          "audioId": "ibeke"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos continuados",
+      "words": [
+        {
+          "singular": "ikadu",
+          "plural": "makadu",
+          "meaning": "asunto",
+          "audioId": "ikadu"
+        },
+        {
+          "singular": "ilale",
+          "plural": "malale",
+          "meaning": "mano",
+          "audioId": "ilale"
+        },
+        {
+          "singular": "ibomba",
+          "plural": "mabomba",
+          "meaning": "corazón",
+          "audioId": "ibomba"
+        },
+        {
+          "singular": "ihana",
+          "plural": "mahana",
+          "meaning": "mañana",
+          "audioId": "ihana"
+        },
+        {
+          "singular": "ihonga",
+          "plural": "mahonga",
+          "meaning": "vergüenza",
+          "audioId": "ihonga"
+        },
+        {
+          "singular": "ihuhu",
+          "plural": "mahuhu",
+          "meaning": "enfermedad",
+          "audioId": "ihuhu"
+        },
+        {
+          "singular": "ihuku",
+          "plural": "mahuku",
+          "meaning": "daño",
+          "audioId": "ihuku"
+        },
+        {
+          "singular": "ijané",
+          "plural": "majané",
+          "meaning": "voz",
+          "audioId": "ijane"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos diversos",
+      "words": [
+        {
+          "singular": "ikabo",
+          "plural": "makabo",
+          "meaning": "tortuga",
+          "audioId": "ikabo"
+        },
+        {
+          "singular": "ikalio",
+          "plural": "makalio",
+          "meaning": "campo",
+          "audioId": "ikalio"
+        },
+        {
+          "singular": "ikana",
+          "plural": "makana",
+          "meaning": "cesta",
+          "audioId": "ikana"
+        },
+        {
+          "singular": "ikelenge",
+          "plural": "makelenge",
+          "meaning": "flor",
+          "audioId": "ikelenge"
+        },
+        {
+          "singular": "ikélúne",
+          "plural": "makélúne",
+          "meaning": "muerte",
+          "audioId": "ikelune"
+        },
+        {
+          "singular": "ikílúkú",
+          "plural": "makílúkú",
+          "meaning": "grandeza",
+          "audioId": "ikiluku"
+        },
+        {
+          "singular": "ikogo",
+          "plural": "makogo",
+          "meaning": "pozo",
+          "audioId": "ikogo"
+        },
+        {
+          "singular": "ilúkú",
+          "plural": "malúkú",
+          "meaning": "tristeza",
+          "audioId": "iluku"
+        },
+        {
+          "singular": "itinde",
+          "plural": "matinde",
+          "meaning": "oreja",
+          "audioId": "itinde"
+        },
+        {
+          "singular": "iovenda",
+          "plural": "maovenda",
+          "meaning": "puerta",
+          "audioId": "iovenda"
+        },
+        {
+          "singular": "ire",
+          "plural": "mare",
+          "meaning": "boca",
+          "audioId": "ire"
+        },
+        {
+          "singular": "ibobélé",
+          "plural": "mabobélé",
+          "meaning": "amistad",
+          "audioId": "ibobele"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular",
+      "article": "i-, di-",
+      "adjective": "-i, -a",
+      "example": "i-baké i-nene"
+    },
+    {
+      "label": "Plural",
+      "article": "ma-",
+      "adjective": "-ma, -me",
+      "example": "ma-baké ma-nene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Clase Más Numerosa",
+      "description": "La segunda clase contiene la mayor cantidad de sustantivos en la lengua Benga"
+    },
+    {
+      "title": "Patrón ma-",
+      "description": "Independientemente de si el singular comienza con 'i' o 'di', el plural siempre cambia a 'ma'"
+    },
+    {
+      "title": "Importancia Gramatical",
+      "description": "La mayoría de derivados nominales terminan en esta clase, haciéndola fundamental para la formación de vocabulario"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Esta es la clase más importante para dominar. Muchos de estos sustantivos son palabras comunes y esenciales. Practica la transformación i/di → ma hasta que sea automática."
+  }
+}

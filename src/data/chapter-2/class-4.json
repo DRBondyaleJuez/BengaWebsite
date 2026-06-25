@@ -1,0 +1,133 @@
+{
+  "classId": 4,
+  "title": "Cuarta Clase",
+  "singularPrefix": "bo-, ba-",
+  "pluralPrefix": "mi-",
+  "pattern": {
+    "es": "Empieza con 'bo' o 'ba' (singular) → 'mi-' (plural)"
+  },
+  "description": {
+    "es": "La cuarta clase agrupa nombres que comienzan con 'bo' o 'ba' en singular, transformándose a 'mi' en plural."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos con prefijo 'bo'",
+      "words": [
+        {
+          "singular": "bobako",
+          "plural": "mibako",
+          "meaning": "vaina",
+          "audioId": "bobako"
+        },
+        {
+          "singular": "bobábu",
+          "plural": "mibábu",
+          "meaning": "vestido",
+          "audioId": "bobabu"
+        },
+        {
+          "singular": "boho",
+          "plural": "miho",
+          "meaning": "vasija",
+          "audioId": "boho"
+        },
+        {
+          "singular": "bojona",
+          "plural": "mijona",
+          "meaning": "regalo",
+          "audioId": "bojona"
+        },
+        {
+          "singular": "bongo",
+          "plural": "mingo",
+          "meaning": "tambor",
+          "audioId": "bongo"
+        },
+        {
+          "singular": "boyamo",
+          "plural": "miyamo",
+          "meaning": "provisión",
+          "audioId": "boyamo"
+        },
+        {
+          "singular": "bova",
+          "plural": "miva",
+          "meaning": "piel",
+          "audioId": "bova"
+        },
+        {
+          "singular": "boká",
+          "plural": "miká",
+          "meaning": "fuerza",
+          "audioId": "boka"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos con prefijo 'ba'",
+      "words": [
+        {
+          "singular": "baalo",
+          "plural": "mialo",
+          "meaning": "balanza",
+          "audioId": "baalo"
+        },
+        {
+          "singular": "baanga",
+          "plural": "mianga",
+          "meaning": "tormenta",
+          "audioId": "baanga"
+        },
+        {
+          "singular": "baayé",
+          "plural": "miayé",
+          "meaning": "día",
+          "audioId": "baaye"
+        },
+        {
+          "singular": "bae",
+          "plural": "mie",
+          "meaning": "asiento",
+          "audioId": "bae"
+        },
+        {
+          "singular": "baéka",
+          "plural": "miéka",
+          "meaning": "semana",
+          "audioId": "baeka"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular",
+      "article": "bo-, ba-",
+      "adjective": "-bo, -ba",
+      "example": "bo-kako bo-nene"
+    },
+    {
+      "label": "Plural",
+      "article": "mi-",
+      "adjective": "-mi, -me",
+      "example": "mi-kako mi-nene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Patrón mi- Común",
+      "description": "Aunque esta clase comienza con dos prefijos diferentes (bo-, ba-), ambos convergen a 'mi' en plural"
+    },
+    {
+      "title": "Sustantivos Concretos",
+      "description": "Esta clase contiene muchos sustantivos para objetos y cosas tangibles"
+    },
+    {
+      "title": "Cambio Simple",
+      "description": "El cambio es relativamente predecible una vez que se reconoce el prefijo singular"
+    }
+  ],
+  "practiceNotes": {
+    "es": "La cuarta clase es más pequeña que la segunda, pero importante. Memoriza los ejemplos comunes como bo-kako (vaina) y bo-ho (vasija)."
+  }
+}

@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+// Global styles
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include body-text;
+  background-color: $color-background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Global link styles
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-primary-dark;
+    text-decoration: underline;
+  }
+}
+
+// Selection color
+::selection {
+  background-color: rgba($color-primary, 0.2);
+  color: $color-text-primary;
+}
+
+// Global focus visible
+*:focus-visible {
+  outline: 2px solid $color-primary;
+  outline-offset: 2px;
+}

@@ -1,0 +1,220 @@
+{
+  "sectionId": "verbal-nouns",
+  "title": "Nombres Verbales",
+  "subtitle": "Sustantivos derivados de acciones: formas de acción, agentes y adverbios de manera",
+  "introduction": {
+    "es": "Los nombres verbales en Benga se derivan de verbos y expresan conceptos relacionados con la acción. Existen tres tipos principales, cada uno con sus propias características de formación y concordancia."
+  },
+  "verbalNounTypes": [
+    {
+      "typeId": 1,
+      "type": "Nombres Abstractos de Acción",
+      "prefix": "i-",
+      "description": {
+        "es": "Expresan la acción en abstracto o el nombre del acción. Se forman anteponiendo 'i-' al imperativo verbal."
+      },
+      "formation": {
+        "es": "Verbo imperativo + prefijo i- = nombre abstracto"
+      },
+      "examples": [
+        {
+          "imperative": "ánde",
+          "nominalForm": "iánde",
+          "meaning": "canto, acción de cantar",
+          "audioId": "iande"
+        },
+        {
+          "imperative": "bina",
+          "nominalForm": "ibina",
+          "meaning": "baile, acción de bailar",
+          "audioId": "ibina"
+        },
+        {
+          "imperative": "kala",
+          "nominalForm": "ikala",
+          "meaning": "juego, acción de jugar",
+          "audioId": "ikala"
+        },
+        {
+          "imperative": "langa",
+          "nominalForm": "ilanga",
+          "meaning": "risa, acción de reír",
+          "audioId": "ilanga"
+        },
+        {
+          "imperative": "longa",
+          "nominalForm": "ilonga",
+          "meaning": "marcha, acción de caminar",
+          "audioId": "ilonga"
+        },
+        {
+          "imperative": "lende",
+          "nominalForm": "ilende",
+          "meaning": "vuelo, acción de volar",
+          "audioId": "ilende"
+        },
+        {
+          "imperative": "kalo",
+          "nominalForm": "ikalo",
+          "meaning": "paso, acción de pisar",
+          "audioId": "ikalo"
+        },
+        {
+          "imperative": "janja",
+          "nominalForm": "ijanja",
+          "meaning": "salto, acción de saltar",
+          "audioId": "ijanja"
+        }
+      ],
+      "concordancePattern": {
+        "class": 2,
+        "singular": "i-",
+        "plural": "ma-",
+        "example": "ilanga (una risa) → malanga (risas)"
+      },
+      "usage": {
+        "es": "Se usan cuando necesitas referirte a la acción como cosa o concepto. Por ejemplo: 'El ilanga les traía alegría' (El baile/la danza les traía alegría)"
+      }
+    },
+    {
+      "typeId": 2,
+      "type": "Nombres de Agente (Acción Continuante)",
+      "prefix": "u-",
+      "description": {
+        "es": "Expresan el agente o la persona que ejecuta la acción, o la acción en progreso. Se forman anteponiendo 'u-' al imperativo."
+      },
+      "formation": {
+        "es": "Verbo imperativo + prefijo u- = agente/actor"
+      },
+      "examples": [
+        {
+          "imperative": "longi",
+          "nominalForm": "ulongi",
+          "meaning": "caminante, el que camina",
+          "audioId": "ulongi"
+        },
+        {
+          "imperative": "langi",
+          "nominalForm": "ulangi",
+          "meaning": "bailarín, el que baila",
+          "audioId": "ulangi"
+        },
+        {
+          "imperative": "kali",
+          "nominalForm": "ukali",
+          "meaning": "el que juega",
+          "audioId": "ukali"
+        },
+        {
+          "imperative": "lendi",
+          "nominalForm": "ulendi",
+          "meaning": "volador, el que vuela",
+          "audioId": "ulendi"
+        }
+      ],
+      "concordancePattern": {
+        "class": 3,
+        "singular": "u-",
+        "plural": "me-",
+        "example": "ulongi (un caminante) → melongi (caminantes)"
+      },
+      "usage": {
+        "es": "Se usan para identificar a la persona o cosa que realiza la acción. Típicamente se refieren a seres animados. Por ejemplo: 'El ulongi llegó al pueblo' (El caminante llegó al pueblo)"
+      }
+    },
+    {
+      "typeId": 3,
+      "type": "Nombres de Manera (Adverbios Nominalizados)",
+      "suffix": "-di",
+      "description": {
+        "es": "Expresan la manera o modo en que se realiza la acción. Se forman anteponiendo el prefijo de clase y añadiendo el sufijo '-di'."
+      },
+      "formation": {
+        "es": "Prefijo de clase + verbo imperativo + sufijo -di = modo de acción"
+      },
+      "examples": [
+        {
+          "imperative": "longa",
+          "nominalForm": "ilongadi",
+          "meaning": "manera de caminar, la forma en que se camina",
+          "audioId": "ilongadi"
+        },
+        {
+          "imperative": "langa",
+          "nominalForm": "ilangadi",
+          "meaning": "manera de reír",
+          "audioId": "ilangadi"
+        },
+        {
+          "imperative": "kala",
+          "nominalForm": "ikaladi",
+          "meaning": "manera de jugar",
+          "audioId": "ikaladi"
+        }
+      ],
+      "concordancePattern": {
+        "class": 2,
+        "singular": "i-...-di",
+        "plural": "ma-...-di",
+        "example": "ilongadi (manera de caminar) → malongadi (maneras de caminar)"
+      },
+      "usage": {
+        "es": "Se usan para describir cómo se ejecuta una acción. Actúan como adverbios nominalizados. Por ejemplo: 'Su ilongadi era elegante' (Su manera de caminar era elegante)"
+      }
+    }
+  ],
+  "comparativeAnalysis": [
+    {
+      "characteristic": "Prefijo",
+      "abstractNouns": "i-",
+      "agentNouns": "u-",
+      "mannerNouns": "i-...-di"
+    },
+    {
+      "characteristic": "Clase Nominal",
+      "abstractNouns": "Clase 2 (i/di → ma)",
+      "agentNouns": "Clase 3 (u → me/mi)",
+      "mannerNouns": "Clase 2 (i/di → ma)"
+    },
+    {
+      "characteristic": "Significado Central",
+      "abstractNouns": "Concepto de la acción",
+      "agentNouns": "Persona/cosa que actúa",
+      "mannerNouns": "Forma/modo de actuar"
+    },
+    {
+      "characteristic": "Frecuencia",
+      "abstractNouns": "Muy común",
+      "agentNouns": "Común",
+      "mannerNouns": "Menos común, más literario"
+    }
+  ],
+  "derivationPatterns": {
+    "es": "Muchos verbos benga tienen un imperativo base. De este, se pueden derivar hasta tres nombres verbales distintos usando los prefijos i-, u- y la combinación i-...-di. Esta es una característica poderosa del sistema de derivación nominal en Benga."
+  },
+  "comprehensiveExample": {
+    "verbBase": "longa (caminar)",
+    "infinitive": "u-longa (inf.)",
+    "imperative": "longa (¡camina!)",
+    "derivations": [
+      {
+        "form": "ilonga",
+        "meaning": "viaje, acción de caminar",
+        "type": "Nombre abstracto"
+      },
+      {
+        "form": "ulongi",
+        "meaning": "viajero, caminante",
+        "type": "Nombre de agente"
+      },
+      {
+        "form": "ilongadi",
+        "meaning": "manera de viajar, forma characteristic de andar",
+        "type": "Nombre de manera"
+      }
+    ]
+  },
+  "practiceNotes": {
+    "es": "Los nombres verbales son fundamentales para expandir el vocabulario benga. Una vez tengas control sobre los sistemas de prefijos verbales benga, podrás derivar muchas palabras relacionadas de un solo radical verbal. Practica la identificación de las formas verbales base en textos y sus derivaciones nominales correspondientes."
+  }
+}

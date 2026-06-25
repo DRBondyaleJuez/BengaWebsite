@@ -1,0 +1,171 @@
+{
+  "sectionId": "variable-adjectives",
+  "title": "Adjetivos Variables",
+  "subtitle": "Flexión según clase nominal",
+  "overview": "Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en clasificación con los nombres que califican.",
+  "classes": [
+    {
+      "classId": 1,
+      "classType": "Primera Clase",
+      "nounExample": "Epokolo",
+      "adjectiveExample": "eyamu",
+      "singular": {
+        "bengaForm": "Epokolo eyamu",
+        "spanishTranslation": "Sombrero bueno"
+      },
+      "plural": {
+        "bengaForm": "Bepokolo beyamu",
+        "spanishTranslation": "Sombreros buenos"
+      }
+    },
+    {
+      "classId": 2,
+      "classType": "Segunda Clase",
+      "nounExample": "Ibongo",
+      "adjectiveExample": "iyamu",
+      "singular": {
+        "bengaForm": "Ibongo iyamu",
+        "spanishTranslation": "Desembarcadero bueno"
+      },
+      "plural": {
+        "bengaForm": "Mabongo maiyamu",
+        "spanishTranslation": "Desembarcaderos buenos"
+      }
+    },
+    {
+      "classId": 3,
+      "classType": "Tercera Clase",
+      "nounExample": "Ubáki",
+      "adjectiveExample": "uyamu",
+      "singular": {
+        "bengaForm": "Ubáki uyamu",
+        "spanishTranslation": "Hacha buena"
+      },
+      "plural": {
+        "bengaForm": "Mebáki meyamu",
+        "spanishTranslation": "Hachas buenas"
+      }
+    },
+    {
+      "classId": 4,
+      "classType": "Cuarta Clase",
+      "nounExample": "Boho",
+      "adjectiveExample": "boyamu",
+      "singular": {
+        "bengaForm": "Boho boyamu",
+        "spanishTranslation": "Cara buena"
+      },
+      "plural": {
+        "bengaForm": "Mioho meyamu",
+        "spanishTranslation": "Caras buenas"
+      }
+    },
+    {
+      "classId": 5,
+      "classType": "Quinta Clase",
+      "nounExample": "Moto",
+      "adjectiveExample": "meyamu",
+      "singular": {
+        "bengaForm": "Moto meyamu",
+        "spanishTranslation": "Persona buena"
+      },
+      "plural": {
+        "bengaForm": "Bato baryamu",
+        "spanishTranslation": "Gente buena"
+      }
+    },
+    {
+      "classId": 6,
+      "classType": "Sexta Clase",
+      "nounExample": "Vitua",
+      "adjectiveExample": "viyamu",
+      "singular": {
+        "bengaForm": "Vitua viyamu",
+        "spanishTranslation": "Candela buena"
+      },
+      "plural": {
+        "bengaForm": "Litua loyamu",
+        "spanishTranslation": "Candelas buenas"
+      }
+    },
+    {
+      "classId": 7,
+      "classType": "Séptima Clase",
+      "nounExample": "Ndabo",
+      "adjectiveExample": "eyamu",
+      "singular": {
+        "bengaForm": "Ndabo eyamu",
+        "spanishTranslation": "Casa buena"
+      },
+      "plural": {
+        "bengaForm": "Ndabo iyamu",
+        "spanishTranslation": "Casas buenas"
+      }
+    }
+  ],
+  "commonAdjectivesByMeaning": [
+    {
+      "meaning": "Malo",
+      "bengaRoot": "babe",
+      "inflections": {
+        "class1_sg": "Ekái ebabe",
+        "class1_pl": "Bekái bebabe",
+        "class2_sg": "Ilutu ibabe",
+        "class2_pl": "Malutu mababe",
+        "class3_sg": "Uté ube",
+        "class3_pl": "Meté mebe",
+        "class4_sg": "Bova bobe",
+        "class4_pl": "Miova mebe",
+        "class5_sg": "Mondi ube",
+        "class5_pl": "Bondi babe",
+        "class6_sg": "Viho vibe",
+        "class6_pl": "Liho lobe",
+        "class7_sg": "Ndo ebe",
+        "class7_pl": "Ndo ibe"
+      }
+    },
+    {
+      "meaning": "Grande",
+      "bengaRoot": "bonene",
+      "inflections": {
+        "class1_sg": "Hoja Ebe",
+        "class1_pl": "Plural Benene",
+        "class2_sg": "Humo Inené",
+        "class2_pl": "Plural Manené",
+        "class3_sg": "Estatura Unene",
+        "class3_pl": "Plural Menené",
+        "class4_sg": "Don Boniné",
+        "class4_pl": "Plural Meniné",
+        "class5_sg": "Compás Ubene",
+        "class5_pl": "Plural Danene",
+        "class6_sg": "Rio Vinené",
+        "class6_pl": "Plural Lonené",
+        "class7_sg": "Cicatriz Enéni",
+        "class7_pl": "Plural Ienéni"
+      }
+    },
+    {
+      "meaning": "Pequeño",
+      "bengaRoot": "bohole",
+      "inflections": {
+        "class1_sg": "Ekái Ebe",
+        "class1_pl": "Bekái Behile",
+        "note": "Continúa con patrón similar para las 7 clases"
+      }
+    },
+    {
+      "meaning": "Negro",
+      "bengaRoot": "bovindo",
+      "inflections": {
+        "class1_sg": "Ekái Evindo",
+        "class1_pl": "Bekái Bevindo",
+        "note": "Continúa con patrón similar para las 7 clases"
+      }
+    }
+  ],
+  "notes": [
+    "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase",
+    "El adjetivo 'bamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",
+    "La concordancia es obligatoria en la lengua Benga"
+  ]
+}

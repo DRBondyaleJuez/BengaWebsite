@@ -1,0 +1,523 @@
+{
+  "classId": 7,
+  "title": "Séptima Clase",
+  "singularPrefix": "Invariable",
+  "pluralPrefix": "Invariable",
+  "pattern": {
+    "es": "Forma singular y plural idénticas"
+  },
+  "description": {
+    "es": "La séptima clase contiene sustantivos invariables que mantienen la misma forma en singular y plural. Es la clase más numerosa por cantidad de ejemplos, aunque conceptualmente representa una ausencia de cambio."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos que comienzan con 'f'",
+      "words": [
+        {
+          "singular": "fala",
+          "plural": "fala",
+          "meaning": "francés",
+          "audioId": "fala"
+        },
+        {
+          "singular": "fato",
+          "plural": "fato",
+          "meaning": "hecho",
+          "audioId": "fato"
+        },
+        {
+          "singular": "fula",
+          "plural": "fula",
+          "meaning": "fulano",
+          "audioId": "fula"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos que comienzan con 'd'",
+      "words": [
+        {
+          "singular": "dyüté",
+          "plural": "dyüté",
+          "meaning": "verdad",
+          "audioId": "dyute"
+        },
+        {
+          "singular": "dítá",
+          "plural": "dítá",
+          "meaning": "dinero",
+          "audioId": "dita"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos que comienzan con 'k'",
+      "words": [
+        {
+          "singular": "lako",
+          "plural": "lako",
+          "meaning": "parte",
+          "audioId": "lako"
+        },
+        {
+          "singular": "hapi",
+          "plural": "hapi",
+          "meaning": "cosa",
+          "audioId": "hapi"
+        },
+        {
+          "singular": "hoñe",
+          "plural": "hoñe",
+          "meaning": "noche",
+          "audioId": "hone"
+        },
+        {
+          "singular": "jangá",
+          "plural": "jangá",
+          "meaning": "libro",
+          "audioId": "janga"
+        },
+        {
+          "singular": "jonda",
+          "plural": "jonda",
+          "meaning": "problema",
+          "audioId": "jonda"
+        },
+        {
+          "singular": "jumba",
+          "plural": "jumba",
+          "meaning": "habitación",
+          "audioId": "jumba"
+        },
+        {
+          "singular": "kabala",
+          "plural": "kabala",
+          "meaning": "costumbre",
+          "audioId": "kabala"
+        },
+        {
+          "singular": "kata",
+          "plural": "kata",
+          "meaning": "como",
+          "audioId": "kata"
+        },
+        {
+          "singular": "kono",
+          "plural": "kono",
+          "meaning": "especie",
+          "audioId": "kono"
+        },
+        {
+          "singular": "kuma",
+          "plural": "kuma",
+          "meaning": "guerra",
+          "audioId": "kuma"
+        },
+        {
+          "singular": "máká",
+          "plural": "máká",
+          "meaning": "dinero",
+          "audioId": "maka"
+        },
+        {
+          "singular": "pago",
+          "plural": "pago",
+          "meaning": "lugar",
+          "audioId": "pago"
+        },
+        {
+          "singular": "paha",
+          "plural": "paha",
+          "meaning": "vez",
+          "audioId": "paha"
+        },
+        {
+          "singular": "panga",
+          "plural": "panga",
+          "meaning": "asado",
+          "audioId": "panga"
+        },
+        {
+          "singular": "tagulu",
+          "plural": "tagulu",
+          "meaning": "canasta",
+          "audioId": "tagulu"
+        },
+        {
+          "singular": "tina",
+          "plural": "tina",
+          "meaning": "leña",
+          "audioId": "tina"
+        },
+        {
+          "singular": "tito",
+          "plural": "tito",
+          "meaning": "hormiga",
+          "audioId": "tito"
+        },
+        {
+          "singular": "toko",
+          "plural": "toko",
+          "meaning": "árbol",
+          "audioId": "toko"
+        },
+        {
+          "singular": "tolongo",
+          "plural": "tolongo",
+          "meaning": "hierba",
+          "audioId": "tolongo"
+        },
+        {
+          "singular": "tombo",
+          "plural": "tombo",
+          "meaning": "soga",
+          "audioId": "tombo"
+        },
+        {
+          "singular": "tongo",
+          "plural": "tongo",
+          "meaning": "peso",
+          "audioId": "tongo"
+        },
+        {
+          "singular": "tudi",
+          "plural": "tudi",
+          "meaning": "estiercol",
+          "audioId": "tudi"
+        },
+        {
+          "singular": "tuma",
+          "plural": "tuma",
+          "meaning": "trabajo",
+          "audioId": "tuma"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos que comienzan con 'n'",
+      "words": [
+        {
+          "singular": "ndabo",
+          "plural": "ndabo",
+          "meaning": "deuda",
+          "audioId": "ndabo"
+        },
+        {
+          "singular": "ndaga",
+          "plural": "ndaga",
+          "meaning": "caballo",
+          "audioId": "ndaga"
+        },
+        {
+          "singular": "ndátá",
+          "plural": "ndátá",
+          "meaning": "pueblo",
+          "audioId": "ndata"
+        },
+        {
+          "singular": "ndembo",
+          "plural": "ndembo",
+          "meaning": "pez",
+          "audioId": "ndembo"
+        },
+        {
+          "singular": "ndboa",
+          "plural": "ndboa",
+          "meaning": "serpiente",
+          "audioId": "ndboa"
+        },
+        {
+          "singular": "ndomina",
+          "plural": "ndomina",
+          "meaning": "criado",
+          "audioId": "ndomina"
+        },
+        {
+          "singular": "ndonga",
+          "plural": "ndonga",
+          "meaning": "mina",
+          "audioId": "ndonga"
+        },
+        {
+          "singular": "ndúmgo",
+          "plural": "ndúmgo",
+          "meaning": "tronco",
+          "audioId": "ndumgo"
+        },
+        {
+          "singular": "ndumba",
+          "plural": "ndumba",
+          "meaning": "barriga",
+          "audioId": "ndumba"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos que comienzan con 'p'",
+      "words": [
+        {
+          "singular": "penge",
+          "plural": "penge",
+          "meaning": "lienzo",
+          "audioId": "penge"
+        },
+        {
+          "singular": "pani",
+          "plural": "pani",
+          "meaning": "tela",
+          "audioId": "pani"
+        },
+        {
+          "singular": "paro",
+          "plural": "paro",
+          "meaning": "pez",
+          "audioId": "paro"
+        },
+        {
+          "singular": "pándá",
+          "plural": "pándá",
+          "meaning": "puente",
+          "audioId": "panda"
+        },
+        {
+          "singular": "penda",
+          "plural": "penda",
+          "meaning": "amor",
+          "audioId": "penda"
+        },
+        {
+          "singular": "pembé",
+          "plural": "pembé",
+          "meaning": "tiza",
+          "audioId": "pembe"
+        },
+        {
+          "singular": "pika",
+          "plural": "pika",
+          "meaning": "orgullo",
+          "audioId": "pika"
+        },
+        {
+          "singular": "pimba",
+          "plural": "pimba",
+          "meaning": "torta",
+          "audioId": "pimba"
+        },
+        {
+          "singular": "pita",
+          "plural": "pita",
+          "meaning": "cuerda",
+          "audioId": "pita"
+        }
+      ]
+    },
+    {
+      "group": "Sustantivos con otras iniciales",
+      "words": [
+        {
+          "singular": "dogo",
+          "plural": "dogo",
+          "meaning": "perro",
+          "audioId": "dogo"
+        },
+        {
+          "singular": "poke",
+          "plural": "poke",
+          "meaning": "gallo",
+          "audioId": "poke"
+        },
+        {
+          "singular": "poti",
+          "plural": "poti",
+          "meaning": "correo",
+          "audioId": "poti"
+        },
+        {
+          "singular": "pudi",
+          "plural": "pudi",
+          "meaning": "polvo",
+          "audioId": "pudi"
+        },
+        {
+          "singular": "páisi",
+          "plural": "páisi",
+          "meaning": "país",
+          "audioId": "paisi"
+        },
+        {
+          "singular": "sago",
+          "plural": "sago",
+          "meaning": "sal",
+          "audioId": "sago"
+        },
+        {
+          "singular": "sango",
+          "plural": "sango",
+          "meaning": "sangre",
+          "audioId": "sango"
+        },
+        {
+          "singular": "senge",
+          "plural": "senge",
+          "meaning": "fuerza",
+          "audioId": "senge"
+        },
+        {
+          "singular": "sikulu",
+          "plural": "sikulu",
+          "meaning": "escuela",
+          "audioId": "sikulu"
+        },
+        {
+          "singular": "nenge",
+          "plural": "nenge",
+          "meaning": "demonio",
+          "audioId": "nenge"
+        },
+        {
+          "singular": "ngabo",
+          "plural": "ngabo",
+          "meaning": "médico",
+          "audioId": "ngabo"
+        },
+        {
+          "singular": "ngaho",
+          "plural": "ngaho",
+          "meaning": "jefe",
+          "audioId": "ngaho"
+        },
+        {
+          "singular": "ngama",
+          "plural": "ngama",
+          "meaning": "tigre",
+          "audioId": "ngama"
+        },
+        {
+          "singular": "ngambi",
+          "plural": "ngambi",
+          "meaning": "esclavo",
+          "audioId": "ngambi"
+        },
+        {
+          "singular": "ngando",
+          "plural": "ngando",
+          "meaning": "caimán",
+          "audioId": "ngando"
+        },
+        {
+          "singular": "ngandi",
+          "plural": "ngandi",
+          "meaning": "regalo",
+          "audioId": "ngandi"
+        },
+        {
+          "singular": "ngani",
+          "plural": "ngani",
+          "meaning": "espíritu",
+          "audioId": "ngani"
+        },
+        {
+          "singular": "nyega",
+          "plural": "nyega",
+          "meaning": "negro",
+          "audioId": "nyega"
+        },
+        {
+          "singular": "ngúla",
+          "plural": "ngúla",
+          "meaning": "rojo",
+          "audioId": "ngula"
+        },
+        {
+          "singular": "ngúmbi",
+          "plural": "ngúmbi",
+          "meaning": "blanco",
+          "audioId": "ngumbi"
+        },
+        {
+          "singular": "ngúnda",
+          "plural": "ngúnda",
+          "meaning": "malo",
+          "audioId": "ngunda"
+        },
+        {
+          "singular": "ngúsi",
+          "plural": "ngúsi",
+          "meaning": "cerdo",
+          "audioId": "ngusi"
+        },
+        {
+          "singular": "agejangeja",
+          "plural": "agejangeja",
+          "meaning": "tontería",
+          "audioId": "agejangeja"
+        },
+        {
+          "singular": "ngenga",
+          "plural": "ngenga",
+          "meaning": "vejez",
+          "audioId": "ngenga"
+        },
+        {
+          "singular": "ngomba",
+          "plural": "ngomba",
+          "meaning": "plátano",
+          "audioId": "ngomba"
+        },
+        {
+          "singular": "ngonga",
+          "plural": "ngonga",
+          "meaning": "mosca",
+          "audioId": "ngonga"
+        },
+        {
+          "singular": "ngúbu",
+          "plural": "ngúbu",
+          "meaning": "búfalo",
+          "audioId": "ngubu"
+        },
+        {
+          "singular": "riguudi",
+          "plural": "riguudi",
+          "meaning": "ardilla",
+          "audioId": "riguudi"
+        },
+        {
+          "singular": "ngúmú",
+          "plural": "ngúmú",
+          "meaning": "mono",
+          "audioId": "ngumu"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular y Plural",
+      "article": "sin cambio",
+      "adjective": "sin cambio",
+      "example": "fala fala (ambos singular y plural)"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Ausencia de Cambio",
+      "description": "La séptima clase no cambia de forma entre singular y plural, lo que simplifica su uso"
+    },
+    {
+      "title": "Numerosa en Ejemplos",
+      "description": "Contiene la mayor cantidad de sustantivos individuales, aunque no se transforman"
+    },
+    {
+      "title": "Diversidad Temática",
+      "description": "Abarca una amplia gama de sustantivos: animales, objetos, conceptos abstractos y palabras loanwords"
+    },
+    {
+      "title": "Importancia Conceptual",
+      "description": "Muchas palabras invariables son fundamentales para la comunicación cotidiana"
+    }
+  ],
+  "practiceNotes": {
+    "es": "La séptima clase contiene la mayoría de sustantivos individuales en Benga. Como no hay cambios de forma, la tarea es memorizar qué palabras completamente. Observa que incluye palabras derivadas del español (fala, pago, sago) y palabras completamente benga (ngama, ndaga)."
+  }
+}

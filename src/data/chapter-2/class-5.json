@@ -1,0 +1,86 @@
+{
+  "classId": 5,
+  "title": "Quinta Clase",
+  "singularPrefix": "mo-",
+  "pluralPrefix": "ba-",
+  "pattern": {
+    "es": "Empieza con 'mo' (singular) → 'ba-' (plural)"
+  },
+  "description": {
+    "es": "La quinta clase agrupa nombres que cambian de 'mo' en singular a 'ba' en plural. Es una clase más pequeña pero importante."
+  },
+  "examples": [
+    {
+      "group": "Sustantivos con prefijo 'mo'",
+      "words": [
+        {
+          "singular": "mohano",
+          "plural": "bahano",
+          "meaning": "anciano",
+          "audioId": "mohano"
+        },
+        {
+          "singular": "momo",
+          "plural": "bamo",
+          "meaning": "hombre",
+          "audioId": "momo"
+        },
+        {
+          "singular": "moto",
+          "plural": "bato",
+          "meaning": "esclavo",
+          "audioId": "moto"
+        },
+        {
+          "singular": "monda",
+          "plural": "banda",
+          "meaning": "grupo",
+          "audioId": "monda"
+        },
+        {
+          "singular": "motoba",
+          "plural": "batoba",
+          "meaning": "jefe",
+          "audioId": "motoba"
+        },
+        {
+          "singular": "mongolu",
+          "plural": "bangolu",
+          "meaning": "extranjero",
+          "audioId": "mongolu"
+        }
+      ]
+    }
+  ],
+  "concordanceRules": [
+    {
+      "label": "Singular",
+      "article": "mo-",
+      "adjective": "-mo, -o",
+      "example": "mo-mano mo-nene"
+    },
+    {
+      "label": "Plural",
+      "article": "ba-",
+      "adjective": "-ba, -be",
+      "example": "ba-mano ba-nene"
+    }
+  ],
+  "conceptCards": [
+    {
+      "title": "Clase Pequeña pero Importante",
+      "description": "Aunque tiene pocos ejemplos, esta clase contiene palabras fundamentales como 'hombre'"
+    },
+    {
+      "title": "Cambio Importante",
+      "description": "El cambio mo- → ba- marca una transformación clara de singular a plural"
+    },
+    {
+      "title": "Términos de Estatus",
+      "description": "Muchos sustantivos que describen posiciones sociales pertenecen a esta clase"
+    }
+  ],
+  "practiceNotes": {
+    "es": "Aunque la quinta clase es pequeña, sus palabras son altamente frecuentes. Domina los cambios sistemáticamente, especialmente mo-mo (hombre) → ba-mo."
+  }
+}

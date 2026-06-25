@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "Francisco Salvadó y Cos",
+    "birth": "siglo XIX",
+    "nationality": "español",
+    "profession": "misionero y lingüista",
+    "workTitle": "Colección de apuntes preliminares sobre la lengua Benga",
+    "subtitle": "o sea introducción a una gramática de este idioma que se habla en la isla de Corisco, pueblos de su bahía e islas adyacentes",
+    "publicationYear": 1891,
+    "publisher": "Imprenta de A. Pérez Dubrull",
+    "publicationPlace": "Madrid",
+    "pages": 151,
+    "binding": "encuadernación en tela",
+    "subject": "Gramática, idiomas de Guinea Ecuatorial (Benga)",
+    "legacy": "Primera documentación sistemática de la lengua Benga",
+    "languages": ["Spanish", "Benga", "French", "Latin"],
+    "biography": {
+      "es": "Francisco Salvadó y Cos fue un misionero español del siglo XIX que se dedicó al estudio y documentación de las lenguas indígenas africanas. Su obra sobre la lengua Benga, publicada en 1891, representa uno de los primeros esfuerzos sistemáticos por registrar y analizar esta lengua del grupo Ndowe, hablada en la isla de Corisco y sus alrededores en lo que hoy es Guinea Ecuatorial. Como misionero, tuvo la oportunidad privilegiada de convivir con hablantes nativos de Benga durante años, permitiéndole recopilar material lingüístico de primera mano que transformó en una gramática rigurosa.",
+      "en": "Francisco Salvadó y Cos was a Spanish missionary from the 19th century dedicated to studying and documenting indigenous African languages. His work on the Benga language, published in 1891, represents one of the first systematic efforts to record and analyze this language of the Ndowe group, spoken on the island of Corisco and surrounding areas in what is now Equatorial Guinea. As a missionary, he had the privileged opportunity to live with native Benga speakers for years, enabling him to compile first-hand linguistic material that he transformed into a rigorous grammar."
+    }
+  }
+}

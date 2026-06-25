@@ -1,0 +1,47 @@
+{
+  "chapterId": 3,
+  "title": "Introducción a los Adjetivos",
+  "subtitle": "Del Nombre Adjetivo",
+  "overview": {
+    "es": "En la lengua Benga, los adjetivos constan de número y clasificación, pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. Los adjetivos se dividen en dos categorías principales: variables e invariables."
+  },
+  "keyGrammaticalConcepts": [
+    {
+      "concept": "Concordancia con el Nombre",
+      "explanation": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre.",
+      "example": "Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)"
+    },
+    {
+      "concept": "Ausencia de Género",
+      "explanation": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino).",
+      "example": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género"
+    },
+    {
+      "concept": "Número y Clasificación",
+      "explanation": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes).",
+      "example": "La forma 'eyamu' (bueno singular) se convierte en 'beyamu', 'iyamu', 'maiyamu', etc."
+    }
+  ],
+  "sectionOverview": [
+    {
+      "id": "variable-adjectives",
+      "title": "Adjetivos Variables",
+      "description": "Adjetivos que cambian de forma según la clase del sustantivo que modifican."
+    },
+    {
+      "id": "invariable-adjectives",
+      "title": "Adjetivos Invariables",
+      "description": "Adjetivos que no cambian de forma, usándose del mismo modo con cualquier sustantivo."
+    },
+    {
+      "id": "comparatives-superlatives",
+      "title": "Comparativos y Superlativos",
+      "description": "Los Benga expresan comparación y superioridad de maneras particulares, usando circunlocución, entonación y palabras específicas como 'kebaka' (sobresalir) y 'ña' (exceder)."
+    },
+    {
+      "id": "numeral-adjectives",
+      "title": "Adjetivos Numerales",
+      "description": "Sistema decimal donde los números se cuentan hasta 10, luego se reducen (diez y uno, diez y dos, etc.)."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "app": {
+    "title": "Benga Language Learning Portal",
+    "subtitle": "Based on Salvado y Cos's grammar"
+  },
+  "nav": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "about": "About the Author",
+    "resources": "Resources",
+    "download": "Download PDF"
+  }
+}

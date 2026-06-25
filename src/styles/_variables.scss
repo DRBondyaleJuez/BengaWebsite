@@ -1,0 +1,110 @@
+// Colors - Earth tones inspired by Equatorial Guinea
+$color-primary: #2D5A27;        // Forest green
+$color-primary-light: #4A8B3C;
+$color-primary-dark: #1A3A18;
+
+$color-secondary: #8B4513;      // Saddle brown
+$color-secondary-light: #A0522D;
+$color-secondary-dark: #5D2E0D;
+
+$color-accent: #DAA520;         // Goldenrod
+$color-accent-light: #F0C040;
+$color-accent-dark: #B8860B;
+
+$color-background: #FDF8F0;     // Warm white
+$color-background-light: #FBF5ED;
+$color-surface: #FFFFFF;
+$color-surface-light: #F9F9F9;  // Light surface
+$color-surface-alt: #F5EFE6;
+
+$color-text-primary: #2C2C2C;
+$color-text-secondary: #5A5A5A;
+$color-text-muted: #8A8A8A;
+$color-text-inverse: #FFFFFF;
+$color-heading-dark: #1A3A18;
+
+$color-benga-word: #1A5F7A;     // Distinct color for Benga words
+$color-benga-word-bg: #E8F4F8;
+
+$color-success: #28A745;
+$color-warning: #FFC107;
+$color-error: #DC3545;
+$color-info: #17A2B8;
+
+// Typography
+$font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-heading: 'Merriweather', Georgia, serif;
+$font-heading: $font-family-heading;  // Alias
+$font-family-benga: 'Noto Sans', 'Lato', sans-serif;
+$font-family-mono: 'Fira Code', 'Consolas', monospace;
+$font-mono: $font-family-mono;  // Alias
+
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-base: 1rem;     // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+
+$line-height-tight: 1.25;
+$line-height-base: 1.6;
+$line-height-loose: 1.8;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Spacing
+$spacing-xs: 0.25rem;   // 4px
+$spacing-sm: 0.5rem;    // 8px
+$spacing-md: 1rem;      // 16px
+$spacing-lg: 1.5rem;    // 24px
+$spacing-xl: 2rem;      // 32px
+$spacing-2xl: 3rem;     // 48px
+$spacing-3xl: 4rem;     // 64px
+
+// Layout
+$sidebar-width: 280px;
+$sidebar-width-collapsed: 60px;
+$header-height: 64px;
+$footer-height: 200px;
+$max-content-width: 900px;
+$max-page-width: 1400px;
+
+// Borders
+$border-radius: 8px;            // Default border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-base: 8px;       // Alias for default
+$border-radius-lg: 12px;
+$border-radius-full: 9999px;
+$border-width: 1px;
+$border-color: #E0D8CC;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+$transition-slow: 400ms ease;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index layers
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-fixed: 300;
+$z-modal-backdrop: 400;
+$z-modal: 500;
+$z-tooltip: 600;
