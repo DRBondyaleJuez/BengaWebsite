@@ -28,13 +28,23 @@
       <h2>Ejemplos Principales</h2>
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in mainExamples" :key="`ex-${idx}`">
-          <div class="example-header">
-            <span class="example-singular">{{ example.singular }}</span>
-            <span class="example-arrow">→</span>
-            <span class="example-plural">{{ example.plural }}</span>
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
           </div>
-          <div class="example-meaning">
-            <strong>{{ example.meaning }}</strong>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
           </div>
         </div>
       </div>
@@ -51,13 +61,23 @@
       </div>
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in yVariants" :key="`yvar-${idx}`">
-          <div class="example-header">
-            <span class="example-singular">{{ example.singular }}</span>
-            <span class="example-arrow">→</span>
-            <span class="example-plural">{{ example.plural }}</span>
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
           </div>
-          <div class="example-meaning">
-            <strong>{{ example.meaning }}</strong>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
           </div>
         </div>
       </div>
@@ -102,10 +122,6 @@
           <h4>Variante y → bi</h4>
           <p>Los nombres que comienzan con 'y' (consonante semivocal) siguen la misma lógica</p>
         </div>
-        <div class="concept-item">
-          <h4>Frecuencia en uso</h4>
-          <p>Aunque la clase 1 existe, la mayoría de palabras de esta clase son nombres comunes</p>
-        </div>
       </div>
     </section>
 
@@ -133,35 +149,267 @@
 </template>
 
 <script>
+import BengaWord from '@/components/content/BengaWord.vue'
+
+const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+
 export default {
   name: 'NounClass1',
+  components: {
+    BengaWord
+  },
   data() {
     return {
       mainExamples: [
-        { singular: 'Ejanganangobo', plural: 'Bejanganangobo', meaning: 'Libro' },
-        { singular: 'Epokolo', plural: 'Bepokolo', meaning: 'Sombrero' },
-        { singular: 'Eñá', plural: 'Bená', meaning: 'Brazo' },
-        { singular: 'Ekái', plural: 'Bekái', meaning: 'Plátano' },
-        { singular: 'Elinga', plural: 'Belinga', meaning: 'Cesto' },
-        { singular: 'Elombo', plural: 'Belombo', meaning: 'Cosa' },
-        { singular: 'Egala', plural: 'Begala', meaning: 'Cajón' },
-        { singular: 'Elende', plural: 'Belende', meaning: 'Bote' }
+        {
+          singular: {
+            word: 'Ejanganangobo',
+            audio: 'ejanganangobo',
+            meaning: 'Libro'
+          },
+          plural: {
+            word: 'Bejanganangobo',
+            audio: 'bejanganangobo',
+            meaning: 'Libros'
+          }
+        },
+        {
+          singular: {
+            word: 'Epokolo',
+            audio: 'epokolo',
+            meaning: 'Sombrero'
+          },
+          plural: {
+            word: 'Bepokolo',
+            audio: 'bepokolo',
+            meaning: 'Sombreros'
+          }
+        },
+        {
+          singular: {
+            word: 'Enâ',
+            audio: 'en_a_',
+            meaning: 'Brazo'
+          },
+          plural: {
+            word: 'Benâ',
+            audio: 'ben_a_',
+            meaning: 'Brazos'
+          }
+        },
+        {
+          singular: {
+            word: 'Ekâi',
+            audio: 'ek_a_i',
+            meaning: 'Plátano'
+          },
+          plural: {
+            word: 'Bekâi',
+            audio: 'bek_a_i',
+            meaning: 'Plátanos'
+          }
+        },
+        {
+          singular: {
+            word: 'Elinga',
+            audio: 'elinga',
+            meaning: 'Cesto'
+          },
+          plural: {
+            word: 'Belinga',
+            audio: 'belinga',
+            meaning: 'Cestos'
+          }
+        },
+        {
+          singular: {
+            word: 'Elombo',
+            audio: 'elombo',
+            meaning: 'Cosa'
+          },
+          plural: {
+            word: 'Belombo',
+            audio: 'belombo',
+            meaning: 'Cosas'
+          }
+        },
+        {
+          singular: {
+            word: 'Egala',
+            audio: 'egala',
+            meaning: 'Cajón'
+          },
+          plural: {
+            word: 'Begala',
+            audio: 'begala',
+            meaning: 'Cajones'
+          }
+        },
+        {
+          singular: {
+            word: 'Elende',
+            audio: 'elende',
+            meaning: 'Bote'
+          },
+          plural: {
+            word: 'Belende',
+            audio: 'belende',
+            meaning: 'Botes'
+          }
+        }
       ],
       yVariants: [
-        { singular: 'Yaho', plural: 'Biaho', meaning: 'Quijada' },
-        { singular: 'Yako', plural: 'Biako', meaning: 'Cama' },
-        { singular: 'Yalo', plural: 'Bialo', meaning: 'Bote europeo' },
-        { singular: 'Yambe', plural: 'Biambe', meaning: 'Cura supersticiosa' },
-        { singular: 'Yapa', plural: 'Biapa', meaning: 'Canasta' },
-        { singular: 'Yáki', plural: 'Biáki', meaning: 'Medicina' },
-        { singular: 'Yzjá', plural: 'Biejá', meaning: 'Medida' },
-        { singular: 'Yeké', plural: 'Biéke', meaning: 'Juicio' },
-        { singular: 'Yima', plural: 'Biima', meaning: 'Egoísmo' },
-        { singular: 'Yoha', plural: 'Bioha', meaning: 'Mono pequeño' },
-        { singular: 'Yoma', plural: 'Bioma', meaning: 'Ñame' },
-        { singular: 'Yomu', plural: 'Biomu', meaning: 'Calor' }
+        {
+          singular: {
+            word: 'Yaho',
+            audio: 'yaho',
+            meaning: 'Quijada'
+          },
+          plural: {
+            word: 'Biaho',
+            audio: 'biaho',
+            meaning: 'Quijadas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yako',
+            audio: 'yako',
+            meaning: 'Cama'
+          },
+          plural: {
+            word: 'Biako',
+            audio: 'biako',
+            meaning: 'Camas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yalo',
+            audio: 'yalo',
+            meaning: 'Bote europeo'
+          },
+          plural: {
+            word: 'Bialo',
+            audio: 'bialo',
+            meaning: 'Botes europeos'
+          }
+        },
+        {
+          singular: {
+            word: 'Yambe',
+            audio: 'yambe',
+            meaning: 'Cura supersticiosa'
+          },
+          plural: {
+            word: 'Biambe',
+            audio: 'biambe',
+            meaning: 'Curas supersticiosas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yapa',
+            audio: 'yapa',
+            meaning: 'Canasta'
+          },
+          plural: {
+            word: 'Biapa',
+            audio: 'biapa',
+            meaning: 'Canastas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yâki',
+            audio: 'y_a_ki',
+            meaning: 'Medicina'
+          },
+          plural: {
+            word: 'Biâki',
+            audio: 'bi_a_ki',
+            meaning: 'Medicinas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yzjâ',
+            audio: 'yzj_a_',
+            meaning: 'Medida'
+          },
+          plural: {
+            word: 'Biejâ',
+            audio: 'biej_a_',
+            meaning: 'Medidas'
+          }
+        },
+        {
+          singular: {
+            word: 'Yekē',
+            audio: 'yek_e_',
+            meaning: 'Juicio'
+          },
+          plural: {
+            word: 'Biēke',
+            audio: 'bi_e_ke',
+            meaning: 'Juicios'
+          }
+        },
+        {
+          singular: {
+            word: 'Yima',
+            audio: 'yima',
+            meaning: 'Egoísmo'
+          },
+          plural: {
+            word: 'Biima',
+            audio: 'biima',
+            meaning: 'Egoísmos'
+          }
+        },
+        {
+          singular: {
+            word: 'Yoha',
+            audio: 'yoha',
+            meaning: 'Mono pequeño'
+          },
+          plural: {
+            word: 'Bioha',
+            audio: 'bioha',
+            meaning: 'Monos pequeños'
+          }
+        },
+        {
+          singular: {
+            word: 'Yoma',
+            audio: 'yoma',
+            meaning: 'Ñame'
+          },
+          plural: {
+            word: 'Bioma',
+            audio: 'bioma',
+            meaning: 'Ñames'
+          }
+        },
+        {
+          singular: {
+            word: 'Yomu',
+            audio: 'yomu',
+            meaning: 'Calor'
+          },
+          plural: {
+            word: 'Biomu',
+            audio: 'biomu',
+            meaning: 'Calores'
+          }
+        }
       ]
     };
+  },
+  methods: {
+    getDictionaryUrl(word) {
+      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
+    }
   },
   created() {
     document.title = 'Primera Clase Nominal | Portal Benga';
@@ -293,34 +541,32 @@ export default {
         transform: translateY(-2px);
       }
 
-      .example-header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: $spacing-sm;
-        margin-bottom: $spacing-sm;
-        font-weight: bold;
-
-        .example-singular {
+      .example-singular {
+        .benga-word--block{
+          background: #E8F5E9;
+        } 
+        :deep(.benga-word__text) {
           color: #1B5E20;
-          font-family: $font-mono;
-        }
-
-        .example-arrow {
-          color: $color-accent;
-        }
-
-        .example-plural {
-          color: #E65100;
-          font-family: $font-mono;
         }
       }
 
-      .example-meaning {
-        text-align: center;
-        color: $color-text-primary;
-        font-size: 0.95rem;
+      .example-arrow {
+        color: $color-accent;
+      }
+
+      .example-plural {
+        .benga-word--block{
+          background: #FFF3E0;
+        }
+        :deep(.benga-word__text) {
+          color: #E65100;
+        }
+      }
+
+      :deep(.benga-word__meaning) {
+        max-width: 100%;
+        min-width: 50%;
+        flex: 1;
       }
     }
   }
