@@ -1,80 +1,429 @@
 <template>
-  <div class="noun-class-2">
-    <div class="header">
+  <div class="noun-class noun-class--2">
+    <div class="noun-class__header">
       <h1>Segunda Clase Nominal</h1>
-      <p>i/di → ma</p>
+      <p class="subtitle">i / di → ma</p>
     </div>
-    <div class="pattern-box">
-      <div><strong>Singular:</strong> i- / di-</div>
-      <div>→</div>
-      <div><strong>Plural:</strong> ma-</div>
-    </div>
-    <section>
-      <h2>Ejemplos (Comenzando con i)</h2>
+
+    <section class="noun-class__pattern">
+      <h2>Patrón de Transformación</h2>
+      <div class="pattern-box">
+        <div class="pattern-item">
+          <span class="pattern-label">Singular:</span>
+          <span class="pattern-value singular">i- / di-</span>
+        </div>
+        <div class="pattern-arrow">→</div>
+        <div class="pattern-item">
+          <span class="pattern-label">Plural:</span>
+          <span class="pattern-value plural">ma-</span>
+        </div>
+      </div>
+      <p class="pattern-description">La inicial de muchas palabras de esta clase se convierte en el prefijo ma- en plural.</p>
+    </section>
+
+    <section class="noun-class__examples">
+      <h2>Ejemplos con i-</h2>
       <div class="examples-grid">
-        <div class="ex" v-for="(ex, i) in iExamples" :key="`i-${i}`">
-          <strong>{{ ex.s }} → {{ ex.p }}</strong><br>{{ ex.m }}
+        <div class="example-card" v-for="(example, idx) in iExamples" :key="`i-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <h2>Ejemplos (Comenzando con di)</h2>
+
+    <section class="noun-class__variants">
+      <h2>Ejemplos con di-</h2>
       <div class="examples-grid">
-        <div class="ex" v-for="(ex, i) in diExamples" :key="`di-${i}`">
-          <strong>{{ ex.s }} → {{ ex.p }}</strong><br>{{ ex.m }}
+        <div class="example-card" v-for="(example, idx) in diExamples" :key="`di-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
         </div>
       </div>
     </section>
-    <section style="margin-top: 2rem;">
-      <router-link to="/capitulo-2/clase-1" class="btn">← Clase 1</router-link>
-      <router-link to="/capitulo-2/clase-3" class="btn">Clase 3 →</router-link>
+
+    <section class="noun-class__concepts">
+      <h2>Conceptos Clave</h2>
+      <div class="concepts-list">
+        <div class="concept-item">
+          <h4>Cambio inicial predecible</h4>
+          <p>La clase 2 mantiene un prefijo plural muy estable: ma-.</p>
+        </div>
+        <div class="concept-item">
+          <h4>i- y di-</h4>
+          <p>Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-.</p>
+        </div>
+        <div class="concept-item">
+          <h4>Concordancia</h4>
+          <p>El plural del sustantivo afecta también al adjetivo que lo acompaña.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="noun-class__practice">
+      <h2>Para Practicar</h2>
+      <ol class="practice-list">
+        <li>Compara cada forma singular y plural y repite el cambio ma-.</li>
+        <li>Forma frases con un nombre singular y luego en plural.</li>
+        <li>Escucha la entonación de los ejemplos para detectar la diferencia.</li>
+      </ol>
+    </section>
+
+    <section class="noun-class__nav">
+      <router-link to="/capitulo-2/clase-1" class="nav-link prev">← Clase 1</router-link>
+      <router-link to="/capitulo-2/clase-3" class="nav-link next">Tercera Clase →</router-link>
     </section>
   </div>
 </template>
+
 <script>
+import BengaWord from '@/components/content/BengaWord.vue'
+
+const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+
 export default {
   name: 'NounClass2',
+  components: {
+    BengaWord
+  },
   data() {
     return {
       iExamples: [
-        { s: 'Ibaké', p: 'Mabaké', m: 'Cuidado' },
-        { s: 'Ibala', p: 'Mabala', m: 'Victoria' },
-        { s: 'Ibálu', p: 'Mabálu', m: 'Cuello' },
-        { s: 'Ibánga', p: 'Mabánga', m: 'Rodilla' },
-        { s: 'Ibátá', p: 'Mabátá', m: 'Bendición' }
+        {
+          singular: { word: 'Ibaké', audio: 'ibake', meaning: 'Cuidado' },
+          plural: { word: 'Mabaké', audio: 'mabake', meaning: 'Cuidados' }
+        },
+        {
+          singular: { word: 'Ibala', audio: 'ibala', meaning: 'Victoria' },
+          plural: { word: 'Mabala', audio: 'mabala', meaning: 'Victorias' }
+        },
+        {
+          singular: { word: 'Ibálu', audio: 'ibalu', meaning: 'Cuello' },
+          plural: { word: 'Mabálu', audio: 'mabalu', meaning: 'Cuellos' }
+        },
+        {
+          singular: { word: 'Ibánga', audio: 'ibanga', meaning: 'Rodilla' },
+          plural: { word: 'Mabánga', audio: 'mabanga', meaning: 'Rodillas' }
+        },
+        {
+          singular: { word: 'Ibátá', audio: 'ibata', meaning: 'Bendición' },
+          plural: { word: 'Mabátá', audio: 'mabata', meaning: 'Bendiciones' }
+        }
       ],
       diExamples: [
-        { s: 'Diba', p: 'Maba', m: 'Casamiento' },
-        { s: 'Dibé', p: 'Mabé', m: 'Ubre' },
-        { s: 'Diké', p: 'Make', m: 'Huevo' },
-        { s: 'Dimya', p: 'Mumya', m: 'Torpedo' },
-        { s: 'Diso', p: 'Muso', m: 'Nigua' }
+        {
+          singular: { word: 'Diba', audio: 'diba', meaning: 'Casamiento' },
+          plural: { word: 'Maba', audio: 'maba', meaning: 'Casamientos' }
+        },
+        {
+          singular: { word: 'Dibé', audio: 'dibe', meaning: 'Ubre' },
+          plural: { word: 'Mabé', audio: 'mabe', meaning: 'Ubres' }
+        },
+        {
+          singular: { word: 'Diké', audio: 'dike', meaning: 'Huevo' },
+          plural: { word: 'Make', audio: 'make', meaning: 'Huevos' }
+        },
+        {
+          singular: { word: 'Dimya', audio: 'dimya', meaning: 'Torpedo' },
+          plural: { word: 'Mumya', audio: 'mumya', meaning: 'Torpedos' }
+        },
+        {
+          singular: { word: 'Diso', audio: 'diso', meaning: 'Nigua' },
+          plural: { word: 'Muso', audio: 'muso', meaning: 'Niguas' }
+        }
       ]
-    };
+    }
+  },
+  methods: {
+    getDictionaryUrl(word) {
+      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
+    }
   },
   created() {
-    document.title = 'Segunda Clase Nominal | Portal Benga';
+    document.title = 'Segunda Clase Nominal | Portal Benga'
   }
-};
+}
 </script>
+
 <style scoped lang="scss">
 @import '@/styles/variables';
 @import '@/styles/mixins';
-.noun-class-2 {
-  max-width: 1000px; margin: 0 auto; padding: $spacing-lg;
-  .header { background: linear-gradient(135deg, #2D5A27, #4A7C4E); color: white; padding: 2rem; border-radius: $border-radius; text-align: center; margin-bottom: 2rem;
-    h1 { margin: 0; font-size: 2rem; }
-    p { margin: 0.5rem 0 0; opacity: 0.9; }
-  }
-  .pattern-box { display: flex; justify-content: center; gap: 1rem; align-items: center; background: #f5f5f5; padding: 1.5rem; border-radius: $border-radius; margin-bottom: 2rem; font-weight: bold; }
-  section { margin-bottom: 2rem;
-    h2 { color: $color-primary; border-bottom: 2px solid $color-accent; padding-bottom: 0.5rem; }
-    .examples-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
-    .ex { background: white; border: 1px solid #e0e0e0; padding: 1rem; border-radius: $border-radius; text-align: center; min-height: 80px; display: flex; flex-direction: column; justify-content: center;
-      strong { color: $color-primary; font-family: monospace; }
+
+.noun-class {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+
+  &__header {
+    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    color: white;
+    padding: 2.5rem $spacing-lg;
+    border-radius: $border-radius;
+    margin-bottom: $spacing-xl;
+    text-align: center;
+
+    h1 {
+      margin: 0 0 $spacing-sm 0;
+      font-size: 2rem;
+      font-family: $font-heading;
     }
-    .btn { display: inline-block; background: $color-primary; color: white; padding: 0.7rem 1.5rem; border-radius: $border-radius; text-decoration: none; margin-right: 1rem; margin-top: 1rem; transition: all 0.3s;
-      &:hover { background: darken($color-primary, 10%); transform: translateY(-2px); }
+
+    .subtitle {
+      margin: 0;
+      opacity: 0.95;
+      font-size: 1.1rem;
+    }
+  }
+
+  section {
+    margin-bottom: $spacing-xl;
+
+    h2 {
+      color: $color-primary;
+      margin-top: 0;
+      margin-bottom: $spacing-lg;
+      font-size: 1.5rem;
+      border-bottom: 2px solid $color-accent;
+      padding-bottom: $spacing-md;
+    }
+  }
+
+  &__pattern {
+    .pattern-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $spacing-lg;
+      background: $color-surface-light;
+      padding: 2rem;
+      border-radius: $border-radius;
+      margin-bottom: $spacing-md;
+
+      .pattern-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-sm;
+
+        .pattern-label {
+          font-weight: bold;
+          color: $color-text-secondary;
+          font-size: 0.9rem;
+        }
+
+        .pattern-value {
+          font-size: 1.8rem;
+          font-weight: bold;
+          font-family: $font-mono;
+          padding: $spacing-md $spacing-lg;
+          border-radius: $border-radius;
+
+          &.singular {
+            background: #E8F5E9;
+            color: #1B5E20;
+          }
+
+          &.plural {
+            background: #FFF3E0;
+            color: #E65100;
+          }
+        }
+      }
+
+      .pattern-arrow {
+        font-size: 2rem;
+        color: $color-accent;
+        font-weight: bold;
+      }
+    }
+
+    .pattern-description {
+      text-align: center;
+      color: $color-text-secondary;
+      font-style: italic;
+    }
+  }
+
+  &__examples,
+  &__variants {
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: $spacing-md;
+    }
+
+    .example-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: $border-radius;
+      padding: $spacing-md;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transform: translateY(-2px);
+      }
+
+      .example-singular {
+        .benga-word--block {
+          background: #E8F5E9;
+        }
+
+        :deep(.benga-word__text) {
+          color: #1B5E20;
+        }
+      }
+
+      .example-plural {
+        .benga-word--block {
+          background: #FFF3E0;
+        }
+
+        :deep(.benga-word__text) {
+          color: #E65100;
+        }
+      }
+
+      :deep(.benga-word__meaning) {
+        max-width: 100%;
+        min-width: 50%;
+        flex: 1;
+      }
+    }
+  }
+
+  &__concepts {
+    .concepts-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: $spacing-lg;
+
+      .concept-item {
+        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        padding: $spacing-lg;
+        border-radius: $border-radius;
+        border-left: 4px solid $color-primary;
+
+        h4 {
+          margin: 0 0 $spacing-sm 0;
+          color: $color-primary;
+        }
+
+        p {
+          margin: 0;
+          color: $color-text-secondary;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  &__practice {
+    background: $color-surface-light;
+    padding: $spacing-lg;
+    border-radius: $border-radius;
+
+    .practice-list {
+      margin: 0;
+      padding-left: $spacing-lg;
+
+      li {
+        margin-bottom: $spacing-md;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-lg;
+    margin-top: $spacing-xl;
+
+    .nav-link {
+      flex: 1;
+      padding: $spacing-md $spacing-lg;
+      background: $color-primary;
+      color: white;
+      text-decoration: none;
+      border-radius: $border-radius;
+      text-align: center;
+      transition: all 0.3s ease;
+      font-weight: bold;
+
+      &:hover {
+        background: darken($color-primary, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+
+      &.prev {
+        background: $color-secondary;
+
+        &:hover {
+          background: darken($color-secondary, 10%);
+        }
+      }
+    }
+  }
+
+  @include respond-below('md') {
+    padding: $spacing-md;
+
+    &__header {
+      padding: 1.5rem $spacing-md;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    &__nav {
+      flex-direction: column;
+
+      .nav-link {
+        text-align: center;
+      }
     }
   }
 }
