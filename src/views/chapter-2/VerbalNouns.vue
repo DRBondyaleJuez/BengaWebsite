@@ -17,15 +17,29 @@
       <div class="formation-examples">
         <div class="formation-row" v-for="(example, idx) in abstractNouns" :key="`abstract-${idx}`">
           <div class="formation-group">
-            <span class="label">Imperativo:</span>
-            <span class="value">{{ example.imperative }}</span>
-          </div>
+              <span class="label">Imperativo:</span>
+              <span class="value">
+                <BengaWord
+                  :word="example.imperative"
+                  :audio-id="makeAudioId(example.imperative)"
+                  :dictionary-url="getDictionaryUrl(example.imperative)"
+                  :meaning="example.imperativeMeaning"
+                />
+              </span>
+            </div>
           <span class="arrow">→</span>
           <div class="formation-group">
             <span class="label">Nombre:</span>
-            <span class="value">{{ example.nominalForm }}</span>
+            <span class="value">
+              <BengaWord
+                :word="example.nominalForm"
+                :audio-id="makeAudioId(example.nominalForm)"
+                :meaning="example.meaning"
+                :dictionary-url="getDictionaryUrl(example.nominalForm)"
+                block
+              />
+            </span>
           </div>
-          <div class="formation-meaning">{{ example.meaning }}</div>
         </div>
       </div>
       <p class="classification-note">En la clasificación, estos nombres pertenecen a la segunda clase en singular.</p>
@@ -40,14 +54,28 @@
         <div class="formation-row" v-for="(example, idx) in actionNouns" :key="`action-${idx}`">
           <div class="formation-group">
             <span class="label">Imperativo:</span>
-            <span class="value">{{ example.imperative }}</span>
+            <span class="value">
+              <BengaWord
+                :word="example.imperative"
+                :audio-id="makeAudioId(example.imperative)"
+                :dictionary-url="getDictionaryUrl(example.imperative)"
+                :meaning="example.imperativeMeaning"
+              />
+            </span>
           </div>
           <span class="arrow">→</span>
           <div class="formation-group">
             <span class="label">Agent/Doer:</span>
-            <span class="value">{{ example.nominalForm }}</span>
+            <span class="value">
+              <BengaWord
+                :word="example.nominalForm"
+                :audio-id="makeAudioId(example.nominalForm)"
+                :meaning="example.meaning"
+                :dictionary-url="getDictionaryUrl(example.nominalForm)"
+                block
+              />
+            </span>
           </div>
-          <div class="formation-meaning">{{ example.meaning }}</div>
         </div>
       </div>
       <p class="classification-note">Estos nombres pertenecen a la tercera clase en la formación del plural.</p>
@@ -62,14 +90,28 @@
         <div class="formation-row" v-for="(example, idx) in mannerNouns" :key="`manner-${idx}`">
           <div class="formation-group">
             <span class="label">Nombre de Acción:</span>
-            <span class="value">{{ example.actionForm }}</span>
+            <span class="value">
+              <BengaWord
+                :word="example.actionForm"
+                :audio-id="makeAudioId(example.actionForm)"
+                :dictionary-url="getDictionaryUrl(example.actionForm)"
+                :meaning="example.actionFormMeaning"
+              />
+            </span>
           </div>
           <span class="arrow">→</span>
           <div class="formation-group">
             <span class="label">Modo:</span>
-            <span class="value">{{ example.nominalForm }}</span>
+            <span class="value">
+              <BengaWord
+                :word="example.nominalForm"
+                :audio-id="makeAudioId(example.nominalForm)"
+                :meaning="example.meaning"
+                :dictionary-url="getDictionaryUrl(example.nominalForm)"
+                block
+              />
+            </span>
           </div>
-          <div class="formation-meaning">{{ example.meaning }}</div>
         </div>
       </div>
     </section>
@@ -106,9 +148,18 @@
         <p><strong>Si aprendes un verbo nuevo:</strong> Longaka "edifica"</p>
         <p><strong>Puedes formar:</strong></p>
         <ul>
-          <li><span class="form">ilonga</span> (acción de edificar → edificio)</li>
-          <li><span class="form">ulongi</span> (quien edifica → arquitecto)</li>
-          <li><span class="form">ilongidi</span> (manera de edificar → modo de construcción)</li>
+          <li>
+            <BengaWord :word="'ilonga'" :audio-id="makeAudioId('ilonga')" />
+            (acción de edificar → edificio)
+          </li>
+          <li>
+            <BengaWord :word="'ulongi'" :audio-id="makeAudioId('ulongi')" />
+            (quien edifica → arquitecto)
+          </li>
+          <li>
+            <BengaWord :word="'ilongidi'" :audio-id="makeAudioId('ilongidi')" />
+            (manera de edificar → modo de construcción)
+          </li>
         </ul>
       </div>
     </section>
@@ -133,32 +184,51 @@
 </template>
 
 <script>
+import BengaWord from '@/components/content/BengaWord.vue'
+
+const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+
 export default {
   name: 'VerbalNouns',
+  components: { BengaWord },
   data() {
     return {
       abstractNouns: [
-        { imperative: 'Tánddká', nominalForm: 'itánde', meaning: 'amor' },
-        { imperative: 'Binaka', nominalForm: 'ibina', meaning: 'odio' },
-        { imperative: 'Kalaka', nominalForm: 'ikala', meaning: 'razonamiento' },
-        { imperative: 'Langaka', nominalForm: 'ilanga', meaning: 'lectura' },
-        { imperative: 'Longaka', nominalForm: 'ilonga', meaning: 'edificio' },
-        { imperative: 'Léndeké', nominalForm: 'ilende', meaning: 'escritura' },
-        { imperative: 'Kalakia', nominalForm: 'ikalo', meaning: 'oración' },
-        { imperative: 'Janjaka', nominalForm: 'ijanja', meaning: 'trabajo' }
+        { imperative: 'Tánddká', imperativeMeaning: 'ama tú', nominalForm: 'itánde', meaning: 'amor' },
+        { imperative: 'Binaka', imperativeMeaning: 'aborrece tú', nominalForm: 'ibina', meaning: 'odio' },
+        { imperative: 'Kalaka', imperativeMeaning: 'habla tú', nominalForm: 'ikala', meaning: 'razonamiento' },
+        { imperative: 'Langaka', imperativeMeaning: 'lee tú', nominalForm: 'ilanga', meaning: 'lectura' },
+        { imperative: 'Longaka', imperativeMeaning: 'edifica tú', nominalForm: 'ilonga', meaning: 'edificio' },
+        { imperative: 'Léndeké', imperativeMeaning: 'escribe tú', nominalForm: 'ilende', meaning: 'escritura' },
+        { imperative: 'Kalakia', imperativeMeaning: 'ora tú', nominalForm: 'ikalo', meaning: 'oración' },
+        { imperative: 'Janjaka', imperativeMeaning: 'trabaja tú', nominalForm: 'ijanja', meaning: 'trabajo' }
       ],
       actionNouns: [
-        { imperative: 'Longaka', nominalForm: 'ulongi', meaning: 'arquitecto' },
-        { imperative: 'Langaka', nominalForm: 'ulangi', meaning: 'lector' },
-        { imperative: 'Kalaka', nominalForm: 'ukali', meaning: 'orador' },
-        { imperative: 'Lendiki', nominalForm: 'ulendi', meaning: 'escritor' }
+        { imperative: 'Longaka', imperativeMeaning: 'edifica tú', nominalForm: 'ulongi', meaning: 'arquitecto' },
+        { imperative: 'Langaka', imperativeMeaning: 'lee tú', nominalForm: 'ulangi', meaning: 'lector' },
+        { imperative: 'Kalaka', imperativeMeaning: 'habla tú', nominalForm: 'ukali', meaning: 'orador' },
+        { imperative: 'Léndeké', imperativeMeaning: 'escribe tú', nominalForm: 'ulendi', meaning: 'escritor' }
       ],
       mannerNouns: [
-        { actionForm: 'Ulongi', nominalForm: 'ilongidi', meaning: 'modo de construir' },
-        { actionForm: 'Ulangi', nominalForm: 'ilangidi', meaning: 'modo de leer' },
-        { actionForm: 'Ukali', nominalForm: 'ikalidi', meaning: 'modo de hablar' }
+        { actionForm: 'Ulongi', actionFormMeaning: 'arquitecto', nominalForm: 'ilongidi', meaning: 'modo de construir' },
+        { actionForm: 'Ulangi', actionFormMeaning: 'lector', nominalForm: 'ilangidi', meaning: 'modo de leer' },
+        { actionForm: 'Ukali', actionFormMeaning: 'orador', nominalForm: 'ikalidi', meaning: 'modo de hablar' }
       ]
     };
+  },
+  methods: {
+    getDictionaryUrl(word) {
+      return `${LIVING_DICTIONARY_BASE}/${String(word).toLowerCase()}`
+    },
+    makeAudioId(word) {
+      if (!word) return null
+      return String(word)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+    }
   },
   created() {
     document.title = 'Nombres Verbales | Portal Benga';
@@ -229,9 +299,9 @@ export default {
     flex-direction: column;
     gap: $spacing-md;
 
-    .formation-row {
+      .formation-row {
       display: grid;
-      grid-template-columns: 1fr auto 1fr 1fr;
+      grid-template-columns: minmax(220px, 360px) auto 1fr;
       gap: $spacing-md;
       align-items: center;
       padding: $spacing-md;
@@ -262,6 +332,7 @@ export default {
           color: $color-primary;
           font-size: 1.1rem;
         }
+        /* imperative-meaning moved into `BengaWord` via the `:meaning` prop */
       }
 
       .arrow {
@@ -270,10 +341,7 @@ export default {
         font-weight: bold;
       }
 
-      .formation-meaning {
-        color: $color-text-secondary;
-        font-style: italic;
-      }
+      /* meanings are shown in the `BengaWord` component; no separate column needed */
     }
   }
 

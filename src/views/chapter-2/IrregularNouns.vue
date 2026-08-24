@@ -17,10 +17,15 @@
         <div class="example-card" v-for="(example, idx) in pluralOnlyNouns" :key="`plural-${idx}`">
           <div class="example-form">
             <span class="label">Forma principal (plural):</span>
-            <span class="value">{{ example.word }}</span>
-          </div>
-          <div class="example-meaning">
-            <strong>{{ example.meaning }}</strong>
+            <span class="value">
+              <BengaWord
+                :word="example.word"
+                :audio-id="makeAudioId(example.word)"
+                :meaning="example.meaning"
+                :dictionary-url="getDictionaryUrl(example.word)"
+                block
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -34,10 +39,15 @@
         <div class="example-card" v-for="(example, idx) in singularOnlyNouns" :key="`singular-${idx}`">
           <div class="example-form">
             <span class="label">Forma principal (singular):</span>
-            <span class="value">{{ example.word }}</span>
-          </div>
-          <div class="example-meaning">
-            <strong>{{ example.meaning }}</strong>
+            <span class="value">
+              <BengaWord
+                :word="example.word"
+                :audio-id="makeAudioId(example.word)"
+                :meaning="example.meaning"
+                :dictionary-url="getDictionaryUrl(example.word)"
+                block
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -83,8 +93,13 @@
 </template>
 
 <script>
+import BengaWord from '@/components/content/BengaWord.vue'
+
+const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+
 export default {
   name: 'IrregularNouns',
+  components: { BengaWord },
   data() {
     return {
       pluralOnlyNouns: [
@@ -115,6 +130,20 @@ export default {
         { word: 'Bulu', meaning: 'Noche' }
       ]
     };
+  },
+  methods: {
+    getDictionaryUrl(word) {
+      return `${LIVING_DICTIONARY_BASE}/${String(word).toLowerCase()}`
+    },
+    makeAudioId(word) {
+      if (!word) return null
+      return String(word)
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+    }
   },
   created() {
     document.title = 'Nombres Irregulares | Portal Benga';
