@@ -65,6 +65,56 @@
       </div>
     </section>
 
+    <section class="noun-class__exceptions">
+      <h2>Excepciones</h2>
+      <p class="section-note">Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la segunda clase (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta sexta clase.</p>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+      <p class="example-note">En la segunda clase se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta sexta clase.</p>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in classTwoExceptions" :key="`class2-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="noun-class__practice">
       <h2>Para Practicar</h2>
       <ol class="practice-list">
@@ -95,32 +145,76 @@ export default {
     return {
       examples: [
         {
-          singular: { word: 'Veya', audio: 'veya', meaning: 'Fuego' },
-          plural: { word: 'Leya', audio: 'leya', meaning: 'Fuegos' }
+          singular: { word: 'Veya', audio: 'veya', meaning: 'Fuego, leña' },
+          plural: { word: 'Leya', audio: 'leya', meaning: 'Fuegos, leñas' }
         },
         {
-          singular: { word: 'Vio', audio: 'vio', meaning: 'Nariz' },
+          singular: { word: 'Vijo', audio: 'vijo', meaning: 'Nariz' },
           plural: { word: 'Lijo', audio: 'lijo', meaning: 'Narices' }
         },
         {
-          singular: { word: 'Vid', audio: 'vid', meaning: 'Sueño' },
-          plural: { word: 'Lid', audio: 'lid', meaning: 'Sueños' }
+          singular: { word: 'Viâ', audio: 'vi_a_', meaning: 'Sueño' },
+          plural: { word: 'Liâ', audio: 'li_a_', meaning: 'Sueños' }
         },
         {
           singular: { word: 'Viho', audio: 'viho', meaning: 'Río' },
           plural: { word: 'Liho', audio: 'liho', meaning: 'Ríos' }
         },
         {
-          singular: { word: 'Vitña', audio: 'vitna', meaning: 'Vela' },
-          plural: { word: 'Litña', audio: 'litna', meaning: 'Velas' }
+          singular: { word: 'Vilolombo', audio: 'vilolombo', meaning: 'Átomo, partícula' },
+          plural: { word: 'Lololombo', audio: 'lololombo', meaning: 'Átomos, partículas' }
         },
         {
-          singular: { word: 'Viyonda', audio: 'viyonda', meaning: 'Estación seca' },
-          plural: { word: 'Loyonda', audio: 'loyonda', meaning: 'Estaciones secas' }
+          singular: { word: 'Vingangambi', audio: 'vingangambi', meaning: 'Capricho, extravagancia' },
+          plural: { word: 'Longangambi', audio: 'longangambi', meaning: 'Caprichos, extravagancias' }
         },
         {
-          singular: { word: 'Viyembo', audio: 'viyembo', meaning: 'Himno' },
-          plural: { word: 'Lembo', audio: 'lembo', meaning: 'Himnos' }
+          singular: { word: 'Vingunguhu', audio: 'vingunguhu', meaning: 'Miga' },
+          plural: { word: 'Longunguhu', audio: 'longunguhu', meaning: 'Migas' }
+        },
+        {
+          singular: { word: 'Vipupuhu', audio: 'vipupuhu', meaning: 'Fragmento' },
+          plural: { word: 'Lopupuhu', audio: 'lopupuhu', meaning: 'Fragmentos' }
+        },
+        {
+          singular: { word: 'Vitūa', audio: 'vit_u_a', meaning: 'Vela, luz de candela' },
+          plural: { word: 'Litūa', audio: 'lit_u_a', meaning: 'Velas, luces de candela' }
+        },
+        {
+          singular: { word: 'Viyonda', audio: 'viyonda', meaning: 'La estación seca' },
+          plural: { word: 'Loyonda', audio: 'loyonda', meaning: 'Las estaciones secas' }
+        },
+        {
+          singular: { word: 'Viyembo', audio: 'viyembo', meaning: 'Himno, canto' },
+          plural: { word: 'Lembo', audio: 'lembo', meaning: 'Himnos, cantos' }
+        }
+      ],
+      exceptionExamples: [
+        {
+          singular: { word: 'Viaha', audio: 'viaha', meaning: 'Limón' },
+          plural: { word: 'Laha', audio: 'laha', meaning: 'Limones' }
+        },
+        {
+          singular: { word: 'Vianga', audio: 'vianga', meaning: 'sal' },
+          plural: { word: 'Langa', audio: 'langa', meaning: 'Gran cantidad de sal' }
+        },
+        {
+          singular: { word: 'Viyohi', audio: 'viyohi', meaning: 'Rayo de sol' },
+          plural: { word: 'Lohi', audio: 'lohi', meaning: 'Rayos de sol' }
+        }
+      ],
+      classTwoExceptions: [
+        {
+          singular: { word: 'Inâni', audio: 'in_a_ni', meaning: 'Pájaro' },
+          plural: { word: 'Lonâni', audio: 'lon_a_ni', meaning: 'Pájaros' }
+        },
+        {
+          singular: { word: 'Iboko', audio: 'iboko', meaning: 'Lugar, sitio' },
+          plural: { word: 'Loboko', audio: 'loboko', meaning: 'Lugares, sitios' }
+        },
+        {
+          singular: { word: 'Ikadada', audio: 'ikadada', meaning: 'Pimienta' },
+          plural: { word: 'Lokadada', audio: 'lokadada', meaning: 'Pimientas' }
         }
       ]
     }
@@ -180,6 +274,14 @@ export default {
     }
   }
 
+  .section-note {
+    margin: 0 0 $spacing-lg;
+    padding: $spacing-md;
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    color: $color-text-secondary;
+  }
+
   &__pattern {
     .pattern-box {
       display: flex;
@@ -237,7 +339,8 @@ export default {
   }
 
   &__examples,
-  &__variants {
+  &__variants,
+  &__exceptions {
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -285,6 +388,14 @@ export default {
         min-width: 50%;
         flex: 1;
       }
+    }
+
+    .example-note {
+      margin: $spacing-lg 0 0;
+      color: $color-text-secondary;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
     }
   }
 

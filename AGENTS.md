@@ -25,6 +25,33 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - Reuse the same SCSS patterns from the first noun-class component: `@import '@/styles/variables'; @import '@/styles/mixins';`, BEM naming, `pattern-box`, `example-card`, `concept-item`, and responsive layout rules via `@include respond-below('md')`.
 - Avoid the old shorthand classes like `nc`, `h`, `pb`, `eg`, `b` and instead use the full `noun-class` BEM naming system across all noun-class pages. This keeps them consistent and easier to maintain.
 - The goal is visual similarity across all chapter-2 nominal-class views, so changes to spacing, color, typography, and card styling should be applied uniformly rather than re-designed per page.
+- When a class has exceptions, add a dedicated `noun-class__exceptions` section styled with `.section-note` (and `.example-note` when a clarifying remark is needed), and include its BEM selector in the shared `&__examples, &__variants, &__exceptions` SCSS block so the cards look identical to the main ones.
+
+### Source of Truth: Salvado y Cos Grammar
+- The authoritative text is `src/assets/sources/searchable_Lengua_benga_salvado_y_cos.pdf` (a searchable scan, so its text layer has OCR damage). Book page numbers are offset from PDF page numbers; map them before extracting:
+
+  | Noun class | Book pages | PDF pages | Component |
+  |---|---|---|---|
+  | 1 | 9-10 | 9-10 | `NounClass1.vue` |
+  | 2 | 10-11 | 10-11 | `NounClass2.vue` |
+  | 3 | 11 | 11 | `NounClass3.vue` |
+  | 4 | 11-12 | 11-12 | `NounClass4.vue` |
+  | 5 | 12 | 12 | `NounClass5.vue` |
+  | 6 | 12-13 | 12-13 | `NounClass6.vue` |
+  | 7 | 13 | 13 | `NounClass7.vue` |
+
+- Extract with `pdftotext -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
+- **Never trust `src/data/chapter-2/class-N.json` for content.** Those files are not imported by any view and many of their Spanish glosses contradict the book (e.g. `class-3.json` says `woaha` = "fuego", the book says "Costado, lado"). The `.vue` `data()` blocks hold the real content.
+
+### Benga Orthography Rules
+- The Benga vowel inventory is `a, â, e, ē, i, o, u, ū`. The book was printed with Spanish-style accents, so `á → â`, `é → ē`, `ú → ū` when the word is Benga. Leave Spanish text in the `meaning` fields untouched. Consecutive accented vowels are kept (`Múéngi` → `Mūēngi`).
+- `c`, `q`, `r`, `x`, `z` and `ñ` are not consonants in benga. Any letter similar has to be another letter.
+- Accent marks are significant for pronunciation, so a wrong accent changes the taught word, not just its look.
+
+### Audio ID Convention
+- `audio` is a Cloudinary public id built as `${CLOUDINARY_BASE}/${audioId}.mp3`, so it must be URL-safe ASCII: take `word.toLowerCase()` and replace **every** non-ASCII letter with `_` + its plain letter + `_`.
+- Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`. Two adjacent accented vowels therefore produce a single underscore; that is expected, not a typo.
+- Getting this wrong breaks playback silently — the button renders but the request 404s. When adding entries, derive the id from the word rather than typing it by hand.
 
 ### File Naming Conventions
 - **Components**: PascalCase (e.g., `AudioPlayer.vue`, `ChapterNav.vue`)

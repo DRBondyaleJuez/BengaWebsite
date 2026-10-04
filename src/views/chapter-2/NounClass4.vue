@@ -2,7 +2,7 @@
   <div class="noun-class noun-class--4">
     <div class="noun-class__header">
       <h1>Cuarta Clase Nominal</h1>
-      <p class="subtitle">bo / ba → mi</p>
+      <p class="subtitle">bo / bū → mi</p>
     </div>
 
     <section class="noun-class__pattern">
@@ -10,7 +10,7 @@
       <div class="pattern-box">
         <div class="pattern-item">
           <span class="pattern-label">Singular:</span>
-          <span class="pattern-value singular">bo- / ba-</span>
+          <span class="pattern-value singular">bo- / bū-</span>
         </div>
         <div class="pattern-arrow">→</div>
         <div class="pattern-item">
@@ -22,9 +22,35 @@
     </section>
 
     <section class="noun-class__examples">
-      <h2>Ejemplos Principales</h2>
+      <h2>Ejemplos con bo-</h2>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in examples" :key="`ex-${idx}`">
+        <div class="example-card" v-for="(example, idx) in boExamples" :key="`bo-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="noun-class__variants">
+      <h2>Ejemplos con bū-</h2>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in buExamples" :key="`ba-${idx}`">
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -55,8 +81,8 @@
           <p>La marca plural más característica de esta clase es mi-.</p>
         </div>
         <div class="concept-item">
-          <h4>Raíces bo-/ba-</h4>
-          <p>La raíz singular puede empezar con bo- o ba- antes de emerger en plural.</p>
+          <h4>Raíces bo-/bū-</h4>
+          <p>La raíz singular puede empezar con bo- o bū- antes de emerger en plural.</p>
         </div>
         <div class="concept-item">
           <h4>Uso práctico</h4>
@@ -65,10 +91,37 @@
       </div>
     </section>
 
+    <section class="noun-class__exceptions">
+      <h2>Excepciones</h2>
+      <p class="section-note">Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la segunda clase.</p>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="noun-class__practice">
       <h2>Para Practicar</h2>
       <ol class="practice-list">
-        <li>Repite el cambio bo-/ba- → mi- con los ejemplos.</li>
+        <li>Repite el cambio bo-/bū- → mi- con los ejemplos.</li>
         <li>Forma una frase oral con uno de los sustantivos en singular.</li>
         <li>Luego repite la misma frase en plural con el mismo patrón.</li>
       </ol>
@@ -93,34 +146,70 @@ export default {
   },
   data() {
     return {
-      examples: [
+      boExamples: [
         {
-          singular: { word: 'Bobako', audio: 'bobako', meaning: 'Vaina' },
-          plural: { word: 'Mibako', audio: 'mibako', meaning: 'Vainas' }
+          singular: { word: 'Bobako', audio: 'bobako', meaning: 'Vaina, funda' },
+          plural: { word: 'Mibako', audio: 'mibako', meaning: 'Vainas, fundas' }
         },
         {
-          singular: { word: 'Boho', audio: 'boho', meaning: 'Cara' },
-          plural: { word: 'Mioho', audio: 'mioho', meaning: 'Caras' }
+          singular: { word: 'Bobâbu', audio: 'bob_a_bu', meaning: 'Blandura' },
+          plural: { word: 'Mibâbu', audio: 'mib_a_bu', meaning: 'Blanduras' }
         },
         {
-          singular: { word: 'Bojona', audio: 'bojona', meaning: 'Mentira' },
-          plural: { word: 'Mijona', audio: 'mijona', meaning: 'Mentiras' }
+          singular: { word: 'Boho', audio: 'boho', meaning: 'Cara, frente' },
+          plural: { word: 'Mioho', audio: 'mioho', meaning: 'Caras, frentes' }
         },
         {
-          singular: { word: 'Bongo', audio: 'bongo', meaning: 'Espina' },
-          plural: { word: 'Miongo', audio: 'miongo', meaning: 'Espinas' }
+          singular: { word: 'Bojoūa', audio: 'bojo_u_a', meaning: 'Mentira' },
+          plural: { word: 'Mijoūa', audio: 'mijo_u_a', meaning: 'Mentiras' }
         },
         {
-          singular: { word: 'Bova', audio: 'bova', meaning: 'Don' },
-          plural: { word: 'Mira', audio: 'mira', meaning: 'Dones' }
+          singular: { word: 'Bongo', audio: 'bongo', meaning: 'Espina, punta' },
+          plural: { word: 'Miongo', audio: 'mingo', meaning: 'Espinas, puntas' }
         },
         {
-          singular: { word: 'Baalo', audio: 'baalo', meaning: 'Canoa' },
+          singular: { word: 'Bonyamo', audio: 'bonyamo', meaning: 'Miseria, pobreza' },
+          plural: { word: 'Mingomo', audio: 'mingomo', meaning: 'Miserias, pobrezas' }
+        },
+        {
+          singular: { word: 'Bova', audio: 'bova', meaning: 'Don, regalo' },
+          plural: { word: 'Miva', audio: 'miva', meaning: 'Dones, regalos' }
+        },
+        {
+          singular: { word: 'Bokâ', audio: 'bok_a_', meaning: 'Estación lluviosa' },
+          plural: { word: 'Miokâ', audio: 'miok_a_', meaning: 'Estaciones lluviosas' }
+        }
+      ],
+      buExamples: [
+        {
+          singular: { word: 'Būalo', audio: 'b_u_alo', meaning: 'Canoa' },
           plural: { word: 'Mialo', audio: 'mialo', meaning: 'Canoas' }
         },
         {
-          singular: { word: 'Bue', audio: 'bue', meaning: 'Luz' },
+          singular: { word: 'Būanga', audio: 'b_u_anga', meaning: 'Campana supersticiosa' },
+          plural: { word: 'Mianga', audio: 'mianga', meaning: 'Campanas supersticiosas' }
+        },
+        {
+          singular: { word: 'Būayē', audio: 'b_u_any_e_', meaning: 'Violencia' },
+          plural: { word: 'Miayē', audio: 'miay_e_', meaning: 'Violencias' }
+        },
+        {
+          singular: { word: 'Būe', audio: 'b_u_e', meaning: 'Luz' },
           plural: { word: 'Mie', audio: 'mie', meaning: 'Luces' }
+        },
+        {
+          singular: { word: 'Būeka', audio: 'b_u_eka', meaning: 'Odio' },
+          plural: { word: 'Mieka', audio: 'mieka', meaning: 'Odios' }
+        }
+      ],
+      exceptionExamples: [
+        {
+          singular: { word: 'Bolohi', audio: 'bolohi', meaning: 'Naranja' },
+          plural: { word: 'Melohi', audio: 'melohi', meaning: 'Naranjas' }
+        },
+        {
+          singular: { word: 'Buūha', audio: 'b_u_u_h_a', meaning: 'Día' },
+          plural: { word: 'ūhi', audio: '_u_hi', meaning: 'Días' }
         }
       ]
     }
@@ -180,6 +269,14 @@ export default {
     }
   }
 
+  .section-note {
+    margin: 0 0 $spacing-lg;
+    padding: $spacing-md;
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    color: $color-text-secondary;
+  }
+
   &__pattern {
     .pattern-box {
       display: flex;
@@ -237,7 +334,8 @@ export default {
   }
 
   &__examples,
-  &__variants {
+  &__variants,
+  &__exceptions {
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -285,6 +383,14 @@ export default {
         min-width: 50%;
         flex: 1;
       }
+    }
+
+    .example-note {
+      margin: $spacing-lg 0 0;
+      color: $color-text-secondary;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
     }
   }
 

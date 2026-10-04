@@ -65,6 +65,33 @@
       </div>
     </section>
 
+    <section class="noun-class__exceptions">
+      <h2>Excepciones</h2>
+      <p class="section-note">Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta quinta clase.</p>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="noun-class__practice">
       <h2>Para Practicar</h2>
       <ol class="practice-list">
@@ -117,6 +144,12 @@ export default {
         {
           singular: { word: 'Mongolu', audio: 'mongolu', meaning: 'Escarabajo' },
           plural: { word: 'Bangolu', audio: 'bangolu', meaning: 'Escarabajos' }
+        }
+      ],
+      exceptionExamples: [
+        {
+          singular: { word: 'Ubapami', audio: 'ubapami', meaning: 'Portador' },
+          plural: { word: 'Bobapami', audio: 'bobapami', meaning: 'Portadores' }
         }
       ]
     }
@@ -176,6 +209,14 @@ export default {
     }
   }
 
+  .section-note {
+    margin: 0 0 $spacing-lg;
+    padding: $spacing-md;
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    color: $color-text-secondary;
+  }
+
   &__pattern {
     .pattern-box {
       display: flex;
@@ -233,7 +274,8 @@ export default {
   }
 
   &__examples,
-  &__variants {
+  &__variants,
+  &__exceptions {
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -281,6 +323,14 @@ export default {
         min-width: 50%;
         flex: 1;
       }
+    }
+
+    .example-note {
+      margin: $spacing-lg 0 0;
+      color: $color-text-secondary;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
     }
   }
 

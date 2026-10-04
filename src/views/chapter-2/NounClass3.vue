@@ -91,6 +91,34 @@
       </div>
     </section>
 
+    <section class="noun-class__exceptions">
+      <h2>Excepciones</h2>
+      <p class="section-note">Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural.</p>
+      <div class="examples-grid">
+        <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
+          <div class="example-singular">
+            <BengaWord
+              :word="example.singular.word"
+              :audio-id="example.singular.audio"
+              :meaning="example.singular.meaning"
+              :dictionary-url="getDictionaryUrl(example.singular.word)"
+              block
+            />
+          </div>
+          <div class="example-plural">
+            <BengaWord
+              :word="example.plural.word"
+              :audio-id="example.plural.audio"
+              :meaning="example.plural.meaning"
+              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              block
+            />
+          </div>
+        </div>
+      </div>
+      <p class="example-note">Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta.</p>
+    </section>
+
     <section class="noun-class__practice">
       <h2>Para Practicar</h2>
       <ol class="practice-list">
@@ -121,20 +149,80 @@ export default {
     return {
       uExamples: [
         {
-          singular: { word: 'Woaha', audio: 'woaha', meaning: 'Costado' },
-          plural: { word: 'Mebaha', audio: 'mebaha', meaning: 'Costados' }
+          singular: { word: 'Wbaha', audio: 'wbaha', meaning: 'Costado, lado' },
+          plural: { word: 'Mebaha', audio: 'mebaha', meaning: 'Costados, lados' }
         },
         {
-          singular: { word: 'Woanga', audio: 'woanga', meaning: 'Nuez' },
+          singular: { word: 'Wbalani', audio: 'wbalani', meaning: 'Conquistador' },
+          plural: { word: 'Mebalani', audio: 'mebalani', meaning: 'Conquistadores' }
+        },
+        {
+          singular: { word: 'Wbanga', audio: 'wbanga', meaning: 'Nuez' },
           plural: { word: 'Mebanga', audio: 'mebanga', meaning: 'Nueces' }
         },
         {
-          singular: { word: 'Wháki', audio: 'whaki', meaning: 'Hacha' },
-          plural: { word: 'Mebáki', audio: 'mebaki', meaning: 'Hachas' }
+          singular: { word: 'Wbango', audio: 'wbango', meaning: 'Diente de marfil' },
+          plural: { word: 'Mebango', audio: 'mebango', meaning: 'Dientes de marfil' }
         },
         {
-          singular: { word: 'Whéngé', audio: 'whenge', meaning: 'Calle' },
-          plural: { word: 'Mehéngé', audio: 'mehenge', meaning: 'Calles' }
+          singular: { word: 'Wbâki', audio: 'wb_a_ki', meaning: 'Hacha, destral' },
+          plural: { word: 'Mebâki', audio: 'meb_a_ki', meaning: 'Hachas, destrales' }
+        },
+        {
+          singular: { word: 'Wbândâ', audio: 'wb_a_nd_a_', meaning: 'Tiro de fusil' },
+          plural: { word: 'Mebândâ', audio: 'meb_a_nd_a_', meaning: 'Tiros de fusil' }
+        },
+        {
+          singular: { word: 'Wbendi', audio: 'wbendi', meaning: 'Adulador' },
+          plural: { word: 'Mebendi', audio: 'mebendi', meaning: 'Aduladores' }
+        },
+        {
+          singular: { word: 'Wbēdi', audio: 'wb_e_di', meaning: 'Enfermedad' },
+          plural: { word: 'Mebēdi', audio: 'meb_e_di', meaning: 'Enfermedades' }
+        },
+        {
+          singular: { word: 'Wbulubulu', audio: 'wbulubulu', meaning: 'Polvo' },
+          plural: { word: 'Mebulubulu', audio: 'mebulubulu', meaning: 'Polvos' }
+        },
+        {
+          singular: { word: 'Wbūa', audio: 'wb_u_a', meaning: 'La mañana' },
+          plural: { word: 'Mebūa', audio: 'meb_u_a', meaning: 'Las mañanas' }
+        },
+        {
+          singular: { word: 'Wdâmbē', audio: 'wd_a_mb_e_', meaning: 'Oveja' },
+          plural: { word: 'Medâmbē', audio: 'med_a_mb_e_', meaning: 'Ovejas' }
+        },
+        {
+          singular: { word: 'Wdumbu', audio: 'wdumbu', meaning: null },
+          plural: { word: 'Medumbu', audio: 'medumbu', meaning: null }
+        },
+        {
+          singular: { word: 'Wgangano', audio: 'wgangano', meaning: 'Compañerismo' },
+          plural: { word: 'Megangano', audio: 'megangano', meaning: 'Compañerismos' }
+        },
+        {
+          singular: { word: 'Wgulu', audio: 'wgulu', meaning: 'Cuerda' },
+          plural: { word: 'Megulu', audio: 'megulu', meaning: 'Cuerdas' }
+        },
+        {
+          singular: { word: 'Whâ', audio: 'wh_a_', meaning: 'Pipa' },
+          plural: { word: 'Mehâ', audio: 'meh_a_', meaning: 'Pipas' }
+        },
+        {
+          singular: { word: 'Whēkē', audio: 'wh_e_k_e_', meaning: 'Playa del mar' },
+          plural: { word: 'Mehēkē', audio: 'meh_e_k_e_', meaning: 'Playas del mar' }
+        },
+        {
+          singular: { word: 'Whēngē', audio: 'wh_e_ng_e_', meaning: 'Calle' },
+          plural: { word: 'Mehēngē', audio: 'meh_e_ng_e_', meaning: 'Calles' }
+        },
+        {
+          singular: { word: 'Whiha', audio: 'whiha', meaning: 'Nervio, vena' },
+          plural: { word: 'Mehiha', audio: 'mehiha', meaning: 'Nervios, venas' }
+        },
+        {
+          singular: { word: 'Whinganakano', audio: 'whinganakano', meaning: 'Cadena' },
+          plural: { word: 'Mehinganakano', audio: 'mehinganakano', meaning: 'Cadenas' }
         },
         {
           singular: { word: 'Whingi', audio: 'whingi', meaning: 'Gato salvaje' },
@@ -143,24 +231,66 @@ export default {
       ],
       muExamples: [
         {
-          singular: { word: 'Múadi', audio: 'muadi', meaning: 'Hembra' },
+          singular: { word: 'Mūadi', audio: 'm_u_adi', meaning: 'Hembra' },
           plural: { word: 'Miadi', audio: 'miadi', meaning: 'Hembras' }
         },
         {
-          singular: { word: 'Múako', audio: 'muako', meaning: 'Confianza' },
+          singular: { word: 'Mūahi', audio: 'm_u_ahi', meaning: 'Erizo, peine de adorno' },
+          plural: { word: 'Miahi', audio: 'miahi', meaning: 'Erizos, peines de adorno' }
+        },
+        {
+          singular: { word: 'Mūako', audio: 'm_u_ako', meaning: 'Confianza' },
           plural: { word: 'Miako', audio: 'miako', meaning: 'Confianzas' }
         },
         {
-          singular: { word: 'Maalika', audio: 'maalika', meaning: 'Vihuela' },
+          singular: { word: 'Mūalika', audio: 'm_u_alika', meaning: 'Vihuela' },
           plural: { word: 'Mialika', audio: 'mialika', meaning: 'Vihuelas' }
         },
         {
-          singular: { word: 'Maanga', audio: 'maanga', meaning: 'Rebaño' },
-          plural: { word: 'Mianga', audio: 'mianga', meaning: 'Rebaños' }
+          singular: { word: 'Mūambo', audio: 'm_u_ambo', meaning: 'Sacrificio, oferta' },
+          plural: { word: 'Miambo', audio: 'miambo', meaning: 'Sacrificios, ofertas' }
         },
         {
-          singular: { word: 'Múéngi', audio: 'muengi', meaning: 'Extranjero' },
-          plural: { word: 'Miéngi', audio: 'miengi', meaning: 'Extranjeros' }
+          singular: { word: 'Mūanga', audio: 'm_u_anga', meaning: 'Rebaño, huerto' },
+          plural: { word: 'Mianga', audio: 'mianga', meaning: 'Rebaños, huertos' }
+        },
+        {
+          singular: { word: 'Mūanjo', audio: 'm_u_anjo', meaning: 'Justicia' },
+          plural: { word: 'Mianjo', audio: 'mianjo', meaning: 'Justicias' }
+        },
+        {
+          singular: { word: 'Mūemba', audio: 'm_u_emba', meaning: 'Sopa, salsa' },
+          plural: { word: 'Miemba', audio: 'miemba', meaning: 'Sopas, salsas' }
+        },
+        {
+          singular: { word: 'Mūēngi', audio: 'm_u_e_ngi', meaning: 'Extranjero' },
+          plural: { word: 'Miēngi', audio: 'miengi', meaning: 'Extranjeros' }
+        },
+        {
+          singular: { word: 'Mūēni', audio: 'm_u_e_ni', meaning: 'Brazalete' },
+          plural: { word: 'Miēni', audio: 'mi_e_ni', meaning: 'Brazaletes' }
+        },
+        {
+          singular: { word: 'Mūidi', audio: 'm_u_idi', meaning: 'Banco, orilla' },
+          plural: { word: 'Miidi', audio: 'miidi', meaning: 'Bancos, orillas' }
+        },
+        {
+          singular: { word: 'Mūindi', audio: 'm_u_indi', meaning: 'Montón, hato' },
+          plural: { word: 'Miindi', audio: 'miindi', meaning: 'Montones, hatos' }
+        },
+        {
+          singular: { word: 'Mūiya', audio: 'm_u_iya', meaning: 'Intestinos' },
+          plural: { word: 'Miiya', audio: 'miiya', meaning: 'Intestinos' }
+        }
+      ],
+      exceptionExamples: [
+        {
+          singular: { word: 'Muajo', audio: 'muajo', meaning: 'Mujer' },
+          plural: { word: 'Bajo', audio: 'bajo', meaning: 'Mujeres' }
+        },
+        {
+          singular: { word: 'Molo', audio: 'molo', meaning: 'Cabeza' },
+          plural: { word: 'Miolo', audio: 'miolo', meaning: 'Cabezas' }
         }
       ]
     }
@@ -276,8 +406,17 @@ export default {
     }
   }
 
+  .section-note {
+    margin: 0 0 $spacing-lg;
+    padding: $spacing-md;
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    color: $color-text-secondary;
+  }
+
   &__examples,
-  &__variants {
+  &__variants,
+  &__exceptions {
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -325,6 +464,14 @@ export default {
         min-width: 50%;
         flex: 1;
       }
+    }
+
+    .example-note {
+      margin: $spacing-lg 0 0;
+      color: $color-text-secondary;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-align: center;
     }
   }
 
