@@ -321,20 +321,20 @@ export default {
         },
         {
           singular: {
-            word: 'Yâki',
-            audio: 'y_a_ki',
+            word: 'Yâkâ',
+            audio: 'y_a_k_a_',
             meaning: 'Medicina'
           },
           plural: {
-            word: 'Biâki',
-            audio: 'bi_a_ki',
+            word: 'Biâkâ',
+            audio: 'bi_a_k_a_',
             meaning: 'Medicinas'
           }
         },
         {
           singular: {
-            word: 'Yzjâ',
-            audio: 'yzj_a_',
+            word: 'Yējâ',
+            audio: 'y_e_j_a_',
             meaning: 'Medida'
           },
           plural: {
@@ -345,8 +345,8 @@ export default {
         },
         {
           singular: {
-            word: 'Yekē',
-            audio: 'yek_e_',
+            word: 'Yēkē',
+            audio: 'y_e_k_e_',
             meaning: 'Juicio'
           },
           plural: {
