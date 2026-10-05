@@ -10,24 +10,25 @@
       <div class="pattern-box">
         <div class="pattern-item">
           <span class="pattern-label">Singular:</span>
-          <span class="pattern-value singular">fala / tuma</span>
+          <span class="pattern-value singular">hako / tuma / mbadi / ndabo / nganga / sango</span>
         </div>
         <div class="pattern-arrow">→</div>
         <div class="pattern-item">
           <span class="pattern-label">Plural:</span>
-          <span class="pattern-value plural">fala / tuma</span>
+          <span class="pattern-value plural">hako / tuma / mbadi / ndabo / nganga / sango</span>
         </div>
       </div>
-      <p class="pattern-description">Esta clase es invariable: la forma singular y plural coinciden, y el número se interpreta por el contexto o por los adjuntos que acompañan al sustantivo.</p>
+      <p class="pattern-description">Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número.</p>
     </section>
 
     <section class="noun-class__examples">
-      <h2>Ejemplos (algunos de 100+)</h2>
+      <h2>Ejemplos del libro ({{ words.length }})</h2>
       <div class="examples-grid">
         <div class="example-card" v-for="(word, idx) in words" :key="`word-${idx}`">
           <div class="example-singular">
             <BengaWord
               :word="word.word"
+              :audio-id="word.audio"
               :meaning="word.meaning"
               :dictionary-url="getDictionaryUrl(word.word)"
               block
@@ -50,7 +51,7 @@
         </div>
         <div class="concept-item">
           <h4>Gran grupo</h4>
-          <p>La mayoría de las palabras que comienzan con consonante o con doble consonante entran aquí.</p>
+          <p>Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla.</p>
         </div>
       </div>
     </section>
@@ -84,53 +85,94 @@ export default {
   data() {
     return {
       words: [
-        { word: 'Fala', meaning: 'cristal' },
-        { word: 'Fato', meaning: 'cosa' },
-        { word: 'Fula', meaning: 'hilo' },
-        { word: 'Jangá', meaning: 'atadura' },
-        { word: 'Jonda', meaning: 'escarabajo' },
-        { word: 'Jumba', meaning: 'río pequeño' },
-        { word: 'Kabala', meaning: 'pollo' },
-        { word: 'Kata', meaning: 'palma' },
-        { word: 'Kono', meaning: 'casa' },
-        { word: 'Kuma', meaning: 'terreno' },
-        { word: 'Paha', meaning: 'lugar' },
-        { word: 'Panga', meaning: 'pieza' },
-        { word: 'Tagulu', meaning: 'sombra' },
-        { word: 'Tina', meaning: 'lodo' },
-        { word: 'Tito', meaning: 'tipo' },
-        { word: 'Toko', meaning: 'piedra' },
-        { word: 'Tolongo', meaning: 'senda' },
-        { word: 'Tombo', meaning: 'ronco' },
-        { word: 'Tongo', meaning: 'hacha' },
-        { word: 'Tudi', meaning: 'fruta' },
-        { word: 'Tuma', meaning: 'hoja' },
-        { word: 'Penge', meaning: 'cuerda' },
-        { word: 'Pani', meaning: 'yuca' },
-        { word: 'Paro', meaning: 'palmera' },
-        { word: 'Sago', meaning: 'corteza' },
-        { word: 'Sango', meaning: 'árbol' },
-        { word: 'Sikulu', meaning: 'arco' },
-        { word: 'Ngabo', meaning: 'madera' },
-        { word: 'Ngaho', meaning: 'fruto' },
-        { word: 'Ngama', meaning: 'mar' },
-        { word: 'Ngandi', meaning: 'lago' },
-        { word: 'Ngani', meaning: 'día' },
-        { word: 'Ngúmbi', meaning: 'pescado' },
-        { word: 'Njadi', meaning: 'nuez' },
-        { word: 'Ndabo', meaning: 'varón' },
-        { word: 'Ndaga', meaning: 'ropa' },
-        { word: 'Ndolo', meaning: 'cabello' },
-        { word: 'Mora', meaning: 'pueblo' },
-        { word: 'Mbanja', meaning: 'madera' },
-        { word: 'Mbángá', meaning: 'sangre' },
-        { word: 'Mota', meaning: 'lomo' },
-        { word: 'Hapi', meaning: 'ramita' },
-        { word: 'Hoñe', meaning: 'pato' },
-        { word: 'Poke', meaning: 'pelea' },
-        { word: 'Poti', meaning: 'maíz' },
-        { word: 'Pudi', meaning: 'memoria' },
-        { word: 'Páisi', meaning: 'campo' }
+        { word: 'Fala', audio: 'fala', meaning: 'Francés' },
+        { word: 'Fato', audio: 'fato', meaning: 'Media, calceta' },
+        { word: 'Fula', audio: 'fula', meaning: 'Franco, moneda' },
+        { word: 'Dyate', audio: 'dyate', meaning: 'Cinta del sombrero' },
+        { word: 'Hako', audio: 'hako', meaning: 'Hormiga' },
+        { word: 'Hapi', audio: 'hapi', meaning: 'Cerradura' },
+        { word: 'Hoūe', audio: 'ho_u_e', meaning: 'Pelo, cabello' },
+        { word: 'Jângâ', audio: 'j_a_ng_a_', meaning: 'Temor (clase de)' },
+        { word: 'Jonda', audio: 'jonda', meaning: 'Rana' },
+        { word: 'Jumba', audio: 'jumba', meaning: 'Carga' },
+        { word: 'Kabala', audio: 'kabala', meaning: 'Caballo' },
+        { word: 'Kâtâ', audio: 'k_a_t_a_', meaning: 'Tranca' },
+        { word: 'Kono', audio: 'kono', meaning: 'Bisagra' },
+        { word: 'Kuma', audio: 'kuma', meaning: 'Fama, renombre' },
+        { word: 'Mâkâ', audio: 'm_a_k_a_', meaning: 'Tienda de campaña' },
+        { word: 'Pago', audio: 'pago', meaning: 'Tributo' },
+        { word: 'Paha', audio: 'paha', meaning: 'Rama' },
+        { word: 'Panga', audio: 'panga', meaning: 'Cadena, promesa' },
+        { word: 'Tagulu', audio: 'tagulu', meaning: 'Mesa' },
+        { word: 'Tina', audio: 'tina', meaning: 'Razón, causa' },
+        { word: 'Tito', audio: 'tito', meaning: 'Bestia, animal' },
+        { word: 'Toko', audio: 'toko', meaning: 'Cuchara' },
+        { word: 'Tolongo', audio: 'tolongo', meaning: 'Baúl' },
+        { word: 'Tombo', audio: 'tombo', meaning: 'Aguja' },
+        { word: 'Tongo', audio: 'tongo', meaning: 'Manantial' },
+        { word: 'Tudi', audio: 'tudi', meaning: 'Disgusto, fastidio' },
+        { word: 'Tuma', audio: 'tuma', meaning: 'Tenedor' },
+        { word: 'Tungu', audio: 'tungu', meaning: 'Bahía' },
+        { word: 'Tyoli', audio: 'tyoli', meaning: 'Despensero' },
+        { word: 'Mbadi', audio: 'mbadi', meaning: 'Ardilla' },
+        { word: 'Mbalanga', audio: 'malanga', meaning: 'Antilope' },
+        { word: 'Mbanja', audio: 'mbanja', meaning: 'Bambú, costilla' },
+        { word: 'Mbângâ', audio: 'mb_a_ng_a_', meaning: 'Patata' },
+        { word: 'Mbuja', audio: 'mbuja', meaning: 'Red' },
+        { word: 'Mbūa', audio: 'mb_u_a', meaning: 'Perro' },
+        { word: 'Ndabo', audio: 'ndabo', meaning: 'Casa' },
+        { word: 'Ndaga', audio: 'ndaga', meaning: 'Palabra, razonamiento' },
+        { word: 'Ndâtâ', audio: 'nd_a_t_a_', meaning: 'Sueño, desvario' },
+        { word: 'Ndembo', audio: 'ndembo', meaning: 'Señal' },
+        { word: 'Ndoba', audio: 'ndoba', meaning: 'Enemigo' },
+        { word: 'Ndomina', audio: 'ndomina', meaning: 'Tío materno' },
+        { word: 'Ndonda', audio: 'ndonga', meaning: 'Cosecha, siega' },
+        { word: 'Ndonga', audio: 'ndonga', meaning: 'Confianza' },
+        { word: 'Ndongo', audio: 'ndongo', meaning: 'Pimiento' },
+        { word: 'Ndumba', audio: 'ndumba', meaning: 'Huésped' },
+        { word: 'Penge', audio: 'penge', meaning: 'Ulcera' },
+        { word: 'Pani', audio: 'pani', meaning: 'Costumbre' },
+        { word: 'Pavo', audio: 'pavo', meaning: 'Cuchillo' },
+        { word: 'Pândâ', audio: 'p_a_nd_a_', meaning: 'Casco' },
+        { word: 'Penda', audio: 'penda', meaning: 'Controversia' },
+        { word: 'Pembē', audio: 'pemb_e_', meaning: 'Pan, greda' },
+        { word: 'Pika', audio: 'pika', meaning: 'Riñón' },
+        { word: 'Pimba', audio: 'pimba', meaning: 'Coraje' },
+        { word: 'Pita', audio: 'pita', meaning: 'Pólvora' },
+        { word: 'Pogo', audio: 'pogo', meaning: 'Arpón' },
+        { word: 'Poke', audio: 'poke', meaning: 'Sordera' },
+        { word: 'Poti', audio: 'poti', meaning: 'Maíz, grano' },
+        { word: 'Pudi', audio: 'pudi', meaning: 'Aire, aliento' },
+        { word: 'Pūisi', audio: 'p_u_isi', meaning: 'Gato' },
+        { word: 'Sago', audio: 'sago', meaning: 'Jabón' },
+        { word: 'Sango', audio: 'sango', meaning: 'Fiesta, noticia' },
+        { word: 'Senge', audio: 'senge', meaning: 'Palangana' },
+        { word: 'Sikulu', audio: 'sikulu', meaning: 'Escuela' },
+        { word: 'Nenge', audio: 'nenge', meaning: 'Isla' },
+        { word: 'Ngabo', audio: 'ngabo', meaning: 'Ración, porción' },
+        { word: 'Ngaho', audio: 'ngaho', meaning: 'Alambre' },
+        { word: 'Ngama', audio: 'ngama', meaning: 'Defensa' },
+        { word: 'Ngambi', audio: 'ngambi', meaning: 'Ira, rencor' },
+        { word: 'Ngando', audio: 'ngando', meaning: 'Cocodrilo' },
+        { word: 'Ngandi', audio: 'ngandi', meaning: 'Globo, bola' },
+        { word: 'Ngani', audio: 'ngani', meaning: 'Juego de manos' },
+        { word: 'Nganga', audio: 'nuega', meaning: 'Médico' },
+        { word: 'Nganiyango', audio: 'aniyango', meaning: 'Acceso, entrada' },
+        { word: 'Ngâmbi', audio: 'ng_u_mbi', meaning: 'Harpa' },
+        { word: 'Ngândâ', audio: 'ng_u_nda', meaning: 'Habas' },
+        { word: 'Ngâūē', audio: 'ng_a_u_e', meaning: 'Capitán' },
+        { word: 'Ngejangeja', audio: 'gejangeja', meaning: 'Cristal' },
+        { word: 'Ngenga', audio: 'ngenga', meaning: 'Ciempiés' },
+        { word: 'Ngomba', audio: 'ngomba', meaning: 'Puerco espín' },
+        { word: 'Ngonga', audio: 'ngonda', meaning: 'Pecho' },
+        { word: 'Ngudi', audio: 'ngudi', meaning: 'Fuerza, voluntad' },
+        { word: 'Ngumu', audio: 'ngumu', meaning: 'Jefe, principal' },
+        { word: 'Njadi', audio: 'njadi', meaning: 'Yunque' },
+        { word: 'Njadi', audio: 'njadi', meaning: 'Primogenito' },
+        { word: 'Nyangūa ditâ', audio: 'nyang_u_a_dita', meaning: 'Timpano, oido' },
+        { word: 'Nyuūē', audio: 'nyu_u_e_', meaning: 'Cabello blanco, o canas' },
+        { word: 'Nyeti', audio: 'nyeti', meaning: 'Chorro violento' },
+        { word: 'Nyēnjē', audio: 'ny_e_nj_e_', meaning: 'Cangrejo' }
       ]
     }
   },
@@ -245,8 +287,24 @@ export default {
     }
   }
 
+  .section-note {
+    margin: 0 0 $spacing-lg;
+    padding: $spacing-md;
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    color: $color-text-secondary;
+  }
+
+  .example-note {
+    margin: $spacing-lg 0 0;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    font-style: italic;
+  }
+
   &__examples,
-  &__variants {
+  &__variants,
+  &__exceptions {
     .examples-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

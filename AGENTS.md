@@ -38,10 +38,15 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
   | 4 | 11-12 | 11-12 | `NounClass4.vue` |
   | 5 | 12 | 12 | `NounClass5.vue` |
   | 6 | 12-13 | 12-13 | `NounClass6.vue` |
-  | 7 | 13 | 13 | `NounClass7.vue` |
+  | 7 | 13 | 13-14 | `NounClass7.vue` |
+  | Irregular nouns (§ 7, § 8) | 14 | 14 | `IrregularNouns.vue` |
+  | Verbal nouns | 14-15 | 14-15 | `VerbalNouns.vue` |
+
+  The class-7 list runs over two printed pages: the left column of PDF page 13 ends with `Ndumba, huésped`, and the right column of the same page continues with `Penge, ulcera` through `Njadi, primogénito`; `Ndonga` to `Nyênjê` are at the top of PDF page 14.
 
 - Extract with `pdftotext -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
 - **Never trust `src/data/chapter-2/class-N.json` for content.** Those files are not imported by any view and many of their Spanish glosses contradict the book (e.g. `class-3.json` says `woaha` = "fuego", the book says "Costado, lado"). The `.vue` `data()` blocks hold the real content.
+- When the OCR damage cannot be resolved (no tesseract available, and page images cannot be inspected), **omit the entry and say so** in a visible `.section-note` / `.example-note` rather than inventing a headword; leave an unreadable gloss as `meaning: null` instead of guessing a translation. Cross-check doubtful headwords against the book's own `Vocabulario` section (`grep` the extracted text) before reconstructing — e.g. the class-7 `Mora. Perro.` is really `Mba. Perro.` (`Mba` is "perro" throughout the vocabulary). Watch for words that legitimately appear in two classes with different spellings: `Ndâlâ, sueño, desvario` (class 7) is not the same as `Vid. Lid. sueño` (class 6).
 
 ### Benga Orthography Rules
 - The Benga vowel inventory is `a, â, e, ē, i, o, u, ū`. The book was printed with Spanish-style accents, so `á → â`, `é → ē`, `ú → ū` when the word is Benga. Leave Spanish text in the `meaning` fields untouched. Consecutive accented vowels are kept (`Múéngi` → `Mūēngi`).

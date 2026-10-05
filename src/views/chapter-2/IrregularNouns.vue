@@ -6,12 +6,12 @@
     </div>
 
     <section class="irregular-nouns__intro">
-      <p>Aunque el sistema de siete clases es muy regular, el Benga contiene un número de nombres que no cumplen con los patrones esperados. Estos se dividen en dos categorías principales: nombres que carecen de singular y nombres que carecen de plural.</p>
+      <p>Aunque el sistema de siete clases es muy regular, el Benga contiene un número de nombres que no cumplen con los patrones esperados. Salvado y Cos los agrupa en dos apartados: nombres que carecen de singular y nombres que carecen de plural.</p>
     </section>
 
     <section class="irregular-nouns__no-singular">
-      <h2>Nombres que carecen de singular</h2>
-      <p class="description">Son generalmente nombres que expresan cantidad de algo, especialmente de líquidos, y los bengas jamás los usan en singular sino siempre en plural, tomando los adjuntos de éste.</p>
+      <h2>§ 7. Nombres que carecen de singular</h2>
+      <p class="description">Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos de éste. Algunos fueron introducido en los <a href="/capitulo-2/clase-2">sustantivos de Segunda Clase</a></p>
       
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in pluralOnlyNouns" :key="`plural-${idx}`">
@@ -20,7 +20,7 @@
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="makeAudioId(example.word)"
+                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -32,7 +32,7 @@
     </section>
 
     <section class="irregular-nouns__no-plural">
-      <h2>Nombres que carecen de plural</h2>
+      <h2>§ 8. Nombres que carecen de plural</h2>
       <p class="description">Otros muchos nombres hay que no se usan sino en singular, los cuales toman sus adjuntos correspondientes a dicho número singular.</p>
       
       <div class="examples-grid">
@@ -42,7 +42,7 @@
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="makeAudioId(example.word)"
+                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -103,46 +103,59 @@ export default {
   data() {
     return {
       pluralOnlyNouns: [
-        { word: 'Hosá', meaning: 'Cabellera, pelo' },
-        { word: 'Honji', meaning: 'Heno, yerba' },
-        { word: 'Jubu', meaning: 'Ceniza' },
-        { word: 'Mavule', meaning: 'Aceite' },
-        { word: 'Miba', meaning: 'Agua' },
-        { word: 'Makiya', meaning: 'Sangre' },
-        { word: 'Maku', meaning: 'Licor, caña' },
-        { word: 'Tito', meaning: 'Animal' }
+        { word: 'Hoūē', audio: 'ho_u_e_', meaning: 'Cabellera, pelo' },
+        { word: 'Honji', audio: 'honji', meaning: 'Heno, yerba' },
+        { word: 'Jubu', audio: 'jubu', meaning: 'Ceniza' },
+        { word: 'Mavule', audio: 'mavule', meaning: 'Aceite' },
+        { word: 'Miba', audio: 'miba', meaning: 'Agua' },
+        { word: 'Makiya', audio: 'makiya', meaning: 'Sangre' },
+        { word: 'Maku', audio: 'maku', meaning: 'Licor, caña' },
+        { word: 'Tito', audio: 'tito', meaning: 'Animal' },
+        { word: 'Malângâ', audio: 'mal_a_ng_a_', meaning: 'Flores de los árboles' },
+        { word: 'Majênjina', audio: 'maj_e_njina', meaning: 'Rayos de la aurora' },
+        { word: 'Mbana', audio: 'mbana', meaning: 'Pinzas, tenazuelas' },
+        { word: 'Mbai', audio: 'mbai', meaning: 'Virutas, astillas' },
+        { word: 'Mâmbē', audio: 'm_a_mb_e_', meaning: 'Sobras, mendrugos' },
+        { word: 'Lombongo', audio: 'lombongo', meaning: 'Mosquitos' },
+        { word: 'Kiji', audio: 'kiji', meaning: 'Rastrojo' },
+        { word: 'Hako', audio: 'hako', meaning: 'Hormiga, etc.' }
       ],
       singularOnlyNouns: [
-        { word: 'Háká', meaning: 'Ápice, punta' },
-        { word: 'Un', meaning: 'Lona' },
-        { word: 'Yadi', meaning: 'Agonía' },
-        { word: 'Ngabo', meaning: 'Porción, división' },
-        { word: 'Tina', meaning: 'Origen, causa' },
-        { word: 'Pákaipaka', meaning: 'Verdad' },
-        { word: 'Kála', meaning: 'Reloj de caja' },
-        { word: 'Ndiba', meaning: 'Profundidad' },
-        { word: 'Kapi', meaning: 'Remo' },
-        { word: 'Kama', meaning: 'Ciento' },
-        { word: 'Nyati', meaning: 'Buey' },
-        { word: 'Pia', meaning: 'Pólvora' },
-        { word: 'Ngaanjangaanja', meaning: 'Diligencia' },
-        { word: 'Boká', meaning: 'Estación lluviosa' },
-        { word: 'Bulu', meaning: 'Noche' }
+        { word: 'Hâkâ', audio: 'h_a_k_a_', meaning: 'Ápice, punta' },
+        { word: 'Ngânde', audio: 'ng_a_nde', meaning: 'Luna' },
+        { word: 'Myadi', audio: 'myadi', meaning: 'Agonía' },
+        { word: 'Ngabo', audio: 'ngabo', meaning: 'Porción, división' },
+        { word: 'Tina', audio: 'tina', meaning: 'Origen, causa' },
+        { word: 'Pâkūēpâkūē', audio: 'p_a_k_u_e_p_a_k_u_e', meaning: 'Verdad' },
+        { word: 'Kâla', audio: 'k_a_la', meaning: 'Reloj de caja' },
+        { word: 'Ndiba', audio: 'ndiba', meaning: 'Profundidad' },
+        { word: 'Kapi', audio: 'kapi', meaning: 'Remo' },
+        { word: 'Kama', audio: 'kama', meaning: 'Ciento' },
+        { word: 'Nyati', audio: 'nyati', meaning: 'Buey' },
+        { word: 'Pita', audio: 'pita', meaning: 'Pólvora' },
+        { word: 'Ngūanjangūanja', audio: 'ngaanjangaanja', meaning: 'Diligencia' },
+        { word: 'Bokâ', audio: 'bok_a_', meaning: 'Estación lluviosa' },
+        { word: 'Bulu', audio: 'bulu', meaning: 'Noche' },
+        { word: 'Manga', audio: 'manga', meaning: 'Mar' },
+        { word: 'Njea', audio: 'njea', meaning: 'Sendero' },
+        { word: 'Poli', audio: 'poli', meaning: 'Trigo' },
+        { word: 'Tonda', audio: 'tonda', meaning: 'Diluvio' },
+        { word: 'Henga', audio: 'henga', meaning: 'Ocio' },
+        { word: 'Hūē', audio: 'h_u_e_', meaning: 'Paz' },
+        { word: 'Maka', audio: 'mala', meaning: 'Jugo' },
+        { word: 'Kango', audio: 'kango', meaning: 'Sabor, gusto' },
+        { word: 'Kâ', audio: 'k_a_', meaning: 'Caracol grande' },
+        { word: 'Kânde', audio: 'k_a_nde', meaning: 'Perseverancia' },
+        { word: 'Pani', audio: 'pani', meaning: 'Uso, hábito' },
+        { word: 'Beja', audio: 'beja', meaning: 'Alimento' },
+        { word: 'Mboi', audio: 'mboi', meaning: 'Miel' },
+        { word: 'Peta', audio: 'peta', meaning: 'Disputa, etc.' }
       ]
     };
   },
   methods: {
     getDictionaryUrl(word) {
       return `${LIVING_DICTIONARY_BASE}/${String(word).toLowerCase()}`
-    },
-    makeAudioId(word) {
-      if (!word) return null
-      return String(word)
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/\p{Diacritic}/gu, '')
-        .replace(/[^a-z0-9]+/g, '_')
-        .replace(/^_+|_+$/g, '')
     }
   },
   created() {
@@ -248,6 +261,24 @@ export default {
         border-top: 1px solid #f0f0f0;
         color: $color-text-primary;
       }
+    }
+  }
+
+  &__transcription {
+    background: #FFFDE7;
+    border-left: 4px solid $color-accent;
+    border-radius: $border-radius;
+    padding: $spacing-lg;
+
+    h2 {
+      color: $color-text-secondary;
+      border-bottom-color: $color-accent;
+    }
+
+    .note-text {
+      margin: 0;
+      color: $color-text-secondary;
+      line-height: 1.6;
     }
   }
 
