@@ -2,7 +2,7 @@
   <div class="irregular-nouns">
     <div class="irregular-nouns__header">
       <h1>Nombres Irregulares</h1>
-      <p>Excepciones que no siguen los patrones estándar</p>
+      <p class="subtitle">Excepciones que no siguen los patrones estándar</p>
     </div>
 
     <section class="irregular-nouns__intro">
@@ -87,7 +87,7 @@
 
     <section class="irregular-nouns__nav">
       <router-link to="/capitulo-2/clase-7" class="nav-link prev">← Clase 7 (Invariables)</router-link>
-      <router-link to="/capitulo-2/verbales" class="nav-link next">Nombres Verbales →</router-link>
+      <router-link to="/capitulo-2/verbales" class="nav-link next">Nombres Derivados →</router-link>
     </section>
   </div>
 </template>
@@ -184,10 +184,11 @@ export default {
 
     h1 {
       margin: 0 0 $spacing-sm 0;
-      font-size: 2.2rem;
+      font-size: 2rem;
+      font-family: $font-heading;
     }
 
-    p {
+    .subtitle {
       margin: 0;
       font-size: 1.1rem;
       opacity: 0.95;
@@ -207,9 +208,11 @@ export default {
 
     h2 {
       color: #C0392B;
+      margin-top: 0;
+      margin-bottom: $spacing-lg;
+      font-size: 1.5rem;
       border-bottom: 2px solid #C0392B;
       padding-bottom: $spacing-md;
-      margin-bottom: $spacing-lg;
     }
 
     .description {
@@ -358,6 +361,18 @@ export default {
 
   @include respond-below('md') {
     padding: $spacing-md;
+
+    &__header {
+      padding: 1.5rem $spacing-md;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
 
     &__nav {
       flex-direction: column;

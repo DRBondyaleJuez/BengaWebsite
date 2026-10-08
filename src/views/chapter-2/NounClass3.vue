@@ -48,7 +48,7 @@
     </section>
 
     <section class="noun-class__variants">
-      <h2>Ejemplos con mú- / mu-</h2>
+      <h2>Ejemplos con mū- / mu-</h2>
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in muExamples" :key="`mu-${idx}`">
           <div class="example-singular">

@@ -131,7 +131,7 @@
               <li>✓ Introducción a los nombres</li>
               <li>✓ Siete clases nominales</li>
               <li>✓ Nombres irregulares</li>
-              <li>✓ Nombres verbales</li>
+              <li>✓ Nombres derivados</li>
             </ul>
             <button class="home-page__chapter-link home-page__chapter-link--disabled" disabled>
               Próximamente

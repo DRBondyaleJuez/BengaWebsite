@@ -46,7 +46,7 @@
             <p>Excepciones nominales</p>
           </router-link>
           <router-link to="/capitulo-2/verbales" class="section-card">
-            <h3>Nombres Verbales</h3>
+            <h3>Nombres Derivados</h3>
             <p>Nominalizaciones</p>
           </router-link>
         </div>

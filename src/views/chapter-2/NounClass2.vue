@@ -18,13 +18,20 @@
           <span class="pattern-value plural">ma-</span>
         </div>
       </div>
-      <p class="pattern-description">La inicial de muchas palabras de esta clase se convierte en el prefijo ma- en plural.</p>
+      <p class="pattern-description">
+        La inicial de muchas palabras de esta clase se convierte en el prefijo
+        ma- en plural.
+      </p>
     </section>
 
     <section class="noun-class__examples">
       <h2>Ejemplos con i-</h2>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in iExamples" :key="`i-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in iExamples"
+          :key="`i-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -50,7 +57,11 @@
     <section class="noun-class__variants">
       <h2>Ejemplos con di-</h2>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in diExamples" :key="`di-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in diExamples"
+          :key="`di-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -82,20 +93,32 @@
         </div>
         <div class="concept-item">
           <h4>i- y di-</h4>
-          <p>Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-.</p>
+          <p>
+            Las palabras con inicial i o di siguen el mismo esquema y se
+            convierten en ma-.
+          </p>
         </div>
         <div class="concept-item">
           <h4>Concordancia</h4>
-          <p>El plural del sustantivo afecta también al adjetivo que lo acompaña.</p>
+          <p>
+            El plural del sustantivo afecta también al adjetivo que lo acompaña.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="noun-class__exceptions">
       <h2>Excepciones</h2>
-      <p class="section-note">Hay muchas excepciones en esta clase: nombres que empiezan por i- o di- y que, sin embargo, forman el plural con mi-, mâ- o mo- en lugar de ma-.</p>
+      <p class="section-note">
+        Hay muchas excepciones en esta clase: nombres que empiezan por i- o di-
+        y que, sin embargo, forman el plural con mi-, mâ- o mo- en lugar de ma-.
+      </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in exceptionExamples"
+          :key="`exc-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -121,9 +144,16 @@
 
     <section class="noun-class__liquids">
       <h2>Excepción: líquidos siempre en plural</h2>
-      <p class="section-note">Hay también algunos nombres de líquidos que los bengas no usan en singular y que forman el plural como los pertenecientes a esta clase.</p>
+      <p class="section-note">
+        Hay también algunos nombres de líquidos que los bengas no usan en
+        singular y que forman el plural como los pertenecientes a esta clase.
+      </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in iExamples" :key="`i-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in iExamples"
+          :key="`i-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -148,9 +178,17 @@
 
     <section class="noun-class__class-six">
       <h2>Excepción: nombres con i- que pertenecen a la sexta clase</h2>
-      <p class="section-note">Se hallan asimismo algunos nombres que, si bien empiezan con i- en el singular, no pertenecen a esta clase, sino a la sexta. Estos forman el plural mudando la i- radical en lo-.</p>
+      <p class="section-note">
+        Se hallan asimismo algunos nombres que, si bien empiezan con i- en el
+        singular, no pertenecen a esta clase, sino a la sexta. Estos forman el
+        plural mudando la i- radical en lo-.
+      </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in diExamples" :key="`di-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in diExamples"
+          :key="`di-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
@@ -182,11 +220,16 @@
         </div>
         <div class="concept-item">
           <h4>i- y di-</h4>
-          <p>Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-.</p>
+          <p>
+            Las palabras con inicial i o di siguen el mismo esquema y se
+            convierten en ma-.
+          </p>
         </div>
         <div class="concept-item">
           <h4>Concordancia</h4>
-          <p>El plural del sustantivo afecta también al adjetivo que lo acompaña.</p>
+          <p>
+            El plural del sustantivo afecta también al adjetivo que lo acompaña.
+          </p>
         </div>
       </div>
     </section>
@@ -196,245 +239,347 @@
       <ol class="practice-list">
         <li>Compara cada forma singular y plural y repite el cambio ma-.</li>
         <li>Forma frases con un nombre singular y luego en plural.</li>
-        <li>Escucha la entonación de los ejemplos para detectar la diferencia.</li>
+        <li>
+          Escucha la entonación de los ejemplos para detectar la diferencia.
+        </li>
       </ol>
     </section>
 
     <section class="noun-class__nav">
-      <router-link to="/capitulo-2/clase-1" class="nav-link prev">← Clase 1</router-link>
-      <router-link to="/capitulo-2/clase-3" class="nav-link next">Tercera Clase →</router-link>
+      <router-link to="/capitulo-2/clase-1" class="nav-link prev"
+        >← Clase 1</router-link
+      >
+      <router-link to="/capitulo-2/clase-3" class="nav-link next"
+        >Tercera Clase →</router-link
+      >
     </section>
   </div>
 </template>
 
 <script>
-import BengaWord from '@/components/content/BengaWord.vue'
+import BengaWord from "@/components/content/BengaWord.vue";
 
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+const LIVING_DICTIONARY_BASE = "https://livingdictionaries.app/benga/entry";
 
 export default {
-  name: 'NounClass2',
+  name: "NounClass2",
   components: {
-    BengaWord
+    BengaWord,
   },
   data() {
     return {
       iExamples: [
         {
-          singular: { word: 'Ibakē', audio: 'ibak_e_', meaning: 'Cuidado' },
-          plural: { word: 'Mabakē', audio: 'mabak_e_', meaning: 'Cuidados' }
+          singular: { word: "Ibakē", audio: "ibak_e_", meaning: "Cuidado" },
+          plural: { word: "Mabakē", audio: "mabak_e_", meaning: "Cuidados" },
         },
         {
-          singular: { word: 'Ibala', audio: 'ibala', meaning: 'Victoria' },
-          plural: { word: 'Mabala', audio: 'mabala', meaning: 'Victorias' }
+          singular: { word: "Ibala", audio: "ibala", meaning: "Victoria" },
+          plural: { word: "Mabala", audio: "mabala", meaning: "Victorias" },
         },
         {
-          singular: { word: 'Ibâlu', audio: 'ib_a_lu', meaning: 'Cuello' },
-          plural: { word: 'Mabâlu', audio: 'mab_a_lu', meaning: 'Cuellos' }
+          singular: { word: "Ibâlu", audio: "ib_a_lu", meaning: "Cuello" },
+          plural: { word: "Mabâlu", audio: "mab_a_lu", meaning: "Cuellos" },
         },
         {
-          singular: { word: 'Ibângâ', audio: 'ib_a_n_g_a_', meaning: 'Rodilla' },
-          plural: { word: 'Mabângâ', audio: 'mab_a_n_g_a_', meaning: 'Rodillas' }
+          singular: {
+            word: "Ibângâ",
+            audio: "ib_a_n_g_a_",
+            meaning: "Rodilla",
+          },
+          plural: {
+            word: "Mabângâ",
+            audio: "mab_a_n_g_a_",
+            meaning: "Rodillas",
+          },
         },
         {
-          singular: { word: 'Ibâtâ', audio: 'ib_a_t_a_', meaning: 'Bendición' },
-          plural: { word: 'Mabâtâ', audio: 'mab_a_t_a_', meaning: 'Bendiciones' }
+          singular: { word: "Ibâtâ", audio: "ib_a_t_a_", meaning: "Bendición" },
+          plural: {
+            word: "Mabâtâ",
+            audio: "mab_a_t_a_",
+            meaning: "Bendiciones",
+          },
         },
         {
-          singular: { word: 'Ibeku', audio: 'ibeku', meaning: 'Apoyo' },
-          plural: { word: 'Mabeku', audio: 'mabeku', meaning: 'Apoyos' }
+          singular: { word: "Ibeku", audio: "ibeku", meaning: "Apoyo" },
+          plural: { word: "Mabeku", audio: "mabeku", meaning: "Apoyos" },
         },
         {
-          singular: { word: 'Ibendē', audio: 'ibend_e_', meaning: 'Alabanza' },
-          plural: { word: 'Mabendē', audio: 'mabend_e_', meaning: 'Alabanzas' }
+          singular: { word: "Ibendē", audio: "ibend_e_", meaning: "Alabanza" },
+          plural: { word: "Mabendē", audio: "mabend_e_", meaning: "Alabanzas" },
         },
         {
-          singular: { word: 'Ibēkē', audio: 'ib_e_k_e_', meaning: 'Hombro' },
-          plural: { word: 'Mabēkē', audio: 'mab_e_k_e_', meaning: 'Hombros' }
+          singular: { word: "Ibēkē", audio: "ib_e_k_e_", meaning: "Hombro" },
+          plural: { word: "Mabēkē", audio: "mab_e_k_e_", meaning: "Hombros" },
         },
         {
-          singular: { word: 'Ikadu', audio: 'ikadu', meaning: 'Mano' },
-          plural: { word: 'Makadu', audio: 'makadu', meaning: 'Manos' }
+          singular: { word: "Ikadu", audio: "ikadu", meaning: "Mano" },
+          plural: { word: "Makadu", audio: "makadu", meaning: "Manos" },
         },
         {
-          singular: { word: 'Ilale', audio: 'ilale', meaning: 'Piedra' },
-          plural: { word: 'Malale', audio: 'malale', meaning: 'Piedras' }
+          singular: { word: "Ilale", audio: "ilale", meaning: "Piedra" },
+          plural: { word: "Malale", audio: "malale", meaning: "Piedras" },
         },
         {
-          singular: { word: 'Ibomba', audio: 'ibomba', meaning: 'Cuerno' },
-          plural: { word: 'Mabomba', audio: 'mabomba', meaning: 'Cuernos' }
+          singular: { word: "Ibomba", audio: "ibomba", meaning: "Cuerno" },
+          plural: { word: "Mabomba", audio: "mabomba", meaning: "Cuernos" },
         },
         {
-          singular: { word: 'Ihana', audio: 'ihana', meaning: 'Ayuda' },
-          plural: { word: 'Mahana', audio: 'mahana', meaning: 'Ayudas' }
+          singular: { word: "Ihana", audio: "ihana", meaning: "Ayuda" },
+          plural: { word: "Mahana", audio: "mahana", meaning: "Ayudas" },
         },
         {
-          singular: { word: 'Ihonga', audio: 'ihonga', meaning: 'Diente' },
-          plural: { word: 'Mahonga', audio: 'mahonga', meaning: 'Dientes' }
+          singular: { word: "Ihonga", audio: "ihonga", meaning: "Diente" },
+          plural: { word: "Mahonga", audio: "mahonga", meaning: "Dientes" },
         },
         {
-          singular: { word: 'Ihuhu', audio: 'ihuhu', meaning: 'Estómago, vientre' },
-          plural: { word: 'Mahuhu', audio: 'mahuhu', meaning: 'Estómagos, vientres' }
+          singular: {
+            word: "Ihuhu",
+            audio: "ihuhu",
+            meaning: "Estómago, vientre",
+          },
+          plural: {
+            word: "Mahuhu",
+            audio: "mahuhu",
+            meaning: "Estómagos, vientres",
+          },
         },
         {
-          singular: { word: 'Ihuku', audio: 'ihuku', meaning: 'Fin, extremidad' },
-          plural: { word: 'Mahuku', audio: 'mahuku', meaning: 'Fines, extremidades' }
+          singular: {
+            word: "Ihuku",
+            audio: "ihuku",
+            meaning: "Fin, extremidad",
+          },
+          plural: {
+            word: "Mahuku",
+            audio: "mahuku",
+            meaning: "Fines, extremidades",
+          },
         },
         {
-          singular: { word: 'Ijane', audio: 'ijane', meaning: 'Nacimiento' },
-          plural: { word: 'Majanē', audio: 'majane', meaning: 'Nacimientos' }
+          singular: { word: "Ijane", audio: "ijane", meaning: "Nacimiento" },
+          plural: { word: "Majanē", audio: "majane", meaning: "Nacimientos" },
         },
         {
-          singular: { word: 'Ikabo', audio: 'ikabo', meaning: 'Porción, parte' },
-          plural: { word: 'Makabo', audio: 'makabo', meaning: 'Porciones, partes' }
+          singular: {
+            word: "Ikabo",
+            audio: "ikabo",
+            meaning: "Porción, parte",
+          },
+          plural: {
+            word: "Makabo",
+            audio: "makabo",
+            meaning: "Porciones, partes",
+          },
         },
         {
-          singular: { word: 'Ikalia', audio: 'ikalia', meaning: 'Oración, súplica' },
-          plural: { word: 'Makalia', audio: 'makalia', meaning: 'Oraciones, súplicas' }
+          singular: {
+            word: "Ikalia",
+            audio: "ikalia",
+            meaning: "Oración, súplica",
+          },
+          plural: {
+            word: "Makalia",
+            audio: "makalia",
+            meaning: "Oraciones, súplicas",
+          },
         },
         {
-          singular: { word: 'Ikana', audio: 'ikana', meaning: 'Juramento' },
-          plural: { word: 'Makana', audio: 'makana', meaning: 'Juramentos' }
+          singular: { word: "Ikana", audio: "ikana", meaning: "Juramento" },
+          plural: { word: "Makana", audio: "makana", meaning: "Juramentos" },
         },
         {
-          singular: { word: 'Ikelenge', audio: 'ikelenge', meaning: 'Campana' },
-          plural: { word: 'Makelenge', audio: 'makelenge', meaning: 'Campanas' }
+          singular: { word: "Ikelenge", audio: "ikelenge", meaning: "Campana" },
+          plural: {
+            word: "Makelenge",
+            audio: "makelenge",
+            meaning: "Campanas",
+          },
         },
         {
-          singular: { word: 'Ikēlēnē', audio: 'ik_e_l_e_n_e_', meaning: 'Vanidad' },
-          plural: { word: 'Makēlēnē', audio: 'mak_e_l_e_n_e_', meaning: 'Vanidades' }
+          singular: {
+            word: "Ikēlēnē",
+            audio: "ik_e_l_e_n_e_",
+            meaning: "Vanidad",
+          },
+          plural: {
+            word: "Makēlēnē",
+            audio: "mak_e_l_e_n_e_",
+            meaning: "Vanidades",
+          },
         },
         {
-          singular: { word: 'Ikēluku', audio: 'ik_e_luku', meaning: 'Ambición' },
-          plural: { word: 'Makēluku', audio: 'mak_e_luku', meaning: 'Ambiciones' }
+          singular: {
+            word: "Ikēluku",
+            audio: "ik_e_luku",
+            meaning: "Ambición",
+          },
+          plural: {
+            word: "Makēluku",
+            audio: "mak_e_luku",
+            meaning: "Ambiciones",
+          },
         },
         {
-          singular: { word: 'Ikogo', audio: 'ikogo', meaning: 'Zapato' },
-          plural: { word: 'Makogo', audio: 'makogo', meaning: 'Zapatos' }
+          singular: { word: "Ikogo", audio: "ikogo", meaning: "Zapato" },
+          plural: { word: "Makogo", audio: "makogo", meaning: "Zapatos" },
         },
         {
-          singular: { word: 'Iluku', audio: 'iluku', meaning: 'Hermana' },
-          plural: { word: 'Maluku', audio: 'maluku', meaning: 'Hermanas' }
+          singular: { word: "Iluku", audio: "iluku", meaning: "Hermana" },
+          plural: { word: "Maluku", audio: "maluku", meaning: "Hermanas" },
         },
         {
-          singular: { word: 'Itánde', audio: 'itande', meaning: 'Amor' },
-          plural: { word: 'Matánde', audio: 'matande', meaning: 'Amores' }
+          singular: { word: "Itánde", audio: "itande", meaning: "Amor" },
+          plural: { word: "Matánde", audio: "matande", meaning: "Amores" },
         },
         {
-          singular: { word: 'Iovenda', audio: 'iovenda', meaning: 'Gloria' },
-          plural: { word: 'Mavenda', audio: 'mavenda', meaning: 'Glorias' }
+          singular: { word: "Iovenda", audio: "iovenda", meaning: "Gloria" },
+          plural: { word: "Mavenda", audio: "mavenda", meaning: "Glorias" },
         },
         {
-          singular: { word: 'Ivē', audio: 'iv_e_', meaning: 'Paga, recompensa' },
-          plural: { word: 'Mavē', audio: 'ma_v_e_', meaning: 'Pagas, recompensas' }
+          singular: {
+            word: "Ivē",
+            audio: "iv_e_",
+            meaning: "Paga, recompensa",
+          },
+          plural: {
+            word: "Mavē",
+            audio: "ma_v_e_",
+            meaning: "Pagas, recompensas",
+          },
         },
         {
-          singular: { word: 'Ibobēlē', audio: 'ibob_e_l_e_', meaning: 'Araña' },
-          plural: { word: 'Mabobēlē', audio: 'mabob_e_l_e_', meaning: 'Arañas' }
-        }
+          singular: { word: "Ibobēlē", audio: "ibob_e_l_e_", meaning: "Araña" },
+          plural: {
+            word: "Mabobēlē",
+            audio: "mabob_e_l_e_",
+            meaning: "Arañas",
+          },
+        },
       ],
       diExamples: [
         {
-          singular: { word: 'Diba', audio: 'diba', meaning: 'Casamiento' },
-          plural: { word: 'Maba', audio: 'maba', meaning: 'Casamientos' }
+          singular: { word: "Diba", audio: "diba", meaning: "Casamiento" },
+          plural: { word: "Maba", audio: "maba", meaning: "Casamientos" },
         },
         {
-          singular: { word: 'Dibē', audio: 'dib_e_', meaning: 'Ubre, teta' },
-          plural: { word: 'Mabē', audio: 'ma_b_e_', meaning: 'Ubres, tetas' }
+          singular: { word: "Dibē", audio: "dib_e_", meaning: "Ubre, teta" },
+          plural: { word: "Mabē", audio: "ma_b_e_", meaning: "Ubres, tetas" },
         },
         {
-          singular: { word: 'Dikē', audio: 'dik_e_', meaning: 'Huevo' },
-          plural: { word: 'Makē', audio: 'mak_e_', meaning: 'Huevos' }
+          singular: { word: "Dikē", audio: "dik_e_", meaning: "Huevo" },
+          plural: { word: "Makē", audio: "mak_e_", meaning: "Huevos" },
         },
         {
-          singular: { word: 'Dimya', audio: 'dimya', meaning: 'Torpedo' },
-          plural: { word: 'Mamya', audio: 'mumya', meaning: 'Torpedos' }
+          singular: { word: "Dimya", audio: "dimya", meaning: "Torpedo" },
+          plural: { word: "Mamya", audio: "mumya", meaning: "Torpedos" },
         },
         {
-          singular: { word: 'Diso', audio: 'diso', meaning: 'Nigua' },
-          plural: { word: 'Maso', audio: 'muso', meaning: 'Niguas' }
+          singular: { word: "Diso", audio: "diso", meaning: "Nigua" },
+          plural: { word: "Maso", audio: "muso", meaning: "Niguas" },
         },
         {
-          singular: { word: 'Dindē', audio: 'dind_e_', meaning: 'Ñame, Tubérculo' },
-          plural: { word: 'Mandē', audio: 'man_d_e_', meaning: 'Ñames, Tubérculos' }
+          singular: {
+            word: "Dindē",
+            audio: "dind_e_",
+            meaning: "Ñame, Tubérculo",
+          },
+          plural: {
+            word: "Mandē",
+            audio: "man_d_e_",
+            meaning: "Ñames, Tubérculos",
+          },
         },
         {
-          singular: { word: 'Dingongola', audio: 'dingongola', meaning: 'Plátano especial' },
-          plural: { word: 'Mangongola', audio: 'mangongola', meaning: 'Plátanos especiales' }
+          singular: {
+            word: "Dingongola",
+            audio: "dingongola",
+            meaning: "Plátano especial",
+          },
+          plural: {
+            word: "Mangongola",
+            audio: "mangongola",
+            meaning: "Plátanos especiales",
+          },
         },
         {
-          singular: { word: 'Dinyâ', audio: 'diny_a_', meaning: 'Escama' },
-          plural: { word: 'Manyâ', audio: 'many_a_', meaning: 'Escamas' }
+          singular: { word: "Dinyâ", audio: "diny_a_", meaning: "Escama" },
+          plural: { word: "Manyâ", audio: "many_a_", meaning: "Escamas" },
         },
         {
-          singular: { word: 'Ditâ', audio: 'dit_a_', meaning: 'Oreja' },
-          plural: { word: 'Matâ', audio: 'mat_a_', meaning: 'Orejas' }
+          singular: { word: "Ditâ", audio: "dit_a_", meaning: "Oreja" },
+          plural: { word: "Matâ", audio: "mat_a_", meaning: "Orejas" },
         },
         {
-          singular: { word: 'Divyâ', audio: 'divy_a_', meaning: 'Escoba' },
-          plural: { word: 'Mavyâ', audio: 'mavy_a_', meaning: 'Escobas' }
-        }
+          singular: { word: "Divyâ", audio: "divy_a_", meaning: "Escoba" },
+          plural: { word: "Mavyâ", audio: "mavy_a_", meaning: "Escobas" },
+        },
       ],
       exceptionExamples: [
         {
-          singular: { word: 'Diâ', audio: 'di_a_', meaning: 'Hogar' },
-          plural: { word: 'Miâ', audio: 'mi_a_', meaning: 'Hogares' }
+          singular: { word: "Diâ", audio: "di_a_", meaning: "Hogar" },
+          plural: { word: "Miâ", audio: "mi_a_", meaning: "Hogares" },
         },
         {
-          singular: { word: 'Dina', audio: 'dina', meaning: 'Nombre' },
-          plural: { word: 'Mina', audio: 'mina', meaning: 'Nombres' }
+          singular: { word: "Dina", audio: "dina", meaning: "Nombre" },
+          plural: { word: "Mina", audio: "mina", meaning: "Nombres" },
         },
         {
-          singular: { word: 'Dihâ', audio: 'dih_a_', meaning: 'Ojo' },
-          plural: { word: 'Mihâ', audio: 'mih_a_', meaning: 'Ojos' }
+          singular: { word: "Dihâ", audio: "dih_a_", meaning: "Ojo" },
+          plural: { word: "Mihâ", audio: "mih_a_", meaning: "Ojos" },
         },
         {
-          singular: { word: 'Dyâmbi', audio: 'dy_a_mbi', meaning: 'Puerta' },
-          plural: { word: 'Mâmbi', audio: 'm_a_mbi', meaning: 'Puertas' }
+          singular: { word: "Dyâmbi", audio: "dy_a_mbi", meaning: "Puerta" },
+          plural: { word: "Mâmbi", audio: "m_a_mbi", meaning: "Puertas" },
         },
         {
-          singular: { word: 'Dyoba', audio: 'dyoba', meaning: 'Sol' },
-          plural: { word: 'Moda', audio: 'moda', meaning: 'Soles' }
-        }
+          singular: { word: "Dyoba", audio: "dyoba", meaning: "Sol" },
+          plural: { word: "Moda", audio: "moda", meaning: "Soles" },
+        },
       ],
       liquidExamples: [
-        { word: 'Mavule', audio: 'mavule', meaning: 'Aceite' },
-        { word: 'Manyângâ', audio: 'many_a_ng_a_', meaning: 'Leche' },
-        { word: 'Maku', audio: 'maku', meaning: 'Ron, licor' },
-        { word: 'Makândâ', audio: 'mak_a_nd_a_', meaning: 'Savia' },
-        { word: 'Makiya', audio: 'makiya', meaning: 'Sangre' },
-        { word: 'Miba', audio: 'miba', meaning: 'Agua' }
+        { word: "Mavule", audio: "mavule", meaning: "Aceite" },
+        { word: "Manyângâ", audio: "many_a_ng_a_", meaning: "Leche" },
+        { word: "Maku", audio: "maku", meaning: "Ron, licor" },
+        { word: "Makândâ", audio: "mak_a_nd_a_", meaning: "Savia" },
+        { word: "Makiya", audio: "makiya", meaning: "Sangre" },
+        { word: "Miba", audio: "miba", meaning: "Agua" },
       ],
       classSixExamples: [
         {
-          singular: { word: 'Inâni', audio: 'in_a_ni', meaning: 'Pájaro' },
-          plural: { word: 'Lonâni', audio: 'lon_a_ni', meaning: 'Pájaros' }
+          singular: { word: "Inâni", audio: "in_a_ni", meaning: "Pájaro" },
+          plural: { word: "Lonâni", audio: "lon_a_ni", meaning: "Pájaros" },
         },
         {
-          singular: { word: 'Iboko', audio: 'iboko', meaning: 'Lugar, sitio' },
-          plural: { word: 'Loboko', audio: 'loboko', meaning: 'Lugares, sitios' }
+          singular: { word: "Iboko", audio: "iboko", meaning: "Lugar, sitio" },
+          plural: {
+            word: "Loboko",
+            audio: "loboko",
+            meaning: "Lugares, sitios",
+          },
         },
         {
-          singular: { word: 'Ikadada', audio: 'ikadada', meaning: 'Pimienta' },
-          plural: { word: 'Lokadada', audio: 'lokadada', meaning: 'Pimientas' }
-        }
-      ]
-    }
+          singular: { word: "Ikadada", audio: "ikadada", meaning: "Pimienta" },
+          plural: { word: "Lokadada", audio: "lokadada", meaning: "Pimientas" },
+        },
+      ],
+    };
   },
   methods: {
     getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`;
+    },
   },
   created() {
-    document.title = 'Segunda Clase Nominal | Portal Benga'
-  }
-}
+    document.title = "Segunda Clase Nominal | Portal Benga";
+  },
+};
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@import "@/styles/variables";
+@import "@/styles/mixins";
 
 .noun-class {
   width: 100%;
@@ -443,7 +588,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -479,7 +624,7 @@ export default {
   .section-note {
     margin: 0 0 $spacing-lg;
     padding: $spacing-md;
-    background: #FFFDE7;
+    background: #fffde7;
     border-left: 4px solid $color-accent;
     color: $color-text-secondary;
   }
@@ -515,13 +660,13 @@ export default {
           border-radius: $border-radius;
 
           &.singular {
-            background: #E8F5E9;
-            color: #1B5E20;
+            background: #e8f5e9;
+            color: #1b5e20;
           }
 
           &.plural {
-            background: #FFF3E0;
-            color: #E65100;
+            background: #fff3e0;
+            color: #e65100;
           }
         }
       }
@@ -563,27 +708,27 @@ export default {
       justify-content: center;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
       .example-singular {
         .benga-word--block {
-          background: #E8F5E9;
+          background: #e8f5e9;
         }
 
         :deep(.benga-word__text) {
-          color: #1B5E20;
+          color: #1b5e20;
         }
       }
 
       .example-plural {
         .benga-word--block {
-          background: #FFF3E0;
+          background: #fff3e0;
         }
 
         :deep(.benga-word__text) {
-          color: #E65100;
+          color: #e65100;
         }
       }
 
@@ -608,7 +753,7 @@ export default {
       display: inline-block;
       margin-top: $spacing-sm;
       padding: 2px $spacing-sm;
-      background: #FFFDE7;
+      background: #fffde7;
       border: 1px solid $color-accent;
       border-radius: $border-radius-full;
       color: $color-accent-dark;
@@ -626,7 +771,7 @@ export default {
       gap: $spacing-lg;
 
       .concept-item {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
         border-left: 4px solid $color-primary;
@@ -681,7 +826,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {
@@ -694,7 +839,7 @@ export default {
     }
   }
 
-  @include respond-below('md') {
+  @include respond-below("md") {
     padding: $spacing-md;
 
     &__header {

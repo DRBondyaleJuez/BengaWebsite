@@ -1,9 +1,9 @@
 {
   "sectionId": "verbal-nouns",
-  "title": "Nombres Verbales",
+  "title": "Nombres Derivados",
   "subtitle": "Sustantivos derivados de acciones: formas de acción, agentes y adverbios de manera",
   "introduction": {
-    "es": "Los nombres verbales en Benga se derivan de verbos y expresan conceptos relacionados con la acción. Existen tres tipos principales, cada uno con sus propias características de formación y concordancia."
+    "es": "Los nombres derivados en Benga se derivan de verbos y expresan conceptos relacionados con la acción. Existen tres tipos principales, cada uno con sus propias características de formación y concordancia."
   },
   "verbalNounTypes": [
     {
@@ -190,7 +190,7 @@
     }
   ],
   "derivationPatterns": {
-    "es": "Muchos verbos benga tienen un imperativo base. De este, se pueden derivar hasta tres nombres verbales distintos usando los prefijos i-, u- y la combinación i-...-di. Esta es una característica poderosa del sistema de derivación nominal en Benga."
+    "es": "Muchos verbos benga tienen un imperativo base. De este, se pueden derivar hasta tres nombres derivados distintos usando los prefijos i-, u- y la combinación i-...-di. Esta es una característica poderosa del sistema de derivación nominal en Benga."
   },
   "comprehensiveExample": {
     "verbBase": "longa (caminar)",
@@ -215,6 +215,6 @@
     ]
   },
   "practiceNotes": {
-    "es": "Los nombres verbales son fundamentales para expandir el vocabulario benga. Una vez tengas control sobre los sistemas de prefijos verbales benga, podrás derivar muchas palabras relacionadas de un solo radical verbal. Practica la identificación de las formas verbales base en textos y sus derivaciones nominales correspondientes."
+    "es": "Los nombres derivados son fundamentales para expandir el vocabulario benga. Una vez tengas control sobre los sistemas de prefijos verbales benga, podrás derivar muchas palabras relacionadas de un solo radical verbal. Practica la identificación de las formas verbales base en textos y sus derivaciones nominales correspondientes."
   }
 }
