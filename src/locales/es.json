@@ -26,13 +26,14 @@
         "intro": "Clasificación de los Nombres",
         "class1": "Primera Clase (e → be)",
         "class2": "Segunda Clase (i/di → ma)",
-        "class3": "Tercera Clase (u/mú → me/mi)",
-        "class4": "Cuarta Clase (bo/bú → mi)",
+        "class3": "Tercera Clase (u/mū → me/mi)",
+        "class4": "Cuarta Clase (bo/bū → mi)",
         "class5": "Quinta Clase (mo → ba)",
         "class6": "Sexta Clase (v → l)",
         "class7": "Séptima Clase (invariables)",
         "irregular": "Nombres Irregulares",
-        "verbal": "Nombres Derivados"
+        "verbal": "Nombres Derivados",
+        "noun-card-practice": "Práctica Interactiva"
       }
     },
     "chapter3": {

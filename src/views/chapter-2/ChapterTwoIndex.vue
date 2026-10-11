@@ -49,6 +49,10 @@
             <h3>Nombres Derivados</h3>
             <p>Nominalizaciones</p>
           </router-link>
+          <router-link to="/capitulo-2/practica" class="section-card">
+            <h3>Práctica Interactiva</h3>
+            <p>Juego de tarjetas: singular, plural y clases</p>
+          </router-link>
         </div>
       </section>
 

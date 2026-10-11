@@ -203,6 +203,7 @@ benga-learning-portal/
 | All 7 noun class views | `NounClass1-7.vue` | P0 |
 | Irregular nouns view | `IrregularNouns.vue` | P1 |
 | Verbal nouns view | `VerbalNouns.vue` | P1 |
+| Noun practice game (interactive cards) | `NounPracticeGame.vue` | P1 |
 ### Phase 5: Supporting Pages (Week 5)
 **Goal**: Non-chapter content
 | Task | Files to Create | Priority |

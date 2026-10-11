@@ -82,6 +82,11 @@
           "id": "verbal",
           "path": "/capitulo-2/verbales",
           "titleKey": "chapters.chapter2.sections.verbal"
+        },
+        {
+          "id": "noun-card-practice",
+          "path": "/capitulo-2/practica",
+          "titleKey": "chapters.chapter2.sections.noun-card-practice"
         }
       ],
       "path": "/capitulo-2"

@@ -1,0 +1,3812 @@
+[
+  {
+    "singular": "Ejanganangobo",
+    "plural": "Bejanganangobo",
+    "translation": "Libro",
+    "pluralTranslation": "Libros",
+    "singularAudioId": "ejanganangobo",
+    "pluralAudioId": "bejanganangobo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epokolo",
+    "plural": "Bepokolo",
+    "translation": "Sombrero",
+    "pluralTranslation": "Sombreros",
+    "singularAudioId": "epokolo",
+    "pluralAudioId": "bepokolo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enâ",
+    "plural": "Benâ",
+    "translation": "Brazo",
+    "pluralTranslation": "Brazos",
+    "singularAudioId": "en_a_",
+    "pluralAudioId": "ben_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekâi",
+    "plural": "Bekâi",
+    "translation": "Plátano",
+    "pluralTranslation": "Plátanos",
+    "singularAudioId": "ek_a_i",
+    "pluralAudioId": "bek_a_i",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elinga",
+    "plural": "Belinga",
+    "translation": "Cesto",
+    "pluralTranslation": "Cestos",
+    "singularAudioId": "elinga",
+    "pluralAudioId": "belinga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elombo",
+    "plural": "Belombo",
+    "translation": "Cosa",
+    "pluralTranslation": "Cosas",
+    "singularAudioId": "elombo",
+    "pluralAudioId": "belombo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egala",
+    "plural": "Begala",
+    "translation": "Cajón",
+    "pluralTranslation": "Cajones",
+    "singularAudioId": "egala",
+    "pluralAudioId": "begala",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elende",
+    "plural": "Belende",
+    "translation": "Bote",
+    "pluralTranslation": "Botes",
+    "singularAudioId": "elende",
+    "pluralAudioId": "belende",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yaho",
+    "plural": "Biaho",
+    "translation": "Quijada",
+    "pluralTranslation": "Quijadas",
+    "singularAudioId": "yaho",
+    "pluralAudioId": "biaho",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yako",
+    "plural": "Biako",
+    "translation": "Cama",
+    "pluralTranslation": "Camas",
+    "singularAudioId": "yako",
+    "pluralAudioId": "biako",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yalo",
+    "plural": "Bialo",
+    "translation": "Bote europeo",
+    "pluralTranslation": "Botes europeos",
+    "singularAudioId": "yalo",
+    "pluralAudioId": "bialo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yambe",
+    "plural": "Biambe",
+    "translation": "Cura supersticiosa",
+    "pluralTranslation": "Curas supersticiosas",
+    "singularAudioId": "yambe",
+    "pluralAudioId": "biambe",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yapa",
+    "plural": "Biapa",
+    "translation": "Canasta",
+    "pluralTranslation": "Canastas",
+    "singularAudioId": "yapa",
+    "pluralAudioId": "biapa",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yâkâ",
+    "plural": "Biâkâ",
+    "translation": "Medicina",
+    "pluralTranslation": "Medicinas",
+    "singularAudioId": "y_a_k_a_",
+    "pluralAudioId": "bi_a_k_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yējâ",
+    "plural": "Biejâ",
+    "translation": "Medida",
+    "pluralTranslation": "Medidas",
+    "singularAudioId": "y_e_j_a_",
+    "pluralAudioId": "biej_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yēkē",
+    "plural": "Biēke",
+    "translation": "Juicio",
+    "pluralTranslation": "Juicios",
+    "singularAudioId": "y_e_k_e_",
+    "pluralAudioId": "bi_e_ke",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yima",
+    "plural": "Biima",
+    "translation": "Egoísmo",
+    "pluralTranslation": "Egoísmos",
+    "singularAudioId": "yima",
+    "pluralAudioId": "biima",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yoha",
+    "plural": "Bioha",
+    "translation": "Mono pequeño",
+    "pluralTranslation": "Monos pequeños",
+    "singularAudioId": "yoha",
+    "pluralAudioId": "bioha",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yoma",
+    "plural": "Bioma",
+    "translation": "Ñame",
+    "pluralTranslation": "Ñames",
+    "singularAudioId": "yoma",
+    "pluralAudioId": "bioma",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Yomu",
+    "plural": "Biomu",
+    "translation": "Calor",
+    "pluralTranslation": "Calores",
+    "singularAudioId": "yomu",
+    "pluralAudioId": "biomu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ibakē",
+    "plural": "Mabakē",
+    "translation": "Cuidado",
+    "pluralTranslation": "Cuidados",
+    "singularAudioId": "ibak_e_",
+    "pluralAudioId": "mabak_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibala",
+    "plural": "Mabala",
+    "translation": "Victoria",
+    "pluralTranslation": "Victorias",
+    "singularAudioId": "ibala",
+    "pluralAudioId": "mabala",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibâlu",
+    "plural": "Mabâlu",
+    "translation": "Cuello",
+    "pluralTranslation": "Cuellos",
+    "singularAudioId": "ib_a_lu",
+    "pluralAudioId": "mab_a_lu",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibângâ",
+    "plural": "Mabângâ",
+    "translation": "Rodilla",
+    "pluralTranslation": "Rodillas",
+    "singularAudioId": "ib_a_n_g_a_",
+    "pluralAudioId": "mab_a_n_g_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibâtâ",
+    "plural": "Mabâtâ",
+    "translation": "Bendición",
+    "pluralTranslation": "Bendiciones",
+    "singularAudioId": "ib_a_t_a_",
+    "pluralAudioId": "mab_a_t_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibeku",
+    "plural": "Mabeku",
+    "translation": "Apoyo",
+    "pluralTranslation": "Apoyos",
+    "singularAudioId": "ibeku",
+    "pluralAudioId": "mabeku",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibendē",
+    "plural": "Mabendē",
+    "translation": "Alabanza",
+    "pluralTranslation": "Alabanzas",
+    "singularAudioId": "ibend_e_",
+    "pluralAudioId": "mabend_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibēkē",
+    "plural": "Mabēkē",
+    "translation": "Hombro",
+    "pluralTranslation": "Hombros",
+    "singularAudioId": "ib_e_k_e_",
+    "pluralAudioId": "mab_e_k_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikadu",
+    "plural": "Makadu",
+    "translation": "Mano",
+    "pluralTranslation": "Manos",
+    "singularAudioId": "ikadu",
+    "pluralAudioId": "makadu",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ilale",
+    "plural": "Malale",
+    "translation": "Piedra",
+    "pluralTranslation": "Piedras",
+    "singularAudioId": "ilale",
+    "pluralAudioId": "malale",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibomba",
+    "plural": "Mabomba",
+    "translation": "Cuerno",
+    "pluralTranslation": "Cuernos",
+    "singularAudioId": "ibomba",
+    "pluralAudioId": "mabomba",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ihana",
+    "plural": "Mahana",
+    "translation": "Ayuda",
+    "pluralTranslation": "Ayudas",
+    "singularAudioId": "ihana",
+    "pluralAudioId": "mahana",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ihonga",
+    "plural": "Mahonga",
+    "translation": "Diente",
+    "pluralTranslation": "Dientes",
+    "singularAudioId": "ihonga",
+    "pluralAudioId": "mahonga",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ihuhu",
+    "plural": "Mahuhu",
+    "translation": "Estómago, vientre",
+    "pluralTranslation": "Estómagos, vientres",
+    "singularAudioId": "ihuhu",
+    "pluralAudioId": "mahuhu",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ihuku",
+    "plural": "Mahuku",
+    "translation": "Fin, extremidad",
+    "pluralTranslation": "Fines, extremidades",
+    "singularAudioId": "ihuku",
+    "pluralAudioId": "mahuku",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ijane",
+    "plural": "Majanē",
+    "translation": "Nacimiento",
+    "pluralTranslation": "Nacimientos",
+    "singularAudioId": "ijane",
+    "pluralAudioId": "majane",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikabo",
+    "plural": "Makabo",
+    "translation": "Porción, parte",
+    "pluralTranslation": "Porciones, partes",
+    "singularAudioId": "ikabo",
+    "pluralAudioId": "makabo",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikalia",
+    "plural": "Makalia",
+    "translation": "Oración, súplica",
+    "pluralTranslation": "Oraciones, súplicas",
+    "singularAudioId": "ikalia",
+    "pluralAudioId": "makalia",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikana",
+    "plural": "Makana",
+    "translation": "Juramento",
+    "pluralTranslation": "Juramentos",
+    "singularAudioId": "ikana",
+    "pluralAudioId": "makana",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikelenge",
+    "plural": "Makelenge",
+    "translation": "Campana",
+    "pluralTranslation": "Campanas",
+    "singularAudioId": "ikelenge",
+    "pluralAudioId": "makelenge",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikēlēnē",
+    "plural": "Makēlēnē",
+    "translation": "Vanidad",
+    "pluralTranslation": "Vanidades",
+    "singularAudioId": "ik_e_l_e_n_e_",
+    "pluralAudioId": "mak_e_l_e_n_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikēluku",
+    "plural": "Makēluku",
+    "translation": "Ambición",
+    "pluralTranslation": "Ambiciones",
+    "singularAudioId": "ik_e_luku",
+    "pluralAudioId": "mak_e_luku",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikogo",
+    "plural": "Makogo",
+    "translation": "Zapato",
+    "pluralTranslation": "Zapatos",
+    "singularAudioId": "ikogo",
+    "pluralAudioId": "makogo",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Iluku",
+    "plural": "Maluku",
+    "translation": "Hermana",
+    "pluralTranslation": "Hermanas",
+    "singularAudioId": "iluku",
+    "pluralAudioId": "maluku",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Itánde",
+    "plural": "Matánde",
+    "translation": "Amor",
+    "pluralTranslation": "Amores",
+    "singularAudioId": "itande",
+    "pluralAudioId": "matande",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Iovenda",
+    "plural": "Mavenda",
+    "translation": "Gloria",
+    "pluralTranslation": "Glorias",
+    "singularAudioId": "iovenda",
+    "pluralAudioId": "mavenda",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ivē",
+    "plural": "Mavē",
+    "translation": "Paga, recompensa",
+    "pluralTranslation": "Pagas, recompensas",
+    "singularAudioId": "iv_e_",
+    "pluralAudioId": "ma_v_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ibobēlē",
+    "plural": "Mabobēlē",
+    "translation": "Araña",
+    "pluralTranslation": "Arañas",
+    "singularAudioId": "ibob_e_l_e_",
+    "pluralAudioId": "mabob_e_l_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Diba",
+    "plural": "Maba",
+    "translation": "Casamiento",
+    "pluralTranslation": "Casamientos",
+    "singularAudioId": "diba",
+    "pluralAudioId": "maba",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dibē",
+    "plural": "Mabē",
+    "translation": "Ubre, teta",
+    "pluralTranslation": "Ubres, tetas",
+    "singularAudioId": "dib_e_",
+    "pluralAudioId": "ma_b_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dikē",
+    "plural": "Makē",
+    "translation": "Huevo",
+    "pluralTranslation": "Huevos",
+    "singularAudioId": "dik_e_",
+    "pluralAudioId": "mak_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dimya",
+    "plural": "Mamya",
+    "translation": "Torpedo",
+    "pluralTranslation": "Torpedos",
+    "singularAudioId": "dimya",
+    "pluralAudioId": "mumya",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Diso",
+    "plural": "Maso",
+    "translation": "Nigua",
+    "pluralTranslation": "Niguas",
+    "singularAudioId": "diso",
+    "pluralAudioId": "muso",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dindē",
+    "plural": "Mandē",
+    "translation": "Ñame, Tubérculo",
+    "pluralTranslation": "Ñames, tubérculos",
+    "singularAudioId": "dind_e_",
+    "pluralAudioId": "man_d_e_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dingongola",
+    "plural": "Mangongola",
+    "translation": "Plátano especial",
+    "pluralTranslation": "Plátanos especiales",
+    "singularAudioId": "dingongola",
+    "pluralAudioId": "mangongola",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dinyâ",
+    "plural": "Manyâ",
+    "translation": "Escama",
+    "pluralTranslation": "Escamas",
+    "singularAudioId": "diny_a_",
+    "pluralAudioId": "many_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ditâ",
+    "plural": "Matâ",
+    "translation": "Oreja",
+    "pluralTranslation": "Orejas",
+    "singularAudioId": "dit_a_",
+    "pluralAudioId": "mat_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Divyâ",
+    "plural": "Mavyâ",
+    "translation": "Escoba",
+    "pluralTranslation": "Escobas",
+    "singularAudioId": "divy_a_",
+    "pluralAudioId": "mavy_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Diâ",
+    "plural": "Miâ",
+    "translation": "Hogar",
+    "pluralTranslation": "Hogares",
+    "singularAudioId": "di_a_",
+    "pluralAudioId": "mi_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dina",
+    "plural": "Mina",
+    "translation": "Nombre",
+    "pluralTranslation": "Nombres",
+    "singularAudioId": "dina",
+    "pluralAudioId": "mina",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dihâ",
+    "plural": "Mihâ",
+    "translation": "Ojo",
+    "pluralTranslation": "Ojos",
+    "singularAudioId": "dih_a_",
+    "pluralAudioId": "mih_a_",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dyâmbi",
+    "plural": "Mâmbi",
+    "translation": "Puerta",
+    "pluralTranslation": "Puertas",
+    "singularAudioId": "dy_a_mbi",
+    "pluralAudioId": "m_a_mbi",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Dyoba",
+    "plural": "Moda",
+    "translation": "Sol",
+    "pluralTranslation": "Soles",
+    "singularAudioId": "dyoba",
+    "pluralAudioId": "moda",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Inâni",
+    "plural": "Lonâni",
+    "translation": "Pájaro",
+    "pluralTranslation": "Pájaros",
+    "singularAudioId": "in_a_ni",
+    "pluralAudioId": "lon_a_ni",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Iboko",
+    "plural": "Loboko",
+    "translation": "Lugar, sitio",
+    "pluralTranslation": "Lugares, sitios",
+    "singularAudioId": "iboko",
+    "pluralAudioId": "loboko",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ikadada",
+    "plural": "Lokadada",
+    "translation": "Pimienta",
+    "pluralTranslation": "Pimientas",
+    "singularAudioId": "ikadada",
+    "pluralAudioId": "lokadada",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Wbaha",
+    "plural": "Mebaha",
+    "translation": "Costado, lado",
+    "pluralTranslation": "Costados, lados",
+    "singularAudioId": "wbaha",
+    "pluralAudioId": "mebaha",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbalani",
+    "plural": "Mebalani",
+    "translation": "Conquistador",
+    "pluralTranslation": "Conquistadores",
+    "singularAudioId": "wbalani",
+    "pluralAudioId": "mebalani",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbanga",
+    "plural": "Mebanga",
+    "translation": "Nuez",
+    "pluralTranslation": "Nueces",
+    "singularAudioId": "wbanga",
+    "pluralAudioId": "mebanga",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbango",
+    "plural": "Mebango",
+    "translation": "Diente de marfil",
+    "pluralTranslation": "Dientes de marfil",
+    "singularAudioId": "wbango",
+    "pluralAudioId": "mebango",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbâki",
+    "plural": "Mebâki",
+    "translation": "Hacha, destral",
+    "pluralTranslation": "Hachas, destrales",
+    "singularAudioId": "wb_a_ki",
+    "pluralAudioId": "meb_a_ki",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbândâ",
+    "plural": "Mebândâ",
+    "translation": "Tiro de fusil",
+    "pluralTranslation": "Tiros de fusil",
+    "singularAudioId": "wb_a_nd_a_",
+    "pluralAudioId": "meb_a_nd_a_",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbendi",
+    "plural": "Mebendi",
+    "translation": "Adulador",
+    "pluralTranslation": "Aduladores",
+    "singularAudioId": "wbendi",
+    "pluralAudioId": "mebendi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbēdi",
+    "plural": "Mebēdi",
+    "translation": "Enfermedad",
+    "pluralTranslation": "Enfermedades",
+    "singularAudioId": "wb_e_di",
+    "pluralAudioId": "meb_e_di",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbulubulu",
+    "plural": "Mebulubulu",
+    "translation": "Polvo",
+    "pluralTranslation": "Polvos",
+    "singularAudioId": "wbulubulu",
+    "pluralAudioId": "mebulubulu",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wbūa",
+    "plural": "Mebūa",
+    "translation": "La mañana",
+    "pluralTranslation": "Las mañanas",
+    "singularAudioId": "wb_u_a",
+    "pluralAudioId": "meb_u_a",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wdâmbē",
+    "plural": "Medâmbē",
+    "translation": "Oveja",
+    "pluralTranslation": "Ovejas",
+    "singularAudioId": "wd_a_mb_e_",
+    "pluralAudioId": "med_a_mb_e_",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wgangano",
+    "plural": "Megangano",
+    "translation": "Compañerismo",
+    "pluralTranslation": "Compañerismos",
+    "singularAudioId": "wgangano",
+    "pluralAudioId": "megangano",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Wgulu",
+    "plural": "Megulu",
+    "translation": "Cuerda",
+    "pluralTranslation": "Cuerdas",
+    "singularAudioId": "wgulu",
+    "pluralAudioId": "megulu",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whâ",
+    "plural": "Mehâ",
+    "translation": "Pipa",
+    "pluralTranslation": "Pipas",
+    "singularAudioId": "wh_a_",
+    "pluralAudioId": "meh_a_",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whēkē",
+    "plural": "Mehēkē",
+    "translation": "Playa del mar",
+    "pluralTranslation": "Playas del mar",
+    "singularAudioId": "wh_e_k_e_",
+    "pluralAudioId": "meh_e_k_e_",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whēngē",
+    "plural": "Mehēngē",
+    "translation": "Calle",
+    "pluralTranslation": "Calles",
+    "singularAudioId": "wh_e_ng_e_",
+    "pluralAudioId": "meh_e_ng_e_",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whiha",
+    "plural": "Mehiha",
+    "translation": "Nervio, vena",
+    "pluralTranslation": "Nervios, venas",
+    "singularAudioId": "whiha",
+    "pluralAudioId": "mehiha",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whinganakano",
+    "plural": "Mehinganakano",
+    "translation": "Cadena",
+    "pluralTranslation": "Cadenas",
+    "singularAudioId": "whinganakano",
+    "pluralAudioId": "mehinganakano",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Whingi",
+    "plural": "Mehingi",
+    "translation": "Gato salvaje",
+    "pluralTranslation": "Gatos salvajes",
+    "singularAudioId": "whingi",
+    "pluralAudioId": "mehingi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūadi",
+    "plural": "Miadi",
+    "translation": "Hembra",
+    "pluralTranslation": "Hembras",
+    "singularAudioId": "m_u_adi",
+    "pluralAudioId": "miadi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūahi",
+    "plural": "Miahi",
+    "translation": "Erizo, peine de adorno",
+    "pluralTranslation": "Erizos, peines de adorno",
+    "singularAudioId": "m_u_ahi",
+    "pluralAudioId": "miahi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūako",
+    "plural": "Miako",
+    "translation": "Confianza",
+    "pluralTranslation": "Confianzas",
+    "singularAudioId": "m_u_ako",
+    "pluralAudioId": "miako",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūalika",
+    "plural": "Mialika",
+    "translation": "Vihuela",
+    "pluralTranslation": "Vihuelas",
+    "singularAudioId": "m_u_alika",
+    "pluralAudioId": "mialika",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūambo",
+    "plural": "Miambo",
+    "translation": "Sacrificio, oferta",
+    "pluralTranslation": "Sacrificios, ofertas",
+    "singularAudioId": "m_u_ambo",
+    "pluralAudioId": "miambo",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūanga",
+    "plural": "Mianga",
+    "translation": "Rebaño, huerto",
+    "pluralTranslation": "Rebaños, huertos",
+    "singularAudioId": "m_u_anga",
+    "pluralAudioId": "mianga",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūanjo",
+    "plural": "Mianjo",
+    "translation": "Justicia",
+    "pluralTranslation": "Justicias",
+    "singularAudioId": "m_u_anjo",
+    "pluralAudioId": "mianjo",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūemba",
+    "plural": "Miemba",
+    "translation": "Sopa, salsa",
+    "pluralTranslation": "Sopas, salsas",
+    "singularAudioId": "m_u_emba",
+    "pluralAudioId": "miemba",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūēngi",
+    "plural": "Miēngi",
+    "translation": "Extranjero",
+    "pluralTranslation": "Extranjeros",
+    "singularAudioId": "m_u_e_ngi",
+    "pluralAudioId": "miengi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūēni",
+    "plural": "Miēni",
+    "translation": "Brazalete",
+    "pluralTranslation": "Brazaletes",
+    "singularAudioId": "m_u_e_ni",
+    "pluralAudioId": "mi_e_ni",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūidi",
+    "plural": "Miidi",
+    "translation": "Banco, orilla",
+    "pluralTranslation": "Bancos, orillas",
+    "singularAudioId": "m_u_idi",
+    "pluralAudioId": "miidi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūindi",
+    "plural": "Miindi",
+    "translation": "Montón, hato",
+    "pluralTranslation": "Montones, hatos",
+    "singularAudioId": "m_u_indi",
+    "pluralAudioId": "miindi",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Mūiya",
+    "plural": "Miiya",
+    "translation": "Intestinos",
+    "pluralTranslation": "Intestinos",
+    "singularAudioId": "m_u_iya",
+    "pluralAudioId": "miiya",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Muajo",
+    "plural": "Bajo",
+    "translation": "Mujer",
+    "pluralTranslation": "Mujeres",
+    "singularAudioId": "muajo",
+    "pluralAudioId": "bajo",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Molo",
+    "plural": "Miolo",
+    "translation": "Cabeza",
+    "pluralTranslation": "Cabezas",
+    "singularAudioId": "molo",
+    "pluralAudioId": "miolo",
+    "nounClass": "Clase 3",
+    "conversionSummary": "u/mú- → me/mi-"
+  },
+  {
+    "singular": "Bobako",
+    "plural": "Mibako",
+    "translation": "Vaina, funda",
+    "pluralTranslation": "Vainas, fundas",
+    "singularAudioId": "bobako",
+    "pluralAudioId": "mibako",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bobâbu",
+    "plural": "Mibâbu",
+    "translation": "Blandura",
+    "pluralTranslation": "Blanduras",
+    "singularAudioId": "bob_a_bu",
+    "pluralAudioId": "mib_a_bu",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Boho",
+    "plural": "Mioho",
+    "translation": "Cara, frente",
+    "pluralTranslation": "Caras, frentes",
+    "singularAudioId": "boho",
+    "pluralAudioId": "mioho",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bojoūa",
+    "plural": "Mijoūa",
+    "translation": "Mentira",
+    "pluralTranslation": "Mentiras",
+    "singularAudioId": "bojo_u_a",
+    "pluralAudioId": "mijo_u_a",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bongo",
+    "plural": "Miongo",
+    "translation": "Espina, punta",
+    "pluralTranslation": "Espinas, puntas",
+    "singularAudioId": "bongo",
+    "pluralAudioId": "mingo",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bonyamo",
+    "plural": "Mingomo",
+    "translation": "Miseria, pobreza",
+    "pluralTranslation": "Miserias, pobrezas",
+    "singularAudioId": "bonyamo",
+    "pluralAudioId": "mingomo",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bova",
+    "plural": "Miva",
+    "translation": "Don, regalo",
+    "pluralTranslation": "Dones, regalos",
+    "singularAudioId": "bova",
+    "pluralAudioId": "miva",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bokâ",
+    "plural": "Miokâ",
+    "translation": "Estación lluviosa",
+    "pluralTranslation": "Estaciones lluviosas",
+    "singularAudioId": "bok_a_",
+    "pluralAudioId": "miok_a_",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Būalo",
+    "plural": "Mialo",
+    "translation": "Canoa",
+    "pluralTranslation": "Canoas",
+    "singularAudioId": "b_u_alo",
+    "pluralAudioId": "mialo",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Būanga",
+    "plural": "Mianga",
+    "translation": "Campana supersticiosa",
+    "pluralTranslation": "Campanas supersticiosas",
+    "singularAudioId": "b_u_anga",
+    "pluralAudioId": "mianga",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Būayē",
+    "plural": "Miayē",
+    "translation": "Violencia",
+    "pluralTranslation": "Violencias",
+    "singularAudioId": "b_u_any_e_",
+    "pluralAudioId": "miay_e_",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Būe",
+    "plural": "Mie",
+    "translation": "Luz",
+    "pluralTranslation": "Luces",
+    "singularAudioId": "b_u_e",
+    "pluralAudioId": "mie",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Būeka",
+    "plural": "Mieka",
+    "translation": "Odio",
+    "pluralTranslation": "Odios",
+    "singularAudioId": "b_u_eka",
+    "pluralAudioId": "mieka",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Bolohi",
+    "plural": "Melohi",
+    "translation": "Naranja",
+    "pluralTranslation": "Naranjas",
+    "singularAudioId": "bolohi",
+    "pluralAudioId": "melohi",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Buūha",
+    "plural": "ūhi",
+    "translation": "Día",
+    "pluralTranslation": "Días",
+    "singularAudioId": "b_u_u_h_a",
+    "pluralAudioId": "_u_hi",
+    "nounClass": "Clase 4",
+    "conversionSummary": "bo/ba- → mi-"
+  },
+  {
+    "singular": "Mohano",
+    "plural": "Bahano",
+    "translation": "Promesa",
+    "pluralTranslation": "Promesas",
+    "singularAudioId": "mohano",
+    "pluralAudioId": "bahano",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Momo",
+    "plural": "Bamo",
+    "translation": "Hombre",
+    "pluralTranslation": "Hombres",
+    "singularAudioId": "momo",
+    "pluralAudioId": "bamo",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Moto",
+    "plural": "Bato",
+    "translation": "Persona",
+    "pluralTranslation": "Personas",
+    "singularAudioId": "moto",
+    "pluralAudioId": "bato",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Monda",
+    "plural": "Banda",
+    "translation": "Invitación",
+    "pluralTranslation": "Invitaciones",
+    "singularAudioId": "monda",
+    "pluralAudioId": "banda",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Motoba",
+    "plural": "Batoba",
+    "translation": "Caracol",
+    "pluralTranslation": "Caracoles",
+    "singularAudioId": "motoba",
+    "pluralAudioId": "batoba",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Mongolu",
+    "plural": "Bangolu",
+    "translation": "Escarabajo",
+    "pluralTranslation": "Escarabajos",
+    "singularAudioId": "mongolu",
+    "pluralAudioId": "bangolu",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Ubapami",
+    "plural": "Bobapami",
+    "translation": "Portador",
+    "pluralTranslation": "Portadores",
+    "singularAudioId": "ubapami",
+    "pluralAudioId": "bobapami",
+    "nounClass": "Clase 5",
+    "conversionSummary": "mo- → ba-"
+  },
+  {
+    "singular": "Veya",
+    "plural": "Leya",
+    "translation": "Fuego, leña",
+    "pluralTranslation": "Fuegos, leñas",
+    "singularAudioId": "veya",
+    "pluralAudioId": "leya",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vijo",
+    "plural": "Lijo",
+    "translation": "Nariz",
+    "pluralTranslation": "Narices",
+    "singularAudioId": "vijo",
+    "pluralAudioId": "lijo",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viâ",
+    "plural": "Liâ",
+    "translation": "Sueño",
+    "pluralTranslation": "Sueños",
+    "singularAudioId": "vi_a_",
+    "pluralAudioId": "li_a_",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viho",
+    "plural": "Liho",
+    "translation": "Río",
+    "pluralTranslation": "Ríos",
+    "singularAudioId": "viho",
+    "pluralAudioId": "liho",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vilolombo",
+    "plural": "Lololombo",
+    "translation": "Átomo, partícula",
+    "pluralTranslation": "Átomos, partículas",
+    "singularAudioId": "vilolombo",
+    "pluralAudioId": "lololombo",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vingangambi",
+    "plural": "Longangambi",
+    "translation": "Capricho, extravagancia",
+    "pluralTranslation": "Caprichos, extravagancias",
+    "singularAudioId": "vingangambi",
+    "pluralAudioId": "longangambi",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vingunguhu",
+    "plural": "Longunguhu",
+    "translation": "Miga",
+    "pluralTranslation": "Migas",
+    "singularAudioId": "vingunguhu",
+    "pluralAudioId": "longunguhu",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vipupuhu",
+    "plural": "Lopupuhu",
+    "translation": "Fragmento",
+    "pluralTranslation": "Fragmentos",
+    "singularAudioId": "vipupuhu",
+    "pluralAudioId": "lopupuhu",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vitūa",
+    "plural": "Litūa",
+    "translation": "Vela, luz de candela",
+    "pluralTranslation": "Velas, luces de candela",
+    "singularAudioId": "vit_u_a",
+    "pluralAudioId": "lit_u_a",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viyonda",
+    "plural": "Loyonda",
+    "translation": "La estación seca",
+    "pluralTranslation": "Las estaciones secas",
+    "singularAudioId": "viyonda",
+    "pluralAudioId": "loyonda",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viyembo",
+    "plural": "Lembo",
+    "translation": "Himno, canto",
+    "pluralTranslation": "Himnos, cantos",
+    "singularAudioId": "viyembo",
+    "pluralAudioId": "lembo",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viaha",
+    "plural": "Laha",
+    "translation": "Limón",
+    "pluralTranslation": "Limones",
+    "singularAudioId": "viaha",
+    "pluralAudioId": "laha",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Vianga",
+    "plural": "Langa",
+    "translation": "sal",
+    "pluralTranslation": "sales",
+    "singularAudioId": "vianga",
+    "pluralAudioId": "langa",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Viyohi",
+    "plural": "Lohi",
+    "translation": "Rayo de sol",
+    "pluralTranslation": "Rayos de sol",
+    "singularAudioId": "viyohi",
+    "pluralAudioId": "lohi",
+    "nounClass": "Clase 6",
+    "conversionSummary": "v- → l-"
+  },
+  {
+    "singular": "Fala",
+    "plural": "Fala",
+    "translation": "Francés",
+    "pluralTranslation": "Franceses",
+    "singularAudioId": "fala",
+    "pluralAudioId": "fala",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Fato",
+    "plural": "Fato",
+    "translation": "Media, calceta",
+    "pluralTranslation": "Medias, calcetas",
+    "singularAudioId": "fato",
+    "pluralAudioId": "fato",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Fula",
+    "plural": "Fula",
+    "translation": "Franco, moneda",
+    "pluralTranslation": "Francos, monedas",
+    "singularAudioId": "fula",
+    "pluralAudioId": "fula",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Dyate",
+    "plural": "Dyate",
+    "translation": "Cinta del sombrero",
+    "pluralTranslation": "Cintas del sombrero",
+    "singularAudioId": "dyate",
+    "pluralAudioId": "dyate",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Hako",
+    "plural": "Hako",
+    "translation": "Hormiga",
+    "pluralTranslation": "Hormigas",
+    "singularAudioId": "hako",
+    "pluralAudioId": "hako",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Hapi",
+    "plural": "Hapi",
+    "translation": "Cerradura",
+    "pluralTranslation": "Cerraduras",
+    "singularAudioId": "hapi",
+    "pluralAudioId": "hapi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Hoūe",
+    "plural": "Hoūe",
+    "translation": "Pelo, cabello",
+    "pluralTranslation": "Pelos, cabellos",
+    "singularAudioId": "ho_u_e",
+    "pluralAudioId": "ho_u_e",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Jângâ",
+    "plural": "Jângâ",
+    "translation": "Temor (clase de)",
+    "pluralTranslation": "Temores (clases de)",
+    "singularAudioId": "j_a_ng_a_",
+    "pluralAudioId": "j_a_ng_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Jonda",
+    "plural": "Jonda",
+    "translation": "Rana",
+    "pluralTranslation": "Ranas",
+    "singularAudioId": "jonda",
+    "pluralAudioId": "jonda",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Jumba",
+    "plural": "Jumba",
+    "translation": "Carga",
+    "pluralTranslation": "Cargas",
+    "singularAudioId": "jumba",
+    "pluralAudioId": "jumba",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Kabala",
+    "plural": "Kabala",
+    "translation": "Caballo",
+    "pluralTranslation": "Caballos",
+    "singularAudioId": "kabala",
+    "pluralAudioId": "kabala",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Kâtâ",
+    "plural": "Kâtâ",
+    "translation": "Tranca",
+    "pluralTranslation": "Trancas",
+    "singularAudioId": "k_a_t_a_",
+    "pluralAudioId": "k_a_t_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Kono",
+    "plural": "Kono",
+    "translation": "Bisagra",
+    "pluralTranslation": "Bisagras",
+    "singularAudioId": "kono",
+    "pluralAudioId": "kono",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Kuma",
+    "plural": "Kuma",
+    "translation": "Fama, renombre",
+    "pluralTranslation": "Famas, renombres",
+    "singularAudioId": "kuma",
+    "pluralAudioId": "kuma",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mâkâ",
+    "plural": "Mâkâ",
+    "translation": "Tienda de campaña",
+    "pluralTranslation": "Tiendas de campaña",
+    "singularAudioId": "m_a_k_a_",
+    "pluralAudioId": "m_a_k_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pago",
+    "plural": "Pago",
+    "translation": "Tributo",
+    "pluralTranslation": "Tributos",
+    "singularAudioId": "pago",
+    "pluralAudioId": "pago",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Paha",
+    "plural": "Paha",
+    "translation": "Rama",
+    "pluralTranslation": "Ramas",
+    "singularAudioId": "paha",
+    "pluralAudioId": "paha",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Panga",
+    "plural": "Panga",
+    "translation": "Cadena, promesa",
+    "pluralTranslation": "Cadenas, promesas",
+    "singularAudioId": "panga",
+    "pluralAudioId": "panga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tagulu",
+    "plural": "Tagulu",
+    "translation": "Mesa",
+    "pluralTranslation": "Mesas",
+    "singularAudioId": "tagulu",
+    "pluralAudioId": "tagulu",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tina",
+    "plural": "Tina",
+    "translation": "Razón, causa",
+    "pluralTranslation": "Razones, causas",
+    "singularAudioId": "tina",
+    "pluralAudioId": "tina",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tito",
+    "plural": "Tito",
+    "translation": "Bestia, animal",
+    "pluralTranslation": "Bestias, animales",
+    "singularAudioId": "tito",
+    "pluralAudioId": "tito",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Toko",
+    "plural": "Toko",
+    "translation": "Cuchara",
+    "pluralTranslation": "Cucharas",
+    "singularAudioId": "toko",
+    "pluralAudioId": "toko",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tolongo",
+    "plural": "Tolongo",
+    "translation": "Baúl",
+    "pluralTranslation": "Baúles",
+    "singularAudioId": "tolongo",
+    "pluralAudioId": "tolongo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tombo",
+    "plural": "Tombo",
+    "translation": "Aguja",
+    "pluralTranslation": "Agujas",
+    "singularAudioId": "tombo",
+    "pluralAudioId": "tombo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tongo",
+    "plural": "Tongo",
+    "translation": "Manantial",
+    "pluralTranslation": "Manantiales",
+    "singularAudioId": "tongo",
+    "pluralAudioId": "tongo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tudi",
+    "plural": "Tudi",
+    "translation": "Disgusto, fastidio",
+    "pluralTranslation": "Disgustos, fastidios",
+    "singularAudioId": "tudi",
+    "pluralAudioId": "tudi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tuma",
+    "plural": "Tuma",
+    "translation": "Tenedor",
+    "pluralTranslation": "Tenedores",
+    "singularAudioId": "tuma",
+    "pluralAudioId": "tuma",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tungu",
+    "plural": "Tungu",
+    "translation": "Bahía",
+    "pluralTranslation": "Bahías",
+    "singularAudioId": "tungu",
+    "pluralAudioId": "tungu",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Tyoli",
+    "plural": "Tyoli",
+    "translation": "Despensero",
+    "pluralTranslation": "Despenseros",
+    "singularAudioId": "tyoli",
+    "pluralAudioId": "tyoli",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbadi",
+    "plural": "Mbadi",
+    "translation": "Ardilla",
+    "pluralTranslation": "Ardillas",
+    "singularAudioId": "mbadi",
+    "pluralAudioId": "mbadi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbalanga",
+    "plural": "Mbalanga",
+    "translation": "Antilope",
+    "pluralTranslation": "Antílopes",
+    "singularAudioId": "malanga",
+    "pluralAudioId": "malanga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbanja",
+    "plural": "Mbanja",
+    "translation": "Bambú, costilla",
+    "pluralTranslation": "Bambús, costillas",
+    "singularAudioId": "mbanja",
+    "pluralAudioId": "mbanja",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbângâ",
+    "plural": "Mbângâ",
+    "translation": "Patata",
+    "pluralTranslation": "Patatas",
+    "singularAudioId": "mb_a_ng_a_",
+    "pluralAudioId": "mb_a_ng_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbuja",
+    "plural": "Mbuja",
+    "translation": "Red",
+    "pluralTranslation": "Redes",
+    "singularAudioId": "mbuja",
+    "pluralAudioId": "mbuja",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Mbūa",
+    "plural": "Mbūa",
+    "translation": "Perro",
+    "pluralTranslation": "Perros",
+    "singularAudioId": "mb_u_a",
+    "pluralAudioId": "mb_u_a",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndabo",
+    "plural": "Ndabo",
+    "translation": "Casa",
+    "pluralTranslation": "Casas",
+    "singularAudioId": "ndabo",
+    "pluralAudioId": "ndabo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndaga",
+    "plural": "Ndaga",
+    "translation": "Palabra, razonamiento",
+    "pluralTranslation": "Palabras, razonamientos",
+    "singularAudioId": "ndaga",
+    "pluralAudioId": "ndaga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndâtâ",
+    "plural": "Ndâtâ",
+    "translation": "Sueño, desvario",
+    "pluralTranslation": "Sueños, desvaríos",
+    "singularAudioId": "nd_a_t_a_",
+    "pluralAudioId": "nd_a_t_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndembo",
+    "plural": "Ndembo",
+    "translation": "Señal",
+    "pluralTranslation": "Señales",
+    "singularAudioId": "ndembo",
+    "pluralAudioId": "ndembo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndoba",
+    "plural": "Ndoba",
+    "translation": "Enemigo",
+    "pluralTranslation": "Enemigos",
+    "singularAudioId": "ndoba",
+    "pluralAudioId": "ndoba",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndomina",
+    "plural": "Ndomina",
+    "translation": "Tío materno",
+    "pluralTranslation": "Tíos maternos",
+    "singularAudioId": "ndomina",
+    "pluralAudioId": "ndomina",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndonda",
+    "plural": "Ndonda",
+    "translation": "Cosecha, siega",
+    "pluralTranslation": "Cosechas, siegas",
+    "singularAudioId": "ndonga",
+    "pluralAudioId": "ndonga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndonga",
+    "plural": "Ndonga",
+    "translation": "Confianza",
+    "pluralTranslation": "Confianzas",
+    "singularAudioId": "ndonga",
+    "pluralAudioId": "ndonga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndongo",
+    "plural": "Ndongo",
+    "translation": "Pimiento",
+    "pluralTranslation": "Pimientos",
+    "singularAudioId": "ndongo",
+    "pluralAudioId": "ndongo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ndumba",
+    "plural": "Ndumba",
+    "translation": "Huésped",
+    "pluralTranslation": "Huéspedes",
+    "singularAudioId": "ndumba",
+    "pluralAudioId": "ndumba",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Penge",
+    "plural": "Penge",
+    "translation": "Ulcera",
+    "pluralTranslation": "Úlceras",
+    "singularAudioId": "penge",
+    "pluralAudioId": "penge",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pani",
+    "plural": "Pani",
+    "translation": "Costumbre",
+    "pluralTranslation": "Costumbres",
+    "singularAudioId": "pani",
+    "pluralAudioId": "pani",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pavo",
+    "plural": "Pavo",
+    "translation": "Cuchillo",
+    "pluralTranslation": "Cuchillos",
+    "singularAudioId": "pavo",
+    "pluralAudioId": "pavo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pândâ",
+    "plural": "Pândâ",
+    "translation": "Casco",
+    "pluralTranslation": "Cascos",
+    "singularAudioId": "p_a_nd_a_",
+    "pluralAudioId": "p_a_nd_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Penda",
+    "plural": "Penda",
+    "translation": "Controversia",
+    "pluralTranslation": "Controversias",
+    "singularAudioId": "penda",
+    "pluralAudioId": "penda",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pembē",
+    "plural": "Pembē",
+    "translation": "Pan, greda",
+    "pluralTranslation": "Panes, gredas",
+    "singularAudioId": "pemb_e_",
+    "pluralAudioId": "pemb_e_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pika",
+    "plural": "Pika",
+    "translation": "Riñón",
+    "pluralTranslation": "Riñones",
+    "singularAudioId": "pika",
+    "pluralAudioId": "pika",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pimba",
+    "plural": "Pimba",
+    "translation": "Coraje",
+    "pluralTranslation": "Corajes",
+    "singularAudioId": "pimba",
+    "pluralAudioId": "pimba",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pita",
+    "plural": "Pita",
+    "translation": "Pólvora",
+    "pluralTranslation": "Pólvoras",
+    "singularAudioId": "pita",
+    "pluralAudioId": "pita",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pogo",
+    "plural": "Pogo",
+    "translation": "Arpón",
+    "pluralTranslation": "Arpones",
+    "singularAudioId": "pogo",
+    "pluralAudioId": "pogo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Poke",
+    "plural": "Poke",
+    "translation": "Sordera",
+    "pluralTranslation": "Sorderas",
+    "singularAudioId": "poke",
+    "pluralAudioId": "poke",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Poti",
+    "plural": "Poti",
+    "translation": "Maíz, grano",
+    "pluralTranslation": "Maíces, granos",
+    "singularAudioId": "poti",
+    "pluralAudioId": "poti",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pudi",
+    "plural": "Pudi",
+    "translation": "Aire, aliento",
+    "pluralTranslation": "Aires, alientos",
+    "singularAudioId": "pudi",
+    "pluralAudioId": "pudi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Pūisi",
+    "plural": "Pūisi",
+    "translation": "Gato",
+    "pluralTranslation": "Gatos",
+    "singularAudioId": "p_u_isi",
+    "pluralAudioId": "p_u_isi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Sago",
+    "plural": "Sago",
+    "translation": "Jabón",
+    "pluralTranslation": "Jabones",
+    "singularAudioId": "sago",
+    "pluralAudioId": "sago",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Sango",
+    "plural": "Sango",
+    "translation": "Fiesta, noticia",
+    "pluralTranslation": "Fiestas, noticias",
+    "singularAudioId": "sango",
+    "pluralAudioId": "sango",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Senge",
+    "plural": "Senge",
+    "translation": "Palangana",
+    "pluralTranslation": "Palanganas",
+    "singularAudioId": "senge",
+    "pluralAudioId": "senge",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Sikulu",
+    "plural": "Sikulu",
+    "translation": "Escuela",
+    "pluralTranslation": "Escuelas",
+    "singularAudioId": "sikulu",
+    "pluralAudioId": "sikulu",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nenge",
+    "plural": "Nenge",
+    "translation": "Isla",
+    "pluralTranslation": "Islas",
+    "singularAudioId": "nenge",
+    "pluralAudioId": "nenge",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngabo",
+    "plural": "Ngabo",
+    "translation": "Ración, porción",
+    "pluralTranslation": "Raciones, porciones",
+    "singularAudioId": "ngabo",
+    "pluralAudioId": "ngabo",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngaho",
+    "plural": "Ngaho",
+    "translation": "Alambre",
+    "pluralTranslation": "Alambres",
+    "singularAudioId": "ngaho",
+    "pluralAudioId": "ngaho",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngama",
+    "plural": "Ngama",
+    "translation": "Defensa",
+    "pluralTranslation": "Defensas",
+    "singularAudioId": "ngama",
+    "pluralAudioId": "ngama",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngambi",
+    "plural": "Ngambi",
+    "translation": "Ira, rencor",
+    "pluralTranslation": "Iras, rencores",
+    "singularAudioId": "ngambi",
+    "pluralAudioId": "ngambi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngando",
+    "plural": "Ngando",
+    "translation": "Cocodrilo",
+    "pluralTranslation": "Cocodrilos",
+    "singularAudioId": "ngando",
+    "pluralAudioId": "ngando",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngandi",
+    "plural": "Ngandi",
+    "translation": "Globo, bola",
+    "pluralTranslation": "Globos, bolas",
+    "singularAudioId": "ngandi",
+    "pluralAudioId": "ngandi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngani",
+    "plural": "Ngani",
+    "translation": "Juego de manos",
+    "pluralTranslation": "Juegos de manos",
+    "singularAudioId": "ngani",
+    "pluralAudioId": "ngani",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nganga",
+    "plural": "Nganga",
+    "translation": "Médico",
+    "pluralTranslation": "Médicos",
+    "singularAudioId": "nuega",
+    "pluralAudioId": "nuega",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nganiyango",
+    "plural": "Nganiyango",
+    "translation": "Acceso, entrada",
+    "pluralTranslation": "Accesos, entradas",
+    "singularAudioId": "aniyango",
+    "pluralAudioId": "aniyango",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngâmbi",
+    "plural": "Ngâmbi",
+    "translation": "Harpa",
+    "pluralTranslation": "Arpas",
+    "singularAudioId": "ng_a_mbi",
+    "pluralAudioId": "ng_a_mbi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngândâ",
+    "plural": "Ngândâ",
+    "translation": "Habas",
+    "pluralTranslation": "Habas",
+    "singularAudioId": "ng_a_nd_a_",
+    "pluralAudioId": "ng_a_nd_a_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngâūē",
+    "plural": "Ngâūē",
+    "translation": "Capitán",
+    "pluralTranslation": "Capitanes",
+    "singularAudioId": "ng_a_u_e_",
+    "pluralAudioId": "ng_a_u_e_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngejangeja",
+    "plural": "Ngejangeja",
+    "translation": "Cristal",
+    "pluralTranslation": "Cristales",
+    "singularAudioId": "gejangeja",
+    "pluralAudioId": "gejangeja",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngenga",
+    "plural": "Ngenga",
+    "translation": "Ciempiés",
+    "pluralTranslation": "Ciempiés",
+    "singularAudioId": "ngenga",
+    "pluralAudioId": "ngenga",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngomba",
+    "plural": "Ngomba",
+    "translation": "Puerco espín",
+    "pluralTranslation": "Puercos espines",
+    "singularAudioId": "ngomba",
+    "pluralAudioId": "ngomba",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngonga",
+    "plural": "Ngonga",
+    "translation": "Pecho",
+    "pluralTranslation": "Pechos",
+    "singularAudioId": "ngonda",
+    "pluralAudioId": "ngonda",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngudi",
+    "plural": "Ngudi",
+    "translation": "Fuerza, voluntad",
+    "pluralTranslation": "Fuerzas, voluntades",
+    "singularAudioId": "ngudi",
+    "pluralAudioId": "ngudi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Ngumu",
+    "plural": "Ngumu",
+    "translation": "Jefe, principal",
+    "pluralTranslation": "Jefes, principales",
+    "singularAudioId": "ngumu",
+    "pluralAudioId": "ngumu",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Njadi",
+    "plural": "Njadi",
+    "translation": "Yunque",
+    "pluralTranslation": "Yunques",
+    "singularAudioId": "njadi",
+    "pluralAudioId": "njadi",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nyangūa ditâ",
+    "plural": "Nyangūa ditâ",
+    "translation": "Timpano, oido",
+    "pluralTranslation": "Tímpanos, oídos",
+    "singularAudioId": "nyang_u_a_dita",
+    "pluralAudioId": "nyang_u_a_dita",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nyuūē",
+    "plural": "Nyuūē",
+    "translation": "Cabello blanco, o canas",
+    "pluralTranslation": "Cabellos blancos, o canas",
+    "singularAudioId": "nyu_u_e_",
+    "pluralAudioId": "nyu_u_e_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nyeti",
+    "plural": "Nyeti",
+    "translation": "Chorro violento",
+    "pluralTranslation": "Chorros violentos",
+    "singularAudioId": "nyeti",
+    "pluralAudioId": "nyeti",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Nyēnjē",
+    "plural": "Nyēnjē",
+    "translation": "Cangrejo",
+    "pluralTranslation": "Cangrejos",
+    "singularAudioId": "ny_e_nj_e_",
+    "pluralAudioId": "ny_e_nj_e_",
+    "nounClass": "Clase 7",
+    "conversionSummary": "invariable (singular = plural)"
+  },
+  {
+    "singular": "Elape",
+    "plural": "Belape",
+    "translation": "Rueda",
+    "pluralTranslation": "Ruedas",
+    "singularAudioId": "elape",
+    "pluralAudioId": "belape",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Diko",
+    "plural": "Mako",
+    "translation": "Sur",
+    "pluralTranslation": "Sures",
+    "singularAudioId": "diko",
+    "pluralAudioId": "mako",
+    "nounClass": "Clase 2",
+    "conversionSummary": "i/di- → ma-"
+  },
+  {
+    "singular": "Ebuki",
+    "plural": "Bebuki",
+    "translation": "Falta, culpa",
+    "pluralTranslation": "Faltas, culpas",
+    "singularAudioId": "ebuki",
+    "pluralAudioId": "bebuki",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebuma",
+    "plural": "Bebuma",
+    "translation": "Fruta",
+    "pluralTranslation": "Frutas",
+    "singularAudioId": "ebuma",
+    "pluralAudioId": "bebuma",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebukūangonja",
+    "plural": "Bebukūangonja",
+    "translation": "Manga marina",
+    "pluralTranslation": "Mangas marinas",
+    "singularAudioId": "ebuk_u_angonja",
+    "pluralAudioId": "bebuk_u_angonja",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebumulema",
+    "plural": "Bebumulema",
+    "translation": "Corazón",
+    "pluralTranslation": "Corazones",
+    "singularAudioId": "ebumulema",
+    "pluralAudioId": "bebumulema",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebungu",
+    "plural": "Bebungu",
+    "translation": "Estera",
+    "pluralTranslation": "Esteras",
+    "singularAudioId": "ebungu",
+    "pluralAudioId": "bebungu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebūela",
+    "plural": "Bebūela",
+    "translation": "Presa, despojos",
+    "pluralTranslation": "Presas, despojos",
+    "singularAudioId": "eb_u_ela",
+    "pluralAudioId": "beb_u_ela",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebyâbyâ",
+    "plural": "Bebyâbyâ",
+    "translation": "Muslo",
+    "pluralTranslation": "Muslos",
+    "singularAudioId": "eby_a_by_a_",
+    "pluralAudioId": "beby_a_by_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Edingiha",
+    "plural": "Bedingiha",
+    "translation": "Sombra",
+    "pluralTranslation": "Sombras",
+    "singularAudioId": "edingiha",
+    "pluralAudioId": "bedingiha",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebabadi",
+    "plural": "Bebabadi",
+    "translation": "Sudor",
+    "pluralTranslation": "Sudores",
+    "singularAudioId": "ebabadi",
+    "pluralAudioId": "bebabadi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebamba",
+    "plural": "Bebamba",
+    "translation": "Caspa",
+    "pluralTranslation": "Caspas",
+    "singularAudioId": "ebamba",
+    "pluralAudioId": "bebamba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebambana",
+    "plural": "Bebambana",
+    "translation": "Hijo de esclavos",
+    "pluralTranslation": "Hijos de esclavos",
+    "singularAudioId": "ebambana",
+    "pluralAudioId": "bebambana",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebambamba",
+    "plural": "Bebambamba",
+    "translation": "Concha, cáscara",
+    "pluralTranslation": "Conchas, cáscaras",
+    "singularAudioId": "ebambamba",
+    "pluralAudioId": "bebambamba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebâbâ",
+    "plural": "Bebâbâ",
+    "translation": "Trapo, andrajo",
+    "pluralTranslation": "Trapos, andrajos",
+    "singularAudioId": "eb_a_b_a_",
+    "pluralAudioId": "beb_a_b_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebadu",
+    "plural": "Bebadu",
+    "translation": "Barba",
+    "pluralTranslation": "Barbas",
+    "singularAudioId": "ebadu",
+    "pluralAudioId": "bebadu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebano",
+    "plural": "Bebano",
+    "translation": "Oficio, comercio",
+    "pluralTranslation": "Oficios, comercios",
+    "singularAudioId": "ebano",
+    "pluralAudioId": "bebano",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebodi",
+    "plural": "Bebodi",
+    "translation": "Puño",
+    "pluralTranslation": "Puños",
+    "singularAudioId": "ebodi",
+    "pluralAudioId": "bebodi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebokūedi",
+    "plural": "Bebokūedi",
+    "translation": "Nodriza",
+    "pluralTranslation": "Nodrizas",
+    "singularAudioId": "ebok_u_edi",
+    "pluralAudioId": "bebok_u_edi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ebonga",
+    "plural": "Bebonga",
+    "translation": "Silla",
+    "pluralTranslation": "Sillas",
+    "singularAudioId": "ebonga",
+    "pluralAudioId": "bebonga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eguba",
+    "plural": "Beguba",
+    "translation": "Braza, fondo",
+    "pluralTranslation": "Brazas, fondos",
+    "singularAudioId": "eguba",
+    "pluralAudioId": "beguba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehadi",
+    "plural": "Behadi",
+    "translation": "Acción",
+    "pluralTranslation": "Acciones",
+    "singularAudioId": "ehadi",
+    "pluralAudioId": "behadi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehâhâni",
+    "plural": "Behâhâni",
+    "translation": "Vergüenza, rubor",
+    "pluralTranslation": "Vergüenzas, rubores",
+    "singularAudioId": "eh_a_h_a_ni",
+    "pluralAudioId": "beh_a_h_a_ni",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehekūē",
+    "plural": "Behekūē",
+    "translation": "Gracia, favor",
+    "pluralTranslation": "Gracias, favores",
+    "singularAudioId": "ehek_u_e_",
+    "pluralAudioId": "behek_u_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehelele",
+    "plural": "Behelele",
+    "translation": "Lagarto",
+    "pluralTranslation": "Lagartos",
+    "singularAudioId": "ehelele",
+    "pluralAudioId": "behelele",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehihila",
+    "plural": "Behihila",
+    "translation": "Visión, espectro",
+    "pluralTranslation": "Visiones, espectros",
+    "singularAudioId": "ehihila",
+    "pluralAudioId": "behihila",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehila",
+    "plural": "Behila",
+    "translation": "Virgen, doncella",
+    "pluralTranslation": "Vírgenes, doncellas",
+    "singularAudioId": "ehila",
+    "pluralAudioId": "behila",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehini",
+    "plural": "Behini",
+    "translation": "Figura, retrato",
+    "pluralTranslation": "Figuras, retratos",
+    "singularAudioId": "ehini",
+    "pluralAudioId": "behini",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehove",
+    "plural": "Behove",
+    "translation": "Ansia, deseo",
+    "pluralTranslation": "Ansias, deseos",
+    "singularAudioId": "ehove",
+    "pluralAudioId": "behove",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehuka",
+    "plural": "Behuka",
+    "translation": "Jarro, tinaja",
+    "pluralTranslation": "Jarros, tinajas",
+    "singularAudioId": "ehuka",
+    "pluralAudioId": "behuka",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehutē",
+    "plural": "Behutē",
+    "translation": "Náusea",
+    "pluralTranslation": "Náuseas",
+    "singularAudioId": "ehut_e_",
+    "pluralAudioId": "behut_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejaka",
+    "plural": "Bejaka",
+    "translation": "Pez, carne",
+    "pluralTranslation": "Peces, carnes",
+    "singularAudioId": "ejaka",
+    "pluralAudioId": "bejaka",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejalina",
+    "plural": "Bejalina",
+    "translation": "Peine",
+    "pluralTranslation": "Peines",
+    "singularAudioId": "ejalina",
+    "pluralAudioId": "bejalina",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejâmbi",
+    "plural": "Bejâmbi",
+    "translation": "Patriarca",
+    "pluralTranslation": "Patriarcas",
+    "singularAudioId": "ej_a_mbi",
+    "pluralAudioId": "bej_a_mbi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eka",
+    "plural": "Beka",
+    "translation": "Trono",
+    "pluralTranslation": "Tronos",
+    "singularAudioId": "eka",
+    "pluralAudioId": "beka",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekai",
+    "plural": "Bekai",
+    "translation": "Hoja",
+    "pluralTranslation": "Hojas",
+    "singularAudioId": "ekai",
+    "pluralAudioId": "bekai",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekalidi",
+    "plural": "Bekalidi",
+    "translation": "Conversación",
+    "pluralTranslation": "Conversaciones",
+    "singularAudioId": "ekalidi",
+    "pluralAudioId": "bekalidi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekano",
+    "plural": "Bekano",
+    "translation": "Fábula, ficción",
+    "pluralTranslation": "Fábulas, ficciones",
+    "singularAudioId": "ekano",
+    "pluralAudioId": "bekano",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekâkâlâ",
+    "plural": "Bekâkâlâ",
+    "translation": "Sarna",
+    "pluralTranslation": "Sarnas",
+    "singularAudioId": "ek_a_k_a_l_a_",
+    "pluralAudioId": "bek_a_k_a_l_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekâkâyi",
+    "plural": "Bekâkâyi",
+    "translation": "Tos muy fuerte",
+    "pluralTranslation": "Toses muy fuertes",
+    "singularAudioId": "ek_a_k_a_yi",
+    "pluralAudioId": "bek_a_k_a_yi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekeha",
+    "plural": "Bekeha",
+    "translation": "Criatura",
+    "pluralTranslation": "Criaturas",
+    "singularAudioId": "ekeha",
+    "pluralAudioId": "bekeha",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekengo",
+    "plural": "Bekengo",
+    "translation": "Cadáver",
+    "pluralTranslation": "Cadáveres",
+    "singularAudioId": "ekengo",
+    "pluralAudioId": "bekengo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekēmbē",
+    "plural": "Bekēmbē",
+    "translation": "Veneno",
+    "pluralTranslation": "Venenos",
+    "singularAudioId": "ek_e_mb_e_",
+    "pluralAudioId": "bek_e_mb_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekikindi",
+    "plural": "Bekikindi",
+    "translation": "Talón",
+    "pluralTranslation": "Talones",
+    "singularAudioId": "ekikindi",
+    "pluralAudioId": "bekikindi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekoda",
+    "plural": "Bekoda",
+    "translation": "Panal",
+    "pluralTranslation": "Panales",
+    "singularAudioId": "ekoda",
+    "pluralAudioId": "bekoda",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekola",
+    "plural": "Bekola",
+    "translation": "Malicia",
+    "pluralTranslation": "Malicias",
+    "singularAudioId": "ekola",
+    "pluralAudioId": "bekola",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekoto",
+    "plural": "Bekoto",
+    "translation": "Cuero, piel",
+    "pluralTranslation": "Cueros, pieles",
+    "singularAudioId": "ekoto",
+    "pluralAudioId": "bekoto",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekuha",
+    "plural": "Bekuha",
+    "translation": "Herencia",
+    "pluralTranslation": "Herencias",
+    "singularAudioId": "ekuha",
+    "pluralAudioId": "bekuha",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekulu",
+    "plural": "Bekulu",
+    "translation": "Mitad, parte",
+    "pluralTranslation": "Mitades, partes",
+    "singularAudioId": "ekulu",
+    "pluralAudioId": "bekulu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekūekūe",
+    "plural": "Bekūekūe",
+    "translation": "Mariposa",
+    "pluralTranslation": "Mariposas",
+    "singularAudioId": "ek_u_ek_u_e",
+    "pluralAudioId": "bek_u_ek_u_e",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elângi",
+    "plural": "Belângi",
+    "translation": "Cantor",
+    "pluralTranslation": "Cantores",
+    "singularAudioId": "el_a_ngi",
+    "pluralAudioId": "bel_a_ngi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elekanako",
+    "plural": "Belekanako",
+    "translation": "Ley, mandato",
+    "pluralTranslation": "Leyes, mandatos",
+    "singularAudioId": "elekanako",
+    "pluralAudioId": "belekanako",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elēngi",
+    "plural": "Belēngi",
+    "translation": "Pródigo, gastador",
+    "pluralTranslation": "Pródigos, gastadores",
+    "singularAudioId": "el_e_ngi",
+    "pluralAudioId": "bel_e_ngi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Emēnâ",
+    "plural": "Bemēnâ",
+    "translation": "Vida, existencia",
+    "pluralTranslation": "Vidas, existencias",
+    "singularAudioId": "em_e_n_a_",
+    "pluralAudioId": "bem_e_n_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Emina",
+    "plural": "Bemina",
+    "translation": "Cerrojo",
+    "pluralTranslation": "Cerrojos",
+    "singularAudioId": "emina",
+    "pluralAudioId": "bemina",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enangi",
+    "plural": "Benangi",
+    "translation": "Sofá, cama",
+    "pluralTranslation": "Sofás, camas",
+    "singularAudioId": "enangi",
+    "pluralAudioId": "benangi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Engamba",
+    "plural": "Bengamba",
+    "translation": "Garrafón",
+    "pluralTranslation": "Garrafones",
+    "singularAudioId": "engamba",
+    "pluralAudioId": "bengamba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Engumbi",
+    "plural": "Bengumbi",
+    "translation": "Niebla",
+    "pluralTranslation": "Nieblas",
+    "singularAudioId": "engumbi",
+    "pluralAudioId": "bengumbi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enjēli",
+    "plural": "Benjēli",
+    "translation": "Ángel",
+    "pluralTranslation": "Ángeles",
+    "singularAudioId": "enj_e_li",
+    "pluralAudioId": "benj_e_li",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epedi",
+    "plural": "Bepedi",
+    "translation": "Tiempo, estación",
+    "pluralTranslation": "Tiempos, estaciones",
+    "singularAudioId": "epedi",
+    "pluralAudioId": "bepedi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epēlupēlu",
+    "plural": "Bepēlupēlu",
+    "translation": "Relámpago",
+    "pluralTranslation": "Relámpagos",
+    "singularAudioId": "ep_e_lup_e_lu",
+    "pluralAudioId": "bep_e_lup_e_lu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epima",
+    "plural": "Bepima",
+    "translation": "Muro, pared",
+    "pluralTranslation": "Muros, paredes",
+    "singularAudioId": "epima",
+    "pluralAudioId": "bepima",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Esâ",
+    "plural": "Besâ",
+    "translation": "Anguila",
+    "pluralTranslation": "Anguilas",
+    "singularAudioId": "es_a_",
+    "pluralAudioId": "bes_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Esūagēnda",
+    "plural": "Besūagēnda",
+    "translation": "Banco, asiento",
+    "pluralTranslation": "Bancos, asientos",
+    "singularAudioId": "es_u_ag_e_nda",
+    "pluralAudioId": "bes_u_ag_e_nda",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etâki",
+    "plural": "Betâki",
+    "translation": "Tumulto",
+    "pluralTranslation": "Tumultos",
+    "singularAudioId": "et_a_ki",
+    "pluralAudioId": "bet_a_ki",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Edoko",
+    "plural": "Bedoko",
+    "translation": "Deseo",
+    "pluralTranslation": "Deseos",
+    "singularAudioId": "edoko",
+    "pluralAudioId": "bedoko",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Edubu",
+    "plural": "Bedubu",
+    "translation": "Culebra negra",
+    "pluralTranslation": "Culebras negras",
+    "singularAudioId": "edubu",
+    "pluralAudioId": "bedubu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eduka",
+    "plural": "Beduka",
+    "translation": "Riña, guerra",
+    "pluralTranslation": "Riñas, guerras",
+    "singularAudioId": "eduka",
+    "pluralAudioId": "beduka",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Edungu",
+    "plural": "Bedungu",
+    "translation": "Sonido, ruido",
+    "pluralTranslation": "Sonidos, ruidos",
+    "singularAudioId": "edungu",
+    "pluralAudioId": "bedungu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Efu",
+    "plural": "Befu",
+    "translation": "Manta, manto",
+    "pluralTranslation": "Mantas, mantos",
+    "singularAudioId": "efu",
+    "pluralAudioId": "befu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egâlani",
+    "plural": "Begâlani",
+    "translation": "Lepra",
+    "pluralTranslation": "Lepras",
+    "singularAudioId": "eg_a_lani",
+    "pluralAudioId": "beg_a_lani",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egândaga",
+    "plural": "Begândaga",
+    "translation": "Esclavo",
+    "pluralTranslation": "Esclavos",
+    "singularAudioId": "eg_a_ndaga",
+    "pluralAudioId": "beg_a_ndaga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egēja",
+    "plural": "Begēja",
+    "translation": "Barreno",
+    "pluralTranslation": "Barrenos",
+    "singularAudioId": "eg_e_ja",
+    "pluralAudioId": "beg_e_ja",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egeno",
+    "plural": "Begeno",
+    "translation": "Espejo",
+    "pluralTranslation": "Espejos",
+    "singularAudioId": "egeno",
+    "pluralAudioId": "begeno",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egombe",
+    "plural": "Begombe",
+    "translation": "Tiempo",
+    "pluralTranslation": "Tiempos",
+    "singularAudioId": "egombe",
+    "pluralAudioId": "begombe",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egumia",
+    "plural": "Begumia",
+    "translation": "Mástil, palo",
+    "pluralTranslation": "Mástiles, palos",
+    "singularAudioId": "egumia",
+    "pluralAudioId": "begumia",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehavu",
+    "plural": "Behavu",
+    "translation": "Tarea, hierba",
+    "pluralTranslation": "Tareas, hierbas",
+    "singularAudioId": "ehavu",
+    "pluralAudioId": "behavu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehâlia",
+    "plural": "Behâlia",
+    "translation": "Hilaridad, juego",
+    "pluralTranslation": "Hilaridades, juegos",
+    "singularAudioId": "eh_a_lia",
+    "pluralAudioId": "beh_a_lia",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eheheku",
+    "plural": "Beheheku",
+    "translation": "Hipo",
+    "pluralTranslation": "Hipos",
+    "singularAudioId": "eheheku",
+    "pluralAudioId": "beheheku",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehēkâ",
+    "plural": "Behēkâ",
+    "translation": "Hígado",
+    "pluralTranslation": "Hígados",
+    "singularAudioId": "eh_e_k_a_",
+    "pluralAudioId": "beh_e_k_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekiki",
+    "plural": "Bekiki",
+    "translation": "País, bosque",
+    "pluralTranslation": "Países, bosques",
+    "singularAudioId": "ekiki",
+    "pluralAudioId": "bekiki",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehilibeja",
+    "plural": "Behilibeja",
+    "translation": "Paladar",
+    "pluralTranslation": "Paladares",
+    "singularAudioId": "ehilibeja",
+    "pluralAudioId": "behilibeja",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehongola",
+    "plural": "Behongola",
+    "translation": "Embudo",
+    "pluralTranslation": "Embudos",
+    "singularAudioId": "ehongola",
+    "pluralAudioId": "behongola",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehuhu",
+    "plural": "Behuhu",
+    "translation": "Total, el todo",
+    "pluralTranslation": "Totales, los todos",
+    "singularAudioId": "ehuhu",
+    "pluralAudioId": "behuhu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ehukuluku",
+    "plural": "Behukuluku",
+    "translation": "Lechuza",
+    "pluralTranslation": "Lechuzas",
+    "singularAudioId": "ehukuluku",
+    "pluralAudioId": "behukuluku",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eja",
+    "plural": "Beja",
+    "translation": "Comida",
+    "pluralTranslation": "Comidas",
+    "singularAudioId": "eja",
+    "pluralAudioId": "beja",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejabavudi",
+    "plural": "Bejabavudi",
+    "translation": "Tortuga",
+    "pluralTranslation": "Tortugas",
+    "singularAudioId": "ejabavudi",
+    "pluralAudioId": "bejabavudi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejangina",
+    "plural": "Bejangina",
+    "translation": "Horno",
+    "pluralTranslation": "Hornos",
+    "singularAudioId": "ejangina",
+    "pluralAudioId": "bejangina",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejânjâ",
+    "plural": "Bejânjâ",
+    "translation": "Seta, hongo",
+    "pluralTranslation": "Setas, hongos",
+    "singularAudioId": "ej_a_nj_a_",
+    "pluralAudioId": "bej_a_nj_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekaba",
+    "plural": "Bekaba",
+    "translation": "Pimpollo",
+    "pluralTranslation": "Pimpollos",
+    "singularAudioId": "ekaba",
+    "pluralAudioId": "bekaba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekahi",
+    "plural": "Bekahi",
+    "translation": "Héroe, coraje",
+    "pluralTranslation": "Héroes, corajes",
+    "singularAudioId": "ekahi",
+    "pluralAudioId": "bekahi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekendangolo",
+    "plural": "Bekendangolo",
+    "translation": "Monte, colina",
+    "pluralTranslation": "Montes, colinas",
+    "singularAudioId": "ekendangolo",
+    "pluralAudioId": "bekendangolo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekâkâ",
+    "plural": "Bekâkâ",
+    "translation": "Tronco muerto",
+    "pluralTranslation": "Troncos muertos",
+    "singularAudioId": "ek_a_k_a_",
+    "pluralAudioId": "bek_a_k_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekâmbâ",
+    "plural": "Bekâmbâ",
+    "translation": "Flema",
+    "pluralTranslation": "Flemas",
+    "singularAudioId": "ek_a_mb_a_",
+    "pluralAudioId": "bek_a_mb_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekedi",
+    "plural": "Bekedi",
+    "translation": "Vanidad",
+    "pluralTranslation": "Vanidades",
+    "singularAudioId": "ekedi",
+    "pluralAudioId": "bekedi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekelekeke",
+    "plural": "Bekelekeke",
+    "translation": "Tórtola",
+    "pluralTranslation": "Tórtolas",
+    "singularAudioId": "ekelekeke",
+    "pluralAudioId": "bekelekeke",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekeyi",
+    "plural": "Bekeyi",
+    "translation": "Hierro",
+    "pluralTranslation": "Hierros",
+    "singularAudioId": "ekeyi",
+    "pluralAudioId": "bekeyi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekēndâ",
+    "plural": "Bekēndâ",
+    "translation": "Jornada, viaje",
+    "pluralTranslation": "Jornadas, viajes",
+    "singularAudioId": "ek_e_nd_a_",
+    "pluralAudioId": "bek_e_nd_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eko",
+    "plural": "Beko",
+    "translation": "Pierna, pie",
+    "pluralTranslation": "Piernas, pies",
+    "singularAudioId": "eko",
+    "pluralAudioId": "beko",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekokobo",
+    "plural": "Bekokobo",
+    "translation": "Párpado",
+    "pluralTranslation": "Párpados",
+    "singularAudioId": "ekokobo",
+    "pluralAudioId": "bekokobo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekomba",
+    "plural": "Bekomba",
+    "translation": "Esterilidad",
+    "pluralTranslation": "Esterilidades",
+    "singularAudioId": "ekomba",
+    "pluralAudioId": "bekomba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekudikudi",
+    "plural": "Bekudikudi",
+    "translation": "Tornado, tempestad",
+    "pluralTranslation": "Tornados, tempestades",
+    "singularAudioId": "ekudikudi",
+    "pluralAudioId": "bekudikudi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ekukubi",
+    "plural": "Bekukubi",
+    "translation": "Furia, rabia",
+    "pluralTranslation": "Furias, rabias",
+    "singularAudioId": "ekukubi",
+    "pluralAudioId": "bekukubi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elahe",
+    "plural": "Belahe",
+    "translation": "Vaso",
+    "pluralTranslation": "Vasos",
+    "singularAudioId": "elahe",
+    "pluralAudioId": "belahe",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elandi",
+    "plural": "Belandi",
+    "translation": "Saco",
+    "pluralTranslation": "Sacos",
+    "singularAudioId": "elandi",
+    "pluralAudioId": "belandi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ele",
+    "plural": "Bele",
+    "translation": "Árbol, palo",
+    "pluralTranslation": "Árboles, palos",
+    "singularAudioId": "ele",
+    "pluralAudioId": "bele",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elembo",
+    "plural": "Belembo",
+    "translation": "Milagro, signo",
+    "pluralTranslation": "Milagros, signos",
+    "singularAudioId": "elembo",
+    "pluralAudioId": "belembo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elēbu",
+    "plural": "Belēbu",
+    "translation": "Labio",
+    "pluralTranslation": "Labios",
+    "singularAudioId": "el_e_bu",
+    "pluralAudioId": "bel_e_bu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elolo",
+    "plural": "Belolo",
+    "translation": "Sardina",
+    "pluralTranslation": "Sardinas",
+    "singularAudioId": "elolo",
+    "pluralAudioId": "belolo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elēmbē",
+    "plural": "Belēmbē",
+    "translation": "Pórtico, portal",
+    "pluralTranslation": "Pórticos, portales",
+    "singularAudioId": "el_e_mb_e_",
+    "pluralAudioId": "bel_e_mb_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Elongo",
+    "plural": "Belongo",
+    "translation": "Torre",
+    "pluralTranslation": "Torres",
+    "singularAudioId": "elongo",
+    "pluralAudioId": "belongo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Emi",
+    "plural": "Bemi",
+    "translation": "Lengua",
+    "pluralTranslation": "Lenguas",
+    "singularAudioId": "emi",
+    "pluralAudioId": "bemi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enami",
+    "plural": "Benami",
+    "translation": "Hombre poderoso",
+    "pluralTranslation": "Hombres poderosos",
+    "singularAudioId": "enami",
+    "pluralAudioId": "benami",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enge",
+    "plural": "Benge",
+    "translation": "Costa",
+    "pluralTranslation": "Costas",
+    "singularAudioId": "enge",
+    "pluralAudioId": "benge",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eningo",
+    "plural": "Beningo",
+    "translation": "Marea",
+    "pluralTranslation": "Mareas",
+    "singularAudioId": "eningo",
+    "pluralAudioId": "beningo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epapi",
+    "plural": "Bepapi",
+    "translation": "Corteza, piel",
+    "pluralTranslation": "Cortezas, pieles",
+    "singularAudioId": "epapi",
+    "pluralAudioId": "bepapi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epēlē",
+    "plural": "Bepēlē",
+    "translation": "Plato",
+    "pluralTranslation": "Platos",
+    "singularAudioId": "ep_e_l_e_",
+    "pluralAudioId": "bep_e_l_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epikiliedi",
+    "plural": "Bepikiliedi",
+    "translation": "Pensamiento",
+    "pluralTranslation": "Pensamientos",
+    "singularAudioId": "epikiliedi",
+    "pluralAudioId": "bepikiliedi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epondoma",
+    "plural": "Bepondoma",
+    "translation": "Almohada",
+    "pluralTranslation": "Almohadas",
+    "singularAudioId": "epondoma",
+    "pluralAudioId": "bepondoma",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Esuti",
+    "plural": "Besuti",
+    "translation": "Minuto",
+    "pluralTranslation": "Minutos",
+    "singularAudioId": "esuti",
+    "pluralAudioId": "besuti",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etâkâ",
+    "plural": "Betâkâ",
+    "translation": "Familia",
+    "pluralTranslation": "Familias",
+    "singularAudioId": "et_a_k_a_",
+    "pluralAudioId": "bet_a_k_a_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etima",
+    "plural": "Betima",
+    "translation": "Lago",
+    "pluralTranslation": "Lagos",
+    "singularAudioId": "etima",
+    "pluralAudioId": "betima",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etimbe",
+    "plural": "Betimbe",
+    "translation": "Tabla, madera",
+    "pluralTranslation": "Tablas, maderas",
+    "singularAudioId": "etimbe",
+    "pluralAudioId": "betimbe",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etomba",
+    "plural": "Betomba",
+    "translation": "Tribu, familia",
+    "pluralTranslation": "Tribus, familias",
+    "singularAudioId": "etomba",
+    "pluralAudioId": "betomba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etombi",
+    "plural": "Betombi",
+    "translation": "Falda de monte",
+    "pluralTranslation": "Faldas de monte",
+    "singularAudioId": "etombi",
+    "pluralAudioId": "betombi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evango",
+    "plural": "Bevango",
+    "translation": "Vasija para agua",
+    "pluralTranslation": "Vasijas para agua",
+    "singularAudioId": "evango",
+    "pluralAudioId": "bevango",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evēlēhi",
+    "plural": "Bevēlēhi",
+    "translation": "Pañuelo",
+    "pluralTranslation": "Pañuelos",
+    "singularAudioId": "ev_e_l_e_hi",
+    "pluralAudioId": "bev_e_l_e_hi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evemba",
+    "plural": "Bevemba",
+    "translation": "Valor, coraje",
+    "pluralTranslation": "Valores, corajes",
+    "singularAudioId": "evemba",
+    "pluralAudioId": "bevemba",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evila",
+    "plural": "Bevila",
+    "translation": "Ébano",
+    "pluralTranslation": "Ébanos",
+    "singularAudioId": "evila",
+    "pluralAudioId": "bevila",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evindi",
+    "plural": "Bevindi",
+    "translation": "Nube",
+    "pluralTranslation": "Nubes",
+    "singularAudioId": "evindi",
+    "pluralAudioId": "bevindi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evuva",
+    "plural": "Bevuva",
+    "translation": "Plaga",
+    "pluralTranslation": "Plagas",
+    "singularAudioId": "evuva",
+    "pluralAudioId": "bevuva",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evudi",
+    "plural": "Bevudi",
+    "translation": "Espuma, algodón",
+    "pluralTranslation": "Espumas, algodones",
+    "singularAudioId": "evudi",
+    "pluralAudioId": "bevudi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evunga",
+    "plural": "Bevunga",
+    "translation": "Yelmo",
+    "pluralTranslation": "Yelmos",
+    "singularAudioId": "evunga",
+    "pluralAudioId": "bevunga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eyome",
+    "plural": "Beyome",
+    "translation": "Lado derecho",
+    "pluralTranslation": "Lados derechos",
+    "singularAudioId": "eyome",
+    "pluralAudioId": "beyome",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Egunguna",
+    "plural": "Begunguna",
+    "translation": "Llave",
+    "pluralTranslation": "Llaves",
+    "singularAudioId": "egunguna",
+    "pluralAudioId": "begunguna",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epati",
+    "plural": "Bepati",
+    "translation": "Tontería, locura",
+    "pluralTranslation": "Tonterías, locuras",
+    "singularAudioId": "epati",
+    "pluralAudioId": "bepati",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epota",
+    "plural": "Bepota",
+    "translation": "Vidriado, loza",
+    "pluralTranslation": "Vidriados, lozas",
+    "singularAudioId": "epota",
+    "pluralAudioId": "bepota",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epepa",
+    "plural": "Bepepa",
+    "translation": "Timón, abanico",
+    "pluralTranslation": "Timones, abanicos",
+    "singularAudioId": "epepa",
+    "pluralAudioId": "bepepa",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etema",
+    "plural": "Betema",
+    "translation": "Cardialgía, dolor",
+    "pluralTranslation": "Cardialgías, dolores",
+    "singularAudioId": "etema",
+    "pluralAudioId": "betema",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eyake",
+    "plural": "Beyake",
+    "translation": "Panadizo",
+    "pluralTranslation": "Panadizos",
+    "singularAudioId": "eyake",
+    "pluralAudioId": "beyake",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Ejanganangobe",
+    "plural": "Bejanganangobe",
+    "translation": "Carta, nota",
+    "pluralTranslation": "Cartas, notas",
+    "singularAudioId": "ejanganangobe",
+    "pluralAudioId": "bejanganangobe",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etoli",
+    "plural": "Betoli",
+    "translation": "Rata",
+    "pluralTranslation": "Ratas",
+    "singularAudioId": "etoli",
+    "pluralAudioId": "betoli",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etunia",
+    "plural": "Betunia",
+    "translation": "Sufrimiento",
+    "pluralTranslation": "Sufrimientos",
+    "singularAudioId": "etunia",
+    "pluralAudioId": "betunia",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evandi",
+    "plural": "Bevandi",
+    "translation": "Miembro",
+    "pluralTranslation": "Miembros",
+    "singularAudioId": "evandi",
+    "pluralAudioId": "bevandi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evelse",
+    "plural": "Bevelse",
+    "translation": "Hueso",
+    "pluralTranslation": "Huesos",
+    "singularAudioId": "evelse",
+    "pluralAudioId": "bevelse",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evema",
+    "plural": "Bevema",
+    "translation": "Trampa",
+    "pluralTranslation": "Trampas",
+    "singularAudioId": "evema",
+    "pluralAudioId": "bevema",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evēlē",
+    "plural": "Bevēlē",
+    "translation": "Sed",
+    "pluralTranslation": "Sedes",
+    "singularAudioId": "ev_e_l_e_",
+    "pluralAudioId": "bev_e_l_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Evita",
+    "plural": "Bevita",
+    "translation": "Persecución",
+    "pluralTranslation": "Persecuciones",
+    "singularAudioId": "evita",
+    "pluralAudioId": "bevita",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eūaha",
+    "plural": "Beūaha",
+    "translation": "Sierra, lima",
+    "pluralTranslation": "Sierras, limas",
+    "singularAudioId": "e_u_aha",
+    "pluralAudioId": "be_u_aha",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eva",
+    "plural": "Beva",
+    "translation": "Vasija",
+    "pluralTranslation": "Vasijas",
+    "singularAudioId": "eva",
+    "pluralAudioId": "beva",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eyokūedi",
+    "plural": "Beyokūedi",
+    "translation": "Discípulo",
+    "pluralTranslation": "Discípulos",
+    "singularAudioId": "eyok_u_edi",
+    "pluralAudioId": "beyok_u_edi",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Emēngūē",
+    "plural": "Bemēngūē",
+    "translation": "Lado izquierdo",
+    "pluralTranslation": "Lados izquierdos",
+    "singularAudioId": "em_e_ng_u_e_",
+    "pluralAudioId": "bem_e_ng_u_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Enjasigalanjenga",
+    "plural": "Benjasigalanjenga",
+    "translation": "Ignorancia",
+    "pluralTranslation": "Ignorancias",
+    "singularAudioId": "enjasigalanjenga",
+    "pluralAudioId": "benjasigalanjenga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Esalagambūē",
+    "plural": "Besalagambūē",
+    "translation": "Charlatán",
+    "pluralTranslation": "Charlatanes",
+    "singularAudioId": "esalagamb_u_e_",
+    "pluralAudioId": "besalagamb_u_e_",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Eponga",
+    "plural": "Beponga",
+    "translation": "Cera, capa",
+    "pluralTranslation": "Ceras, capas",
+    "singularAudioId": "eponga",
+    "pluralAudioId": "beponga",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Epambo",
+    "plural": "Bepambo",
+    "translation": "Respeto, arco",
+    "pluralTranslation": "Respetos, arcos",
+    "singularAudioId": "epambo",
+    "pluralAudioId": "bepambo",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etundu",
+    "plural": "Betundu",
+    "translation": "Hato, racimo",
+    "pluralTranslation": "Hatos, racimos",
+    "singularAudioId": "etundu",
+    "pluralAudioId": "betundu",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  },
+  {
+    "singular": "Etējani",
+    "plural": "Betējani",
+    "translation": "Rehén",
+    "pluralTranslation": "Rehenes",
+    "singularAudioId": "et_e_jani",
+    "pluralAudioId": "bet_e_jani",
+    "nounClass": "Clase 1",
+    "conversionSummary": "e- → be-"
+  }
+]

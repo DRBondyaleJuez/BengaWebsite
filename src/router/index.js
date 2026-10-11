@@ -102,6 +102,11 @@ const routes = [
         path: 'verbales',
         name: 'VerbalNouns',
         component: () => import('@/views/chapter-2/VerbalNouns.vue')
+      },
+      {
+        path: 'practica',
+        name: 'NounPracticeGame',
+        component: () => import('@/views/chapter-2/NounPracticeGame.vue')
       }
     ]
   },
