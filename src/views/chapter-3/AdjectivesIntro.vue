@@ -2,7 +2,7 @@
   <div class="adjectives-intro">
     <div class="adjectives-intro__header">
       <h1>Introducción a los Adjetivos</h1>
-      <p class="subtitle">Del Nombre Adjetivo - Capítulo 3 de Salvado y Cos</p>
+      <p class="subtitle">Adjetivos - Capítulo 3 de Salvado y Cos</p>
     </div>
 
     <!-- Overview Section -->

@@ -21,7 +21,7 @@
       }
     },
     "chapter2": {
-      "title": "Capítulo 2: Del Nombre Sustantivo",
+      "title": "Capítulo 2: Sustantivos",
       "sections": {
         "intro": "Clasificación de los Nombres",
         "class1": "Primera Clase (e → be)",
@@ -37,8 +37,13 @@
       }
     },
     "chapter3": {
-      "title": "Capítulo 3: Del Nombre Adjetivo",
+      "title": "Capítulo 3: Adjetivos",
       "sections": {
+        "intro": "Introducción a los Adjetivos",
+        "regular": "Adjetivos Variables",
+        "invariable": "Adjetivos Invariables",
+        "comparatives": "Comparativos y Superlativos",
+        "numerals": "Numerales y Ordinales",
         "adjectives": "Adjetivos Variables e Invariables"
       }
     }
