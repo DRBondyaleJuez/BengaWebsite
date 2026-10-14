@@ -13,6 +13,8 @@
           En la lengua Benga, los adjetivos constan de <strong>número</strong> y <strong>clasificación</strong>, 
           pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. 
           Los adjetivos se dividen en dos categorías principales: <strong>variables e invariables</strong>.
+          Aunque en este capitulo hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones y variaciones en el uso de los adjetivos.
+          En muchas ocasiones se apoyaran en el uso de preposiciones para poder usarse para referirse a algún sustantivo.
         </p>
       </div>
     </section>

@@ -7,165 +7,230 @@
     {
       "classId": 1,
       "classType": "Primera Clase",
+      "nounClassRule": "Empieza con 'e' o 'y' en singular y antepone 'be' o 'bi' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'e' o 'ey' en singular y añade 'b' al comienzo en plural",
       "nounExample": "Epokolo",
       "adjectiveExample": "eyamu",
       "singular": {
         "bengaForm": "Epokolo eyamu",
-        "spanishTranslation": "Sombrero bueno"
+        "highlight": "ey",
+        "spanishTranslation": "Sombrero bueno",
+        "audioId": "epokolo-eyamu"
       },
       "plural": {
         "bengaForm": "Bepokolo beyamu",
-        "spanishTranslation": "Sombreros buenos"
+        "highlight": "bey",
+        "spanishTranslation": "Sombreros buenos",
+        "audioId": "bepokolo-beyamu"
       }
     },
     {
       "classId": 2,
       "classType": "Segunda Clase",
+      "nounClassRule": "Empieza con 'i' o 'di' en singular y se cambia por 'ma' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'i' o 'iy' en singular y por 'ma' o 'may' en plural",
       "nounExample": "Ibongo",
       "adjectiveExample": "iyamu",
       "singular": {
         "bengaForm": "Ibongo iyamu",
-        "spanishTranslation": "Desembarcadero bueno"
+        "highlight": "iy",
+        "spanishTranslation": "Desembarcadero bueno",
+        "audioId": "ibongo-iyamu"
       },
       "plural": {
         "bengaForm": "Mabongo maiyamu",
-        "spanishTranslation": "Desembarcaderos buenos"
+        "highlight": "maiy",
+        "spanishTranslation": "Desembarcaderos buenos",
+        "audioId": "mabongo-maiyamu"
       }
     },
     {
       "classId": 3,
       "classType": "Tercera Clase",
-      "nounExample": "Ubáki",
+      "nounClassRule": "Empieza con 'u' o 'mū' en singular y se cambia por 'me' o 'mi' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'me' o 'mey' en plural",
+      "nounExample": "Ubâki",
       "adjectiveExample": "uyamu",
       "singular": {
-        "bengaForm": "Ubáki uyamu",
-        "spanishTranslation": "Hacha buena"
+        "bengaForm": "Ubâki uyamu",
+        "highlight": "uy",
+        "spanishTranslation": "Hacha buena",
+        "audioId": "ub_a_ki-uyamu"
       },
       "plural": {
-        "bengaForm": "Mebáki meyamu",
-        "spanishTranslation": "Hachas buenas"
+        "bengaForm": "Mebâki meyamu",
+        "highlight": "mey",
+        "spanishTranslation": "Hachas buenas",
+        "audioId": "meb_a_ki-meyamu"
       }
     },
     {
       "classId": 4,
       "classType": "Cuarta Clase",
+      "nounClassRule": "Empieza con 'bo' o 'bū' en singular y se cambia por 'mi' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'bo' o 'boy' en singular y por 'me' o 'mey' en plural",
       "nounExample": "Boho",
       "adjectiveExample": "boyamu",
       "singular": {
         "bengaForm": "Boho boyamu",
-        "spanishTranslation": "Cara buena"
+        "highlight": "boy",
+        "spanishTranslation": "Cara buena",
+        "audioId": "boho-boyamu"
       },
       "plural": {
         "bengaForm": "Mioho meyamu",
-        "spanishTranslation": "Caras buenas"
+        "highlight": "mey",
+        "spanishTranslation": "Caras buenas",
+        "audioId": "mioho-meyamu"
       }
     },
     {
       "classId": 5,
       "classType": "Quinta Clase",
+      "nounClassRule": "Empieza con 'mo' en singular y se cambia por 'ba' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'ba' o 'baiy' en plural",
       "nounExample": "Moto",
-      "adjectiveExample": "meyamu",
+      "adjectiveExample": "uyamu",
       "singular": {
-        "bengaForm": "Moto meyamu",
-        "spanishTranslation": "Persona buena"
+        "bengaForm": "Moto uyamu",
+        "highlight": "uy",
+        "spanishTranslation": "Persona buena",
+        "audioId": "moto-uyamu"
       },
       "plural": {
-        "bengaForm": "Bato baryamu",
-        "spanishTranslation": "Gente buena"
+        "bengaForm": "Bato baiyamu",
+        "highlight": "baiy",
+        "spanishTranslation": "Personas buenas",
+        "audioId": "bato-baiyamu"
       }
     },
     {
       "classId": 6,
       "classType": "Sexta Clase",
+      "nounClassRule": "Empieza con 'v' en singular y por 'l' en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'vi' en singular y por 'lo' en plural",
       "nounExample": "Vitua",
       "adjectiveExample": "viyamu",
       "singular": {
         "bengaForm": "Vitua viyamu",
-        "spanishTranslation": "Candela buena"
+        "highlight": "viy",
+        "spanishTranslation": "Candela buena",
+        "audioId": "vitua-viyamu"
       },
       "plural": {
         "bengaForm": "Litua loyamu",
-        "spanishTranslation": "Candelas buenas"
+        "highlight": "loy",
+        "spanishTranslation": "Candelas buenas",
+        "audioId": "litua-loyamu"
       }
     },
     {
       "classId": 7,
       "classType": "Séptima Clase",
+      "nounClassRule": "Empieza con consonantes no mencionadas en las otras clases o combinaciones de consonantes en singular y no cambian en plural",
+      "adjectiveClassRule": "Sustituye la primera sílaba por 'e' en singular y por 'i' en plural",
       "nounExample": "Ndabo",
       "adjectiveExample": "eyamu",
       "singular": {
         "bengaForm": "Ndabo eyamu",
-        "spanishTranslation": "Casa buena"
+        "highlight": "ey",
+        "spanishTranslation": "Casa buena",
+        "audioId": "ndabo-eyamu"
       },
       "plural": {
         "bengaForm": "Ndabo iyamu",
-        "spanishTranslation": "Casas buenas"
+        "highlight": "iy",
+        "spanishTranslation": "Casas buenas",
+        "audioId": "ndabo-iyamu"
       }
     }
   ],
   "commonAdjectivesByMeaning": [
     {
       "meaning": "Malo",
-      "bengaRoot": "babe",
+      "bengaRoot": "bobe",
       "inflections": {
-        "class1_sg": "Ekái ebabe",
-        "class1_pl": "Bekái bebabe",
-        "class2_sg": "Ilutu ibabe",
-        "class2_pl": "Malutu mababe",
-        "class3_sg": "Uté ube",
-        "class3_pl": "Meté mebe",
-        "class4_sg": "Bova bobe",
-        "class4_pl": "Miova mebe",
-        "class5_sg": "Mondi ube",
-        "class5_pl": "Bondi babe",
-        "class6_sg": "Viho vibe",
-        "class6_pl": "Liho lobe",
-        "class7_sg": "Ndo ebe",
-        "class7_pl": "Ndo ibe"
+        "class1_sg": { "bengaForm": "Ekâi ebe", "audioId": "ek_a_i-ebe" },
+        "class1_pl": { "bengaForm": "Bekâi bebe", "audioId": "bek_a_i-bebe" },
+        "class2_sg": { "bengaForm": "Ilutu ibe", "audioId": "ilutu-ibe" },
+        "class2_pl": { "bengaForm": "Malutu mabe", "audioId": "malutu-mabe" },
+        "class3_sg": { "bengaForm": "Utē ube", "audioId": "ut_e_-ube" },
+        "class3_pl": { "bengaForm": "Metē mebe", "audioId": "met_e_-mebe" },
+        "class4_sg": { "bengaForm": "Bova bobe", "audioId": "bova-bobe" },
+        "class4_pl": { "bengaForm": "Miova mebe", "audioId": "miova-mebe" },
+        "class5_sg": { "bengaForm": "Mondi ube", "audioId": "mondi-ube" },
+        "class5_pl": { "bengaForm": "Bondi babe", "audioId": "bondi-babe" },
+        "class6_sg": { "bengaForm": "Viho vibe", "audioId": "viho-vibe" },
+        "class6_pl": { "bengaForm": "Liho lobe", "audioId": "liho-lobe" },
+        "class7_sg": { "bengaForm": "Ndo ebe", "audioId": "ndo-ebe" },
+        "class7_pl": { "bengaForm": "Ndo ibe", "audioId": "ndo-ibe" }
       }
     },
     {
       "meaning": "Grande",
       "bengaRoot": "bonene",
       "inflections": {
-        "class1_sg": "Hoja Ebe",
-        "class1_pl": "Plural Benene",
-        "class2_sg": "Humo Inené",
-        "class2_pl": "Plural Manené",
-        "class3_sg": "Estatura Unene",
-        "class3_pl": "Plural Menené",
-        "class4_sg": "Don Boniné",
-        "class4_pl": "Plural Meniné",
-        "class5_sg": "Compás Ubene",
-        "class5_pl": "Plural Danene",
-        "class6_sg": "Rio Vinené",
-        "class6_pl": "Plural Lonené",
-        "class7_sg": "Cicatriz Enéni",
-        "class7_pl": "Plural Ienéni"
+        "class1_sg": { "bengaForm": "Ekâi enene", "audioId": "ek_a_i-enene" },
+        "class1_pl": { "bengaForm": "Bekâi benene", "audioId": "bek_a_i-benene" },
+        "class2_sg": { "bengaForm": "Ilutu inene", "audioId": "ilutu-inene" },
+        "class2_pl": { "bengaForm": "Malutu manene", "audioId": "malutu-manene" },
+        "class3_sg": { "bengaForm": "Utē unene", "audioId": "ut_e_-unene" },
+        "class3_pl": { "bengaForm": "Metē menene", "audioId": "met_e_-menene" },
+        "class4_sg": { "bengaForm": "Bova bonene", "audioId": "bova-bonene" },
+        "class4_pl": { "bengaForm": "Miova menene", "audioId": "miova-menene" },
+        "class5_sg": { "bengaForm": "Mondi unene", "audioId": "mondi-unene" },
+        "class5_pl": { "bengaForm": "Bondi banene", "audioId": "bondi-banene" },
+        "class6_sg": { "bengaForm": "Viho vinene", "audioId": "viho-vinene" },
+        "class6_pl": { "bengaForm": "Liho lonene", "audioId": "liho-lonene" },
+        "class7_sg": { "bengaForm": "Ndo enene", "audioId": "ndo-enene" },
+        "class7_pl": { "bengaForm": "Ndo inene", "audioId": "ndo-inene" }
       }
     },
     {
       "meaning": "Pequeño",
       "bengaRoot": "bohole",
       "inflections": {
-        "class1_sg": "Ekái Ebe",
-        "class1_pl": "Bekái Behile",
-        "note": "Continúa con patrón similar para las 7 clases"
+        "class1_sg": { "bengaForm": "Ekâi ehole", "audioId": "ek_a_i-ehole" },
+        "class1_pl": { "bengaForm": "Bekâi behole", "audioId": "bek_a_i-behole" },
+        "class2_sg": { "bengaForm": "Ilutu ihole", "audioId": "ilutu-ihole" },
+        "class2_pl": { "bengaForm": "Malutu mahole", "audioId": "malutu-mahole" },
+        "class3_sg": { "bengaForm": "Utē uhole", "audioId": "ut_e_-uhole" },
+        "class3_pl": { "bengaForm": "Metē mehole", "audioId": "met_e_-mehole" },
+        "class4_sg": { "bengaForm": "Bova bohole", "audioId": "bova-bohole" },
+        "class4_pl": { "bengaForm": "Miova mehole", "audioId": "miova-mehole" },
+        "class5_sg": { "bengaForm": "Mondi uhole", "audioId": "mondi-uhole" },
+        "class5_pl": { "bengaForm": "Bondi bahole", "audioId": "bondi-bahole" },
+        "class6_sg": { "bengaForm": "Viho vihole", "audioId": "viho-vihole" },
+        "class6_pl": { "bengaForm": "Liho lohole", "audioId": "liho-lohole" },
+        "class7_sg": { "bengaForm": "Ndo ehole", "audioId": "ndo-ehole" },
+        "class7_pl": { "bengaForm": "Ndo ihole", "audioId": "ndo-ihole" }
       }
     },
     {
       "meaning": "Negro",
       "bengaRoot": "bovindo",
       "inflections": {
-        "class1_sg": "Ekái Evindo",
-        "class1_pl": "Bekái Bevindo",
-        "note": "Continúa con patrón similar para las 7 clases"
+        "class1_sg": { "bengaForm": "Ekâi evindo", "audioId": "ek_a_i-evindo" },
+        "class1_pl": { "bengaForm": "Bekâi bevindo", "audioId": "bek_a_i-bevindo" },
+        "class2_sg": { "bengaForm": "Ilutu ivindo", "audioId": "ilutu-ivindo" },
+        "class2_pl": { "bengaForm": "Malutu mavindo", "audioId": "malutu-mavindo" },
+        "class3_sg": { "bengaForm": "Utē uvindo", "audioId": "ut_e_-uvindo" },
+        "class3_pl": { "bengaForm": "Metē mevindo", "audioId": "met_e_-mevindo" },
+        "class4_sg": { "bengaForm": "Bova bovindo", "audioId": "bova-bovindo" },
+        "class4_pl": { "bengaForm": "Miova mevindo", "audioId": "miova-mevindo" },
+        "class5_sg": { "bengaForm": "Mondi uvindo", "audioId": "mondi-uvindo" },
+        "class5_pl": { "bengaForm": "Bondi bavindo", "audioId": "bondi-bavindo" },
+        "class6_sg": { "bengaForm": "Viho vivindo", "audioId": "viho-vivindo" },
+        "class6_pl": { "bengaForm": "Liho lovindo", "audioId": "liho-lovindo" },
+        "class7_sg": { "bengaForm": "Ndo evindo", "audioId": "ndo-evindo" },
+        "class7_pl": { "bengaForm": "Ndo ivindo", "audioId": "ndo-ivindo" }
       }
     }
   ],
   "notes": [
     "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase",
-    "El adjetivo 'bamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",
+    "El adjetivo 'būamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",
+    "La sílaba resaltada de cada adjetivo es la que marca la concordancia con la clase del sustantivo",
     "La concordancia es obligatoria en la lengua Benga"
   ]
 }

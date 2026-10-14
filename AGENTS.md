@@ -58,6 +58,14 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`. Two adjacent accented vowels therefore produce a single underscore; that is expected, not a typo.
 - Getting this wrong breaks playback silently — the button renders but the request 404s. When adding entries, derive the id from the word rather than typing it by hand.
 
+### Chapter 3 Variable Adjectives
+- The source of truth for `src/data/chapter-3/regular-adjectives.json` is the "Adjetivos variables" table on PDF page 18 (book page 24). The four common adjectives are `bobe` (malo), `bonene` (grande), `bohole` (pequeño) and `bovindo` (negro); each is cited by its class-4 form, so the stem to which the class prefix is added is the root minus `bo-` (`bobe → -be`, `bonene → -nene`, `bohole → -hole`, `bovindo → -vindo`).
+- Concordance prefixes are identical for every variable adjective: class 1 `e-/be-`, class 2 `i-/ma-`, class 3 `u-/me-`, class 4 `bo-/me-`, class 5 `u-/ba-`, class 6 `vi-/lo-`, class 7 `e-/i-`. The same example nouns are reused per class (`Ekâi`, `Ilutu`, `Utē`, `Bova`, `Mondi`, `Viho`, `Ndo`) and their plural forms.
+- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": "noun-audio-adjective-audio" }`; `audioId` joins the noun and adjective ids with a hyphen (e.g. `Ekâi ebe → ek_a_i-ebe`). The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field.
+- The `classes[]` examples inflect `būamu` (bueno). Because the radical changes with a linking **y** (`būamu → eyamu`, `maiyamu`, `beyamu`, …), each `singular`/`plural` object carries an explicit `highlight` string that includes that `y` (e.g. `ey`, `bey`, `iy`, `maiy`, `uy`, `mey`, `boy`, `baiy`, `viy`, `loy`). Use it as the `highlight-prefix` so the whole modified syllable is highlighted, not just the bare class prefix.
+- `BengaWord` accepts an optional `highlight-prefix` prop. When set, it splits `word` on spaces and underlines/colours that prefix at the start of the **last** token, which is how the conjugated syllable of the adjective is emphasised. Reuse it instead of hand-rolling highlighting.
+- In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
+
 ### File Naming Conventions
 - **Components**: PascalCase (e.g., `AudioPlayer.vue`, `ChapterNav.vue`)
 - **Views/Pages**: PascalCase with descriptive names (e.g., `ChapterAlphabet.vue`)

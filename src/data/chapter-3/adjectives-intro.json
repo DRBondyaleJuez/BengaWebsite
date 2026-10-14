@@ -9,17 +9,17 @@
     {
       "concept": "Concordancia con el Nombre",
       "explanation": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre.",
-      "example": "Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)"
-    },
-    {
-      "concept": "Ausencia de Género",
-      "explanation": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino).",
-      "example": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género"
+      "example": "Adjetivo Būamu (bueno) modifica su raiz dependiendo del sustantivo al que acompaña:Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)"
     },
     {
       "concept": "Número y Clasificación",
       "explanation": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes).",
       "example": "La forma 'eyamu' (bueno singular) se convierte en 'beyamu', 'iyamu', 'maiyamu', etc."
+    },
+    {
+      "concept": "Ausencia de Género",
+      "explanation": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino).",
+      "example": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género. Cambia si cambia la clase del sustantivo al cambiar de género."
     }
   ],
   "sectionOverview": [

@@ -1,6 +1,11 @@
 <template>
   <span class="benga-word" :class="{ 'benga-word--block': block }">
-    <span class="benga-word__text">{{ word }}</span>
+    <span class="benga-word__text">
+      <template v-if="wordParts.highlight">
+        {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span>{{ wordParts.after }}
+      </template>
+      <template v-else>{{ word }}</template>
+    </span>
     
     <button
       v-if="audioId"
@@ -76,6 +81,10 @@ export default {
     block: {
       type: Boolean,
       default: false
+    },
+    highlightPrefix: {
+      type: String,
+      default: null
     }
   },
   data() {
@@ -90,6 +99,27 @@ export default {
       if (!this.audioId) return null
       //return `${CLOUDINARY_BASE}/benga-audio/${this.audioId}.mp3`
       return `${CLOUDINARY_BASE}/${this.audioId}.mp3`
+    },
+    wordParts() {
+      const text = this.word || ''
+      if (!this.highlightPrefix) {
+        return { before: text, highlight: '', after: '' }
+      }
+
+      const words = text.split(' ')
+      const lastWord = words[words.length - 1]
+      const prefix = this.highlightPrefix
+
+      if (!lastWord.toLowerCase().startsWith(prefix.toLowerCase())) {
+        return { before: text, highlight: '', after: '' }
+      }
+
+      const beforeWords = words.slice(0, -1).join(' ')
+      return {
+        before: beforeWords ? `${beforeWords} ` : '',
+        highlight: lastWord.slice(0, prefix.length),
+        after: lastWord.slice(prefix.length)
+      }
     }
   },
   methods: {
@@ -151,6 +181,15 @@ export default {
   &__text {
     @include benga-word-style;
     font-size: 1.1em;
+  }
+
+  &__highlight {
+    color: $color-secondary;
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+    text-decoration-color: $color-accent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
   }
 
   &__audio-btn {

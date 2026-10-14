@@ -2,7 +2,7 @@
   <div class="noun-class noun-class--3">
     <div class="noun-class__header">
       <h1>Tercera Clase Nominal</h1>
-      <p class="subtitle">u / mú → me / mi</p>
+      <p class="subtitle">u / mū → me / mi</p>
     </div>
 
     <section class="noun-class__pattern">
