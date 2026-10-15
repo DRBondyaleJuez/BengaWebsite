@@ -30,7 +30,7 @@
       <div class="adjectives-grid">
         <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
           <div class="adjective-card__bengaform">
-            {{ adj.bengaForm }}
+            <BengaWord :word="adj.bengaForm" :audio-id="adj.audioId" />
           </div>
           <div class="adjective-card__meaning">
             {{ adj.spanishMeaning }}
@@ -42,10 +42,14 @@
     <!-- Usage Examples -->
     <section class="invariable-adjectives__examples">
       <h2>Ejemplos de Uso</h2>
+      <p class="section-intro">
+        Escucha cada ejemplo pulsando el icono de audio: la lengua benga es
+        principalmente oral.
+      </p>
       <div class="examples-container">
         <div class="example-item" v-for="(example, idx) in examples" :key="`ex-${idx}`">
           <div class="example-item__bengaform">
-            <span class="bengaform">{{ example.bengaSentence }}</span>
+            <BengaWord :word="example.bengaSentence" :audio-id="example.audioId" />
           </div>
           <div class="example-item__translation">
             <strong>Traducción:</strong> {{ example.spanishTranslation }}
@@ -122,9 +126,13 @@
 
 <script>
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json';
+import BengaWord from '@/components/content/BengaWord.vue';
 
 export default {
   name: 'IrregularAdjectivesSection',
+  components: {
+    BengaWord
+  },
   data() {
     return {
       adjectives: [],
@@ -212,6 +220,12 @@ export default {
       color: $color-heading-dark;
       margin-bottom: 1.5rem;
     }
+
+    .section-intro {
+      color: $color-text-secondary;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__notes {
@@ -243,6 +257,12 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+
+  .char-card:last-child {
+    @include respond-to('md') {
+      grid-column: span 2;
+    }
+  }
 }
 
 .char-card {
@@ -293,8 +313,6 @@ export default {
   }
 
   &__bengaform {
-    color: $color-primary;
-    font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
   }
@@ -322,12 +340,7 @@ export default {
     padding: 1rem;
     border-radius: 4px;
     margin-bottom: 1rem;
-
-    .bengaform {
-      color: $color-primary;
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
+    font-size: 1.05rem;
   }
 
   &__translation {
@@ -406,7 +419,7 @@ export default {
     }
   }
 
-  &:nth-child(odd) {
+  &:nth-child(odd):not(.header) {
     background-color: #f9f9f9;
   }
 

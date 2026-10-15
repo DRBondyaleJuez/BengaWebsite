@@ -6,93 +6,114 @@
   "adjectives": [
     {
       "bengaForm": "De",
-      "spanishMeaning": "Derecho, recto"
+      "spanishMeaning": "Derecho, recto",
+      "audioId": "de"
     },
     {
       "bengaForm": "Tanana",
-      "spanishMeaning": "Blanco"
+      "spanishMeaning": "Blanco",
+      "audioId": "tanana"
     },
     {
       "bengaForm": "Huhamba",
-      "spanishMeaning": "Desnudo, descubierto"
+      "spanishMeaning": "Desnudo, descubierto",
+      "audioId": "huhamba"
     },
     {
       "bengaForm": "Pala",
-      "spanishMeaning": "Relleno, atestado"
+      "spanishMeaning": "Relleno, atestado",
+      "audioId": "pala"
     },
     {
-      "bengaForm": "Nyévi",
-      "spanishMeaning": "Brillante, hermoso"
+      "bengaForm": "Nyēvi",
+      "spanishMeaning": "Brillante, hermoso",
+      "audioId": "ny_e_vi"
     },
     {
       "bengaForm": "Pivi",
-      "spanishMeaning": "Espeso, denso"
+      "spanishMeaning": "Espeso, denso",
+      "audioId": "pivi"
     },
     {
-      "bengaForm": "Péki Péki",
-      "spanishMeaning": "Perpetuo, constante"
+      "bengaForm": "Pēki Pēki",
+      "spanishMeaning": "Perpetuo, constante",
+      "audioId": "p_e_ki-p_e_ki"
     },
     {
       "bengaForm": "Potapota",
-      "spanishMeaning": "Áspero, tosco"
+      "spanishMeaning": "Áspero, tosco",
+      "audioId": "potapota"
     },
     {
       "bengaForm": "Pojaengo",
-      "spanishMeaning": "Anticuado, viejo"
+      "spanishMeaning": "Anticuado, viejo",
+      "audioId": "pojaengo"
     },
     {
       "bengaForm": "Bokolo",
-      "spanishMeaning": "Duro, difícil, riguroso"
+      "spanishMeaning": "Duro, difícil, riguroso",
+      "audioId": "bokolo"
     },
     {
       "bengaForm": "Veivei",
-      "spanishMeaning": "Rojo, encarnado"
+      "spanishMeaning": "Rojo, encarnado",
+      "audioId": "veivei"
     },
     {
       "bengaForm": "Kopia",
-      "spanishMeaning": "Prieto, avaro"
+      "spanishMeaning": "Prieto, avaro",
+      "audioId": "kopia"
     },
     {
       "bengaForm": "Ukuge",
-      "spanishMeaning": "Pobre, necesitado"
+      "spanishMeaning": "Pobre, necesitado",
+      "audioId": "ukuge"
     },
     {
       "bengaForm": "Poso",
-      "spanishMeaning": "Superior, sobre todo"
+      "spanishMeaning": "Superior, sobre todo",
+      "audioId": "poso"
     },
     {
       "bengaForm": "Kena",
-      "spanishMeaning": "De tamaño extraordinario"
+      "spanishMeaning": "De tamaño extraordinario",
+      "audioId": "kena"
     },
     {
-      "bengaForm": "Pékejomu",
-      "spanishMeaning": "Eterno, sin fin"
+      "bengaForm": "Pēkejomu",
+      "spanishMeaning": "Eterno, sin fin",
+      "audioId": "p_e_kejomu"
     },
     {
-      "bengaForm": "Púlálápálálá",
-      "spanishMeaning": "Veloz, con delicadeza"
+      "bengaForm": "Pâlâlâpâlâlâ",
+      "spanishMeaning": "Veloz, con delicadeza",
+      "audioId": "p_a_l_a_l_a_p_a_l_a_l_a_"
     },
     {
-      "bengaForm": "Tándalánda",
-      "spanishMeaning": "Peculiar, escogido"
+      "bengaForm": "Tândalânda",
+      "spanishMeaning": "Peculiar, escogido",
+      "audioId": "t_a_ndal_a_nda"
     }
   ],
   "examples": [
     {
       "bengaSentence": "Bokolo bokolo",
       "spanishTranslation": "Muy duro, dificilísimo",
-      "explanation": "La repetición intensifica el significado"
+      "explanation": "La repetición intensifica el significado",
+      "audioId": "bokolo-bokolo"
     },
     {
       "bengaSentence": "De de de",
       "spanishTranslation": "Completamente recto",
-      "explanation": "Repeticción para enfatizar"
+      "explanation": "Repetición para enfatizar",
+      "audioId": "de-de-de"
     }
   ],
   "characteristics": [
     "No cambian de forma según número, género o clasificación",
     "Se usan tal como están con cualquier sustantivo",
     "Algunas pueden repetirse para intensificar su significado",
-    "Ocupan la misma posición que los adjetivos variables en la frase"
+    "Ocupan la misma posición que los adjetivos variables en la frase",
+    "Normalmente no comienzan con las sílabas de las declinaciones de los adjetivos variables (e, be, i, ma, u, me, bo, ba, vi, lo), aunque puede haber excepciones"
   ]
 }

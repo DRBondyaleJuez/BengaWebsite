@@ -66,6 +66,12 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - `BengaWord` accepts an optional `highlight-prefix` prop. When set, it splits `word` on spaces and underlines/colours that prefix at the start of the **last** token, which is how the conjugated syllable of the adjective is emphasised. Reuse it instead of hand-rolling highlighting.
 - In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
 
+### Chapter 3 Invariable Adjectives
+- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `IrregularAdjectivesSection.vue`.
+- Every invariable adjective and every usage example carries an `audioId`, because the language is mainly oral. Multi-word forms join their words with a hyphen after applying the accent rule: `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`.
+- Invariable adjectives normally do **not** begin with the variable-adjective declension syllables (`e`, `be`, `i`, `ma`, `u`, `me`, `bo`, `ba`, `vi`, `lo`), although there are exceptions (e.g. `Bokolo`). This is the fifth entry in `characteristics` and is rendered both in the characteristics cards and the "Puntos Importantes" notes.
+- The `comparison-table` header row (`.table-row.header`) must be excluded from the zebra-striping rule — use `&:nth-child(odd):not(.header)` — otherwise its `#f9f9f9` background overrides the primary-colour header and the white text becomes illegible.
+
 ### File Naming Conventions
 - **Components**: PascalCase (e.g., `AudioPlayer.vue`, `ChapterNav.vue`)
 - **Views/Pages**: PascalCase with descriptive names (e.g., `ChapterAlphabet.vue`)
