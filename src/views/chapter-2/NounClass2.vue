@@ -151,7 +151,7 @@
       <div class="examples-grid">
         <div
           class="example-card"
-          v-for="(example, idx) in iExamples"
+          v-for="(example, idx) in liquidExamples"
           :key="`i-${idx}`"
         >
           <div class="example-singular">
@@ -186,7 +186,7 @@
       <div class="examples-grid">
         <div
           class="example-card"
-          v-for="(example, idx) in diExamples"
+          v-for="(example, idx) in classSixExample"
           :key="`di-${idx}`"
         >
           <div class="example-singular">
