@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <button 
+      <button
         class="header__menu-btn"
         @click="$emit('toggle-sidebar')"
         :aria-label="$t('accessibility.openMenu')"
@@ -10,11 +10,7 @@
       </button>
 
       <router-link to="/" class="header__logo">
-        <img 
-          src="@/assets/images/logo.png" 
-          alt="" 
-          class="header__logo-img"
-        />
+        <img src="@/assets/images/logo.png" alt="" class="header__logo-img" />
         <span class="header__logo-text">
           {{ $t('app.title') }}
         </span>

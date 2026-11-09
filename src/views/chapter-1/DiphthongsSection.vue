@@ -1,10 +1,7 @@
 <template>
   <div class="diphthongs-section">
     <!-- Introduction -->
-    <ContentSection 
-      id="diphthongs-intro"
-      :title="$t('chapters.chapter1.sections.diphthongs')"
-    >
+    <ContentSection id="diphthongs-intro" :title="$t('chapters.chapter1.sections.diphthongs')">
       <p class="diphthongs-section__intro">
         {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
       </p>
@@ -25,7 +22,7 @@
           </div>
 
           <p class="diphthongs-section__sounds-like">
-            <strong>{{ $t('content.soundsLike') }}:</strong><br>
+            <strong>{{ $t('content.soundsLike') }}:</strong><br />
             {{ diphthong.soundsLike[$i18n.locale] || diphthong.soundsLike.es }}
           </p>
 
@@ -50,14 +47,14 @@
 
     <!-- Navigation -->
     <nav class="diphthongs-section__nav">
-      <router-link 
-        to="/capitulo-1/vocales" 
+      <router-link
+        to="/capitulo-1/vocales"
         class="diphthongs-section__nav-link diphthongs-section__nav-link--prev"
       >
         ← {{ $t('chapters.chapter1.sections.alphabet') }}
       </router-link>
-      <router-link 
-        to="/capitulo-1/triptongos" 
+      <router-link
+        to="/capitulo-1/triptongos"
         class="diphthongs-section__nav-link diphthongs-section__nav-link--next"
       >
         {{ $t('chapters.chapter1.sections.triphthongs') }} →

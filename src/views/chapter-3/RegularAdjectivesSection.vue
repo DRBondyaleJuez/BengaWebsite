@@ -8,12 +8,14 @@
     <!-- Overview -->
     <section class="regular-adjectives__overview">
       <p>
-        Los adjetivos variables toman su forma correspondiente a singular y plural, 
-        concordando en clasificación con los nombres que califican. Cada adjetivo varía 
-        según la clase del sustantivo que modifica.
-        Cada adjetivo de este tipo podría tener hasta 7 formas diferentes, dependiendo de la clase nominal del sustantivo al que se refiere.
-        Por ello, cuando nos refiramos a alguna traducción usaremos una de estas formas para simplificar la explicación, pero es importante recordar que cada adjetivo de este tipo puede variar según la clase nominal del sustantivo.
-        Las reglas de declinación son generales, pero puede haber alguna excepción debido a facilitar la pronunciación.
+        Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en
+        clasificación con los nombres que califican. Cada adjetivo varía según la clase del
+        sustantivo que modifica. Cada adjetivo de este tipo podría tener hasta 7 formas diferentes,
+        dependiendo de la clase nominal del sustantivo al que se refiere. Por ello, cuando nos
+        refiramos a alguna traducción usaremos una de estas formas para simplificar la explicación,
+        pero es importante recordar que cada adjetivo de este tipo puede variar según la clase
+        nominal del sustantivo. Las reglas de declinación son generales, pero puede haber alguna
+        excepción debido a facilitar la pronunciación.
       </p>
     </section>
 
@@ -21,10 +23,10 @@
     <section class="regular-adjectives__classes">
       <h2>Flexión por Clases Nominales</h2>
       <p class="section-intro">
-        Veamos cómo se declina el adjetivo <strong class="bengaform">būamu</strong> (bueno)
-        para concordar con un sustantivo de cada clase. La sílaba
-        <span class="highlight-legend">resaltada</span> es la que marca la concordancia
-        con el sustantivo.
+        Veamos cómo se declina el adjetivo <strong class="bengaform">būamu</strong> (bueno) para
+        concordar con un sustantivo de cada clase. La sílaba
+        <span class="highlight-legend">resaltada</span> es la que marca la concordancia con el
+        sustantivo.
       </p>
       <div class="classes-container">
         <div class="class-example" v-for="classEx in classes" :key="`class-${classEx.classId}`">
@@ -81,14 +83,19 @@
       <h2>Adjetivos Comunes y sus Variaciones</h2>
       <div class="variations-note">
         <p>
-          <strong>Nota:</strong> Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo 
-          de su respectiva clase. El adjetivo 'būamu' (bueno) toma todas estas formas para concordar con nombres de cada clase.
-          Pulsa el icono de audio para escuchar cada combinación de nombre y adjetivo.
+          <strong>Nota:</strong> Con pocas excepciones, todos los adjetivos varían concordando con
+          el sustantivo de su respectiva clase. El adjetivo 'būamu' (bueno) toma todas estas formas
+          para concordar con nombres de cada clase. Pulsa el icono de audio para escuchar cada
+          combinación de nombre y adjetivo.
         </p>
       </div>
 
       <div class="adjectives-list">
-        <div class="adjective-group" v-for="(adjective, idx) in adjectiveGroups" :key="`adj-${idx}`">
+        <div
+          class="adjective-group"
+          v-for="(adjective, idx) in adjectiveGroups"
+          :key="`adj-${idx}`"
+        >
           <div class="adjective-group__meaning">
             <strong>{{ adjective.meaning }}</strong>
             <span class="adjective-group__root">
@@ -125,7 +132,8 @@
       <h2>Ejemplo de Concordancia</h2>
       <div class="concordance-example">
         <p class="description">
-          El adjetivo <span class="bengaform">būamu</span> (bueno) se flexiona así según la clase del sustantivo:
+          El adjetivo <span class="bengaform">būamu</span> (bueno) se flexiona así según la clase
+          del sustantivo:
         </p>
         <div class="concordance-table">
           <div class="table-header">
@@ -187,8 +195,8 @@
 </template>
 
 <script>
-import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json';
-import BengaWord from '@/components/content/BengaWord.vue';
+import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
+import BengaWord from '@/components/content/BengaWord.vue'
 
 const CLASS_PREFIXES = {
   1: { sg: 'e', pl: 'be' },
@@ -198,7 +206,7 @@ const CLASS_PREFIXES = {
   5: { sg: 'u', pl: 'ba' },
   6: { sg: 'vi', pl: 'lo' },
   7: { sg: 'e', pl: 'i' }
-};
+}
 
 export default {
   name: 'RegularAdjectivesSection',
@@ -214,39 +222,39 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+    this.loadData()
   },
   computed: {
     adjectiveGroups() {
-      return this.commonAdjectives.map(adjective => ({
+      return this.commonAdjectives.map((adjective) => ({
         meaning: adjective.meaning,
         bengaRoot: adjective.bengaRoot,
-        pairs: [1, 2, 3, 4, 5, 6, 7].map(classId => {
-          const sgKey = `class${classId}_sg`;
-          const plKey = `class${classId}_pl`;
-          const singular = adjective.inflections[sgKey] || {};
-          const plural = adjective.inflections[plKey] || {};
+        pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => {
+          const sgKey = `class${classId}_sg`
+          const plKey = `class${classId}_pl`
+          const singular = adjective.inflections[sgKey] || {}
+          const plural = adjective.inflections[plKey] || {}
           return {
             classId,
             label: `Clase ${classId}`,
             singular: { ...singular, prefix: this.inflectionPrefix(sgKey) },
             plural: { ...plural, prefix: this.inflectionPrefix(plKey) }
-          };
+          }
         })
-      }));
+      }))
     }
   },
   methods: {
     loadData() {
-      this.classes = regularAdjectivesData.classes;
-      this.commonAdjectives = regularAdjectivesData.commonAdjectivesByMeaning;
-      this.notes = regularAdjectivesData.notes;
+      this.classes = regularAdjectivesData.classes
+      this.commonAdjectives = regularAdjectivesData.commonAdjectivesByMeaning
+      this.notes = regularAdjectivesData.notes
     },
     inflectionPrefix(key) {
-      const match = /^class(\d+)_(sg|pl)$/.exec(key);
-      if (!match) return null;
-      const rule = this.classPrefixes[Number(match[1])];
-      return rule ? rule[match[2]] : null;
+      const match = /^class(\d+)_(sg|pl)$/.exec(key)
+      if (!match) return null
+      const rule = this.classPrefixes[Number(match[1])]
+      return rule ? rule[match[2]] : null
     }
   }
 }
@@ -679,7 +687,8 @@ export default {
   transition: all $transition-base;
   text-align: center;
 
-  &--back, &--index {
+  &--back,
+  &--index {
     background-color: #f0f0f0;
     color: $color-text-primary;
 

@@ -6,13 +6,21 @@
     </div>
 
     <section class="verbal-nouns__intro">
-      <p>Los nombres que derivan de otras palabras pueden dividirse en tres clases: nombres abstractos derivados de imperativos verbales, nombres agenciales derivados de imperativos verbales y nombres de modos derivados de los sustantivos agenciales o sustantivos abstractos.</p>
+      <p>
+        Los nombres que derivan de otras palabras pueden dividirse en tres clases: nombres
+        abstractos derivados de imperativos verbales, nombres agenciales derivados de imperativos
+        verbales y nombres de modos derivados de los sustantivos agenciales o sustantivos
+        abstractos.
+      </p>
     </section>
 
     <!-- Class 1: Abstract Nouns -->
     <section class="verbal-nouns__class-1">
       <h2>CLASE PRIMERA: Nombres Abstractos</h2>
-      <p class="rule">Estos se forman de la segunda persona del singular del imperativo, quitándole la última sílaba y anteponiendo a la palabra la letra i.</p>
+      <p class="rule">
+        Estos se forman de la segunda persona del singular del imperativo, quitándole la última
+        sílaba y anteponiendo a la palabra la letra i.
+      </p>
 
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in abstractNouns" :key="`abstract-${idx}`">
@@ -41,13 +49,19 @@
           </div>
         </div>
       </div>
-      <p class="classification-note">En la clasificación, estos nombres pertenecen a la <a href="/capitulo-2/clase-2">segunda clase</a> en su número singular. (i->ma)</p>
+      <p class="classification-note">
+        En la clasificación, estos nombres pertenecen a la
+        <a href="/capitulo-2/clase-2">segunda clase</a> en su número singular. (i->ma)
+      </p>
     </section>
 
     <!-- Class 2: Action Nouns -->
     <section class="verbal-nouns__class-2">
       <h2>CLASE SEGUNDA: Nombres Agenciales</h2>
-      <p class="rule">Estos se forman asimismo de la segunda persona del singular del imperativo, quitando la última sílaba, anteponiendo a la palabra la letra u y la última letra siendo i.</p>
+      <p class="rule">
+        Estos se forman asimismo de la segunda persona del singular del imperativo, quitando la
+        última sílaba, anteponiendo a la palabra la letra u y la última letra siendo i.
+      </p>
 
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in agentNouns" :key="`agent-${idx}`">
@@ -76,13 +90,20 @@
           </div>
         </div>
       </div>
-      <p class="classification-note">Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">tercera clase</a> en la formación del plural. u->me</p>
+      <p class="classification-note">
+        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">tercera clase</a> en la
+        formación del plural. u->me
+      </p>
     </section>
 
     <!-- Class 3: Modality Nouns -->
     <section class="verbal-nouns__class-3">
       <h2>CLASE TERCERA: Nombres de Modo</h2>
-      <p class="rule">Estos se reforman mudando la "u" inicial de los nombres agenciales por una "i", y añadiendo "di" a su terminación. (Se podría entender también como sustituyendo la última letra de los nombres abstractos por "idi"</p>
+      <p class="rule">
+        Estos se reforman mudando la "u" inicial de los nombres agenciales por una "i", y añadiendo
+        "di" a su terminación. (Se podría entender también como sustituyendo la última letra de los
+        nombres abstractos por "idi"
+      </p>
 
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in modalityNouns" :key="`modality-${idx}`">
@@ -138,19 +159,29 @@
       <div class="concepts-grid">
         <div class="concept-card">
           <h4>Imperativo de partida</h4>
-          <p>Las dos primeras clases nacen de la segunda persona del singular del imperativo, sin su última sílaba</p>
+          <p>
+            Las dos primeras clases nacen de la segunda persona del singular del imperativo, sin su
+            última sílaba
+          </p>
         </div>
         <div class="concept-card">
           <h4>Vocal precedente</h4>
-          <p>En la clase segunda esa vocal se omite o se muda, y de ahí sale la forma ulongi, ulangi, ukali</p>
+          <p>
+            En la clase segunda esa vocal se omite o se muda, y de ahí sale la forma ulongi, ulangi,
+            ukali
+          </p>
         </div>
         <div class="concept-card">
           <h4>Terminación en -di</h4>
-          <p>La clase tercera parte del nombre de acción: muda su u inicial por i y añade di al final</p>
+          <p>
+            La clase tercera parte del nombre de acción: muda su u inicial por i y añade di al final
+          </p>
         </div>
         <div class="concept-card">
           <h4>Una misma raíz</h4>
-          <p>Longaka, ulongi e ilongidi muestran cómo una sola raíz verbal produce los tres tipos</p>
+          <p>
+            Longaka, ulongi e ilongidi muestran cómo una sola raíz verbal produce los tres tipos
+          </p>
         </div>
       </div>
     </section>
@@ -158,7 +189,10 @@
     <!-- Examples of Productivity -->
     <section class="verbal-nouns__productivity">
       <h2>Ejemplo con las tres derivaciones</h2>
-      <p>Los tres derivaciones: aplicando cada regla a la misma raíz verbal se obtienen los tres tipos de nombres. Así ocurre con la raíz "<em>long</em>" de <em>Longaka</em>, «edifica tú»:</p>
+      <p>
+        Los tres derivaciones: aplicando cada regla a la misma raíz verbal se obtienen los tres
+        tipos de nombres. Así ocurre con la raíz "<em>long</em>" de <em>Longaka</em>, «edifica tú»:
+      </p>
 
       <div class="productivity-example">
         <div class="derivations-grid">
@@ -202,14 +236,19 @@
       <ol>
         <li>Memoriza las tres reglas de formación y a qué forma de partida arranca cada una</li>
         <li>Toma un imperativo nuevo y deduce su nombre abstracto y su nombre de acción</li>
-        <li>Parte de un nombre de acción y construye su nombre de modo con la terminación <strong>-di</strong></li>
+        <li>
+          Parte de un nombre de acción y construye su nombre de modo con la terminación
+          <strong>-di</strong>
+        </li>
         <li>Comprueba en la tabla de resumen a qué clase nominal pertenece cada forma</li>
       </ol>
     </section>
 
     <!-- Navigation -->
     <section class="verbal-nouns__nav">
-      <router-link to="/capitulo-2/irregulares" class="nav-link prev">← Nombres Irregulares</router-link>
+      <router-link to="/capitulo-2/irregulares" class="nav-link prev"
+        >← Nombres Irregulares</router-link
+      >
       <router-link to="/capitulo-2" class="nav-link next">Volver a Capítulo 2 →</router-link>
     </section>
   </div>
@@ -225,14 +264,70 @@ export default {
   data() {
     return {
       abstractNouns: [
-        { imperative: 'Tândâkâ', imperativeAudio: 't_a_nd_a_k_a_', imperativeMeaning: 'ama tú', nominalForm: 'itânde', nominalAudio: 'it_a_nde', meaning: 'amor' },
-        { imperative: 'Binaka', imperativeAudio: 'binaka', imperativeMeaning: 'aborrece tú', nominalForm: 'ibina', nominalAudio: 'ibina', meaning: 'odio' },
-        { imperative: 'Kalaka', imperativeAudio: 'kalaka', imperativeMeaning: 'habla tú', nominalForm: 'ikala', nominalAudio: 'ikala', meaning: 'razonamiento' },
-        { imperative: 'Langaka', imperativeAudio: 'langaka', imperativeMeaning: 'lee tú', nominalForm: 'ilanga', nominalAudio: 'ilanga', meaning: 'lectura' },
-        { imperative: 'Longaka', imperativeAudio: 'longaka', imperativeMeaning: 'edifica tú', nominalForm: 'ilonga', nominalAudio: 'ilonga', meaning: 'edificio' },
-        { imperative: 'Lēndēkē', imperativeAudio: 'l_e_nd_e_k_e_', imperativeMeaning: 'escribe tú', nominalForm: 'ilende', nominalAudio: 'ilende', meaning: 'escritura' },
-        { imperative: 'Kalakia', imperativeAudio: 'kalakia', imperativeMeaning: 'ora tú', nominalForm: 'ikalo', nominalAudio: 'ikalo', meaning: 'oración' },
-        { imperative: 'Janjaka', imperativeAudio: 'janjaka', imperativeMeaning: 'trabaja tú', nominalForm: 'ijanja', nominalAudio: 'ijanja', meaning: 'trabajo' }
+        {
+          imperative: 'Tândâkâ',
+          imperativeAudio: 't_a_nd_a_k_a_',
+          imperativeMeaning: 'ama tú',
+          nominalForm: 'itânde',
+          nominalAudio: 'it_a_nde',
+          meaning: 'amor'
+        },
+        {
+          imperative: 'Binaka',
+          imperativeAudio: 'binaka',
+          imperativeMeaning: 'aborrece tú',
+          nominalForm: 'ibina',
+          nominalAudio: 'ibina',
+          meaning: 'odio'
+        },
+        {
+          imperative: 'Kalaka',
+          imperativeAudio: 'kalaka',
+          imperativeMeaning: 'habla tú',
+          nominalForm: 'ikala',
+          nominalAudio: 'ikala',
+          meaning: 'razonamiento'
+        },
+        {
+          imperative: 'Langaka',
+          imperativeAudio: 'langaka',
+          imperativeMeaning: 'lee tú',
+          nominalForm: 'ilanga',
+          nominalAudio: 'ilanga',
+          meaning: 'lectura'
+        },
+        {
+          imperative: 'Longaka',
+          imperativeAudio: 'longaka',
+          imperativeMeaning: 'edifica tú',
+          nominalForm: 'ilonga',
+          nominalAudio: 'ilonga',
+          meaning: 'edificio'
+        },
+        {
+          imperative: 'Lēndēkē',
+          imperativeAudio: 'l_e_nd_e_k_e_',
+          imperativeMeaning: 'escribe tú',
+          nominalForm: 'ilende',
+          nominalAudio: 'ilende',
+          meaning: 'escritura'
+        },
+        {
+          imperative: 'Kalakia',
+          imperativeAudio: 'kalakia',
+          imperativeMeaning: 'ora tú',
+          nominalForm: 'ikalo',
+          nominalAudio: 'ikalo',
+          meaning: 'oración'
+        },
+        {
+          imperative: 'Janjaka',
+          imperativeAudio: 'janjaka',
+          imperativeMeaning: 'trabaja tú',
+          nominalForm: 'ijanja',
+          nominalAudio: 'ijanja',
+          meaning: 'trabajo'
+        }
       ],
       abstractNounsExamples: [
         {
@@ -245,10 +340,38 @@ export default {
         }
       ],
       agentNouns: [
-        { imperative: 'Longaka', imperativeAudio: 'longaka', imperativeMeaning: 'edifica tú', nominalForm: 'ulongi', nominalAudio: 'ulongi', meaning: 'arquitecto' },
-        { imperative: 'Langaka', imperativeAudio: 'langaka', imperativeMeaning: 'lee tú', nominalForm: 'ulangi', nominalAudio: 'ulangi', meaning: 'lector' },
-        { imperative: 'Kalaka', imperativeAudio: 'kalaka', imperativeMeaning: 'habla tú', nominalForm: 'ukali', nominalAudio: 'ukali', meaning: 'orador' },
-        { imperative: 'Lēndēkē', imperativeAudio: 'l_e_nd_e_k_e_', imperativeMeaning: 'escribe tú', nominalForm: 'ulendi', nominalAudio: 'ulendi', meaning: 'escritor' }
+        {
+          imperative: 'Longaka',
+          imperativeAudio: 'longaka',
+          imperativeMeaning: 'edifica tú',
+          nominalForm: 'ulongi',
+          nominalAudio: 'ulongi',
+          meaning: 'arquitecto'
+        },
+        {
+          imperative: 'Langaka',
+          imperativeAudio: 'langaka',
+          imperativeMeaning: 'lee tú',
+          nominalForm: 'ulangi',
+          nominalAudio: 'ulangi',
+          meaning: 'lector'
+        },
+        {
+          imperative: 'Kalaka',
+          imperativeAudio: 'kalaka',
+          imperativeMeaning: 'habla tú',
+          nominalForm: 'ukali',
+          nominalAudio: 'ukali',
+          meaning: 'orador'
+        },
+        {
+          imperative: 'Lēndēkē',
+          imperativeAudio: 'l_e_nd_e_k_e_',
+          imperativeMeaning: 'escribe tú',
+          nominalForm: 'ulendi',
+          nominalAudio: 'ulendi',
+          meaning: 'escritor'
+        }
       ],
       agentNounsExamples: [
         {
@@ -261,9 +384,30 @@ export default {
         }
       ],
       modalityNouns: [
-        { actionForm: 'Ulongi', actionFormAudio: 'ulongi', actionFormMeaning: 'arquitecto', nominalForm: 'ilongidi', nominalAudio: 'ilongidi', meaning: 'modo de construir' },
-        { actionForm: 'Ulangi', actionFormAudio: 'ulangi', actionFormMeaning: 'lector', nominalForm: 'ilangidi', nominalAudio: 'ilangidi', meaning: 'modo de leer' },
-        { actionForm: 'Ukali', actionFormAudio: 'ukali', actionFormMeaning: 'orador', nominalForm: 'ikalidi', nominalAudio: 'ikalidi', meaning: 'modo de hablar' }
+        {
+          actionForm: 'Ulongi',
+          actionFormAudio: 'ulongi',
+          actionFormMeaning: 'arquitecto',
+          nominalForm: 'ilongidi',
+          nominalAudio: 'ilongidi',
+          meaning: 'modo de construir'
+        },
+        {
+          actionForm: 'Ulangi',
+          actionFormAudio: 'ulangi',
+          actionFormMeaning: 'lector',
+          nominalForm: 'ilangidi',
+          nominalAudio: 'ilangidi',
+          meaning: 'modo de leer'
+        },
+        {
+          actionForm: 'Ukali',
+          actionFormAudio: 'ukali',
+          actionFormMeaning: 'orador',
+          nominalForm: 'ikalidi',
+          nominalAudio: 'ikalidi',
+          meaning: 'modo de hablar'
+        }
       ],
       typeSummary: [
         {
@@ -274,7 +418,8 @@ export default {
         },
         {
           type: 'De acción',
-          formation: 'Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal',
+          formation:
+            'Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal',
           example: 'Longaka → ulongi',
           nounClass: 'Tercera clase'
         },
@@ -285,7 +430,7 @@ export default {
           nounClass: '—'
         }
       ]
-    };
+    }
   },
   methods: {
     getDictionaryUrl,
@@ -304,9 +449,9 @@ export default {
     }
   },
   created() {
-    document.title = 'Nombres Derivados | Portal Benga';
+    document.title = 'Nombres Derivados | Portal Benga'
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -320,7 +465,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%);
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -344,7 +489,7 @@ export default {
     background: $color-surface-light;
     padding: $spacing-lg;
     border-radius: $border-radius;
-    border-left: 4px solid #C0392B;
+    border-left: 4px solid #c0392b;
     margin-bottom: $spacing-xl;
   }
 
@@ -352,19 +497,19 @@ export default {
     margin-bottom: $spacing-xl;
 
     h2 {
-      color: #C0392B;
+      color: #c0392b;
       margin-top: 0;
       margin-bottom: $spacing-lg;
       font-size: 1.5rem;
-      border-bottom: 2px solid #C0392B;
+      border-bottom: 2px solid #c0392b;
       padding-bottom: $spacing-md;
     }
 
     .rule {
-      background: #FFF3E0;
+      background: #fff3e0;
       padding: $spacing-md;
       border-radius: $border-radius;
-      border-left: 4px solid #C0392B;
+      border-left: 4px solid #c0392b;
       margin-bottom: $spacing-lg;
       font-style: italic;
     }
@@ -383,7 +528,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
@@ -424,10 +569,10 @@ export default {
   .classification-note {
     font-size: 0.9rem;
     color: $color-text-muted;
-    background: #FFFDE7;
+    background: #fffde7;
     padding: $spacing-md;
     border-radius: $border-radius;
-    border-left: 4px solid #C0392B;
+    border-left: 4px solid #c0392b;
   }
 
   &__summary {
@@ -447,7 +592,7 @@ export default {
         }
 
         &.header {
-          background: #C0392B;
+          background: #c0392b;
           color: white;
           font-weight: bold;
         }
@@ -463,7 +608,7 @@ export default {
 
           .example {
             font-family: $font-mono;
-            color: #C0392B;
+            color: #c0392b;
             font-weight: bold;
           }
         }
@@ -473,8 +618,8 @@ export default {
     .note {
       margin-top: $spacing-md;
       padding: $spacing-md;
-      background: #FFFDE7;
-      border-left: 4px solid #C0392B;
+      background: #fffde7;
+      border-left: 4px solid #c0392b;
       color: $color-text-secondary;
     }
   }
@@ -486,14 +631,14 @@ export default {
       gap: $spacing-lg;
 
       .concept-card {
-        background: linear-gradient(135deg, #FCE4EC 0%, #F3E5F5 100%);
+        background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
-        border-left: 4px solid #C0392B;
+        border-left: 4px solid #c0392b;
 
         h4 {
           margin: 0 0 $spacing-sm 0;
-          color: #C0392B;
+          color: #c0392b;
         }
 
         p {
@@ -509,7 +654,7 @@ export default {
     background: $color-surface-light;
     padding: $spacing-lg;
     border-radius: $border-radius;
-    border-left: 4px solid #C0392B;
+    border-left: 4px solid #c0392b;
 
     .productivity-example {
       background: white;
@@ -525,7 +670,7 @@ export default {
     }
 
     .derivation-item {
-      background: #FFF3E0;
+      background: #fff3e0;
       padding: $spacing-md;
       border-radius: $border-radius;
       border: 1px solid #ffe0b2;
@@ -575,7 +720,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {

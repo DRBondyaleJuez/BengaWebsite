@@ -4,9 +4,9 @@
     <section class="hero">
       <div class="hero__background">
         <div class="hero__overlay"></div>
-        <img 
-          src="@/assets/images/equatorial-guinea-map.png" 
-          alt="Mapa de Guinea Ecuatorial" 
+        <img
+          src="@/assets/images/equatorial-guinea-map.png"
+          alt="Mapa de Guinea Ecuatorial"
           class="hero__image"
         />
       </div>
@@ -40,8 +40,8 @@
             <div class="home-page__intro-icon">🗣️</div>
             <h3>{{ $t('home.languageFamily') || 'Familia Lingüística' }}</h3>
             <p>
-              El Benga pertenece a la familia de lenguas Ndowe, habladas en Guinea Ecuatorial y regiones adyacentes. 
-              Es una lengua rica en matices gramaticales y sonidos únicos.
+              El Benga pertenece a la familia de lenguas Ndowe, habladas en Guinea Ecuatorial y
+              regiones adyacentes. Es una lengua rica en matices gramaticales y sonidos únicos.
             </p>
           </div>
 
@@ -49,8 +49,8 @@
             <div class="home-page__intro-icon">🏝️</div>
             <h3>{{ $t('home.geography') || 'Ubicación Geográfica' }}</h3>
             <p>
-              Hablada principalmente en la isla de Corisco, pueblos de su bahía e islas adyacentes en Guinea Ecuatorial.
-              Esta región tiene una rica tradición cultural y lingüística.
+              Hablada principalmente en la isla de Corisco, pueblos de su bahía e islas adyacentes
+              en Guinea Ecuatorial. Esta región tiene una rica tradición cultural y lingüística.
             </p>
           </div>
 
@@ -58,8 +58,9 @@
             <div class="home-page__intro-icon">📚</div>
             <h3>{{ $t('home.heritage') || 'Patrimonio Lingüístico' }}</h3>
             <p>
-              El Benga representa parte importante del patrimonio lingüístico africano. Su preservación es esencial
-              para mantener la diversidad cultural y el conocimiento ancestral.
+              El Benga representa parte importante del patrimonio lingüístico africano. Su
+              preservación es esencial para mantener la diversidad cultural y el conocimiento
+              ancestral.
             </p>
           </div>
         </div>
@@ -73,30 +74,33 @@
           <div class="home-page__grammar-text">
             <h2>{{ $t('home.aboutGrammar') || 'Sobre Esta Gramática' }}</h2>
             <p>
-              Este portal está basado en la obra seminal de Francisco Salvadó y Cos, publicada en 1891:
+              Este portal está basado en la obra seminal de Francisco Salvadó y Cos, publicada en
+              1891:
             </p>
             <blockquote class="home-page__quote">
               <p>
-                "Colección de apuntes preliminares sobre la lengua Benga, o sea introducción a una gramática de este 
-                idioma que se habla en la isla de Corisco, pueblos de su bahía e islas adyacentes"
+                "Colección de apuntes preliminares sobre la lengua Benga, o sea introducción a una
+                gramática de este idioma que se habla en la isla de Corisco, pueblos de su bahía e
+                islas adyacentes"
               </p>
             </blockquote>
             <p>
-              La obra original, publicada en Madrid por la Imprenta de A. Pérez Dubrull, representa el primer 
-              esfuerzo sistemático de documentación de esta lengua. Hoy la presentamos en formato digital interactivo 
-              para que estudiantes de lenguas africanas, investigadores y hablantes de Benga puedan acceder y 
-              aprender de esta valiosa documentación histórica.
+              La obra original, publicada en Madrid por la Imprenta de A. Pérez Dubrull, representa
+              el primer esfuerzo sistemático de documentación de esta lengua. Hoy la presentamos en
+              formato digital interactivo para que estudiantes de lenguas africanas, investigadores
+              y hablantes de Benga puedan acceder y aprender de esta valiosa documentación
+              histórica.
             </p>
           </div>
 
           <div class="home-page__grammar-image">
-            <img 
-              src="@/assets/images/salvado-y-cos-portrait.png" 
-              alt="Francisco Salvadó y Cos - Retrato" 
+            <img
+              src="@/assets/images/salvado-y-cos-portrait.png"
+              alt="Francisco Salvadó y Cos - Retrato"
               class="home-page__portrait"
             />
             <p class="home-page__image-caption">
-              Francisco Salvadó y Cos (Siglo XIX)<br>
+              Francisco Salvadó y Cos (Siglo XIX)<br />
               Misionero y Lingüista
             </p>
           </div>
@@ -112,7 +116,10 @@
         <div class="home-page__chapters-preview">
           <div class="home-page__chapter-card">
             <h3>{{ $t('chapters.chapter1.title') }}</h3>
-            <p>Fundamentos de la lengua Benga incluyendo alfabeto, vocales, diptongos, triptongos y consonantes.</p>
+            <p>
+              Fundamentos de la lengua Benga incluyendo alfabeto, vocales, diptongos, triptongos y
+              consonantes.
+            </p>
             <ul>
               <li>✓ Alfabeto y escritura</li>
               <li>✓ Sonidos vocales</li>
@@ -204,13 +211,21 @@
     <section class="home-page__cta-section">
       <div class="home-page__container">
         <h2>{{ $t('home.readyToLearn') || '¿Listo para Comenzar?' }}</h2>
-        <p>{{ $t('home.ctaSubtitle') || 'Inicia tu viaje en el aprendizaje del idioma Benga hoy.' }}</p>
+        <p>
+          {{ $t('home.ctaSubtitle') || 'Inicia tu viaje en el aprendizaje del idioma Benga hoy.' }}
+        </p>
 
         <div class="home-page__cta-buttons">
-          <router-link to="/capitulo-1" class="home-page__cta-button home-page__cta-button--primary">
+          <router-link
+            to="/capitulo-1"
+            class="home-page__cta-button home-page__cta-button--primary"
+          >
             {{ $t('home.startLearning') }}
           </router-link>
-          <router-link to="/sobre-el-autor" class="home-page__cta-button home-page__cta-button--secondary">
+          <router-link
+            to="/sobre-el-autor"
+            class="home-page__cta-button home-page__cta-button--secondary"
+          >
             {{ $t('nav.about') }}
           </router-link>
         </div>

@@ -17,9 +17,9 @@
       <section class="about-author__section">
         <div class="about-author__section-content">
           <div class="about-author__portrait-container">
-            <img 
-              src="@/assets/images/salvado-y-cos-portrait.png" 
-              alt="Retrato de Francisco Salvadó y Cos" 
+            <img
+              src="@/assets/images/salvado-y-cos-portrait.png"
+              alt="Retrato de Francisco Salvadó y Cos"
               class="about-author__portrait"
             />
             <div class="about-author__portrait-info">
@@ -79,16 +79,27 @@
         <!-- Book Description -->
         <div class="about-author__book-description">
           <p>
-            Esta obra representa el primer esfuerzo sistemático de documentación del idioma Benga. En ella, Salvadó y Cos 
-            presenta una introducción exhaustiva a la gramática Benga, incluyendo:
+            Esta obra representa el primer esfuerzo sistemático de documentación del idioma Benga.
+            En ella, Salvadó y Cos presenta una introducción exhaustiva a la gramática Benga,
+            incluyendo:
           </p>
           <ul>
-            <li><strong>Alfabeto y sonidos:</strong> Una explicación detallada del sistema de escritura y pronunciación</li>
-            <li><strong>Vocales y diptongos:</strong> Análisis fonético de todos los sonidos vocálicos</li>
+            <li>
+              <strong>Alfabeto y sonidos:</strong> Una explicación detallada del sistema de
+              escritura y pronunciación
+            </li>
+            <li>
+              <strong>Vocales y diptongos:</strong> Análisis fonético de todos los sonidos vocálicos
+            </li>
             <li><strong>Consonantes:</strong> Descripción de consonantes simples y combinadas</li>
-            <li><strong>Nombres y sustantivos:</strong> Sistema de clasificación nominal con siete clases</li>
+            <li>
+              <strong>Nombres y sustantivos:</strong> Sistema de clasificación nominal con siete
+              clases
+            </li>
             <li><strong>Adjetivos:</strong> Adjetivos variables e invariables y sus usos</li>
-            <li><strong>Ejemplos prácticos:</strong> Cientos de palabras y expresiones en contexto</li>
+            <li>
+              <strong>Ejemplos prácticos:</strong> Cientos de palabras y expresiones en contexto
+            </li>
           </ul>
         </div>
       </section>
@@ -101,35 +112,38 @@
           <div class="about-author__context-item">
             <h3>🌍 {{ $t('about.colonialLinguistics') || 'Lingüística Colonial' }}</h3>
             <p>
-              En el siglo XIX, el estudio de lenguas africanas era parte de la empresa colonial europea. 
-              Sin embargo, la obra de Salvadó y Cos se destaca por su rigor científico y su respeto por la lengua estudiada,
-              recopilando materiales que de otra forma se hubiesen perdido.
+              En el siglo XIX, el estudio de lenguas africanas era parte de la empresa colonial
+              europea. Sin embargo, la obra de Salvadó y Cos se destaca por su rigor científico y su
+              respeto por la lengua estudiada, recopilando materiales que de otra forma se hubiesen
+              perdido.
             </p>
           </div>
 
           <div class="about-author__context-item">
             <h3>📚 {{ $t('about.linguisticValue') || 'Valor Lingüístico' }}</h3>
             <p>
-              Como una de las primeras descripciones sistemáticas del Benga, esta gramática conserva información invaluable
-              sobre la lengua que de otro modo estaría perdida. Para estudiosos modernos del Benga y lenguas relacionadas,
-              representa una fuente primaria de importancia crítica.
+              Como una de las primeras descripciones sistemáticas del Benga, esta gramática conserva
+              información invaluable sobre la lengua que de otro modo estaría perdida. Para
+              estudiosos modernos del Benga y lenguas relacionadas, representa una fuente primaria
+              de importancia crítica.
             </p>
           </div>
 
           <div class="about-author__context-item">
             <h3>🙏 {{ $t('about.missionaryWork') || 'Labor Misionera' }}</h3>
             <p>
-              Como misionero, Salvadó y Cos pasó años viviendo con hablantes nativos de Benga. Esta cercanía le permitió
-              recopilar datos lingüísticos authenticos directamente de la comunidad de habla, en lugar de trabajar con informantes
-              limitados o de segunda mano.
+              Como misionero, Salvadó y Cos pasó años viviendo con hablantes nativos de Benga. Esta
+              cercanía le permitió recopilar datos lingüísticos authenticos directamente de la
+              comunidad de habla, en lugar de trabajar con informantes limitados o de segunda mano.
             </p>
           </div>
 
           <div class="about-author__context-item">
             <h3>🔍 {{ $t('about.legacy') || 'Legado' }}</h3>
             <p>
-              La obra de Salvadó y Cos sigue siendo referencia en estudios de lenguas Ndowe. Su contribución a la documentación
-              del Benga es reconocida por lingüistas africanos modernos y forma parte del patrimonio intelectual colectivo de la comunidad académica.
+              La obra de Salvadó y Cos sigue siendo referencia en estudios de lenguas Ndowe. Su
+              contribución a la documentación del Benga es reconocida por lingüistas africanos
+              modernos y forma parte del patrimonio intelectual colectivo de la comunidad académica.
             </p>
           </div>
         </div>
@@ -140,27 +154,27 @@
         <h2>{{ $t('about.aboutPortal') || 'Sobre Este Portal' }}</h2>
         <div class="about-author__portal-content">
           <p>
-            Este portal digital representa un esfuerzo por hacer accesible la valiosa obra de Salvadó y Cos a nuevas audiencias.
-            Al transformar la gramática de 1891 en un formato interactivo, buscamos:
+            Este portal digital representa un esfuerzo por hacer accesible la valiosa obra de
+            Salvadó y Cos a nuevas audiencias. Al transformar la gramática de 1891 en un formato
+            interactivo, buscamos:
           </p>
           <ul>
             <li>✓ Preservar el conocimiento lingüístico histórico para futuras generaciones</li>
             <li>✓ Facilitar el acceso a estudiantes de lenguas africanas en todo el mundo</li>
             <li>✓ Apoyar a hablantes nativos de Benga en la revitalización de su lengua</li>
             <li>✓ Contribuir a la documentación de lenguas en peligro de extinción</li>
-            <li>✓ Demostrar el valor de las fuentes históricas para la investigación contemporánea</li>
+            <li>
+              ✓ Demostrar el valor de las fuentes históricas para la investigación contemporánea
+            </li>
           </ul>
 
           <div class="about-author__download-box">
             <h3>{{ $t('about.originalWork') || 'Acceso a la Obra Original' }}</h3>
             <p>
-              Para complementar tu aprendizaje en el portal, puedes descargar la gramática original de Salvadó y Cos en formato PDF:
+              Para complementar tu aprendizaje en el portal, puedes descargar la gramática original
+              de Salvadó y Cos en formato PDF:
             </p>
-            <a 
-              :href="bookPdfUrl"
-              class="about-author__download-button"
-              download
-            >
+            <a :href="bookPdfUrl" class="about-author__download-button" download>
               📄 {{ $t('nav.download') }}
             </a>
           </div>
@@ -175,10 +189,14 @@
           <div class="about-author__resource-card">
             <h3>{{ $t('about.languageFamily') || 'Familia Lingüística Ndowe' }}</h3>
             <p>
-              El Benga pertenece a la familia de lenguas Ndowe, que incluye también Bubi (en Bioko) y otras lenguas relacionadas 
-              habladas en la región del Golfo de Guinea.
+              El Benga pertenece a la familia de lenguas Ndowe, que incluye también Bubi (en Bioko)
+              y otras lenguas relacionadas habladas en la región del Golfo de Guinea.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Ndowe_languages" target="_blank" class="about-author__resource-link">
+            <a
+              href="https://en.wikipedia.org/wiki/Ndowe_languages"
+              target="_blank"
+              class="about-author__resource-link"
+            >
               Leer en Wikipedia →
             </a>
           </div>
@@ -186,10 +204,15 @@
           <div class="about-author__resource-card">
             <h3>{{ $t('about.livingDictionary') || 'Living Dictionary' }}</h3>
             <p>
-              El Living Dictionary es un recurso comunitario que documenta lenguas en peligro. 
+              El Living Dictionary es un recurso comunitario que documenta lenguas en peligro.
               Consulta las palabras Benga recopiladas por la comunidad de hablantes.
             </p>
-            <a :href="livingDictionaryHome" target="_blank" rel="noopener noreferrer" class="about-author__resource-link">
+            <a
+              :href="livingDictionaryHome"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about-author__resource-link"
+            >
               Visitar Living Dictionary →
             </a>
           </div>
@@ -197,8 +220,8 @@
           <div class="about-author__resource-card">
             <h3>{{ $t('about.sil') || 'SIL International' }}</h3>
             <p>
-              SIL (Institución Lingüística de Verano) trabaja en la documentación y preservación de lenguas minoritarias
-              en todo el mundo, incluyendo el Benga.
+              SIL (Institución Lingüística de Verano) trabaja en la documentación y preservación de
+              lenguas minoritarias en todo el mundo, incluyendo el Benga.
             </p>
             <a href="https://www.sil.org/" target="_blank" class="about-author__resource-link">
               Visitar SIL →
@@ -208,9 +231,14 @@
           <div class="about-author__resource-card">
             <h3>{{ $t('about.guineaInfo') || 'Guinea Ecuatorial' }}</h3>
             <p>
-              Información sobre la geografía, cultura y lenguas de Guinea Ecuatorial, donde se habla el Benga.
+              Información sobre la geografía, cultura y lenguas de Guinea Ecuatorial, donde se habla
+              el Benga.
             </p>
-            <a href="https://en.wikipedia.org/wiki/Equatorial_Guinea" target="_blank" class="about-author__resource-link">
+            <a
+              href="https://en.wikipedia.org/wiki/Equatorial_Guinea"
+              target="_blank"
+              class="about-author__resource-link"
+            >
               Leer en Wikipedia →
             </a>
           </div>

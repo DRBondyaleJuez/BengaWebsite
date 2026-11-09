@@ -1,17 +1,14 @@
 <template>
   <div class="consonants-section">
     <!-- Introduction -->
-    <ContentSection 
-      id="consonants-intro"
-      :title="$t('chapters.chapter1.sections.consonants')"
-    >
+    <ContentSection id="consonants-intro" :title="$t('chapters.chapter1.sections.consonants')">
       <p class="consonants-section__intro">
         {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
       </p>
     </ContentSection>
 
     <!-- Simple Consonants -->
-    <ContentSection 
+    <ContentSection
       id="simple-consonants"
       :title="$t('content.simpleConsonants') || 'Consonantes Simples'"
     >
@@ -28,7 +25,7 @@
           </div>
 
           <p class="consonants-section__sounds-like">
-            <strong>{{ $t('content.soundsLike') }}:</strong><br>
+            <strong>{{ $t('content.soundsLike') }}:</strong><br />
             {{ consonant.soundsLike[$i18n.locale] || consonant.soundsLike.es }}
           </p>
 
@@ -43,7 +40,7 @@
     </ContentSection>
 
     <!-- Consonant Combinations -->
-    <ContentSection 
+    <ContentSection
       id="consonant-combinations"
       :title="$t('content.consonantCombinations') || 'Combinaciones de Consonantes'"
     >
@@ -58,7 +55,7 @@
       </div>
 
       <!-- Each Combination Type -->
-      <div 
+      <div
         v-for="combination in sectionData.consonantCombinations"
         :key="combination.combination"
         class="consonants-section__combination-section"
@@ -68,7 +65,7 @@
         </h3>
 
         <p class="consonants-section__combination-pronunciation">
-          <strong>{{ $t('content.pronunciation') }}:</strong><br>
+          <strong>{{ $t('content.pronunciation') }}:</strong><br />
           {{ combination.pronunciation[$i18n.locale] || combination.pronunciation.es }}
         </p>
 
@@ -92,14 +89,14 @@
 
     <!-- Navigation -->
     <nav class="consonants-section__nav">
-      <router-link 
-        to="/capitulo-1/triptongos" 
+      <router-link
+        to="/capitulo-1/triptongos"
         class="consonants-section__nav-link consonants-section__nav-link--prev"
       >
         ← {{ $t('chapters.chapter1.sections.triphthongs') }}
       </router-link>
-      <router-link 
-        to="/capitulo-1" 
+      <router-link
+        to="/capitulo-1"
         class="consonants-section__nav-link consonants-section__nav-link--next"
       >
         {{ $t('chapters.chapter1.title') }} →

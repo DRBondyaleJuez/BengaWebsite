@@ -7,7 +7,11 @@
       </div>
       <div class="resources__container">
         <h1 class="resources__title">{{ $t('nav.resources') }}</h1>
-        <p class="resources__subtitle">{{ $t('resources.subtitle') || 'Herramientas y referencias para el aprendizaje del Benga' }}</p>
+        <p class="resources__subtitle">
+          {{
+            $t('resources.subtitle') || 'Herramientas y referencias para el aprendizaje del Benga'
+          }}
+        </p>
       </div>
     </header>
 
@@ -22,22 +26,18 @@
             <div class="resources__card-icon">📄</div>
             <h3>{{ $t('about.masterwork') || 'Gramática Original de Salvadó y Cos' }}</h3>
             <p>
-              La obra completa de 1891 en formato PDF. Este es el documento original que forma la base de todo este portal.
+              La obra completa de 1891 en formato PDF. Este es el documento original que forma la
+              base de todo este portal.
             </p>
-            <a 
-              :href="bookPdfUrl"
-              class="resources__button"
-              download
-            >
-              Descargar PDF
-            </a>
+            <a :href="bookPdfUrl" class="resources__button" download> Descargar PDF </a>
           </div>
 
           <div class="resources__card resources__card--primary">
             <div class="resources__card-icon">🎧</div>
             <h3>{{ $t('resources.audioFiles') || 'Archivos de Audio' }}</h3>
             <p>
-              Pronunciaciones de palabras Benga recopiladas por hablantes nativos. Estos archivos están alojados en Cloudinary.
+              Pronunciaciones de palabras Benga recopiladas por hablantes nativos. Estos archivos
+              están alojados en Cloudinary.
             </p>
             <p class="resources__coming-soon">En desarrollo...</p>
           </div>
@@ -53,10 +53,11 @@
             <div class="resources__card-icon">📖</div>
             <h3>Living Dictionary</h3>
             <p>
-              Un diccionario comunitario que documenta el Benga con contribuciones de hablantes nativos. 
-              Puedes explorar palabras, escuchar pronunciaciones y aprender usos contextuales.
+              Un diccionario comunitario que documenta el Benga con contribuciones de hablantes
+              nativos. Puedes explorar palabras, escuchar pronunciaciones y aprender usos
+              contextuales.
             </p>
-            <a 
+            <a
               :href="livingDictionaryHome"
               target="_blank"
               rel="noopener noreferrer"
@@ -70,10 +71,11 @@
             <div class="resources__card-icon">🔍</div>
             <h3>SIL International</h3>
             <p>
-              La Institución Lingüística de Verano trabaja en documentación de lenguas minoritarias. 
-              Sus recursos incluyen información sobre lenguas Ndowe y técnicas de documentación lingüística.
+              La Institución Lingüística de Verano trabaja en documentación de lenguas minoritarias.
+              Sus recursos incluyen información sobre lenguas Ndowe y técnicas de documentación
+              lingüística.
             </p>
-            <a 
+            <a
               href="https://www.sil.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -87,10 +89,10 @@
             <div class="resources__card-icon">📚</div>
             <h3>Wikipedia - Ndowe Languages</h3>
             <p>
-              Artículo informativo sobre la familia de lenguas Ndowe, incluyendo el Benga. 
+              Artículo informativo sobre la familia de lenguas Ndowe, incluyendo el Benga.
               Proporciona contexto geográfico, histórico y cultural.
             </p>
-            <a 
+            <a
               href="https://en.wikipedia.org/wiki/Ndowe_languages"
               target="_blank"
               rel="noopener noreferrer"
@@ -104,10 +106,10 @@
             <div class="resources__card-icon">🗺️</div>
             <h3>Wikimedia Commons</h3>
             <p>
-              Repositorio de imágenes, mapas y documentos históricos libres de derechos. 
-              Útil para recursos visuales sobre Guinea Ecuatorial y la región de Corisco.
+              Repositorio de imágenes, mapas y documentos históricos libres de derechos. Útil para
+              recursos visuales sobre Guinea Ecuatorial y la región de Corisco.
             </p>
-            <a 
+            <a
               href="https://commons.wikimedia.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -127,7 +129,7 @@
           <div class="resources__reference-item">
             <h3>🌍 Geografía de Guinea Ecuatorial</h3>
             <p>Información sobre la isla de Corisco y los alrededores donde se habla el Benga.</p>
-            <a 
+            <a
               href="https://en.wikipedia.org/wiki/Equatorial_Guinea"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,10 +142,10 @@
           <div class="resources__reference-item">
             <h3>👥 Cultura Ndowe</h3>
             <p>
-              Información sobre el pueblo Ndowe, sus tradiciones y su importancia cultural 
-              en la región del Golfo de Guinea.
+              Información sobre el pueblo Ndowe, sus tradiciones y su importancia cultural en la
+              región del Golfo de Guinea.
             </p>
-            <a 
+            <a
               href="https://en.wikipedia.org/wiki/Ndowe_people"
               target="_blank"
               rel="noopener noreferrer"
@@ -156,9 +158,10 @@
           <div class="resources__reference-item">
             <h3>🕰️ Historia de Guinea Ecuatorial</h3>
             <p>
-              Contexto histórico que ayuda a entender la época en que Salvadó y Cos escribió su gramática.
+              Contexto histórico que ayuda a entender la época en que Salvadó y Cos escribió su
+              gramática.
             </p>
-            <a 
+            <a
               href="https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea"
               target="_blank"
               rel="noopener noreferrer"
@@ -171,9 +174,10 @@
           <div class="resources__reference-item">
             <h3>🎓 Investigación Lingüística Contemporánea</h3>
             <p>
-              Estudios recientes sobre documentación de lenguas, preservación lingüística y revitalización.
+              Estudios recientes sobre documentación de lenguas, preservación lingüística y
+              revitalización.
             </p>
-            <a 
+            <a
               href="https://www.linguisticsociety.org/"
               target="_blank"
               rel="noopener noreferrer"
@@ -194,7 +198,8 @@
             <span class="resources__tip-number">1</span>
             <h3>Empieza por el Alfabeto</h3>
             <p>
-              Familiarízate con los sonidos básicos y el sistema de escritura Benga antes de pasar a estructuras más complejas.
+              Familiarízate con los sonidos básicos y el sistema de escritura Benga antes de pasar a
+              estructuras más complejas.
             </p>
           </div>
 
@@ -202,7 +207,8 @@
             <span class="resources__tip-number">2</span>
             <h3>Escucha Pronunciaciones</h3>
             <p>
-              Usa los archivos de audio disponibles en el portal. La pronunciación correcta es crucial en Benga.
+              Usa los archivos de audio disponibles en el portal. La pronunciación correcta es
+              crucial en Benga.
             </p>
           </div>
 
@@ -210,7 +216,8 @@
             <span class="resources__tip-number">3</span>
             <h3>Aprende Cognados</h3>
             <p>
-              Identifica palabras que se parecen a términos en otras lenguas Ndowe o lenguas bantu relacionadas.
+              Identifica palabras que se parecen a términos en otras lenguas Ndowe o lenguas bantu
+              relacionadas.
             </p>
           </div>
 
@@ -218,7 +225,8 @@
             <span class="resources__tip-number">4</span>
             <h3>Memoriza Clases Nominales</h3>
             <p>
-              El sistema de siete clases nominales es fundamental para la gramática Benga. Dedica tiempo a aprenderlas bien.
+              El sistema de siete clases nominales es fundamental para la gramática Benga. Dedica
+              tiempo a aprenderlas bien.
             </p>
           </div>
 
@@ -226,7 +234,8 @@
             <span class="resources__tip-number">5</span>
             <h3>Practica con Ejemplos</h3>
             <p>
-              El portal proporciona cientos de ejemplos. Úsalos para ver cómo funcionan las reglas en contexto real.
+              El portal proporciona cientos de ejemplos. Úsalos para ver cómo funcionan las reglas
+              en contexto real.
             </p>
           </div>
 
@@ -234,7 +243,8 @@
             <span class="resources__tip-number">6</span>
             <h3>Conecta con la Comunidad</h3>
             <p>
-              Si es posible, conecta con hablantes nativos de Benga o comunidades de investigadores interesados en la lengua.
+              Si es posible, conecta con hablantes nativos de Benga o comunidades de investigadores
+              interesados en la lengua.
             </p>
           </div>
         </div>
@@ -246,21 +256,26 @@
 
         <div class="resources__community-content">
           <p>
-            El aprendizaje del Benga es mejor cuando se hace en comunidad. Aquí hay formas de conectar:
+            El aprendizaje del Benga es mejor cuando se hace en comunidad. Aquí hay formas de
+            conectar:
           </p>
 
           <ul>
             <li>
-              <strong>Living Dictionary:</strong> Contribuye con pronunciaciones y usos de palabras Benga
+              <strong>Living Dictionary:</strong> Contribuye con pronunciaciones y usos de palabras
+              Benga
             </li>
             <li>
-              <strong>SIL Communities:</strong> Participa en iniciativas de documentación y preservación lingüística
+              <strong>SIL Communities:</strong> Participa en iniciativas de documentación y
+              preservación lingüística
             </li>
             <li>
-              <strong>Comunidad Ndowe:</strong> Busca grupos culturales y educativos Ndowe en línea o localmente
+              <strong>Comunidad Ndowe:</strong> Busca grupos culturales y educativos Ndowe en línea
+              o localmente
             </li>
             <li>
-              <strong>Universidades:</strong> Algunos programas de lingüística africana pueden ofrecerte oportunidades de aprendizaje especializado
+              <strong>Universidades:</strong> Algunos programas de lingüística africana pueden
+              ofrecerte oportunidades de aprendizaje especializado
             </li>
           </ul>
 

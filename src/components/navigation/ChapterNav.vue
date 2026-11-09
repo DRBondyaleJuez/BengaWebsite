@@ -1,11 +1,7 @@
 <template>
   <nav class="chapter-nav" aria-label="Chapter navigation">
     <ul class="chapter-nav__list">
-      <li 
-        v-for="chapter in chapters" 
-        :key="chapter.id"
-        class="chapter-nav__item"
-      >
+      <li v-for="chapter in chapters" :key="chapter.id" class="chapter-nav__item">
         <button
           class="chapter-nav__chapter"
           :class="{ 'chapter-nav__chapter--active': isChapterActive(chapter) }"
@@ -17,22 +13,15 @@
               {{ $t(`chapters.${chapter.id}.title`) }}
             </span>
           </router-link>
-          <BaseIcon 
-            :name="openChapters.includes(chapter.id) ? 'chevron-up' : 'chevron-down'" 
+          <BaseIcon
+            :name="openChapters.includes(chapter.id) ? 'chevron-up' : 'chevron-down'"
             class="chapter-nav__icon"
           />
         </button>
 
         <transition name="slide">
-          <ul 
-            v-if="openChapters.includes(chapter.id)" 
-            class="chapter-nav__sections"
-          >
-            <li 
-              v-for="section in chapter.sections" 
-              :key="section.id"
-              class="chapter-nav__section"
-            >
+          <ul v-if="openChapters.includes(chapter.id)" class="chapter-nav__sections">
+            <li v-for="section in chapter.sections" :key="section.id" class="chapter-nav__section">
               <router-link
                 :to="section.path"
                 class="chapter-nav__link"
@@ -86,14 +75,12 @@ export default {
       }
     },
     isChapterActive(chapter) {
-      return chapter.sections.some(section => 
+      return chapter.sections.some((section) =>
         this.$route.path.startsWith(section.path.split('/').slice(0, 2).join('/'))
       )
     },
     openCurrentChapter() {
-      const currentChapter = this.chapters.find(chapter => 
-        this.isChapterActive(chapter)
-      )
+      const currentChapter = this.chapters.find((chapter) => this.isChapterActive(chapter))
       if (currentChapter && !this.openChapters.includes(currentChapter.id)) {
         this.openChapters.push(currentChapter.id)
       }

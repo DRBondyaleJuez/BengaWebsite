@@ -2,32 +2,26 @@
   <div class="noun-class noun-class--practice">
     <div class="noun-class__header">
       <h1>Práctica de Nombres Sustantivos</h1>
-      <p class="subtitle">
-        Juega con el singular, el plural y las clases nominales
-      </p>
+      <p class="subtitle">Juega con el singular, el plural y las clases nominales</p>
     </div>
 
     <section class="noun-class__instructions">
       <h2>¿Cómo funciona?</h2>
       <ol class="practice-list">
         <li>
-          Cada tarjeta muestra el <strong>singular</strong> con su audio. La
-          traducción permanece oculta hasta que la pidas.
+          Cada tarjeta muestra el <strong>singular</strong> con su audio. La traducción permanece
+          oculta hasta que la pidas.
         </li>
         <li>
-          Pulsa el icono de giro (↺) para ver la <strong>clase</strong> y el
-          resumen de conversión (por ejemplo <em>i- → ma-</em>).
+          Pulsa el icono de giro (↺) para ver la <strong>clase</strong> y el resumen de conversión
+          (por ejemplo <em>i- → ma-</em>).
         </li>
+        <li>Púlsalo de nuevo para revelar el <strong>plural</strong> con su audio.</li>
         <li>
-          Púlsalo de nuevo para revelar el <strong>plural</strong> con su audio.
+          Púlsalo una última vez para volver al singular. Al activar una tarjeta, las demás vuelven
+          a su estado inicial.
         </li>
-        <li>
-          Púlsalo una última vez para volver al singular. Al activar una
-          tarjeta, las demás vuelven a su estado inicial.
-        </li>
-        <li>
-          Baraja y navega por páginas (~10 tarjetas en escritorio, 2 en móvil).
-        </li>
+        <li>Baraja y navega por páginas (~10 tarjetas en escritorio, 2 en móvil).</li>
       </ol>
     </section>
 
@@ -35,8 +29,7 @@
       <div class="cards-toolbar">
         <button class="refresh-btn" @click="refreshDeck">Barajar de nuevo</button>
         <span class="deck-count">
-          {{ deck.length }} palabras ·
-          {{ currentPage }} / {{ totalPages }}
+          {{ deck.length }} palabras · {{ currentPage }} / {{ totalPages }}
         </span>
       </div>
 
@@ -69,11 +62,7 @@
                 block
               />
 
-              <button
-                class="translate-btn"
-                type="button"
-                @click="toggleTranslation(card.id)"
-              >
+              <button class="translate-btn" type="button" @click="toggleTranslation(card.id)">
                 {{ card.showTranslation ? 'Ocultar' : 'Mostrar' }} traducción
               </button>
             </div>
@@ -96,9 +85,7 @@
                 <span class="flip-card__conversion">
                   {{ card.conversionSummary }}
                 </span>
-                <span class="flip-card__hint">
-                  Pulsa ↺ para ver el plural
-                </span>
+                <span class="flip-card__hint"> Pulsa ↺ para ver el plural </span>
               </div>
 
               <template v-else>
@@ -112,11 +99,7 @@
                   block
                 />
 
-                <button
-                  class="translate-btn"
-                  type="button"
-                  @click="toggleTranslation(card.id)"
-                >
+                <button class="translate-btn" type="button" @click="toggleTranslation(card.id)">
                   {{ card.showTranslation ? 'Ocultar' : 'Mostrar' }} traducción
                 </button>
               </template>
@@ -159,70 +142,66 @@
       <router-link to="/capitulo-2/verbales" class="nav-link prev">
         ← Nombres Derivados
       </router-link>
-      <router-link to="/capitulo-2" class="nav-link next">
-        Volver al Capítulo 2 →
-      </router-link>
+      <router-link to="/capitulo-2" class="nav-link next"> Volver al Capítulo 2 → </router-link>
     </section>
   </div>
 </template>
 
 <script>
-import BengaWord from "@/components/content/BengaWord.vue";
-import deckData from "@/data/chapter-2/noun-practice-deck.json";
-import { getDictionaryUrl } from "@/utils/dictionaryUrl";
+import BengaWord from '@/components/content/BengaWord.vue'
+import deckData from '@/data/chapter-2/noun-practice-deck.json'
+import { getDictionaryUrl } from '@/utils/dictionaryUrl'
 
-const MOBILE_BREAKPOINT = 768;
+const MOBILE_BREAKPOINT = 768
 
 function shuffle(array) {
-  const copy = [...array];
+  const copy = [...array]
   for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
   }
-  return copy;
+  return copy
 }
 
 export default {
-  name: "NounPracticeGame",
+  name: 'NounPracticeGame',
   components: {
-    BengaWord,
+    BengaWord
   },
   data() {
     return {
       deck: [],
       currentPage: 1,
-      windowWidth: typeof window !== "undefined" ? window.innerWidth : 1200,
-    };
+      windowWidth: typeof window !== 'undefined' ? window.innerWidth : 1200
+    }
   },
   computed: {
     cardsPerPage() {
-      return this.windowWidth < MOBILE_BREAKPOINT ? 2 : 8;
+      return this.windowWidth < MOBILE_BREAKPOINT ? 2 : 8
     },
     totalPages() {
-      return Math.max(1, Math.ceil(this.deck.length / this.cardsPerPage));
+      return Math.max(1, Math.ceil(this.deck.length / this.cardsPerPage))
     },
     paginatedCards() {
-      const start = (this.currentPage - 1) * this.cardsPerPage;
-      return this.deck.slice(start, start + this.cardsPerPage);
+      const start = (this.currentPage - 1) * this.cardsPerPage
+      return this.deck.slice(start, start + this.cardsPerPage)
     },
     cardsGridClass() {
-      return this.windowWidth < MOBILE_BREAKPOINT
-        ? "cards-grid--mobile"
-        : "cards-grid--desktop";
+      return this.windowWidth < MOBILE_BREAKPOINT ? 'cards-grid--mobile' : 'cards-grid--desktop'
     },
     visiblePages() {
-      const total = this.totalPages;
-      const current = this.currentPage;
-      const windowSize = 5;
-      let start = Math.max(1, current - Math.floor(windowSize / 2));
-      const end = Math.min(total, start + windowSize - 1);
-      start = Math.max(1, end - windowSize + 1);
-      const pages = [];
+      const total = this.totalPages
+      const current = this.currentPage
+      const windowSize = 5
+      let start = Math.max(1, current - Math.floor(windowSize / 2))
+      const end = Math.min(total, start + windowSize - 1)
+      start = Math.max(1, end - windowSize + 1)
+      const pages = []
       for (let i = start; i <= end; i += 1) {
-        pages.push(i);
+        pages.push(i)
       }
-      return pages;
-    },
+      return pages
+    }
   },
   methods: {
     getDictionaryUrl,
@@ -239,88 +218,88 @@ export default {
         conversionSummary: item.conversionSummary,
         flipped: false,
         pluralRevealed: false,
-        showTranslation: false,
-      }));
+        showTranslation: false
+      }))
     },
     refreshDeck() {
-      this.deck = shuffle(this.buildDeck());
-      this.currentPage = 1;
+      this.deck = shuffle(this.buildDeck())
+      this.currentPage = 1
     },
     // Vuelve la tarjeta a su estado inicial. `pluralRevealed` se deja como
     // está a propósito: así la cara trasera no cambia de contenido mientras
     // la tarjeta gira de vuelta; se reinicia en el siguiente giro.
     collapse(card) {
-      card.flipped = false;
-      card.showTranslation = false;
+      card.flipped = false
+      card.showTranslation = false
     },
     resetOthers(id) {
       this.deck.forEach((card) => {
-        if (card.id !== id) this.collapse(card);
-      });
+        if (card.id !== id) this.collapse(card)
+      })
     },
     resetAll() {
-      this.deck.forEach(this.collapse);
+      this.deck.forEach(this.collapse)
     },
     // Ciclo: singular -> clase y conversión -> plural -> singular
     flipCard(id) {
-      const card = this.deck.find((item) => item.id === id);
-      if (!card) return;
-      this.resetOthers(id);
+      const card = this.deck.find((item) => item.id === id)
+      if (!card) return
+      this.resetOthers(id)
       if (!card.flipped) {
-        card.pluralRevealed = false;
-        card.showTranslation = false;
-        card.flipped = true;
+        card.pluralRevealed = false
+        card.showTranslation = false
+        card.flipped = true
       } else if (!card.pluralRevealed) {
-        card.pluralRevealed = true;
-        card.showTranslation = false;
+        card.pluralRevealed = true
+        card.showTranslation = false
       } else {
-        this.collapse(card);
+        this.collapse(card)
       }
     },
     toggleTranslation(id) {
-      const card = this.deck.find((item) => item.id === id);
-      if (!card) return;
-      card.showTranslation = !card.showTranslation;
+      const card = this.deck.find((item) => item.id === id)
+      if (!card) return
+      card.showTranslation = !card.showTranslation
     },
     goToPage(page) {
-      this.currentPage = page;
-      this.resetAll();
+      this.currentPage = page
+      this.resetAll()
     },
     prevPage() {
       if (this.currentPage > 1) {
-        this.currentPage -= 1;
-        this.resetAll();
+        this.currentPage -= 1
+        this.resetAll()
       }
     },
     nextPage() {
       if (this.currentPage < this.totalPages) {
-        this.currentPage += 1;
-        this.resetAll();
+        this.currentPage += 1
+        this.resetAll()
       }
     },
     handleResize() {
-      this.windowWidth = window.innerWidth;
+      this.windowWidth = window.innerWidth
       if (this.currentPage > this.totalPages) {
-        this.currentPage = this.totalPages;
+        this.currentPage = this.totalPages
       }
-    },
+    }
   },
   created() {
-    this.deck = shuffle(this.buildDeck());
-    document.title = "Práctica de Nombres Sustantivos | Portal Benga";
+    this.deck = shuffle(this.buildDeck())
+    document.title = 'Práctica de Nombres Sustantivos | Portal Benga'
   },
   mounted() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize)
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.handleResize);
-  },
-};
+    window.removeEventListener('resize', this.handleResize)
+  }
+}
 </script>
 
 <style scoped lang="scss">
-@import "@/styles/variables";
-@import "@/styles/mixins";
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 .noun-class {
   width: 100%;
@@ -661,7 +640,7 @@ export default {
     }
   }
 
-  @include respond-below("md") {
+  @include respond-below('md') {
     padding: $spacing-md;
 
     &__header {

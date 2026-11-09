@@ -2,11 +2,12 @@
   <span class="benga-word" :class="{ 'benga-word--block': block }">
     <span class="benga-word__text">
       <template v-if="wordParts.highlight">
-        {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span>{{ wordParts.after }}
+        {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span
+        >{{ wordParts.after }}
       </template>
       <template v-else>{{ word }}</template>
     </span>
-    
+
     <button
       v-if="audioId"
       class="benga-word__audio-btn"
@@ -16,7 +17,7 @@
     >
       <BaseIcon :name="isPlaying ? 'pause' : 'volume'" />
     </button>
-    
+
     <span v-else class="benga-word__audio-pending" :title="$t('audio.unavailable')">
       <BaseIcon name="volume-muted" />
     </span>
@@ -32,9 +33,7 @@
       <BaseIcon name="external-link" />
     </a>
 
-    <span v-if="meaning && showMeaning" class="benga-word__meaning">
-      ({{ meaning }})
-    </span>
+    <span v-if="meaning && showMeaning" class="benga-word__meaning"> ({{ meaning }}) </span>
 
     <audio
       v-if="audioId"

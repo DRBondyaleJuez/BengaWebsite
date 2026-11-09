@@ -8,10 +8,11 @@
     <!-- Overview -->
     <section class="comparatives-superlatives__overview">
       <p>
-        Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, 
-        los objetos se comparan usando una variedad de formas: circunlocución, entonación particular, 
-        énfasis consabido, y especialmente las palabras <span class="bengaform">kebaka</span> (sobresalir) 
-        y <span class="bengaform">ña</span> (exceder).
+        Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los
+        objetos se comparan usando una variedad de formas: circunlocución, entonación particular,
+        énfasis consabido, y especialmente las palabras
+        <span class="bengaform">kebaka</span> (sobresalir) y
+        <span class="bengaform">ña</span> (exceder).
       </p>
     </section>
 
@@ -30,8 +31,9 @@
     <section class="comparatives-superlatives__comparatives">
       <h2>Comparativos</h2>
       <p class="usage-note">
-        Se utilizan para comparar dos o más objetos, principalmente con las palabras 
-        <span class="bengaform">kebaka</span> (sobresalir) y <span class="bengaform">ña</span> (exceder).
+        Se utilizan para comparar dos o más objetos, principalmente con las palabras
+        <span class="bengaform">kebaka</span> (sobresalir) y
+        <span class="bengaform">ña</span> (exceder).
       </p>
       <div class="examples-container">
         <div class="example-card" v-for="(comp, idx) in comparatives" :key="`comp-${idx}`">
@@ -90,12 +92,17 @@
       <h2>Forma Alternativa (usando 'va')</h2>
       <div class="alternative-content">
         <p class="alt-description">
-          Hay una forma más sencilla y acomodada al castellano: usar <span class="bengaform">va</span> 
-          en sentido de "más". Esta forma se acomoda principalmente con quienes han aprendido 
+          Hay una forma más sencilla y acomodada al castellano: usar
+          <span class="bengaform">va</span>
+          en sentido de "más". Esta forma se acomoda principalmente con quienes han aprendido
           inglés, francés, etc.
         </p>
         <div class="alt-examples">
-          <div class="alt-example" v-for="(ex, idx) in alternativeForm.examples" :key="`alt-${idx}`">
+          <div
+            class="alt-example"
+            v-for="(ex, idx) in alternativeForm.examples"
+            :key="`alt-${idx}`"
+          >
             <span class="spanish-meaning">{{ ex.spanishMeaning }}</span>
             <span class="bengaform-alt">{{ ex.bengaForm }}</span>
           </div>
@@ -131,15 +138,15 @@
       <div class="context-content">
         <h3>¿Por qué no hay grados de comparación tradicionales?</h3>
         <p>
-          En la lengua Benga, los comparativos y superlativos funcionan a través de estrategias 
-          más contextuales que formales. El uso de entonación, énfasis y circunlocuciones es 
-          fundamental para la comunicación efectiva. Los Bengas se valen de la entonación 
-          peculiar y del énfasis consabido para indicar los extremos en calidad y cantidad.
+          En la lengua Benga, los comparativos y superlativos funcionan a través de estrategias más
+          contextuales que formales. El uso de entonación, énfasis y circunlocuciones es fundamental
+          para la comunicación efectiva. Los Bengas se valen de la entonación peculiar y del énfasis
+          consabido para indicar los extremos en calidad y cantidad.
         </p>
         <p>
-          Esto demuestra una característica importante de la lengua: la importancia de la 
-          "viva voz" en la comunicación del significado, donde elementos prosódicos son 
-          cruciales para la comprensión total.
+          Esto demuestra una característica importante de la lengua: la importancia de la "viva voz"
+          en la comunicación del significado, donde elementos prosódicos son cruciales para la
+          comprensión total.
         </p>
       </div>
     </section>
@@ -160,7 +167,7 @@
 </template>
 
 <script>
-import comparativesData from '@/data/chapter-3/comparatives-superlatives.json';
+import comparativesData from '@/data/chapter-3/comparatives-superlatives.json'
 
 export default {
   name: 'ComparativesSuperlativesSection',
@@ -175,16 +182,16 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+    this.loadData()
   },
   methods: {
     loadData() {
-      this.keyWords = comparativesData.keyWords;
-      this.comparatives = comparativesData.comparatives;
-      this.superlatives = comparativesData.superlatives;
-      this.alternativeForm = comparativesData.alternativeForm;
-      this.expressions = comparativesData.expressions;
-      this.notes = comparativesData.notes;
+      this.keyWords = comparativesData.keyWords
+      this.comparatives = comparativesData.comparatives
+      this.superlatives = comparativesData.superlatives
+      this.alternativeForm = comparativesData.alternativeForm
+      this.expressions = comparativesData.expressions
+      this.notes = comparativesData.notes
     }
   }
 }
@@ -524,7 +531,8 @@ export default {
   transition: all $transition-base;
   text-align: center;
 
-  &--back, &--index {
+  &--back,
+  &--index {
     background-color: #f0f0f0;
     color: $color-text-primary;
 

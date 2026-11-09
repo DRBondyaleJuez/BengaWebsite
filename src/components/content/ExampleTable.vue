@@ -3,23 +3,15 @@
     <table class="example-table__table">
       <thead v-if="headers.length">
         <tr>
-          <th 
-            v-for="(header, index) in headers" 
-            :key="index"
-            class="example-table__header"
-          >
+          <th v-for="(header, index) in headers" :key="index" class="example-table__header">
             {{ header }}
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr 
-          v-for="(row, rowIndex) in rows" 
-          :key="rowIndex"
-          class="example-table__row"
-        >
-          <td 
-            v-for="(cell, cellIndex) in row" 
+        <tr v-for="(row, rowIndex) in rows" :key="rowIndex" class="example-table__row">
+          <td
+            v-for="(cell, cellIndex) in row"
             :key="cellIndex"
             class="example-table__cell"
             :class="getCellClass(cellIndex)"
