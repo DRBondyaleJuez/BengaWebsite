@@ -33,17 +33,17 @@ const routes = [
       {
         path: 'diptongos',
         name: 'Diphthongs',
-        component: () => import('@/views/chapter-1/DipthongsSection.vue')
+        component: () => import('@/views/chapter-1/DiphthongsSection.vue')
       },
       {
         path: 'triptongos',
         name: 'Triphthongs',
-        component: () => import('@/views/chapter-1/TripthongsSection.vue')
+        component: () => import('@/views/chapter-1/TriphthongsSection.vue')
       },
       {
         path: 'consonantes',
         name: 'Consonants',
-        component: () => import('@/views/chapter-1/ConsonantsSections.vue')
+        component: () => import('@/views/chapter-1/ConsonantsSection.vue')
       }
     ]
   },
@@ -129,7 +129,7 @@ const routes = [
       {
         path: 'adjetivos-invariables',
         name: 'InvariableAdjectives',
-        component: () => import('@/views/chapter-3/IrregularAdjectivesSection.vue')
+        component: () => import('@/views/chapter-3/InvariableAdjectivesSection.vue')
       },
       {
         path: 'comparativos-superlativos',

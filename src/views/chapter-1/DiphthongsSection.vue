@@ -74,7 +74,7 @@ import diphthongsData from '@/data/chapter-1/diphthongs.json'
 const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
 
 export default {
-  name: 'DipthongsSection',
+  name: 'DiphthongsSection',
   components: {
     ContentSection,
     BengaWord

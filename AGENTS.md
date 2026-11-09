@@ -70,7 +70,7 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
 
 ### Chapter 3 Invariable Adjectives
-- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `IrregularAdjectivesSection.vue`.
+- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `InvariableAdjectivesSection.vue`.
 - Every invariable adjective and every usage example carries an `audioId`, because the language is mainly oral. Multi-word forms join their words with a hyphen after applying the accent rule: `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`.
 - Invariable adjectives normally do **not** begin with the variable-adjective declension syllables (`e`, `be`, `i`, `ma`, `u`, `me`, `bo`, `ba`, `vi`, `lo`), although there are exceptions (e.g. `Bokolo`). This is the fifth entry in `characteristics` and is rendered both in the characteristics cards and the "Puntos Importantes" notes.
 - The `comparison-table` header row (`.table-row.header`) must be excluded from the zebra-striping rule — use `&:nth-child(odd):not(.header)` — otherwise its `#f9f9f9` background overrides the primary-colour header and the white text becomes illegible.
@@ -157,9 +157,9 @@ benga-grammar-website/
 │       ├── chapter-1/
 │       │   ├── ChapterOneIndex.vue
 │       │   ├── AlphabetSection.vue
-│       │   ├── DipthongsSection.vue      # TODO task 0.3: rename DiphthongsSection
-│       │   ├── TripthongsSection.vue     # TODO task 0.3: rename TriphthongsSection
-│       │   └── ConsonantsSections.vue    # TODO task 0.3: rename ConsonantsSection
+│       │   ├── DiphthongsSection.vue
+│       │   ├── TriphthongsSection.vue
+│       │   └── ConsonantsSection.vue
 │       ├── chapter-2/
 │       │   ├── ChapterTwoIndex.vue
 │       │   ├── NounsIntro.vue
@@ -171,7 +171,7 @@ benga-grammar-website/
 │           ├── ChapterThreeIndex.vue
 │           ├── AdjectivesIntro.vue
 │           ├── RegularAdjectivesSection.vue
-│           ├── IrregularAdjectivesSection.vue    # Shows INVARIABLE adjectives (TODO task 0.3: rename)
+│           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
 ├── context/                     # Git-ignored: private prompts, roadmap and notes

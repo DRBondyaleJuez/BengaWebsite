@@ -97,7 +97,7 @@ import triphthongsData from '@/data/chapter-1/triphthongs.json'
 const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
 
 export default {
-  name: 'TripthongsSection',
+  name: 'TriphthongsSection',
   components: {
     ContentSection,
     BengaWord,

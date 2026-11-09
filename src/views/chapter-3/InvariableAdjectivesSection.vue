@@ -129,7 +129,7 @@ import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.jso
 import BengaWord from '@/components/content/BengaWord.vue';
 
 export default {
-  name: 'IrregularAdjectivesSection',
+  name: 'InvariableAdjectivesSection',
   components: {
     BengaWord
   },
