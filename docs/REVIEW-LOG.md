@@ -18,6 +18,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 |
 | [R-008](#r-008) | 🔴 | Audit | Living Dictionary links may not open an entry | task 0.5 |
 | [R-009](#r-009) | 🔴 | 0.2 | Browser-support data is out of date (build warning) | task 0.6 or Phase 1 |
+| [R-010](#r-010) | 🔴 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
 
 ---
 
@@ -102,6 +103,15 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `package-lock.json`
 - **Doubt:** Harmless warning; it only affects which old browsers the build targets.
 - **Suggestion:** Run `npx update-browserslist-db@latest` in its own commit (`chore: update browserslist database`), or let Phase 1 handle it.
+- **Resolution:**
+
+### R-010
+**PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder**
+- **Status:** 🔴 Open
+- **Found in:** 0.4
+- **Where:** `href="/downloads/salvado-y-cos-gramatica-benga.pdf"` in `AppSidebar.vue:24`, `AppFooter.vue:38`, `AboutAuthor.vue:160`, `ResourcesPage.vue:28`
+- **Doubt:** The links work now. But the path starts with `/`, so it only works when the site is at the root of a domain. On e.g. GitHub Pages (`user.github.io/benga/`) it would 404. Renaming the file also means 4 edits.
+- **Suggestion:** In task 0.5, add `BOOK_PDF_URL = process.env.BASE_URL + 'downloads/salvado-y-cos-gramatica-benga.pdf'` to `src/config/external.js` and use it in all 4 places. (Minor: `AboutAuthor.vue:164` has a fallback text `|| 'Descargar PDF Completo'` that never shows; remove it then.)
 - **Resolution:**
 
 ---

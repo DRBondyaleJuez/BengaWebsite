@@ -38,7 +38,7 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - When a class has exceptions, add a dedicated `noun-class__exceptions` section styled with `.section-note` (and `.example-note` when a clarifying remark is needed), and include its BEM selector in the shared `&__examples, &__variants, &__exceptions` SCSS block so the cards look identical to the main ones.
 
 ### Source of Truth: Salvado y Cos Grammar
-- The authoritative text is `src/assets/sources/searchable_Lengua_benga_salvado_y_cos.pdf` (a searchable scan, so its text layer has OCR damage). Book page numbers are offset from PDF page numbers; map them before extracting:
+- The authoritative text is `public/downloads/salvado-y-cos-gramatica-benga.pdf` (a searchable scan, so its text layer has OCR damage; it is also the file visitors download from the site's "Descargar PDF" links). Book page numbers are offset from PDF page numbers; map them before extracting:
 
   | Noun class | Book pages | PDF pages | Component |
   |---|---|---|---|
@@ -109,21 +109,21 @@ Items marked `(planned)` do not exist yet.
 
 ```
 benga-grammar-website/
-├── public/
+├── public/                      # Copied as-is to the site root
 │   ├── index.html
-│   └── favicon.ico
+│   ├── favicon.ico
+│   └── downloads/
+│       └── salvado-y-cos-gramatica-benga.pdf   # Source of truth (see below) + public download
 ├── src/
 │   ├── main.js                  # App entry: Vue, router, vue-i18n, global styles
 │   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
 │   ├── router/
 │   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
 │   ├── assets/
-│   │   ├── images/
-│   │   │   ├── logo.png
-│   │   │   ├── salvado-y-cos-portrait.png
-│   │   │   └── equatorial-guinea-map.png
-│   │   └── sources/
-│   │       └── searchable_Lengua_benga_salvado_y_cos.pdf   # Source of truth (see below)
+│   │   └── images/
+│   │       ├── logo.png
+│   │       ├── salvado-y-cos-portrait.png
+│   │       └── equatorial-guinea-map.png
 │   ├── styles/                  # Imported in components as '@/styles/...'
 │   │   ├── main.scss            # Global styles & imports
 │   │   ├── _variables.scss      # Colors, fonts, spacing, breakpoints
