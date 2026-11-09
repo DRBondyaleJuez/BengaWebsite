@@ -144,32 +144,32 @@ docs/                  ROADMAP.md, WORKING-WITH-AI.md, CONTENT-GUIDE.md
 
 Branch: `chore/housekeeping`
 
-- [ ] **0.1 Put the AI rules back under version control**
+- [x] **0.1 Put the AI rules back under version control**
   - **Why:** P10. `AGENTS.md` is how every AI session learns your rules.
   - **Prompt:** "Task 0.1: restore `AGENTS.md` to the repo root from `context/AGENTS.md`, merge anything still useful from `instructions.md` into it, delete `instructions.md`, and update the project-structure section to match the real folders (`src/styles`, not `src/assets/styles`). Keep `context/` ignored for my private prompts."
   - **Commit:** `docs: restore AGENTS.md as the single source of AI instructions`
 
-- [ ] **0.2 Remove unused files**
+- [x] **0.2 Remove unused files**
   - **Why:** P11. Dead files confuse readers.
   - **Prompt:** "Task 0.2: find files not imported anywhere (start with `HelloWorld.vue`, `src/assets/logo.png`, the empty SCSS partials). Show me the list and why each is unused before deleting."
   - **Commit:** `chore: remove unused scaffold files`
 
-- [ ] **0.3 Rename misspelled view files**
+- [x] **0.3 Rename misspelled view files**
   - **Why:** P11. `IrregularAdjectivesSection` actually shows *invariable* adjectives.
   - **Prompt:** "Task 0.3: rename `DipthongsSection`→`DiphthongsSection`, `TripthongsSection`→`TriphthongsSection`, `ConsonantsSections`→`ConsonantsSection`, `IrregularAdjectivesSection`→`InvariableAdjectivesSection` using `git mv`, update router, component `name`s and AGENTS.md. URLs must not change."
   - **Commit:** `refactor: rename view files to match their content`
 
-- [ ] **0.4 Fix the PDF download**
+- [x] **0.4 Fix the PDF download**
   - **Why:** P9.
   - **Prompt:** "Task 0.4: make the 'Descargar PDF' link work. Move the PDF to `public/downloads/` (one copy only, keep git history with `git mv`), update every reference, and update AGENTS.md's source-of-truth path."
   - **Commit:** `fix(resources): serve the grammar PDF for download`
 
-- [ ] **0.5 One config file for external URLs**
+- [x] **0.5 One config file for external URLs**
   - **Why:** P7.
   - **Prompt:** "Task 0.5: create `src/config/external.js` exporting `CLOUDINARY_BASE`, `LIVING_DICTIONARY_BASE` and `BOOK_PDF_URL` (Cloudinary read from `.env` with a default). Replace the 14 copies in views and the one in `BengaWord.vue`. Also check in the browser whether a Living Dictionary link like `/benga/entry/epokolo` actually opens an entry, and tell me."
   - **Commit:** `refactor(config): centralise external URLs`
 
-- [ ] **0.6 Formatting rules**
+- [x] **0.6 Formatting rules**
   - **Why:** files mix `'` and `"`, `;` and no `;` — noisy diffs.
   - **Prompt:** "Task 0.6: add Prettier + `.editorconfig` matching the current majority style (single quotes, no semicolons), add `npm run format`, run it once in its own commit."
   - **Commit:** `chore: add prettier and format the codebase`
