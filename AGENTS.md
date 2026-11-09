@@ -3,6 +3,13 @@
 > Single source of instructions for AI assistants (Claude, Copilot) working on this repo.
 > Record every lasting project decision here so future sessions follow it.
 
+## Review Log (doubts and things to check)
+- Every doubt, suspected error or open decision found while working on a task goes into `docs/REVIEW-LOG.md`, not only into the chat. This includes content (OCR readings, accents, glosses), code (bugs noticed outside the task's scope) and decisions the developer must make.
+- Add an entry with the next free `R-0XX` id, using the template at the bottom of that file: **Found in** (roadmap task number), **Where** (file:line, page URL, book page), **Doubt**, **Suggestion**. Add a matching row to the Summary table with status 🔴.
+- Don't fix out-of-scope issues silently: log them and keep the current task's commit focused.
+- Before starting a task, check the log for open entries that the task's "Decide by" column points to. Raise them with the developer.
+- When an entry is resolved, set 🟢 (or ⚪) in both the entry and the Summary table, and fill in **Resolution** with the date, what was decided and the commit.
+
 ## Project Overview
 A Vue 2 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
 
