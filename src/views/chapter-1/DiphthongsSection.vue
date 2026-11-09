@@ -70,8 +70,7 @@
 import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import diphthongsData from '@/data/chapter-1/diphthongs.json'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/utils/dictionaryUrl'
 
 export default {
   name: 'DiphthongsSection',
@@ -85,9 +84,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   }
 }
 </script>

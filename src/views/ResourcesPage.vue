@@ -25,7 +25,7 @@
               La obra completa de 1891 en formato PDF. Este es el documento original que forma la base de todo este portal.
             </p>
             <a 
-              href="/downloads/salvado-y-cos-gramatica-benga.pdf"
+              :href="bookPdfUrl"
               class="resources__button"
               download
             >
@@ -57,7 +57,7 @@
               Puedes explorar palabras, escuchar pronunciaciones y aprender usos contextuales.
             </p>
             <a 
-              href="https://www.livingdictionaries.app/benga"
+              :href="livingDictionaryHome"
               target="_blank"
               rel="noopener noreferrer"
               class="resources__button resources__button--external"
@@ -280,8 +280,16 @@
 </template>
 
 <script>
+import { BOOK_PDF_URL, LIVING_DICTIONARY_HOME } from '@/config/external'
+
 export default {
   name: 'ResourcesPage',
+  data() {
+    return {
+      bookPdfUrl: BOOK_PDF_URL,
+      livingDictionaryHome: LIVING_DICTIONARY_HOME
+    }
+  },
   created() {
     document.title = 'Recursos - ' + this.$t('nav.resources')
   }

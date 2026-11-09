@@ -157,11 +157,11 @@
               Para complementar tu aprendizaje en el portal, puedes descargar la gramática original de Salvadó y Cos en formato PDF:
             </p>
             <a 
-              href="/downloads/salvado-y-cos-gramatica-benga.pdf"
+              :href="bookPdfUrl"
               class="about-author__download-button"
               download
             >
-              📄 {{ $t('nav.download') || 'Descargar PDF Completo' }}
+              📄 {{ $t('nav.download') }}
             </a>
           </div>
         </div>
@@ -189,7 +189,7 @@
               El Living Dictionary es un recurso comunitario que documenta lenguas en peligro. 
               Consulta las palabras Benga recopiladas por la comunidad de hablantes.
             </p>
-            <a href="https://www.livingdictionaries.app/benga" target="_blank" class="about-author__resource-link">
+            <a :href="livingDictionaryHome" target="_blank" rel="noopener noreferrer" class="about-author__resource-link">
               Visitar Living Dictionary →
             </a>
           </div>
@@ -230,12 +230,15 @@
 
 <script>
 import authorData from '@/data/author-info.json'
+import { BOOK_PDF_URL, LIVING_DICTIONARY_HOME } from '@/config/external'
 
 export default {
   name: 'AboutAuthor',
   data() {
     return {
-      authorData
+      authorData,
+      bookPdfUrl: BOOK_PDF_URL,
+      livingDictionaryHome: LIVING_DICTIONARY_HOME
     }
   },
   created() {

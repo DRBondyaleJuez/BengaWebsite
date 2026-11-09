@@ -63,6 +63,9 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - `c`, `q`, `r`, `x`, `z` and `ñ` are not consonants in benga. Any letter similar has to be another letter.
 - Accent marks are significant for pronunciation, so a wrong accent changes the taught word, not just its look.
 
+### External URLs
+- Never hard-code an external address (Cloudinary, Living Dictionary, the book PDF) in a component. Import it from `src/config/external.js`. For word links use `getDictionaryUrl(word)` from `src/utils/dictionaryUrl.js`; Living Dictionary has no per-word entry URL, so the link opens its search.
+
 ### Audio ID Convention
 - `audio` is a Cloudinary public id built as `${CLOUDINARY_BASE}/${audioId}.mp3`, so it must be URL-safe ASCII: take `word.toLowerCase()` and replace **every** non-ASCII letter with `_` + its plain letter + `_`.
 - Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`. Two adjacent accented vowels therefore produce a single underscore; that is expected, not a typo.
@@ -119,6 +122,10 @@ benga-grammar-website/
 │   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
 │   ├── router/
 │   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
+│   ├── config/
+│   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
+│   ├── utils/
+│   │   └── dictionaryUrl.js     # getDictionaryUrl(word) → Living Dictionary search link
 │   ├── assets/
 │   │   └── images/
 │   │       ├── logo.png

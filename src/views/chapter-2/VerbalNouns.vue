@@ -217,8 +217,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/utils/dictionaryUrl'
 
 export default {
   name: 'VerbalNouns',
@@ -289,9 +288,7 @@ export default {
     };
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${String(word).toLowerCase()}`
-    },
+    getDictionaryUrl,
     makeAudioId(word) {
       if (!word) return null
       let id = ''

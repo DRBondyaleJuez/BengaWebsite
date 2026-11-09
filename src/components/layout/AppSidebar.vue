@@ -21,7 +21,7 @@
 
       <div class="sidebar__footer">
         <a 
-          href="/downloads/salvado-y-cos-gramatica-benga.pdf"
+          :href="bookPdfUrl"
           class="sidebar__download"
           download
         >
@@ -37,6 +37,7 @@
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import ChapterNav from '@/components/navigation/ChapterNav.vue'
 import chaptersData from '@/data/chapters-index.json'
+import { BOOK_PDF_URL } from '@/config/external'
 
 export default {
   name: 'AppSidebar',
@@ -52,7 +53,8 @@ export default {
   },
   data() {
     return {
-      chapters: chaptersData.chapters
+      chapters: chaptersData.chapters,
+      bookPdfUrl: BOOK_PDF_URL
     }
   }
 }

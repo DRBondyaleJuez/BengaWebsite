@@ -137,8 +137,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/utils/dictionaryUrl'
 
 export default {
   name: 'NounClass3',
@@ -296,9 +295,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   },
   created() {
     document.title = 'Tercera Clase Nominal | Portal Benga'

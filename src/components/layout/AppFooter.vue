@@ -35,7 +35,7 @@
             </li>
             <li>
               <a 
-                href="/downloads/salvado-y-cos-gramatica-benga.pdf"
+                :href="bookPdfUrl"
                 class="footer__link"
                 download
               >
@@ -136,11 +136,14 @@
 </template>
 
 <script>
+import { BOOK_PDF_URL } from '@/config/external'
+
 export default {
   name: 'AppFooter',
   data() {
     return {
-      currentYear: new Date().getFullYear()
+      currentYear: new Date().getFullYear(),
+      bookPdfUrl: BOOK_PDF_URL
     }
   }
 }

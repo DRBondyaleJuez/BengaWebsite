@@ -113,8 +113,7 @@ import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import consonantsData from '@/data/chapter-1/consonants.json'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/utils/dictionaryUrl'
 
 export default {
   name: 'ConsonantsSection',
@@ -129,9 +128,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   }
 }
 </script>

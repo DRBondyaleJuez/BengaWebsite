@@ -16,9 +16,11 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-005](#r-005) | 🔴 | 0.2 | Unused chapter-2 JSON files kept | task 2.4.3 |
 | [R-006](#r-006) | 🔴 | 0.2 | `ExampleTable.vue` is not used by any page | task 3.3 |
 | [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 |
-| [R-008](#r-008) | 🔴 | Audit | Living Dictionary links may not open an entry | task 0.5 |
+| [R-008](#r-008) | 🟢 | Audit | Living Dictionary links may not open an entry | task 0.5 |
 | [R-009](#r-009) | 🔴 | 0.2 | Browser-support data is out of date (build warning) | task 0.6 or Phase 1 |
-| [R-010](#r-010) | 🔴 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
+| [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
+| [R-011](#r-011) | 🔴 | 0.5 | No audio file is found on Cloudinary — every play button fails | Phase 5 (or sooner) |
+| [R-012](#r-012) | 🔴 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | task 2.2 |
 
 ---
 
@@ -89,12 +91,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-008
 **Living Dictionary links may not open an entry**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** Audit
 - **Where:** `getDictionaryUrl()` in chapter-2 views → `https://livingdictionaries.app/benga/entry/<word>`
 - **Doubt:** Living Dictionaries usually identifies entries by an internal id, not by the word, so these links may lead to a "not found" page.
 - **Suggestion:** Test a few links in task 0.5. If they fail, link to the dictionary's search instead, or hide the icon.
-- **Resolution:**
+- **Resolution:** 2026-11-09 · Confirmed: `/benga/entry/epokolo` shows "This entry doesn't exist" (404). All word links now open the dictionary's search with the word typed in (`/benga/entries?q={"query":"epokolo"}`), built by `getDictionaryUrl()` in `src/utils/dictionaryUrl.js`. Note: the online Benga dictionary has very few entries so far, so most searches show "No matching entries" — but no more 404s. · commit `refactor(config): centralise external URLs`
 
 ### R-009
 **Browser-support data is out of date**
@@ -107,11 +109,29 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-010
 **PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.4
 - **Where:** `href="/downloads/salvado-y-cos-gramatica-benga.pdf"` in `AppSidebar.vue:24`, `AppFooter.vue:38`, `AboutAuthor.vue:160`, `ResourcesPage.vue:28`
 - **Doubt:** The links work now. But the path starts with `/`, so it only works when the site is at the root of a domain. On e.g. GitHub Pages (`user.github.io/benga/`) it would 404. Renaming the file also means 4 edits.
 - **Suggestion:** In task 0.5, add `BOOK_PDF_URL = process.env.BASE_URL + 'downloads/salvado-y-cos-gramatica-benga.pdf'` to `src/config/external.js` and use it in all 4 places. (Minor: `AboutAuthor.vue:164` has a fallback text `|| 'Descargar PDF Completo'` that never shows; remove it then.)
+- **Resolution:** 2026-11-09 · Done as suggested: `BOOK_PDF_URL` in `src/config/external.js` (uses `BASE_URL`), used by all 4 links; dead fallback text removed. · commit `refactor(config): centralise external URLs`
+
+### R-011
+**No audio file is found on Cloudinary — every play button fails**
+- **Status:** 🔴 Open
+- **Found in:** 0.5 (clicking the first play button on `/capitulo-2/clase-1`)
+- **Where:** `CLOUDINARY_BASE` in `src/config/external.js` · Cloudinary account `dp5rofjyx`
+- **Doubt:** `…/video/upload/v1780354084/ejanganangobo.mp3` returns 404. So do `epokolo`, `en_a_`, `ek_a_i`, `bobe`, `a`, with or without the `v1780354084` version and with or without a `benga-audio/` folder. Either no recordings are uploaded yet, or they are stored under other names, folders or resource types. This was already the case before task 0.5 (same URL).
+- **Suggestion:** Open the Cloudinary Media Library and check one uploaded file's real URL (folder, `video` vs `raw`, file name). Then either fix `CLOUDINARY_BASE` (one line now) or plan uploads in Phase 5. Until then the site shows buttons that don't play; task 3.1 (audio manifest) will hide them for missing files.
+- **Resolution:**
+
+### R-012
+**`VerbalNouns.vue` builds audio ids with its own function**
+- **Status:** 🔴 Open
+- **Found in:** 0.5
+- **Where:** `makeAudioId()` in `src/views/chapter-2/VerbalNouns.vue` (methods)
+- **Doubt:** It's a second, private copy of the audio-id rule. It may differ from the AGENTS.md rule (e.g. adjacent accented vowels, multi-word forms).
+- **Suggestion:** In task 2.2, replace it with the shared `toAudioId()` and compare the ids it produced for every verbal noun.
 - **Resolution:**
 
 ---

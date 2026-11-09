@@ -48,9 +48,7 @@
 
 <script>
 import BaseIcon from '@/components/common/BaseIcon.vue'
-
-//const CLOUDINARY_BASE = '[res.cloudinary.com](https://res.cloudinary.com/YOUR_CLOUD_NAME/video/upload)'
-const CLOUDINARY_BASE = 'https://res.cloudinary.com/dp5rofjyx/video/upload/v1780354084'
+import { CLOUDINARY_BASE } from '@/config/external'
 
 export default {
   name: 'BengaWord',
@@ -97,7 +95,6 @@ export default {
   computed: {
     audioSrc() {
       if (!this.audioId) return null
-      //return `${CLOUDINARY_BASE}/benga-audio/${this.audioId}.mp3`
       return `${CLOUDINARY_BASE}/${this.audioId}.mp3`
     },
     wordParts() {

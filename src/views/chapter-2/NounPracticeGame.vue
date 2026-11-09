@@ -169,8 +169,8 @@
 <script>
 import BengaWord from "@/components/content/BengaWord.vue";
 import deckData from "@/data/chapter-2/noun-practice-deck.json";
+import { getDictionaryUrl } from "@/utils/dictionaryUrl";
 
-const LIVING_DICTIONARY_BASE = "https://livingdictionaries.app/benga/entry";
 const MOBILE_BREAKPOINT = 768;
 
 function shuffle(array) {
@@ -225,9 +225,7 @@ export default {
     },
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`;
-    },
+    getDictionaryUrl,
     buildDeck() {
       return deckData.map((item, index) => ({
         id: index + 1,
