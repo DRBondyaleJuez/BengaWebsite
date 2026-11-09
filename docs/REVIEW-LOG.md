@@ -67,7 +67,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Status:** 🔴 Open
 - **Found in:** 0.2
 - **Where:** `src/data/chapter-2/class-1.json … class-7.json`, `nouns-intro.json`, `irregular-nouns.json`, `verbal-nouns.json`
-- **Doubt:** No page imports them. `class-N.json` has known wrong glosses. Do any of them hold text that isn't in the `.vue` pages, such as extra notes or examples?
+- **Doubt:** No page imports them. `class-N.json` has known wrong glosses, and `class-1.json` is not even valid JSON (missing `,` after line 131; found in 0.6, so it's listed in `.prettierignore` until deleted). Do any of them hold text that isn't in the `.vue` pages, such as extra notes or examples?
 - **Suggestion:** In task 2.4, compare them with the pages and keep anything useful, then delete them in 2.4.3.
 - **Resolution:**
 

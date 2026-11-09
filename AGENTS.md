@@ -92,6 +92,11 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - **SCSS**: kebab-case partials with underscore prefix (e.g., `_variables.scss`)
 - **Data files**: kebab-case JSON (e.g., `chapter-1-alphabet.json`)
 
+### Code Formatting
+- Formatting is automatic: Prettier (`.prettierrc.json`) with single quotes, no semicolons, no trailing commas, 100-character lines. Run `npm run format` before committing; `npm run format:check` only reports.
+- Markdown files, `public/`, and files listed in `.prettierignore` are not formatted.
+- Keep formatting-only changes in their own commit (`style: ...`) so content and logic changes stay easy to review.
+
 ### SCSS Guidelines
 ```scss
 // Use BEM naming
@@ -189,7 +194,9 @@ benga-grammar-website/
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
 ├── context/                     # Git-ignored: private prompts, roadmap and notes
-├── package.json                 # Also holds the ESLint config (no .eslintrc.js)
+├── package.json                 # Scripts (serve, build, lint, format) + ESLint config (no .eslintrc.js)
+├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
+├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
 ├── vue.config.js
 ├── babel.config.js

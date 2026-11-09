@@ -1,0 +1,16 @@
+# Generated or third-party files
+node_modules/
+dist/
+package-lock.json
+
+# Copied as-is to the site (PDF, favicon, index.html template)
+public/
+
+# Private notes (git-ignored)
+context/
+
+# Hand-written docs: keep their layout exactly as authored
+*.md
+
+# Invalid JSON, not imported anywhere; deleted in task 2.4.3 (see docs/REVIEW-LOG.md R-005)
+src/data/chapter-2/class-1.json
