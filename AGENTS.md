@@ -111,7 +111,6 @@ benga-grammar-website/
 │   ├── router/
 │   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
 │   ├── assets/
-│   │   ├── logo.png             # Unused scaffold leftover (TODO task 0.2: remove)
 │   │   ├── images/
 │   │   │   ├── logo.png
 │   │   │   ├── salvado-y-cos-portrait.png
@@ -121,11 +120,7 @@ benga-grammar-website/
 │   ├── styles/                  # Imported in components as '@/styles/...'
 │   │   ├── main.scss            # Global styles & imports
 │   │   ├── _variables.scss      # Colors, fonts, spacing, breakpoints
-│   │   ├── _mixins.scss         # respond-below, flex-center, focus-ring, benga-word-style...
-│   │   ├── _typography.scss     # Empty (TODO task 0.2: fill or remove)
-│   │   ├── _reset.scss          # Empty (TODO task 0.2: fill or remove)
-│   │   ├── _layout.scss         # Empty (TODO task 0.2: fill or remove)
-│   │   └── _components.scss     # Empty (TODO task 0.2: fill or remove)
+│   │   └── _mixins.scss         # respond-below, flex-center, focus-ring, benga-word-style...
 │   ├── locales/                 # UI strings only
 │   │   ├── es.json              # Spanish (primary)
 │   │   ├── en.json              # English (only nav/app keys so far)
@@ -136,12 +131,11 @@ benga-grammar-website/
 │   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
 │   │   ├── chapter-2/
 │   │   │   ├── class-1.json … class-7.json   # STALE, not imported (see Source of Truth)
-│   │   │   ├── nouns-intro.json, irregular-nouns.json, verbal-nouns.json
+│   │   │   ├── nouns-intro.json, irregular-nouns.json, verbal-nouns.json   # Not imported either; keep for Phase 2 cross-checks
 │   │   │   └── noun-practice-deck.json       # Deck used by NounPracticeGame.vue
 │   │   └── chapter-3/           # adjectives-intro, regular-adjectives, invariable-adjectives,
 │   │                            # comparatives-superlatives, numerals-ordinals (.json)
 │   ├── components/
-│   │   ├── HelloWorld.vue       # Unused scaffold leftover (TODO task 0.2: remove)
 │   │   ├── common/
 │   │   │   └── BaseIcon.vue     # Inline SVG icons by name
 │   │   ├── layout/
@@ -154,7 +148,7 @@ benga-grammar-website/
 │   │   ├── content/
 │   │   │   ├── BengaWord.vue    # Benga word + audio button + dictionary link + highlight
 │   │   │   ├── ContentSection.vue
-│   │   │   └── ExampleTable.vue
+│   │   │   └── ExampleTable.vue # Not used by any page yet; kept as a planned building block
 │   │   └── interactive/         # (planned) QuizCard, FlashCard...
 │   └── views/
 │       ├── HomePage.vue
