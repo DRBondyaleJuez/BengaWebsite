@@ -1,4 +1,7 @@
-# instructions.md - Benga Language Learning Portal
+# AGENTS.md - Benga Language Learning Portal
+
+> Single source of instructions for AI assistants (Claude, Copilot) working on this repo.
+> Record every lasting project decision here so future sessions follow it.
 
 ## Project Overview
 A Vue 2 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
@@ -94,90 +97,98 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 ```
 
 ## Project Structure
-benga-learning-portal/
+Real layout of the repo (keep this tree up to date when files are added, moved or removed).
+Items marked `(planned)` do not exist yet.
+
+```
+benga-grammar-website/
 ├── public/
 │   ├── index.html
-│   ├── favicon.ico
-│   └── downloads/
-│       └── salvado-y-cos-gramatica-benga.pdf
+│   └── favicon.ico
 ├── src/
-│   ├── main.js                  # App entry point
-│   ├── App.vue                  # Main application wrapper
+│   ├── main.js                  # App entry: Vue, router, vue-i18n, global styles
+│   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
 │   ├── router/
-│   │   └── index.js             # Route definitions
+│   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
 │   ├── assets/
+│   │   ├── logo.png             # Unused scaffold leftover (TODO task 0.2: remove)
 │   │   ├── images/
 │   │   │   ├── logo.png
-│   │   │   ├── salvado-y-cos-portrait.jpg
+│   │   │   ├── salvado-y-cos-portrait.png
 │   │   │   └── equatorial-guinea-map.png
-│   │   ├── icons/
-│   │   │   ├── audio-play.svg
-│   │   │   ├── audio-pause.svg
-│   │   │   └── external-link.svg
-│   │   └── styles/
-│   │       ├── main.scss        # Global styles & imports
-│   │       ├── _variables.scss  # Colors, fonts, spacing
-│   │       ├── _mixins.scss     # Reusable SCSS logic
-│   │       ├── _typography.scss # Font rules
-│   │       ├── _reset.scss      # CSS normalization
-│   │       ├── _layout.scss     # Grid & containers
-│   │       └── _components.scss # Shared element styles
-│   ├── locales/
-│   │   ├── es.json              # Spanish (Primary)
-│   │   ├── en.json              # English
-│   │   └── fr.json              # French
+│   │   └── sources/
+│   │       └── searchable_Lengua_benga_salvado_y_cos.pdf   # Source of truth (see below)
+│   ├── styles/                  # Imported in components as '@/styles/...'
+│   │   ├── main.scss            # Global styles & imports
+│   │   ├── _variables.scss      # Colors, fonts, spacing, breakpoints
+│   │   ├── _mixins.scss         # respond-below, flex-center, focus-ring, benga-word-style...
+│   │   ├── _typography.scss     # Empty (TODO task 0.2: fill or remove)
+│   │   ├── _reset.scss          # Empty (TODO task 0.2: fill or remove)
+│   │   ├── _layout.scss         # Empty (TODO task 0.2: fill or remove)
+│   │   └── _components.scss     # Empty (TODO task 0.2: fill or remove)
+│   ├── locales/                 # UI strings only
+│   │   ├── es.json              # Spanish (primary)
+│   │   ├── en.json              # English (only nav/app keys so far)
+│   │   └── fr.json              # French (only nav/app keys so far)
 │   ├── data/
-│   │   ├── chapters-index.json  # Metadata for sidebar/navigation
-│   │   ├── chapter-1/
-│   │   │   ├── alphabet.json
-│   │   │   ├── vowels.json
-│   │   │   └── ...consonants.json
+│   │   ├── chapters-index.json  # Sidebar/navigation metadata
+│   │   ├── author-info.json     # AboutAuthor page content
+│   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
 │   │   ├── chapter-2/
-│   │   │   ├── nouns-intro.json
-│   │   │   ├── class-1.json to class-7.json
-│   │   │   └── verbal-nouns.json
-│   │   └── vocabulary/
-│   │       └── master-wordlist.json
+│   │   │   ├── class-1.json … class-7.json   # STALE, not imported (see Source of Truth)
+│   │   │   ├── nouns-intro.json, irregular-nouns.json, verbal-nouns.json
+│   │   │   └── noun-practice-deck.json       # Deck used by NounPracticeGame.vue
+│   │   └── chapter-3/           # adjectives-intro, regular-adjectives, invariable-adjectives,
+│   │                            # comparatives-superlatives, numerals-ordinals (.json)
 │   ├── components/
-│   │   ├── common/              # Atomic UI components
-│   │   │   ├── BaseButton.vue
-│   │   │   ├── BaseCard.vue
-│   │   │   └── BaseIcon.vue
-│   │   ├── layout/              # Structural components
+│   │   ├── HelloWorld.vue       # Unused scaffold leftover (TODO task 0.2: remove)
+│   │   ├── common/
+│   │   │   └── BaseIcon.vue     # Inline SVG icons by name
+│   │   ├── layout/
 │   │   │   ├── AppHeader.vue
 │   │   │   ├── AppFooter.vue
-│   │   │   ├── AppSidebar.vue
-│   │   │   └── PageLayout.vue
-│   │   ├── navigation/          # Navigation logic
+│   │   │   └── AppSidebar.vue
+│   │   ├── navigation/
 │   │   │   ├── ChapterNav.vue
-│   │   │   ├── SectionNav.vue
 │   │   │   └── LanguageSwitcher.vue
-│   │   ├── content/             # Didactic components
-│   │   │   ├── BengaWord.vue    # Audio + Dictionary trigger
-│   │   │   ├── AudioPlayer.vue
-│   │   │   ├── ExampleTable.vue
-│   │   │   └── NounClassCard.vue
-│   │   └── interactive/         # Exercises
-│   │       ├── QuizCard.vue
-│   │       └── FlashCard.vue
-│   └── views/                   # Full page components
+│   │   ├── content/
+│   │   │   ├── BengaWord.vue    # Benga word + audio button + dictionary link + highlight
+│   │   │   ├── ContentSection.vue
+│   │   │   └── ExampleTable.vue
+│   │   └── interactive/         # (planned) QuizCard, FlashCard...
+│   └── views/
 │       ├── HomePage.vue
 │       ├── AboutAuthor.vue
-│       ├── Resources.vue
+│       ├── ResourcesPage.vue
 │       ├── chapter-1/
 │       │   ├── ChapterOneIndex.vue
-│       │   └── AlphabetSection.vue
+│       │   ├── AlphabetSection.vue
+│       │   ├── DipthongsSection.vue      # TODO task 0.3: rename DiphthongsSection
+│       │   ├── TripthongsSection.vue     # TODO task 0.3: rename TriphthongsSection
+│       │   └── ConsonantsSections.vue    # TODO task 0.3: rename ConsonantsSection
 │       ├── chapter-2/
 │       │   ├── ChapterTwoIndex.vue
-│       │   └── NounClass1.vue
+│       │   ├── NounsIntro.vue
+│       │   ├── NounClass1.vue … NounClass7.vue   # Content lives in each data() block
+│       │   ├── IrregularNouns.vue
+│       │   ├── VerbalNouns.vue
+│       │   └── NounPracticeGame.vue
 │       └── chapter-3/
-│           └── ChapterThreeIndex.vue
-├── package.json
+│           ├── ChapterThreeIndex.vue
+│           ├── AdjectivesIntro.vue
+│           ├── RegularAdjectivesSection.vue
+│           ├── IrregularAdjectivesSection.vue    # Shows INVARIABLE adjectives (TODO task 0.3: rename)
+│           ├── ComparativesSuperlativesSection.vue
+│           └── NumeralOrdinalAdjectivesSection.vue
+├── context/                     # Git-ignored: private prompts, roadmap and notes
+├── package.json                 # Also holds the ESLint config (no .eslintrc.js)
+├── package-lock.json
 ├── vue.config.js
 ├── babel.config.js
-├── .eslintrc.js
+├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md
-└── instructions.md              # Instructions for Copilot/AI
+└── AGENTS.md                    # This file
+```
 
 ## 3. Implementation Plan
 ### Phase 1: Foundation (Week 1)
