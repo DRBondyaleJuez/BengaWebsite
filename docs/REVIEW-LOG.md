@@ -17,7 +17,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-006](#r-006) | 🟢 | 0.2 | `ExampleTable.vue` is not used by any page | done |
 | [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 (verbs) |
 | [R-008](#r-008) | 🟢 | Audit | Living Dictionary links may not open an entry | task 0.5 |
-| [R-009](#r-009) | 🔴 | 0.2 | Browser-support data is out of date (build warning) | task 0.6 or Phase 1 |
+| [R-009](#r-009) | 🟢 | 0.2 | Browser-support data is out of date (build warning) | done |
 | [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
 | [R-011](#r-011) | 🔴 | 0.5 | No audio file is found on Cloudinary — every play button fails | Phase 5 (or sooner) |
 | [R-012](#r-012) | 🔴 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | task 2.2 |
@@ -100,12 +100,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-009
 **Browser-support data is out of date**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.2 (lint/build output: "caniuse-lite is 7 months old")
 - **Where:** `package-lock.json`
 - **Doubt:** Harmless warning; it only affects which old browsers the build targets.
 - **Suggestion:** Run `npx update-browserslist-db@latest` in its own commit (`chore: update browserslist database`), or let Phase 1 handle it.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Ran `npx update-browserslist-db@latest`: only `package-lock.json` changed, "No target browser changes", and the build warning is gone. · commit `chore: update browserslist database`
 
 ### R-010
 **PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder**
