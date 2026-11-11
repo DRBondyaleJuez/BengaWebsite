@@ -8,7 +8,10 @@
     "lint": "vue-cli-service lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"scripts/tests/**/*.test.mjs\""
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"scripts/tests/**/*.test.mjs\"",
+    "words:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs",
+    "words:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs --check",
+    "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs"
   },
   "dependencies": {
     "core-js": "^3.8.3",
