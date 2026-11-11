@@ -166,8 +166,7 @@ benga-grammar-website/
 │   │   │   └── LanguageSwitcher.vue
 │   │   ├── content/
 │   │   │   ├── BengaWord.vue    # Benga word + audio button + dictionary link + highlight
-│   │   │   ├── ContentSection.vue
-│   │   │   └── ExampleTable.vue # Not used by any page yet; kept as a planned building block
+│   │   │   └── ContentSection.vue
 │   │   └── interactive/         # (planned) QuizCard, FlashCard...
 │   └── views/
 │       ├── HomePage.vue
@@ -205,94 +204,20 @@ benga-grammar-website/
 └── AGENTS.md                    # This file
 ```
 
-## 3. Implementation Plan
-### Phase 1: Foundation (Week 1)
-**Goal**: Project scaffolding, core infrastructure
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Initialize Vue 2 project | `package.json`, config files | P0 |
-| Set up SCSS architecture | All `_*.scss` files | P0 |
-| Configure vue-router | `router/index.js` | P0 |
-| Configure vue-i18n | `locales/*.json` | P0 |
-| Create layout components | `PageLayout`, `AppHeader`, `AppFooter`, `AppSidebar` | P0 |
-| Create navigation components | `ChapterNav`, `LanguageSwitcher` | P0 |
-### Phase 2: Core Components (Week 2)
-**Goal**: Reusable components for linguistic content
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| BengaWord component | `BengaWord.vue` | P0 |
-| AudioPlayer component | `AudioPlayer.vue` | P0 |
-| ExampleTable component | `ExampleTable.vue` | P0 |
-| ContentSection component | `ContentSection.vue` | P0 |
-| Base UI components | `BaseButton`, `BaseCard`, `BaseIcon` | P1 |
-### Phase 3: Chapter 1 Content (Week 3)
-**Goal**: Complete first chapter as template
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Structure chapter 1 data | `data/chapter-1/*.json` | P0 |
-| Alphabet section view | `AlphabetSection.vue` | P0 |
-| Diphthongs section view | `DiphthongsSection.vue` | P1 |
-| Consonants section view | `ConsonantsSection.vue` | P1 |
-| VowelChart interactive | `VowelChart.vue` | P2 |
-### Phase 4: Chapter 2 Content (Week 4)
-**Goal**: Noun classification system
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Structure chapter 2 data | `data/chapter-2/*.json` | P0 |
-| NounClassCard component | `NounClassCard.vue` | P0 |
-| All 7 noun class views | `NounClass1-7.vue` | P0 |
-| Irregular nouns view | `IrregularNouns.vue` | P1 |
-| Verbal nouns view | `VerbalNouns.vue` | P1 |
-| Noun practice game (interactive cards) | `NounPracticeGame.vue` | P1 |
-### Phase 5: Supporting Pages (Week 5)
-**Goal**: Non-chapter content
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Home page | `HomePage.vue` | P0 |
-| About author page | `AboutAuthor.vue` | P0 |
-| Resources page | `Resources.vue` | P1 |
-| Chapter index pages | `ChapterOneIndex.vue`, etc. | P1 |
-### Phase 6: Polish & Audio (Week 6)
-**Goal**: Media integration, refinement
-| Task | Priority |
-|------|----------|
-| Integrate Cloudinary audio | P0 |
-| Add sample audio files | P0 |
-| Mobile responsiveness | P0 |
-| Accessibility audit | P1 |
-| Performance optimization | P1 |
-### Future Phases (Post-MVP)
-- Chapters 3-10 content
-- Interactive exercises
-- Community audio contributions
-- French and English translations
-- Search functionality
----
-## 4. Key Implementation Files
-### 4.1 `package.json`
-```json
-{
-  "name": "benga-learning-portal",
-  "version": "1.0.0",
-  "description": "Interactive Benga language learning platform based on Salvado y Cos",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "vue": "^2.7.14",
-    "vue-router": "^3.6.5",
-    "vue-i18n": "^8.28.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-plugin-router": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "eslint": "^8.54.0",
-    "eslint-plugin-vue": "^9.18.1"
-  }
-}
+## Roadmap and Workflow
+- **The plan:** `docs/ROADMAP.md` lists every phase, task and subtask with a prompt and a commit name. Tick a task's box when it is committed. This replaces the old week-by-week plan.
+- **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
+- **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
+- **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.
+- **Versions:** `package.json` is the source of truth for dependencies. The Vue 2 → Vue 3 upgrade is roadmap Phase 1.
+
+### Planned pieces from the original plan (not built yet)
+Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.
+- `PageLayout`, `SectionNav`, `BaseButton`, `BaseCard` → reusable blocks [Phase 3]
+- `AudioPlayer` → shared audio player service [task 3.1]
+- `NounClassCard` → generic noun-class page [task 3.4]
+- `QuizCard`, `FlashCard` (`components/interactive/`) → exercise engine [Phase 8]
+- `VowelChart` interactive vowel chart for chapter 1 [Phase 8]
+- SVG icon files `audio-play.svg`, `audio-pause.svg`, `external-link.svg` (icons are currently inline in `BaseIcon.vue`) [Phase 3, optional]
+- `data/vocabulary/master-wordlist.json` → now `src/data/lexicon/word-registry.json`, extended into the full lexicon in [Phase 2]
+- `data/chapter-1/vowels.json` (vowel data separate from the alphabet) [Phase 2]

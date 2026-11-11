@@ -10,12 +10,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | ID | Status | Found in | Topic | Decide by |
 |----|--------|----------|-------|-----------|
 | [R-001](#r-001) | 🔴 | 0.3 | Diphthong `ūa` listed twice (one is probably `ūâ`) | any time |
-| [R-002](#r-002) | 🔴 | 0.1 | `context/AGENTS.md` is an old duplicate | any time |
-| [R-003](#r-003) | 🔴 | 0.1 | Rest of AGENTS.md is out of date | task 1.4 |
-| [R-004](#r-004) | 🔴 | Roadmap | Roadmap lives in git-ignored `context/` | any time |
-| [R-005](#r-005) | 🔴 | 0.2 | Unused chapter-2 JSON files kept | task 2.4.3 |
-| [R-006](#r-006) | 🔴 | 0.2 | `ExampleTable.vue` is not used by any page | task 3.3 |
-| [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 |
+| [R-002](#r-002) | 🟢 | 0.1 | `context/AGENTS.md` is an old duplicate | any time |
+| [R-003](#r-003) | 🟢 | 0.1 | Rest of AGENTS.md is out of date | done |
+| [R-004](#r-004) | 🟢 | Roadmap | Roadmap lives in git-ignored `context/` | any time |
+| [R-005](#r-005) | 🔴 | 0.2 | Unused chapter-2 JSON files kept | Phase 4 (i18n) |
+| [R-006](#r-006) | 🟢 | 0.2 | `ExampleTable.vue` is not used by any page | done |
+| [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 (verbs) |
 | [R-008](#r-008) | 🟢 | Audit | Living Dictionary links may not open an entry | task 0.5 |
 | [R-009](#r-009) | 🔴 | 0.2 | Browser-support data is out of date (build warning) | task 0.6 or Phase 1 |
 | [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
@@ -37,30 +37,30 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-002
 **`context/AGENTS.md` is an old duplicate**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.1
 - **Where:** `context/AGENTS.md` vs `AGENTS.md` (root)
 - **Doubt:** The root file is now the real one and has newer edits. Two copies will drift apart.
 - **Suggestion:** Delete `context/AGENTS.md`.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Deleted `context/AGENTS.md` after comparing it line by line with the root file: the only extra content was the original planned folder tree, now kept in AGENTS.md → "Planned pieces from the original plan". · commit `docs: apply review-log decisions R-002 to R-007`
 
 ### R-003
 **Rest of AGENTS.md is out of date**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.1
 - **Where:** `AGENTS.md` → "Tech Stack", "3. Implementation Plan", "4. Key Implementation Files"
 - **Doubt:** These sections describe the old week-by-week plan and a sample `package.json` that differs from the real one. An AI may follow them instead of the roadmap.
 - **Suggestion:** In task 1.4, replace them with the real tech stack and a short pointer to the roadmap.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Replaced "3. Implementation Plan" and "4. Key Implementation Files" with a short "Roadmap and Workflow" section that points to docs/ROADMAP.md, plus the list of planned pieces. The Vue version line stays until Phase 1 (task 1.4). · commit `docs: apply review-log decisions R-002 to R-007`
 
 ### R-004
 **The roadmap lives in git-ignored `context/`**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** Roadmap (after the files were moved)
 - **Where:** `context/ROADMAP.md`, `context/WORKING-WITH-AI.md`
 - **Doubt:** Git doesn't track these files, so there's no history or backup. The roadmap prompts also say `docs/ROADMAP.md`.
 - **Suggestion:** Either move them back to `docs/` (tracked, so the checkboxes are saved), or keep them private and say "read context/ROADMAP.md" when starting a task.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · The developer moved ROADMAP.md and WORKING-WITH-AI.md back to `docs/` (tracked by git). · no code change
 
 ### R-005
 **Unused chapter-2 JSON files kept**
@@ -69,16 +69,16 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `src/data/chapter-2/class-1.json … class-7.json`, `nouns-intro.json`, `irregular-nouns.json`, `verbal-nouns.json`
 - **Doubt:** No page imports them. `class-N.json` has known wrong glosses, and `class-1.json` is not even valid JSON (missing `,` after line 131; found in 0.6, so it's listed in `.prettierignore` until deleted). Do any of them hold text that isn't in the `.vue` pages, such as extra notes or examples?
 - **Suggestion:** In task 2.4, compare them with the pages and keep anything useful, then delete them in 2.4.3.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Developer: keep them for now; clean them up when the site becomes multilingual (Phase 4), since they contain `es/en/fr` text that may help. Still open.
 
 ### R-006
 **`ExampleTable.vue` is not used by any page**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.2
 - **Where:** `src/components/content/ExampleTable.vue`
 - **Doubt:** It was kept as a future building block, but it might not fit the new blocks design.
 - **Suggestion:** Decide in task 3.3: reuse it as the table block, or delete it.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Developer: it was only a personal template. Deleted `src/components/content/ExampleTable.vue`. · commit `chore: remove ExampleTable template component`
 
 ### R-007
 **Verb names in Phase 6 come from damaged OCR**
@@ -87,7 +87,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** ROADMAP Phase 6, rows 6.6 and 6.7: *kalaka, tandaka, yenika, vomuabidi, valaka, vaka, paka, yalaka*
 - **Doubt:** The table of contents OCR reads e.g. `Tánddká`, `Yénik2`, `Vomualbidi`. The exact spelling and accents are unknown.
 - **Suggestion:** Check each one against its chapter page when starting that Phase 6 task.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Developer hasn't reviewed the verbs chapters yet; check the spellings together when Phase 6 reaches chapters 5–8. Still open.
 
 ### R-008
 **Living Dictionary links may not open an entry**

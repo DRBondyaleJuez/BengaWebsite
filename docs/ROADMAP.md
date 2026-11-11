@@ -235,7 +235,7 @@ Branch: `refactor/content-model`. This is the most important phase.
   - Subtasks (one commit each so you can review class by class):
     - [ ] 2.4.1 Script `scripts/extract-ch2.js` that reads `NounClass1-7.vue`, `IrregularNouns.vue`, `VerbalNouns.vue` data and writes `lexicon/nouns.json` — **Commit:** `feat(scripts): extract chapter-2 nouns from views`
     - [ ] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
-    - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files`
+    - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(postponed to Phase 4: the developer wants to keep them until the site is multilingual, see REVIEW-LOG R-005)*
   - **Prompt:** "Task 2.4.x: (see subtask). Never invent a headword; mark unreadable OCR with `meaning: null` and an editorial note."
 
 - [ ] **2.5 Practice deck built from the lexicon**
@@ -392,6 +392,8 @@ Branch: `feat/interactive`
   - **Commit:** `feat(search): add site-wide search`
 - [ ] **8.6 Printable worksheets** (print CSS).
   - **Commit:** `feat(print): add printable worksheet styles`
+- [ ] **8.7 Interactive vowel chart** for chapter 1 (click a vowel, hear it, see example words) — from the original plan.
+  - **Commit:** `feat(ch1): add interactive vowel chart`
 
 ---
 
