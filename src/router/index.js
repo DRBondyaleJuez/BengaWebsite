@@ -143,6 +143,17 @@ const routes = [
       }
     ]
   },
+  // Developer tools: these routes exist ONLY while running `npm run serve`.
+  // In `npm run build` the condition is false, so the pages are not even included in the site.
+  ...(process.env.NODE_ENV === 'development'
+    ? [
+        {
+          path: '/admin/palabras',
+          name: 'WordRegistryAdmin',
+          component: () => import('@/views/admin/WordRegistryAdmin.vue')
+        }
+      ]
+    : []),
   // Catch-all redirect
   {
     path: '*',
