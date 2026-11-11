@@ -8,7 +8,7 @@
  │  3. paste the task Prompt from ROADMAP.md
  │  4. Claude explains the plan  ── you say "ok" or "change X"
  │  5. Claude codes
- │  6. you check: npm run lint · npm run validate · open the page
+ │  6. you check: npm run lint · npm test · npm run words:check · open the page
  │  7. ask "explain this diff simply" if anything is unclear
  │  8. commit with the Commit name from ROADMAP.md, tick the box
  └─ back to 1

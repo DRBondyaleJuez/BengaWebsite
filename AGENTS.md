@@ -64,24 +64,34 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - Accent marks are significant for pronunciation, so a wrong accent changes the taught word, not just its look.
 
 ### External URLs
-- Never hard-code an external address (Cloudinary, Living Dictionary, the book PDF) in a component. Import it from `src/config/external.js`. For word links use `getDictionaryUrl(word)` from `src/utils/dictionaryUrl.js`; Living Dictionary has no per-word entry URL, so the link opens its search.
+- Never hard-code an external address (Cloudinary, Living Dictionary, the book PDF) in a component. Import it from `src/config/external.js`.
+- Never build a word's audio URL or dictionary link in a page. Use `src/services/wordLinks.js` (`getAudioUrl(word)`, `getDictionaryUrl(word)`, `getWordEntry(word)`); `BengaWord` already does this for its own word.
 
-### Audio ID Convention
-- `audio` is a Cloudinary public id built as `${CLOUDINARY_BASE}/${audioId}.mp3`, so it must be URL-safe ASCII: take `word.toLowerCase()` and replace **every** non-ASCII letter with `_` + its plain letter + `_`.
-- Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`. Two adjacent accented vowels therefore produce a single underscore; that is expected, not a typo.
-- Getting this wrong breaks playback silently — the button renders but the request 404s. When adding entries, derive the id from the word rather than typing it by hand.
+### Word Registry (audio and dictionary links)
+- **Single source:** `src/data/lexicon/word-registry.json` holds one entry per Benga word key: `word`, `livingDictionaryId`, `audio` (`missing` | `recorded`), `audioFile` (only when the Cloudinary file name differs from the key), `notes`. Human guide: `docs/WORD-REGISTRY.md`.
+- Pages pass only the **word** to `BengaWord`. The component computes the key, looks it up in the registry, shows a play button only for `"audio": "recorded"`, and links to the exact Living Dictionary entry when `livingDictionaryId` is set (otherwise to the dictionary search).
+- After adding or changing Benga content, run `npm run words:sync`. It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
+- Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
+- `src/data/lexicon/word-usage.json` is generated; never edit it.
+- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint in `vue.config.js`.
+
+### Audio ID (word key) Convention
+- The key is computed by `toAudioId(word)` in `src/utils/audioId.js` (tests in `scripts/tests/audioId.test.mjs`, run `npm test`). It is the registry key and the Cloudinary file name: `${CLOUDINARY_BASE}/${key}.mp3`.
+- Rule: `word.toLowerCase()`, replace **every** accented letter with `_` + its plain letter + `_`, join several words (or a hyphenated form) with `-`, drop punctuation.
+- Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`, `Ekâi ebe → ek_a_i-ebe`. Two adjacent accented vowels produce a single underscore; that is expected, not a typo. `Hāngā` and `Hângâ` give the same key.
+- **Never type an audio id by hand** and never add new `audio` / `audioId` / `<name>AudioId` fields to data. The fields still present in data files and `.vue` `data()` blocks are legacy: the site ignores them, and they are removed when content moves to the lexicon (roadmap Phase 2). `words:sync` lists the ones that differ from the rule, because some reveal content doubts.
 
 ### Chapter 3 Variable Adjectives
 - The source of truth for `src/data/chapter-3/regular-adjectives.json` is the "Adjetivos variables" table on PDF page 18 (book page 24). The four common adjectives are `bobe` (malo), `bonene` (grande), `bohole` (pequeño) and `bovindo` (negro); each is cited by its class-4 form, so the stem to which the class prefix is added is the root minus `bo-` (`bobe → -be`, `bonene → -nene`, `bohole → -hole`, `bovindo → -vindo`).
 - Concordance prefixes are identical for every variable adjective: class 1 `e-/be-`, class 2 `i-/ma-`, class 3 `u-/me-`, class 4 `bo-/me-`, class 5 `u-/ba-`, class 6 `vi-/lo-`, class 7 `e-/i-`. The same example nouns are reused per class (`Ekâi`, `Ilutu`, `Utē`, `Bova`, `Mondi`, `Viho`, `Ndo`) and their plural forms.
-- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": "noun-audio-adjective-audio" }`; `audioId` joins the noun and adjective ids with a hyphen (e.g. `Ekâi ebe → ek_a_i-ebe`). The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field.
+- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": … }`. The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field. The `audioId` fields are legacy (see "Audio ID Convention"); the key of `Ekâi ebe` is computed automatically as `ek_a_i-ebe`.
 - The `classes[]` examples inflect `būamu` (bueno). Because the radical changes with a linking **y** (`būamu → eyamu`, `maiyamu`, `beyamu`, …), each `singular`/`plural` object carries an explicit `highlight` string that includes that `y` (e.g. `ey`, `bey`, `iy`, `maiy`, `uy`, `mey`, `boy`, `baiy`, `viy`, `loy`). Use it as the `highlight-prefix` so the whole modified syllable is highlighted, not just the bare class prefix.
 - `BengaWord` accepts an optional `highlight-prefix` prop. When set, it splits `word` on spaces and underlines/colours that prefix at the start of the **last** token, which is how the conjugated syllable of the adjective is emphasised. Reuse it instead of hand-rolling highlighting.
 - In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
 
 ### Chapter 3 Invariable Adjectives
 - The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `InvariableAdjectivesSection.vue`.
-- Every invariable adjective and every usage example carries an `audioId`, because the language is mainly oral. Multi-word forms join their words with a hyphen after applying the accent rule: `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`.
+- Every invariable adjective and every usage example is shown with `BengaWord`, because the language is mainly oral; their keys (and future recordings) come from the word itself, e.g. `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`. The `audioId` fields in the JSON are legacy.
 - Invariable adjectives normally do **not** begin with the variable-adjective declension syllables (`e`, `be`, `i`, `ma`, `u`, `me`, `bo`, `ba`, `vi`, `lo`), although there are exceptions (e.g. `Bokolo`). This is the fifth entry in `characteristics` and is rendered both in the characteristics cards and the "Puntos Importantes" notes.
 - The `comparison-table` header row (`.table-row.header`) must be excluded from the zebra-striping rule — use `&:nth-child(odd):not(.header)` — otherwise its `#f9f9f9` background overrides the primary-colour header and the white text becomes illegible.
 
@@ -130,7 +140,9 @@ benga-grammar-website/
 │   ├── config/
 │   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
 │   ├── utils/
-│   │   └── dictionaryUrl.js     # getDictionaryUrl(word) → Living Dictionary search link
+│   │   └── audioId.js           # toAudioId(word): THE word-key rule (no imports; shared with scripts/)
+│   ├── services/
+│   │   └── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   ├── assets/
 │   │   └── images/
 │   │       ├── logo.png
@@ -145,6 +157,9 @@ benga-grammar-website/
 │   │   ├── en.json              # English (only nav/app keys so far)
 │   │   └── fr.json              # French (only nav/app keys so far)
 │   ├── data/
+│   │   ├── lexicon/
+│   │   │   ├── word-registry.json  # One entry per Benga word: dictionary id, audio state, notes
+│   │   │   └── word-usage.json     # GENERATED by words:sync (spellings + files per word)
 │   │   ├── chapters-index.json  # Sidebar/navigation metadata
 │   │   ├── author-info.json     # AboutAuthor page content
 │   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
@@ -185,6 +200,8 @@ benga-grammar-website/
 │       │   ├── IrregularNouns.vue
 │       │   ├── VerbalNouns.vue
 │       │   └── NounPracticeGame.vue
+│       ├── admin/
+│       │   └── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
 │           ├── AdjectivesIntro.vue
@@ -192,12 +209,14 @@ benga-grammar-website/
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── context/                     # Git-ignored: private prompts, roadmap and notes
-├── package.json                 # Scripts (serve, build, lint, format) + ESLint config (no .eslintrc.js)
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY
+├── scripts/                     # Node tools: words-sync, words-import, lib/, tests/, imports/
+├── context/                     # Git-ignored: private prompts and notes
+├── package.json                 # Scripts (serve, build, lint, format, test, words:*) + ESLint config
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
 ├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
-├── vue.config.js
+├── vue.config.js                # + dev-only save endpoint for /admin/palabras
 ├── babel.config.js
 ├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md

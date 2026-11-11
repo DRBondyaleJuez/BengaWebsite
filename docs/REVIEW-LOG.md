@@ -19,8 +19,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-008](#r-008) | 🟢 | Audit | Living Dictionary links may not open an entry | task 0.5 |
 | [R-009](#r-009) | 🟢 | 0.2 | Browser-support data is out of date (build warning) | done |
 | [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
-| [R-011](#r-011) | 🔴 | 0.5 | No audio file is found on Cloudinary — every play button fails | Phase 5 (or sooner) |
-| [R-012](#r-012) | 🔴 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | task 2.2 |
+| [R-011](#r-011) | 🟢 | 0.5 | No audio file is found on Cloudinary — every play button fails | done |
+| [R-012](#r-012) | 🟢 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | done |
+| [R-013](#r-013) | 🔴 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | soon |
+| [R-014](#r-014) | 🔴 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | any time |
+| [R-015](#r-015) | 🔴 | words | `Itánde` / `Matánde` written with a Spanish accent | any time |
+| [R-016](#r-016) | 🔴 | words | Vue warnings on the chapter 1 index (object used as list key) | Phase 3 |
 
 ---
 
@@ -97,6 +101,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Doubt:** Living Dictionaries usually identifies entries by an internal id, not by the word, so these links may lead to a "not found" page.
 - **Suggestion:** Test a few links in task 0.5. If they fail, link to the dictionary's search instead, or hide the icon.
 - **Resolution:** 2026-11-09 · Confirmed: `/benga/entry/epokolo` shows "This entry doesn't exist" (404). All word links now open the dictionary's search with the word typed in (`/benga/entries?q={"query":"epokolo"}`), built by `getDictionaryUrl()` in `src/utils/dictionaryUrl.js`. Note: the online Benga dictionary has very few entries so far, so most searches show "No matching entries" — but no more 404s. · commit `refactor(config): centralise external URLs`
+  **Follow-up 2026-11-11** (developer asked for one unified, scalable place for these ids): each word's Living Dictionary id now lives in `src/data/lexicon/word-registry.json`. With an id the link opens the exact entry (`…/benga/entry/<id>`); without one it falls back to the search. Ids can be added at `/admin/palabras` (paste the entry URL), in bulk with `npm run words:import -- list.csv`, or by giving Claude a list. First import: the dictionary's 17 entries (`scripts/imports/living-dictionary-2026-11-11.csv`), 11 of which match words on the site.
 
 ### R-009
 **Browser-support data is out of date**
@@ -118,20 +123,76 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-011
 **No audio file is found on Cloudinary — every play button fails**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.5 (clicking the first play button on `/capitulo-2/clase-1`)
 - **Where:** `CLOUDINARY_BASE` in `src/config/external.js` · Cloudinary account `dp5rofjyx`
 - **Doubt:** `…/video/upload/v1780354084/ejanganangobo.mp3` returns 404. So do `epokolo`, `en_a_`, `ek_a_i`, `bobe`, `a`, with or without the `v1780354084` version and with or without a `benga-audio/` folder. Either no recordings are uploaded yet, or they are stored under other names, folders or resource types. This was already the case before task 0.5 (same URL).
 - **Suggestion:** Open the Cloudinary Media Library and check one uploaded file's real URL (folder, `video` vs `raw`, file name). Then either fix `CLOUDINARY_BASE` (one line now) or plan uploads in Phase 5. Until then the site shows buttons that don't play; task 3.1 (audio manifest) will hide them for missing files.
-- **Resolution:**
+- **Resolution:** 2026-11-11 · Developer: Cloudinary is an empty placeholder for now. Built the **word registry** (`src/data/lexicon/word-registry.json`, guide `docs/WORD-REGISTRY.md`): each word has an `audio` state (`missing`/`recorded`) and `BengaWord` shows a play button **only** for recorded words, so no more buttons that fail. When recordings are uploaded as `<key>.mp3`, mark them `recorded` at `/admin/palabras` or with `npm run words:import`. Automatic sync from Cloudinary = roadmap 5.2. · commits `feat(words): add the word registry…`, `feat(words): link BengaWord audio and dictionary…`, `feat(admin): add a dev-only word registry editor`
 
 ### R-012
 **`VerbalNouns.vue` builds audio ids with its own function**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.5
 - **Where:** `makeAudioId()` in `src/views/chapter-2/VerbalNouns.vue` (methods)
 - **Doubt:** It's a second, private copy of the audio-id rule. It may differ from the AGENTS.md rule (e.g. adjacent accented vowels, multi-word forms).
 - **Suggestion:** In task 2.2, replace it with the shared `toAudioId()` and compare the ids it produced for every verbal noun.
+- **Resolution:** 2026-11-11 · `makeAudioId()` deleted. There is now ONE rule, `toAudioId()` in `src/utils/audioId.js` (with tests), used by the site and the scripts; pages no longer pass audio ids at all (63 hand-typed `:audio-id` bindings removed), the key is computed from the word. · commits `feat(words): add the shared word-key rule with tests`, `feat(words): link BengaWord audio and dictionary to the word registry`
+
+### R-013
+**Class 2 page (`/capitulo-2/clase-2`) is completely blank**
+- **Status:** 🔴 Open
+- **Found in:** word registry work (2026-11-11), page check of all routes; already broken before that work (checked on the previous commit)
+- **Where:** `src/views/chapter-2/NounClass2.vue`, the "líquidos" section (`liquidExamples`) and the "sexta clase" exception section (`classSixExample`)
+- **Doubt:** The template expects every example to have `singular` and `plural`, but the 6 `liquidExamples` (Mavule, Manyângâ, Maku, Makândâ, Makiya, Miba) are single words, so Vue stops with `Cannot read properties of undefined (reading 'word')` and shows nothing. `classSixExample` is used by the template but doesn't exist in `data()`.
+- **Suggestion:** Show the liquids as single words (they only have a plural form?) with a small template change, and either add the class-6 examples from the book (PDF p. 10–11) or remove that section. Needs your decision on the content; the code fix is small.
+- **Resolution:**
+
+### R-014
+**16 hand-typed audio ids have different letters than their word (possible content errors)**
+- **Status:** 🔴 Open
+- **Found in:** word registry work (`npm run words:sync` report)
+- **Where:** the old `audio`/`audioId` fields next to these words (the site ignores those fields now):
+
+  | Word shown on the page | Old typed id | File(s) |
+  |---|---|---|
+  | kalaka | test | alphabet.json, AlphabetSection.vue |
+  | tânâdkâ | tanodku | alphabet.json, AlphabetSection.vue |
+  | ndēmbē | nd_e_emb_e_ | consonants.json, ConsonantsSection.vue |
+  | ngūae | ngu_u_a_e | triphthongs.json, TriphthongsSection.vue |
+  | Mamya | mumya | noun-practice-deck.json, NounClass2.vue |
+  | Maso | muso | noun-practice-deck.json, NounClass2.vue |
+  | Miongo | mingo | noun-practice-deck.json, NounClass4.vue |
+  | Būayē | b_u_any_e_ | noun-practice-deck.json, NounClass4.vue |
+  | Mbalanga | malanga | noun-practice-deck.json, NounClass7.vue |
+  | Ndonda | ndonga | noun-practice-deck.json, NounClass7.vue |
+  | Nganga | nuega | noun-practice-deck.json, NounClass7.vue |
+  | Nganiyango | aniyango | noun-practice-deck.json, NounClass7.vue |
+  | Ngejangeja | gejangeja | noun-practice-deck.json, NounClass7.vue |
+  | Ngonga | ngonda | noun-practice-deck.json, NounClass7.vue |
+  | Ngūanjangūanja | ngaanjangaanja | IrregularNouns.vue |
+  | Maka | mala | IrregularNouns.vue |
+
+- **Doubt:** Most are typing slips in the id, but some may mean the **word** is wrong: e.g. `tânâdkâ` looks like `tândâkâ` (amar, as in VerbalNouns); AGENTS.md mentions `Ndonga` in the class-7 list, yet the page shows `Ndonda` (and `Ngonga`/`ngonda` look swapped); `Maka`/`mala`; `Būayē`/`b_u_any_e_` (`Būanyē`?).
+- **Suggestion:** Check each word against the book page; correct the word where needed, then run `npm run words:sync`. The old id fields disappear in Phase 2 anyway. (Another 23 differ only in accent marking, e.g. `yâkâ`/`yaka`: no content doubt.)
+- **Resolution:**
+
+### R-015
+**`Itánde` / `Matánde` written with a Spanish accent**
+- **Status:** 🔴 Open
+- **Found in:** word registry work (orthography warning of `npm run words:sync`)
+- **Where:** `src/views/chapter-2/NounClass2.vue` and `src/data/chapter-2/noun-practice-deck.json`; `VerbalNouns.vue` writes `itânde`
+- **Doubt:** By the orthography rule `á → â`, these should be `Itânde` / `Matânde`. Today they are two different keys from `itânde`, so a recording or dictionary id would have to be entered twice.
+- **Suggestion:** Change to `Itânde` / `Matânde` in both files and run `npm run words:sync`.
+- **Resolution:**
+
+### R-016
+**Vue warnings on the chapter 1 index (object used as list key)**
+- **Status:** 🔴 Open
+- **Found in:** word registry work (console while checking all routes)
+- **Where:** `src/views/chapter-1/ChapterOneIndex.vue`, a `v-for` whose `:key` is an object
+- **Doubt:** Vue warns "Avoid using non-primitive value as key" and "Duplicate keys detected: '[object Object]'". The page displays fine, but list updates can misbehave.
+- **Suggestion:** Use a string id or the index as `:key`. Small fix; can go with Phase 3 or any chapter-1 task.
 - **Resolution:**
 
 ---

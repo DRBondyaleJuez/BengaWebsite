@@ -222,10 +222,12 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Commit:** `docs(data): define content schemas and content guide`
 
 - [ ] **2.2 Helper functions with tests**
+  - **Done early (2026-11-11, word registry):** `toAudioId` + tests (`npm test`, Node's built-in runner instead of Vitest) and the dictionary link (`src/services/wordLinks.js`). Still to do: `localized.js`.
   - **Prompt:** "Task 2.2: create `src/utils/audioId.js` (`toAudioId(word)` implementing the AGENTS.md rule, multi-word joined with `-`), `src/utils/dictionaryUrl.js`, `src/utils/localized.js` (`localized(field, locale)` falls back to `es`). Add Vitest and unit tests using the AGENTS.md examples (`Whâki → wh_a_ki`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`). Comment each function for a beginner."
   - **Commit:** `feat(utils): add audioId, dictionary-link and localization helpers with tests`
 
 - [ ] **2.3 Content validator script**
+  - **Done early (2026-11-11, word registry):** `npm run words:sync/check` already reports orthography problems and hand-typed audio ids; extend it here instead of starting from scratch.
   - **Why:** P13. Catches mistakes before you see them in the browser.
   - **Prompt:** "Task 2.3: write `scripts/validate-data.js` (`npm run validate`) that checks all JSON against the schemas and reports, in plain Spanish/English: duplicate ids, sections referring to missing ids, Benga words containing `c q r x z ñ` or Spanish accents `á é ú`, explicit `audioId` that differs from `toAudioId(word)`. Run it on the current data and show me the report — don't fix data yet."
   - **Commit:** `feat(scripts): add content validator`
@@ -254,11 +256,13 @@ Branch: `refactor/content-model`. This is the most important phase.
 Branch: `refactor/blocks`
 
 - [ ] **3.1 Shared audio player service**
+  - **Done early (2026-11-11, word registry):** the "audio manifest" is the `audio` field of `word-registry.json`; `BengaWord` already hides the play button for words not recorded. Still to do: one shared player that stops the previous sound.
   - **Why:** today each `BengaWord` has its own `<audio>`; two can play at once, and missing files fail silently.
   - **Prompt:** "Task 3.1: create `src/services/audioPlayer.js` — one shared Audio object, stops the previous sound, exposes play/stop/state; reads `audio-manifest.json` to know which ids exist. Refactor `BengaWord` to use it and to show the 'pending' icon for ids not in the manifest. Add a `TODO(5.2)` where the manifest will be auto-generated."
   - **Commit:** `feat(audio): add shared audio player service`
 
 - [ ] **3.2 `BengaWord` accepts a lexicon entry**
+  - **Done early (2026-11-11, word registry):** `BengaWord` computes key, audio and dictionary link from `word` alone. Still to do: `lang="bng"`, and showing dictionary links on pages that don't pass `dictionary-url` yet (chapter 3).
   - **Prompt:** "Task 3.2: let `BengaWord` take either `word` or an `entry` prop (+ `form: 'singular'|'plural'`), computing audioId and dictionary link itself. Add `lang=\"bng\"` (ISO code for Benga) on the word for screen readers. Keep old props working."
   - **Commit:** `feat(benga-word): accept lexicon entries and compute audio ids`
 
@@ -319,9 +323,11 @@ Branch: `feat/audio-pipeline`
 ```
 
 - [ ] **5.1 Recording checklist** — CSV with word, audioId, meaning, book page, recorded yes/no.
+  - **Done early (2026-11-11, word registry):** `/admin/palabras` → filter *Audio pendiente* → *Exportar CSV* already gives this list (without meaning and page).
   - **Prompt:** "Task 5.1: write `scripts/audio-checklist.js` producing `recording-checklist.csv` from all lexicon + example sentences."
   - **Commit:** `feat(scripts): generate audio recording checklist`
 - [ ] **5.2 Manifest sync from Cloudinary** — uses API key in `.env.local` (never committed).
+  - **Note:** the "manifest" is now `word-registry.json` (`audio: recorded`). This task becomes a script that lists the Cloudinary files and marks matching keys as recorded via the same writer as `words:import`.
   - **Commit:** `feat(scripts): sync audio manifest from cloudinary`
 - [ ] **5.3 Audio guide** in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
   - **Commit:** `docs(audio): document recording and upload process`
@@ -387,6 +393,7 @@ Branch: `feat/interactive`
 - [ ] **8.3 Progress tracking** in the browser (localStorage; no accounts yet).
   - **Commit:** `feat(progress): track visited sections and scores locally`
 - [ ] **8.4 Dictionary page** — search, filter by class/part of speech/chapter, audio.
+  - **Note:** start from `/admin/palabras` (search, filters, audio test) as a model for the public version.
   - **Commit:** `feat(dictionary): add searchable lexicon page`
 - [ ] **8.5 Site search** (Fuse.js over lexicon + section text).
   - **Commit:** `feat(search): add site-wide search`
