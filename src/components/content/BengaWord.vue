@@ -9,7 +9,7 @@
     </span>
 
     <button
-      v-if="audioId"
+      v-if="audioUrl"
       class="benga-word__audio-btn"
       @click="playAudio"
       :aria-label="$t('audio.play') + ': ' + word"
@@ -36,7 +36,7 @@
     <span v-if="meaning && showMeaning" class="benga-word__meaning"> ({{ meaning }}) </span>
 
     <audio
-      v-if="audioId"
+      v-if="audioUrl"
       ref="audioElement"
       @ended="isPlaying = false"
       @error="handleAudioError"
@@ -47,8 +47,15 @@
 
 <script>
 import BaseIcon from '@/components/common/BaseIcon.vue'
-import { CLOUDINARY_BASE } from '@/config/external'
+import { getAudioUrl } from '@/services/wordLinks'
 
+/**
+ * Shows a Benga word with its pronunciation button and dictionary link.
+ *
+ * The recording is found automatically from the word itself (word → key → word registry),
+ * so pages only pass `word`. A play button appears only for words whose registry entry says
+ * `"audio": "recorded"`; other words show a muted icon ("Audio no disponible").
+ */
 export default {
   name: 'BengaWord',
   components: {
@@ -58,10 +65,6 @@ export default {
     word: {
       type: String,
       required: true
-    },
-    audioId: {
-      type: String,
-      default: null
     },
     meaning: {
       type: String,
@@ -92,9 +95,9 @@ export default {
     }
   },
   computed: {
-    audioSrc() {
-      if (!this.audioId) return null
-      return `${CLOUDINARY_BASE}/${this.audioId}.mp3`
+    /** Recording URL, or null when the word has no recording yet. */
+    audioUrl() {
+      return getAudioUrl(this.word)
     },
     wordParts() {
       const text = this.word || ''
@@ -125,7 +128,7 @@ export default {
 
       // Lazily assign src so load events don't fire on render
       if (!el.src) {
-        const src = this.audioSrc
+        const src = this.audioUrl
         if (!src) return
         el.src = src
       }

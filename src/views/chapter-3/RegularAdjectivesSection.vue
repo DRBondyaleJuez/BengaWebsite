@@ -54,7 +54,6 @@
               <span class="label">Singular:</span>
               <BengaWord
                 :word="classEx.singular.bengaForm"
-                :audio-id="classEx.singular.audioId"
                 :highlight-prefix="classEx.singular.highlight"
               />
             </div>
@@ -63,7 +62,6 @@
               <span class="label">Plural:</span>
               <BengaWord
                 :word="classEx.plural.bengaForm"
-                :audio-id="classEx.plural.audioId"
                 :highlight-prefix="classEx.plural.highlight"
               />
             </div>
@@ -109,17 +107,12 @@
                 <span class="form-number">Sg</span>
                 <BengaWord
                   :word="pair.singular.bengaForm"
-                  :audio-id="pair.singular.audioId"
                   :highlight-prefix="pair.singular.prefix"
                 />
               </div>
               <div class="form-item">
                 <span class="form-number">Pl</span>
-                <BengaWord
-                  :word="pair.plural.bengaForm"
-                  :audio-id="pair.plural.audioId"
-                  :highlight-prefix="pair.plural.prefix"
-                />
+                <BengaWord :word="pair.plural.bengaForm" :highlight-prefix="pair.plural.prefix" />
               </div>
             </div>
           </div>
@@ -148,14 +141,12 @@
               <div class="cell">
                 <BengaWord
                   :word="classEx.singular.bengaForm"
-                  :audio-id="classEx.singular.audioId"
                   :highlight-prefix="classEx.singular.highlight"
                 />
               </div>
               <div class="cell">
                 <BengaWord
                   :word="classEx.plural.bengaForm"
-                  :audio-id="classEx.plural.audioId"
                   :highlight-prefix="classEx.plural.highlight"
                 />
               </div>

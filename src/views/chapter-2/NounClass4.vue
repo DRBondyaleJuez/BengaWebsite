@@ -30,7 +30,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -39,7 +38,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -56,7 +54,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -65,7 +62,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -105,7 +101,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -114,7 +109,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -142,7 +136,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass4',

@@ -31,7 +31,7 @@
       <div class="adjectives-grid">
         <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
           <div class="adjective-card__bengaform">
-            <BengaWord :word="adj.bengaForm" :audio-id="adj.audioId" />
+            <BengaWord :word="adj.bengaForm" />
           </div>
           <div class="adjective-card__meaning">
             {{ adj.spanishMeaning }}
@@ -49,7 +49,7 @@
       <div class="examples-container">
         <div class="example-item" v-for="(example, idx) in examples" :key="`ex-${idx}`">
           <div class="example-item__bengaform">
-            <BengaWord :word="example.bengaSentence" :audio-id="example.audioId" />
+            <BengaWord :word="example.bengaSentence" />
           </div>
           <div class="example-item__translation">
             <strong>Traducción:</strong> {{ example.spanishTranslation }}

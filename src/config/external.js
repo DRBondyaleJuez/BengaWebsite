@@ -7,7 +7,7 @@
 
 /**
  * Cloudinary folder that holds the pronunciation recordings.
- * An audio file is loaded from `${CLOUDINARY_BASE}/${audioId}.mp3`.
+ * A recording is loaded from `${CLOUDINARY_BASE}/<word key>.mp3` (see src/services/wordLinks.js).
  *
  * Can be overridden without touching code by creating a `.env.local` file:
  *   VUE_APP_CLOUDINARY_BASE=https://res.cloudinary.com/<cloud>/video/upload
@@ -21,10 +21,11 @@ export const CLOUDINARY_BASE =
 export const LIVING_DICTIONARY_HOME = 'https://livingdictionaries.app/benga'
 
 /**
- * Search page of the Living Dictionary. Entries are identified by internal
- * ids, not by the word, so we link to a search instead of an entry page.
- * Used by `getDictionaryUrl()` in `src/utils/dictionaryUrl.js`.
+ * Living Dictionary pages used by `getDictionaryUrl()` in `src/services/wordLinks.js`:
+ *   - ENTRY:  one word's page, …/entry/<livingDictionaryId>  (ids are stored in the word registry)
+ *   - SEARCH: search page, used when a word has no id yet
  */
+export const LIVING_DICTIONARY_ENTRY = `${LIVING_DICTIONARY_HOME}/entry`
 export const LIVING_DICTIONARY_SEARCH = `${LIVING_DICTIONARY_HOME}/entries`
 
 /**

@@ -35,7 +35,6 @@
             >
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audioId"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
               />
@@ -67,7 +66,7 @@
 import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import diphthongsData from '@/data/chapter-1/diphthongs.json'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'DiphthongsSection',

@@ -29,7 +29,6 @@
               <span class="label">Imperativo</span>
               <BengaWord
                 :word="example.imperative"
-                :audio-id="makeAudioId(example.imperativeAudio)"
                 :meaning="example.imperativeMeaning"
                 :dictionary-url="getDictionaryUrl(example.imperative)"
                 block
@@ -40,7 +39,6 @@
               <span class="label">Nombre</span>
               <BengaWord
                 :word="example.nominalForm"
-                :audio-id="makeAudioId(example.nominalAudio)"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.nominalForm)"
                 block
@@ -70,7 +68,6 @@
               <span class="label">Imperativo</span>
               <BengaWord
                 :word="example.imperative"
-                :audio-id="makeAudioId(example.imperativeAudio)"
                 :meaning="example.imperativeMeaning"
                 :dictionary-url="getDictionaryUrl(example.imperative)"
                 block
@@ -81,7 +78,6 @@
               <span class="label">Nombre</span>
               <BengaWord
                 :word="example.nominalForm"
-                :audio-id="makeAudioId(example.nominalAudio)"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.nominalForm)"
                 block
@@ -112,7 +108,6 @@
               <span class="label">Nombre de acción</span>
               <BengaWord
                 :word="example.actionForm"
-                :audio-id="makeAudioId(example.actionFormAudio)"
                 :meaning="example.actionFormMeaning"
                 :dictionary-url="getDictionaryUrl(example.actionForm)"
                 block
@@ -123,7 +118,6 @@
               <span class="label">Nombre de modo</span>
               <BengaWord
                 :word="example.nominalForm"
-                :audio-id="makeAudioId(example.nominalAudio)"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.nominalForm)"
                 block
@@ -200,7 +194,6 @@
             <div class="derivation-label">Clase primera · abstracto</div>
             <BengaWord
               word="ilonga"
-              :audio-id="makeAudioId('ilonga')"
               meaning="edificio"
               :dictionary-url="getDictionaryUrl('ilonga')"
               block
@@ -210,7 +203,6 @@
             <div class="derivation-label">Clase segunda · agenciales</div>
             <BengaWord
               word="ulongi"
-              :audio-id="makeAudioId('ulongi')"
               meaning="arquitecto"
               :dictionary-url="getDictionaryUrl('ulongi')"
               block
@@ -220,7 +212,6 @@
             <div class="derivation-label">Clase tercera · de modo</div>
             <BengaWord
               word="ilongidi"
-              :audio-id="makeAudioId('ilongidi')"
               meaning="modo de construir"
               :dictionary-url="getDictionaryUrl('ilongidi')"
               block
@@ -256,7 +247,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'VerbalNouns',
@@ -433,20 +424,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl,
-    makeAudioId(word) {
-      if (!word) return null
-      let id = ''
-      for (const ch of String(word).toLowerCase()) {
-        if ((ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')) {
-          id += ch
-          continue
-        }
-        const plain = ch.normalize('NFD').replace(/\p{Diacritic}/gu, '')
-        id += /^[a-z0-9]$/.test(plain) ? `_${plain}_` : '_'
-      }
-      return id.replace(/_{2,}/g, '_')
-    }
+    getDictionaryUrl
   },
   created() {
     document.title = 'Nombres Derivados | Portal Benga'

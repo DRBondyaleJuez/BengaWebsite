@@ -29,7 +29,6 @@
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -58,7 +57,6 @@
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -124,7 +122,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'IrregularNouns',

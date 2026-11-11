@@ -96,7 +96,6 @@
             >
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audioId"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
               />
@@ -136,7 +135,6 @@
             >
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audioId"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -196,7 +194,7 @@ import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import alphabetData from '@/data/chapter-1/alphabet.json'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'AlphabetSection',

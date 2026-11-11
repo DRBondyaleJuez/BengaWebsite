@@ -32,7 +32,6 @@
           <div class="example-singular">
             <BengaWord
               :word="word.word"
-              :audio-id="word.audio"
               :meaning="word.meaning"
               :dictionary-url="getDictionaryUrl(word.word)"
               block
@@ -83,7 +82,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass7',

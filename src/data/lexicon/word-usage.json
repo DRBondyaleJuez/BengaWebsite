@@ -855,6 +855,10 @@
       "spellings": ["Bokolo"],
       "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
     },
+    "bokolo-bokolo": {
+      "spellings": ["Bokolo bokolo"],
+      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+    },
     "bolohi": {
       "spellings": ["Bolohi"],
       "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
@@ -917,6 +921,10 @@
     },
     "de": {
       "spellings": ["De"],
+      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+    },
+    "de-de-de": {
+      "spellings": ["De de de"],
       "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
     },
     "di_a_": {

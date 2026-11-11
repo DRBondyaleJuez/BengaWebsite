@@ -77,7 +77,6 @@
           >
             <BengaWord
               :word="example.word"
-              :audio-id="example.audioId"
               :meaning="example.meaning"
               :dictionary-url="getDictionaryUrl(example.word)"
               block
@@ -110,7 +109,7 @@ import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import consonantsData from '@/data/chapter-1/consonants.json'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'ConsonantsSection',

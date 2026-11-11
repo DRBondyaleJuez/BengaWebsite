@@ -55,7 +55,6 @@
               <BengaWord
                 class="flip-card__word"
                 :word="card.singular"
-                :audio-id="card.singularAudioId"
                 :meaning="card.translation"
                 :show-meaning="card.showTranslation"
                 :dictionary-url="getDictionaryUrl(card.singular)"
@@ -92,7 +91,6 @@
                 <BengaWord
                   class="flip-card__word"
                   :word="card.plural"
-                  :audio-id="card.pluralAudioId"
                   :meaning="card.pluralTranslation"
                   :show-meaning="card.showTranslation"
                   :dictionary-url="getDictionaryUrl(card.plural)"
@@ -150,7 +148,7 @@
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
 import deckData from '@/data/chapter-2/noun-practice-deck.json'
-import { getDictionaryUrl } from '@/utils/dictionaryUrl'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 const MOBILE_BREAKPOINT = 768
 

@@ -11,9 +11,11 @@
  *   { singular: 'Ekâi', singularAudioId: 'ek_a_i' }        (<name> + <name>AudioId)
  *   { imperative: 'Kalaka', imperativeAudio: 'kalaka' }    (<name> + <name>Audio)
  *   { nominalForm: 'ikala', nominalAudio: 'ikala' }        (<name>Form + <name>Audio)
+ * Words typed directly in a template are found too:  <BengaWord word="ulongi" />
  *
  * Each result: { word, storedAudioId, file, path }
- *   path = where inside the file, e.g. "mainExamples[2].singular"
+ *   storedAudioId = the audio id typed next to the word (null for template words)
+ *   path          = where inside the file, e.g. "mainExamples[2].singular"
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -25,7 +27,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const SRC = path.join(ROOT, 'src')
 
 /** Keys that hold the word itself when the audio key is just "audio" / "audioId". */
-const PLAIN_WORD_KEYS = ['word', 'bengaForm', 'benga', 'form', 'text']
+const PLAIN_WORD_KEYS = ['word', 'bengaForm', 'bengaSentence', 'benga', 'form', 'text']
 const PLAIN_AUDIO_KEYS = ['audio', 'audioId']
 const PREFIXED_AUDIO_KEY = /^(.+?)Audio(Id)?$/
 
@@ -34,6 +36,12 @@ const IGNORED_DATA_FILES = [
   /chapter-2[\\/]class-\d\.json$/,
   /chapter-2[\\/](nouns-intro|irregular-nouns|verbal-nouns)\.json$/
 ]
+
+/** Folders of pages that show no Benga content (the admin page lists the registry itself). */
+const IGNORED_VIEW_FOLDERS = [/[\\/]views[\\/]admin[\\/]/]
+
+/** <BengaWord ... word="ulongi" ...>  (a fixed word, not :word="variable") */
+const TEMPLATE_WORD = /<BengaWord\b[^>]*?\sword="([^"]+)"/g
 
 function listFiles(dir, extension) {
   const found = []
@@ -139,10 +147,14 @@ export function collectWords() {
   }
 
   for (const file of listFiles(path.join(SRC, 'views'), '.vue')) {
-    const data = readVueData(file)
-    if (!data) continue
+    if (IGNORED_VIEW_FOLDERS.some((pattern) => pattern.test(file))) continue
     const pairs = []
-    findPairs(data, '', pairs)
+    const data = readVueData(file)
+    if (data) findPairs(data, '', pairs)
+    const template = fs.readFileSync(file, 'utf8')
+    for (const match of template.matchAll(TEMPLATE_WORD)) {
+      pairs.push({ word: match[1].trim(), storedAudioId: null, path: '<template>' })
+    }
     pairs.forEach((pair) =>
       results.push({ ...pair, file: path.relative(ROOT, file).replace(/\\/g, '/') })
     )

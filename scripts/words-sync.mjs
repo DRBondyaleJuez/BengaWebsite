@@ -54,7 +54,7 @@ async function main() {
     usage[key] = usage[key] || { spellings: [], usedIn: [] }
     usage[key].spellings.push(use.word)
     if (!usage[key].usedIn.includes(use.file)) usage[key].usedIn.push(use.file)
-    if (use.storedAudioId !== key) {
+    if (use.storedAudioId && use.storedAudioId !== key) {
       oldAudioIds.push(
         `${use.word}: typed "${use.storedAudioId}", rule gives "${key}" (${use.file} → ${use.path})`
       )

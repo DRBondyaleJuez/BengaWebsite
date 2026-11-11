@@ -1485,6 +1485,13 @@
       "audioFile": null,
       "notes": ""
     },
+    "bokolo-bokolo": {
+      "word": "Bokolo bokolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
     "bolohi": {
       "word": "Bolohi",
       "livingDictionaryId": null,
@@ -1592,6 +1599,13 @@
     },
     "de": {
       "word": "De",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "de-de-de": {
+      "word": "De de de",
       "livingDictionaryId": null,
       "audio": "missing",
       "audioFile": null,
