@@ -100,17 +100,17 @@
       ]
     },
     {
-      "diphthong": "ūa",
+      "diphthong": "ūâ",
       "soundsLike": {
-        "es": "ua como en 'guano'",
+        "es": "uo como en 'cuota'",
         "en": "wa in wand",
         "fr": "oua dans guano"
       },
       "examples": [
         {
-          "word": "ūaūa",
+          "word": "ūâūâ",
           "meaning": "aprisa, pronto",
-          "audioId": "_u_a_u_a"
+          "audioId": "_u_a_u_a_"
         }
       ]
     },

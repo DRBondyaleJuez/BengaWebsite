@@ -9,7 +9,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 | ID | Status | Found in | Topic | Decide by |
 |----|--------|----------|-------|-----------|
-| [R-001](#r-001) | 🔴 | 0.3 | Diphthong `ūa` listed twice (one is probably `ūâ`) | any time |
+| [R-001](#r-001) | 🟢 | 0.3 | Diphthong `ūa` listed twice (one is probably `ūâ`) | done |
 | [R-002](#r-002) | 🟢 | 0.1 | `context/AGENTS.md` is an old duplicate | any time |
 | [R-003](#r-003) | 🟢 | 0.1 | Rest of AGENTS.md is out of date | done |
 | [R-004](#r-004) | 🟢 | Roadmap | Roadmap lives in git-ignored `context/` | any time |
@@ -32,12 +32,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-001
 **Diphthong `ūa` listed twice — the second one is probably `ūâ`**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.3 (browser console: `Duplicate keys detected: 'ūa'`)
 - **Where:** `src/data/chapter-1/diphthongs.json` lines 73 and 103 · page `/capitulo-1/diptongos` · book p. 10 (PDF p. 10), "Los simples son…"
 - **Doubt:** The book lists two different diphthongs: `úa` ("como púas", *múana*) and `úá` ("ua en guano", *úáúá* = aprisa). The JSON wrote both as `ūa`.
 - **Suggestion:** Following the accent rule `á → â`, change the second entry to `ūâ` and its example to `ūâūâ` with audioId `_u_a_u_a_`. Check the scan by eye first.
-- **Resolution:** _(date · what was decided · commit)_
+- **Resolution:** 2026-11-11 · Developer confirmed: the first is `ūa`, the second `ūâ`. In `src/data/chapter-1/diphthongs.json` the second entry is now `ūâ` with example `ūâūâ` (aprisa, pronto), and its Spanish "Suena como" changed from "ua como en 'guano'" (wrong sound, per the developer) to "uo como en 'cuota'". Registry: new key `_u_a_u_a_`, old unused `_u_a_u_a` removed. Still to review in Phase 4 (translations): the English ("wa in wand") and French ("oua dans guano") descriptions of this sound. · commit `fix(ch1): correct the ūâ diphthong and its example`
 
 ### R-002
 **`context/AGENTS.md` is an old duplicate**
