@@ -1,7 +1,7 @@
 # Benga Grammar Website
 
 Interactive website teaching the Benga language, based on Salvado y Cos's grammar.
-Built with Vue 2.7 + Vite. Project rules for humans and AI: [AGENTS.md](AGENTS.md).
+Built with Vue 3 + Vite. Project rules for humans and AI: [AGENTS.md](AGENTS.md).
 Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## Commands

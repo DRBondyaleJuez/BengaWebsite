@@ -195,7 +195,8 @@ Branch: `build/vue3-vite`. **Decide first:** upgrade now (recommended — the co
   - **Prompt:** "Task 1.3: start the dev server and open every route in the browser; report console errors and visual breakage, then fix them."
   - **Commit:** `fix: resolve regressions after vue 3 upgrade`
 
-- [ ] **1.4 Update AGENTS.md tech stack**
+- [x] **1.4 Update AGENTS.md tech stack**
+  - **Done 2026-11-12:** tech stack, i18n and lint setup, "Vue 3 Reminders" for future work, README.
   - **Commit:** `docs: update tech stack to vue 3 and vite`
 
 ---
