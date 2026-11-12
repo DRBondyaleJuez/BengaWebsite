@@ -139,6 +139,7 @@ export function collectWords() {
   for (const file of listFiles(path.join(SRC, 'data'), '.json')) {
     if (IGNORED_DATA_FILES.some((pattern) => pattern.test(file))) continue
     if (file.includes(`${path.sep}lexicon${path.sep}`)) continue // the registry itself
+    if (file.includes(`${path.sep}schemas${path.sep}`)) continue // schemas and their examples are not site content
     const pairs = []
     findPairs(JSON.parse(fs.readFileSync(file, 'utf8')), '', pairs)
     pairs.forEach((pair) =>

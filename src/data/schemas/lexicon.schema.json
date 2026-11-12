@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/lexicon.schema.json",
+  "title": "Lexicon file (src/data/lexicon/<kind>.json)",
+  "description": "Every Benga word ONCE, with its grammar and meaning. Sections refer to words by id instead of copying them. Links (audio, Living Dictionary) are NOT stored here: they live in word-registry.json. Guide: docs/CONTENT-GUIDE.md",
+  "type": "object",
+  "properties": {
+    "_about": { "type": "string" },
+    "entries": {
+      "description": "Entries keyed by their id (see common → lexiconId). The id must equal the word key of the base form.",
+      "type": "object",
+      "propertyNames": { "$ref": "common.schema.json#/$defs/lexiconId" },
+      "additionalProperties": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "required": ["entries"],
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "description": "One lexicon entry. The 'type' field decides which other fields apply.",
+      "type": "object",
+      "required": ["type"],
+      "discriminator": { "propertyName": "type" },
+      "oneOf": [
+        { "$ref": "#/$defs/noun" },
+        { "$ref": "#/$defs/adjective" },
+        { "$ref": "#/$defs/verb" },
+        { "$ref": "#/$defs/otherWord" }
+      ]
+    },
+    "commonFields": {
+      "description": "Fields every entry may have.",
+      "properties": {
+        "meaning": {
+          "description": "Meaning of the base form. null = unreadable in the book (never guess, see AGENTS.md).",
+          "oneOf": [{ "$ref": "common.schema.json#/$defs/localizedText" }, { "type": "null" }]
+        },
+        "source": { "$ref": "common.schema.json#/$defs/source" },
+        "editorial": { "$ref": "common.schema.json#/$defs/editorial" },
+        "tags": {
+          "description": "Free labels used for filters and exercises, e.g. \"liquid\", \"body\", \"family\".",
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "uniqueItems": true
+        },
+        "notes": {
+          "description": "Internal note for editors (not shown on the site).",
+          "type": "string"
+        }
+      }
+    },
+    "form": {
+      "description": "One written form of a word.",
+      "type": "object",
+      "properties": {
+        "word": { "$ref": "common.schema.json#/$defs/bengaText" },
+        "pronunciation": {
+          "$ref": "common.schema.json#/$defs/localizedText",
+          "description": "Only when spelling and sound differ, e.g. Dyâmbi → «Jâmbi»."
+        }
+      },
+      "required": ["word"],
+      "additionalProperties": false
+    },
+    "noun": {
+      "description": "A noun. singular or plural may be null (e.g. liquids that only exist in the plural), but not both.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "noun" },
+        "nounClass": {
+          "description": "Noun class 1-7 of the book, or 'irregular' (book § 7-8).",
+          "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 7 }, { "const": "irregular" }]
+        },
+        "singular": { "oneOf": [{ "$ref": "#/$defs/form" }, { "type": "null" }] },
+        "plural": { "oneOf": [{ "$ref": "#/$defs/form" }, { "type": "null" }] },
+        "meaningPlural": {
+          "$ref": "common.schema.json#/$defs/localizedText",
+          "description": "Meaning of the plural form, e.g. «Libros»."
+        },
+        "meaning": { "$ref": "#/$defs/commonFields/properties/meaning" },
+        "source": true,
+        "editorial": true,
+        "tags": true,
+        "notes": true
+      },
+      "required": ["type", "nounClass", "singular", "plural", "meaning"],
+      "anyOf": [
+        { "properties": { "singular": { "type": "object" } } },
+        { "properties": { "plural": { "type": "object" } } }
+      ],
+      "allOf": [{ "$ref": "#/$defs/commonFields" }],
+      "unevaluatedProperties": false
+    },
+    "adjective": {
+      "description": "An adjective. Variable adjectives change their first syllable with the noun class (stem + class prefix); invariable ones never change.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "adjective" },
+        "kind": { "enum": ["variable", "invariable", "numeral", "ordinal"] },
+        "word": {
+          "$ref": "common.schema.json#/$defs/bengaText",
+          "description": "Citation form: the class-4 form for variable adjectives (e.g. bobe), the only form for invariable ones."
+        },
+        "stem": {
+          "type": "string",
+          "pattern": "^-",
+          "description": "Variable adjectives: the part the class prefix is added to, e.g. -be."
+        },
+        "forms": {
+          "description": "Variable adjectives: explicit forms per noun class, only when they don't follow the plain prefix rule (e.g. būamu → eyamu).",
+          "type": "object",
+          "propertyNames": { "pattern": "^[1-7]$" },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "singular": { "$ref": "common.schema.json#/$defs/bengaText" },
+              "plural": { "$ref": "common.schema.json#/$defs/bengaText" },
+              "highlight": {
+                "type": "string",
+                "description": "Syllable to highlight, e.g. bey (see AGENTS.md → Chapter 3)."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "meaning": { "$ref": "#/$defs/commonFields/properties/meaning" },
+        "source": true,
+        "editorial": true,
+        "tags": true,
+        "notes": true
+      },
+      "required": ["type", "kind", "word", "meaning"],
+      "allOf": [{ "$ref": "#/$defs/commonFields" }],
+      "unevaluatedProperties": false
+    },
+    "verb": {
+      "description": "A verb, cited by its infinitive. Its conjugation tables live in section files (block type 'conjugation').",
+      "type": "object",
+      "properties": {
+        "type": { "const": "verb" },
+        "word": {
+          "$ref": "common.schema.json#/$defs/bengaText",
+          "description": "Infinitive, e.g. kalaka (hablar)."
+        },
+        "conjugation": {
+          "description": "Regular conjugation 1-4 of the book (chapter 6), or null when irregular/unknown.",
+          "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 4 }, { "type": "null" }]
+        },
+        "irregular": { "type": "boolean" },
+        "impersonal": { "type": "boolean" },
+        "auxiliary": { "type": "boolean" },
+        "meaning": { "$ref": "#/$defs/commonFields/properties/meaning" },
+        "source": true,
+        "editorial": true,
+        "tags": true,
+        "notes": true
+      },
+      "required": ["type", "word", "meaning"],
+      "allOf": [{ "$ref": "#/$defs/commonFields" }],
+      "unevaluatedProperties": false
+    },
+    "otherWord": {
+      "description": "Any other word or fixed expression.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "pronoun",
+            "adverb",
+            "preposition",
+            "conjunction",
+            "interjection",
+            "numeral",
+            "particle",
+            "phrase"
+          ]
+        },
+        "word": { "$ref": "common.schema.json#/$defs/bengaText" },
+        "meaning": { "$ref": "#/$defs/commonFields/properties/meaning" },
+        "source": true,
+        "editorial": true,
+        "tags": true,
+        "notes": true
+      },
+      "required": ["type", "word", "meaning"],
+      "allOf": [{ "$ref": "#/$defs/commonFields" }],
+      "unevaluatedProperties": false
+    }
+  }
+}

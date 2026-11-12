@@ -205,7 +205,8 @@ Branch: `build/vue3-vite`. **Decide first:** upgrade now (recommended — the co
 
 Branch: `refactor/content-model`. This is the most important phase.
 
-- [ ] **2.1 Design the data shapes (schemas)**
+- [x] **2.1 Design the data shapes (schemas)**
+  - **Done 2026-11-12:** 5 JSON Schemas (draft 2020-12) in `src/data/schemas/` + real-content examples, `scripts/lib/schemas.mjs` (Ajv loader, reused by 2.3), 7 schema tests, `docs/CONTENT-GUIDE.md`. Lexicon ids = word keys; links stay in the word registry; `editorial` status for corrections/additions.
   - **Why:** P1, P4. One shape for every word, everywhere.
   - Example of the target lexicon entry:
     ```json

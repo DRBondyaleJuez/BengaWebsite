@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/common.schema.json",
+  "title": "Common pieces shared by all content files",
+  "description": "Small building blocks reused by the lexicon, section, exercise and chapters-index schemas. Guide: docs/CONTENT-GUIDE.md",
+  "$defs": {
+    "localizedText": {
+      "description": "A text in several languages. Spanish (es) is required; en/fr are added during translation (roadmap Phase 4). The site shows the visitor's language and falls back to Spanish.",
+      "type": "object",
+      "properties": {
+        "es": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 },
+        "fr": { "type": "string", "minLength": 1 }
+      },
+      "required": ["es"],
+      "additionalProperties": false,
+      "examples": [{ "es": "Sombrero", "en": "Hat", "fr": "Chapeau" }]
+    },
+    "bengaText": {
+      "description": "A Benga word or phrase as it should be displayed, using the Benga vowels a â e ē i o u ū (see AGENTS.md → Benga Orthography Rules). Its audio/dictionary key is computed by src/utils/audioId.js, never stored.",
+      "type": "string",
+      "minLength": 1,
+      "examples": ["Epokolo", "Ekâi ebe"]
+    },
+    "lexiconId": {
+      "description": "Id of a lexicon entry: the word key of its base form (toAudioId), plus '~2', '~3'… for a second word written the same way (homonyms).",
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+(~[0-9]+)?$",
+      "examples": ["epokolo", "ek_a_i", "jaka~2"]
+    },
+    "pages": {
+      "description": "A page or a range of pages, e.g. 9 or \"9-10\".",
+      "oneOf": [
+        { "type": "integer", "minimum": 1 },
+        { "type": "string", "pattern": "^[0-9]+(-[0-9]+)?$" }
+      ]
+    },
+    "source": {
+      "description": "Where this content is in Salvado y Cos's book. Book and PDF page numbers can differ (see AGENTS.md → Source of Truth).",
+      "type": "object",
+      "properties": {
+        "bookPage": { "$ref": "#/$defs/pages" },
+        "pdfPage": { "$ref": "#/$defs/pages" },
+        "note": {
+          "type": "string",
+          "description": "Anything useful to find it again, e.g. \"right column\"."
+        }
+      },
+      "additionalProperties": false,
+      "examples": [{ "bookPage": 9, "pdfPage": 9 }]
+    },
+    "editorial": {
+      "description": "How this content relates to the book. 'original' = as in the book; 'corrected' = the site fixes the book (keep what the book said in bookText); 'added' = new content that is not in the book.",
+      "type": "object",
+      "properties": {
+        "status": { "enum": ["original", "corrected", "added"] },
+        "bookText": {
+          "type": "string",
+          "description": "Only for 'corrected': what the book printed."
+        },
+        "note": {
+          "$ref": "#/$defs/localizedText",
+          "description": "Shown to visitors: why it was corrected or added."
+        },
+        "reviewLog": {
+          "type": "string",
+          "pattern": "^R-[0-9]{3}$",
+          "description": "Related entry in docs/REVIEW-LOG.md."
+        }
+      },
+      "required": ["status"],
+      "additionalProperties": false,
+      "examples": [
+        {
+          "status": "corrected",
+          "bookText": "úaúa",
+          "note": { "es": "El libro imprime «úaúa»; la grafía benga actual es «ūâūâ»." },
+          "reviewLog": "R-001"
+        }
+      ]
+    }
+  }
+}

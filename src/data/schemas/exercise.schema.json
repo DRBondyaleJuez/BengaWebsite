@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/exercise.schema.json",
+  "title": "Exercise file (src/data/exercises/<id>.json)",
+  "description": "An exercise attached to a section (roadmap Phase 8). Either hand-written 'items', or a 'generator' that builds questions from the lexicon so new words automatically get exercises. Guide: docs/CONTENT-GUIDE.md",
+  "type": "object",
+  "properties": {
+    "_about": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "examples": ["ch2-pluralize-class-3"] },
+    "section": {
+      "description": "Id of the section this exercise belongs to.",
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "kind": {
+      "description": "multiple-choice = pick one answer; flashcard = flip a card; fill-in = type the answer; matching = join pairs.",
+      "enum": ["multiple-choice", "flashcard", "fill-in", "matching"]
+    },
+    "title": { "$ref": "common.schema.json#/$defs/localizedText" },
+    "instructions": { "$ref": "common.schema.json#/$defs/localizedText" },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/item" }
+    },
+    "generator": { "$ref": "#/$defs/generator" },
+    "editorial": { "$ref": "common.schema.json#/$defs/editorial" }
+  },
+  "required": ["id", "section", "kind", "title"],
+  "oneOf": [{ "required": ["items"] }, { "required": ["generator"] }],
+  "additionalProperties": false,
+  "$defs": {
+    "item": {
+      "description": "One hand-written question.",
+      "type": "object",
+      "properties": {
+        "prompt": {
+          "description": "The question: a Benga word/phrase or a translated text.",
+          "oneOf": [
+            { "$ref": "common.schema.json#/$defs/bengaText" },
+            { "$ref": "common.schema.json#/$defs/localizedText" }
+          ]
+        },
+        "answer": { "type": "string", "minLength": 1 },
+        "options": {
+          "description": "multiple-choice only: the choices (the answer must be one of them).",
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "hint": { "$ref": "common.schema.json#/$defs/localizedText" }
+      },
+      "required": ["prompt", "answer"],
+      "additionalProperties": false
+    },
+    "generator": {
+      "description": "Builds questions from lexicon entries that match 'filter'.",
+      "type": "object",
+      "properties": {
+        "ask": {
+          "description": "pluralize = show singular, ask plural; singularize = the opposite; meaning = show word, ask meaning; word = show meaning, ask word.",
+          "enum": ["pluralize", "singularize", "meaning", "word"]
+        },
+        "filter": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "nounClass": {
+              "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 7 }, { "const": "irregular" }]
+            },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "count": {
+          "description": "How many questions per round.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        }
+      },
+      "required": ["ask", "count"],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_about": "EXAMPLE of a section file with the verb-related blocks (see section.schema.json and docs/CONTENT-GUIDE.md). Benga lines are copied from the book (PDF pages 38 and 53); the full kalaka tables arrive with chapter 6. Used by the schema tests. Not loaded by the site.",
+  "id": "ch6-kalaka",
+  "chapter": 6,
+  "title": { "es": "Primera conjugación: Kalaka (hablar)" },
+  "source": { "pdfPage": 53 },
+  "blocks": [
+    { "type": "heading", "text": { "es": "Voz activa — forma afirmativa" }, "level": 2 },
+    {
+      "type": "conjugation",
+      "verb": "kalaka",
+      "voice": "active",
+      "polarity": "affirmative",
+      "tenses": [
+        {
+          "tense": { "es": "Imperativo" },
+          "rows": [
+            { "person": { "es": "tú" }, "benga": "Kalaka", "meaning": { "es": "Habla tú" } },
+            { "person": { "es": "vosotros" }, "benga": "Kalakani", "meaning": { "es": "Hablad" } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Añadiendo otra palabra al radical se matiza el significado del verbo:"
+      }
+    },
+    {
+      "type": "dialogue",
+      "source": { "pdfPage": 38 },
+      "lines": [
+        { "benga": "Kalaka bekalikali", "translation": { "es": "Habla a la ventura" } },
+        { "benga": "Kalaka bokalaka", "translation": { "es": "Habla sin distraerte" } }
+      ]
+    },
+    { "type": "vocabulary", "title": { "es": "Vocabulario" }, "entries": ["kalaka", "ta"] }
+  ]
+}

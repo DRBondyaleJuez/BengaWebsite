@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/section.schema.json",
+  "title": "Section file (src/data/sections/ch-N/<section>.json)",
+  "description": "One page of the site = one section of the book: a title plus an ordered list of blocks. Each block type is drawn by one block component (roadmap Phase 3). Benga words are referenced by lexicon id, so they are written only once. Guide: docs/CONTENT-GUIDE.md",
+  "type": "object",
+  "properties": {
+    "_about": { "type": "string" },
+    "id": {
+      "description": "Unique id, usually ch<N>-<name>.",
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["ch2-noun-class-1"]
+    },
+    "chapter": {
+      "description": "Chapter number (1-10), or 0 for front matter (prologue) and 11 for the appendix.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 11
+    },
+    "title": { "$ref": "common.schema.json#/$defs/localizedText" },
+    "subtitle": { "$ref": "common.schema.json#/$defs/localizedText" },
+    "source": { "$ref": "common.schema.json#/$defs/source" },
+    "editorial": { "$ref": "common.schema.json#/$defs/editorial" },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/block" }
+    }
+  },
+  "required": ["id", "chapter", "title", "blocks"],
+  "additionalProperties": false,
+  "$defs": {
+    "text": { "$ref": "common.schema.json#/$defs/localizedText" },
+    "blockCommon": {
+      "description": "Fields any block may have.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Optional anchor, e.g. for links to #excepciones."
+        },
+        "source": { "$ref": "common.schema.json#/$defs/source" },
+        "editorial": { "$ref": "common.schema.json#/$defs/editorial" }
+      }
+    },
+    "block": {
+      "description": "One block. 'type' decides its fields.",
+      "type": "object",
+      "required": ["type"],
+      "discriminator": { "propertyName": "type" },
+      "oneOf": [
+        { "$ref": "#/$defs/heading" },
+        { "$ref": "#/$defs/paragraph" },
+        { "$ref": "#/$defs/pattern" },
+        { "$ref": "#/$defs/examples" },
+        { "$ref": "#/$defs/table" },
+        { "$ref": "#/$defs/note" },
+        { "$ref": "#/$defs/concepts" },
+        { "$ref": "#/$defs/practice" },
+        { "$ref": "#/$defs/conjugation" },
+        { "$ref": "#/$defs/dialogue" },
+        { "$ref": "#/$defs/vocabulary" }
+      ]
+    },
+    "heading": {
+      "description": "A section heading (h2) or sub-heading (h3).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "heading" },
+        "text": { "$ref": "#/$defs/text" },
+        "level": { "enum": [2, 3] }
+      },
+      "required": ["type", "text"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "paragraph": {
+      "description": "Explanatory text.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "paragraph" },
+        "text": { "$ref": "#/$defs/text" }
+      },
+      "required": ["type", "text"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "pattern": {
+      "description": "A transformation rule shown as a box: singular prefix → plural prefix.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "pattern" },
+        "from": { "type": "string", "minLength": 1, "examples": ["e-"] },
+        "to": { "type": "string", "minLength": 1, "examples": ["be-"] },
+        "fromLabel": { "$ref": "#/$defs/text" },
+        "toLabel": { "$ref": "#/$defs/text" },
+        "description": { "$ref": "#/$defs/text" }
+      },
+      "required": ["type", "from", "to"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "examples": {
+      "description": "A grid of example words. Use 'entries' (lexicon ids) for words in the lexicon; 'items' only for one-off examples such as phrases.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "examples" },
+        "title": { "$ref": "#/$defs/text" },
+        "layout": {
+          "description": "pairs = singular + plural card (default); single = one form; plural-only = plural with a «Solo plural» badge.",
+          "enum": ["pairs", "single", "plural-only"]
+        },
+        "entries": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "common.schema.json#/$defs/lexiconId" }
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "word": { "$ref": "common.schema.json#/$defs/bengaText" },
+              "meaning": { "$ref": "#/$defs/text" },
+              "highlight": { "type": "string" }
+            },
+            "required": ["word"],
+            "additionalProperties": false
+          }
+        },
+        "note": { "$ref": "#/$defs/text" }
+      },
+      "required": ["type"],
+      "oneOf": [{ "required": ["entries"] }, { "required": ["items"] }],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "table": {
+      "description": "A table. A cell is plain text, a translated text {es, en, fr} or a Benga word {benga: \"...\"} (shown with audio).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "table" },
+        "title": { "$ref": "#/$defs/text" },
+        "columns": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/cell" } }
+        }
+      },
+      "required": ["type", "columns", "rows"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "cell": {
+      "oneOf": [
+        { "type": "string" },
+        { "$ref": "#/$defs/text" },
+        {
+          "type": "object",
+          "properties": {
+            "benga": { "$ref": "common.schema.json#/$defs/bengaText" },
+            "highlight": { "type": "string" }
+          },
+          "required": ["benga"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "note": {
+      "description": "A highlighted box. info = general; exception = rule exceptions; warning = common mistakes; teacher / culture / modern-usage = teaching supplements (roadmap Phase 7).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "note" },
+        "variant": {
+          "enum": ["info", "exception", "warning", "teacher", "culture", "modern-usage"]
+        },
+        "title": { "$ref": "#/$defs/text" },
+        "text": { "$ref": "#/$defs/text" }
+      },
+      "required": ["type", "variant", "text"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "concepts": {
+      "description": "Key concept cards (title + explanation).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "concepts" },
+        "title": { "$ref": "#/$defs/text" },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "$ref": "#/$defs/text" },
+              "text": { "$ref": "#/$defs/text" }
+            },
+            "required": ["title", "text"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["type", "items"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "practice": {
+      "description": "Numbered study suggestions («Para practicar»).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "practice" },
+        "title": { "$ref": "#/$defs/text" },
+        "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } }
+      },
+      "required": ["type", "items"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "conjugation": {
+      "description": "A verb conjugation table (chapters 5-8): one block per voice and polarity, with one group of rows per tense.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "conjugation" },
+        "verb": { "$ref": "common.schema.json#/$defs/lexiconId" },
+        "title": { "$ref": "#/$defs/text" },
+        "voice": { "enum": ["active", "passive"] },
+        "polarity": { "enum": ["affirmative", "negative"] },
+        "tenses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "tense": { "$ref": "#/$defs/text" },
+              "rows": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "person": { "$ref": "#/$defs/text" },
+                    "benga": { "$ref": "common.schema.json#/$defs/bengaText" },
+                    "meaning": { "$ref": "#/$defs/text" }
+                  },
+                  "required": ["person", "benga"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["tense", "rows"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["type", "verb", "voice", "polarity", "tenses"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "dialogue": {
+      "description": "Phrases or a conversation with translation (fraseología, ejercicios, saludos).",
+      "type": "object",
+      "properties": {
+        "type": { "const": "dialogue" },
+        "title": { "$ref": "#/$defs/text" },
+        "lines": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "speaker": { "type": "string" },
+              "benga": { "$ref": "common.schema.json#/$defs/bengaText" },
+              "translation": { "$ref": "#/$defs/text" }
+            },
+            "required": ["benga", "translation"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["type", "lines"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    },
+    "vocabulary": {
+      "description": "A word list (the book's «Vocabulario» pages): lexicon ids shown alphabetically with meanings.",
+      "type": "object",
+      "properties": {
+        "type": { "const": "vocabulary" },
+        "title": { "$ref": "#/$defs/text" },
+        "entries": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "common.schema.json#/$defs/lexiconId" }
+        }
+      },
+      "required": ["type", "entries"],
+      "allOf": [{ "$ref": "#/$defs/blockCommon" }],
+      "unevaluatedProperties": false
+    }
+  }
+}
