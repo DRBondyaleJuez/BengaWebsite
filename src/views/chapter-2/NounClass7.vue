@@ -163,7 +163,7 @@ export default {
         { word: 'Ngando', audio: 'ngando', meaning: 'Cocodrilo' },
         { word: 'Ngandi', audio: 'ngandi', meaning: 'Globo, bola' },
         { word: 'Ngani', audio: 'ngani', meaning: 'Juego de manos' },
-        { word: 'Nganga', audio: 'nuega', meaning: 'Médico' },
+        { word: 'Nganga', audio: 'nganga', meaning: 'Médico' },
         { word: 'Nganiyango', audio: 'nganiyango', meaning: 'Acceso, entrada' },
         { word: 'Ngâmbi', audio: 'ng_a_mbi', meaning: 'Harpa' },
         { word: 'Ngândâ', audio: 'ng_a_nd_a_', meaning: 'Habas' },
