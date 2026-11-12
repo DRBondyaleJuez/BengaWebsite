@@ -107,7 +107,7 @@
         {
           "word": "kalaka",
           "meaning": "habla",
-          "audioId": "test"
+          "audioId": "kalaka"
         },
         {
           "word": "tataka",
@@ -131,9 +131,9 @@
       "isLong": true,
       "examples": [
         {
-          "word": "tânâdkâ",
+          "word": "tândâkâ",
           "meaning": "amar",
-          "audioId": "tanodku"
+          "audioId": "t_a_nd_a_k_a_"
         }
       ]
     },

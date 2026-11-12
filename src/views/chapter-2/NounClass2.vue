@@ -424,11 +424,11 @@ export default {
         },
         {
           singular: { word: 'Dimya', audio: 'dimya', meaning: 'Torpedo' },
-          plural: { word: 'Mamya', audio: 'mumya', meaning: 'Torpedos' }
+          plural: { word: 'Mamya', audio: 'mamya', meaning: 'Torpedos' }
         },
         {
           singular: { word: 'Diso', audio: 'diso', meaning: 'Nigua' },
-          plural: { word: 'Maso', audio: 'muso', meaning: 'Niguas' }
+          plural: { word: 'Maso', audio: 'maso', meaning: 'Niguas' }
         },
         {
           singular: {

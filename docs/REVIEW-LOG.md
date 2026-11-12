@@ -22,7 +22,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-011](#r-011) | 🟢 | 0.5 | No audio file is found on Cloudinary — every play button fails | done |
 | [R-012](#r-012) | 🟢 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | done |
 | [R-013](#r-013) | 🟢 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | done |
-| [R-014](#r-014) | 🔴 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | any time |
+| [R-014](#r-014) | 🟡 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | Nganga only |
 | [R-015](#r-015) | 🔴 | words | `Itánde` / `Matánde` written with a Spanish accent | any time |
 | [R-016](#r-016) | 🔴 | words | Vue warnings on the chapter 1 index (object used as list key) | Phase 3 |
 
@@ -150,7 +150,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-014
 **16 hand-typed audio ids have different letters than their word (possible content errors)**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** word registry work (`npm run words:sync` report)
 - **Where:** the old `audio`/`audioId` fields next to these words (the site ignores those fields now):
 
@@ -175,7 +175,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 - **Doubt:** Most are typing slips in the id, but some may mean the **word** is wrong: e.g. `tânâdkâ` looks like `tândâkâ` (amar, as in VerbalNouns); AGENTS.md mentions `Ndonga` in the class-7 list, yet the page shows `Ndonda` (and `Ngonga`/`ngonda` look swapped); `Maka`/`mala`; `Būayē`/`b_u_any_e_` (`Būanyē`?).
 - **Suggestion:** Check each word against the book page; correct the word where needed, then run `npm run words:sync`. The old id fields disappear in Phase 2 anyway. (Another 23 differ only in accent marking, e.g. `yâkâ`/`yaka`: no content doubt.)
-- **Resolution:**
+- **Resolution:** 2026-11-12 · Developer confirmed 15 of the 16: the words are right and the ids were wrong (`test` was a Cloudinary connection test), except `tânâdkâ`, which is corrected to **`tândâkâ`** (amar, as in VerbalNouns). Old ids aligned with the rule in alphabet, consonants, triphthongs, the practice deck, NounClass2/4/7 and IrregularNouns (30 fields). `Ndonga` (Confianza) already existed next to `Ndonda` (Cosecha, siega) with id `ndonga`, so nothing was added. Registry: unused `tânâdkâ` entry removed. **Still open: `Nganga` (Médico, class 7).** The book's class-7 list reads "Nuega. Médico." (OCR), the page shows `Nganga`, the old id is `nuega`: which spelling is right? · commit `fix(content): correct audio ids and tândâkâ (R-014)`
 
 ### R-015
 **`Itánde` / `Matánde` written with a Spanish accent**

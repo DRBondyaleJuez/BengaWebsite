@@ -3380,13 +3380,13 @@
       "spellings": ["Sikulu"],
       "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
     },
-    "t_a_n_a_dk_a_": {
-      "spellings": ["tânâdkâ"],
-      "usedIn": ["src/data/chapter-1/alphabet.json", "src/views/chapter-1/AlphabetSection.vue"]
-    },
     "t_a_nd_a_k_a_": {
-      "spellings": ["Tândâkâ"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["tândâkâ", "Tândâkâ"],
+      "usedIn": [
+        "src/data/chapter-1/alphabet.json",
+        "src/views/chapter-1/AlphabetSection.vue",
+        "src/views/chapter-2/VerbalNouns.vue"
+      ]
     },
     "t_a_ndal_a_nda": {
       "spellings": ["Tândalânda"],

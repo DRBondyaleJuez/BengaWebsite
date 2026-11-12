@@ -164,7 +164,7 @@ export default {
         },
         {
           singular: { word: 'Bongo', audio: 'bongo', meaning: 'Espina, punta' },
-          plural: { word: 'Miongo', audio: 'mingo', meaning: 'Espinas, puntas' }
+          plural: { word: 'Miongo', audio: 'miongo', meaning: 'Espinas, puntas' }
         },
         {
           singular: { word: 'Bonyamo', audio: 'bonyamo', meaning: 'Miseria, pobreza' },
@@ -189,7 +189,7 @@ export default {
           plural: { word: 'Mianga', audio: 'mianga', meaning: 'Campanas supersticiosas' }
         },
         {
-          singular: { word: 'Būayē', audio: 'b_u_any_e_', meaning: 'Violencia' },
+          singular: { word: 'Būayē', audio: 'b_u_ay_e_', meaning: 'Violencia' },
           plural: { word: 'Miayē', audio: 'miay_e_', meaning: 'Violencias' }
         },
         {
