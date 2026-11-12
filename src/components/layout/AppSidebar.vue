@@ -34,6 +34,7 @@ import { BOOK_PDF_URL } from '@/config/external'
 
 export default {
   name: 'AppSidebar',
+  emits: ['close'],
   components: {
     BaseIcon,
     ChapterNav

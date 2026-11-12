@@ -4,7 +4,7 @@
  */
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue2' // TODO(task 1.2): switch to @vitejs/plugin-vue for Vue 3
+import vue from '@vitejs/plugin-vue'
 
 /** Requests from this computer only (the dev server can also be reached from the local network). */
 const LOCAL_ADDRESSES = ['127.0.0.1', '::1', '::ffff:127.0.0.1']
@@ -49,6 +49,13 @@ function wordRegistryEndpoint() {
 
 export default defineConfig({
   plugins: [vue(), wordRegistryEndpoint()],
+  define: {
+    // vue-i18n build options: full install, no legacy API (we use composition mode), no devtools
+    // in the published site. Without them vue-i18n prints a warning in the console.
+    __VUE_I18N_FULL_INSTALL__: true,
+    __VUE_I18N_LEGACY_API__: false,
+    __INTLIFY_PROD_DEVTOOLS__: false
+  },
   resolve: {
     // '@/...' means 'src/...' (same shortcut as before; also set in jsconfig.json for the editor)
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }

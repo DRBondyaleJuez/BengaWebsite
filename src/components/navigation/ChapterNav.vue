@@ -176,21 +176,21 @@ export default {
   }
 }
 
-// Slide transition
+// Slide transition (Vue 3 class names: *-enter-from / *-leave-from)
 .slide-enter-active,
 .slide-leave-active {
   transition: all $transition-fast;
   overflow: hidden;
 }
 
-.slide-enter,
+.slide-enter-from,
 .slide-leave-to {
   opacity: 0;
   max-height: 0;
 }
 
 .slide-enter-to,
-.slide-leave {
+.slide-leave-from {
   max-height: 500px;
 }
 </style>
