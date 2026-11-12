@@ -26,7 +26,7 @@
         <section class="chapter-one__outcomes-section">
           <h2>{{ $t('chapter1.learningOutcomes') || 'Al Completar Este Capítulo' }}</h2>
           <ul class="chapter-one__outcomes-list">
-            <li v-for="outcome in chapter1Data.learningOutcomes" :key="outcome">
+            <li v-for="(outcome, index) in chapter1Data.learningOutcomes" :key="`outcome-${index}`">
               ✓ {{ outcome[$i18n.locale] || outcome.es }}
             </li>
           </ul>

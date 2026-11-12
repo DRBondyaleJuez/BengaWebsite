@@ -24,7 +24,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-013](#r-013) | 🟢 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | done |
 | [R-014](#r-014) | 🟢 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | done |
 | [R-015](#r-015) | 🟢 | words | `Itánde` / `Matánde` written with a Spanish accent | done |
-| [R-016](#r-016) | 🔴 | words | Vue warnings on the chapter 1 index (object used as list key) | Phase 3 |
+| [R-016](#r-016) | 🟢 | words | Vue warnings on the chapter 1 index (object used as list key) | done |
 
 ---
 
@@ -188,12 +188,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-016
 **Vue warnings on the chapter 1 index (object used as list key)**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** word registry work (console while checking all routes)
 - **Where:** `src/views/chapter-1/ChapterOneIndex.vue`, a `v-for` whose `:key` is an object
 - **Doubt:** Vue warns "Avoid using non-primitive value as key" and "Duplicate keys detected: '[object Object]'". The page displays fine, but list updates can misbehave.
 - **Suggestion:** Use a string id or the index as `:key`. Small fix; can go with Phase 3 or any chapter-1 task.
-- **Resolution:**
+- **Resolution:** 2026-11-12 · The learning-outcomes list used each outcome object (`{ es, en }`) as its `:key`; it now uses `outcome-<index>` (the list is static). Checked in a fresh tab: `/capitulo-1` shows its 5 outcomes and the console has no warnings. · commit `fix(ch1): use string keys for the learning outcomes list (R-016)`
 
 ---
 
