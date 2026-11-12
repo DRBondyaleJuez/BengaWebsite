@@ -8,15 +8,15 @@
     <!-- Overview -->
     <section class="numeral-ordinal__overview">
       <p>
-        El modo de contar de los Bengas es rigurosamente decimal. Al llegar a diez, 
-        tiene lugar la reduplicación: diez y uno, diez y dos, etc.; dos dieces, tres dieces, etc., hasta ciento.
+        El modo de contar de los Bengas es rigurosamente decimal. Al llegar a diez, tiene lugar la
+        reduplicación: diez y uno, diez y dos, etc.; dos dieces, tres dieces, etc., hasta ciento.
       </p>
     </section>
 
     <!-- Cardinal Numbers -->
     <section class="numeral-ordinal__cardinals">
       <h2>Números Cardinales</h2>
-      
+
       <!-- 1-10 -->
       <div class="cardinal-group">
         <h3>Números del 1 al 10</h3>
@@ -58,7 +58,8 @@
     <section class="numeral-ordinal__inflections">
       <h2>Inflexiones de los Primeros Numerales</h2>
       <p class="inflections-note">
-        Los cinco primeros numerales (1-5) son variables y están sujetos a cambio según la clase del sustantivo.
+        Los cinco primeros numerales (1-5) son variables y están sujetos a cambio según la clase del
+        sustantivo.
       </p>
       <div class="inflections-table">
         <div class="table-header">
@@ -86,8 +87,8 @@
     <section class="numeral-ordinal__ordinals">
       <h2>Números Ordinales</h2>
       <p class="ordinals-note">
-        Los ordinales propiamente dichos no los conocen los Bengas; sin embargo, hay un modo general de expresarlos.
-        Este método consiste en prefijar el número cardinal en caso posesivo.
+        Los ordinales propiamente dichos no los conocen los Bengas; sin embargo, hay un modo general
+        de expresarlos. Este método consiste en prefijar el número cardinal en caso posesivo.
       </p>
       <div class="ordinals-table">
         <div class="table-header">
@@ -112,9 +113,7 @@
     <!-- Distributives -->
     <section class="numeral-ordinal__distributives">
       <h2>Números Distributivos</h2>
-      <p class="distributives-note">
-        Los distributivos se forman repitiendo los cardinales.
-      </p>
+      <p class="distributives-note">Los distributivos se forman repitiendo los cardinales.</p>
       <div class="distributives-list">
         <div class="distributive-item" v-for="(dist, idx) in distributives" :key="`dist-${idx}`">
           <span class="bengaform">{{ dist.bengaForm }}</span>
@@ -130,15 +129,16 @@
         <div class="method-card">
           <h3>Método de los Dedos</h3>
           <p>
-            Mostrar los dedos levantados y esperar a que los oyentes digan el número en voz alta. 
+            Mostrar los dedos levantados y esperar a que los oyentes digan el número en voz alta.
             Este método es muy eficaz para representar centenas, decenas y unidades sin equívocos.
           </p>
         </div>
         <div class="method-card">
           <h3>Método de Repetición Rápida</h3>
           <p>
-            Repetir una palabra diez, quince o veinte veces con mucha prisa para indicar número, 
-            calidad o cantidad extraordinaria. Es propio de la narración, especialmente en el sexo femenino.
+            Repetir una palabra diez, quince o veinte veces con mucha prisa para indicar número,
+            calidad o cantidad extraordinaria. Es propio de la narración, especialmente en el sexo
+            femenino.
           </p>
         </div>
       </div>
@@ -168,7 +168,7 @@
 </template>
 
 <script>
-import numeralsData from '@/data/chapter-3/numerals-ordinals.json';
+import numeralsData from '@/data/chapter-3/numerals-ordinals.json'
 
 export default {
   name: 'NumeralOrdinalAdjectivesSection',
@@ -184,19 +184,19 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+    this.loadData()
   },
   methods: {
     loadData() {
-      this.cardinals_1_10 = numeralsData.cardinalNumbers['1-10'];
-      this.cardinals_11_20 = numeralsData.cardinalNumbers['11-20'];
+      this.cardinals_1_10 = numeralsData.cardinalNumbers['1-10']
+      this.cardinals_11_20 = numeralsData.cardinalNumbers['11-20']
       this.cardinals_21_100 = numeralsData.cardinalNumbers['21-100'].concat(
         numeralsData.cardinalNumbers['101-1000']
-      );
-      this.numeralInflections = numeralsData.numeralInflections.classes;
-      this.ordinals = numeralsData.ordinalNumbers.ordinals;
-      this.distributives = numeralsData.distributives.examples;
-      this.notes = numeralsData.notes;
+      )
+      this.numeralInflections = numeralsData.numeralInflections.classes
+      this.ordinals = numeralsData.ordinalNumbers.ordinals
+      this.distributives = numeralsData.distributives.examples
+      this.notes = numeralsData.notes
     }
   }
 }

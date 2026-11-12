@@ -95,31 +95,31 @@ export default {
         irregular: false,
         verbal: false
       }
-    };
+    }
   },
   computed: {
     progressPercentage() {
-      const completed = Object.values(this.progress).filter(v => v).length;
-      const total = Object.keys(this.progress).length;
-      return Math.round((completed / total) * 100);
+      const completed = Object.values(this.progress).filter((v) => v).length
+      const total = Object.keys(this.progress).length
+      return Math.round((completed / total) * 100)
     }
   },
   watch: {
     progress: {
       handler(newProgress) {
-        localStorage.setItem('chapter2Progress', JSON.stringify(newProgress));
+        localStorage.setItem('chapter2Progress', JSON.stringify(newProgress))
       },
       deep: true
     }
   },
   created() {
-    const savedProgress = localStorage.getItem('chapter2Progress');
+    const savedProgress = localStorage.getItem('chapter2Progress')
     if (savedProgress) {
-      this.progress = JSON.parse(savedProgress);
+      this.progress = JSON.parse(savedProgress)
     }
-    document.title = 'Capítulo 2: Del Nombre Sustantivo | Portal Benga';
+    document.title = 'Capítulo 2: Del Nombre Sustantivo | Portal Benga'
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -140,14 +140,23 @@ export default {
     text-align: center;
     margin-bottom: $spacing-xl;
 
-    h1 { font-size: 2.5rem; margin: 0 0 $spacing-md 0; }
-    p { font-size: 1.1rem; margin: 0; }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 $spacing-md 0;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
   }
 
   &__sections {
     margin-bottom: $spacing-xl;
 
-    h2 { color: $color-primary; margin-bottom: $spacing-lg; }
+    h2 {
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+    }
 
     .sections-grid {
       display: grid;
@@ -162,12 +171,21 @@ export default {
       text-decoration: none;
       color: $color-text-primary;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-      &:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
 
-      h3 { margin: 0 0 $spacing-sm 0; color: $color-primary; }
-      p { margin: 0; color: $color-text-secondary; }
+      h3 {
+        margin: 0 0 $spacing-sm 0;
+        color: $color-primary;
+      }
+      p {
+        margin: 0;
+        color: $color-text-secondary;
+      }
     }
   }
 
@@ -177,11 +195,23 @@ export default {
     border-radius: $border-radius;
     margin-bottom: $spacing-xl;
 
-    h2 { color: $color-primary; margin-top: 0; }
+    h2 {
+      color: $color-primary;
+      margin-top: 0;
+    }
 
-    .progress-items { margin-bottom: $spacing-lg; }
-    .progress-item { display: flex; align-items: center; margin-bottom: $spacing-sm; }
-    input { margin-right: $spacing-md; accent-color: $color-accent; }
+    .progress-items {
+      margin-bottom: $spacing-lg;
+    }
+    .progress-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-sm;
+    }
+    input {
+      margin-right: $spacing-md;
+      accent-color: $color-accent;
+    }
 
     .progress-bar {
       height: 24px;

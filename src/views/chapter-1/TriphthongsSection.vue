@@ -1,10 +1,7 @@
 <template>
   <div class="triphthongs-section">
     <!-- Introduction -->
-    <ContentSection 
-      id="triphthongs-intro"
-      :title="$t('chapters.chapter1.sections.triphthongs')"
-    >
+    <ContentSection id="triphthongs-intro" :title="$t('chapters.chapter1.sections.triphthongs')">
       <p class="triphthongs-section__intro">
         {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
       </p>
@@ -15,10 +12,7 @@
     </ContentSection>
 
     <!-- Triphthongs Grid -->
-    <ContentSection 
-      id="triphthongs-list"
-      :title="$t('content.triphthongs') || 'Triptongos'"
-    >
+    <ContentSection id="triphthongs-list" :title="$t('content.triphthongs') || 'Triptongos'">
       <div class="triphthongs-section__grid">
         <div
           v-for="triphthong in sectionData.triphthongs"
@@ -32,7 +26,7 @@
           </div>
 
           <p class="triphthongs-section__sounds-like">
-            <strong>{{ $t('content.soundsLike') }}:</strong><br>
+            <strong>{{ $t('content.soundsLike') }}:</strong><br />
             {{ triphthong.soundsLike[$i18n.locale] || triphthong.soundsLike.es }}
           </p>
 
@@ -45,7 +39,6 @@
             >
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audioId"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
               />
@@ -56,15 +49,14 @@
     </ContentSection>
 
     <!-- Verb Conjugation Note -->
-    <ContentSection 
-      id="triphthongs-note"
-      :title="$t('content.importantNote') || 'Nota Importante'"
-    >
+    <ContentSection id="triphthongs-note" :title="$t('content.importantNote') || 'Nota Importante'">
       <div class="triphthongs-section__info-box">
         <BaseIcon name="info" />
         <div class="triphthongs-section__info-content">
           <p class="triphthongs-section__info-text">
-            {{ sectionData.verbConjugationNote[$i18n.locale] || sectionData.verbConjugationNote.es }}
+            {{
+              sectionData.verbConjugationNote[$i18n.locale] || sectionData.verbConjugationNote.es
+            }}
           </p>
         </div>
       </div>
@@ -72,14 +64,14 @@
 
     <!-- Navigation -->
     <nav class="triphthongs-section__nav">
-      <router-link 
-        to="/capitulo-1/diptongos" 
+      <router-link
+        to="/capitulo-1/diptongos"
         class="triphthongs-section__nav-link triphthongs-section__nav-link--prev"
       >
         ← {{ $t('chapters.chapter1.sections.diphthongs') }}
       </router-link>
-      <router-link 
-        to="/capitulo-1/consonantes" 
+      <router-link
+        to="/capitulo-1/consonantes"
         class="triphthongs-section__nav-link triphthongs-section__nav-link--next"
       >
         {{ $t('chapters.chapter1.sections.consonants') }} →
@@ -93,11 +85,10 @@ import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import triphthongsData from '@/data/chapter-1/triphthongs.json'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
-  name: 'TripthongsSection',
+  name: 'TriphthongsSection',
   components: {
     ContentSection,
     BengaWord,
@@ -109,9 +100,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   }
 }
 </script>

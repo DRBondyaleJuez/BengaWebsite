@@ -6,13 +6,22 @@
     </div>
 
     <section class="irregular-nouns__intro">
-      <p>Aunque el sistema de siete clases es muy regular, el Benga contiene un número de nombres que no cumplen con los patrones esperados. Salvado y Cos los agrupa en dos apartados: nombres que carecen de singular y nombres que carecen de plural.</p>
+      <p>
+        Aunque el sistema de siete clases es muy regular, el Benga contiene un número de nombres que
+        no cumplen con los patrones esperados. Salvado y Cos los agrupa en dos apartados: nombres
+        que carecen de singular y nombres que carecen de plural.
+      </p>
     </section>
 
     <section class="irregular-nouns__no-singular">
       <h2>§ 7. Nombres que carecen de singular</h2>
-      <p class="description">Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos de éste. Algunos fueron introducido en los <a href="/capitulo-2/clase-2">sustantivos de Segunda Clase</a></p>
-      
+      <p class="description">
+        Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de
+        líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos
+        de éste. Algunos fueron introducido en los
+        <a href="/capitulo-2/clase-2">sustantivos de Segunda Clase</a>
+      </p>
+
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in pluralOnlyNouns" :key="`plural-${idx}`">
           <div class="example-form">
@@ -20,7 +29,6 @@
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -33,16 +41,22 @@
 
     <section class="irregular-nouns__no-plural">
       <h2>§ 8. Nombres que carecen de plural</h2>
-      <p class="description">Otros muchos nombres hay que no se usan sino en singular, los cuales toman sus adjuntos correspondientes a dicho número singular.</p>
-      
+      <p class="description">
+        Otros muchos nombres hay que no se usan sino en singular, los cuales toman sus adjuntos
+        correspondientes a dicho número singular.
+      </p>
+
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in singularOnlyNouns" :key="`singular-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in singularOnlyNouns"
+          :key="`singular-${idx}`"
+        >
           <div class="example-form">
             <span class="label">Forma principal (singular):</span>
             <span class="value">
               <BengaWord
                 :word="example.word"
-                :audio-id="example.audio"
                 :meaning="example.meaning"
                 :dictionary-url="getDictionaryUrl(example.word)"
                 block
@@ -58,19 +72,31 @@
       <div class="notes-list">
         <div class="note-item">
           <h4>Patrón semántico</h4>
-          <p>Los nombres sin singular suelen expresar conceptos masivos o colectivos (líquidos, cantidades, masas)</p>
+          <p>
+            Los nombres sin singular suelen expresar conceptos masivos o colectivos (líquidos,
+            cantidades, masas)
+          </p>
         </div>
         <div class="note-item">
           <h4>Uso en contexto</h4>
-          <p>Aunque un nombre carezca de plural gramatical, la cantidad se expresa mediante otros medios sintácticos</p>
+          <p>
+            Aunque un nombre carezca de plural gramatical, la cantidad se expresa mediante otros
+            medios sintácticos
+          </p>
         </div>
         <div class="note-item">
           <h4>Frecuencia</h4>
-          <p>Los nombres irregulares son relativamente pocos en comparación con el total de vocabulario nominal</p>
+          <p>
+            Los nombres irregulares son relativamente pocos en comparación con el total de
+            vocabulario nominal
+          </p>
         </div>
         <div class="note-item">
           <h4>Aprendizaje</h4>
-          <p>Es recomendable memorizarlos explícitamente porque no siguen patrones que se puedan inferir</p>
+          <p>
+            Es recomendable memorizarlos explícitamente porque no siguen patrones que se puedan
+            inferir
+          </p>
         </div>
       </div>
     </section>
@@ -86,7 +112,9 @@
     </section>
 
     <section class="irregular-nouns__nav">
-      <router-link to="/capitulo-2/clase-7" class="nav-link prev">← Clase 7 (Invariables)</router-link>
+      <router-link to="/capitulo-2/clase-7" class="nav-link prev"
+        >← Clase 7 (Invariables)</router-link
+      >
       <router-link to="/capitulo-2/verbales" class="nav-link next">Nombres Derivados →</router-link>
     </section>
   </div>
@@ -94,8 +122,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'IrregularNouns',
@@ -133,7 +160,7 @@ export default {
         { word: 'Kama', audio: 'kama', meaning: 'Ciento' },
         { word: 'Nyati', audio: 'nyati', meaning: 'Buey' },
         { word: 'Pita', audio: 'pita', meaning: 'Pólvora' },
-        { word: 'Ngūanjangūanja', audio: 'ngaanjangaanja', meaning: 'Diligencia' },
+        { word: 'Ngūanjangūanja', audio: 'ng_u_anjang_u_anja', meaning: 'Diligencia' },
         { word: 'Bokâ', audio: 'bok_a_', meaning: 'Estación lluviosa' },
         { word: 'Bulu', audio: 'bulu', meaning: 'Noche' },
         { word: 'Manga', audio: 'manga', meaning: 'Mar' },
@@ -142,7 +169,7 @@ export default {
         { word: 'Tonda', audio: 'tonda', meaning: 'Diluvio' },
         { word: 'Henga', audio: 'henga', meaning: 'Ocio' },
         { word: 'Hūē', audio: 'h_u_e_', meaning: 'Paz' },
-        { word: 'Maka', audio: 'mala', meaning: 'Jugo' },
+        { word: 'Maka', audio: 'maka', meaning: 'Jugo' },
         { word: 'Kango', audio: 'kango', meaning: 'Sabor, gusto' },
         { word: 'Kâ', audio: 'k_a_', meaning: 'Caracol grande' },
         { word: 'Kânde', audio: 'k_a_nde', meaning: 'Perseverancia' },
@@ -151,17 +178,15 @@ export default {
         { word: 'Mboi', audio: 'mboi', meaning: 'Miel' },
         { word: 'Peta', audio: 'peta', meaning: 'Disputa, etc.' }
       ]
-    };
-  },
-  methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${String(word).toLowerCase()}`
     }
   },
+  methods: {
+    getDictionaryUrl
+  },
   created() {
-    document.title = 'Nombres Irregulares | Portal Benga';
+    document.title = 'Nombres Irregulares | Portal Benga'
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -175,7 +200,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #C0392B 0%, #E74C3C 100%);
+    background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -199,7 +224,7 @@ export default {
     background: $color-surface-light;
     padding: $spacing-lg;
     border-radius: $border-radius;
-    border-left: 4px solid #C0392B;
+    border-left: 4px solid #c0392b;
     margin-bottom: $spacing-xl;
   }
 
@@ -207,11 +232,11 @@ export default {
     margin-bottom: $spacing-xl;
 
     h2 {
-      color: #C0392B;
+      color: #c0392b;
       margin-top: 0;
       margin-bottom: $spacing-lg;
       font-size: 1.5rem;
-      border-bottom: 2px solid #C0392B;
+      border-bottom: 2px solid #c0392b;
       padding-bottom: $spacing-md;
     }
 
@@ -235,7 +260,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
@@ -268,7 +293,7 @@ export default {
   }
 
   &__transcription {
-    background: #FFFDE7;
+    background: #fffde7;
     border-left: 4px solid $color-accent;
     border-radius: $border-radius;
     padding: $spacing-lg;
@@ -292,14 +317,14 @@ export default {
       gap: $spacing-lg;
 
       .note-item {
-        background: linear-gradient(135deg, #FCE4EC 0%, #F3E5F5 100%);
+        background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
-        border-left: 4px solid #8E44AD;
+        border-left: 4px solid #8e44ad;
 
         h4 {
           margin: 0 0 $spacing-sm 0;
-          color: #8E44AD;
+          color: #8e44ad;
         }
 
         p {
@@ -346,7 +371,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {

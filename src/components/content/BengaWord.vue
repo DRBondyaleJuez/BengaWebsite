@@ -2,13 +2,14 @@
   <span class="benga-word" :class="{ 'benga-word--block': block }">
     <span class="benga-word__text">
       <template v-if="wordParts.highlight">
-        {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span>{{ wordParts.after }}
+        {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span
+        >{{ wordParts.after }}
       </template>
       <template v-else>{{ word }}</template>
     </span>
-    
+
     <button
-      v-if="audioId"
+      v-if="audioUrl"
       class="benga-word__audio-btn"
       @click="playAudio"
       :aria-label="$t('audio.play') + ': ' + word"
@@ -16,7 +17,7 @@
     >
       <BaseIcon :name="isPlaying ? 'pause' : 'volume'" />
     </button>
-    
+
     <span v-else class="benga-word__audio-pending" :title="$t('audio.unavailable')">
       <BaseIcon name="volume-muted" />
     </span>
@@ -32,12 +33,10 @@
       <BaseIcon name="external-link" />
     </a>
 
-    <span v-if="meaning && showMeaning" class="benga-word__meaning">
-      ({{ meaning }})
-    </span>
+    <span v-if="meaning && showMeaning" class="benga-word__meaning"> ({{ meaning }}) </span>
 
     <audio
-      v-if="audioId"
+      v-if="audioUrl"
       ref="audioElement"
       @ended="isPlaying = false"
       @error="handleAudioError"
@@ -48,10 +47,15 @@
 
 <script>
 import BaseIcon from '@/components/common/BaseIcon.vue'
+import { getAudioUrl } from '@/services/wordLinks'
 
-//const CLOUDINARY_BASE = '[res.cloudinary.com](https://res.cloudinary.com/YOUR_CLOUD_NAME/video/upload)'
-const CLOUDINARY_BASE = 'https://res.cloudinary.com/dp5rofjyx/video/upload/v1780354084'
-
+/**
+ * Shows a Benga word with its pronunciation button and dictionary link.
+ *
+ * The recording is found automatically from the word itself (word → key → word registry),
+ * so pages only pass `word`. A play button appears only for words whose registry entry says
+ * `"audio": "recorded"`; other words show a muted icon ("Audio no disponible").
+ */
 export default {
   name: 'BengaWord',
   components: {
@@ -61,10 +65,6 @@ export default {
     word: {
       type: String,
       required: true
-    },
-    audioId: {
-      type: String,
-      default: null
     },
     meaning: {
       type: String,
@@ -95,10 +95,9 @@ export default {
     }
   },
   computed: {
-    audioSrc() {
-      if (!this.audioId) return null
-      //return `${CLOUDINARY_BASE}/benga-audio/${this.audioId}.mp3`
-      return `${CLOUDINARY_BASE}/${this.audioId}.mp3`
+    /** Recording URL, or null when the word has no recording yet. */
+    audioUrl() {
+      return getAudioUrl(this.word)
     },
     wordParts() {
       const text = this.word || ''
@@ -129,7 +128,7 @@ export default {
 
       // Lazily assign src so load events don't fire on render
       if (!el.src) {
-        const src = this.audioSrc
+        const src = this.audioUrl
         if (!src) return
         el.src = src
       }

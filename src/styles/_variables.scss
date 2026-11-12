@@ -1,52 +1,57 @@
 // Colors - Earth tones inspired by Equatorial Guinea
-$color-primary: #2D5A27;        // Forest green
-$color-primary-light: #4A8B3C;
-$color-primary-dark: #1A3A18;
+$color-primary: #2d5a27; // Forest green
+$color-primary-light: #4a8b3c;
+$color-primary-dark: #1a3a18;
 
-$color-secondary: #8B4513;      // Saddle brown
-$color-secondary-light: #A0522D;
-$color-secondary-dark: #5D2E0D;
+$color-secondary: #8b4513; // Saddle brown
+$color-secondary-light: #a0522d;
+$color-secondary-dark: #5d2e0d;
 
-$color-accent: #DAA520;         // Goldenrod
-$color-accent-light: #F0C040;
-$color-accent-dark: #B8860B;
+$color-accent: #daa520; // Goldenrod
+$color-accent-light: #f0c040;
+$color-accent-dark: #b8860b;
 
-$color-background: #FDF8F0;     // Warm white
-$color-background-light: #FBF5ED;
-$color-surface: #FFFFFF;
-$color-surface-light: #F9F9F9;  // Light surface
-$color-surface-alt: #F5EFE6;
+$color-background: #fdf8f0; // Warm white
+$color-background-light: #fbf5ed;
+$color-surface: #ffffff;
+$color-surface-light: #f9f9f9; // Light surface
+$color-surface-alt: #f5efe6;
 
-$color-text-primary: #2C2C2C;
-$color-text-secondary: #5A5A5A;
-$color-text-muted: #8A8A8A;
-$color-text-inverse: #FFFFFF;
-$color-heading-dark: #1A3A18;
+$color-text-primary: #2c2c2c;
+$color-text-secondary: #5a5a5a;
+$color-text-muted: #8a8a8a;
+$color-text-inverse: #ffffff;
+$color-heading-dark: #1a3a18;
 
-$color-benga-word: #1A5F7A;     // Distinct color for Benga words
-$color-benga-word-bg: #E8F4F8;
+$color-benga-word: #1a5f7a; // Distinct color for Benga words
+$color-benga-word-bg: #e8f4f8;
 
-$color-success: #28A745;
-$color-warning: #FFC107;
-$color-error: #DC3545;
-$color-info: #17A2B8;
+$color-success: #28a745;
+$color-warning: #ffc107;
+$color-error: #dc3545;
+$color-info: #17a2b8;
 
 // Typography
-$font-family-base: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-base:
+  'Lato',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  sans-serif;
 $font-family-heading: 'Merriweather', Georgia, serif;
-$font-heading: $font-family-heading;  // Alias
+$font-heading: $font-family-heading; // Alias
 $font-family-benga: 'Noto Sans', 'Lato', sans-serif;
 $font-family-mono: 'Fira Code', 'Consolas', monospace;
-$font-mono: $font-family-mono;  // Alias
+$font-mono: $font-family-mono; // Alias
 
-$font-size-xs: 0.75rem;    // 12px
-$font-size-sm: 0.875rem;   // 14px
-$font-size-base: 1rem;     // 16px
-$font-size-lg: 1.125rem;   // 18px
-$font-size-xl: 1.25rem;    // 20px
-$font-size-2xl: 1.5rem;    // 24px
-$font-size-3xl: 1.875rem;  // 30px
-$font-size-4xl: 2.25rem;   // 36px
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+$font-size-3xl: 1.875rem; // 30px
+$font-size-4xl: 2.25rem; // 36px
 
 $line-height-tight: 1.25;
 $line-height-base: 1.6;
@@ -58,13 +63,13 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 // Spacing
-$spacing-xs: 0.25rem;   // 4px
-$spacing-sm: 0.5rem;    // 8px
-$spacing-md: 1rem;      // 16px
-$spacing-lg: 1.5rem;    // 24px
-$spacing-xl: 2rem;      // 32px
-$spacing-2xl: 3rem;     // 48px
-$spacing-3xl: 4rem;     // 64px
+$spacing-xs: 0.25rem; // 4px
+$spacing-sm: 0.5rem; // 8px
+$spacing-md: 1rem; // 16px
+$spacing-lg: 1.5rem; // 24px
+$spacing-xl: 2rem; // 32px
+$spacing-2xl: 3rem; // 48px
+$spacing-3xl: 4rem; // 64px
 
 // Layout
 $sidebar-width: 280px;
@@ -75,14 +80,14 @@ $max-content-width: 900px;
 $max-page-width: 1400px;
 
 // Borders
-$border-radius: 8px;            // Default border radius
+$border-radius: 8px; // Default border radius
 $border-radius-sm: 4px;
 $border-radius-md: 8px;
-$border-radius-base: 8px;       // Alias for default
+$border-radius-base: 8px; // Alias for default
 $border-radius-lg: 12px;
 $border-radius-full: 9999px;
 $border-width: 1px;
-$border-color: #E0D8CC;
+$border-color: #e0d8cc;
 
 // Shadows
 $shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);

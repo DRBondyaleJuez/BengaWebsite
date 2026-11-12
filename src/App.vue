@@ -3,20 +3,17 @@
     <a href="#main-content" class="skip-link">
       {{ $t('accessibility.skipToContent') }}
     </a>
-    
+
     <AppHeader @toggle-sidebar="sidebarOpen = !sidebarOpen" />
-    
+
     <div class="app__body">
-      <AppSidebar 
-        :is-open="sidebarOpen" 
-        @close="sidebarOpen = false"
-      />
-      
+      <AppSidebar :is-open="sidebarOpen" @close="sidebarOpen = false" />
+
       <main id="main-content" class="app__main">
         <router-view />
       </main>
     </div>
-    
+
     <AppFooter />
   </div>
 </template>
@@ -91,4 +88,3 @@ export default {
   }
 }
 </style>
-

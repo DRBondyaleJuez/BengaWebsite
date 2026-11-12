@@ -8,8 +8,9 @@
     <!-- Overview -->
     <section class="invariable-adjectives__overview">
       <p>
-        Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, 
-        sin experimentar cambio alguno en su única y simple forma. Estos adjetivos no tienen número, género ni clasificación.
+        Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que
+        califican, sin experimentar cambio alguno en su única y simple forma. Estos adjetivos no
+        tienen número, género ni clasificación.
       </p>
     </section>
 
@@ -30,7 +31,7 @@
       <div class="adjectives-grid">
         <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
           <div class="adjective-card__bengaform">
-            <BengaWord :word="adj.bengaForm" :audio-id="adj.audioId" />
+            <BengaWord :word="adj.bengaForm" />
           </div>
           <div class="adjective-card__meaning">
             {{ adj.spanishMeaning }}
@@ -43,13 +44,12 @@
     <section class="invariable-adjectives__examples">
       <h2>Ejemplos de Uso</h2>
       <p class="section-intro">
-        Escucha cada ejemplo pulsando el icono de audio: la lengua benga es
-        principalmente oral.
+        Escucha cada ejemplo pulsando el icono de audio: la lengua benga es principalmente oral.
       </p>
       <div class="examples-container">
         <div class="example-item" v-for="(example, idx) in examples" :key="`ex-${idx}`">
           <div class="example-item__bengaform">
-            <BengaWord :word="example.bengaSentence" :audio-id="example.audioId" />
+            <BengaWord :word="example.bengaSentence" />
           </div>
           <div class="example-item__translation">
             <strong>Traducción:</strong> {{ example.spanishTranslation }}
@@ -125,11 +125,11 @@
 </template>
 
 <script>
-import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json';
-import BengaWord from '@/components/content/BengaWord.vue';
+import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
+import BengaWord from '@/components/content/BengaWord.vue'
 
 export default {
-  name: 'IrregularAdjectivesSection',
+  name: 'InvariableAdjectivesSection',
   components: {
     BengaWord
   },
@@ -141,13 +141,13 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+    this.loadData()
   },
   methods: {
     loadData() {
-      this.adjectives = invariableAdjectivesData.adjectives;
-      this.examples = invariableAdjectivesData.examples;
-      this.characteristics = invariableAdjectivesData.characteristics;
+      this.adjectives = invariableAdjectivesData.adjectives
+      this.examples = invariableAdjectivesData.examples
+      this.characteristics = invariableAdjectivesData.characteristics
     }
   }
 }
@@ -457,7 +457,8 @@ export default {
   transition: all $transition-base;
   text-align: center;
 
-  &--back, &--index {
+  &--back,
+  &--index {
     background-color: #f0f0f0;
     color: $color-text-primary;
 

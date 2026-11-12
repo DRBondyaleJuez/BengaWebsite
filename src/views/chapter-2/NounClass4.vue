@@ -18,7 +18,9 @@
           <span class="pattern-value plural">mi-</span>
         </div>
       </div>
-      <p class="pattern-description">Los nombres de la cuarta clase toman el prefijo mi- al pasar al plural.</p>
+      <p class="pattern-description">
+        Los nombres de la cuarta clase toman el prefijo mi- al pasar al plural.
+      </p>
     </section>
 
     <section class="noun-class__examples">
@@ -28,7 +30,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -37,7 +38,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -54,7 +54,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -63,7 +62,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -93,13 +91,16 @@
 
     <section class="noun-class__exceptions">
       <h2>Excepciones</h2>
-      <p class="section-note">Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la segunda clase.</p>
+      <p class="section-note">
+        Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase
+        en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la
+        formación del plural de la segunda clase.
+      </p>
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -108,7 +109,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -136,8 +136,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass4',
@@ -165,7 +164,7 @@ export default {
         },
         {
           singular: { word: 'Bongo', audio: 'bongo', meaning: 'Espina, punta' },
-          plural: { word: 'Miongo', audio: 'mingo', meaning: 'Espinas, puntas' }
+          plural: { word: 'Miongo', audio: 'miongo', meaning: 'Espinas, puntas' }
         },
         {
           singular: { word: 'Bonyamo', audio: 'bonyamo', meaning: 'Miseria, pobreza' },
@@ -190,7 +189,7 @@ export default {
           plural: { word: 'Mianga', audio: 'mianga', meaning: 'Campanas supersticiosas' }
         },
         {
-          singular: { word: 'Būayē', audio: 'b_u_any_e_', meaning: 'Violencia' },
+          singular: { word: 'Būayē', audio: 'b_u_ay_e_', meaning: 'Violencia' },
           plural: { word: 'Miayē', audio: 'miay_e_', meaning: 'Violencias' }
         },
         {
@@ -215,9 +214,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   },
   created() {
     document.title = 'Cuarta Clase Nominal | Portal Benga'
@@ -236,7 +233,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -272,7 +269,7 @@ export default {
   .section-note {
     margin: 0 0 $spacing-lg;
     padding: $spacing-md;
-    background: #FFFDE7;
+    background: #fffde7;
     border-left: 4px solid $color-accent;
     color: $color-text-secondary;
   }
@@ -308,13 +305,13 @@ export default {
           border-radius: $border-radius;
 
           &.singular {
-            background: #E8F5E9;
-            color: #1B5E20;
+            background: #e8f5e9;
+            color: #1b5e20;
           }
 
           &.plural {
-            background: #FFF3E0;
-            color: #E65100;
+            background: #fff3e0;
+            color: #e65100;
           }
         }
       }
@@ -354,27 +351,27 @@ export default {
       justify-content: center;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
       .example-singular {
         .benga-word--block {
-          background: #E8F5E9;
+          background: #e8f5e9;
         }
 
         :deep(.benga-word__text) {
-          color: #1B5E20;
+          color: #1b5e20;
         }
       }
 
       .example-plural {
         .benga-word--block {
-          background: #FFF3E0;
+          background: #fff3e0;
         }
 
         :deep(.benga-word__text) {
-          color: #E65100;
+          color: #e65100;
         }
       }
 
@@ -401,7 +398,7 @@ export default {
       gap: $spacing-lg;
 
       .concept-item {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
         border-left: 4px solid $color-primary;
@@ -456,7 +453,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {

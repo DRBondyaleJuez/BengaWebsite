@@ -1,0 +1,6333 @@
+{
+  "_about": "One entry per Benga word. The key on the left comes from the word (src/utils/audioId.js); never type it by hand. Edit livingDictionaryId, audio, audioFile and notes here, or at http://localhost:8080/admin/palabras while `npm run serve` is running. After adding content run `npm run words:sync`. Guide: docs/WORD-REGISTRY.md",
+  "words": {
+    "_a_v_e_": {
+      "word": "Âvē",
+      "livingDictionaryId": "731c650f-c388-4597-bda0-47e0a47fff29",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "_u_a_u_a_": {
+      "word": "ūâūâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "_u_eango": {
+      "word": "ūeango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "_u_hi": {
+      "word": "ūhi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "au": {
+      "word": "au",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_alo": {
+      "word": "Būalo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_amu": {
+      "word": "būamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_anga": {
+      "word": "Būanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_ay_e_": {
+      "word": "Būayē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_e": {
+      "word": "Būe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "b_u_eka": {
+      "word": "Būeka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bab_u_e": {
+      "word": "babūe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bahano": {
+      "word": "Bahano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bajo": {
+      "word": "Bajo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bamo": {
+      "word": "Bamo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "banda": {
+      "word": "Banda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bangolu": {
+      "word": "Bangolu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bato": {
+      "word": "Bato",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bato-baiyamu": {
+      "word": "Bato baiyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "batoba": {
+      "word": "Batoba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "be_u_aha": {
+      "word": "Beūaha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beb_a_b_a_": {
+      "word": "Bebâbâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beb_u_ela": {
+      "word": "Bebūela",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebabadi": {
+      "word": "Bebabadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebadu": {
+      "word": "Bebadu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebamba": {
+      "word": "Bebamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebambamba": {
+      "word": "Bebambamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebambana": {
+      "word": "Bebambana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebano": {
+      "word": "Bebano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebodi": {
+      "word": "Bebodi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebok_u_edi": {
+      "word": "Bebokūedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebonga": {
+      "word": "Bebonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebuk_u_angonja": {
+      "word": "Bebukūangonja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebuki": {
+      "word": "Bebuki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebuma": {
+      "word": "Bebuma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebumulema": {
+      "word": "Bebumulema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bebungu": {
+      "word": "Bebungu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beby_a_by_a_": {
+      "word": "Bebyâbyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bedingiha": {
+      "word": "Bedingiha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bedoko": {
+      "word": "Bedoko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bedubu": {
+      "word": "Bedubu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beduka": {
+      "word": "Beduka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bedungu": {
+      "word": "Bedungu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "befu": {
+      "word": "Befu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beg_a_lani": {
+      "word": "Begâlani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beg_a_ndaga": {
+      "word": "Begândaga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beg_e_ja": {
+      "word": "Begēja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "begala": {
+      "word": "Begala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "begeno": {
+      "word": "Begeno",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "begombe": {
+      "word": "Begombe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beguba": {
+      "word": "Beguba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "begumia": {
+      "word": "Begumia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "begunguna": {
+      "word": "Begunguna",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beh_a_h_a_ni": {
+      "word": "Behâhâni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beh_a_lia": {
+      "word": "Behâlia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beh_e_k_a_": {
+      "word": "Behēkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behadi": {
+      "word": "Behadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behavu": {
+      "word": "Behavu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beheheku": {
+      "word": "Beheheku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behek_u_e_": {
+      "word": "Behekūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behelele": {
+      "word": "Behelele",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behihila": {
+      "word": "Behihila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behila": {
+      "word": "Behila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behilibeja": {
+      "word": "Behilibeja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behini": {
+      "word": "Behini",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behongola": {
+      "word": "Behongola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behove": {
+      "word": "Behove",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behuhu": {
+      "word": "Behuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behuka": {
+      "word": "Behuka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behukuluku": {
+      "word": "Behukuluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "behut_e_": {
+      "word": "Behutē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bej_a_mbi": {
+      "word": "Bejâmbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bej_a_nj_a_": {
+      "word": "Bejânjâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beja": {
+      "word": "Beja",
+      "livingDictionaryId": "a2c6d718-b42f-4c35-981c-ace8b766ecf5",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejabavudi": {
+      "word": "Bejabavudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejaka": {
+      "word": "Bejaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejalina": {
+      "word": "Bejalina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejanganangobe": {
+      "word": "Bejanganangobe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejanganangobo": {
+      "word": "Bejanganangobo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bejangina": {
+      "word": "Bejangina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_i": {
+      "word": "Bekâi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_i-bebe": {
+      "word": "Bekâi bebe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_i-behole": {
+      "word": "Bekâi behole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_i-benene": {
+      "word": "Bekâi benene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_i-bevindo": {
+      "word": "Bekâi bevindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_k_a_": {
+      "word": "Bekâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_k_a_l_a_": {
+      "word": "Bekâkâlâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_k_a_yi": {
+      "word": "Bekâkâyi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_a_mb_a_": {
+      "word": "Bekâmbâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_e_mb_e_": {
+      "word": "Bekēmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_e_nd_a_": {
+      "word": "Bekēndâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bek_u_ek_u_e": {
+      "word": "Bekūekūe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beka": {
+      "word": "Beka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekaba": {
+      "word": "Bekaba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekahi": {
+      "word": "Bekahi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekai": {
+      "word": "Bekai",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekalidi": {
+      "word": "Bekalidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekano": {
+      "word": "Bekano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekedi": {
+      "word": "Bekedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekeha": {
+      "word": "Bekeha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekelekeke": {
+      "word": "Bekelekeke",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekendangolo": {
+      "word": "Bekendangolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekengo": {
+      "word": "Bekengo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekeyi": {
+      "word": "Bekeyi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekiki": {
+      "word": "Bekiki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekikindi": {
+      "word": "Bekikindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beko": {
+      "word": "Beko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekoda": {
+      "word": "Bekoda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekokobo": {
+      "word": "Bekokobo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekola": {
+      "word": "Bekola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekomba": {
+      "word": "Bekomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekoto": {
+      "word": "Bekoto",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekudikudi": {
+      "word": "Bekudikudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekuha": {
+      "word": "Bekuha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekukubi": {
+      "word": "Bekukubi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bekulu": {
+      "word": "Bekulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bel_a_ngi": {
+      "word": "Belângi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bel_e_bu": {
+      "word": "Belēbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bel_e_mb_e_": {
+      "word": "Belēmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bel_e_ngi": {
+      "word": "Belēngi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belahe": {
+      "word": "Belahe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belandi": {
+      "word": "Belandi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belape": {
+      "word": "Belape",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bele": {
+      "word": "Bele",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belekanako": {
+      "word": "Belekanako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belembo": {
+      "word": "Belembo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belende": {
+      "word": "Belende",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belinga": {
+      "word": "Belinga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belolo": {
+      "word": "Belolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belombo": {
+      "word": "Belombo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "belongo": {
+      "word": "Belongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bem_e_n_a_": {
+      "word": "Bemēnâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bem_e_ng_u_e_": {
+      "word": "Bemēngūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bembe": {
+      "word": "bembe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bemi": {
+      "word": "Bemi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bemina": {
+      "word": "Bemina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ben_a_": {
+      "word": "Benâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "benami": {
+      "word": "Benami",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "benangi": {
+      "word": "Benangi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bengamba": {
+      "word": "Bengamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "benge": {
+      "word": "Benge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bengumbi": {
+      "word": "Bengumbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beningo": {
+      "word": "Beningo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "benj_e_li": {
+      "word": "Benjēli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "benjasigalanjenga": {
+      "word": "Benjasigalanjenga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bep_e_l_e_": {
+      "word": "Bepēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bep_e_lup_e_lu": {
+      "word": "Bepēlupēlu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepambo": {
+      "word": "Bepambo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepapi": {
+      "word": "Bepapi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepati": {
+      "word": "Bepati",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepedi": {
+      "word": "Bepedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepepa": {
+      "word": "Bepepa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepikiliedi": {
+      "word": "Bepikiliedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepima": {
+      "word": "Bepima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepokolo": {
+      "word": "Bepokolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepokolo-beyamu": {
+      "word": "Bepokolo beyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepondoma": {
+      "word": "Bepondoma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beponga": {
+      "word": "Beponga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bepota": {
+      "word": "Bepota",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bes_a_": {
+      "word": "Besâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bes_u_ag_e_nda": {
+      "word": "Besūagēnda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "besalagamb_u_e_": {
+      "word": "Besalagambūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "besuti": {
+      "word": "Besuti",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bet_a_k_a_": {
+      "word": "Betâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bet_a_ki": {
+      "word": "Betâki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bet_e_jani": {
+      "word": "Betējani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betema": {
+      "word": "Betema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betima": {
+      "word": "Betima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betimbe": {
+      "word": "Betimbe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betoli": {
+      "word": "Betoli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betomba": {
+      "word": "Betomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betombi": {
+      "word": "Betombi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betundu": {
+      "word": "Betundu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "betunia": {
+      "word": "Betunia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bev_e_l_e_": {
+      "word": "Bevēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bev_e_l_e_hi": {
+      "word": "Bevēlēhi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beva": {
+      "word": "Beva",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevandi": {
+      "word": "Bevandi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevango": {
+      "word": "Bevango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevelse": {
+      "word": "Bevelse",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevema": {
+      "word": "Bevema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevemba": {
+      "word": "Bevemba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevila": {
+      "word": "Bevila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevindi": {
+      "word": "Bevindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevita": {
+      "word": "Bevita",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevudi": {
+      "word": "Bevudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevunga": {
+      "word": "Bevunga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bevuva": {
+      "word": "Bevuva",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beyake": {
+      "word": "Beyake",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beyok_u_edi": {
+      "word": "Beyokūedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "beyome": {
+      "word": "Beyome",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bi_a_k_a_": {
+      "word": "Biâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bi_e_ke": {
+      "word": "Biēke",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biaho": {
+      "word": "Biaho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biako": {
+      "word": "Biako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bialo": {
+      "word": "Bialo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biambe": {
+      "word": "Biambe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biapa": {
+      "word": "Biapa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biej_a_": {
+      "word": "Biejâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biima": {
+      "word": "Biima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "binaka": {
+      "word": "Binaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bioha": {
+      "word": "Bioha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bioma": {
+      "word": "Bioma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "biomu": {
+      "word": "Biomu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bob_a_bu": {
+      "word": "Bobâbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bobako": {
+      "word": "Bobako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bobapami": {
+      "word": "Bobapami",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "boho": {
+      "word": "Boho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "boho-boyamu": {
+      "word": "Boho boyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bojo_u_a": {
+      "word": "Bojoūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bok_a_": {
+      "word": "Bokâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bokolo": {
+      "word": "Bokolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bokolo-bokolo": {
+      "word": "Bokolo bokolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bolohi": {
+      "word": "Bolohi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bondi-babe": {
+      "word": "Bondi babe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bondi-bahole": {
+      "word": "Bondi bahole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bondi-banene": {
+      "word": "Bondi banene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bondi-bavindo": {
+      "word": "Bondi bavindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bongo": {
+      "word": "Bongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bonyamo": {
+      "word": "Bonyamo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bova": {
+      "word": "Bova",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bova-bobe": {
+      "word": "Bova bobe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bova-bohole": {
+      "word": "Bova bohole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bova-bonene": {
+      "word": "Bova bonene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bova-bovindo": {
+      "word": "Bova bovindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bu_u_ha": {
+      "word": "Buūha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "bulu": {
+      "word": "Bulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "byelele": {
+      "word": "byelele",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "de": {
+      "word": "De",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "de-de-de": {
+      "word": "De de de",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "di_a_": {
+      "word": "Diâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dib_e_": {
+      "word": "Dibē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "diba": {
+      "word": "Diba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dih_a_": {
+      "word": "Dihâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dik_e_": {
+      "word": "Dikē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "diko": {
+      "word": "Diko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dimya": {
+      "word": "Dimya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dina": {
+      "word": "Dina",
+      "livingDictionaryId": "944ef682-bdf6-4876-af27-7189fde3cf7b",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dind_e_": {
+      "word": "Dindē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dingongola": {
+      "word": "Dingongola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "diny_a_": {
+      "word": "Dinyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "diso": {
+      "word": "Diso",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dit_a_": {
+      "word": "Ditâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "divy_a_": {
+      "word": "Divyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dy_a_mbi": {
+      "word": "Dyâmbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dyango": {
+      "word": "Dyango",
+      "livingDictionaryId": "1e9b5d37-8d32-4018-81a6-e33ec59dd9f8",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dyate": {
+      "word": "Dyate",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "dyoba": {
+      "word": "Dyoba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "e_u_aha": {
+      "word": "Eūaha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eb_a_b_a_": {
+      "word": "Ebâbâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eb_u_ela": {
+      "word": "Ebūela",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebabadi": {
+      "word": "Ebabadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebadu": {
+      "word": "Ebadu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebamba": {
+      "word": "Ebamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebambamba": {
+      "word": "Ebambamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebambana": {
+      "word": "Ebambana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebano": {
+      "word": "Ebano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebodi": {
+      "word": "Ebodi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebok_u_edi": {
+      "word": "Ebokūedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebonga": {
+      "word": "Ebonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebuk_u_angonja": {
+      "word": "Ebukūangonja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebuki": {
+      "word": "Ebuki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebuma": {
+      "word": "Ebuma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebumulema": {
+      "word": "Ebumulema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ebungu": {
+      "word": "Ebungu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eby_a_by_a_": {
+      "word": "Ebyâbyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "edingiha": {
+      "word": "Edingiha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "edoko": {
+      "word": "Edoko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "edubu": {
+      "word": "Edubu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eduka": {
+      "word": "Eduka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "edungu": {
+      "word": "Edungu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "efu": {
+      "word": "Efu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eg_a_lani": {
+      "word": "Egâlani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eg_a_ndaga": {
+      "word": "Egândaga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eg_e_ja": {
+      "word": "Egēja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "egala": {
+      "word": "Egala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "egeno": {
+      "word": "Egeno",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "egombe": {
+      "word": "Egombe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eguba": {
+      "word": "Eguba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "egumia": {
+      "word": "Egumia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "egunguna": {
+      "word": "Egunguna",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eh_a_h_a_ni": {
+      "word": "Ehâhâni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eh_a_lia": {
+      "word": "Ehâlia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eh_e_k_a_": {
+      "word": "Ehēkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehadi": {
+      "word": "Ehadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehavu": {
+      "word": "Ehavu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eheheku": {
+      "word": "Eheheku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehek_u_e_": {
+      "word": "Ehekūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehelele": {
+      "word": "Ehelele",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehihila": {
+      "word": "Ehihila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehila": {
+      "word": "Ehila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehilibeja": {
+      "word": "Ehilibeja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehini": {
+      "word": "Ehini",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehongola": {
+      "word": "Ehongola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehove": {
+      "word": "Ehove",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehuhu": {
+      "word": "Ehuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehuka": {
+      "word": "Ehuka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehukuluku": {
+      "word": "Ehukuluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ehut_e_": {
+      "word": "Ehutē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ej_a_mbi": {
+      "word": "Ejâmbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ej_a_nj_a_": {
+      "word": "Ejânjâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eja": {
+      "word": "Eja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejabavudi": {
+      "word": "Ejabavudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejaka": {
+      "word": "Ejaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejalina": {
+      "word": "Ejalina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejanganangobe": {
+      "word": "Ejanganangobe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejanganangobo": {
+      "word": "Ejanganangobo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ejangina": {
+      "word": "Ejangina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_i": {
+      "word": "Ekâi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_i-ebe": {
+      "word": "Ekâi ebe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_i-ehole": {
+      "word": "Ekâi ehole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_i-enene": {
+      "word": "Ekâi enene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_i-evindo": {
+      "word": "Ekâi evindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_k_a_": {
+      "word": "Ekâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_k_a_l_a_": {
+      "word": "Ekâkâlâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_k_a_yi": {
+      "word": "Ekâkâyi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_a_mb_a_": {
+      "word": "Ekâmbâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_e_mb_e_": {
+      "word": "Ekēmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_e_nd_a_": {
+      "word": "Ekēndâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ek_u_ek_u_e": {
+      "word": "Ekūekūe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eka": {
+      "word": "Eka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekaba": {
+      "word": "Ekaba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekahi": {
+      "word": "Ekahi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekai": {
+      "word": "Ekai",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekalidi": {
+      "word": "Ekalidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekano": {
+      "word": "Ekano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekedi": {
+      "word": "Ekedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekeha": {
+      "word": "Ekeha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekelekeke": {
+      "word": "Ekelekeke",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekendangolo": {
+      "word": "Ekendangolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekengo": {
+      "word": "Ekengo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekeyi": {
+      "word": "Ekeyi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekiki": {
+      "word": "Ekiki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekikindi": {
+      "word": "Ekikindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eko": {
+      "word": "Eko",
+      "livingDictionaryId": "7d2851f2-f884-476c-b784-055170e6773c",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekoda": {
+      "word": "Ekoda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekokobo": {
+      "word": "Ekokobo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekola": {
+      "word": "Ekola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekomba": {
+      "word": "Ekomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekoto": {
+      "word": "Ekoto",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekudikudi": {
+      "word": "Ekudikudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekuha": {
+      "word": "Ekuha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekukubi": {
+      "word": "Ekukubi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ekulu": {
+      "word": "Ekulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "el_a_ngi": {
+      "word": "Elângi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "el_e_bu": {
+      "word": "Elēbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "el_e_mb_e_": {
+      "word": "Elēmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "el_e_ngi": {
+      "word": "Elēngi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elahe": {
+      "word": "Elahe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elandi": {
+      "word": "Elandi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elape": {
+      "word": "Elape",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ele": {
+      "word": "Ele",
+      "livingDictionaryId": "1820bdc3-3418-4600-862f-3692f6a36bd8",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elekanako": {
+      "word": "Elekanako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elembo": {
+      "word": "Elembo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elende": {
+      "word": "Elende",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elinga": {
+      "word": "Elinga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elolo": {
+      "word": "Elolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elombo": {
+      "word": "Elombo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "elongo": {
+      "word": "Elongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "em_e_n_a_": {
+      "word": "Emēnâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "em_e_ng_u_e_": {
+      "word": "Emēngūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "emi": {
+      "word": "Emi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "emina": {
+      "word": "Emina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "en_a_": {
+      "word": "Enâ",
+      "livingDictionaryId": "9b0fb8a4-e76e-4d83-bf79-32a6dd3f23cc",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "enami": {
+      "word": "Enami",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "enangi": {
+      "word": "Enangi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "engamba": {
+      "word": "Engamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "enge": {
+      "word": "Enge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "engumbi": {
+      "word": "Engumbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eningo": {
+      "word": "Eningo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "enj_e_li": {
+      "word": "Enjēli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "enjasigalanjenga": {
+      "word": "Enjasigalanjenga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ep_e_l_e_": {
+      "word": "Epēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ep_e_lup_e_lu": {
+      "word": "Epēlupēlu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epambo": {
+      "word": "Epambo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epapi": {
+      "word": "Epapi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epati": {
+      "word": "Epati",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epedi": {
+      "word": "Epedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epepa": {
+      "word": "Epepa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epikiliedi": {
+      "word": "Epikiliedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epima": {
+      "word": "Epima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epokolo": {
+      "word": "Epokolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epokolo-eyamu": {
+      "word": "Epokolo eyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epondoma": {
+      "word": "Epondoma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eponga": {
+      "word": "Eponga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "epota": {
+      "word": "Epota",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "es_a_": {
+      "word": "Esâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "es_u_ag_e_nda": {
+      "word": "Esūagēnda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "esalagamb_u_e_": {
+      "word": "Esalagambūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "esuti": {
+      "word": "Esuti",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "et_a_k_a_": {
+      "word": "Etâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "et_a_ki": {
+      "word": "Etâki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "et_e_jani": {
+      "word": "Etējani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etema": {
+      "word": "Etema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etima": {
+      "word": "Etima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etimbe": {
+      "word": "Etimbe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etoli": {
+      "word": "Etoli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etomba": {
+      "word": "Etomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etombi": {
+      "word": "Etombi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etundu": {
+      "word": "Etundu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "etunia": {
+      "word": "Etunia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ev_e_l_e_": {
+      "word": "Evēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ev_e_l_e_hi": {
+      "word": "Evēlēhi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eva": {
+      "word": "Eva",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evandi": {
+      "word": "Evandi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evango": {
+      "word": "Evango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evelse": {
+      "word": "Evelse",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evema": {
+      "word": "Evema",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evemba": {
+      "word": "Evemba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evila": {
+      "word": "Evila",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evindi": {
+      "word": "Evindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evita": {
+      "word": "Evita",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evudi": {
+      "word": "Evudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evunga": {
+      "word": "Evunga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "evuva": {
+      "word": "Evuva",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eyake": {
+      "word": "Eyake",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eyok_u_edi": {
+      "word": "Eyokūedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "eyome": {
+      "word": "Eyome",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "fala": {
+      "word": "Fala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "fato": {
+      "word": "Fato",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "fula": {
+      "word": "Fula",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "h_a_k_a_": {
+      "word": "Hâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "h_a_ng_a_": {
+      "word": "Hāngā",
+      "livingDictionaryId": "ab7b1df3-547b-4f20-a2c5-94ff932e38f1",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": "Living Dictionary writes it with ā (macron); same key as Hângâ"
+    },
+    "h_u_e_": {
+      "word": "hūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "hako": {
+      "word": "Hako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "hapi": {
+      "word": "Hapi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "henga": {
+      "word": "Henga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ho_u_e": {
+      "word": "Hoūe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ho_u_e_": {
+      "word": "Hoūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "honji": {
+      "word": "Honji",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "huhamba": {
+      "word": "Huhamba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "i_u_e_la": {
+      "word": "iūēla",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "i_u_edo": {
+      "word": "iūedo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ib_a_lu": {
+      "word": "Ibâlu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ib_a_ng_a_": {
+      "word": "Ibângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ib_a_t_a_": {
+      "word": "Ibâtâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ib_e_k_e_": {
+      "word": "Ibēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibak_e_": {
+      "word": "Ibakē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibala": {
+      "word": "Ibala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibeku": {
+      "word": "Ibeku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibend_e_": {
+      "word": "Ibendē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibina": {
+      "word": "ibina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibob_e_l_e_": {
+      "word": "Ibobēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "iboko": {
+      "word": "Iboko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibomba": {
+      "word": "Ibomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ibongo-iyamu": {
+      "word": "Ibongo iyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ihana": {
+      "word": "Ihana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ihonga": {
+      "word": "Ihonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ihuhu": {
+      "word": "Ihuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ihuku": {
+      "word": "Ihuku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ijane": {
+      "word": "Ijane",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ijanja": {
+      "word": "ijanja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ijo_u_ia": {
+      "word": "ijoūia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ik_e_l_e_n_e_": {
+      "word": "Ikēlēnē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ik_e_luku": {
+      "word": "Ikēluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikabo": {
+      "word": "Ikabo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikadada": {
+      "word": "Ikadada",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikadu": {
+      "word": "Ikadu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikala": {
+      "word": "ikala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikalia": {
+      "word": "Ikalia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikalidi": {
+      "word": "ikalidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikalo": {
+      "word": "ikalo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikana": {
+      "word": "Ikana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikelenge": {
+      "word": "Ikelenge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ikogo": {
+      "word": "Ikogo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilale": {
+      "word": "Ilale",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilanga": {
+      "word": "ilanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilangidi": {
+      "word": "ilangidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilende": {
+      "word": "ilende",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilonga": {
+      "word": "ilonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilongidi": {
+      "word": "ilongidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "iluku": {
+      "word": "Iluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilutu-ibe": {
+      "word": "Ilutu ibe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilutu-ihole": {
+      "word": "Ilutu ihole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilutu-inene": {
+      "word": "Ilutu inene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ilutu-ivindo": {
+      "word": "Ilutu ivindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "in_a_ni": {
+      "word": "Inâni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "iovenda": {
+      "word": "Iovenda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ipivi": {
+      "word": "ipivi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "it_a_nd_e_": {
+      "word": "Itândē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "itutu": {
+      "word": "itutu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "iu_u_a": {
+      "word": "iuūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "iv_e_": {
+      "word": "Ivē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "j_a_ng_a_": {
+      "word": "Jângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "janjaka": {
+      "word": "Janjaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "jonda": {
+      "word": "Jonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "jubu": {
+      "word": "Jubu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "jumba": {
+      "word": "Jumba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "k_a_": {
+      "word": "Kâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "k_a_la": {
+      "word": "Kâla",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "k_a_nde": {
+      "word": "Kânde",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "k_a_t_a_": {
+      "word": "Kâtâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "k_e_ny_e_ng_e_": {
+      "word": "kēnyēngē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kabala": {
+      "word": "Kabala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kaia": {
+      "word": "kaia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kalaka": {
+      "word": "kalaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kalakia": {
+      "word": "Kalakia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kama": {
+      "word": "Kama",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kango": {
+      "word": "Kango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kapi": {
+      "word": "Kapi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kena": {
+      "word": "Kena",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kiji": {
+      "word": "Kiji",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kodokodo": {
+      "word": "kodokodo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kono": {
+      "word": "Kono",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kopia": {
+      "word": "Kopia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kuma": {
+      "word": "Kuma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "kya": {
+      "word": "kya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "l_e_nd_e_k_e_": {
+      "word": "Lēndēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "laha": {
+      "word": "Laha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "langa": {
+      "word": "Langa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "langaka": {
+      "word": "Langaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lembo": {
+      "word": "Lembo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "leya": {
+      "word": "Leya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "li_a_": {
+      "word": "Liâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "liho": {
+      "word": "Liho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "liho-lobe": {
+      "word": "Liho lobe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "liho-lohole": {
+      "word": "Liho lohole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "liho-lonene": {
+      "word": "Liho lonene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "liho-lovindo": {
+      "word": "Liho lovindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lijo": {
+      "word": "Lijo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lit_u_a": {
+      "word": "Litūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "litua-loyamu": {
+      "word": "Litua loyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "loboko": {
+      "word": "Loboko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lohi": {
+      "word": "Lohi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lokadada": {
+      "word": "Lokadada",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lololombo": {
+      "word": "Lololombo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lombongo": {
+      "word": "Lombongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lon_a_ni": {
+      "word": "Lonâni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "longaka": {
+      "word": "Longaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "longangambi": {
+      "word": "Longangambi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "longunguhu": {
+      "word": "Longunguhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "lopupuhu": {
+      "word": "Lopupuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "loyonda": {
+      "word": "Loyonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_a_k_a_": {
+      "word": "Mâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_a_mb_e_": {
+      "word": "Mâmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_a_mbi": {
+      "word": "Mâmbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_adi": {
+      "word": "Mūadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_ahi": {
+      "word": "Mūahi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_ako": {
+      "word": "Mūako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_alika": {
+      "word": "Mūalika",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_ambo": {
+      "word": "Mūambo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_ana": {
+      "word": "mūana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_anga": {
+      "word": "Mūanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_anjo": {
+      "word": "Mūanjo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_e_ngi": {
+      "word": "Mūēngi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_e_ni": {
+      "word": "Mūēni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_emba": {
+      "word": "Mūemba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_idi": {
+      "word": "mūidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_indi": {
+      "word": "Mūindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "m_u_iya": {
+      "word": "Mūiya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mab_a_lu": {
+      "word": "Mabâlu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mab_a_ng_a_": {
+      "word": "Mabângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mab_a_t_a_": {
+      "word": "Mabâtâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mab_e_": {
+      "word": "Mabē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mab_e_k_e_": {
+      "word": "Mabēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maba": {
+      "word": "Maba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabak_e_": {
+      "word": "Mabakē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabala": {
+      "word": "Mabala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabeku": {
+      "word": "Mabeku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabend_e_": {
+      "word": "Mabendē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabob_e_l_e_": {
+      "word": "Mabobēlē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabomba": {
+      "word": "Mabomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mabongo-maiyamu": {
+      "word": "Mabongo maiyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mahana": {
+      "word": "Mahana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mahonga": {
+      "word": "Mahonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mahuhu": {
+      "word": "Mahuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mahuku": {
+      "word": "Mahuku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maj_e_njina": {
+      "word": "Majênjina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "majan_e_": {
+      "word": "Majanē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "majanja": {
+      "word": "Majanja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mak_a_nd_a_": {
+      "word": "Makândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mak_e_": {
+      "word": "Makē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mak_e_l_e_n_e_": {
+      "word": "Makēlēnē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mak_e_luku": {
+      "word": "Makēluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maka": {
+      "word": "Maka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makabo": {
+      "word": "Makabo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makadu": {
+      "word": "Makadu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makalia": {
+      "word": "Makalia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makana": {
+      "word": "Makana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makelenge": {
+      "word": "Makelenge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makiya": {
+      "word": "Makiya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mako": {
+      "word": "Mako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "makogo": {
+      "word": "Makogo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maku": {
+      "word": "Maku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mal_a_ng_a_": {
+      "word": "Malângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malale": {
+      "word": "Malale",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malonga": {
+      "word": "Malonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maluku": {
+      "word": "Maluku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malutu-mabe": {
+      "word": "Malutu mabe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malutu-mahole": {
+      "word": "Malutu mahole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malutu-manene": {
+      "word": "Malutu manene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "malutu-mavindo": {
+      "word": "Malutu mavindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mamya": {
+      "word": "Mamya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mand_e_": {
+      "word": "Mandē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "manga": {
+      "word": "Manga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mangongola": {
+      "word": "Mangongola",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "many_a_": {
+      "word": "Manyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "many_a_ng_a_": {
+      "word": "Manyângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "manyung_a_": {
+      "word": "manyungâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "maso": {
+      "word": "Maso",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mat_a_": {
+      "word": "Matâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mat_a_nd_e_": {
+      "word": "Matândē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mav_e_": {
+      "word": "Mavē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mavenda": {
+      "word": "Mavenda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mavule": {
+      "word": "Mavule",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mavy_a_": {
+      "word": "Mavyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_a_ng_a_": {
+      "word": "Mbângâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_e_ba": {
+      "word": "mbēba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_u_a": {
+      "word": "Mbūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_u_edi": {
+      "word": "mbūedi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_u_ei": {
+      "word": "mbūei",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_u_engamb_u_enga": {
+      "word": "mbūengambūenga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mb_u_ia": {
+      "word": "mbūia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbadi": {
+      "word": "Mbadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbai": {
+      "word": "Mbai",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbalanga": {
+      "word": "Mbalanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbambai": {
+      "word": "mbambai",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbana": {
+      "word": "Mbana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbanja": {
+      "word": "Mbanja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbeya": {
+      "word": "mbeya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbimba": {
+      "word": "mbimba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mboi": {
+      "word": "mboi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mboka": {
+      "word": "mboka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbolo": {
+      "word": "Mbolo",
+      "livingDictionaryId": "1a2634f9-218f-42d2-a42b-b413298bb248",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbuja": {
+      "word": "Mbuja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbute": {
+      "word": "mbute",
+      "livingDictionaryId": "2b768f5e-16e9-4476-898a-e1b113522119",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mbyu": {
+      "word": "mbyu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meb_a_ki": {
+      "word": "Mebâki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meb_a_ki-meyamu": {
+      "word": "Mebâki meyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meb_a_nd_a_": {
+      "word": "Mebândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meb_e_di": {
+      "word": "Mebēdi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meb_u_a": {
+      "word": "Mebūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebaha": {
+      "word": "Mebaha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebalani": {
+      "word": "Mebalani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebanga": {
+      "word": "Mebanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebango": {
+      "word": "Mebango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebendi": {
+      "word": "Mebendi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mebulubulu": {
+      "word": "Mebulubulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "med_a_mb_e_": {
+      "word": "Medâmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "medumbu": {
+      "word": "Medumbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "megangano": {
+      "word": "Megangano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "megulu": {
+      "word": "Megulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meh_a_": {
+      "word": "Mehâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meh_e_k_e_": {
+      "word": "Mehēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "meh_e_ng_e_": {
+      "word": "Mehēngē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mehiha": {
+      "word": "Mehiha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mehinganakano": {
+      "word": "Mehinganakano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mehingi": {
+      "word": "Mehingi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "melangi": {
+      "word": "Melangi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "melendi": {
+      "word": "Melendi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "melohi": {
+      "word": "Melohi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "met_e_-mebe": {
+      "word": "Metē mebe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "met_e_-mehole": {
+      "word": "Metē mehole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "met_e_-menene": {
+      "word": "Metē menene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "met_e_-mevindo": {
+      "word": "Metē mevindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mi_a_": {
+      "word": "Miâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mi_e_ngi": {
+      "word": "Miēngi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mi_e_ni": {
+      "word": "Miēni",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miadi": {
+      "word": "Miadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miahi": {
+      "word": "Miahi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miako": {
+      "word": "Miako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mialika": {
+      "word": "Mialika",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mialo": {
+      "word": "Mialo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miambo": {
+      "word": "Miambo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mianga": {
+      "word": "Mianga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mianjo": {
+      "word": "Mianjo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miay_e_": {
+      "word": "Miayē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mib_a_bu": {
+      "word": "Mibâbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miba": {
+      "word": "Miba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mibako": {
+      "word": "Mibako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mie": {
+      "word": "Mie",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mieka": {
+      "word": "Mieka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miemba": {
+      "word": "Miemba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mih_a_": {
+      "word": "Mihâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miidi": {
+      "word": "Miidi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miindi": {
+      "word": "Miindi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miiya": {
+      "word": "Miiya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mijo_u_a": {
+      "word": "Mijoūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mina": {
+      "word": "Mina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mingomo": {
+      "word": "Mingomo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mioho": {
+      "word": "Mioho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mioho-meyamu": {
+      "word": "Mioho meyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miok_a_": {
+      "word": "Miokâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miolo": {
+      "word": "Miolo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miongo": {
+      "word": "Miongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miova-mebe": {
+      "word": "Miova mebe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miova-mehole": {
+      "word": "Miova mehole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miova-menene": {
+      "word": "Miova menene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miova-mevindo": {
+      "word": "Miova mevindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "miva": {
+      "word": "Miva",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "moda": {
+      "word": "Moda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mohano": {
+      "word": "Mohano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "molo": {
+      "word": "Molo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "momo": {
+      "word": "Momo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "monda": {
+      "word": "Monda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mondi-ube": {
+      "word": "Mondi ube",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mondi-uhole": {
+      "word": "Mondi uhole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mondi-unene": {
+      "word": "Mondi unene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mondi-uvindo": {
+      "word": "Mondi uvindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "mongolu": {
+      "word": "Mongolu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "moto": {
+      "word": "Moto",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "moto-uyamu": {
+      "word": "Moto uyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "motoba": {
+      "word": "Motoba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "muajo": {
+      "word": "Muajo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "myadi": {
+      "word": "myadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "myongo": {
+      "word": "myongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nd_a_l_a_": {
+      "word": "ndâlâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nd_a_t_a_": {
+      "word": "Ndâtâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nd_e_mb_e_": {
+      "word": "ndēmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndabo": {
+      "word": "Ndabo",
+      "livingDictionaryId": "01508318-43fa-4141-8dbf-eed49393b822",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndabo-eyamu": {
+      "word": "Ndabo eyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndabo-iyamu": {
+      "word": "Ndabo iyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndaga": {
+      "word": "Ndaga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndembo": {
+      "word": "Ndembo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndiba": {
+      "word": "Ndiba",
+      "livingDictionaryId": "38b9ceef-138e-419e-b1f5-65f7f8d10c2a",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nditi": {
+      "word": "nditi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-ebe": {
+      "word": "Ndo ebe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-ehole": {
+      "word": "Ndo ehole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-enene": {
+      "word": "Ndo enene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-evindo": {
+      "word": "Ndo evindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-ibe": {
+      "word": "Ndo ibe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-ihole": {
+      "word": "Ndo ihole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-inene": {
+      "word": "Ndo inene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndo-ivindo": {
+      "word": "Ndo ivindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndoba": {
+      "word": "Ndoba",
+      "livingDictionaryId": "bd2b6205-71d8-4dc6-9236-1cf5c533f385",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndomi": {
+      "word": "ndomi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndomina": {
+      "word": "Ndomina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndonda": {
+      "word": "Ndonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndonga": {
+      "word": "Ndonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndongo": {
+      "word": "Ndongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ndumba": {
+      "word": "Ndumba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nenge": {
+      "word": "Nenge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_a_mbi": {
+      "word": "Ngâmbi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_a_nd_a_": {
+      "word": "Ngândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_a_nde": {
+      "word": "ngânde",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_a_u_e_": {
+      "word": "Ngâūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_e_b_e_": {
+      "word": "ngēbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_u_ae": {
+      "word": "ngūae",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_u_ahi": {
+      "word": "ngūahi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_u_anjang_u_anja": {
+      "word": "Ngūanjangūanja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ng_u_ea": {
+      "word": "ngūea",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngabo": {
+      "word": "Ngabo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngadi": {
+      "word": "ngadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngaho": {
+      "word": "Ngaho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngama": {
+      "word": "Ngama",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngambi": {
+      "word": "Ngambi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngandi": {
+      "word": "Ngandi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngando": {
+      "word": "Ngando",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nganga": {
+      "word": "Nganga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngani": {
+      "word": "Ngani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nganiyango": {
+      "word": "Nganiyango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngebo": {
+      "word": "ngebo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngejangeja": {
+      "word": "Ngejangeja",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngenga": {
+      "word": "Ngenga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nginga": {
+      "word": "nginga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngomba": {
+      "word": "Ngomba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngonda": {
+      "word": "ngonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngonga": {
+      "word": "Ngonga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngudi": {
+      "word": "Ngudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ngumu": {
+      "word": "Ngumu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nj_a_ku": {
+      "word": "njâku",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nj_e_ngi": {
+      "word": "njēngi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "njadi": {
+      "word": "Njadi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "njea": {
+      "word": "njea",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "njimbili": {
+      "word": "njimbili",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "njongo": {
+      "word": "njongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "njunga": {
+      "word": "njunga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ny_a_nd_a_": {
+      "word": "nyândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ny_e_l_e_li": {
+      "word": "nyēlēli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ny_e_nj_e_": {
+      "word": "Nyēnjē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ny_e_vi": {
+      "word": "Nyēvi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nya_u_e": {
+      "word": "nyaūe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyanda": {
+      "word": "nyanda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyang_u_a-dit_a_": {
+      "word": "Nyangūa ditâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyati": {
+      "word": "Nyati",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyele": {
+      "word": "nyele",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyeti": {
+      "word": "Nyeti",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyilo": {
+      "word": "nyilo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "nyu_u_e_": {
+      "word": "Nyuūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "oba": {
+      "word": "Oba",
+      "livingDictionaryId": "7a4622d7-9bdb-4309-85b2-36d521087c3b",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_a_k_u_e_p_a_k_u_e_": {
+      "word": "Pâkūēpâkūē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_a_l_a_l_a_p_a_l_a_l_a_": {
+      "word": "Pâlâlâpâlâlâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_a_nd_a_": {
+      "word": "Pândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_e_kejomu": {
+      "word": "Pēkejomu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_e_ki-p_e_ki": {
+      "word": "Pēki Pēki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "p_u_isi": {
+      "word": "Pūisi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pago": {
+      "word": "Pago",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "paha": {
+      "word": "Paha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "paia": {
+      "word": "paia",
+      "livingDictionaryId": "a50c4eb9-2dd0-4f1f-b27c-56122c048d08",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pala": {
+      "word": "Pala",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "panga": {
+      "word": "Panga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pani": {
+      "word": "Pani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pavo": {
+      "word": "Pavo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pemb_e_": {
+      "word": "Pembē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "penda": {
+      "word": "Penda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "penge": {
+      "word": "Penge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "peta": {
+      "word": "Peta",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pika": {
+      "word": "Pika",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pimba": {
+      "word": "Pimba",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pita": {
+      "word": "Pita",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pivi": {
+      "word": "Pivi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pogo": {
+      "word": "Pogo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pojaengo": {
+      "word": "Pojaengo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "poke": {
+      "word": "Poke",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "poli": {
+      "word": "Poli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "poso": {
+      "word": "Poso",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "potapota": {
+      "word": "Potapota",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "poti": {
+      "word": "Poti",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "pudi": {
+      "word": "Pudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "s_a_n_a_": {
+      "word": "Sânâ",
+      "livingDictionaryId": "23a9bba1-9855-4eb4-9340-a0785f46798d",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "sago": {
+      "word": "Sago",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "sango": {
+      "word": "Sango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "senge": {
+      "word": "Senge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "sikulu": {
+      "word": "Sikulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "t_a_nd_a_k_a_": {
+      "word": "Tândâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "t_a_ndal_a_nda": {
+      "word": "Tândalânda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ta": {
+      "word": "ta",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tagulu": {
+      "word": "Tagulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tanana": {
+      "word": "Tanana",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tataka": {
+      "word": "tataka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tekai": {
+      "word": "tekai",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tina": {
+      "word": "Tina",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tito": {
+      "word": "Tito",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "toko": {
+      "word": "Toko",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tolongo": {
+      "word": "Tolongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tombo": {
+      "word": "Tombo",
+      "livingDictionaryId": "092a0329-de51-431e-8533-fc912243a388",
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tonda": {
+      "word": "Tonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tongo": {
+      "word": "Tongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tudi": {
+      "word": "Tudi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tuma": {
+      "word": "Tuma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tungu": {
+      "word": "Tungu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "tyoli": {
+      "word": "Tyoli",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "u_u_aka": {
+      "word": "uūaka",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ub_a_ki-uyamu": {
+      "word": "Ubâki uyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ubapami": {
+      "word": "Ubapami",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ukali": {
+      "word": "ukali",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ukuge": {
+      "word": "Ukuge",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ulangi": {
+      "word": "Ulangi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ulendi": {
+      "word": "ulendi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ulongi": {
+      "word": "ulongi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ut_e_-ube": {
+      "word": "Utē ube",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ut_e_-uhole": {
+      "word": "Utē uhole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ut_e_-unene": {
+      "word": "Utē unene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "ut_e_-uvindo": {
+      "word": "Utē uvindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "uvangu_u_i": {
+      "word": "Uvanguūi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "veivei": {
+      "word": "Veivei",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "veya": {
+      "word": "Veya",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vi_a_": {
+      "word": "Viâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viaha": {
+      "word": "Viaha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vianga": {
+      "word": "Vianga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viho": {
+      "word": "Viho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viho-vibe": {
+      "word": "Viho vibe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viho-vihole": {
+      "word": "Viho vihole",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viho-vinene": {
+      "word": "Viho vinene",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viho-vivindo": {
+      "word": "Viho vivindo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vijo": {
+      "word": "Vijo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vilolombo": {
+      "word": "Vilolombo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vingangambi": {
+      "word": "Vingangambi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vingunguhu": {
+      "word": "Vingunguhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vipupuhu": {
+      "word": "Vipupuhu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vit_u_a": {
+      "word": "Vitūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vitua-viyamu": {
+      "word": "Vitua viyamu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viu": {
+      "word": "viu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viyembo": {
+      "word": "Viyembo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viyohi": {
+      "word": "Viyohi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "viyonda": {
+      "word": "Viyonda",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vy_a_": {
+      "word": "vyâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "vy_a_du": {
+      "word": "vyâdu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wb_a_ki": {
+      "word": "Wbâki",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wb_a_nd_a_": {
+      "word": "Wbândâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wb_e_di": {
+      "word": "Wbēdi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wb_u_a": {
+      "word": "Wbūa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbaha": {
+      "word": "Wbaha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbalani": {
+      "word": "Wbalani",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbanga": {
+      "word": "Wbanga",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbango": {
+      "word": "Wbango",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbendi": {
+      "word": "Wbendi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wbulubulu": {
+      "word": "Wbulubulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wd_a_mb_e_": {
+      "word": "Wdâmbē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wdumbu": {
+      "word": "Wdumbu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wgangano": {
+      "word": "Wgangano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wgulu": {
+      "word": "Wgulu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wh_a_": {
+      "word": "Whâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wh_e_k_e_": {
+      "word": "Whēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "wh_e_ng_e_": {
+      "word": "Whēngē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "whiha": {
+      "word": "Whiha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "whinganakano": {
+      "word": "Whinganakano",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "whingi": {
+      "word": "Whingi",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "y_a_k_a_": {
+      "word": "yâkâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "y_e_j_a_": {
+      "word": "Yējâ",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "y_e_k_e_": {
+      "word": "Yēkē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "y_e_m_e_": {
+      "word": "yēmē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yaho": {
+      "word": "Yaho",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yakia": {
+      "word": "yakia",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yako": {
+      "word": "Yako",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yalo": {
+      "word": "Yalo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yambe": {
+      "word": "Yambe",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yapa": {
+      "word": "Yapa",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yima": {
+      "word": "Yima",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yo_u_ak_e_": {
+      "word": "yoūakē",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yoha": {
+      "word": "Yoha",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yoma": {
+      "word": "Yoma",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yomu": {
+      "word": "Yomu",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    },
+    "yongo": {
+      "word": "yongo",
+      "livingDictionaryId": null,
+      "audio": "missing",
+      "audioFile": null,
+      "notes": ""
+    }
+  }
+}

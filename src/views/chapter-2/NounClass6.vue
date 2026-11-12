@@ -18,7 +18,10 @@
           <span class="pattern-value plural">l-</span>
         </div>
       </div>
-      <p class="pattern-description">La sexta clase muestra un cambio consonántico por el cual la fricativa inicial cambia al plural por l-.</p>
+      <p class="pattern-description">
+        La sexta clase muestra un cambio consonántico por el cual la fricativa inicial cambia al
+        plural por l-.
+      </p>
     </section>
 
     <section class="noun-class__examples">
@@ -28,7 +31,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -37,7 +39,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -52,7 +53,10 @@
       <div class="concepts-list">
         <div class="concept-item">
           <h4>Cambio consonántico</h4>
-          <p>La clase 6 es especialmente interesante porque el cambio ocurre en la consonante inicial.</p>
+          <p>
+            La clase 6 es especialmente interesante porque el cambio ocurre en la consonante
+            inicial.
+          </p>
         </div>
         <div class="concept-item">
           <h4>v → l</h4>
@@ -60,20 +64,26 @@
         </div>
         <div class="concept-item">
           <h4>Observación</h4>
-          <p>Algunos ejemplos muestran alternancias adicionales dentro de la raíz, pero la lógica principal es clara.</p>
+          <p>
+            Algunos ejemplos muestran alternancias adicionales dentro de la raíz, pero la lógica
+            principal es clara.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="noun-class__exceptions">
       <h2>Excepciones</h2>
-      <p class="section-note">Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la segunda clase (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta sexta clase.</p>
+      <p class="section-note">
+        Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar
+        de li- inicial. Además, las excepciones anotadas en la segunda clase (los que empiezan por
+        i- y hacen el plural en lo-) pertenecen también a esta sexta clase.
+      </p>
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -82,7 +92,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -90,13 +99,19 @@
           </div>
         </div>
       </div>
-      <p class="example-note">En la segunda clase se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta sexta clase.</p>
+      <p class="example-note">
+        En la segunda clase se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko,
+        Ikadada → Lokadada), que es la misma formación de esta sexta clase.
+      </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in classTwoExceptions" :key="`class2-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in classTwoExceptions"
+          :key="`class2-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -105,7 +120,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -133,8 +147,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass6',
@@ -165,8 +178,16 @@ export default {
           plural: { word: 'Lololombo', audio: 'lololombo', meaning: 'Átomos, partículas' }
         },
         {
-          singular: { word: 'Vingangambi', audio: 'vingangambi', meaning: 'Capricho, extravagancia' },
-          plural: { word: 'Longangambi', audio: 'longangambi', meaning: 'Caprichos, extravagancias' }
+          singular: {
+            word: 'Vingangambi',
+            audio: 'vingangambi',
+            meaning: 'Capricho, extravagancia'
+          },
+          plural: {
+            word: 'Longangambi',
+            audio: 'longangambi',
+            meaning: 'Caprichos, extravagancias'
+          }
         },
         {
           singular: { word: 'Vingunguhu', audio: 'vingunguhu', meaning: 'Miga' },
@@ -220,9 +241,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   },
   created() {
     document.title = 'Sexta Clase Nominal | Portal Benga'
@@ -241,7 +260,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -277,7 +296,7 @@ export default {
   .section-note {
     margin: 0 0 $spacing-lg;
     padding: $spacing-md;
-    background: #FFFDE7;
+    background: #fffde7;
     border-left: 4px solid $color-accent;
     color: $color-text-secondary;
   }
@@ -313,13 +332,13 @@ export default {
           border-radius: $border-radius;
 
           &.singular {
-            background: #E8F5E9;
-            color: #1B5E20;
+            background: #e8f5e9;
+            color: #1b5e20;
           }
 
           &.plural {
-            background: #FFF3E0;
-            color: #E65100;
+            background: #fff3e0;
+            color: #e65100;
           }
         }
       }
@@ -359,27 +378,27 @@ export default {
       justify-content: center;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
       .example-singular {
         .benga-word--block {
-          background: #E8F5E9;
+          background: #e8f5e9;
         }
 
         :deep(.benga-word__text) {
-          color: #1B5E20;
+          color: #1b5e20;
         }
       }
 
       .example-plural {
         .benga-word--block {
-          background: #FFF3E0;
+          background: #fff3e0;
         }
 
         :deep(.benga-word__text) {
-          color: #E65100;
+          color: #e65100;
         }
       }
 
@@ -406,7 +425,7 @@ export default {
       gap: $spacing-lg;
 
       .concept-item {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
         border-left: 4px solid $color-primary;
@@ -461,7 +480,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {

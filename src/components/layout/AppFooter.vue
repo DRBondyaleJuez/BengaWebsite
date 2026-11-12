@@ -34,11 +34,7 @@
               </router-link>
             </li>
             <li>
-              <a 
-                href="/downloads/salvado-y-cos-gramatica-benga.pdf"
-                class="footer__link"
-                download
-              >
+              <a :href="bookPdfUrl" class="footer__link" download>
                 {{ $t('nav.download') }}
               </a>
             </li>
@@ -50,8 +46,8 @@
           <h4 class="footer__subtitle">{{ $t('footer.community') }}</h4>
           <ul class="footer__list">
             <li>
-              <a 
-                href="https://www.livingdictionary.com/" 
+              <a
+                href="https://www.livingdictionary.com/"
                 class="footer__link footer__link--external"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,8 +56,8 @@
               </a>
             </li>
             <li>
-              <a 
-                href="https://www.sil.org/" 
+              <a
+                href="https://www.sil.org/"
                 class="footer__link footer__link--external"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,8 +83,8 @@
           <h4 class="footer__subtitle">{{ $t('nav.resources') }}</h4>
           <ul class="footer__list">
             <li>
-              <a 
-                href="https://commons.wikimedia.org/" 
+              <a
+                href="https://commons.wikimedia.org/"
                 class="footer__link footer__link--external"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,8 +93,8 @@
               </a>
             </li>
             <li>
-              <a 
-                href="https://www.equatorialguinea.org/" 
+              <a
+                href="https://www.equatorialguinea.org/"
                 class="footer__link footer__link--external"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -107,8 +103,8 @@
               </a>
             </li>
             <li>
-              <a 
-                href="https://en.wikipedia.org/wiki/Ndowe_languages" 
+              <a
+                href="https://en.wikipedia.org/wiki/Ndowe_languages"
                 class="footer__link footer__link--external"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,11 +132,14 @@
 </template>
 
 <script>
+import { BOOK_PDF_URL } from '@/config/external'
+
 export default {
   name: 'AppFooter',
   data() {
     return {
-      currentYear: new Date().getFullYear()
+      currentYear: new Date().getFullYear(),
+      bookPdfUrl: BOOK_PDF_URL
     }
   }
 }

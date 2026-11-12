@@ -440,12 +440,12 @@
     "conversionSummary": "i/di- → ma-"
   },
   {
-    "singular": "Itánde",
-    "plural": "Matánde",
+    "singular": "Itândē",
+    "plural": "Matândē",
     "translation": "Amor",
     "pluralTranslation": "Amores",
-    "singularAudioId": "itande",
-    "pluralAudioId": "matande",
+    "singularAudioId": "it_a_nd_e_",
+    "pluralAudioId": "mat_a_nd_e_",
     "nounClass": "Clase 2",
     "conversionSummary": "i/di- → ma-"
   },
@@ -515,7 +515,7 @@
     "translation": "Torpedo",
     "pluralTranslation": "Torpedos",
     "singularAudioId": "dimya",
-    "pluralAudioId": "mumya",
+    "pluralAudioId": "mamya",
     "nounClass": "Clase 2",
     "conversionSummary": "i/di- → ma-"
   },
@@ -525,7 +525,7 @@
     "translation": "Nigua",
     "pluralTranslation": "Niguas",
     "singularAudioId": "diso",
-    "pluralAudioId": "muso",
+    "pluralAudioId": "maso",
     "nounClass": "Clase 2",
     "conversionSummary": "i/di- → ma-"
   },
@@ -1045,7 +1045,7 @@
     "translation": "Espina, punta",
     "pluralTranslation": "Espinas, puntas",
     "singularAudioId": "bongo",
-    "pluralAudioId": "mingo",
+    "pluralAudioId": "miongo",
     "nounClass": "Clase 4",
     "conversionSummary": "bo/ba- → mi-"
   },
@@ -1104,7 +1104,7 @@
     "plural": "Miayē",
     "translation": "Violencia",
     "pluralTranslation": "Violencias",
-    "singularAudioId": "b_u_any_e_",
+    "singularAudioId": "b_u_ay_e_",
     "pluralAudioId": "miay_e_",
     "nounClass": "Clase 4",
     "conversionSummary": "bo/ba- → mi-"
@@ -1664,8 +1664,8 @@
     "plural": "Mbalanga",
     "translation": "Antilope",
     "pluralTranslation": "Antílopes",
-    "singularAudioId": "malanga",
-    "pluralAudioId": "malanga",
+    "singularAudioId": "mbalanga",
+    "pluralAudioId": "mbalanga",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },
@@ -1774,8 +1774,8 @@
     "plural": "Ndonda",
     "translation": "Cosecha, siega",
     "pluralTranslation": "Cosechas, siegas",
-    "singularAudioId": "ndonga",
-    "pluralAudioId": "ndonga",
+    "singularAudioId": "ndonda",
+    "pluralAudioId": "ndonda",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },
@@ -2074,8 +2074,8 @@
     "plural": "Nganga",
     "translation": "Médico",
     "pluralTranslation": "Médicos",
-    "singularAudioId": "nuega",
-    "pluralAudioId": "nuega",
+    "singularAudioId": "nganga",
+    "pluralAudioId": "nganga",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },
@@ -2084,8 +2084,8 @@
     "plural": "Nganiyango",
     "translation": "Acceso, entrada",
     "pluralTranslation": "Accesos, entradas",
-    "singularAudioId": "aniyango",
-    "pluralAudioId": "aniyango",
+    "singularAudioId": "nganiyango",
+    "pluralAudioId": "nganiyango",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },
@@ -2124,8 +2124,8 @@
     "plural": "Ngejangeja",
     "translation": "Cristal",
     "pluralTranslation": "Cristales",
-    "singularAudioId": "gejangeja",
-    "pluralAudioId": "gejangeja",
+    "singularAudioId": "ngejangeja",
+    "pluralAudioId": "ngejangeja",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },
@@ -2154,8 +2154,8 @@
     "plural": "Ngonga",
     "translation": "Pecho",
     "pluralTranslation": "Pechos",
-    "singularAudioId": "ngonda",
-    "pluralAudioId": "ngonda",
+    "singularAudioId": "ngonga",
+    "pluralAudioId": "ngonga",
     "nounClass": "Clase 7",
     "conversionSummary": "invariable (singular = plural)"
   },

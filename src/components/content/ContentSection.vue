@@ -69,7 +69,8 @@ export default {
       margin-bottom: $spacing-md;
     }
 
-    ul, ol {
+    ul,
+    ol {
       margin: $spacing-md 0;
       padding-left: $spacing-xl;
     }

@@ -10,11 +10,13 @@
       <h2>Conceptos Fundamentales</h2>
       <div class="overview-text">
         <p>
-          En la lengua Benga, los adjetivos constan de <strong>número</strong> y <strong>clasificación</strong>, 
-          pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. 
-          Los adjetivos se dividen en dos categorías principales: <strong>variables e invariables</strong>.
-          Aunque en este capitulo hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones y variaciones en el uso de los adjetivos.
-          En muchas ocasiones se apoyaran en el uso de preposiciones para poder usarse para referirse a algún sustantivo.
+          En la lengua Benga, los adjetivos constan de <strong>número</strong> y
+          <strong>clasificación</strong>, pero no tienen caso ni género. A diferencia del español,
+          carecen de grados de comparación convencionales. Los adjetivos se dividen en dos
+          categorías principales: <strong>variables e invariables</strong>. Aunque en este capitulo
+          hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones
+          y variaciones en el uso de los adjetivos. En muchas ocasiones se apoyaran en el uso de
+          preposiciones para poder usarse para referirse a algún sustantivo.
         </p>
       </div>
     </section>
@@ -23,7 +25,11 @@
     <section class="adjectives-intro__concepts">
       <h2>Características Principales</h2>
       <div class="concepts-grid">
-        <div class="concept-card" v-for="(concept, idx) in keyGrammaticalConcepts" :key="`concept-${idx}`">
+        <div
+          class="concept-card"
+          v-for="(concept, idx) in keyGrammaticalConcepts"
+          :key="`concept-${idx}`"
+        >
           <div class="concept-card__header">
             <h3>{{ concept.concept }}</h3>
           </div>
@@ -79,7 +85,7 @@
 </template>
 
 <script>
-import adjectivesIntroData from '@/data/chapter-3/adjectives-intro.json';
+import adjectivesIntroData from '@/data/chapter-3/adjectives-intro.json'
 
 export default {
   name: 'AdjectivesIntro',
@@ -91,13 +97,13 @@ export default {
     }
   },
   mounted() {
-    this.loadData();
+    this.loadData()
   },
   methods: {
     loadData() {
-      this.keyGrammaticalConcepts = adjectivesIntroData.keyGrammaticalConcepts;
-      this.sectionOverview = adjectivesIntroData.sectionOverview;
-      this.notes = adjectivesIntroData.keyGrammaticalConcepts.map(c => c.explanation);
+      this.keyGrammaticalConcepts = adjectivesIntroData.keyGrammaticalConcepts
+      this.sectionOverview = adjectivesIntroData.sectionOverview
+      this.notes = adjectivesIntroData.keyGrammaticalConcepts.map((c) => c.explanation)
     }
   }
 }

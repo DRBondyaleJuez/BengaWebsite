@@ -1,6 +1,6 @@
 <template>
   <div class="language-switcher">
-    <select 
+    <select
       class="language-switcher__select"
       :value="currentLocale"
       @change="changeLanguage"

@@ -7,7 +7,12 @@
 
     <section class="nouns-intro__overview">
       <h2>¿Qué es la Clasificación Nominal?</h2>
-      <p>La clasificación de los nombres depende del modo con que forman sus plurales y toman sus correspondientes adjuntos. Esta es, sin duda, la parte más interesante de la lengua Benga. Los nombres que forman su plural bajo una misma forma se reúnen en una clase, tomando los mismos o semejantes adjetivos.</p>
+      <p>
+        La clasificación de los nombres depende del modo con que forman sus plurales y toman sus
+        correspondientes adjuntos. Esta es, sin duda, la parte más interesante de la lengua Benga.
+        Los nombres que forman su plural bajo una misma forma se reúnen en una clase, tomando los
+        mismos o semejantes adjetivos.
+      </p>
     </section>
 
     <section class="nouns-intro__principles">
@@ -16,24 +21,39 @@
         <div class="principle-card">
           <div class="principle-number">1</div>
           <h3>Plurales Agrupados</h3>
-          <p>Los nombres que forman su plural del mismo modo pertenecen a la misma clase y toman los mismos adjuntos.</p>
+          <p>
+            Los nombres que forman su plural del mismo modo pertenecen a la misma clase y toman los
+            mismos adjuntos.
+          </p>
         </div>
         <div class="principle-card">
           <div class="principle-number">2</div>
           <h3>Cambios Radicales</h3>
-          <p>En contraste con las lenguas romances, el cambio en la formación del plural está al comienzo en la radical, no en la terminación.</p>
+          <p>
+            En contraste con las lenguas romances, el cambio en la formación del plural está al
+            comienzo en la radical, no en la terminación.
+          </p>
         </div>
         <div class="principle-card">
           <div class="principle-number">3</div>
           <h3>Concordancia Rigurosa</h3>
-          <p>Los adjuntos (adjetivos, pronombres, preposiciones...) deben concordar con la clase del nombre, tanto en singular como en plural. Siendo estos elementos que están vinculados, rodean o van unidos al sustantivo como </p>
+          <p>
+            Los adjuntos (adjetivos, pronombres, preposiciones...) deben concordar con la clase del
+            nombre, tanto en singular como en plural. Siendo estos elementos que están vinculados,
+            rodean o van unidos al sustantivo como
+          </p>
         </div>
       </div>
     </section>
 
     <section class="nouns-intro__complexity">
       <h2>Simplificación Pedagógica</h2>
-      <p><strong>Dato histórico:</strong> De trece diferentes maneras pueden formarse los plurales en el Benga. Sin embargo, para simplificar el aprendizaje, los reducimos a siete clases principales reuniendo bajo una misma clase todos los nombres que toman los mismos adjuntos, aunque no formen el plural exactamente del mismo modo.</p>
+      <p>
+        <strong>Dato histórico:</strong> De trece diferentes maneras pueden formarse los plurales en
+        el Benga. Sin embargo, para simplificar el aprendizaje, los reducimos a siete clases
+        principales reuniendo bajo una misma clase todos los nombres que toman los mismos adjuntos,
+        aunque no formen el plural exactamente del mismo modo.
+      </p>
     </section>
 
     <section class="nouns-intro__classes">
@@ -100,7 +120,10 @@
 
     <section class="nouns-intro__concordance">
       <h2>Ejemplo de Concordancia</h2>
-      <p>La concordancia es fundamental en Benga. Cuando un nombre pertenece a una clase, todos los adjetivos que lo acompañan deben adoptar la forma correspondiente a esa clase:</p>
+      <p>
+        La concordancia es fundamental en Benga. Cuando un nombre pertenece a una clase, todos los
+        adjetivos que lo acompañan deben adoptar la forma correspondiente a esa clase:
+      </p>
       <div class="concordance-example">
         <div class="example-set">
           <h4>Singular</h4>
@@ -113,24 +136,38 @@
           <p class="translation">Sombreros buenos</p>
         </div>
       </div>
-      <p>Esto será desarrollado más en sucesivos capitulos. También afecta a otros adjuntos como pronombre y preposiciones entre otros.</p>
+      <p>
+        Esto será desarrollado más en sucesivos capitulos. También afecta a otros adjuntos como
+        pronombre y preposiciones entre otros.
+      </p>
     </section>
 
     <section class="nouns-intro__practice">
       <h2>Consejo Práctico</h2>
       <div class="practice-box">
-        <p><strong>Memoriza los patrones iniciales:</strong> El primer paso es identificar la forma inicial del nombre singular. Esto te indicará automáticamente la clase y, por lo tanto, el patrón que debe seguir en plural.</p>
-        <p><strong>Agrupa palabras por clase:</strong> No memorices palabras al azar. En su lugar, crea grupos de palabras pertenecientes a la misma clase para ver el patrón claramente.</p>
-        <p><strong>Practica concordancia:</strong> No aprendas sólo palabras aisladas. Usa cada nombre con un adjetivo para entrenar tu intuición sobre la concordancia.</p>
+        <p>
+          <strong>Memoriza los patrones iniciales:</strong> El primer paso es identificar la forma
+          inicial del nombre singular. Esto te indicará automáticamente la clase y, por lo tanto, el
+          patrón que debe seguir en plural.
+        </p>
+        <p>
+          <strong>Agrupa palabras por clase:</strong> No memorices palabras al azar. En su lugar,
+          crea grupos de palabras pertenecientes a la misma clase para ver el patrón claramente.
+        </p>
+        <p>
+          <strong>Practica concordancia:</strong> No aprendas sólo palabras aisladas. Usa cada
+          nombre con un adjetivo para entrenar tu intuición sobre la concordancia.
+        </p>
       </div>
     </section>
 
     <section class="nouns-intro__cta">
       <h2>¡Comienza Ahora!</h2>
-      <p>Estás listo para explorar cada clase nominal. Comienza con la Primera Clase, que es la más simple y accesible.</p>
-      <router-link to="/capitulo-2/clase-1" class="cta-button">
-        Ir a Primera Clase →
-      </router-link>
+      <p>
+        Estás listo para explorar cada clase nominal. Comienza con la Primera Clase, que es la más
+        simple y accesible.
+      </p>
+      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Primera Clase → </router-link>
     </section>
   </div>
 </template>
@@ -139,9 +176,9 @@
 export default {
   name: 'NounsIntro',
   created() {
-    document.title = 'Introducción a Clasificación Nominal | Portal Benga';
+    document.title = 'Introducción a Clasificación Nominal | Portal Benga'
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -155,7 +192,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -340,7 +377,7 @@ export default {
 
   &__practice {
     .practice-box {
-      background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+      background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
       padding: $spacing-lg;
       border-radius: $border-radius;
       border-left: 4px solid $color-primary;
@@ -356,7 +393,7 @@ export default {
   }
 
   &__cta {
-    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
     padding: $spacing-lg;
     border-radius: $border-radius;
     text-align: center;
@@ -381,7 +418,7 @@ export default {
       &:hover {
         background: darken($color-accent, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
     }
   }

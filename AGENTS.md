@@ -1,4 +1,14 @@
-# instructions.md - Benga Language Learning Portal
+# AGENTS.md - Benga Language Learning Portal
+
+> Single source of instructions for AI assistants (Claude, Copilot) working on this repo.
+> Record every lasting project decision here so future sessions follow it.
+
+## Review Log (doubts and things to check)
+- Every doubt, suspected error or open decision found while working on a task goes into `docs/REVIEW-LOG.md`, not only into the chat. This includes content (OCR readings, accents, glosses), code (bugs noticed outside the task's scope) and decisions the developer must make.
+- Add an entry with the next free `R-0XX` id, using the template at the bottom of that file: **Found in** (roadmap task number), **Where** (file:line, page URL, book page), **Doubt**, **Suggestion**. Add a matching row to the Summary table with status 🔴.
+- Don't fix out-of-scope issues silently: log them and keep the current task's commit focused.
+- Before starting a task, check the log for open entries that the task's "Decide by" column points to. Raise them with the developer.
+- When an entry is resolved, set 🟢 (or ⚪) in both the entry and the Summary table, and fill in **Resolution** with the date, what was decided and the commit.
 
 ## Project Overview
 A Vue 2 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
@@ -28,7 +38,7 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - When a class has exceptions, add a dedicated `noun-class__exceptions` section styled with `.section-note` (and `.example-note` when a clarifying remark is needed), and include its BEM selector in the shared `&__examples, &__variants, &__exceptions` SCSS block so the cards look identical to the main ones.
 
 ### Source of Truth: Salvado y Cos Grammar
-- The authoritative text is `src/assets/sources/searchable_Lengua_benga_salvado_y_cos.pdf` (a searchable scan, so its text layer has OCR damage). Book page numbers are offset from PDF page numbers; map them before extracting:
+- The authoritative text is `public/downloads/salvado-y-cos-gramatica-benga.pdf` (a searchable scan, so its text layer has OCR damage; it is also the file visitors download from the site's "Descargar PDF" links). Book page numbers are offset from PDF page numbers; map them before extracting:
 
   | Noun class | Book pages | PDF pages | Component |
   |---|---|---|---|
@@ -53,22 +63,35 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - `c`, `q`, `r`, `x`, `z` and `ñ` are not consonants in benga. Any letter similar has to be another letter.
 - Accent marks are significant for pronunciation, so a wrong accent changes the taught word, not just its look.
 
-### Audio ID Convention
-- `audio` is a Cloudinary public id built as `${CLOUDINARY_BASE}/${audioId}.mp3`, so it must be URL-safe ASCII: take `word.toLowerCase()` and replace **every** non-ASCII letter with `_` + its plain letter + `_`.
-- Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`. Two adjacent accented vowels therefore produce a single underscore; that is expected, not a typo.
-- Getting this wrong breaks playback silently — the button renders but the request 404s. When adding entries, derive the id from the word rather than typing it by hand.
+### External URLs
+- Never hard-code an external address (Cloudinary, Living Dictionary, the book PDF) in a component. Import it from `src/config/external.js`.
+- Never build a word's audio URL or dictionary link in a page. Use `src/services/wordLinks.js` (`getAudioUrl(word)`, `getDictionaryUrl(word)`, `getWordEntry(word)`); `BengaWord` already does this for its own word.
+
+### Word Registry (audio and dictionary links)
+- **Single source:** `src/data/lexicon/word-registry.json` holds one entry per Benga word key: `word`, `livingDictionaryId`, `audio` (`missing` | `recorded`), `audioFile` (only when the Cloudinary file name differs from the key), `notes`. Human guide: `docs/WORD-REGISTRY.md`.
+- Pages pass only the **word** to `BengaWord`. The component computes the key, looks it up in the registry, shows a play button only for `"audio": "recorded"`, and links to the exact Living Dictionary entry when `livingDictionaryId` is set (otherwise to the dictionary search).
+- After adding or changing Benga content, run `npm run words:sync`. It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
+- Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
+- `src/data/lexicon/word-usage.json` is generated; never edit it.
+- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint in `vue.config.js`.
+
+### Audio ID (word key) Convention
+- The key is computed by `toAudioId(word)` in `src/utils/audioId.js` (tests in `scripts/tests/audioId.test.mjs`, run `npm test`). It is the registry key and the Cloudinary file name: `${CLOUDINARY_BASE}/${key}.mp3`.
+- Rule: `word.toLowerCase()`, replace **every** accented letter with `_` + its plain letter + `_`, join several words (or a hyphenated form) with `-`, drop punctuation.
+- Examples: `Whâki → wh_a_ki`, `Mabē → mab_e_`, `Mūadi → m_u_adi`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`, `Ekâi ebe → ek_a_i-ebe`. Two adjacent accented vowels produce a single underscore; that is expected, not a typo. `Hāngā` and `Hângâ` give the same key.
+- **Never type an audio id by hand** and never add new `audio` / `audioId` / `<name>AudioId` fields to data. The fields still present in data files and `.vue` `data()` blocks are legacy: the site ignores them, and they are removed when content moves to the lexicon (roadmap Phase 2). `words:sync` lists the ones that differ from the rule, because some reveal content doubts.
 
 ### Chapter 3 Variable Adjectives
 - The source of truth for `src/data/chapter-3/regular-adjectives.json` is the "Adjetivos variables" table on PDF page 18 (book page 24). The four common adjectives are `bobe` (malo), `bonene` (grande), `bohole` (pequeño) and `bovindo` (negro); each is cited by its class-4 form, so the stem to which the class prefix is added is the root minus `bo-` (`bobe → -be`, `bonene → -nene`, `bohole → -hole`, `bovindo → -vindo`).
 - Concordance prefixes are identical for every variable adjective: class 1 `e-/be-`, class 2 `i-/ma-`, class 3 `u-/me-`, class 4 `bo-/me-`, class 5 `u-/ba-`, class 6 `vi-/lo-`, class 7 `e-/i-`. The same example nouns are reused per class (`Ekâi`, `Ilutu`, `Utē`, `Bova`, `Mondi`, `Viho`, `Ndo`) and their plural forms.
-- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": "noun-audio-adjective-audio" }`; `audioId` joins the noun and adjective ids with a hyphen (e.g. `Ekâi ebe → ek_a_i-ebe`). The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field.
+- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": … }`. The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field. The `audioId` fields are legacy (see "Audio ID Convention"); the key of `Ekâi ebe` is computed automatically as `ek_a_i-ebe`.
 - The `classes[]` examples inflect `būamu` (bueno). Because the radical changes with a linking **y** (`būamu → eyamu`, `maiyamu`, `beyamu`, …), each `singular`/`plural` object carries an explicit `highlight` string that includes that `y` (e.g. `ey`, `bey`, `iy`, `maiy`, `uy`, `mey`, `boy`, `baiy`, `viy`, `loy`). Use it as the `highlight-prefix` so the whole modified syllable is highlighted, not just the bare class prefix.
 - `BengaWord` accepts an optional `highlight-prefix` prop. When set, it splits `word` on spaces and underlines/colours that prefix at the start of the **last** token, which is how the conjugated syllable of the adjective is emphasised. Reuse it instead of hand-rolling highlighting.
 - In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
 
 ### Chapter 3 Invariable Adjectives
-- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `IrregularAdjectivesSection.vue`.
-- Every invariable adjective and every usage example carries an `audioId`, because the language is mainly oral. Multi-word forms join their words with a hyphen after applying the accent rule: `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`.
+- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `InvariableAdjectivesSection.vue`.
+- Every invariable adjective and every usage example is shown with `BengaWord`, because the language is mainly oral; their keys (and future recordings) come from the word itself, e.g. `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`. The `audioId` fields in the JSON are legacy.
 - Invariable adjectives normally do **not** begin with the variable-adjective declension syllables (`e`, `be`, `i`, `ma`, `u`, `me`, `bo`, `ba`, `vi`, `lo`), although there are exceptions (e.g. `Bokolo`). This is the fifth entry in `characteristics` and is rendered both in the characteristics cards and the "Puntos Importantes" notes.
 - The `comparison-table` header row (`.table-row.header`) must be excluded from the zebra-striping rule — use `&:nth-child(odd):not(.header)` — otherwise its `#f9f9f9` background overrides the primary-colour header and the white text becomes illegible.
 
@@ -78,6 +101,11 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - **Composables/Utilities**: camelCase (e.g., `useAudio.js`, `formatWord.js`)
 - **SCSS**: kebab-case partials with underscore prefix (e.g., `_variables.scss`)
 - **Data files**: kebab-case JSON (e.g., `chapter-1-alphabet.json`)
+
+### Code Formatting
+- Formatting is automatic: Prettier (`.prettierrc.json`) with single quotes, no semicolons, no trailing commas, 100-character lines. Run `npm run format` before committing; `npm run format:check` only reports.
+- Markdown files, `public/`, and files listed in `.prettierignore` are not formatted.
+- Keep formatting-only changes in their own commit (`style: ...`) so content and logic changes stay easy to review.
 
 ### SCSS Guidelines
 ```scss
@@ -94,179 +122,121 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 ```
 
 ## Project Structure
-benga-learning-portal/
-├── public/
+Real layout of the repo (keep this tree up to date when files are added, moved or removed).
+Items marked `(planned)` do not exist yet.
+
+```
+benga-grammar-website/
+├── public/                      # Copied as-is to the site root
 │   ├── index.html
 │   ├── favicon.ico
 │   └── downloads/
-│       └── salvado-y-cos-gramatica-benga.pdf
+│       └── salvado-y-cos-gramatica-benga.pdf   # Source of truth (see below) + public download
 ├── src/
-│   ├── main.js                  # App entry point
-│   ├── App.vue                  # Main application wrapper
+│   ├── main.js                  # App entry: Vue, router, vue-i18n, global styles
+│   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
 │   ├── router/
-│   │   └── index.js             # Route definitions
+│   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
+│   ├── config/
+│   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
+│   ├── utils/
+│   │   └── audioId.js           # toAudioId(word): THE word-key rule (no imports; shared with scripts/)
+│   ├── services/
+│   │   └── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   ├── assets/
-│   │   ├── images/
-│   │   │   ├── logo.png
-│   │   │   ├── salvado-y-cos-portrait.jpg
-│   │   │   └── equatorial-guinea-map.png
-│   │   ├── icons/
-│   │   │   ├── audio-play.svg
-│   │   │   ├── audio-pause.svg
-│   │   │   └── external-link.svg
-│   │   └── styles/
-│   │       ├── main.scss        # Global styles & imports
-│   │       ├── _variables.scss  # Colors, fonts, spacing
-│   │       ├── _mixins.scss     # Reusable SCSS logic
-│   │       ├── _typography.scss # Font rules
-│   │       ├── _reset.scss      # CSS normalization
-│   │       ├── _layout.scss     # Grid & containers
-│   │       └── _components.scss # Shared element styles
-│   ├── locales/
-│   │   ├── es.json              # Spanish (Primary)
-│   │   ├── en.json              # English
-│   │   └── fr.json              # French
+│   │   └── images/
+│   │       ├── logo.png
+│   │       ├── salvado-y-cos-portrait.png
+│   │       └── equatorial-guinea-map.png
+│   ├── styles/                  # Imported in components as '@/styles/...'
+│   │   ├── main.scss            # Global styles & imports
+│   │   ├── _variables.scss      # Colors, fonts, spacing, breakpoints
+│   │   └── _mixins.scss         # respond-below, flex-center, focus-ring, benga-word-style...
+│   ├── locales/                 # UI strings only
+│   │   ├── es.json              # Spanish (primary)
+│   │   ├── en.json              # English (only nav/app keys so far)
+│   │   └── fr.json              # French (only nav/app keys so far)
 │   ├── data/
-│   │   ├── chapters-index.json  # Metadata for sidebar/navigation
-│   │   ├── chapter-1/
-│   │   │   ├── alphabet.json
-│   │   │   ├── vowels.json
-│   │   │   └── ...consonants.json
+│   │   ├── lexicon/
+│   │   │   ├── word-registry.json  # One entry per Benga word: dictionary id, audio state, notes
+│   │   │   └── word-usage.json     # GENERATED by words:sync (spellings + files per word)
+│   │   ├── chapters-index.json  # Sidebar/navigation metadata
+│   │   ├── author-info.json     # AboutAuthor page content
+│   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
 │   │   ├── chapter-2/
-│   │   │   ├── nouns-intro.json
-│   │   │   ├── class-1.json to class-7.json
-│   │   │   └── verbal-nouns.json
-│   │   └── vocabulary/
-│   │       └── master-wordlist.json
+│   │   │   ├── class-1.json … class-7.json   # STALE, not imported (see Source of Truth)
+│   │   │   ├── nouns-intro.json, irregular-nouns.json, verbal-nouns.json   # Not imported either; keep for Phase 2 cross-checks
+│   │   │   └── noun-practice-deck.json       # Deck used by NounPracticeGame.vue
+│   │   └── chapter-3/           # adjectives-intro, regular-adjectives, invariable-adjectives,
+│   │                            # comparatives-superlatives, numerals-ordinals (.json)
 │   ├── components/
-│   │   ├── common/              # Atomic UI components
-│   │   │   ├── BaseButton.vue
-│   │   │   ├── BaseCard.vue
-│   │   │   └── BaseIcon.vue
-│   │   ├── layout/              # Structural components
+│   │   ├── common/
+│   │   │   └── BaseIcon.vue     # Inline SVG icons by name
+│   │   ├── layout/
 │   │   │   ├── AppHeader.vue
 │   │   │   ├── AppFooter.vue
-│   │   │   ├── AppSidebar.vue
-│   │   │   └── PageLayout.vue
-│   │   ├── navigation/          # Navigation logic
+│   │   │   └── AppSidebar.vue
+│   │   ├── navigation/
 │   │   │   ├── ChapterNav.vue
-│   │   │   ├── SectionNav.vue
 │   │   │   └── LanguageSwitcher.vue
-│   │   ├── content/             # Didactic components
-│   │   │   ├── BengaWord.vue    # Audio + Dictionary trigger
-│   │   │   ├── AudioPlayer.vue
-│   │   │   ├── ExampleTable.vue
-│   │   │   └── NounClassCard.vue
-│   │   └── interactive/         # Exercises
-│   │       ├── QuizCard.vue
-│   │       └── FlashCard.vue
-│   └── views/                   # Full page components
+│   │   ├── content/
+│   │   │   ├── BengaWord.vue    # Benga word + audio button + dictionary link + highlight
+│   │   │   └── ContentSection.vue
+│   │   └── interactive/         # (planned) QuizCard, FlashCard...
+│   └── views/
 │       ├── HomePage.vue
 │       ├── AboutAuthor.vue
-│       ├── Resources.vue
+│       ├── ResourcesPage.vue
 │       ├── chapter-1/
 │       │   ├── ChapterOneIndex.vue
-│       │   └── AlphabetSection.vue
+│       │   ├── AlphabetSection.vue
+│       │   ├── DiphthongsSection.vue
+│       │   ├── TriphthongsSection.vue
+│       │   └── ConsonantsSection.vue
 │       ├── chapter-2/
 │       │   ├── ChapterTwoIndex.vue
-│       │   └── NounClass1.vue
+│       │   ├── NounsIntro.vue
+│       │   ├── NounClass1.vue … NounClass7.vue   # Content lives in each data() block
+│       │   ├── IrregularNouns.vue
+│       │   ├── VerbalNouns.vue
+│       │   └── NounPracticeGame.vue
+│       ├── admin/
+│       │   └── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
 │       └── chapter-3/
-│           └── ChapterThreeIndex.vue
-├── package.json
-├── vue.config.js
+│           ├── ChapterThreeIndex.vue
+│           ├── AdjectivesIntro.vue
+│           ├── RegularAdjectivesSection.vue
+│           ├── InvariableAdjectivesSection.vue
+│           ├── ComparativesSuperlativesSection.vue
+│           └── NumeralOrdinalAdjectivesSection.vue
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY
+├── scripts/                     # Node tools: words-sync, words-import, lib/, tests/, imports/
+├── context/                     # Git-ignored: private prompts and notes
+├── package.json                 # Scripts (serve, build, lint, format, test, words:*) + ESLint config
+├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
+├── .editorconfig                # Basic editor settings (indent, charset, final newline)
+├── package-lock.json
+├── vue.config.js                # + dev-only save endpoint for /admin/palabras
 ├── babel.config.js
-├── .eslintrc.js
+├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md
-└── instructions.md              # Instructions for Copilot/AI
+└── AGENTS.md                    # This file
+```
 
-## 3. Implementation Plan
-### Phase 1: Foundation (Week 1)
-**Goal**: Project scaffolding, core infrastructure
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Initialize Vue 2 project | `package.json`, config files | P0 |
-| Set up SCSS architecture | All `_*.scss` files | P0 |
-| Configure vue-router | `router/index.js` | P0 |
-| Configure vue-i18n | `locales/*.json` | P0 |
-| Create layout components | `PageLayout`, `AppHeader`, `AppFooter`, `AppSidebar` | P0 |
-| Create navigation components | `ChapterNav`, `LanguageSwitcher` | P0 |
-### Phase 2: Core Components (Week 2)
-**Goal**: Reusable components for linguistic content
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| BengaWord component | `BengaWord.vue` | P0 |
-| AudioPlayer component | `AudioPlayer.vue` | P0 |
-| ExampleTable component | `ExampleTable.vue` | P0 |
-| ContentSection component | `ContentSection.vue` | P0 |
-| Base UI components | `BaseButton`, `BaseCard`, `BaseIcon` | P1 |
-### Phase 3: Chapter 1 Content (Week 3)
-**Goal**: Complete first chapter as template
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Structure chapter 1 data | `data/chapter-1/*.json` | P0 |
-| Alphabet section view | `AlphabetSection.vue` | P0 |
-| Diphthongs section view | `DiphthongsSection.vue` | P1 |
-| Consonants section view | `ConsonantsSection.vue` | P1 |
-| VowelChart interactive | `VowelChart.vue` | P2 |
-### Phase 4: Chapter 2 Content (Week 4)
-**Goal**: Noun classification system
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Structure chapter 2 data | `data/chapter-2/*.json` | P0 |
-| NounClassCard component | `NounClassCard.vue` | P0 |
-| All 7 noun class views | `NounClass1-7.vue` | P0 |
-| Irregular nouns view | `IrregularNouns.vue` | P1 |
-| Verbal nouns view | `VerbalNouns.vue` | P1 |
-| Noun practice game (interactive cards) | `NounPracticeGame.vue` | P1 |
-### Phase 5: Supporting Pages (Week 5)
-**Goal**: Non-chapter content
-| Task | Files to Create | Priority |
-|------|-----------------|----------|
-| Home page | `HomePage.vue` | P0 |
-| About author page | `AboutAuthor.vue` | P0 |
-| Resources page | `Resources.vue` | P1 |
-| Chapter index pages | `ChapterOneIndex.vue`, etc. | P1 |
-### Phase 6: Polish & Audio (Week 6)
-**Goal**: Media integration, refinement
-| Task | Priority |
-|------|----------|
-| Integrate Cloudinary audio | P0 |
-| Add sample audio files | P0 |
-| Mobile responsiveness | P0 |
-| Accessibility audit | P1 |
-| Performance optimization | P1 |
-### Future Phases (Post-MVP)
-- Chapters 3-10 content
-- Interactive exercises
-- Community audio contributions
-- French and English translations
-- Search functionality
----
-## 4. Key Implementation Files
-### 4.1 `package.json`
-```json
-{
-  "name": "benga-learning-portal",
-  "version": "1.0.0",
-  "description": "Interactive Benga language learning platform based on Salvado y Cos",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "vue": "^2.7.14",
-    "vue-router": "^3.6.5",
-    "vue-i18n": "^8.28.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-plugin-router": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "eslint": "^8.54.0",
-    "eslint-plugin-vue": "^9.18.1"
-  }
-}
+## Roadmap and Workflow
+- **The plan:** `docs/ROADMAP.md` lists every phase, task and subtask with a prompt and a commit name. Tick a task's box when it is committed. This replaces the old week-by-week plan.
+- **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
+- **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
+- **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.
+- **Versions:** `package.json` is the source of truth for dependencies. The Vue 2 → Vue 3 upgrade is roadmap Phase 1.
+
+### Planned pieces from the original plan (not built yet)
+Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.
+- `PageLayout`, `SectionNav`, `BaseButton`, `BaseCard` → reusable blocks [Phase 3]
+- `AudioPlayer` → shared audio player service [task 3.1]
+- `NounClassCard` → generic noun-class page [task 3.4]
+- `QuizCard`, `FlashCard` (`components/interactive/`) → exercise engine [Phase 8]
+- `VowelChart` interactive vowel chart for chapter 1 [Phase 8]
+- SVG icon files `audio-play.svg`, `audio-pause.svg`, `external-link.svg` (icons are currently inline in `BaseIcon.vue`) [Phase 3, optional]
+- `data/vocabulary/master-wordlist.json` → now `src/data/lexicon/word-registry.json`, extended into the full lexicon in [Phase 2]
+- `data/chapter-1/vowels.json` (vowel data separate from the alphabet) [Phase 2]

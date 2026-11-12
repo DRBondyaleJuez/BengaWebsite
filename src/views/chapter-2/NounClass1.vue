@@ -20,7 +20,9 @@
           <span class="pattern-value plural">be-</span>
         </div>
       </div>
-      <p class="pattern-description">La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural</p>
+      <p class="pattern-description">
+        La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural
+      </p>
     </section>
 
     <!-- Examples Grid -->
@@ -31,7 +33,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -40,7 +41,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -53,7 +53,10 @@
     <!-- Variant Pattern: Y -->
     <section class="noun-class__variants">
       <h2>Patrón Variant: Palabras que comienzan con 'y'</h2>
-      <p>Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en plural:</p>
+      <p>
+        Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en
+        plural:
+      </p>
       <div class="variant-pattern">
         <span class="pattern-value">y-</span>
         <span>→</span>
@@ -64,7 +67,6 @@
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"
-              :audio-id="example.singular.audio"
               :meaning="example.singular.meaning"
               :dictionary-url="getDictionaryUrl(example.singular.word)"
               block
@@ -73,7 +75,6 @@
           <div class="example-plural">
             <BengaWord
               :word="example.plural.word"
-              :audio-id="example.plural.audio"
               :meaning="example.plural.meaning"
               :dictionary-url="getDictionaryUrl(example.plural.word)"
               block
@@ -103,7 +104,9 @@
           <div>Sombreros buenos</div>
         </div>
       </div>
-      <p class="note">La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia</p>
+      <p class="note">
+        La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia
+      </p>
     </section>
 
     <!-- Key Concepts -->
@@ -141,17 +144,14 @@
       <router-link to="/capitulo-2/introduccion" class="nav-link prev">
         ← Introducción
       </router-link>
-      <router-link to="/capitulo-2/clase-2" class="nav-link next">
-        Segunda Clase →
-      </router-link>
+      <router-link to="/capitulo-2/clase-2" class="nav-link next"> Segunda Clase → </router-link>
     </section>
   </div>
 </template>
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass1',
@@ -404,17 +404,15 @@ export default {
           }
         }
       ]
-    };
-  },
-  methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
     }
   },
+  methods: {
+    getDictionaryUrl
+  },
   created() {
-    document.title = 'Primera Clase Nominal | Portal Benga';
+    document.title = 'Primera Clase Nominal | Portal Benga'
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
@@ -428,7 +426,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -492,13 +490,13 @@ export default {
           border-radius: $border-radius;
 
           &.singular {
-            background: #E8F5E9;
-            color: #1B5E20;
+            background: #e8f5e9;
+            color: #1b5e20;
           }
 
           &.plural {
-            background: #FFF3E0;
-            color: #E65100;
+            background: #fff3e0;
+            color: #e65100;
           }
         }
       }
@@ -537,16 +535,16 @@ export default {
       justify-content: center;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
       .example-singular {
-        .benga-word--block{
-          background: #E8F5E9;
-        } 
+        .benga-word--block {
+          background: #e8f5e9;
+        }
         :deep(.benga-word__text) {
-          color: #1B5E20;
+          color: #1b5e20;
         }
       }
 
@@ -555,11 +553,11 @@ export default {
       }
 
       .example-plural {
-        .benga-word--block{
-          background: #FFF3E0;
+        .benga-word--block {
+          background: #fff3e0;
         }
         :deep(.benga-word__text) {
-          color: #E65100;
+          color: #e65100;
         }
       }
 
@@ -579,7 +577,7 @@ export default {
       gap: $spacing-md;
       margin-bottom: $spacing-lg;
       padding: $spacing-lg;
-      background: #F3E5F5;
+      background: #f3e5f5;
       border-radius: $border-radius;
       font-size: 1.5rem;
       font-weight: bold;
@@ -646,7 +644,7 @@ export default {
     .note {
       margin-top: $spacing-md;
       padding: $spacing-md;
-      background: #FFFDE7;
+      background: #fffde7;
       border-left: 4px solid $color-accent;
       color: $color-text-secondary;
     }
@@ -659,7 +657,7 @@ export default {
       gap: $spacing-lg;
 
       .concept-item {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
         border-left: 4px solid $color-primary;
@@ -714,7 +712,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {

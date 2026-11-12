@@ -1,14 +1,11 @@
 <template>
-  <aside 
-    class="sidebar" 
-    :class="{ 'sidebar--open': isOpen }"
-  >
+  <aside class="sidebar" :class="{ 'sidebar--open': isOpen }">
     <div class="sidebar__overlay" @click="$emit('close')" />
-    
+
     <div class="sidebar__content">
       <div class="sidebar__header">
         <h2 class="sidebar__title">{{ $t('nav.chapters') }}</h2>
-        <button 
+        <button
           class="sidebar__close"
           @click="$emit('close')"
           :aria-label="$t('accessibility.closeMenu')"
@@ -20,11 +17,7 @@
       <ChapterNav :chapters="chapters" />
 
       <div class="sidebar__footer">
-        <a 
-          href="/downloads/salvado-y-cos-gramatica-benga.pdf"
-          class="sidebar__download"
-          download
-        >
+        <a :href="bookPdfUrl" class="sidebar__download" download>
           <BaseIcon name="download" />
           {{ $t('nav.download') }}
         </a>
@@ -37,6 +30,7 @@
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import ChapterNav from '@/components/navigation/ChapterNav.vue'
 import chaptersData from '@/data/chapters-index.json'
+import { BOOK_PDF_URL } from '@/config/external'
 
 export default {
   name: 'AppSidebar',
@@ -52,7 +46,8 @@ export default {
   },
   data() {
     return {
-      chapters: chaptersData.chapters
+      chapters: chaptersData.chapters,
+      bookPdfUrl: BOOK_PDF_URL
     }
   }
 }

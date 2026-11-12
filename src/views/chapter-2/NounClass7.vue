@@ -18,7 +18,11 @@
           <span class="pattern-value plural">hako / tuma / mbadi / ndabo / nganga / sango</span>
         </div>
       </div>
-      <p class="pattern-description">Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número.</p>
+      <p class="pattern-description">
+        Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi
+        todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá
+        la diversidad del número.
+      </p>
     </section>
 
     <section class="noun-class__examples">
@@ -28,7 +32,6 @@
           <div class="example-singular">
             <BengaWord
               :word="word.word"
-              :audio-id="word.audio"
               :meaning="word.meaning"
               :dictionary-url="getDictionaryUrl(word.word)"
               block
@@ -47,11 +50,16 @@
         </div>
         <div class="concept-item">
           <h4>Contexto gramatical</h4>
-          <p>El número se infiere por los modificadores, los adjetivos o el contexto de la frase.</p>
+          <p>
+            El número se infiere por los modificadores, los adjetivos o el contexto de la frase.
+          </p>
         </div>
         <div class="concept-item">
           <h4>Gran grupo</h4>
-          <p>Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla.</p>
+          <p>
+            Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con
+            doble consonante siguen esta regla.
+          </p>
         </div>
       </div>
     </section>
@@ -74,8 +82,7 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const LIVING_DICTIONARY_BASE = 'https://livingdictionaries.app/benga/entry'
+import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass7',
@@ -115,7 +122,7 @@ export default {
         { word: 'Tungu', audio: 'tungu', meaning: 'Bahía' },
         { word: 'Tyoli', audio: 'tyoli', meaning: 'Despensero' },
         { word: 'Mbadi', audio: 'mbadi', meaning: 'Ardilla' },
-        { word: 'Mbalanga', audio: 'malanga', meaning: 'Antilope' },
+        { word: 'Mbalanga', audio: 'mbalanga', meaning: 'Antilope' },
         { word: 'Mbanja', audio: 'mbanja', meaning: 'Bambú, costilla' },
         { word: 'Mbângâ', audio: 'mb_a_ng_a_', meaning: 'Patata' },
         { word: 'Mbuja', audio: 'mbuja', meaning: 'Red' },
@@ -126,7 +133,7 @@ export default {
         { word: 'Ndembo', audio: 'ndembo', meaning: 'Señal' },
         { word: 'Ndoba', audio: 'ndoba', meaning: 'Enemigo' },
         { word: 'Ndomina', audio: 'ndomina', meaning: 'Tío materno' },
-        { word: 'Ndonda', audio: 'ndonga', meaning: 'Cosecha, siega' },
+        { word: 'Ndonda', audio: 'ndonda', meaning: 'Cosecha, siega' },
         { word: 'Ndonga', audio: 'ndonga', meaning: 'Confianza' },
         { word: 'Ndongo', audio: 'ndongo', meaning: 'Pimiento' },
         { word: 'Ndumba', audio: 'ndumba', meaning: 'Huésped' },
@@ -156,15 +163,15 @@ export default {
         { word: 'Ngando', audio: 'ngando', meaning: 'Cocodrilo' },
         { word: 'Ngandi', audio: 'ngandi', meaning: 'Globo, bola' },
         { word: 'Ngani', audio: 'ngani', meaning: 'Juego de manos' },
-        { word: 'Nganga', audio: 'nuega', meaning: 'Médico' },
-        { word: 'Nganiyango', audio: 'aniyango', meaning: 'Acceso, entrada' },
+        { word: 'Nganga', audio: 'nganga', meaning: 'Médico' },
+        { word: 'Nganiyango', audio: 'nganiyango', meaning: 'Acceso, entrada' },
         { word: 'Ngâmbi', audio: 'ng_a_mbi', meaning: 'Harpa' },
         { word: 'Ngândâ', audio: 'ng_a_nd_a_', meaning: 'Habas' },
         { word: 'Ngâūē', audio: 'ng_a_u_e', meaning: 'Capitán' },
-        { word: 'Ngejangeja', audio: 'gejangeja', meaning: 'Cristal' },
+        { word: 'Ngejangeja', audio: 'ngejangeja', meaning: 'Cristal' },
         { word: 'Ngenga', audio: 'ngenga', meaning: 'Ciempiés' },
         { word: 'Ngomba', audio: 'ngomba', meaning: 'Puerco espín' },
-        { word: 'Ngonga', audio: 'ngonda', meaning: 'Pecho' },
+        { word: 'Ngonga', audio: 'ngonga', meaning: 'Pecho' },
         { word: 'Ngudi', audio: 'ngudi', meaning: 'Fuerza, voluntad' },
         { word: 'Ngumu', audio: 'ngumu', meaning: 'Jefe, principal' },
         { word: 'Njadi', audio: 'njadi', meaning: 'Yunque' },
@@ -177,9 +184,7 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl(word) {
-      return `${LIVING_DICTIONARY_BASE}/${word.toLowerCase()}`
-    }
+    getDictionaryUrl
   },
   created() {
     document.title = 'Séptima Clase Nominal | Portal Benga'
@@ -198,7 +203,7 @@ export default {
   padding: $spacing-lg;
 
   &__header {
-    background: linear-gradient(135deg, #2D5A27 0%, #4A7C4E 100%);
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
     color: white;
     padding: 2.5rem $spacing-lg;
     border-radius: $border-radius;
@@ -262,13 +267,13 @@ export default {
           border-radius: $border-radius;
 
           &.singular {
-            background: #E8F5E9;
-            color: #1B5E20;
+            background: #e8f5e9;
+            color: #1b5e20;
           }
 
           &.plural {
-            background: #FFF3E0;
-            color: #E65100;
+            background: #fff3e0;
+            color: #e65100;
           }
         }
       }
@@ -290,7 +295,7 @@ export default {
   .section-note {
     margin: 0 0 $spacing-lg;
     padding: $spacing-md;
-    background: #FFFDE7;
+    background: #fffde7;
     border-left: 4px solid $color-accent;
     color: $color-text-secondary;
   }
@@ -323,17 +328,17 @@ export default {
       justify-content: center;
 
       &:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transform: translateY(-2px);
       }
 
       .example-singular {
         .benga-word--block {
-          background: #E8F5E9;
+          background: #e8f5e9;
         }
 
         :deep(.benga-word__text) {
-          color: #1B5E20;
+          color: #1b5e20;
         }
       }
 
@@ -352,7 +357,7 @@ export default {
       gap: $spacing-lg;
 
       .concept-item {
-        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
         padding: $spacing-lg;
         border-radius: $border-radius;
         border-left: 4px solid $color-primary;
@@ -407,7 +412,7 @@ export default {
       &:hover {
         background: darken($color-primary, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
 
       &.prev {
