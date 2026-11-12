@@ -1,25 +1,25 @@
-import Vue from 'vue'
+/**
+ * App entry point: creates the Vue app, adds the router and the translations, and shows it
+ * inside <div id="app"> of index.html.
+ */
+import { createApp } from 'vue'
+import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import router from './router'
-import VueI18n from 'vue-i18n'
 import es from './locales/es.json'
 import en from './locales/en.json'
 import fr from './locales/fr.json'
 
 import './styles/main.scss'
 
-Vue.use(VueI18n)
-
-const i18n = new VueI18n({
+const i18n = createI18n({
+  // Composition mode (legacy: false) is the current vue-i18n style. `globalInjection` keeps
+  // `$t('key')` and `$i18n.locale` working in every component exactly as before.
+  legacy: false,
+  globalInjection: true,
   locale: 'es',
   fallbackLocale: 'es',
   messages: { es, en, fr }
 })
 
-Vue.config.productionTip = false
-
-new Vue({
-  router,
-  i18n,
-  render: (h) => h(App)
-}).$mount('#app')
+createApp(App).use(router).use(i18n).mount('#app')

@@ -41,6 +41,7 @@ import LanguageSwitcher from '@/components/navigation/LanguageSwitcher.vue'
 
 export default {
   name: 'AppHeader',
+  emits: ['toggle-sidebar'],
   components: {
     BaseIcon,
     LanguageSwitcher

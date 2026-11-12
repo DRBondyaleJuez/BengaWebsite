@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="app">
+  <!-- Vue 3 mounts this inside <div id="app"> of index.html, so no id here (avoids a duplicate id) -->
+  <div class="app">
     <a href="#main-content" class="skip-link">
       {{ $t('accessibility.skipToContent') }}
     </a>

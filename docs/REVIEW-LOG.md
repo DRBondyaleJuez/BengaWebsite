@@ -25,6 +25,8 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-014](#r-014) | 🟢 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | done |
 | [R-015](#r-015) | 🟢 | words | `Itánde` / `Matánde` written with a Spanish accent | done |
 | [R-016](#r-016) | 🟢 | words | Vue warnings on the chapter 1 index (object used as list key) | done |
+| [R-017](#r-017) | 🔴 | 1.1 | Styles use Sass features that Sass 3 will remove (warnings silenced) | Phase 3 |
+| [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
 
 ---
 
@@ -194,6 +196,24 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Doubt:** Vue warns "Avoid using non-primitive value as key" and "Duplicate keys detected: '[object Object]'". The page displays fine, but list updates can misbehave.
 - **Suggestion:** Use a string id or the index as `:key`. Small fix; can go with Phase 3 or any chapter-1 task.
 - **Resolution:** 2026-11-12 · The learning-outcomes list used each outcome object (`{ es, en }`) as its `:key`; it now uses `outcome-<index>` (the list is static). Checked in a fresh tab: `/capitulo-1` shows its 5 outcomes and the console has no warnings. · commit `fix(ch1): use string keys for the learning outcomes list (R-016)`
+
+### R-017
+**Styles use Sass features that Sass 3 will remove (warnings silenced)**
+- **Status:** 🔴 Open
+- **Found in:** 1.1 (first Vite build printed Sass deprecation warnings; vue-cli showed the `@import` one too)
+- **Where:** every `<style lang="scss">` (`@import '@/styles/variables'`), `src/styles/main.scss`, `src/styles/_mixins.scss` / `_variables.scss` (`darken()`, `lighten()`, global `map-get` etc.); silenced in `vite.config.mjs` → `silenceDeprecations`
+- **Doubt:** Nothing is broken today, but Dart Sass 3 will remove `@import`, global built-in functions and `darken()`/`lighten()`. When Sass 3 arrives, the build will fail until this is changed.
+- **Suggestion:** In Phase 3, when styles move into shared block components: switch `@import` to `@use '@/styles/variables' as *`, use `sass:color` / `sass:map` functions (`color.adjust($c, $lightness: -10%)`), then remove `silenceDeprecations` from `vite.config.mjs`.
+- **Resolution:**
+
+### R-018
+**Newer major versions exist for ESLint, vue-router and vue-i18n**
+- **Status:** 🔴 Open
+- **Found in:** 1.2 (choosing package versions)
+- **Where:** `package.json`: `eslint` 7 (no longer maintained) with `eslint-plugin-vue` 9; `vue-router` 4.6 (5.x exists); `vue-i18n` 11.4 (12 is in alpha)
+- **Doubt:** For the upgrade I chose the versions with the best-known, stable API, to change as little as possible at once. ESLint 7 still works but gets no fixes; ESLint 9 needs a new config file (`eslint.config.js`, "flat config").
+- **Suggestion:** In Phase 9 (quality and CI): upgrade ESLint to 9 with a flat config, then check whether vue-router 5 / vue-i18n 12 bring anything useful before moving.
+- **Resolution:**
 
 ---
 

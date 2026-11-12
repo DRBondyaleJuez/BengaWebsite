@@ -66,54 +66,110 @@
           <div>Ejemplo</div>
           <div>Enlace</div>
         </div>
-        <router-link to="/capitulo-2/clase-1" tag="div" class="class-row">
-          <div><strong>Primera</strong></div>
-          <div class="pattern">e- / y-</div>
-          <div class="pattern">be- / bi-</div>
-          <div class="example">Epokolo → Bepokolo</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-1" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Primera</strong></div>
+            <div class="pattern">e- / y-</div>
+            <div class="pattern">be- / bi-</div>
+            <div class="example">Epokolo → Bepokolo</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-2" tag="div" class="class-row">
-          <div><strong>Segunda</strong></div>
-          <div class="pattern">i- / di-</div>
-          <div class="pattern">ma-</div>
-          <div class="example">Ibakē → Mabakē</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-2" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Segunda</strong></div>
+            <div class="pattern">i- / di-</div>
+            <div class="pattern">ma-</div>
+            <div class="example">Ibakē → Mabakē</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-3" tag="div" class="class-row">
-          <div><strong>Tercera</strong></div>
-          <div class="pattern">u- / mū-</div>
-          <div class="pattern">me / mi-</div>
-          <div class="example">Ubâki → Mebâki</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-3" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Tercera</strong></div>
+            <div class="pattern">u- / mū-</div>
+            <div class="pattern">me / mi-</div>
+            <div class="example">Ubâki → Mebâki</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-4" tag="div" class="class-row">
-          <div><strong>Cuarta</strong></div>
-          <div class="pattern">bo- / ba-</div>
-          <div class="pattern">mi-</div>
-          <div class="example">Bobako → Mibako</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-4" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Cuarta</strong></div>
+            <div class="pattern">bo- / ba-</div>
+            <div class="pattern">mi-</div>
+            <div class="example">Bobako → Mibako</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-5" tag="div" class="class-row">
-          <div><strong>Quinta</strong></div>
-          <div class="pattern">mo-</div>
-          <div class="pattern">ba-</div>
-          <div class="example">Momo → Bamo</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-5" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Quinta</strong></div>
+            <div class="pattern">mo-</div>
+            <div class="pattern">ba-</div>
+            <div class="example">Momo → Bamo</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-6" tag="div" class="class-row">
-          <div><strong>Sexta</strong></div>
-          <div class="pattern">v-</div>
-          <div class="pattern">l-</div>
-          <div class="example">Veya → Leya</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-6" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Sexta</strong></div>
+            <div class="pattern">v-</div>
+            <div class="pattern">l-</div>
+            <div class="example">Veya → Leya</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
-        <router-link to="/capitulo-2/clase-7" tag="div" class="class-row">
-          <div><strong>Séptima</strong></div>
-          <div class="pattern">Invariable</div>
-          <div class="pattern">Invariable</div>
-          <div class="example">Fala → Fala</div>
-          <div>Ver Clase →</div>
+        <router-link v-slot="{ navigate }" to="/capitulo-2/clase-7" custom>
+          <div
+            class="class-row"
+            role="link"
+            tabindex="0"
+            @click="navigate"
+            @keydown.enter="navigate"
+          >
+            <div><strong>Séptima</strong></div>
+            <div class="pattern">Invariable</div>
+            <div class="pattern">Invariable</div>
+            <div class="example">Fala → Fala</div>
+            <div>Ver Clase →</div>
+          </div>
         </router-link>
       </div>
     </section>

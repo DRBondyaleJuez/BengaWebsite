@@ -180,19 +180,23 @@ Branch: `chore/housekeeping`
 
 Branch: `build/vue3-vite`. **Decide first:** upgrade now (recommended — the code is small, Options API stays exactly the same) or stay on Vue 2.7 and skip this phase.
 
-- [ ] **1.1 Replace vue-cli with Vite**
+- [x] **1.1 Replace vue-cli with Vite**
+  - **Done 2026-11-12:** Vite 7 + `@vitejs/plugin-vue2` (still Vue 2.7); `vite.config.mjs`; `index.html` at the root; `process.env` → `import.meta.env`; Babel removed, ESLint runs directly; command names kept (`npm run serve/build/lint`, new `preview`); port 8080 kept. All 26 pages identical before/after.
   - **Prompt:** "Task 1.1: explain in simple terms what changes when moving from vue-cli to Vite, then migrate: `vite.config.js` with the `@` alias and SCSS, move `index.html` to the root, `npm run dev/build/preview`. Keep Vue 2.7 for this step so only one thing changes at a time."
   - **Commit:** `build: migrate from vue-cli to vite`
 
-- [ ] **1.2 Upgrade to Vue 3 + vue-router 4 + vue-i18n 9 (Options API kept)**
+- [x] **1.2 Upgrade to Vue 3 + vue-router 4 + vue-i18n 9 (Options API kept)**
+  - **Done 2026-11-12:** Vue 3.5, vue-router 4.6, **vue-i18n 11** (v9 no longer maintained; its legacy mode is deprecated) in composition mode with `globalInjection`, so `$t()` and `$i18n.locale` work unchanged. Fixed: `createApp`/`createRouter`/`createI18n`, catch-all `/:pathMatch(.*)*`, scroll `{ top: 0 }`, `router-link tag="div"` → `custom` slot (NounsIntro, 7 rows), transition classes `-enter-from`/`-leave-from` (ChapterNav), `beforeDestroy` → `beforeUnmount`, `emits` declared (AppHeader, AppSidebar), duplicate `#app` id (App.vue), ESLint `vue3-essential`.
   - **Prompt:** "Task 1.2: upgrade to Vue 3, vue-router 4 and vue-i18n 9 in legacy mode so `$t()` keeps working. Fix breaking changes (`createApp`, catch-all route `/:pathMatch(.*)*`, scrollBehavior `top`, any `$listeners`/`.sync`). List each breaking change you fixed."
   - **Commit:** `feat!: upgrade to vue 3, vue-router 4 and vue-i18n 9`
 
-- [ ] **1.3 Smoke-test every page**
+- [x] **1.3 Smoke-test every page**
+  - **Done inside 1.2:** all 26 pages compared character by character with the Vue 2 version (identical text); language switch, NounsIntro rows (click + Enter), unknown URLs, admin save and the built site tested. Only regression found (duplicate `#app`) fixed in the 1.2 commit.
   - **Prompt:** "Task 1.3: start the dev server and open every route in the browser; report console errors and visual breakage, then fix them."
   - **Commit:** `fix: resolve regressions after vue 3 upgrade`
 
-- [ ] **1.4 Update AGENTS.md tech stack**
+- [x] **1.4 Update AGENTS.md tech stack**
+  - **Done 2026-11-12:** tech stack, i18n and lint setup, "Vue 3 Reminders" for future work, README.
   - **Commit:** `docs: update tech stack to vue 3 and vite`
 
 ---

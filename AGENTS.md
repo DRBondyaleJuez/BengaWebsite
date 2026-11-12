@@ -11,15 +11,18 @@
 - When an entry is resolved, set 🟢 (or ⚪) in both the entry and the Summary table, and fill in **Resolution** with the date, what was decided and the commit.
 
 ## Project Overview
-A Vue 2 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
+A Vue 3 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
 
 ## Tech Stack
-- **Framework**: Vue 2 (Options API)
+- **Framework**: Vue 3 (Options API), vue-router 4, vue-i18n 11. Exact versions: `package.json`
+- **Build tool / dev server**: Vite (`vite.config.mjs`); `npm run serve` → http://localhost:8080, `npm run build` → `dist/`, `npm run preview` serves `dist/` on port 8081
+- **Environment variables**: read with `import.meta.env` (`BASE_URL`, `DEV`, and custom ones that must start with `VITE_`); never `process.env` in `src/`
 - **Styling**: SCSS with BEM methodology, common imports
 - **IDE**: VSCode with GitHub Copilot
 - **Media Storage**: Cloudinary (audio files)
 - **Images**: Wikimedia Commons, Unsplash
-- **Internationalization**: vue-i18n (Spanish first, then French/English)
+- **Internationalization**: vue-i18n in composition mode with `globalInjection` (set up in `src/main.js`): use `$t('key')` and `$i18n.locale` in components. Spanish first, then French/English
+- **Linting**: ESLint 7 + `eslint-plugin-vue` (`plugin:vue/vue3-essential`), config in `package.json`; `npm run lint`
 
 ## Architecture Principles
 
@@ -28,6 +31,15 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - Prefer Options API (data, methods, computed, props)
 - Extract reusable patterns into generic components with slots
 - Keep components focused: one primary responsibility per component
+- Declare the events a component sends in `emits` (e.g. `emits: ['close']`)
+
+### Vue 3 Reminders (things that worked differently in Vue 2)
+- The app is mounted **inside** `<div id="app">` of `index.html`; don't give the root element of `App.vue` an `id="app"`.
+- Lifecycle: use `beforeUnmount` / `unmounted` (not `beforeDestroy` / `destroyed`).
+- Transitions: classes are `*-enter-from` / `*-leave-from` (not `*-enter` / `*-leave`).
+- `router-link` has no `tag` prop: to make a non-link element clickable use `<router-link v-slot="{ navigate }" to="…" custom>` around it (see `NounsIntro.vue`), and give it `role="link"`, `tabindex="0"` and `@keydown.enter="navigate"`.
+- Unknown URLs are caught by `path: '/:pathMatch(.*)*'` in `src/router/index.js`.
+- In the browser console the app is at `document.getElementById('app').__vue_app__` (Vue 2's `__vue__` no longer exists).
 
 ### Noun Class Page Format
 - All noun-class view pages should follow the same structural pattern as the first reference component: a root container using the `noun-class` BEM block, then sections ordered as `__header`, `__pattern`, `__examples`, `__variants`, `__concepts`, `__practice`, and `__nav`.
@@ -73,7 +85,7 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - After adding or changing Benga content, run `npm run words:sync`. It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
 - Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
 - `src/data/lexicon/word-usage.json` is generated; never edit it.
-- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint in `vue.config.js`.
+- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
 - The key is computed by `toAudioId(word)` in `src/utils/audioId.js` (tests in `scripts/tests/audioId.test.mjs`, run `npm test`). It is the registry key and the Cloudinary file name: `${CLOUDINARY_BASE}/${key}.mp3`.
@@ -127,8 +139,8 @@ Items marked `(planned)` do not exist yet.
 
 ```
 benga-grammar-website/
+├── index.html                   # Entry page (Vite): <div id="app"> + /src/main.js
 ├── public/                      # Copied as-is to the site root
-│   ├── index.html
 │   ├── favicon.ico
 │   └── downloads/
 │       └── salvado-y-cos-gramatica-benga.pdf   # Source of truth (see below) + public download
@@ -212,12 +224,11 @@ benga-grammar-website/
 ├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY
 ├── scripts/                     # Node tools: words-sync, words-import, lib/, tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
-├── package.json                 # Scripts (serve, build, lint, format, test, words:*) + ESLint config
+├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*) + ESLint config
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
 ├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
-├── vue.config.js                # + dev-only save endpoint for /admin/palabras
-├── babel.config.js
+├── vite.config.mjs              # Vite: Vue plugin, '@' alias, Sass options, port 8080, dev-only save endpoint
 ├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md
 └── AGENTS.md                    # This file
@@ -228,7 +239,7 @@ benga-grammar-website/
 - **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
 - **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
 - **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.
-- **Versions:** `package.json` is the source of truth for dependencies. The Vue 2 → Vue 3 upgrade is roadmap Phase 1.
+- **Versions:** `package.json` is the source of truth for dependencies. Phase 1 (Vite + Vue 3) is done; newer majors of ESLint, vue-router and vue-i18n are tracked in REVIEW-LOG R-018.
 
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.

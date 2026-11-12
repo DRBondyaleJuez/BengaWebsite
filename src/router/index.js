@@ -1,7 +1,4 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -145,7 +142,7 @@ const routes = [
   },
   // Developer tools: these routes exist ONLY while running `npm run serve`.
   // In `npm run build` the condition is false, so the pages are not even included in the site.
-  ...(process.env.NODE_ENV === 'development'
+  ...(import.meta.env.DEV
     ? [
         {
           path: '/admin/palabras',
@@ -154,22 +151,20 @@ const routes = [
         }
       ]
     : []),
-  // Catch-all redirect
+  // Catch-all: any unknown address goes to the home page
   {
-    path: '*',
+    path: '/:pathMatch(.*)*',
     redirect: '/'
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  // Clean URLs (/capitulo-1/alfabeto, no #), relative to the folder the site is published in
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
-    return { x: 0, y: 0 }
+    // Back/forward buttons return to where you were; any other navigation starts at the top
+    return savedPosition || { top: 0 }
   }
 })
 
