@@ -14,7 +14,9 @@
 A Vue 2 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
 
 ## Tech Stack
-- **Framework**: Vue 2 (Options API)
+- **Framework**: Vue 2.7 (Options API); the upgrade to Vue 3 is roadmap task 1.2
+- **Build tool / dev server**: Vite (`vite.config.mjs`); `npm run serve` → http://localhost:8080, `npm run build` → `dist/`, `npm run preview` serves `dist/` on port 8081
+- **Environment variables**: read with `import.meta.env` (`BASE_URL`, `DEV`, and custom ones that must start with `VITE_`); never `process.env` in `src/`
 - **Styling**: SCSS with BEM methodology, common imports
 - **IDE**: VSCode with GitHub Copilot
 - **Media Storage**: Cloudinary (audio files)
@@ -73,7 +75,7 @@ A Vue 2 educational website teaching the Benga language (Ndowe language family) 
 - After adding or changing Benga content, run `npm run words:sync`. It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
 - Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
 - `src/data/lexicon/word-usage.json` is generated; never edit it.
-- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint in `vue.config.js`.
+- The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
 - The key is computed by `toAudioId(word)` in `src/utils/audioId.js` (tests in `scripts/tests/audioId.test.mjs`, run `npm test`). It is the registry key and the Cloudinary file name: `${CLOUDINARY_BASE}/${key}.mp3`.
@@ -127,8 +129,8 @@ Items marked `(planned)` do not exist yet.
 
 ```
 benga-grammar-website/
+├── index.html                   # Entry page (Vite): <div id="app"> + /src/main.js
 ├── public/                      # Copied as-is to the site root
-│   ├── index.html
 │   ├── favicon.ico
 │   └── downloads/
 │       └── salvado-y-cos-gramatica-benga.pdf   # Source of truth (see below) + public download
@@ -212,12 +214,11 @@ benga-grammar-website/
 ├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY
 ├── scripts/                     # Node tools: words-sync, words-import, lib/, tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
-├── package.json                 # Scripts (serve, build, lint, format, test, words:*) + ESLint config
+├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*) + ESLint config
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
 ├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
-├── vue.config.js                # + dev-only save endpoint for /admin/palabras
-├── babel.config.js
+├── vite.config.mjs              # Vite: Vue plugin, '@' alias, Sass options, port 8080, dev-only save endpoint
 ├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md
 └── AGENTS.md                    # This file

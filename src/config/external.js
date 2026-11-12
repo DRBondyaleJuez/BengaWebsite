@@ -10,11 +10,11 @@
  * A recording is loaded from `${CLOUDINARY_BASE}/<word key>.mp3` (see src/services/wordLinks.js).
  *
  * Can be overridden without touching code by creating a `.env.local` file:
- *   VUE_APP_CLOUDINARY_BASE=https://res.cloudinary.com/<cloud>/video/upload
- * (vue-cli only exposes variables that start with VUE_APP_.)
+ *   VITE_CLOUDINARY_BASE=https://res.cloudinary.com/<cloud>/video/upload
+ * (Vite only exposes variables that start with VITE_.)
  */
 export const CLOUDINARY_BASE =
-  process.env.VUE_APP_CLOUDINARY_BASE ||
+  import.meta.env.VITE_CLOUDINARY_BASE ||
   'https://res.cloudinary.com/dp5rofjyx/video/upload/v1780354084'
 
 /** Home page of the Benga Living Dictionary (community dictionary). */
@@ -33,4 +33,4 @@ export const LIVING_DICTIONARY_SEARCH = `${LIVING_DICTIONARY_HOME}/entries`
  * BASE_URL is the folder the site is published in ('/' by default), so the
  * link keeps working if the site is hosted in a sub-folder.
  */
-export const BOOK_PDF_URL = `${process.env.BASE_URL}downloads/salvado-y-cos-gramatica-benga.pdf`
+export const BOOK_PDF_URL = `${import.meta.env.BASE_URL}downloads/salvado-y-cos-gramatica-benga.pdf`

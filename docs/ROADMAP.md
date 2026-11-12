@@ -180,7 +180,8 @@ Branch: `chore/housekeeping`
 
 Branch: `build/vue3-vite`. **Decide first:** upgrade now (recommended — the code is small, Options API stays exactly the same) or stay on Vue 2.7 and skip this phase.
 
-- [ ] **1.1 Replace vue-cli with Vite**
+- [x] **1.1 Replace vue-cli with Vite**
+  - **Done 2026-11-12:** Vite 7 + `@vitejs/plugin-vue2` (still Vue 2.7); `vite.config.mjs`; `index.html` at the root; `process.env` → `import.meta.env`; Babel removed, ESLint runs directly; command names kept (`npm run serve/build/lint`, new `preview`); port 8080 kept. All 26 pages identical before/after.
   - **Prompt:** "Task 1.1: explain in simple terms what changes when moving from vue-cli to Vite, then migrate: `vite.config.js` with the `@` alias and SCSS, move `index.html` to the root, `npm run dev/build/preview`. Keep Vue 2.7 for this step so only one thing changes at a time."
   - **Commit:** `build: migrate from vue-cli to vite`
 

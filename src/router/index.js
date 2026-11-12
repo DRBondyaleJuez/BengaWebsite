@@ -145,7 +145,7 @@ const routes = [
   },
   // Developer tools: these routes exist ONLY while running `npm run serve`.
   // In `npm run build` the condition is false, so the pages are not even included in the site.
-  ...(process.env.NODE_ENV === 'development'
+  ...(import.meta.env.DEV
     ? [
         {
           path: '/admin/palabras',
@@ -163,7 +163,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: import.meta.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
