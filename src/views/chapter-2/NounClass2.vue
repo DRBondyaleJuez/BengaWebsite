@@ -125,23 +125,18 @@
         plural como los pertenecientes a esta clase.
       </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in liquidExamples" :key="`i-${idx}`">
-          <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
-          </div>
+        <!-- These nouns only exist in the plural, so each card shows one word plus a badge
+             instead of the usual singular/plural pair. -->
+        <div class="example-card" v-for="(example, idx) in liquidExamples" :key="`liquid-${idx}`">
           <div class="example-plural">
             <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
+              :word="example.word"
+              :meaning="example.meaning"
+              :dictionary-url="getDictionaryUrl(example.word)"
               block
             />
           </div>
+          <span class="plural-only-tag">Solo plural</span>
         </div>
       </div>
     </section>
@@ -154,7 +149,11 @@
         lo-.
       </p>
       <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in classSixExample" :key="`di-${idx}`">
+        <div
+          class="example-card"
+          v-for="(example, idx) in classSixExamples"
+          :key="`class-six-${idx}`"
+        >
           <div class="example-singular">
             <BengaWord
               :word="example.singular.word"

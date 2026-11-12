@@ -21,7 +21,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
 | [R-011](#r-011) | 🟢 | 0.5 | No audio file is found on Cloudinary — every play button fails | done |
 | [R-012](#r-012) | 🟢 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | done |
-| [R-013](#r-013) | 🔴 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | soon |
+| [R-013](#r-013) | 🟢 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | done |
 | [R-014](#r-014) | 🔴 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | any time |
 | [R-015](#r-015) | 🔴 | words | `Itánde` / `Matánde` written with a Spanish accent | any time |
 | [R-016](#r-016) | 🔴 | words | Vue warnings on the chapter 1 index (object used as list key) | Phase 3 |
@@ -141,12 +141,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-013
 **Class 2 page (`/capitulo-2/clase-2`) is completely blank**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** word registry work (2026-11-11), page check of all routes; already broken before that work (checked on the previous commit)
 - **Where:** `src/views/chapter-2/NounClass2.vue`, the "líquidos" section (`liquidExamples`) and the "sexta clase" exception section (`classSixExample`)
 - **Doubt:** The template expects every example to have `singular` and `plural`, but the 6 `liquidExamples` (Mavule, Manyângâ, Maku, Makândâ, Makiya, Miba) are single words, so Vue stops with `Cannot read properties of undefined (reading 'word')` and shows nothing. `classSixExample` is used by the template but doesn't exist in `data()`.
 - **Suggestion:** Show the liquids as single words (they only have a plural form?) with a small template change, and either add the class-6 examples from the book (PDF p. 10–11) or remove that section. Needs your decision on the content; the code fix is small.
-- **Resolution:**
+- **Resolution:** 2026-11-12 · Two template bugs, no content missing. (1) The liquids (Mavule, Manyângâ, Maku, Makândâ, Makiya, Miba) are now shown as single plural cards with the existing "Solo plural" badge style, as the book says they aren't used in the singular. (2) The class-6 exception section kept, as the developer asked; its data already existed as `classSixExamples` but the template read `classSixExample`. Its 3 pairs match the book (PDF p. 11, OCR `JInáni`/`Tboko`/`Tkadada` = `Inâni`/`Iboko`/`Ikadada`, confirmed by the plurals `Lonáni`/`Loboko`/`Lokadada` and by `iboko` in the book's sentences). The page renders again (98 words). · commit `fix(ch2): show class 2 again (plural-only liquids, class-6 exception)`
 
 ### R-014
 **16 hand-typed audio ids have different letters than their word (possible content errors)**
