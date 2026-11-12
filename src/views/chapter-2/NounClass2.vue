@@ -381,8 +381,8 @@ export default {
           plural: { word: 'Maluku', audio: 'maluku', meaning: 'Hermanas' }
         },
         {
-          singular: { word: 'Itánde', audio: 'itande', meaning: 'Amor' },
-          plural: { word: 'Matánde', audio: 'matande', meaning: 'Amores' }
+          singular: { word: 'Itândē', audio: 'it_a_nd_e_', meaning: 'Amor' },
+          plural: { word: 'Matândē', audio: 'mat_a_nd_e_', meaning: 'Amores' }
         },
         {
           singular: { word: 'Iovenda', audio: 'iovenda', meaning: 'Gloria' },

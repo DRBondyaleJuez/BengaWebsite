@@ -1949,8 +1949,8 @@
       "spellings": ["ipivi"],
       "usedIn": ["src/data/chapter-1/alphabet.json", "src/views/chapter-1/AlphabetSection.vue"]
     },
-    "it_a_nde": {
-      "spellings": ["Itánde", "itânde"],
+    "it_a_nd_e_": {
+      "spellings": ["Itândē", "itândē"],
       "usedIn": [
         "src/data/chapter-2/noun-practice-deck.json",
         "src/views/chapter-2/NounClass2.vue",
@@ -2468,8 +2468,8 @@
       "spellings": ["Matâ"],
       "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
     },
-    "mat_a_nde": {
-      "spellings": ["Matánde"],
+    "mat_a_nd_e_": {
+      "spellings": ["Matândē"],
       "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
     },
     "mav_e_": {

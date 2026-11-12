@@ -259,8 +259,8 @@ export default {
           imperative: 'Tândâkâ',
           imperativeAudio: 't_a_nd_a_k_a_',
           imperativeMeaning: 'ama tú',
-          nominalForm: 'itânde',
-          nominalAudio: 'it_a_nde',
+          nominalForm: 'itândē',
+          nominalAudio: 'it_a_nd_e_',
           meaning: 'amor'
         },
         {
@@ -404,7 +404,7 @@ export default {
         {
           type: 'Abstracto',
           formation: 'Imperativo de 2.ª persona singular sin su última sílaba, con i inicial',
-          example: 'Tândâkâ → itânde',
+          example: 'Tândâkâ → itândē',
           nounClass: 'Segunda clase'
         },
         {

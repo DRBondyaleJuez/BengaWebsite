@@ -23,7 +23,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-012](#r-012) | 🟢 | 0.5 | `VerbalNouns.vue` builds audio ids with its own function | done |
 | [R-013](#r-013) | 🟢 | words | Class 2 page (`/capitulo-2/clase-2`) is completely blank | done |
 | [R-014](#r-014) | 🟢 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | done |
-| [R-015](#r-015) | 🔴 | words | `Itánde` / `Matánde` written with a Spanish accent | any time |
+| [R-015](#r-015) | 🟢 | words | `Itánde` / `Matánde` written with a Spanish accent | done |
 | [R-016](#r-016) | 🔴 | words | Vue warnings on the chapter 1 index (object used as list key) | Phase 3 |
 
 ---
@@ -179,12 +179,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-015
 **`Itánde` / `Matánde` written with a Spanish accent**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** word registry work (orthography warning of `npm run words:sync`)
 - **Where:** `src/views/chapter-2/NounClass2.vue` and `src/data/chapter-2/noun-practice-deck.json`; `VerbalNouns.vue` writes `itânde`
 - **Doubt:** By the orthography rule `á → â`, these should be `Itânde` / `Matânde`. Today they are two different keys from `itânde`, so a recording or dictionary id would have to be entered twice.
 - **Suggestion:** Change to `Itânde` / `Matânde` in both files and run `npm run words:sync`.
-- **Resolution:**
+- **Resolution:** 2026-11-12 · Developer: the correct forms are **`Itândē`** (amor) and **`Matândē`** (amores), keys `it_a_nd_e_` / `mat_a_nd_e_`. Changed in NounClass2.vue, the practice deck and VerbalNouns.vue (`itânde` → `itândē`, also in the summary example `Tândâkâ → itândē`). Registry: new keys added, old `it_a_nde` / `mat_a_nde` removed. `words:sync` now reports no orthography warnings and no spelling variants. · commit `fix(content): spell Itândē and Matândē (R-015)`
 
 ### R-016
 **Vue warnings on the chapter 1 index (object used as list key)**
