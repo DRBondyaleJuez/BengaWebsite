@@ -28,6 +28,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-017](#r-017) | 🔴 | 1.1 | Styles use Sass features that Sass 3 will remove (warnings silenced) | Phase 3 |
 | [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
 | [R-019](#r-019) | 🔴 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | Phase 4 (or any time) |
+| [R-020](#r-020) | 🔴 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | task 2.4 |
 
 ---
 
@@ -223,6 +224,15 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `src/locales/es.json` has no `accessibility` group, but `App.vue:5` uses `accessibility.skipToContent`, `AppHeader.vue:7` `accessibility.openMenu`, `AppSidebar.vue:11` `accessibility.closeMenu`, `LanguageSwitcher.vue:7` `accessibility.selectLanguage`
 - **Doubt:** The "skip to content" link (visible when navigating with the keyboard) and the screen-reader labels of the menu and language buttons read the key itself, e.g. "accessibility.skipToContent". The browser console also fills with "[intlify] Not found …" warnings (most are the expected missing en/fr translations).
 - **Suggestion:** Add to `es.json`: `"accessibility": { "skipToContent": "Saltar al contenido", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú", "selectLanguage": "Seleccionar idioma" }` (and en/fr in Phase 4). Task 4.3's coverage report will catch the rest.
+- **Resolution:**
+
+### R-020
+**Page table for the noun classes in AGENTS.md doesn't match the PDF**
+- **Status:** 🔴 Open
+- **Found in:** 2.1 (writing `source.pdfPage` for the schema examples)
+- **Where:** AGENTS.md → "Source of Truth" table (class 1 = book 9-10 / PDF 9-10, class 2 = 10-11 / 10-11, …) · `public/downloads/salvado-y-cos-gramatica-benga.pdf`
+- **Doubt:** Checked with `pdftotext -f N -l N`: PDF page 8 is printed page **14** and starts the class 1 list (*Epokolo*); PDF page 9 is printed **15** and starts «SEGUNDA CLASE»; PDF page 10 is printed **16** (class 2 «di» examples, exceptions, liquids, class-6 exception) and starts «TERCERA CLASE». So printed page = PDF page + 6, as AGENTS.md already says for chapter 3 (PDF 18 = book 24), but the noun-class table lists other numbers in both columns.
+- **Suggestion:** In task 2.4 (when every noun gets its `source.pdfPage`), rebuild the whole table from the PDF and fix AGENTS.md. The schema examples already use the verified PDF pages (Epokolo p. 8, Dyoba and Miba p. 10).
 - **Resolution:**
 
 ---
