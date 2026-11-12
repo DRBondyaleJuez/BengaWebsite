@@ -3,7 +3,7 @@
     <!-- Introduction -->
     <ContentSection id="diphthongs-intro" :title="$t('chapters.chapter1.sections.diphthongs')">
       <p class="diphthongs-section__intro">
-        {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
+        {{ $localized(sectionData.introduction) }}
       </p>
     </ContentSection>
 
@@ -23,7 +23,7 @@
 
           <p class="diphthongs-section__sounds-like">
             <strong>{{ $t('content.soundsLike') }}:</strong><br />
-            {{ diphthong.soundsLike[$i18n.locale] || diphthong.soundsLike.es }}
+            {{ $localized(diphthong.soundsLike) }}
           </p>
 
           <div v-if="diphthong.examples.length > 0" class="diphthongs-section__examples">

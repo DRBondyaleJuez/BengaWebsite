@@ -27,6 +27,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-016](#r-016) | 🟢 | words | Vue warnings on the chapter 1 index (object used as list key) | done |
 | [R-017](#r-017) | 🔴 | 1.1 | Styles use Sass features that Sass 3 will remove (warnings silenced) | Phase 3 |
 | [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
+| [R-019](#r-019) | 🔴 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | Phase 4 (or any time) |
 
 ---
 
@@ -213,6 +214,15 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `package.json`: `eslint` 7 (no longer maintained) with `eslint-plugin-vue` 9; `vue-router` 4.6 (5.x exists); `vue-i18n` 11.4 (12 is in alpha)
 - **Doubt:** For the upgrade I chose the versions with the best-known, stable API, to change as little as possible at once. ESLint 7 still works but gets no fixes; ESLint 9 needs a new config file (`eslint.config.js`, "flat config").
 - **Suggestion:** In Phase 9 (quality and CI): upgrade ESLint to 9 with a flat config, then check whether vue-router 5 / vue-i18n 12 bring anything useful before moving.
+- **Resolution:**
+
+### R-019
+**4 Spanish interface keys missing: the raw key text is shown**
+- **Status:** 🔴 Open
+- **Found in:** 2.2 (console warnings while testing the language switch; also true before Vue 3)
+- **Where:** `src/locales/es.json` has no `accessibility` group, but `App.vue:5` uses `accessibility.skipToContent`, `AppHeader.vue:7` `accessibility.openMenu`, `AppSidebar.vue:11` `accessibility.closeMenu`, `LanguageSwitcher.vue:7` `accessibility.selectLanguage`
+- **Doubt:** The "skip to content" link (visible when navigating with the keyboard) and the screen-reader labels of the menu and language buttons read the key itself, e.g. "accessibility.skipToContent". The browser console also fills with "[intlify] Not found …" warnings (most are the expected missing en/fr translations).
+- **Suggestion:** Add to `es.json`: `"accessibility": { "skipToContent": "Saltar al contenido", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú", "selectLanguage": "Seleccionar idioma" }` (and en/fr in Phase 4). Task 4.3's coverage report will catch the rest.
 - **Resolution:**
 
 ---

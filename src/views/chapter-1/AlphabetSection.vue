@@ -3,7 +3,7 @@
     <!-- Introduction -->
     <ContentSection id="alphabet-intro" :title="$t('chapters.chapter1.sections.alphabet')">
       <p class="alphabet-section__intro">
-        {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
+        {{ $localized(sectionData.introduction) }}
       </p>
     </ContentSection>
 
@@ -11,7 +11,7 @@
     <ContentSection id="alphabet-letters" :title="$t('content.lettersList') || 'Lista de Letras'">
       <div class="alphabet-section__letters-container">
         <p class="alphabet-section__letters">
-          {{ sectionData.lettersList[$i18n.locale] || sectionData.lettersList.es }}
+          {{ $localized(sectionData.lettersList) }}
         </p>
         <p class="alphabet-section__note-inline">
           <strong>{{ $t('content.totalLetters') || 'Total' }}:</strong>
@@ -26,10 +26,7 @@
             {{ $t('content.missingConsonants') || 'Consonantes ausentes' }}
           </p>
           <p>
-            {{
-              sectionData.consonantsDescription[$i18n.locale] ||
-              sectionData.consonantsDescription.es
-            }}
+            {{ $localized(sectionData.consonantsDescription) }}
           </p>
         </div>
       </div>
@@ -41,7 +38,7 @@
       :title="$t('content.vowelSounds') || 'Sonidos Vocales'"
     >
       <p class="alphabet-section__vowels-info">
-        {{ sectionData.vowelsInfo[$i18n.locale] || sectionData.vowelsInfo.es }}
+        {{ $localized(sectionData.vowelsInfo) }}
       </p>
 
       <div class="alphabet-section__vowel-tags">
@@ -58,7 +55,7 @@
       <div class="alphabet-section__clarity-note">
         <p class="alphabet-section__note-text">
           <strong>{{ $t('content.note') }}:</strong>
-          {{ sectionData.notes.clarityNote[$i18n.locale] || sectionData.notes.clarityNote.es }}
+          {{ $localized(sectionData.notes.clarityNote) }}
         </p>
       </div>
     </ContentSection>
@@ -84,7 +81,7 @@
 
           <p class="alphabet-section__sounds-like">
             <strong>{{ $t('content.soundsLike') }}:</strong><br />
-            {{ vowel.soundsLike[$i18n.locale] || vowel.soundsLike.es }}
+            {{ $localized(vowel.soundsLike) }}
           </p>
 
           <div class="alphabet-section__vowel-examples">
@@ -114,7 +111,7 @@
       class="alphabet-section__special"
     >
       <p class="alphabet-section__special-description">
-        {{ specialLetter.description[$i18n.locale] || specialLetter.description.es }}
+        {{ $localized(specialLetter.description) }}
       </p>
 
       <div class="alphabet-section__special-examples">
@@ -155,17 +152,14 @@
         <div class="alphabet-section__note-item">
           <h4>{{ $t('content.elision') || 'Elisión' }}</h4>
           <p>
-            {{ sectionData.notes.elisionNote[$i18n.locale] || sectionData.notes.elisionNote.es }}
+            {{ $localized(sectionData.notes.elisionNote) }}
           </p>
         </div>
 
         <div class="alphabet-section__note-item">
           <h4>{{ $t('content.pronunciation') || 'Pronunciación' }}</h4>
           <p>
-            {{
-              sectionData.notes.pronunciationNote[$i18n.locale] ||
-              sectionData.notes.pronunciationNote.es
-            }}
+            {{ $localized(sectionData.notes.pronunciationNote) }}
           </p>
         </div>
       </div>

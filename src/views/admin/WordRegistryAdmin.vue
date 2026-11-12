@@ -145,11 +145,12 @@ import {
   LIVING_DICTIONARY_ENTRY,
   LIVING_DICTIONARY_SEARCH
 } from '@/config/external'
+import { audioUrlFor, dictionarySearchUrl, dictionaryUrlFor } from '@/utils/linkRules'
 
 const ROWS_PER_PAGE = 50
 const EDITABLE_FIELDS = ['word', 'livingDictionaryId', 'audio', 'audioFile', 'notes']
 const LIVING_DICTIONARY_ID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i
-/** Address of the save endpoint added to the dev server in vue.config.js. */
+/** Address of the save endpoint added to the dev server in vite.config.mjs. */
 const SAVE_ENDPOINT = '/__dev/word-registry'
 /**
  * Saving rewrites the registry file, and the dev server then reloads this page.
@@ -265,15 +266,18 @@ export default {
       if (match) row.livingDictionaryId = match[0].toLowerCase()
       this.markChanged(row)
     },
+    // Same link rules as the public pages (src/utils/linkRules.js).
     searchUrl(row) {
-      const query = JSON.stringify({ query: String(row.word).toLowerCase() })
-      return `${LIVING_DICTIONARY_SEARCH}?q=${encodeURIComponent(query)}`
+      return dictionarySearchUrl(row.word, LIVING_DICTIONARY_SEARCH)
     },
     entryUrl(row) {
-      return `${LIVING_DICTIONARY_ENTRY}/${row.livingDictionaryId}`
+      return dictionaryUrlFor(row.word, row, {
+        entryBase: LIVING_DICTIONARY_ENTRY,
+        searchBase: LIVING_DICTIONARY_SEARCH
+      })
     },
     playAudio(row) {
-      new Audio(`${CLOUDINARY_BASE}/${row.audioFile || row.key}.mp3`).play().catch(() => {
+      new Audio(audioUrlFor(row.key, row, CLOUDINARY_BASE)).play().catch(() => {
         this.message = {
           type: 'error',
           text: `No se encontró el audio de «${row.word}» en Cloudinary (${row.audioFile || row.key}.mp3).`

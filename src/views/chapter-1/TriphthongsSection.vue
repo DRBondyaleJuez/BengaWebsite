@@ -3,11 +3,11 @@
     <!-- Introduction -->
     <ContentSection id="triphthongs-intro" :title="$t('chapters.chapter1.sections.triphthongs')">
       <p class="triphthongs-section__intro">
-        {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
+        {{ $localized(sectionData.introduction) }}
       </p>
       <div class="triphthongs-section__note">
         <BaseIcon name="info" />
-        <p>{{ sectionData.note[$i18n.locale] || sectionData.note.es }}</p>
+        <p>{{ $localized(sectionData.note) }}</p>
       </div>
     </ContentSection>
 
@@ -27,7 +27,7 @@
 
           <p class="triphthongs-section__sounds-like">
             <strong>{{ $t('content.soundsLike') }}:</strong><br />
-            {{ triphthong.soundsLike[$i18n.locale] || triphthong.soundsLike.es }}
+            {{ $localized(triphthong.soundsLike) }}
           </p>
 
           <div v-if="triphthong.examples.length > 0" class="triphthongs-section__examples">
@@ -54,9 +54,7 @@
         <BaseIcon name="info" />
         <div class="triphthongs-section__info-content">
           <p class="triphthongs-section__info-text">
-            {{
-              sectionData.verbConjugationNote[$i18n.locale] || sectionData.verbConjugationNote.es
-            }}
+            {{ $localized(sectionData.verbConjugationNote) }}
           </p>
         </div>
       </div>

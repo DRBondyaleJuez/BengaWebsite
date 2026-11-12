@@ -8,9 +8,13 @@
  * Pages and components only ever pass the WORD; they never build links themselves.
  * To change a link, edit src/data/lexicon/word-registry.json (or use /admin/palabras),
  * not the pages. Guide: docs/WORD-REGISTRY.md
+ *
+ * The rules themselves (how a URL is built) are in src/utils/linkRules.js and are tested there;
+ * this file only connects them to the registry and to the addresses in src/config/external.js.
  */
 import registry from '@/data/lexicon/word-registry.json'
 import { toAudioId } from '@/utils/audioId'
+import { audioUrlFor, dictionaryUrlFor } from '@/utils/linkRules'
 import {
   CLOUDINARY_BASE,
   LIVING_DICTIONARY_ENTRY,
@@ -36,8 +40,7 @@ export function getWordEntry(word) {
  */
 export function getAudioUrl(word) {
   const { key, entry } = getWordEntry(word)
-  if (!entry || entry.audio !== 'recorded') return null
-  return `${CLOUDINARY_BASE}/${entry.audioFile || key}.mp3`
+  return audioUrlFor(key, entry, CLOUDINARY_BASE)
 }
 
 /**
@@ -49,9 +52,8 @@ export function getAudioUrl(word) {
  */
 export function getDictionaryUrl(word) {
   const { entry } = getWordEntry(word)
-  if (entry && entry.livingDictionaryId) {
-    return `${LIVING_DICTIONARY_ENTRY}/${entry.livingDictionaryId}`
-  }
-  const query = JSON.stringify({ query: String(word).toLowerCase() })
-  return `${LIVING_DICTIONARY_SEARCH}?q=${encodeURIComponent(query)}`
+  return dictionaryUrlFor(word, entry, {
+    entryBase: LIVING_DICTIONARY_ENTRY,
+    searchBase: LIVING_DICTIONARY_SEARCH
+  })
 }

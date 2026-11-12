@@ -77,13 +77,14 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 
 ### External URLs
 - Never hard-code an external address (Cloudinary, Living Dictionary, the book PDF) in a component. Import it from `src/config/external.js`.
-- Never build a word's audio URL or dictionary link in a page. Use `src/services/wordLinks.js` (`getAudioUrl(word)`, `getDictionaryUrl(word)`, `getWordEntry(word)`); `BengaWord` already does this for its own word.
+- Never build a word's audio URL or dictionary link in a page. Use `src/services/wordLinks.js` (`getAudioUrl(word)`, `getDictionaryUrl(word)`, `getWordEntry(word)`); `BengaWord` already does this for its own word. The URL rules themselves are pure functions in `src/utils/linkRules.js` (tested); change them there.
 
 ### Content Model (lexicon, sections, exercises)
 - Rules: JSON Schemas in `src/data/schemas/` (`common`, `lexicon`, `section`, `exercise`, `chapters-index`), with correct examples in `src/data/schemas/examples/`. Human guide with recipes: `docs/CONTENT-GUIDE.md`.
 - **Lexicon** (`src/data/lexicon/<kind>.json`, from task 2.4): every Benga word once, as `{ "entries": { <id>: entry } }`. The id is `toAudioId(base form)` (singular for nouns, else `word`), plus `~2` for homonyms. Entries never contain audio ids or links.
 - **Sections** (`src/data/sections/ch-N/*.json`, from Phase 3): one page = `title` + ordered `blocks` (`heading`, `paragraph`, `pattern`, `examples`, `table`, `note`, `concepts`, `practice`, `conjugation`, `dialogue`, `vocabulary`). Blocks refer to lexicon entries by id instead of copying words.
 - Every visitor-facing text is `{ "es": …, "en"?: …, "fr"?: … }` (Spanish required). Benga words are plain strings.
+- Show such texts in templates with `$localized(text)` (global, defined in `src/main.js`; rule in `src/utils/localized.js`). Never write `text[$i18n.locale] || text.es` again.
 - Unreadable meaning → `"meaning": null`; corrections or additions → `"editorial": { "status": "corrected" | "added", ... }` (never silently change book content).
 - When changing a schema: update its example, `docs/CONTENT-GUIDE.md` and the tests in `scripts/tests/schemas.test.mjs`, then run `npm test`.
 - Until content is migrated (tasks 2.4-2.6, Phase 3), the existing chapter files keep their old shapes; don't mix the two in one file.
@@ -160,8 +161,10 @@ benga-grammar-website/
 │   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
 │   ├── config/
 │   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
-│   ├── utils/
-│   │   └── audioId.js           # toAudioId(word): THE word-key rule (no imports; shared with scripts/)
+│   ├── utils/                   # Pure helpers (no imports) shared with scripts/, each with tests
+│   │   ├── audioId.js           # toAudioId(word): THE word-key rule
+│   │   ├── localized.js         # localized(text, locale): pick a language, fall back to es ($localized)
+│   │   └── linkRules.js         # how audio / Living Dictionary URLs are built
 │   ├── services/
 │   │   └── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   ├── assets/

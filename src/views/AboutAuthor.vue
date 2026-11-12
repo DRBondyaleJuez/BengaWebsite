@@ -32,7 +32,7 @@
           <div class="about-author__biography">
             <h2>{{ $t('about.biographical') || 'Biografía' }}</h2>
             <p class="about-author__bio-text">
-              {{ authorData.author.biography[$i18n.locale] || authorData.author.biography.es }}
+              {{ $localized(authorData.author.biography) }}
             </p>
           </div>
         </div>

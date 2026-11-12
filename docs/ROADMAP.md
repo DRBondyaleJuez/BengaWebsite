@@ -226,7 +226,8 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.1: propose JSON Schemas in `src/data/schemas/` for: lexicon entry (noun, adjective, verb, other), section file (a list of typed blocks: paragraph, rule, pattern, examples, table, note, conjugation, dialogue), exercise, and chapters-index. Explain each field with an example before writing files. Write `docs/CONTENT-GUIDE.md` describing how I add a word or a section."
   - **Commit:** `docs(data): define content schemas and content guide`
 
-- [ ] **2.2 Helper functions with tests**
+- [x] **2.2 Helper functions with tests**
+  - **Done 2026-11-12:** `localized()` + global `$localized(text)` (replaced 24 `x[$i18n.locale] || x.es` in 6 chapter-1/AboutAuthor files); URL rules extracted to `src/utils/linkRules.js` (used by `wordLinks.js` and the admin page) with tests. With `audioId` (done earlier): 25 tests, Node's built-in runner instead of Vitest.
   - **Done early (2026-11-11, word registry):** `toAudioId` + tests (`npm test`, Node's built-in runner instead of Vitest) and the dictionary link (`src/services/wordLinks.js`). Still to do: `localized.js`.
   - **Prompt:** "Task 2.2: create `src/utils/audioId.js` (`toAudioId(word)` implementing the AGENTS.md rule, multi-word joined with `-`), `src/utils/dictionaryUrl.js`, `src/utils/localized.js` (`localized(field, locale)` falls back to `es`). Add Vitest and unit tests using the AGENTS.md examples (`Whâki → wh_a_ki`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`). Comment each function for a beginner."
   - **Commit:** `feat(utils): add audioId, dictionary-link and localization helpers with tests`

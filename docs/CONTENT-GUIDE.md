@@ -60,8 +60,17 @@ One noun → one lexicon entry → two registry keys (`epokolo`, `bepokolo`).
 ### Translated text — `{ "es": …, "en": …, "fr": … }`
 
 Every text a visitor reads is an object with one value per language. **Spanish is required**;
-English and French are added in Phase 4. If a language is missing, the site shows Spanish
-(helper `localized()` in `src/utils/localized.js`, task 2.2).
+English and French are added in Phase 4. If a language is missing, the site shows Spanish.
+
+In a component template, show such a text with **`$localized(...)`**: it picks the visitor's
+language, falls back to Spanish, and updates by itself when the language changes.
+
+```html
+<p>{{ $localized(sectionData.introduction) }}</p>
+<!-- not: {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }} -->
+```
+
+(The rule itself is `localized()` in `src/utils/localized.js`, with tests.)
 
 ```json
 "meaning": { "es": "Sombrero", "en": "Hat", "fr": "Chapeau" }

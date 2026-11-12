@@ -3,7 +3,7 @@
     <!-- Introduction -->
     <ContentSection id="consonants-intro" :title="$t('chapters.chapter1.sections.consonants')">
       <p class="consonants-section__intro">
-        {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
+        {{ $localized(sectionData.introduction) }}
       </p>
     </ContentSection>
 
@@ -26,13 +26,13 @@
 
           <p class="consonants-section__sounds-like">
             <strong>{{ $t('content.soundsLike') }}:</strong><br />
-            {{ consonant.soundsLike[$i18n.locale] || consonant.soundsLike.es }}
+            {{ $localized(consonant.soundsLike) }}
           </p>
 
           <div v-if="consonant.specialNote" class="consonants-section__special-note">
             <p class="consonants-section__note-text">
               <strong>{{ $t('content.note') }}:</strong>
-              {{ consonant.specialNote[$i18n.locale] || consonant.specialNote.es }}
+              {{ $localized(consonant.specialNote) }}
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@
         <BaseIcon name="info" />
         <div class="consonants-section__rule-content">
           <p class="consonants-section__rule-text">
-            {{ sectionData.combinationNote[$i18n.locale] || sectionData.combinationNote.es }}
+            {{ $localized(sectionData.combinationNote) }}
           </p>
         </div>
       </div>
@@ -66,7 +66,7 @@
 
         <p class="consonants-section__combination-pronunciation">
           <strong>{{ $t('content.pronunciation') }}:</strong><br />
-          {{ combination.pronunciation[$i18n.locale] || combination.pronunciation.es }}
+          {{ $localized(combination.pronunciation) }}
         </p>
 
         <div class="consonants-section__examples-grid">
