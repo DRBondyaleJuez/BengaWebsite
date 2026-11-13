@@ -3,6 +3,12 @@
     "title": "Portal de Aprendizaje Benga",
     "subtitle": "Basado en la gramática de Salvado y Cos"
   },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "selectLanguage": "Seleccionar idioma"
+  },
   "nav": {
     "home": "Inicio",
     "chapters": "Capítulos",

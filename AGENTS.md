@@ -52,19 +52,21 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 ### Source of Truth: Salvado y Cos Grammar
 - The authoritative text is `public/downloads/salvado-y-cos-gramatica-benga.pdf` (a searchable scan, so its text layer has OCR damage; it is also the file visitors download from the site's "Descargar PDF" links). Book page numbers are offset from PDF page numbers; map them before extracting:
 
-  | Noun class | Book pages | PDF pages | Component |
-  |---|---|---|---|
-  | 1 | 9-10 | 9-10 | `NounClass1.vue` |
-  | 2 | 10-11 | 10-11 | `NounClass2.vue` |
-  | 3 | 11 | 11 | `NounClass3.vue` |
-  | 4 | 11-12 | 11-12 | `NounClass4.vue` |
-  | 5 | 12 | 12 | `NounClass5.vue` |
-  | 6 | 12-13 | 12-13 | `NounClass6.vue` |
-  | 7 | 13 | 13-14 | `NounClass7.vue` |
-  | Irregular nouns (§ 7, § 8) | 14 | 14 | `IrregularNouns.vue` |
-  | Verbal nouns | 14-15 | 14-15 | `VerbalNouns.vue` |
+  In this part of the book **printed page = PDF page + 6** (e.g. PDF 8 = printed 14; chapter 3: PDF 18 = printed 24). The PDF page is what `pdftotext -f/-l` and PDF viewers use; the printed page is the number on the scan and in the book's table of contents. Verified with `pdftotext` (REVIEW-LOG R-020):
 
-  The class-7 list runs over two printed pages: the left column of PDF page 13 ends with `Ndumba, huésped`, and the right column of the same page continues with `Penge, ulcera` through `Njadi, primogénito`; `Ndonga` to `Nyênjê` are at the top of PDF page 14.
+  | Noun class | Printed pages | PDF pages | Component |
+  |---|---|---|---|
+  | 1 | 14-15 | 8-9 | `NounClass1.vue` |
+  | 2 (incl. exceptions, liquids, class-6 exception) | 15-16 | 9-10 | `NounClass2.vue` |
+  | 3 | 16-17 | 10-11 | `NounClass3.vue` |
+  | 4 | 17-18 | 11-12 | `NounClass4.vue` |
+  | 5 | 18 | 12 | `NounClass5.vue` |
+  | 6 | 18-19 | 12-13 | `NounClass6.vue` |
+  | 7 | 19-20 | 13-14 | `NounClass7.vue` |
+  | Irregular nouns (§ 7, § 8) | 20 | 14 | `IrregularNouns.vue` |
+  | Verbal nouns | 20-21 | 14-15 | `VerbalNouns.vue` |
+
+  Each class starts part-way down a page, so a class's last page is usually the next class's first page. The class-7 list is printed in two columns that continue across the page break: on PDF page 13 the left column runs `Fala, francés` … `Ndomina, tío materno` and the right column `Penge, ulcera` … `Njadi, primogénito`; the top of PDF page 14 continues both, left `Ndonga, confianza` … `Ndumba, huésped` and right `Nyuñi, cabello blanco` … `Nyênjê, cangrejo`. The book's noun vocabulary («VOCABULARIO») starts on PDF page 15.
 
 - Extract with `pdftotext -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
 - **Never trust `src/data/chapter-2/class-N.json` for content.** Those files are not imported by any view and many of their Spanish glosses contradict the book (e.g. `class-3.json` says `woaha` = "fuego", the book says "Costado, lado"). The `.vue` `data()` blocks hold the real content.
