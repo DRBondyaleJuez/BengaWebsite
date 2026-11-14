@@ -47,7 +47,7 @@ Every piece of information lives in **one** place. The other places refer to it.
 | `src/data/exercises/<id>.json` | exercises for a section | you / Claude |
 | `src/data/chapters-index.json` | chapter and section list (menu) | when a section is added |
 | `src/data/lexicon/word-registry.json` | audio + dictionary links per word form | admin page / CSV import |
-| `src/data/schemas/*.schema.json` | **the rules** each file must follow | only when the model changes |
+| `src/data/schemas/*.schema.json` | **the rules** each file must follow (incl. `word-registry.schema.json`) | only when the model changes |
 
 **Why split lexicon and registry?** The lexicon describes *words* (Epokolo and Bepokolo are
 one noun). The registry describes *sounds and links* (each form has its own recording).
@@ -260,9 +260,48 @@ Use a **generator** (questions built from the lexicon, so new words get exercise
 
 | Command | Checks |
 |---|---|
-| `npm test` | the schemas compile, the examples follow them, `chapters-index.json` follows its schema, typical mistakes are rejected |
+| **`npm run validate`** | **all** content: every file against its schema, ids, references, word registry, Benga spelling, old audio ids |
+| `npm test` | the rules themselves work (schemas, helpers, the validator's checks) |
 | `npm run words:check` | every Benga word on the site is in the word registry |
-| *(task 2.3)* `npm run validate` | **all** content files against the schemas, plus ids = word keys, references point to existing entries, orthography |
+
+Run `npm run validate` after **every** content change. It reads `chapters-index.json`, the word
+registry, every lexicon file (`src/data/lexicon/*.json`), section (`src/data/sections/**`) and
+exercise file (`src/data/exercises/*.json`), and the Benga words on the current pages.
+
+### Reading the report
+
+```
+✓ Files follow their rules (src/data/schemas)          ← group with no problems
+✗ Ids are correct and unique (1)                        ← group with problems (count)
+  ✗ src/data/lexicon/nouns.json → entries.ndonga        ← file → place in the file
+      Id "ndonga" doesn't match its word "Ndonda" (expected "ndonda")
+      Fix: Rename the entry to "ndonda" (ids are computed with toAudioId)
+⚠ Benga spelling … (1)
+  ⚠ src/data/lexicon/other.json → entries.roka
+      "Roka" contains R (not a Benga letter)
+ℹ Hand-typed audio ids left in old page data (21)
+
+✗ 1 error(s), 1 warning(s), 21 note(s)
+```
+
+| Mark | Level | What to do |
+|---|---|---|
+| ✗ | **error** | Must be fixed. The command fails (exit code 1), so it can block a commit or a publish later (roadmap 9.2). |
+| ⚠ | **warning** | Probably wrong: a human checks it against the book, then fixes it or logs it in `docs/REVIEW-LOG.md`. |
+| ℹ | **note** | Known, harmless leftovers (old hand-typed audio ids). They disappear when content moves to the lexicon. |
+
+Long groups show 10 lines; `npm run validate -- --all` shows everything.
+
+### What is checked
+
+| Group | Checks |
+|---|---|
+| Files follow their rules | each file against its schema; files that aren't valid JSON (with the position of the mistake) |
+| Ids | lexicon id = word key of its base word; no id in two lexicon files; `~2` homonyms have a first word; unique section / exercise ids; no repeated section id or URL in the chapter index |
+| References | section blocks (`examples`, `vocabulary`, `conjugation`) only use lexicon ids that exist; exercises belong to an existing section; `sectionFile` / `component` in the chapter index exist |
+| Word registry | its schema; each key still matches its word; `audioFile` only on recorded words |
+| Benga spelling | in the lexicon, sections and current pages: `c q r x z ñ` and the Spanish accents `á é í ó ú` |
+| Old audio ids | typed ids next to words in old page data that differ from the rule |
 
 The schemas live in `src/data/schemas/`; correct example files are in `src/data/schemas/examples/`.
 In VS Code you can hover a field in a schema to read its description.

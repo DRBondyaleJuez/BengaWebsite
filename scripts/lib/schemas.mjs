@@ -32,8 +32,29 @@ export function loadSchemas() {
       throw new Error(`Unknown schema "${name}". Known: ${names.join(', ')}`)
     const validate = ajv.getSchema(`https://benga-grammar.local/schemas/${name}.schema.json`)
     const valid = validate(data)
-    return { valid, errors: valid ? [] : validate.errors.map(describeError) }
+    return { valid, errors: valid ? [] : simplify(validate.errors.map(describeError)) }
   }
+}
+
+/**
+ * Messages that only say "none of the alternatives matched". When the same place also has a
+ * concrete message (e.g. "must have required property 'es'"), these add nothing for a human.
+ */
+const ALTERNATIVE_NOISE = [
+  /: must match (exactly one|a) schema in (oneOf|anyOf)$/,
+  /: must be null$/,
+  /: must be equal to constant$/
+]
+
+/** Removes repeated messages and, per place, the "alternatives" noise when a concrete message exists. */
+function simplify(messages) {
+  const unique = [...new Set(messages)]
+  const placeOf = (message) => message.slice(0, message.indexOf(': '))
+  return unique.filter((message) => {
+    if (!ALTERNATIVE_NOISE.some((noise) => noise.test(message))) return true
+    const samePlace = unique.filter((other) => placeOf(other) === placeOf(message))
+    return samePlace.every((other) => ALTERNATIVE_NOISE.some((noise) => noise.test(other)))
+  })
 }
 
 /** Turns an Ajv error into one readable line, e.g. "/entries/miba/meaning: must have required property 'es'". */

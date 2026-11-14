@@ -232,7 +232,8 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.2: create `src/utils/audioId.js` (`toAudioId(word)` implementing the AGENTS.md rule, multi-word joined with `-`), `src/utils/dictionaryUrl.js`, `src/utils/localized.js` (`localized(field, locale)` falls back to `es`). Add Vitest and unit tests using the AGENTS.md examples (`Whâki → wh_a_ki`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`). Comment each function for a beginner."
   - **Commit:** `feat(utils): add audioId, dictionary-link and localization helpers with tests`
 
-- [ ] **2.3 Content validator script**
+- [x] **2.3 Content validator script**
+  - **Done 2026-11-14:** `npm run validate` (`scripts/validate-data.mjs` + checks in `scripts/lib/validate.mjs`): schemas (incl. new `word-registry.schema.json`), ids, references, registry, orthography, legacy audio ids; error / warning / note levels, exit code 1 on errors; 11 validator tests (37 total). First run on current data: 0 errors, 0 warnings, 21 notes (old accent-only audio ids).
   - **Done early (2026-11-11, word registry):** `npm run words:sync/check` already reports orthography problems and hand-typed audio ids; extend it here instead of starting from scratch.
   - **Why:** P13. Catches mistakes before you see them in the browser.
   - **Prompt:** "Task 2.3: write `scripts/validate-data.js` (`npm run validate`) that checks all JSON against the schemas and reports, in plain Spanish/English: duplicate ids, sections referring to missing ids, Benga words containing `c q r x z ñ` or Spanish accents `á é ú`, explicit `audioId` that differs from `toAudioId(word)`. Run it on the current data and show me the report — don't fix data yet."

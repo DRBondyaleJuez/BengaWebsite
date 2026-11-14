@@ -15,6 +15,7 @@ Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md).
 | `npm run lint` | Check the code for mistakes (ESLint) |
 | `npm run format` | Format all code (Prettier) |
 | `npm test` | Run the automatic tests |
+| `npm run validate` | Check all content files and Benga spelling ([guide](docs/CONTENT-GUIDE.md#7-checking-files)) |
 | `npm run words:sync` | Update the word registry after changing content ([guide](docs/WORD-REGISTRY.md)) |
 | `npm run words:check` | Same report without changing files |
 | `npm run words:import -- list.csv` | Fill the word registry from a spreadsheet |

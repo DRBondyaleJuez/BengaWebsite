@@ -89,12 +89,13 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Show such texts in templates with `$localized(text)` (global, defined in `src/main.js`; rule in `src/utils/localized.js`). Never write `text[$i18n.locale] || text.es` again.
 - Unreadable meaning → `"meaning": null`; corrections or additions → `"editorial": { "status": "corrected" | "added", ... }` (never silently change book content).
 - When changing a schema: update its example, `docs/CONTENT-GUIDE.md` and the tests in `scripts/tests/schemas.test.mjs`, then run `npm test`.
+- `npm run validate` checks all content (schemas, ids, references, registry, orthography). Its checks are in `scripts/lib/validate.mjs`, each with a test in `scripts/tests/validate.test.mjs`; add a test when adding a check.
 - Until content is migrated (tasks 2.4-2.6, Phase 3), the existing chapter files keep their old shapes; don't mix the two in one file.
 
 ### Word Registry (audio and dictionary links)
 - **Single source:** `src/data/lexicon/word-registry.json` holds one entry per Benga word key: `word`, `livingDictionaryId`, `audio` (`missing` | `recorded`), `audioFile` (only when the Cloudinary file name differs from the key), `notes`. Human guide: `docs/WORD-REGISTRY.md`.
 - Pages pass only the **word** to `BengaWord`. The component computes the key, looks it up in the registry, shows a play button only for `"audio": "recorded"`, and links to the exact Living Dictionary entry when `livingDictionaryId` is set (otherwise to the dictionary search).
-- After adding or changing Benga content, run `npm run words:sync`. It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
+- After adding or changing Benga content, run `npm run words:sync` and then `npm run validate` (must end with 0 errors; warnings are fixed or logged in the review log). It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
 - Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
 - `src/data/lexicon/word-usage.json` is generated; never edit it.
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
@@ -237,7 +238,7 @@ benga-grammar-website/
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
 ├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE
-├── scripts/                     # Node tools: words-sync, words-import, lib/ (incl. schemas.mjs), tests/, imports/
+├── scripts/                     # Node tools: validate-data, words-sync, words-import, lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*) + ESLint config
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)

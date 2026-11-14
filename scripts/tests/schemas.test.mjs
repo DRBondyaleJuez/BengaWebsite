@@ -3,7 +3,7 @@
  *
  * They check three things:
  *   1. the example files are accepted (so the examples in docs/CONTENT-GUIDE.md are correct);
- *   2. the real chapters-index.json is accepted;
+ *   2. the real chapters-index.json and word-registry.json are accepted;
  *   3. typical mistakes are rejected (so the rules really protect the content).
  */
 import { test } from 'node:test'
@@ -37,6 +37,10 @@ test('example files follow their schema', () => {
 
 test('the real chapters-index.json follows its schema', () => {
   assertValid('chapters-index', readJson(path.join(ROOT, 'src/data/chapters-index.json')))
+})
+
+test('the real word-registry.json follows its schema', () => {
+  assertValid('word-registry', readJson(path.join(ROOT, 'src/data/lexicon/word-registry.json')))
 })
 
 test('every example lexicon id is the word key of its base word', () => {
