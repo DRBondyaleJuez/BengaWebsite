@@ -30,6 +30,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-019](#r-019) | 🟢 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | done |
 | [R-020](#r-020) | 🟢 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | done |
 | [R-021](#r-021) | 🔴 | 2.4.2 | Chapter-2 nouns that don't match the book text | any time (before Phase 3) |
+| [R-022](#r-022) | 🔴 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | now |
 
 ---
 
@@ -254,6 +255,18 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
   Also: the 158 words that only exist in the practice deck (they come from the book's «Vocabulario», PDF 15-17) were never shown on a page, so nobody has compared them with the book; 59 of them are not found exactly in the OCR text. The full list: `node scripts/extract-ch2.mjs` (section "Not found in the PDF text").
 - **Suggestion:** Decide the six rows (look at the scan of each PDF page). The deck words can be reviewed little by little in the practice game. Corrections go into `nouns.json` with `"editorial": { "status": "corrected", "bookText": "…" }` and into the page that shows the word.
+- **Resolution:**
+
+### R-022
+**Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked**
+- **Status:** 🔴 Open
+- **Found in:** 2.6 (converting chapters 1 and 3 to the content schemas)
+- **Where:** `src/data/chapter-1/*.json` + `src/views/chapter-1/*Section.vue` · `src/data/chapter-3/*.json` + `src/views/chapter-3/*.vue` · `src/data/schemas/section.schema.json` · ROADMAP 2.6 and 3.5
+- **Doubt:**
+  1. Task 2.6 asks to move these pages to **section files** (blocks) with identical looks. The chapter-1 pages are custom designs (vowel chart, «suena como» cards, special letters) that the current block types can only hold as generic tables, and nothing can draw a section file yet: the block components and `SectionPage` are tasks 3.3 and 3.5. Writing section files now would create a second, unused copy of every text (the pages keep reading the old files).
+  2. What was done in 2.6: `src/data/lexicon/adjectives.json` (23 adjectives: `būamu` with its seven class forms, `bobe`, `bonene`, `bohole`, `bovindo`, and the 18 invariable ones), validated. The chapter-3 pages still show their own copies, as the noun pages do.
+  3. The numerals page (`numerals-ordinals.json`) writes Benga with Spanish accents (`Páka`, `Dyom na páka`, `Páka páka`, `Mbusiha mbuúha`…) and shows numbers without `BengaWord`, so `npm run validate` and the word registry don't see them.
+- **Suggestion:** (1) Move "chapter 1 and chapter-3 section files" into Phase 3, right after task 3.5, so each page is converted together with the blocks that draw it (possibly adding block types such as `sound-list` for vowels/diphthongs). (3) Decide the Benga spelling of the numerals (`Páka` → `Pâka`?) and show them with `BengaWord`; the numerals can then join `adjectives.json` (`kind: "numeral"`).
 - **Resolution:**
 
 ---

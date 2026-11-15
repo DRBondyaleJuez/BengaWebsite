@@ -254,7 +254,9 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.5: make `NounPracticeGame.vue` build its deck from `lexicon/nouns.json` (filter by class) and delete `noun-practice-deck.json` (3 800 lines). The game must behave exactly as before."
   - **Commit:** `refactor(practice): build practice deck from the lexicon`
 
-- [ ] **2.6 Convert chapters 1 and 3 data to the same shapes**
+- [ ] **2.6 Convert chapters 1 and 3 data to the same shapes** *(partly done; the rest proposed for Phase 3, see REVIEW-LOG R-022)*
+  - **Done 2026-11-15 (2.6.2, lexicon part):** `lexicon/adjectives.json` with 23 chapter-3 adjectives (variable `būamu` with forms per class, `bobe`/`bonene`/`bohole`/`bovindo` with stems, 18 invariable). Pages unchanged.
+  - **Not done:** 2.6.1 (chapter-1 section files) and the chapter-3 section files: they need the block components (3.3) and `SectionPage` (3.5) to be drawn; numerals wait for a spelling decision (R-022).
   - Subtasks: 2.6.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 2.6.2 chapter 3 adjectives → `lexicon/adjectives.json` + section files.
   - **Prompt:** "Task 2.6.x: convert `src/data/chapter-N/*.json` to the schemas from 2.1. Pages must look identical — compare before/after screenshots."
   - **Commits:** `refactor(data): move chapter-1 content to the common schema` · `refactor(data): move chapter-3 adjectives to the lexicon`
