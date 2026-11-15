@@ -1,0 +1,8040 @@
+{
+  "_about": "Chapter-2 nouns, built by scripts/extract-ch2.mjs (task 2.4) from the noun pages and the practice deck. Guide: docs/CONTENT-GUIDE.md",
+  "entries": {
+    "ejanganangobo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejanganangobo"
+      },
+      "plural": {
+        "word": "Bejanganangobo"
+      },
+      "meaning": {
+        "es": "Libro"
+      },
+      "meaningPlural": {
+        "es": "Libros"
+      },
+      "source": {
+        "pdfPage": "8-9"
+      }
+    },
+    "epokolo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epokolo"
+      },
+      "plural": {
+        "word": "Bepokolo"
+      },
+      "meaning": {
+        "es": "Sombrero"
+      },
+      "meaningPlural": {
+        "es": "Sombreros"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "en_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enâ"
+      },
+      "plural": {
+        "word": "Benâ"
+      },
+      "meaning": {
+        "es": "Brazo"
+      },
+      "meaningPlural": {
+        "es": "Brazos"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "ek_a_i": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekâi"
+      },
+      "plural": {
+        "word": "Bekâi"
+      },
+      "meaning": {
+        "es": "Plátano"
+      },
+      "meaningPlural": {
+        "es": "Plátanos"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "elinga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elinga"
+      },
+      "plural": {
+        "word": "Belinga"
+      },
+      "meaning": {
+        "es": "Cesto"
+      },
+      "meaningPlural": {
+        "es": "Cestos"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "elombo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elombo"
+      },
+      "plural": {
+        "word": "Belombo"
+      },
+      "meaning": {
+        "es": "Cosa"
+      },
+      "meaningPlural": {
+        "es": "Cosas"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "egala": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egala"
+      },
+      "plural": {
+        "word": "Begala"
+      },
+      "meaning": {
+        "es": "Cajón"
+      },
+      "meaningPlural": {
+        "es": "Cajones"
+      },
+      "source": {
+        "pdfPage": "8-9"
+      }
+    },
+    "elende": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elende"
+      },
+      "plural": {
+        "word": "Belende"
+      },
+      "meaning": {
+        "es": "Bote"
+      },
+      "meaningPlural": {
+        "es": "Botes"
+      },
+      "source": {
+        "pdfPage": 8
+      }
+    },
+    "yaho": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yaho"
+      },
+      "plural": {
+        "word": "Biaho"
+      },
+      "meaning": {
+        "es": "Quijada"
+      },
+      "meaningPlural": {
+        "es": "Quijadas"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yako": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yako"
+      },
+      "plural": {
+        "word": "Biako"
+      },
+      "meaning": {
+        "es": "Cama"
+      },
+      "meaningPlural": {
+        "es": "Camas"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yalo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yalo"
+      },
+      "plural": {
+        "word": "Bialo"
+      },
+      "meaning": {
+        "es": "Bote europeo"
+      },
+      "meaningPlural": {
+        "es": "Botes europeos"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yambe": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yambe"
+      },
+      "plural": {
+        "word": "Biambe"
+      },
+      "meaning": {
+        "es": "Cura supersticiosa"
+      },
+      "meaningPlural": {
+        "es": "Curas supersticiosas"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yapa": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yapa"
+      },
+      "plural": {
+        "word": "Biapa"
+      },
+      "meaning": {
+        "es": "Canasta"
+      },
+      "meaningPlural": {
+        "es": "Canastas"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "y_a_k_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yâkâ"
+      },
+      "plural": {
+        "word": "Biâkâ"
+      },
+      "meaning": {
+        "es": "Medicina"
+      },
+      "meaningPlural": {
+        "es": "Medicinas"
+      },
+      "source": {
+        "pdfPage": "8-9"
+      },
+      "tags": ["y-variant"]
+    },
+    "y_e_j_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yējâ"
+      },
+      "plural": {
+        "word": "Biejâ"
+      },
+      "meaning": {
+        "es": "Medida"
+      },
+      "meaningPlural": {
+        "es": "Medidas"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "y_e_k_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yēkē"
+      },
+      "plural": {
+        "word": "Biēke"
+      },
+      "meaning": {
+        "es": "Juicio"
+      },
+      "meaningPlural": {
+        "es": "Juicios"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yima": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yima"
+      },
+      "plural": {
+        "word": "Biima"
+      },
+      "meaning": {
+        "es": "Egoísmo"
+      },
+      "meaningPlural": {
+        "es": "Egoísmos"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yoha": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yoha"
+      },
+      "plural": {
+        "word": "Bioha"
+      },
+      "meaning": {
+        "es": "Mono pequeño"
+      },
+      "meaningPlural": {
+        "es": "Monos pequeños"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yoma": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yoma"
+      },
+      "plural": {
+        "word": "Bioma"
+      },
+      "meaning": {
+        "es": "Ñame"
+      },
+      "meaningPlural": {
+        "es": "Ñames"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "yomu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Yomu"
+      },
+      "plural": {
+        "word": "Biomu"
+      },
+      "meaning": {
+        "es": "Calor"
+      },
+      "meaningPlural": {
+        "es": "Calores"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["y-variant"]
+    },
+    "ibak_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibakē"
+      },
+      "plural": {
+        "word": "Mabakē"
+      },
+      "meaning": {
+        "es": "Cuidado"
+      },
+      "meaningPlural": {
+        "es": "Cuidados"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ibala": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibala"
+      },
+      "plural": {
+        "word": "Mabala"
+      },
+      "meaning": {
+        "es": "Victoria"
+      },
+      "meaningPlural": {
+        "es": "Victorias"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ib_a_lu": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibâlu"
+      },
+      "plural": {
+        "word": "Mabâlu"
+      },
+      "meaning": {
+        "es": "Cuello"
+      },
+      "meaningPlural": {
+        "es": "Cuellos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ib_a_ng_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibângâ"
+      },
+      "plural": {
+        "word": "Mabângâ"
+      },
+      "meaning": {
+        "es": "Rodilla"
+      },
+      "meaningPlural": {
+        "es": "Rodillas"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "ib_a_t_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibâtâ"
+      },
+      "plural": {
+        "word": "Mabâtâ"
+      },
+      "meaning": {
+        "es": "Bendición"
+      },
+      "meaningPlural": {
+        "es": "Bendiciones"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "ibeku": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibeku"
+      },
+      "plural": {
+        "word": "Mabeku"
+      },
+      "meaning": {
+        "es": "Apoyo"
+      },
+      "meaningPlural": {
+        "es": "Apoyos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ibend_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibendē"
+      },
+      "plural": {
+        "word": "Mabendē"
+      },
+      "meaning": {
+        "es": "Alabanza"
+      },
+      "meaningPlural": {
+        "es": "Alabanzas"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "ib_e_k_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibēkē"
+      },
+      "plural": {
+        "word": "Mabēkē"
+      },
+      "meaning": {
+        "es": "Hombro"
+      },
+      "meaningPlural": {
+        "es": "Hombros"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikadu": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikadu"
+      },
+      "plural": {
+        "word": "Makadu"
+      },
+      "meaning": {
+        "es": "Mano"
+      },
+      "meaningPlural": {
+        "es": "Manos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ilale": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ilale"
+      },
+      "plural": {
+        "word": "Malale"
+      },
+      "meaning": {
+        "es": "Piedra"
+      },
+      "meaningPlural": {
+        "es": "Piedras"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ibomba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibomba"
+      },
+      "plural": {
+        "word": "Mabomba"
+      },
+      "meaning": {
+        "es": "Cuerno"
+      },
+      "meaningPlural": {
+        "es": "Cuernos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ihana": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ihana"
+      },
+      "plural": {
+        "word": "Mahana"
+      },
+      "meaning": {
+        "es": "Ayuda"
+      },
+      "meaningPlural": {
+        "es": "Ayudas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ihonga": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ihonga"
+      },
+      "plural": {
+        "word": "Mahonga"
+      },
+      "meaning": {
+        "es": "Diente"
+      },
+      "meaningPlural": {
+        "es": "Dientes"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ihuhu": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ihuhu"
+      },
+      "plural": {
+        "word": "Mahuhu"
+      },
+      "meaning": {
+        "es": "Estómago, vientre"
+      },
+      "meaningPlural": {
+        "es": "Estómagos, vientres"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ihuku": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ihuku"
+      },
+      "plural": {
+        "word": "Mahuku"
+      },
+      "meaning": {
+        "es": "Fin, extremidad"
+      },
+      "meaningPlural": {
+        "es": "Fines, extremidades"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ijane": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ijane"
+      },
+      "plural": {
+        "word": "Majanē"
+      },
+      "meaning": {
+        "es": "Nacimiento"
+      },
+      "meaningPlural": {
+        "es": "Nacimientos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikabo": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikabo"
+      },
+      "plural": {
+        "word": "Makabo"
+      },
+      "meaning": {
+        "es": "Porción, parte"
+      },
+      "meaningPlural": {
+        "es": "Porciones, partes"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikalia": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikalia"
+      },
+      "plural": {
+        "word": "Makalia"
+      },
+      "meaning": {
+        "es": "Oración, súplica"
+      },
+      "meaningPlural": {
+        "es": "Oraciones, súplicas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikana": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikana"
+      },
+      "plural": {
+        "word": "Makana"
+      },
+      "meaning": {
+        "es": "Juramento"
+      },
+      "meaningPlural": {
+        "es": "Juramentos"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikelenge": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikelenge"
+      },
+      "plural": {
+        "word": "Makelenge"
+      },
+      "meaning": {
+        "es": "Campana"
+      },
+      "meaningPlural": {
+        "es": "Campanas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ik_e_l_e_n_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikēlēnē"
+      },
+      "plural": {
+        "word": "Makēlēnē"
+      },
+      "meaning": {
+        "es": "Vanidad"
+      },
+      "meaningPlural": {
+        "es": "Vanidades"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "ik_e_luku": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikēluku"
+      },
+      "plural": {
+        "word": "Makēluku"
+      },
+      "meaning": {
+        "es": "Ambición"
+      },
+      "meaningPlural": {
+        "es": "Ambiciones"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ikogo": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikogo"
+      },
+      "plural": {
+        "word": "Makogo"
+      },
+      "meaning": {
+        "es": "Zapato"
+      },
+      "meaningPlural": {
+        "es": "Zapatos"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "iluku": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Iluku"
+      },
+      "plural": {
+        "word": "Maluku"
+      },
+      "meaning": {
+        "es": "Hermana"
+      },
+      "meaningPlural": {
+        "es": "Hermanas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "it_a_nd_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Itândē"
+      },
+      "plural": {
+        "word": "Matândē"
+      },
+      "meaning": {
+        "es": "Amor"
+      },
+      "meaningPlural": {
+        "es": "Amores"
+      },
+      "source": {
+        "pdfPage": 9
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Also listed in VerbalNouns.vue → abstractNouns."
+    },
+    "iovenda": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Iovenda"
+      },
+      "plural": {
+        "word": "Mavenda"
+      },
+      "meaning": {
+        "es": "Gloria"
+      },
+      "meaningPlural": {
+        "es": "Glorias"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "iv_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ivē"
+      },
+      "plural": {
+        "word": "Mavē"
+      },
+      "meaning": {
+        "es": "Paga, recompensa"
+      },
+      "meaningPlural": {
+        "es": "Pagas, recompensas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "ibob_e_l_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibobēlē"
+      },
+      "plural": {
+        "word": "Mabobēlē"
+      },
+      "meaning": {
+        "es": "Araña"
+      },
+      "meaningPlural": {
+        "es": "Arañas"
+      },
+      "source": {
+        "pdfPage": 9
+      }
+    },
+    "diba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Diba"
+      },
+      "plural": {
+        "word": "Maba"
+      },
+      "meaning": {
+        "es": "Casamiento"
+      },
+      "meaningPlural": {
+        "es": "Casamientos"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "dib_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dibē"
+      },
+      "plural": {
+        "word": "Mabē"
+      },
+      "meaning": {
+        "es": "Ubre, teta"
+      },
+      "meaningPlural": {
+        "es": "Ubres, tetas"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "dik_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dikē"
+      },
+      "plural": {
+        "word": "Makē"
+      },
+      "meaning": {
+        "es": "Huevo"
+      },
+      "meaningPlural": {
+        "es": "Huevos"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "dimya": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dimya"
+      },
+      "plural": {
+        "word": "Mamya"
+      },
+      "meaning": {
+        "es": "Torpedo"
+      },
+      "meaningPlural": {
+        "es": "Torpedos"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "diso": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Diso"
+      },
+      "plural": {
+        "word": "Maso"
+      },
+      "meaning": {
+        "es": "Nigua"
+      },
+      "meaningPlural": {
+        "es": "Niguas"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "dind_e_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dindē"
+      },
+      "plural": {
+        "word": "Mandē"
+      },
+      "meaning": {
+        "es": "Ñame, Tubérculo"
+      },
+      "meaningPlural": {
+        "es": "Ñames, Tubérculos"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "dingongola": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dingongola"
+      },
+      "plural": {
+        "word": "Mangongola"
+      },
+      "meaning": {
+        "es": "Plátano especial"
+      },
+      "meaningPlural": {
+        "es": "Plátanos especiales"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "diny_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dinyâ"
+      },
+      "plural": {
+        "word": "Manyâ"
+      },
+      "meaning": {
+        "es": "Escama"
+      },
+      "meaningPlural": {
+        "es": "Escamas"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "dit_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ditâ"
+      },
+      "plural": {
+        "word": "Matâ"
+      },
+      "meaning": {
+        "es": "Oreja"
+      },
+      "meaningPlural": {
+        "es": "Orejas"
+      },
+      "source": {
+        "pdfPage": 10
+      }
+    },
+    "divy_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Divyâ"
+      },
+      "plural": {
+        "word": "Mavyâ"
+      },
+      "meaning": {
+        "es": "Escoba"
+      },
+      "meaningPlural": {
+        "es": "Escobas"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      }
+    },
+    "di_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Diâ"
+      },
+      "plural": {
+        "word": "Miâ"
+      },
+      "meaning": {
+        "es": "Hogar"
+      },
+      "meaningPlural": {
+        "es": "Hogares"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      },
+      "tags": ["class-exception"]
+    },
+    "dina": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dina"
+      },
+      "plural": {
+        "word": "Mina"
+      },
+      "meaning": {
+        "es": "Nombre"
+      },
+      "meaningPlural": {
+        "es": "Nombres"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception"]
+    },
+    "dih_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dihâ"
+      },
+      "plural": {
+        "word": "Mihâ"
+      },
+      "meaning": {
+        "es": "Ojo"
+      },
+      "meaningPlural": {
+        "es": "Ojos"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception"]
+    },
+    "dy_a_mbi": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dyâmbi"
+      },
+      "plural": {
+        "word": "Mâmbi"
+      },
+      "meaning": {
+        "es": "Puerta"
+      },
+      "meaningPlural": {
+        "es": "Puertas"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception"]
+    },
+    "dyoba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Dyoba"
+      },
+      "plural": {
+        "word": "Moda"
+      },
+      "meaning": {
+        "es": "Sol"
+      },
+      "meaningPlural": {
+        "es": "Soles"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception"]
+    },
+    "mavule": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Mavule"
+      },
+      "meaning": {
+        "es": "Aceite"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "many_a_ng_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Manyângâ"
+      },
+      "meaning": {
+        "es": "Leche"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "maku": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Maku"
+      },
+      "meaning": {
+        "es": "Ron, licor"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "mak_a_nd_a_": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Makândâ"
+      },
+      "meaning": {
+        "es": "Savia"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "makiya": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Makiya"
+      },
+      "meaning": {
+        "es": "Sangre"
+      },
+      "source": {
+        "pdfPage": "9-10"
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "miba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": {
+        "word": "Miba"
+      },
+      "meaning": {
+        "es": "Agua"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["liquid", "plural-only"]
+    },
+    "in_a_ni": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Inâni"
+      },
+      "plural": {
+        "word": "Lonâni"
+      },
+      "meaning": {
+        "es": "Pájaro"
+      },
+      "meaningPlural": {
+        "es": "Pájaros"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception", "plural-class-6"]
+    },
+    "iboko": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Iboko"
+      },
+      "plural": {
+        "word": "Loboko"
+      },
+      "meaning": {
+        "es": "Lugar, sitio"
+      },
+      "meaningPlural": {
+        "es": "Lugares, sitios"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception", "plural-class-6"]
+    },
+    "ikadada": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikadada"
+      },
+      "plural": {
+        "word": "Lokadada"
+      },
+      "meaning": {
+        "es": "Pimienta"
+      },
+      "meaningPlural": {
+        "es": "Pimientas"
+      },
+      "source": {
+        "pdfPage": 10
+      },
+      "tags": ["class-exception", "plural-class-6"]
+    },
+    "wbaha": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbaha"
+      },
+      "plural": {
+        "word": "Mebaha"
+      },
+      "meaning": {
+        "es": "Costado, lado"
+      },
+      "meaningPlural": {
+        "es": "Costados, lados"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wbalani": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbalani"
+      },
+      "plural": {
+        "word": "Mebalani"
+      },
+      "meaning": {
+        "es": "Conquistador"
+      },
+      "meaningPlural": {
+        "es": "Conquistadores"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wbanga": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbanga"
+      },
+      "plural": {
+        "word": "Mebanga"
+      },
+      "meaning": {
+        "es": "Nuez"
+      },
+      "meaningPlural": {
+        "es": "Nueces"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wbango": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbango"
+      },
+      "plural": {
+        "word": "Mebango"
+      },
+      "meaning": {
+        "es": "Diente de marfil"
+      },
+      "meaningPlural": {
+        "es": "Dientes de marfil"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wb_a_ki": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbâki"
+      },
+      "plural": {
+        "word": "Mebâki"
+      },
+      "meaning": {
+        "es": "Hacha, destral"
+      },
+      "meaningPlural": {
+        "es": "Hachas, destrales"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wb_a_nd_a_": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbândâ"
+      },
+      "plural": {
+        "word": "Mebândâ"
+      },
+      "meaning": {
+        "es": "Tiro de fusil"
+      },
+      "meaningPlural": {
+        "es": "Tiros de fusil"
+      },
+      "source": {
+        "pdfPage": "10-11"
+      }
+    },
+    "wbendi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbendi"
+      },
+      "plural": {
+        "word": "Mebendi"
+      },
+      "meaning": {
+        "es": "Adulador"
+      },
+      "meaningPlural": {
+        "es": "Aduladores"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wb_e_di": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbēdi"
+      },
+      "plural": {
+        "word": "Mebēdi"
+      },
+      "meaning": {
+        "es": "Enfermedad"
+      },
+      "meaningPlural": {
+        "es": "Enfermedades"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wbulubulu": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbulubulu"
+      },
+      "plural": {
+        "word": "Mebulubulu"
+      },
+      "meaning": {
+        "es": "Polvo"
+      },
+      "meaningPlural": {
+        "es": "Polvos"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wb_u_a": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wbūa"
+      },
+      "plural": {
+        "word": "Mebūa"
+      },
+      "meaning": {
+        "es": "La mañana"
+      },
+      "meaningPlural": {
+        "es": "Las mañanas"
+      },
+      "source": {
+        "pdfPage": "10-11"
+      }
+    },
+    "wd_a_mb_e_": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wdâmbē"
+      },
+      "plural": {
+        "word": "Medâmbē"
+      },
+      "meaning": {
+        "es": "Oveja"
+      },
+      "meaningPlural": {
+        "es": "Ovejas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wdumbu": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wdumbu"
+      },
+      "plural": {
+        "word": "Medumbu"
+      },
+      "meaning": null,
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wgangano": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wgangano"
+      },
+      "plural": {
+        "word": "Megangano"
+      },
+      "meaning": {
+        "es": "Compañerismo"
+      },
+      "meaningPlural": {
+        "es": "Compañerismos"
+      },
+      "source": {
+        "pdfPage": "10-11"
+      }
+    },
+    "wgulu": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Wgulu"
+      },
+      "plural": {
+        "word": "Megulu"
+      },
+      "meaning": {
+        "es": "Cuerda"
+      },
+      "meaningPlural": {
+        "es": "Cuerdas"
+      },
+      "source": {
+        "pdfPage": "10-11"
+      }
+    },
+    "wh_a_": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whâ"
+      },
+      "plural": {
+        "word": "Mehâ"
+      },
+      "meaning": {
+        "es": "Pipa"
+      },
+      "meaningPlural": {
+        "es": "Pipas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wh_e_k_e_": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whēkē"
+      },
+      "plural": {
+        "word": "Mehēkē"
+      },
+      "meaning": {
+        "es": "Playa del mar"
+      },
+      "meaningPlural": {
+        "es": "Playas del mar"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "wh_e_ng_e_": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whēngē"
+      },
+      "plural": {
+        "word": "Mehēngē"
+      },
+      "meaning": {
+        "es": "Calle"
+      },
+      "meaningPlural": {
+        "es": "Calles"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "whiha": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whiha"
+      },
+      "plural": {
+        "word": "Mehiha"
+      },
+      "meaning": {
+        "es": "Nervio, vena"
+      },
+      "meaningPlural": {
+        "es": "Nervios, venas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "whinganakano": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whinganakano"
+      },
+      "plural": {
+        "word": "Mehinganakano"
+      },
+      "meaning": {
+        "es": "Cadena"
+      },
+      "meaningPlural": {
+        "es": "Cadenas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "whingi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Whingi"
+      },
+      "plural": {
+        "word": "Mehingi"
+      },
+      "meaning": {
+        "es": "Gato salvaje"
+      },
+      "meaningPlural": {
+        "es": "Gatos salvajes"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_adi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūadi"
+      },
+      "plural": {
+        "word": "Miadi"
+      },
+      "meaning": {
+        "es": "Hembra"
+      },
+      "meaningPlural": {
+        "es": "Hembras"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_ahi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūahi"
+      },
+      "plural": {
+        "word": "Miahi"
+      },
+      "meaning": {
+        "es": "Erizo, peine de adorno"
+      },
+      "meaningPlural": {
+        "es": "Erizos, peines de adorno"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_ako": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūako"
+      },
+      "plural": {
+        "word": "Miako"
+      },
+      "meaning": {
+        "es": "Confianza"
+      },
+      "meaningPlural": {
+        "es": "Confianzas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_alika": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūalika"
+      },
+      "plural": {
+        "word": "Mialika"
+      },
+      "meaning": {
+        "es": "Vihuela"
+      },
+      "meaningPlural": {
+        "es": "Vihuelas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_ambo": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūambo"
+      },
+      "plural": {
+        "word": "Miambo"
+      },
+      "meaning": {
+        "es": "Sacrificio, oferta"
+      },
+      "meaningPlural": {
+        "es": "Sacrificios, ofertas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_anga": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūanga"
+      },
+      "plural": {
+        "word": "Mianga"
+      },
+      "meaning": {
+        "es": "Rebaño, huerto"
+      },
+      "meaningPlural": {
+        "es": "Rebaños, huertos"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_anjo": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūanjo"
+      },
+      "plural": {
+        "word": "Mianjo"
+      },
+      "meaning": {
+        "es": "Justicia"
+      },
+      "meaningPlural": {
+        "es": "Justicias"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_emba": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūemba"
+      },
+      "plural": {
+        "word": "Miemba"
+      },
+      "meaning": {
+        "es": "Sopa, salsa"
+      },
+      "meaningPlural": {
+        "es": "Sopas, salsas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_e_ngi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūēngi"
+      },
+      "plural": {
+        "word": "Miēngi"
+      },
+      "meaning": {
+        "es": "Extranjero"
+      },
+      "meaningPlural": {
+        "es": "Extranjeros"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_e_ni": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūēni"
+      },
+      "plural": {
+        "word": "Miēni"
+      },
+      "meaning": {
+        "es": "Brazalete"
+      },
+      "meaningPlural": {
+        "es": "Brazaletes"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_idi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūidi"
+      },
+      "plural": {
+        "word": "Miidi"
+      },
+      "meaning": {
+        "es": "Banco, orilla"
+      },
+      "meaningPlural": {
+        "es": "Bancos, orillas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_indi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūindi"
+      },
+      "plural": {
+        "word": "Miindi"
+      },
+      "meaning": {
+        "es": "Montón, hato"
+      },
+      "meaningPlural": {
+        "es": "Montones, hatos"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "m_u_iya": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Mūiya"
+      },
+      "plural": {
+        "word": "Miiya"
+      },
+      "meaning": {
+        "es": "Intestinos"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "muajo": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Muajo"
+      },
+      "plural": {
+        "word": "Bajo"
+      },
+      "meaning": {
+        "es": "Mujer"
+      },
+      "meaningPlural": {
+        "es": "Mujeres"
+      },
+      "source": {
+        "pdfPage": 11
+      },
+      "tags": ["class-exception"]
+    },
+    "molo": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Molo"
+      },
+      "plural": {
+        "word": "Miolo"
+      },
+      "meaning": {
+        "es": "Cabeza"
+      },
+      "meaningPlural": {
+        "es": "Cabezas"
+      },
+      "source": {
+        "pdfPage": 11
+      },
+      "tags": ["class-exception"]
+    },
+    "bobako": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bobako"
+      },
+      "plural": {
+        "word": "Mibako"
+      },
+      "meaning": {
+        "es": "Vaina, funda"
+      },
+      "meaningPlural": {
+        "es": "Vainas, fundas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "bob_a_bu": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bobâbu"
+      },
+      "plural": {
+        "word": "Mibâbu"
+      },
+      "meaning": {
+        "es": "Blandura"
+      },
+      "meaningPlural": {
+        "es": "Blanduras"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "boho": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Boho"
+      },
+      "plural": {
+        "word": "Mioho"
+      },
+      "meaning": {
+        "es": "Cara, frente"
+      },
+      "meaningPlural": {
+        "es": "Caras, frentes"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "bojo_u_a": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bojoūa"
+      },
+      "plural": {
+        "word": "Mijoūa"
+      },
+      "meaning": {
+        "es": "Mentira"
+      },
+      "meaningPlural": {
+        "es": "Mentiras"
+      },
+      "source": {
+        "pdfPage": "11-12"
+      }
+    },
+    "bongo": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bongo"
+      },
+      "plural": {
+        "word": "Miongo"
+      },
+      "meaning": {
+        "es": "Espina, punta"
+      },
+      "meaningPlural": {
+        "es": "Espinas, puntas"
+      },
+      "source": {
+        "pdfPage": "11-12"
+      }
+    },
+    "bonyamo": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bonyamo"
+      },
+      "plural": {
+        "word": "Mingomo"
+      },
+      "meaning": {
+        "es": "Miseria, pobreza"
+      },
+      "meaningPlural": {
+        "es": "Miserias, pobrezas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "bova": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bova"
+      },
+      "plural": {
+        "word": "Miva"
+      },
+      "meaning": {
+        "es": "Don, regalo"
+      },
+      "meaningPlural": {
+        "es": "Dones, regalos"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "bok_a_": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bokâ"
+      },
+      "plural": {
+        "word": "Miokâ"
+      },
+      "meaning": {
+        "es": "Estación lluviosa"
+      },
+      "meaningPlural": {
+        "es": "Estaciones lluviosas"
+      },
+      "source": {
+        "pdfPage": 12
+      },
+      "tags": ["singular-only"],
+      "notes": "Also listed in IrregularNouns.vue → singularOnlyNouns."
+    },
+    "b_u_alo": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Būalo"
+      },
+      "plural": {
+        "word": "Mialo"
+      },
+      "meaning": {
+        "es": "Canoa"
+      },
+      "meaningPlural": {
+        "es": "Canoas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "b_u_anga": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Būanga"
+      },
+      "plural": {
+        "word": "Mianga"
+      },
+      "meaning": {
+        "es": "Campana supersticiosa"
+      },
+      "meaningPlural": {
+        "es": "Campanas supersticiosas"
+      },
+      "source": {
+        "pdfPage": 11
+      }
+    },
+    "b_u_ay_e_": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Būayē"
+      },
+      "plural": {
+        "word": "Miayē"
+      },
+      "meaning": {
+        "es": "Violencia"
+      },
+      "meaningPlural": {
+        "es": "Violencias"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "b_u_e": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Būe"
+      },
+      "plural": {
+        "word": "Mie"
+      },
+      "meaning": {
+        "es": "Luz"
+      },
+      "meaningPlural": {
+        "es": "Luces"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "b_u_eka": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Būeka"
+      },
+      "plural": {
+        "word": "Mieka"
+      },
+      "meaning": {
+        "es": "Odio"
+      },
+      "meaningPlural": {
+        "es": "Odios"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "bolohi": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Bolohi"
+      },
+      "plural": {
+        "word": "Melohi"
+      },
+      "meaning": {
+        "es": "Naranja"
+      },
+      "meaningPlural": {
+        "es": "Naranjas"
+      },
+      "source": {
+        "pdfPage": 12
+      },
+      "tags": ["class-exception"]
+    },
+    "bu_u_ha": {
+      "type": "noun",
+      "nounClass": 4,
+      "singular": {
+        "word": "Buūha"
+      },
+      "plural": {
+        "word": "ūhi"
+      },
+      "meaning": {
+        "es": "Día"
+      },
+      "meaningPlural": {
+        "es": "Días"
+      },
+      "source": {
+        "pdfPage": "11-12"
+      },
+      "tags": ["class-exception"]
+    },
+    "mohano": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Mohano"
+      },
+      "plural": {
+        "word": "Bahano"
+      },
+      "meaning": {
+        "es": "Promesa"
+      },
+      "meaningPlural": {
+        "es": "Promesas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "momo": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Momo"
+      },
+      "plural": {
+        "word": "Bamo"
+      },
+      "meaning": {
+        "es": "Hombre"
+      },
+      "meaningPlural": {
+        "es": "Hombres"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "moto": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Moto"
+      },
+      "plural": {
+        "word": "Bato"
+      },
+      "meaning": {
+        "es": "Persona"
+      },
+      "meaningPlural": {
+        "es": "Personas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "monda": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Monda"
+      },
+      "plural": {
+        "word": "Banda"
+      },
+      "meaning": {
+        "es": "Invitación"
+      },
+      "meaningPlural": {
+        "es": "Invitaciones"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "motoba": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Motoba"
+      },
+      "plural": {
+        "word": "Batoba"
+      },
+      "meaning": {
+        "es": "Caracol"
+      },
+      "meaningPlural": {
+        "es": "Caracoles"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "mongolu": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Mongolu"
+      },
+      "plural": {
+        "word": "Bangolu"
+      },
+      "meaning": {
+        "es": "Escarabajo"
+      },
+      "meaningPlural": {
+        "es": "Escarabajos"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "ubapami": {
+      "type": "noun",
+      "nounClass": 5,
+      "singular": {
+        "word": "Ubapami"
+      },
+      "plural": {
+        "word": "Bobapami"
+      },
+      "meaning": {
+        "es": "Portador"
+      },
+      "meaningPlural": {
+        "es": "Portadores"
+      },
+      "source": {
+        "pdfPage": 12
+      },
+      "tags": ["class-exception"]
+    },
+    "veya": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Veya"
+      },
+      "plural": {
+        "word": "Leya"
+      },
+      "meaning": {
+        "es": "Fuego, leña"
+      },
+      "meaningPlural": {
+        "es": "Fuegos, leñas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vijo": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vijo"
+      },
+      "plural": {
+        "word": "Lijo"
+      },
+      "meaning": {
+        "es": "Nariz"
+      },
+      "meaningPlural": {
+        "es": "Narices"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vi_a_": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viâ"
+      },
+      "plural": {
+        "word": "Liâ"
+      },
+      "meaning": {
+        "es": "Sueño"
+      },
+      "meaningPlural": {
+        "es": "Sueños"
+      },
+      "source": {
+        "pdfPage": "12-13"
+      }
+    },
+    "viho": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viho"
+      },
+      "plural": {
+        "word": "Liho"
+      },
+      "meaning": {
+        "es": "Río"
+      },
+      "meaningPlural": {
+        "es": "Ríos"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vilolombo": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vilolombo"
+      },
+      "plural": {
+        "word": "Lololombo"
+      },
+      "meaning": {
+        "es": "Átomo, partícula"
+      },
+      "meaningPlural": {
+        "es": "Átomos, partículas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vingangambi": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vingangambi"
+      },
+      "plural": {
+        "word": "Longangambi"
+      },
+      "meaning": {
+        "es": "Capricho, extravagancia"
+      },
+      "meaningPlural": {
+        "es": "Caprichos, extravagancias"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vingunguhu": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vingunguhu"
+      },
+      "plural": {
+        "word": "Longunguhu"
+      },
+      "meaning": {
+        "es": "Miga"
+      },
+      "meaningPlural": {
+        "es": "Migas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vipupuhu": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vipupuhu"
+      },
+      "plural": {
+        "word": "Lopupuhu"
+      },
+      "meaning": {
+        "es": "Fragmento"
+      },
+      "meaningPlural": {
+        "es": "Fragmentos"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "vit_u_a": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vitūa"
+      },
+      "plural": {
+        "word": "Litūa"
+      },
+      "meaning": {
+        "es": "Vela, luz de candela"
+      },
+      "meaningPlural": {
+        "es": "Velas, luces de candela"
+      },
+      "source": {
+        "pdfPage": "12-13"
+      }
+    },
+    "viyonda": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viyonda"
+      },
+      "plural": {
+        "word": "Loyonda"
+      },
+      "meaning": {
+        "es": "La estación seca"
+      },
+      "meaningPlural": {
+        "es": "Las estaciones secas"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "viyembo": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viyembo"
+      },
+      "plural": {
+        "word": "Lembo"
+      },
+      "meaning": {
+        "es": "Himno, canto"
+      },
+      "meaningPlural": {
+        "es": "Himnos, cantos"
+      },
+      "source": {
+        "pdfPage": 12
+      }
+    },
+    "viaha": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viaha"
+      },
+      "plural": {
+        "word": "Laha"
+      },
+      "meaning": {
+        "es": "Limón"
+      },
+      "meaningPlural": {
+        "es": "Limones"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["class-exception"]
+    },
+    "vianga": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Vianga"
+      },
+      "plural": {
+        "word": "Langa"
+      },
+      "meaning": {
+        "es": "sal"
+      },
+      "meaningPlural": {
+        "es": "Gran cantidad de sal"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["class-exception"]
+    },
+    "viyohi": {
+      "type": "noun",
+      "nounClass": 6,
+      "singular": {
+        "word": "Viyohi"
+      },
+      "plural": {
+        "word": "Lohi"
+      },
+      "meaning": {
+        "es": "Rayo de sol"
+      },
+      "meaningPlural": {
+        "es": "Rayos de sol"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["class-exception"]
+    },
+    "fala": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Fala"
+      },
+      "plural": {
+        "word": "Fala"
+      },
+      "meaning": {
+        "es": "Francés"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "fato": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Fato"
+      },
+      "plural": {
+        "word": "Fato"
+      },
+      "meaning": {
+        "es": "Media, calceta"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "fula": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Fula"
+      },
+      "plural": {
+        "word": "Fula"
+      },
+      "meaning": {
+        "es": "Franco, moneda"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "dyate": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Dyate"
+      },
+      "plural": {
+        "word": "Dyate"
+      },
+      "meaning": {
+        "es": "Cinta del sombrero"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "hako": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Hako"
+      },
+      "plural": {
+        "word": "Hako"
+      },
+      "meaning": {
+        "es": "Hormiga"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"],
+      "notes": "Also listed in IrregularNouns.vue → pluralOnlyNouns."
+    },
+    "hapi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Hapi"
+      },
+      "plural": {
+        "word": "Hapi"
+      },
+      "meaning": {
+        "es": "Cerradura"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ho_u_e": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Hoūe"
+      },
+      "plural": {
+        "word": "Hoūe"
+      },
+      "meaning": {
+        "es": "Pelo, cabello"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "j_a_ng_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Jângâ"
+      },
+      "plural": {
+        "word": "Jângâ"
+      },
+      "meaning": {
+        "es": "Temor (clase de)"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "jonda": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Jonda"
+      },
+      "plural": {
+        "word": "Jonda"
+      },
+      "meaning": {
+        "es": "Rana"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "jumba": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Jumba"
+      },
+      "plural": {
+        "word": "Jumba"
+      },
+      "meaning": {
+        "es": "Carga"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "kabala": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Kabala"
+      },
+      "plural": {
+        "word": "Kabala"
+      },
+      "meaning": {
+        "es": "Caballo"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "k_a_t_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Kâtâ"
+      },
+      "plural": {
+        "word": "Kâtâ"
+      },
+      "meaning": {
+        "es": "Tranca"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "kono": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Kono"
+      },
+      "plural": {
+        "word": "Kono"
+      },
+      "meaning": {
+        "es": "Bisagra"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "kuma": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Kuma"
+      },
+      "plural": {
+        "word": "Kuma"
+      },
+      "meaning": {
+        "es": "Fama, renombre"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "m_a_k_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mâkâ"
+      },
+      "plural": {
+        "word": "Mâkâ"
+      },
+      "meaning": {
+        "es": "Tienda de campaña"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "pago": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pago"
+      },
+      "plural": {
+        "word": "Pago"
+      },
+      "meaning": {
+        "es": "Tributo"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "paha": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Paha"
+      },
+      "plural": {
+        "word": "Paha"
+      },
+      "meaning": {
+        "es": "Rama"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "panga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Panga"
+      },
+      "plural": {
+        "word": "Panga"
+      },
+      "meaning": {
+        "es": "Cadena, promesa"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tagulu": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tagulu"
+      },
+      "plural": {
+        "word": "Tagulu"
+      },
+      "meaning": {
+        "es": "Mesa"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "tina": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tina"
+      },
+      "plural": {
+        "word": "Tina"
+      },
+      "meaning": {
+        "es": "Razón, causa"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["singular-only"],
+      "notes": "Also listed in IrregularNouns.vue → singularOnlyNouns."
+    },
+    "tito": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tito"
+      },
+      "plural": {
+        "word": "Tito"
+      },
+      "meaning": {
+        "es": "Bestia, animal"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["plural-only"],
+      "notes": "Also listed in IrregularNouns.vue → pluralOnlyNouns."
+    },
+    "toko": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Toko"
+      },
+      "plural": {
+        "word": "Toko"
+      },
+      "meaning": {
+        "es": "Cuchara"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tolongo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tolongo"
+      },
+      "plural": {
+        "word": "Tolongo"
+      },
+      "meaning": {
+        "es": "Baúl"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tombo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tombo"
+      },
+      "plural": {
+        "word": "Tombo"
+      },
+      "meaning": {
+        "es": "Aguja"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tongo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tongo"
+      },
+      "plural": {
+        "word": "Tongo"
+      },
+      "meaning": {
+        "es": "Manantial"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tudi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tudi"
+      },
+      "plural": {
+        "word": "Tudi"
+      },
+      "meaning": {
+        "es": "Disgusto, fastidio"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tuma": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tuma"
+      },
+      "plural": {
+        "word": "Tuma"
+      },
+      "meaning": {
+        "es": "Tenedor"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "tungu": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tungu"
+      },
+      "plural": {
+        "word": "Tungu"
+      },
+      "meaning": {
+        "es": "Bahía"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "tyoli": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Tyoli"
+      },
+      "plural": {
+        "word": "Tyoli"
+      },
+      "meaning": {
+        "es": "Despensero"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "mbadi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbadi"
+      },
+      "plural": {
+        "word": "Mbadi"
+      },
+      "meaning": {
+        "es": "Ardilla"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "mbalanga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbalanga"
+      },
+      "plural": {
+        "word": "Mbalanga"
+      },
+      "meaning": {
+        "es": "Antilope"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "mbanja": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbanja"
+      },
+      "plural": {
+        "word": "Mbanja"
+      },
+      "meaning": {
+        "es": "Bambú, costilla"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "mb_a_ng_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbângâ"
+      },
+      "plural": {
+        "word": "Mbângâ"
+      },
+      "meaning": {
+        "es": "Patata"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "mbuja": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbuja"
+      },
+      "plural": {
+        "word": "Mbuja"
+      },
+      "meaning": {
+        "es": "Red"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "mb_u_a": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Mbūa"
+      },
+      "plural": {
+        "word": "Mbūa"
+      },
+      "meaning": {
+        "es": "Perro"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ndabo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndabo"
+      },
+      "plural": {
+        "word": "Ndabo"
+      },
+      "meaning": {
+        "es": "Casa"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ndaga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndaga"
+      },
+      "plural": {
+        "word": "Ndaga"
+      },
+      "meaning": {
+        "es": "Palabra, razonamiento"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "nd_a_t_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndâtâ"
+      },
+      "plural": {
+        "word": "Ndâtâ"
+      },
+      "meaning": {
+        "es": "Sueño, desvario"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ndembo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndembo"
+      },
+      "plural": {
+        "word": "Ndembo"
+      },
+      "meaning": {
+        "es": "Señal"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ndoba": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndoba"
+      },
+      "plural": {
+        "word": "Ndoba"
+      },
+      "meaning": {
+        "es": "Enemigo"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ndomina": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndomina"
+      },
+      "plural": {
+        "word": "Ndomina"
+      },
+      "meaning": {
+        "es": "Tío materno"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ndonda": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndonda"
+      },
+      "plural": {
+        "word": "Ndonda"
+      },
+      "meaning": {
+        "es": "Cosecha, siega"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ndonga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndonga"
+      },
+      "plural": {
+        "word": "Ndonga"
+      },
+      "meaning": {
+        "es": "Confianza"
+      },
+      "source": {
+        "pdfPage": 14
+      }
+    },
+    "ndongo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndongo"
+      },
+      "plural": {
+        "word": "Ndongo"
+      },
+      "meaning": {
+        "es": "Pimiento"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ndumba": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ndumba"
+      },
+      "plural": {
+        "word": "Ndumba"
+      },
+      "meaning": {
+        "es": "Huésped"
+      },
+      "source": {
+        "pdfPage": 14
+      }
+    },
+    "penge": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Penge"
+      },
+      "plural": {
+        "word": "Penge"
+      },
+      "meaning": {
+        "es": "Ulcera"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pani": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pani"
+      },
+      "plural": {
+        "word": "Pani"
+      },
+      "meaning": {
+        "es": "Costumbre"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["singular-only"],
+      "notes": "Also listed in IrregularNouns.vue → singularOnlyNouns."
+    },
+    "pavo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pavo"
+      },
+      "plural": {
+        "word": "Pavo"
+      },
+      "meaning": {
+        "es": "Cuchillo"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "p_a_nd_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pândâ"
+      },
+      "plural": {
+        "word": "Pândâ"
+      },
+      "meaning": {
+        "es": "Casco"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "penda": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Penda"
+      },
+      "plural": {
+        "word": "Penda"
+      },
+      "meaning": {
+        "es": "Controversia"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pemb_e_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pembē"
+      },
+      "plural": {
+        "word": "Pembē"
+      },
+      "meaning": {
+        "es": "Pan, greda"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pika": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pika"
+      },
+      "plural": {
+        "word": "Pika"
+      },
+      "meaning": {
+        "es": "Riñón"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pimba": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pimba"
+      },
+      "plural": {
+        "word": "Pimba"
+      },
+      "meaning": {
+        "es": "Coraje"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pita": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pita"
+      },
+      "plural": {
+        "word": "Pita"
+      },
+      "meaning": {
+        "es": "Pólvora"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["singular-only"],
+      "notes": "Also listed in IrregularNouns.vue → singularOnlyNouns."
+    },
+    "pogo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pogo"
+      },
+      "plural": {
+        "word": "Pogo"
+      },
+      "meaning": {
+        "es": "Arpón"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "poke": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Poke"
+      },
+      "plural": {
+        "word": "Poke"
+      },
+      "meaning": {
+        "es": "Sordera"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "poti": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Poti"
+      },
+      "plural": {
+        "word": "Poti"
+      },
+      "meaning": {
+        "es": "Maíz, grano"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "pudi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pudi"
+      },
+      "plural": {
+        "word": "Pudi"
+      },
+      "meaning": {
+        "es": "Aire, aliento"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "p_u_isi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Pūisi"
+      },
+      "plural": {
+        "word": "Pūisi"
+      },
+      "meaning": {
+        "es": "Gato"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "sago": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Sago"
+      },
+      "plural": {
+        "word": "Sago"
+      },
+      "meaning": {
+        "es": "Jabón"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "sango": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Sango"
+      },
+      "plural": {
+        "word": "Sango"
+      },
+      "meaning": {
+        "es": "Fiesta, noticia"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "senge": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Senge"
+      },
+      "plural": {
+        "word": "Senge"
+      },
+      "meaning": {
+        "es": "Palangana"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "sikulu": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Sikulu"
+      },
+      "plural": {
+        "word": "Sikulu"
+      },
+      "meaning": {
+        "es": "Escuela"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "nenge": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nenge"
+      },
+      "plural": {
+        "word": "Nenge"
+      },
+      "meaning": {
+        "es": "Isla"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ngabo": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngabo"
+      },
+      "plural": {
+        "word": "Ngabo"
+      },
+      "meaning": {
+        "es": "Ración, porción"
+      },
+      "source": {
+        "pdfPage": 13
+      },
+      "tags": ["singular-only"],
+      "notes": "Also listed in IrregularNouns.vue → singularOnlyNouns."
+    },
+    "ngaho": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngaho"
+      },
+      "plural": {
+        "word": "Ngaho"
+      },
+      "meaning": {
+        "es": "Alambre"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngama": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngama"
+      },
+      "plural": {
+        "word": "Ngama"
+      },
+      "meaning": {
+        "es": "Defensa"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngambi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngambi"
+      },
+      "plural": {
+        "word": "Ngambi"
+      },
+      "meaning": {
+        "es": "Ira, rencor"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngando": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngando"
+      },
+      "plural": {
+        "word": "Ngando"
+      },
+      "meaning": {
+        "es": "Cocodrilo"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngandi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngandi"
+      },
+      "plural": {
+        "word": "Ngandi"
+      },
+      "meaning": {
+        "es": "Globo, bola"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngani": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngani"
+      },
+      "plural": {
+        "word": "Ngani"
+      },
+      "meaning": {
+        "es": "Juego de manos"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "nganga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nganga"
+      },
+      "plural": {
+        "word": "Nganga"
+      },
+      "meaning": {
+        "es": "Médico"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "nganiyango": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nganiyango"
+      },
+      "plural": {
+        "word": "Nganiyango"
+      },
+      "meaning": {
+        "es": "Acceso, entrada"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ng_a_mbi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngâmbi"
+      },
+      "plural": {
+        "word": "Ngâmbi"
+      },
+      "meaning": {
+        "es": "Harpa"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ng_a_nd_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngândâ"
+      },
+      "plural": {
+        "word": "Ngândâ"
+      },
+      "meaning": {
+        "es": "Habas"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ng_a_u_e_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngâūē"
+      },
+      "plural": {
+        "word": "Ngâūē"
+      },
+      "meaning": {
+        "es": "Capitán"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ngejangeja": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngejangeja"
+      },
+      "plural": {
+        "word": "Ngejangeja"
+      },
+      "meaning": {
+        "es": "Cristal"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ngenga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngenga"
+      },
+      "plural": {
+        "word": "Ngenga"
+      },
+      "meaning": {
+        "es": "Ciempiés"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngomba": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngomba"
+      },
+      "plural": {
+        "word": "Ngomba"
+      },
+      "meaning": {
+        "es": "Puerco espín"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngonga": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngonga"
+      },
+      "plural": {
+        "word": "Ngonga"
+      },
+      "meaning": {
+        "es": "Pecho"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "ngudi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngudi"
+      },
+      "plural": {
+        "word": "Ngudi"
+      },
+      "meaning": {
+        "es": "Fuerza, voluntad"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ngumu": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Ngumu"
+      },
+      "plural": {
+        "word": "Ngumu"
+      },
+      "meaning": {
+        "es": "Jefe, principal"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "njadi": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Njadi"
+      },
+      "plural": {
+        "word": "Njadi"
+      },
+      "meaning": {
+        "es": "Yunque"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
+    "nyang_u_a-dit_a_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nyangūa ditâ"
+      },
+      "plural": {
+        "word": "Nyangūa ditâ"
+      },
+      "meaning": {
+        "es": "Timpano, oido"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "nyu_u_e_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nyuūē"
+      },
+      "plural": {
+        "word": "Nyuūē"
+      },
+      "meaning": {
+        "es": "Cabello blanco, o canas"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "nyeti": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nyeti"
+      },
+      "plural": {
+        "word": "Nyeti"
+      },
+      "meaning": {
+        "es": "Chorro violento"
+      },
+      "source": {
+        "pdfPage": "13-14"
+      }
+    },
+    "ny_e_nj_e_": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Nyēnjē"
+      },
+      "plural": {
+        "word": "Nyēnjē"
+      },
+      "meaning": {
+        "es": "Cangrejo"
+      },
+      "source": {
+        "pdfPage": 14
+      }
+    },
+    "ho_u_e_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Hoūē"
+      },
+      "meaning": {
+        "es": "Cabellera, pelo"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "honji": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Honji"
+      },
+      "meaning": {
+        "es": "Heno, yerba"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "jubu": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Jubu"
+      },
+      "meaning": {
+        "es": "Ceniza"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "mal_a_ng_a_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Malângâ"
+      },
+      "meaning": {
+        "es": "Flores de los árboles"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "maj_e_njina": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Majênjina"
+      },
+      "meaning": {
+        "es": "Rayos de la aurora"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "mbana": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Mbana"
+      },
+      "meaning": {
+        "es": "Pinzas, tenazuelas"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "mbai": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Mbai"
+      },
+      "meaning": {
+        "es": "Virutas, astillas"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "m_a_mb_e_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Mâmbē"
+      },
+      "meaning": {
+        "es": "Sobras, mendrugos"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "lombongo": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Lombongo"
+      },
+      "meaning": {
+        "es": "Mosquitos"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "kiji": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": null,
+      "plural": {
+        "word": "Kiji"
+      },
+      "meaning": {
+        "es": "Rastrojo"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["plural-only"]
+    },
+    "h_a_k_a_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Hâkâ"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Ápice, punta"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "ng_a_nde": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Ngânde"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Luna"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "myadi": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Myadi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Agonía"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "p_a_k_u_e_p_a_k_u_e_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Pâkūēpâkūē"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Verdad"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "k_a_la": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kâla"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Reloj de caja"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "ndiba": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Ndiba"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Profundidad"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "kapi": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kapi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Remo"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "kama": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kama"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Ciento"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "nyati": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Nyati"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Buey"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "ng_u_anjang_u_anja": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Ngūanjangūanja"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Diligencia"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "bulu": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Bulu"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Noche"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "manga": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Manga"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Mar"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "njea": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Njea"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Sendero"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "poli": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Poli"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Trigo"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "tonda": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Tonda"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Diluvio"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "henga": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Henga"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Ocio"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "h_u_e_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Hūē"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Paz"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "maka": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Maka"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Jugo"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "kango": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kango"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Sabor, gusto"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "k_a_": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kâ"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Caracol grande"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "k_a_nde": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Kânde"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Perseverancia"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "beja": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Beja"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Alimento"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "mboi": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Mboi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Miel"
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "peta": {
+      "type": "noun",
+      "nounClass": "irregular",
+      "singular": {
+        "word": "Peta"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "Disputa, etc."
+      },
+      "source": {
+        "pdfPage": 14
+      },
+      "tags": ["singular-only"]
+    },
+    "ilonga": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ilonga"
+      },
+      "plural": {
+        "word": "Malonga"
+      },
+      "meaning": {
+        "es": "edificio"
+      },
+      "meaningPlural": {
+        "es": "edificios"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Also listed in VerbalNouns.vue → abstractNouns."
+    },
+    "ijanja": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ijanja"
+      },
+      "plural": {
+        "word": "Majanja"
+      },
+      "meaning": {
+        "es": "trabajo"
+      },
+      "meaningPlural": {
+        "es": "trabajos"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Also listed in VerbalNouns.vue → abstractNouns."
+    },
+    "ibina": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ibina"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "odio"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ikala": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikala"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "razonamiento"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ilanga": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ilanga"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "lectura"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ilende": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ilende"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "escritura"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ikalo": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Ikalo"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "oración"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "abstract"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ulangi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Ulangi"
+      },
+      "plural": {
+        "word": "Melangi"
+      },
+      "meaning": {
+        "es": "lector"
+      },
+      "meaningPlural": {
+        "es": "lectores"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "agent"],
+      "notes": "Also listed in VerbalNouns.vue → agentNouns."
+    },
+    "ulendi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Ulendi"
+      },
+      "plural": {
+        "word": "Melendi"
+      },
+      "meaning": {
+        "es": "escritor"
+      },
+      "meaningPlural": {
+        "es": "escritores"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "agent"],
+      "notes": "Also listed in VerbalNouns.vue → agentNouns."
+    },
+    "ulongi": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Ulongi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "arquitecto"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "agent"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ukali": {
+      "type": "noun",
+      "nounClass": 3,
+      "singular": {
+        "word": "Ukali"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "orador"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "agent"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ilongidi": {
+      "type": "noun",
+      "nounClass": null,
+      "singular": {
+        "word": "Ilongidi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "modo de construir"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "manner"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ilangidi": {
+      "type": "noun",
+      "nounClass": null,
+      "singular": {
+        "word": "Ilangidi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "modo de leer"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "manner"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "ikalidi": {
+      "type": "noun",
+      "nounClass": null,
+      "singular": {
+        "word": "Ikalidi"
+      },
+      "plural": null,
+      "meaning": {
+        "es": "modo de hablar"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["verbal-noun", "manner"],
+      "notes": "Verbal noun: the book gives no plural for this form."
+    },
+    "elape": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elape"
+      },
+      "plural": {
+        "word": "Belape"
+      },
+      "meaning": {
+        "es": "Rueda"
+      },
+      "meaningPlural": {
+        "es": "Ruedas"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "diko": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": {
+        "word": "Diko"
+      },
+      "plural": {
+        "word": "Mako"
+      },
+      "meaning": {
+        "es": "Sur"
+      },
+      "meaningPlural": {
+        "es": "Sures"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebuki": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebuki"
+      },
+      "plural": {
+        "word": "Bebuki"
+      },
+      "meaning": {
+        "es": "Falta, culpa"
+      },
+      "meaningPlural": {
+        "es": "Faltas, culpas"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebuma": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebuma"
+      },
+      "plural": {
+        "word": "Bebuma"
+      },
+      "meaning": {
+        "es": "Fruta"
+      },
+      "meaningPlural": {
+        "es": "Frutas"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebuk_u_angonja": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebukūangonja"
+      },
+      "plural": {
+        "word": "Bebukūangonja"
+      },
+      "meaning": {
+        "es": "Manga marina"
+      },
+      "meaningPlural": {
+        "es": "Mangas marinas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebumulema": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebumulema"
+      },
+      "plural": {
+        "word": "Bebumulema"
+      },
+      "meaning": {
+        "es": "Corazón"
+      },
+      "meaningPlural": {
+        "es": "Corazones"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebungu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebungu"
+      },
+      "plural": {
+        "word": "Bebungu"
+      },
+      "meaning": {
+        "es": "Estera"
+      },
+      "meaningPlural": {
+        "es": "Esteras"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "eb_u_ela": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebūela"
+      },
+      "plural": {
+        "word": "Bebūela"
+      },
+      "meaning": {
+        "es": "Presa, despojos"
+      },
+      "meaningPlural": {
+        "es": "Presas, despojos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eby_a_by_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebyâbyâ"
+      },
+      "plural": {
+        "word": "Bebyâbyâ"
+      },
+      "meaning": {
+        "es": "Muslo"
+      },
+      "meaningPlural": {
+        "es": "Muslos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "edingiha": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Edingiha"
+      },
+      "plural": {
+        "word": "Bedingiha"
+      },
+      "meaning": {
+        "es": "Sombra"
+      },
+      "meaningPlural": {
+        "es": "Sombras"
+      },
+      "source": {
+        "pdfPage": 15
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebabadi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebabadi"
+      },
+      "plural": {
+        "word": "Bebabadi"
+      },
+      "meaning": {
+        "es": "Sudor"
+      },
+      "meaningPlural": {
+        "es": "Sudores"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebamba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebamba"
+      },
+      "plural": {
+        "word": "Bebamba"
+      },
+      "meaning": {
+        "es": "Caspa"
+      },
+      "meaningPlural": {
+        "es": "Caspas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebambana": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebambana"
+      },
+      "plural": {
+        "word": "Bebambana"
+      },
+      "meaning": {
+        "es": "Hijo de esclavos"
+      },
+      "meaningPlural": {
+        "es": "Hijos de esclavos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebambamba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebambamba"
+      },
+      "plural": {
+        "word": "Bebambamba"
+      },
+      "meaning": {
+        "es": "Concha, cáscara"
+      },
+      "meaningPlural": {
+        "es": "Conchas, cáscaras"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eb_a_b_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebâbâ"
+      },
+      "plural": {
+        "word": "Bebâbâ"
+      },
+      "meaning": {
+        "es": "Trapo, andrajo"
+      },
+      "meaningPlural": {
+        "es": "Trapos, andrajos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebadu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebadu"
+      },
+      "plural": {
+        "word": "Bebadu"
+      },
+      "meaning": {
+        "es": "Barba"
+      },
+      "meaningPlural": {
+        "es": "Barbas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebano": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebano"
+      },
+      "plural": {
+        "word": "Bebano"
+      },
+      "meaning": {
+        "es": "Oficio, comercio"
+      },
+      "meaningPlural": {
+        "es": "Oficios, comercios"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebodi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebodi"
+      },
+      "plural": {
+        "word": "Bebodi"
+      },
+      "meaning": {
+        "es": "Puño"
+      },
+      "meaningPlural": {
+        "es": "Puños"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebok_u_edi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebokūedi"
+      },
+      "plural": {
+        "word": "Bebokūedi"
+      },
+      "meaning": {
+        "es": "Nodriza"
+      },
+      "meaningPlural": {
+        "es": "Nodrizas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ebonga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ebonga"
+      },
+      "plural": {
+        "word": "Bebonga"
+      },
+      "meaning": {
+        "es": "Silla"
+      },
+      "meaningPlural": {
+        "es": "Sillas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eguba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eguba"
+      },
+      "plural": {
+        "word": "Beguba"
+      },
+      "meaning": {
+        "es": "Braza, fondo"
+      },
+      "meaningPlural": {
+        "es": "Brazas, fondos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehadi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehadi"
+      },
+      "plural": {
+        "word": "Behadi"
+      },
+      "meaning": {
+        "es": "Acción"
+      },
+      "meaningPlural": {
+        "es": "Acciones"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eh_a_h_a_ni": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehâhâni"
+      },
+      "plural": {
+        "word": "Behâhâni"
+      },
+      "meaning": {
+        "es": "Vergüenza, rubor"
+      },
+      "meaningPlural": {
+        "es": "Vergüenzas, rubores"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehek_u_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehekūē"
+      },
+      "plural": {
+        "word": "Behekūē"
+      },
+      "meaning": {
+        "es": "Gracia, favor"
+      },
+      "meaningPlural": {
+        "es": "Gracias, favores"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehelele": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehelele"
+      },
+      "plural": {
+        "word": "Behelele"
+      },
+      "meaning": {
+        "es": "Lagarto"
+      },
+      "meaningPlural": {
+        "es": "Lagartos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehihila": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehihila"
+      },
+      "plural": {
+        "word": "Behihila"
+      },
+      "meaning": {
+        "es": "Visión, espectro"
+      },
+      "meaningPlural": {
+        "es": "Visiones, espectros"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehila": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehila"
+      },
+      "plural": {
+        "word": "Behila"
+      },
+      "meaning": {
+        "es": "Virgen, doncella"
+      },
+      "meaningPlural": {
+        "es": "Vírgenes, doncellas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehini": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehini"
+      },
+      "plural": {
+        "word": "Behini"
+      },
+      "meaning": {
+        "es": "Figura, retrato"
+      },
+      "meaningPlural": {
+        "es": "Figuras, retratos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehove": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehove"
+      },
+      "plural": {
+        "word": "Behove"
+      },
+      "meaning": {
+        "es": "Ansia, deseo"
+      },
+      "meaningPlural": {
+        "es": "Ansias, deseos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehuka": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehuka"
+      },
+      "plural": {
+        "word": "Behuka"
+      },
+      "meaning": {
+        "es": "Jarro, tinaja"
+      },
+      "meaningPlural": {
+        "es": "Jarros, tinajas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehut_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehutē"
+      },
+      "plural": {
+        "word": "Behutē"
+      },
+      "meaning": {
+        "es": "Náusea"
+      },
+      "meaningPlural": {
+        "es": "Náuseas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ejaka": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejaka"
+      },
+      "plural": {
+        "word": "Bejaka"
+      },
+      "meaning": {
+        "es": "Pez, carne"
+      },
+      "meaningPlural": {
+        "es": "Peces, carnes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ejalina": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejalina"
+      },
+      "plural": {
+        "word": "Bejalina"
+      },
+      "meaning": {
+        "es": "Peine"
+      },
+      "meaningPlural": {
+        "es": "Peines"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ej_a_mbi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejâmbi"
+      },
+      "plural": {
+        "word": "Bejâmbi"
+      },
+      "meaning": {
+        "es": "Patriarca"
+      },
+      "meaningPlural": {
+        "es": "Patriarcas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eka": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eka"
+      },
+      "plural": {
+        "word": "Beka"
+      },
+      "meaning": {
+        "es": "Trono"
+      },
+      "meaningPlural": {
+        "es": "Tronos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekai": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekai"
+      },
+      "plural": {
+        "word": "Bekai"
+      },
+      "meaning": {
+        "es": "Hoja"
+      },
+      "meaningPlural": {
+        "es": "Hojas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekalidi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekalidi"
+      },
+      "plural": {
+        "word": "Bekalidi"
+      },
+      "meaning": {
+        "es": "Conversación"
+      },
+      "meaningPlural": {
+        "es": "Conversaciones"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekano": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekano"
+      },
+      "plural": {
+        "word": "Bekano"
+      },
+      "meaning": {
+        "es": "Fábula, ficción"
+      },
+      "meaningPlural": {
+        "es": "Fábulas, ficciones"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_a_k_a_l_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekâkâlâ"
+      },
+      "plural": {
+        "word": "Bekâkâlâ"
+      },
+      "meaning": {
+        "es": "Sarna"
+      },
+      "meaningPlural": {
+        "es": "Sarnas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_a_k_a_yi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekâkâyi"
+      },
+      "plural": {
+        "word": "Bekâkâyi"
+      },
+      "meaning": {
+        "es": "Tos muy fuerte"
+      },
+      "meaningPlural": {
+        "es": "Toses muy fuertes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekeha": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekeha"
+      },
+      "plural": {
+        "word": "Bekeha"
+      },
+      "meaning": {
+        "es": "Criatura"
+      },
+      "meaningPlural": {
+        "es": "Criaturas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekengo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekengo"
+      },
+      "plural": {
+        "word": "Bekengo"
+      },
+      "meaning": {
+        "es": "Cadáver"
+      },
+      "meaningPlural": {
+        "es": "Cadáveres"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_e_mb_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekēmbē"
+      },
+      "plural": {
+        "word": "Bekēmbē"
+      },
+      "meaning": {
+        "es": "Veneno"
+      },
+      "meaningPlural": {
+        "es": "Venenos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekikindi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekikindi"
+      },
+      "plural": {
+        "word": "Bekikindi"
+      },
+      "meaning": {
+        "es": "Talón"
+      },
+      "meaningPlural": {
+        "es": "Talones"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekoda": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekoda"
+      },
+      "plural": {
+        "word": "Bekoda"
+      },
+      "meaning": {
+        "es": "Panal"
+      },
+      "meaningPlural": {
+        "es": "Panales"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekola": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekola"
+      },
+      "plural": {
+        "word": "Bekola"
+      },
+      "meaning": {
+        "es": "Malicia"
+      },
+      "meaningPlural": {
+        "es": "Malicias"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekoto": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekoto"
+      },
+      "plural": {
+        "word": "Bekoto"
+      },
+      "meaning": {
+        "es": "Cuero, piel"
+      },
+      "meaningPlural": {
+        "es": "Cueros, pieles"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekuha": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekuha"
+      },
+      "plural": {
+        "word": "Bekuha"
+      },
+      "meaning": {
+        "es": "Herencia"
+      },
+      "meaningPlural": {
+        "es": "Herencias"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekulu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekulu"
+      },
+      "plural": {
+        "word": "Bekulu"
+      },
+      "meaning": {
+        "es": "Mitad, parte"
+      },
+      "meaningPlural": {
+        "es": "Mitades, partes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_u_ek_u_e": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekūekūe"
+      },
+      "plural": {
+        "word": "Bekūekūe"
+      },
+      "meaning": {
+        "es": "Mariposa"
+      },
+      "meaningPlural": {
+        "es": "Mariposas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "el_a_ngi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elângi"
+      },
+      "plural": {
+        "word": "Belângi"
+      },
+      "meaning": {
+        "es": "Cantor"
+      },
+      "meaningPlural": {
+        "es": "Cantores"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "elekanako": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elekanako"
+      },
+      "plural": {
+        "word": "Belekanako"
+      },
+      "meaning": {
+        "es": "Ley, mandato"
+      },
+      "meaningPlural": {
+        "es": "Leyes, mandatos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "el_e_ngi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elēngi"
+      },
+      "plural": {
+        "word": "Belēngi"
+      },
+      "meaning": {
+        "es": "Pródigo, gastador"
+      },
+      "meaningPlural": {
+        "es": "Pródigos, gastadores"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "em_e_n_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Emēnâ"
+      },
+      "plural": {
+        "word": "Bemēnâ"
+      },
+      "meaning": {
+        "es": "Vida, existencia"
+      },
+      "meaningPlural": {
+        "es": "Vidas, existencias"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "emina": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Emina"
+      },
+      "plural": {
+        "word": "Bemina"
+      },
+      "meaning": {
+        "es": "Cerrojo"
+      },
+      "meaningPlural": {
+        "es": "Cerrojos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "enangi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enangi"
+      },
+      "plural": {
+        "word": "Benangi"
+      },
+      "meaning": {
+        "es": "Sofá, cama"
+      },
+      "meaningPlural": {
+        "es": "Sofás, camas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "engamba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Engamba"
+      },
+      "plural": {
+        "word": "Bengamba"
+      },
+      "meaning": {
+        "es": "Garrafón"
+      },
+      "meaningPlural": {
+        "es": "Garrafones"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "engumbi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Engumbi"
+      },
+      "plural": {
+        "word": "Bengumbi"
+      },
+      "meaning": {
+        "es": "Niebla"
+      },
+      "meaningPlural": {
+        "es": "Nieblas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "enj_e_li": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enjēli"
+      },
+      "plural": {
+        "word": "Benjēli"
+      },
+      "meaning": {
+        "es": "Ángel"
+      },
+      "meaningPlural": {
+        "es": "Ángeles"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "epedi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epedi"
+      },
+      "plural": {
+        "word": "Bepedi"
+      },
+      "meaning": {
+        "es": "Tiempo, estación"
+      },
+      "meaningPlural": {
+        "es": "Tiempos, estaciones"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ep_e_lup_e_lu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epēlupēlu"
+      },
+      "plural": {
+        "word": "Bepēlupēlu"
+      },
+      "meaning": {
+        "es": "Relámpago"
+      },
+      "meaningPlural": {
+        "es": "Relámpagos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "epima": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epima"
+      },
+      "plural": {
+        "word": "Bepima"
+      },
+      "meaning": {
+        "es": "Muro, pared"
+      },
+      "meaningPlural": {
+        "es": "Muros, paredes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "es_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Esâ"
+      },
+      "plural": {
+        "word": "Besâ"
+      },
+      "meaning": {
+        "es": "Anguila"
+      },
+      "meaningPlural": {
+        "es": "Anguilas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "es_u_ag_e_nda": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Esūagēnda"
+      },
+      "plural": {
+        "word": "Besūagēnda"
+      },
+      "meaning": {
+        "es": "Banco, asiento"
+      },
+      "meaningPlural": {
+        "es": "Bancos, asientos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "et_a_ki": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etâki"
+      },
+      "plural": {
+        "word": "Betâki"
+      },
+      "meaning": {
+        "es": "Tumulto"
+      },
+      "meaningPlural": {
+        "es": "Tumultos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "edoko": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Edoko"
+      },
+      "plural": {
+        "word": "Bedoko"
+      },
+      "meaning": {
+        "es": "Deseo"
+      },
+      "meaningPlural": {
+        "es": "Deseos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "edubu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Edubu"
+      },
+      "plural": {
+        "word": "Bedubu"
+      },
+      "meaning": {
+        "es": "Culebra negra"
+      },
+      "meaningPlural": {
+        "es": "Culebras negras"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eduka": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eduka"
+      },
+      "plural": {
+        "word": "Beduka"
+      },
+      "meaning": {
+        "es": "Riña, guerra"
+      },
+      "meaningPlural": {
+        "es": "Riñas, guerras"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "edungu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Edungu"
+      },
+      "plural": {
+        "word": "Bedungu"
+      },
+      "meaning": {
+        "es": "Sonido, ruido"
+      },
+      "meaningPlural": {
+        "es": "Sonidos, ruidos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "efu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Efu"
+      },
+      "plural": {
+        "word": "Befu"
+      },
+      "meaning": {
+        "es": "Manta, manto"
+      },
+      "meaningPlural": {
+        "es": "Mantas, mantos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eg_a_lani": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egâlani"
+      },
+      "plural": {
+        "word": "Begâlani"
+      },
+      "meaning": {
+        "es": "Lepra"
+      },
+      "meaningPlural": {
+        "es": "Lepras"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eg_a_ndaga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egândaga"
+      },
+      "plural": {
+        "word": "Begândaga"
+      },
+      "meaning": {
+        "es": "Esclavo"
+      },
+      "meaningPlural": {
+        "es": "Esclavos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eg_e_ja": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egēja"
+      },
+      "plural": {
+        "word": "Begēja"
+      },
+      "meaning": {
+        "es": "Barreno"
+      },
+      "meaningPlural": {
+        "es": "Barrenos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "egeno": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egeno"
+      },
+      "plural": {
+        "word": "Begeno"
+      },
+      "meaning": {
+        "es": "Espejo"
+      },
+      "meaningPlural": {
+        "es": "Espejos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "egombe": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egombe"
+      },
+      "plural": {
+        "word": "Begombe"
+      },
+      "meaning": {
+        "es": "Tiempo"
+      },
+      "meaningPlural": {
+        "es": "Tiempos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "egumia": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egumia"
+      },
+      "plural": {
+        "word": "Begumia"
+      },
+      "meaning": {
+        "es": "Mástil, palo"
+      },
+      "meaningPlural": {
+        "es": "Mástiles, palos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehavu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehavu"
+      },
+      "plural": {
+        "word": "Behavu"
+      },
+      "meaning": {
+        "es": "Tarea, hierba"
+      },
+      "meaningPlural": {
+        "es": "Tareas, hierbas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eh_a_lia": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehâlia"
+      },
+      "plural": {
+        "word": "Behâlia"
+      },
+      "meaning": {
+        "es": "Hilaridad, juego"
+      },
+      "meaningPlural": {
+        "es": "Hilaridades, juegos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eheheku": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eheheku"
+      },
+      "plural": {
+        "word": "Beheheku"
+      },
+      "meaning": {
+        "es": "Hipo"
+      },
+      "meaningPlural": {
+        "es": "Hipos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eh_e_k_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehēkâ"
+      },
+      "plural": {
+        "word": "Behēkâ"
+      },
+      "meaning": {
+        "es": "Hígado"
+      },
+      "meaningPlural": {
+        "es": "Hígados"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekiki": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekiki"
+      },
+      "plural": {
+        "word": "Bekiki"
+      },
+      "meaning": {
+        "es": "País, bosque"
+      },
+      "meaningPlural": {
+        "es": "Países, bosques"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehilibeja": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehilibeja"
+      },
+      "plural": {
+        "word": "Behilibeja"
+      },
+      "meaning": {
+        "es": "Paladar"
+      },
+      "meaningPlural": {
+        "es": "Paladares"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehongola": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehongola"
+      },
+      "plural": {
+        "word": "Behongola"
+      },
+      "meaning": {
+        "es": "Embudo"
+      },
+      "meaningPlural": {
+        "es": "Embudos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehuhu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehuhu"
+      },
+      "plural": {
+        "word": "Behuhu"
+      },
+      "meaning": {
+        "es": "Total, el todo"
+      },
+      "meaningPlural": {
+        "es": "Totales, los todos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ehukuluku": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ehukuluku"
+      },
+      "plural": {
+        "word": "Behukuluku"
+      },
+      "meaning": {
+        "es": "Lechuza"
+      },
+      "meaningPlural": {
+        "es": "Lechuzas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eja": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eja"
+      },
+      "plural": {
+        "word": "Beja"
+      },
+      "meaning": {
+        "es": "Comida"
+      },
+      "meaningPlural": {
+        "es": "Comidas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ejabavudi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejabavudi"
+      },
+      "plural": {
+        "word": "Bejabavudi"
+      },
+      "meaning": {
+        "es": "Tortuga"
+      },
+      "meaningPlural": {
+        "es": "Tortugas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ejangina": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejangina"
+      },
+      "plural": {
+        "word": "Bejangina"
+      },
+      "meaning": {
+        "es": "Horno"
+      },
+      "meaningPlural": {
+        "es": "Hornos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ej_a_nj_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejânjâ"
+      },
+      "plural": {
+        "word": "Bejânjâ"
+      },
+      "meaning": {
+        "es": "Seta, hongo"
+      },
+      "meaningPlural": {
+        "es": "Setas, hongos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekaba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekaba"
+      },
+      "plural": {
+        "word": "Bekaba"
+      },
+      "meaning": {
+        "es": "Pimpollo"
+      },
+      "meaningPlural": {
+        "es": "Pimpollos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekahi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekahi"
+      },
+      "plural": {
+        "word": "Bekahi"
+      },
+      "meaning": {
+        "es": "Héroe, coraje"
+      },
+      "meaningPlural": {
+        "es": "Héroes, corajes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekendangolo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekendangolo"
+      },
+      "plural": {
+        "word": "Bekendangolo"
+      },
+      "meaning": {
+        "es": "Monte, colina"
+      },
+      "meaningPlural": {
+        "es": "Montes, colinas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_a_k_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekâkâ"
+      },
+      "plural": {
+        "word": "Bekâkâ"
+      },
+      "meaning": {
+        "es": "Tronco muerto"
+      },
+      "meaningPlural": {
+        "es": "Troncos muertos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_a_mb_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekâmbâ"
+      },
+      "plural": {
+        "word": "Bekâmbâ"
+      },
+      "meaning": {
+        "es": "Flema"
+      },
+      "meaningPlural": {
+        "es": "Flemas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekedi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekedi"
+      },
+      "plural": {
+        "word": "Bekedi"
+      },
+      "meaning": {
+        "es": "Vanidad"
+      },
+      "meaningPlural": {
+        "es": "Vanidades"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekelekeke": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekelekeke"
+      },
+      "plural": {
+        "word": "Bekelekeke"
+      },
+      "meaning": {
+        "es": "Tórtola"
+      },
+      "meaningPlural": {
+        "es": "Tórtolas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekeyi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekeyi"
+      },
+      "plural": {
+        "word": "Bekeyi"
+      },
+      "meaning": {
+        "es": "Hierro"
+      },
+      "meaningPlural": {
+        "es": "Hierros"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ek_e_nd_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekēndâ"
+      },
+      "plural": {
+        "word": "Bekēndâ"
+      },
+      "meaning": {
+        "es": "Jornada, viaje"
+      },
+      "meaningPlural": {
+        "es": "Jornadas, viajes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eko": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eko"
+      },
+      "plural": {
+        "word": "Beko"
+      },
+      "meaning": {
+        "es": "Pierna, pie"
+      },
+      "meaningPlural": {
+        "es": "Piernas, pies"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekokobo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekokobo"
+      },
+      "plural": {
+        "word": "Bekokobo"
+      },
+      "meaning": {
+        "es": "Párpado"
+      },
+      "meaningPlural": {
+        "es": "Párpados"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekomba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekomba"
+      },
+      "plural": {
+        "word": "Bekomba"
+      },
+      "meaning": {
+        "es": "Esterilidad"
+      },
+      "meaningPlural": {
+        "es": "Esterilidades"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekudikudi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekudikudi"
+      },
+      "plural": {
+        "word": "Bekudikudi"
+      },
+      "meaning": {
+        "es": "Tornado, tempestad"
+      },
+      "meaningPlural": {
+        "es": "Tornados, tempestades"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ekukubi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ekukubi"
+      },
+      "plural": {
+        "word": "Bekukubi"
+      },
+      "meaning": {
+        "es": "Furia, rabia"
+      },
+      "meaningPlural": {
+        "es": "Furias, rabias"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "elahe": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elahe"
+      },
+      "plural": {
+        "word": "Belahe"
+      },
+      "meaning": {
+        "es": "Vaso"
+      },
+      "meaningPlural": {
+        "es": "Vasos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "elandi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elandi"
+      },
+      "plural": {
+        "word": "Belandi"
+      },
+      "meaning": {
+        "es": "Saco"
+      },
+      "meaningPlural": {
+        "es": "Sacos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "ele": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ele"
+      },
+      "plural": {
+        "word": "Bele"
+      },
+      "meaning": {
+        "es": "Árbol, palo"
+      },
+      "meaningPlural": {
+        "es": "Árboles, palos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "elembo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elembo"
+      },
+      "plural": {
+        "word": "Belembo"
+      },
+      "meaning": {
+        "es": "Milagro, signo"
+      },
+      "meaningPlural": {
+        "es": "Milagros, signos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "el_e_bu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elēbu"
+      },
+      "plural": {
+        "word": "Belēbu"
+      },
+      "meaning": {
+        "es": "Labio"
+      },
+      "meaningPlural": {
+        "es": "Labios"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "elolo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elolo"
+      },
+      "plural": {
+        "word": "Belolo"
+      },
+      "meaning": {
+        "es": "Sardina"
+      },
+      "meaningPlural": {
+        "es": "Sardinas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "el_e_mb_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elēmbē"
+      },
+      "plural": {
+        "word": "Belēmbē"
+      },
+      "meaning": {
+        "es": "Pórtico, portal"
+      },
+      "meaningPlural": {
+        "es": "Pórticos, portales"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "elongo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Elongo"
+      },
+      "plural": {
+        "word": "Belongo"
+      },
+      "meaning": {
+        "es": "Torre"
+      },
+      "meaningPlural": {
+        "es": "Torres"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "emi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Emi"
+      },
+      "plural": {
+        "word": "Bemi"
+      },
+      "meaning": {
+        "es": "Lengua"
+      },
+      "meaningPlural": {
+        "es": "Lenguas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "enami": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enami"
+      },
+      "plural": {
+        "word": "Benami"
+      },
+      "meaning": {
+        "es": "Hombre poderoso"
+      },
+      "meaningPlural": {
+        "es": "Hombres poderosos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "enge": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enge"
+      },
+      "plural": {
+        "word": "Benge"
+      },
+      "meaning": {
+        "es": "Costa"
+      },
+      "meaningPlural": {
+        "es": "Costas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "eningo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eningo"
+      },
+      "plural": {
+        "word": "Beningo"
+      },
+      "meaning": {
+        "es": "Marea"
+      },
+      "meaningPlural": {
+        "es": "Mareas"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "epapi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epapi"
+      },
+      "plural": {
+        "word": "Bepapi"
+      },
+      "meaning": {
+        "es": "Corteza, piel"
+      },
+      "meaningPlural": {
+        "es": "Cortezas, pieles"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ep_e_l_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epēlē"
+      },
+      "plural": {
+        "word": "Bepēlē"
+      },
+      "meaning": {
+        "es": "Plato"
+      },
+      "meaningPlural": {
+        "es": "Platos"
+      },
+      "source": {
+        "pdfPage": 16
+      },
+      "tags": ["vocabulary"]
+    },
+    "epikiliedi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epikiliedi"
+      },
+      "plural": {
+        "word": "Bepikiliedi"
+      },
+      "meaning": {
+        "es": "Pensamiento"
+      },
+      "meaningPlural": {
+        "es": "Pensamientos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "epondoma": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epondoma"
+      },
+      "plural": {
+        "word": "Bepondoma"
+      },
+      "meaning": {
+        "es": "Almohada"
+      },
+      "meaningPlural": {
+        "es": "Almohadas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "esuti": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Esuti"
+      },
+      "plural": {
+        "word": "Besuti"
+      },
+      "meaning": {
+        "es": "Minuto"
+      },
+      "meaningPlural": {
+        "es": "Minutos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "et_a_k_a_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etâkâ"
+      },
+      "plural": {
+        "word": "Betâkâ"
+      },
+      "meaning": {
+        "es": "Familia"
+      },
+      "meaningPlural": {
+        "es": "Familias"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "etima": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etima"
+      },
+      "plural": {
+        "word": "Betima"
+      },
+      "meaning": {
+        "es": "Lago"
+      },
+      "meaningPlural": {
+        "es": "Lagos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "etimbe": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etimbe"
+      },
+      "plural": {
+        "word": "Betimbe"
+      },
+      "meaning": {
+        "es": "Tabla, madera"
+      },
+      "meaningPlural": {
+        "es": "Tablas, maderas"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "etomba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etomba"
+      },
+      "plural": {
+        "word": "Betomba"
+      },
+      "meaning": {
+        "es": "Tribu, familia"
+      },
+      "meaningPlural": {
+        "es": "Tribus, familias"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "etombi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etombi"
+      },
+      "plural": {
+        "word": "Betombi"
+      },
+      "meaning": {
+        "es": "Falda de monte"
+      },
+      "meaningPlural": {
+        "es": "Faldas de monte"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "evango": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evango"
+      },
+      "plural": {
+        "word": "Bevango"
+      },
+      "meaning": {
+        "es": "Vasija para agua"
+      },
+      "meaningPlural": {
+        "es": "Vasijas para agua"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "ev_e_l_e_hi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evēlēhi"
+      },
+      "plural": {
+        "word": "Bevēlēhi"
+      },
+      "meaning": {
+        "es": "Pañuelo"
+      },
+      "meaningPlural": {
+        "es": "Pañuelos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "evemba": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evemba"
+      },
+      "plural": {
+        "word": "Bevemba"
+      },
+      "meaning": {
+        "es": "Valor, coraje"
+      },
+      "meaningPlural": {
+        "es": "Valores, corajes"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evila": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evila"
+      },
+      "plural": {
+        "word": "Bevila"
+      },
+      "meaning": {
+        "es": "Ébano"
+      },
+      "meaningPlural": {
+        "es": "Ébanos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evindi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evindi"
+      },
+      "plural": {
+        "word": "Bevindi"
+      },
+      "meaning": {
+        "es": "Nube"
+      },
+      "meaningPlural": {
+        "es": "Nubes"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evuva": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evuva"
+      },
+      "plural": {
+        "word": "Bevuva"
+      },
+      "meaning": {
+        "es": "Plaga"
+      },
+      "meaningPlural": {
+        "es": "Plagas"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evudi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evudi"
+      },
+      "plural": {
+        "word": "Bevudi"
+      },
+      "meaning": {
+        "es": "Espuma, algodón"
+      },
+      "meaningPlural": {
+        "es": "Espumas, algodones"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evunga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evunga"
+      },
+      "plural": {
+        "word": "Bevunga"
+      },
+      "meaning": {
+        "es": "Yelmo"
+      },
+      "meaningPlural": {
+        "es": "Yelmos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "eyome": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eyome"
+      },
+      "plural": {
+        "word": "Beyome"
+      },
+      "meaning": {
+        "es": "Lado derecho"
+      },
+      "meaningPlural": {
+        "es": "Lados derechos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "egunguna": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Egunguna"
+      },
+      "plural": {
+        "word": "Begunguna"
+      },
+      "meaning": {
+        "es": "Llave"
+      },
+      "meaningPlural": {
+        "es": "Llaves"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "epati": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epati"
+      },
+      "plural": {
+        "word": "Bepati"
+      },
+      "meaning": {
+        "es": "Tontería, locura"
+      },
+      "meaningPlural": {
+        "es": "Tonterías, locuras"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "epota": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epota"
+      },
+      "plural": {
+        "word": "Bepota"
+      },
+      "meaning": {
+        "es": "Vidriado, loza"
+      },
+      "meaningPlural": {
+        "es": "Vidriados, lozas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "epepa": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epepa"
+      },
+      "plural": {
+        "word": "Bepepa"
+      },
+      "meaning": {
+        "es": "Timón, abanico"
+      },
+      "meaningPlural": {
+        "es": "Timones, abanicos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "etema": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etema"
+      },
+      "plural": {
+        "word": "Betema"
+      },
+      "meaning": {
+        "es": "Cardialgía, dolor"
+      },
+      "meaningPlural": {
+        "es": "Cardialgías, dolores"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eyake": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eyake"
+      },
+      "plural": {
+        "word": "Beyake"
+      },
+      "meaning": {
+        "es": "Panadizo"
+      },
+      "meaningPlural": {
+        "es": "Panadizos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "ejanganangobe": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Ejanganangobe"
+      },
+      "plural": {
+        "word": "Bejanganangobe"
+      },
+      "meaning": {
+        "es": "Carta, nota"
+      },
+      "meaningPlural": {
+        "es": "Cartas, notas"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "etoli": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etoli"
+      },
+      "plural": {
+        "word": "Betoli"
+      },
+      "meaning": {
+        "es": "Rata"
+      },
+      "meaningPlural": {
+        "es": "Ratas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "etunia": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etunia"
+      },
+      "plural": {
+        "word": "Betunia"
+      },
+      "meaning": {
+        "es": "Sufrimiento"
+      },
+      "meaningPlural": {
+        "es": "Sufrimientos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evandi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evandi"
+      },
+      "plural": {
+        "word": "Bevandi"
+      },
+      "meaning": {
+        "es": "Miembro"
+      },
+      "meaningPlural": {
+        "es": "Miembros"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "evelse": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evelse"
+      },
+      "plural": {
+        "word": "Bevelse"
+      },
+      "meaning": {
+        "es": "Hueso"
+      },
+      "meaningPlural": {
+        "es": "Huesos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "evema": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evema"
+      },
+      "plural": {
+        "word": "Bevema"
+      },
+      "meaning": {
+        "es": "Trampa"
+      },
+      "meaningPlural": {
+        "es": "Trampas"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "ev_e_l_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evēlē"
+      },
+      "plural": {
+        "word": "Bevēlē"
+      },
+      "meaning": {
+        "es": "Sed"
+      },
+      "meaningPlural": {
+        "es": "Sedes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "evita": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Evita"
+      },
+      "plural": {
+        "word": "Bevita"
+      },
+      "meaning": {
+        "es": "Persecución"
+      },
+      "meaningPlural": {
+        "es": "Persecuciones"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "e_u_aha": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eūaha"
+      },
+      "plural": {
+        "word": "Beūaha"
+      },
+      "meaning": {
+        "es": "Sierra, lima"
+      },
+      "meaningPlural": {
+        "es": "Sierras, limas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eva": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eva"
+      },
+      "plural": {
+        "word": "Beva"
+      },
+      "meaning": {
+        "es": "Vasija"
+      },
+      "meaningPlural": {
+        "es": "Vasijas"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "eyok_u_edi": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eyokūedi"
+      },
+      "plural": {
+        "word": "Beyokūedi"
+      },
+      "meaning": {
+        "es": "Discípulo"
+      },
+      "meaningPlural": {
+        "es": "Discípulos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "em_e_ng_u_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Emēngūē"
+      },
+      "plural": {
+        "word": "Bemēngūē"
+      },
+      "meaning": {
+        "es": "Lado izquierdo"
+      },
+      "meaningPlural": {
+        "es": "Lados izquierdos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "enjasigalanjenga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Enjasigalanjenga"
+      },
+      "plural": {
+        "word": "Benjasigalanjenga"
+      },
+      "meaning": {
+        "es": "Ignorancia"
+      },
+      "meaningPlural": {
+        "es": "Ignorancias"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "esalagamb_u_e_": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Esalagambūē"
+      },
+      "plural": {
+        "word": "Besalagambūē"
+      },
+      "meaning": {
+        "es": "Charlatán"
+      },
+      "meaningPlural": {
+        "es": "Charlatanes"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "eponga": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Eponga"
+      },
+      "plural": {
+        "word": "Beponga"
+      },
+      "meaning": {
+        "es": "Cera, capa"
+      },
+      "meaningPlural": {
+        "es": "Ceras, capas"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "epambo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Epambo"
+      },
+      "plural": {
+        "word": "Bepambo"
+      },
+      "meaning": {
+        "es": "Respeto, arco"
+      },
+      "meaningPlural": {
+        "es": "Respetos, arcos"
+      },
+      "source": {
+        "pdfPage": "15-17"
+      },
+      "tags": ["vocabulary"]
+    },
+    "etundu": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etundu"
+      },
+      "plural": {
+        "word": "Betundu"
+      },
+      "meaning": {
+        "es": "Hato, racimo"
+      },
+      "meaningPlural": {
+        "es": "Hatos, racimos"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    },
+    "et_e_jani": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": {
+        "word": "Etējani"
+      },
+      "plural": {
+        "word": "Betējani"
+      },
+      "meaning": {
+        "es": "Rehén"
+      },
+      "meaningPlural": {
+        "es": "Rehenes"
+      },
+      "source": {
+        "pdfPage": 17
+      },
+      "tags": ["vocabulary"]
+    }
+  }
+}

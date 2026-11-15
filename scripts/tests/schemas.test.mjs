@@ -95,6 +95,13 @@ test('unreadable meanings are allowed as null (never guess)', () => {
   assertValid('lexicon', { entries })
 })
 
+test('an unknown noun class is allowed as null (never guess)', () => {
+  const base = example('lexicon.example.json')
+  const entries = clone(base.entries)
+  entries.epokolo.nounClass = null
+  assertValid('lexicon', { entries })
+})
+
 test('section rejects typical mistakes', () => {
   const section = example('section-noun-class-1.example.json')
   const withBlock = (block) => ({ ...clone(section), blocks: [block] })

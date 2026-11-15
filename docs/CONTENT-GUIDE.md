@@ -122,7 +122,7 @@ Two different words written the same way get `~2`, `~3`: `jaka` (comer), `jaka~2
 ```json
 "epokolo": {
   "type": "noun",
-  "nounClass": 1,                          // 1-7, or "irregular"
+  "nounClass": 1,                          // 1-7, "irregular", or null if the book doesn't say
   "singular": { "word": "Epokolo" },
   "plural":   { "word": "Bepokolo" },
   "meaning":       { "es": "Sombrero" },

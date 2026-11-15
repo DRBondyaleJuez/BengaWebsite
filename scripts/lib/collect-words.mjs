@@ -164,4 +164,4 @@ export function collectWords() {
   return results
 }
 
-export { ROOT }
+export { ROOT, readVueData }

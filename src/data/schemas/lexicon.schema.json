@@ -68,8 +68,12 @@
       "properties": {
         "type": { "const": "noun" },
         "nounClass": {
-          "description": "Noun class 1-7 of the book, or 'irregular' (book § 7-8).",
-          "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 7 }, { "const": "irregular" }]
+          "description": "Noun class 1-7 of the book, 'irregular' (book § 7-8), or null when the book doesn't say (e.g. verbal nouns of manner like ilongidi). Never guess a class.",
+          "oneOf": [
+            { "type": "integer", "minimum": 1, "maximum": 7 },
+            { "const": "irregular" },
+            { "type": "null" }
+          ]
         },
         "singular": { "oneOf": [{ "$ref": "#/$defs/form" }, { "type": "null" }] },
         "plural": { "oneOf": [{ "$ref": "#/$defs/form" }, { "type": "null" }] },
