@@ -29,6 +29,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
 | [R-019](#r-019) | 🟢 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | done |
 | [R-020](#r-020) | 🟢 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | done |
+| [R-021](#r-021) | 🔴 | 2.4.2 | Chapter-2 nouns that don't match the book text | any time (before Phase 3) |
 
 ---
 
@@ -234,6 +235,26 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Doubt:** Checked with `pdftotext -f N -l N`: PDF page 8 is printed page **14** and starts the class 1 list (*Epokolo*); PDF page 9 is printed **15** and starts «SEGUNDA CLASE»; PDF page 10 is printed **16** (class 2 «di» examples, exceptions, liquids, class-6 exception) and starts «TERCERA CLASE». So printed page = PDF page + 6, as AGENTS.md already says for chapter 3 (PDF 18 = book 24), but the noun-class table lists other numbers in both columns.
 - **Suggestion:** In task 2.4 (when every noun gets its `source.pdfPage`), rebuild the whole table from the PDF and fix AGENTS.md. The schema examples already use the verified PDF pages (Epokolo p. 8, Dyoba and Miba p. 10).
 - **Resolution:** 2026-11-13 · Rebuilt the AGENTS.md table from the PDF with `pdftotext` page by page: class 1 printed 14-15 / PDF 8-9, class 2 15-16 / 9-10, class 3 16-17 / 10-11, class 4 17-18 / 11-12, class 5 18 / 12, class 6 18-19 / 12-13, class 7 19-20 / 13-14, irregular nouns 20 / 14, verbal nouns 20-21 / 14-15 (printed = PDF + 6). Also corrected the class-7 column note: the left column of PDF 13 ends with `Ndomina` (not `Ndumba`); `Ndonga … Ndumba` and `Nyuñi … Nyênjê` are at the top of PDF 14. · commit `fix: add missing Spanish accessibility texts and correct the noun page table (R-019, R-020)`
+
+### R-021
+**Chapter-2 nouns that don't match the book text**
+- **Status:** 🔴 Open
+- **Found in:** 2.4.2 (comparing `src/data/lexicon/nouns.json` with `pdftotext` of PDF pages 8-17)
+- **Where:** `src/data/lexicon/nouns.json` (and the same words in `src/views/chapter-2/*.vue` and the practice deck) · book PDF pages 8-17 (printed 14-23)
+- **Doubt:** 119 of 437 words are not printed exactly like that in the OCR text. I checked each against its closest match: most are only OCR damage (`ū` read as `ñ`/`a`/`n`, `â` as `d`/`á`, `k` as `x`). These look like real differences:
+
+  | Word on the site | Book (OCR) | PDF | Question |
+  |---|---|---|---|
+  | `Mbūa` = Perro (class 7) | `Mora. Perro.`; in the examples of PDF 31: `Mbua tákadi…` (perros) | 13, 31 | AGENTS.md says the word is `Mba`. The book itself writes `Mbua`, so I think the site is right and AGENTS.md is wrong. Keep `Mbūa` and fix AGENTS.md? |
+  | `Nyuūē` = Cabello blanco (class 7) | `Nyuñi. Cabello blanco, ó canas` | 14 | `ñ` is usually an OCR'd `ū`, but the last letter reads `i`: `Nyuūi`? |
+  | `Yâkâ` / `Biâkâ` = Medicina (class 1, y-variants) | `Yáki. Biákd. Medicina supersticiosa.` | 9 | Singular `Yâki` or `Yâkâ`? The book's meaning is «Medicina supersticiosa». |
+  | `Dindē` / `Mandē` = Ñame, tubérculo (class 2) | `Dinds: ¡ Manda. … tubérculo` | 10 | Plural `Mandē` or `Mandâ`? |
+  | `Ngândâ` = Habas (class 7) | `Ngúnda. Habas.` | 13 | The OCR reads `ú`, but the list is alphabetical and the word sits among the `Nga-` words, so `Ngândâ` is probably right. Confirm. |
+  | `Evelse` = Hueso (deck only) | `Eee: meso.` (unreadable) | 17 | `ls` is an unusual cluster. Check the scan. |
+
+  Also: the 158 words that only exist in the practice deck (they come from the book's «Vocabulario», PDF 15-17) were never shown on a page, so nobody has compared them with the book; 59 of them are not found exactly in the OCR text. The full list: `node scripts/extract-ch2.mjs` (section "Not found in the PDF text").
+- **Suggestion:** Decide the six rows (look at the scan of each PDF page). The deck words can be reviewed little by little in the practice game. Corrections go into `nouns.json` with `"editorial": { "status": "corrected", "bookText": "…" }` and into the page that shows the word.
+- **Resolution:**
 
 ---
 

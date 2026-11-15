@@ -330,11 +330,24 @@ function main() {
 
   const pdfWords = readPdfWords()
   const entries = new Map() // id → entry
-  const report = { merged: [], differences: [], notInPdf: [] }
+  const report = { merged: [], homonyms: [], differences: [], notInPdf: [] }
 
-  /** Adds an entry, or merges it into an existing one with the same id. */
+  const listOf = new Map() // id → the list it came from, e.g. "NounClass7.vue → words"
+
+  /**
+   * Adds an entry, or merges it into an existing one with the same id.
+   * The same word twice in ONE list is a homonym (class 7: Njadi = yunque, Njadi = primogénito)
+   * and gets the id "njadi~2"; the same word in two lists is one word seen twice.
+   */
   function add(entry, origin, pageRange) {
-    const id = toAudioId(baseWord(entry))
+    const list = origin.split('[')[0]
+    let id = toAudioId(baseWord(entry))
+    if (entries.has(id) && listOf.get(id) === list) {
+      let n = 2
+      while (entries.has(`${id}~${n}`)) n += 1
+      id = `${id}~${n}`
+      report.homonyms.push(`${id}: ${baseWord(entry)} = ${entry.meaning?.es} (${origin})`)
+    }
     const existing = entries.get(id)
     if (existing) {
       if (sameForms(existing, entry)) {
@@ -343,7 +356,7 @@ function main() {
       } else if (compatibleForms(existing, entry)) {
         // Keep the entry with both forms, remember the other list in tags + an editor note.
         addTags(existing, entry.tags)
-        const note = `Also listed in ${origin.split('[')[0]}.`
+        const note = `Also listed in ${list}.`
         existing.notes = existing.notes ? `${existing.notes} ${note}` : note
         report.merged.push(`${id}: ${origin} (one form only there)`)
       } else {
@@ -364,6 +377,7 @@ function main() {
       report.notInPdf.push(`${id} (${baseWord(entry)}, ${origin})`)
     }
     entries.set(id, entry)
+    listOf.set(id, list)
   }
 
   for (const group of GROUPS) {
@@ -412,6 +426,7 @@ function main() {
     lines.forEach((line) => console.log(`  ${line}`))
   }
   print('Same word listed twice (merged)', report.merged)
+  print('Homonyms (same spelling twice in one list)', report.homonyms)
   print('Differences (the first source was kept)', report.differences)
   print('Not found in the PDF text (page range used; check in task 2.4.2)', report.notInPdf)
 

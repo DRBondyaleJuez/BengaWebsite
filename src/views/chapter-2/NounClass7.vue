@@ -175,7 +175,7 @@ export default {
         { word: 'Ngudi', audio: 'ngudi', meaning: 'Fuerza, voluntad' },
         { word: 'Ngumu', audio: 'ngumu', meaning: 'Jefe, principal' },
         { word: 'Njadi', audio: 'njadi', meaning: 'Yunque' },
-        { word: 'Njadi', audio: 'njadi', meaning: 'Primogenito' },
+        { word: 'Njadi', audio: 'njadi', meaning: 'Primogénito' },
         { word: 'Nyangūa ditâ', audio: 'nyang_u_a_dita', meaning: 'Timpano, oido' },
         { word: 'Nyuūē', audio: 'nyu_u_e_', meaning: 'Cabello blanco, o canas' },
         { word: 'Nyeti', audio: 'nyeti', meaning: 'Chorro violento' },

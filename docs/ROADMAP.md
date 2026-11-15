@@ -244,7 +244,8 @@ Branch: `refactor/content-model`. This is the most important phase.
   - Subtasks (one commit each so you can review class by class):
     - [x] 2.4.1 Script `scripts/extract-ch2.js` that reads `NounClass1-7.vue`, `IrregularNouns.vue`, `VerbalNouns.vue` data and writes `lexicon/nouns.json` — **Commit:** `feat(scripts): extract chapter-2 nouns from views`
       - **Done 2026-11-15:** `scripts/extract-ch2.mjs` (one-time migration) → `lexicon/nouns.json`, 436 entries: 278 from the pages + 158 words only in the practice deck (book «Vocabulario», PDF 15-17). Each entry gets `source.pdfPage` via `pdftotext`; 119 words not found in the OCR text keep their class page range. Schema now allows `nounClass: null` (verbal nouns of manner: the book gives no class).
-    - [ ] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
+    - [x] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
+      - **Done 2026-11-15 (first pass):** every word compared with the PDF text; only a sure fix applied (`Njadi` «Primogénito», and the script now keeps the second `Njadi` as homonym `njadi~2`). Six real doubts + the unchecked deck words → REVIEW-LOG R-021 (your decision).
     - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(postponed to Phase 4: the developer wants to keep them until the site is multilingual, see REVIEW-LOG R-005)*
   - **Prompt:** "Task 2.4.x: (see subtask). Never invent a headword; mark unreadable OCR with `meaning: null` and an editorial note."
 

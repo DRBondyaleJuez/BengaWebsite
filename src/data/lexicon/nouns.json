@@ -4058,6 +4058,22 @@
         "pdfPage": 13
       }
     },
+    "njadi~2": {
+      "type": "noun",
+      "nounClass": 7,
+      "singular": {
+        "word": "Njadi"
+      },
+      "plural": {
+        "word": "Njadi"
+      },
+      "meaning": {
+        "es": "Primogénito"
+      },
+      "source": {
+        "pdfPage": 13
+      }
+    },
     "nyang_u_a-dit_a_": {
       "type": "noun",
       "nounClass": 7,
