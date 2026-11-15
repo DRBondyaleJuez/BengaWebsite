@@ -408,6 +408,9 @@ function main() {
       if (existing.meaning?.es !== entry.meaning.es)
         problems.push(`meaning «${entry.meaning.es}» vs page «${existing.meaning?.es}»`)
       if (problems.length) report.differences.push(`${id}: deck[${index}] ${problems.join('; ')}`)
+      // The pages give no plural meaning for class 7 (Rana → Rana); the deck does (Ranas): keep it.
+      if (!existing.meaningPlural && entry.meaningPlural && sameForms(existing, entry))
+        existing.meaningPlural = entry.meaningPlural
       return
     }
     deckOnly += 1

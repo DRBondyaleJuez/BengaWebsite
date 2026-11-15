@@ -147,10 +147,15 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import deckData from '@/data/chapter-2/noun-practice-deck.json'
 import { getDictionaryUrl } from '@/services/wordLinks'
+import { getNouns, PLURAL_RULES } from '@/services/nouns'
 
 const MOBILE_BREAKPOINT = 768
+
+/** The deck: every noun of classes 1-7 that has a singular and a plural (no liquids, no irregulars). */
+function practiceNouns() {
+  return getNouns({ withBothForms: true }).filter((noun) => Number.isInteger(noun.nounClass))
+}
 
 function shuffle(array) {
   const copy = [...array]
@@ -203,17 +208,16 @@ export default {
   },
   methods: {
     getDictionaryUrl,
+    // One card per noun of the lexicon (src/data/lexicon/nouns.json).
     buildDeck() {
-      return deckData.map((item, index) => ({
+      return practiceNouns().map((noun, index) => ({
         id: index + 1,
-        singular: item.singular,
-        plural: item.plural,
-        translation: item.translation,
-        pluralTranslation: item.pluralTranslation || item.translation,
-        singularAudioId: item.singularAudioId,
-        pluralAudioId: item.pluralAudioId,
-        nounClass: item.nounClass,
-        conversionSummary: item.conversionSummary,
+        singular: noun.singular.word,
+        plural: noun.plural.word,
+        translation: this.$localized(noun.meaning),
+        pluralTranslation: this.$localized(noun.meaningPlural || noun.meaning),
+        nounClass: `Clase ${noun.nounClass}`,
+        conversionSummary: PLURAL_RULES[noun.nounClass],
         flipped: false,
         pluralRevealed: false,
         showTranslation: false

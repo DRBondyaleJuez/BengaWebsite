@@ -3,6 +3,7 @@
  *
  * It reads two kinds of files:
  *   - src/data/**\/*.json        content stored as data
+ *   - src/data/lexicon/*.json    lexicon files: every singular / plural / word (no audio ids there)
  *   - src/views/**\/*.vue        content still written inside a page's data() block
  *                               (TODO(task 2.4): once all content lives in JSON, drop this part)
  *
@@ -36,6 +37,32 @@ const IGNORED_DATA_FILES = [
   /chapter-2[\\/]class-\d\.json$/,
   /chapter-2[\\/](nouns-intro|irregular-nouns|verbal-nouns)\.json$/
 ]
+
+/** Files in src/data/lexicon that list words but are not lexicon files. */
+const LEXICON_META_FILES = ['word-registry.json', 'word-usage.json']
+
+/**
+ * Lexicon files (nouns.json…) have no audio ids: every form of every entry is a word the site
+ * shows (e.g. the practice game builds its cards from nouns.json).
+ */
+function lexiconWords(file) {
+  const relativeFile = path.relative(ROOT, file).replace(/\\/g, '/')
+  const results = []
+  for (const [id, entry] of Object.entries(JSON.parse(fs.readFileSync(file, 'utf8')).entries)) {
+    for (const form of ['singular', 'plural']) {
+      if (entry[form]?.word)
+        results.push({
+          word: entry[form].word,
+          storedAudioId: null,
+          file: relativeFile,
+          path: `${id}.${form}`
+        })
+    }
+    if (entry.word)
+      results.push({ word: entry.word, storedAudioId: null, file: relativeFile, path: id })
+  }
+  return results
+}
 
 /** Folders of pages that show no Benga content (the admin page lists the registry itself). */
 const IGNORED_VIEW_FOLDERS = [/[\\/]views[\\/]admin[\\/]/]
@@ -138,7 +165,10 @@ export function collectWords() {
 
   for (const file of listFiles(path.join(SRC, 'data'), '.json')) {
     if (IGNORED_DATA_FILES.some((pattern) => pattern.test(file))) continue
-    if (file.includes(`${path.sep}lexicon${path.sep}`)) continue // the registry itself
+    if (file.includes(`${path.sep}lexicon${path.sep}`)) {
+      if (!LEXICON_META_FILES.includes(path.basename(file))) results.push(...lexiconWords(file))
+      continue // the registry itself is not content
+    }
     if (file.includes(`${path.sep}schemas${path.sep}`)) continue // schemas and their examples are not site content
     const pairs = []
     findPairs(JSON.parse(fs.readFileSync(file, 'utf8')), '', pairs)

@@ -239,7 +239,7 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.3: write `scripts/validate-data.js` (`npm run validate`) that checks all JSON against the schemas and reports, in plain Spanish/English: duplicate ids, sections referring to missing ids, Benga words containing `c q r x z ñ` or Spanish accents `á é ú`, explicit `audioId` that differs from `toAudioId(word)`. Run it on the current data and show me the report — don't fix data yet."
   - **Commit:** `feat(scripts): add content validator`
 
-- [ ] **2.4 Build the noun lexicon from the real source**
+- [x] **2.4 Build the noun lexicon from the real source** *(open content doubts: REVIEW-LOG R-021)*
   - **Why:** P1, P2. AGENTS.md: the `.vue` `data()` blocks hold the real content, `class-N.json` must not be trusted.
   - Subtasks (one commit each so you can review class by class):
     - [x] 2.4.1 Script `scripts/extract-ch2.js` that reads `NounClass1-7.vue`, `IrregularNouns.vue`, `VerbalNouns.vue` data and writes `lexicon/nouns.json` — **Commit:** `feat(scripts): extract chapter-2 nouns from views`
@@ -249,7 +249,8 @@ Branch: `refactor/content-model`. This is the most important phase.
     - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(postponed to Phase 4: the developer wants to keep them until the site is multilingual, see REVIEW-LOG R-005)*
   - **Prompt:** "Task 2.4.x: (see subtask). Never invent a headword; mark unreadable OCR with `meaning: null` and an editorial note."
 
-- [ ] **2.5 Practice deck built from the lexicon**
+- [x] **2.5 Practice deck built from the lexicon**
+  - **Done 2026-11-15:** `NounPracticeGame.vue` builds its cards from `lexicon/nouns.json` via `src/services/nouns.js` (`getNouns`, `PLURAL_RULES`); deck file deleted (the 158 vocabulary words and the class-7 plural meanings were moved into `nouns.json` first). Same game; 387 cards instead of 381 (new: `Wdumbu`, the second `Njadi`, and 4 verbal nouns with a plural: `Ilonga`, `Ijanja`, `Ulangi`, `Ulendi`). `words:sync` now also reads lexicon files.
   - **Prompt:** "Task 2.5: make `NounPracticeGame.vue` build its deck from `lexicon/nouns.json` (filter by class) and delete `noun-practice-deck.json` (3 800 lines). The game must behave exactly as before."
   - **Commit:** `refactor(practice): build practice deck from the lexicon`
 

@@ -2730,6 +2730,9 @@
       "meaning": {
         "es": "Francés"
       },
+      "meaningPlural": {
+        "es": "Franceses"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2745,6 +2748,9 @@
       },
       "meaning": {
         "es": "Media, calceta"
+      },
+      "meaningPlural": {
+        "es": "Medias, calcetas"
       },
       "source": {
         "pdfPage": 13
@@ -2762,6 +2768,9 @@
       "meaning": {
         "es": "Franco, moneda"
       },
+      "meaningPlural": {
+        "es": "Francos, monedas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2778,6 +2787,9 @@
       "meaning": {
         "es": "Cinta del sombrero"
       },
+      "meaningPlural": {
+        "es": "Cintas del sombrero"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -2793,6 +2805,9 @@
       },
       "meaning": {
         "es": "Hormiga"
+      },
+      "meaningPlural": {
+        "es": "Hormigas"
       },
       "source": {
         "pdfPage": 14
@@ -2812,6 +2827,9 @@
       "meaning": {
         "es": "Cerradura"
       },
+      "meaningPlural": {
+        "es": "Cerraduras"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2827,6 +2845,9 @@
       },
       "meaning": {
         "es": "Pelo, cabello"
+      },
+      "meaningPlural": {
+        "es": "Pelos, cabellos"
       },
       "source": {
         "pdfPage": "13-14"
@@ -2844,6 +2865,9 @@
       "meaning": {
         "es": "Temor (clase de)"
       },
+      "meaningPlural": {
+        "es": "Temores (clases de)"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2859,6 +2883,9 @@
       },
       "meaning": {
         "es": "Rana"
+      },
+      "meaningPlural": {
+        "es": "Ranas"
       },
       "source": {
         "pdfPage": 13
@@ -2876,6 +2903,9 @@
       "meaning": {
         "es": "Carga"
       },
+      "meaningPlural": {
+        "es": "Cargas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2891,6 +2921,9 @@
       },
       "meaning": {
         "es": "Caballo"
+      },
+      "meaningPlural": {
+        "es": "Caballos"
       },
       "source": {
         "pdfPage": 13
@@ -2908,6 +2941,9 @@
       "meaning": {
         "es": "Tranca"
       },
+      "meaningPlural": {
+        "es": "Trancas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2923,6 +2959,9 @@
       },
       "meaning": {
         "es": "Bisagra"
+      },
+      "meaningPlural": {
+        "es": "Bisagras"
       },
       "source": {
         "pdfPage": 13
@@ -2940,6 +2979,9 @@
       "meaning": {
         "es": "Fama, renombre"
       },
+      "meaningPlural": {
+        "es": "Famas, renombres"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2955,6 +2997,9 @@
       },
       "meaning": {
         "es": "Tienda de campaña"
+      },
+      "meaningPlural": {
+        "es": "Tiendas de campaña"
       },
       "source": {
         "pdfPage": "13-14"
@@ -2972,6 +3017,9 @@
       "meaning": {
         "es": "Tributo"
       },
+      "meaningPlural": {
+        "es": "Tributos"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -2987,6 +3035,9 @@
       },
       "meaning": {
         "es": "Rama"
+      },
+      "meaningPlural": {
+        "es": "Ramas"
       },
       "source": {
         "pdfPage": 13
@@ -3004,6 +3055,9 @@
       "meaning": {
         "es": "Cadena, promesa"
       },
+      "meaningPlural": {
+        "es": "Cadenas, promesas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3020,6 +3074,9 @@
       "meaning": {
         "es": "Mesa"
       },
+      "meaningPlural": {
+        "es": "Mesas"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3035,6 +3092,9 @@
       },
       "meaning": {
         "es": "Razón, causa"
+      },
+      "meaningPlural": {
+        "es": "Razones, causas"
       },
       "source": {
         "pdfPage": 13
@@ -3054,6 +3114,9 @@
       "meaning": {
         "es": "Bestia, animal"
       },
+      "meaningPlural": {
+        "es": "Bestias, animales"
+      },
       "source": {
         "pdfPage": 13
       },
@@ -3072,6 +3135,9 @@
       "meaning": {
         "es": "Cuchara"
       },
+      "meaningPlural": {
+        "es": "Cucharas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3087,6 +3153,9 @@
       },
       "meaning": {
         "es": "Baúl"
+      },
+      "meaningPlural": {
+        "es": "Baúles"
       },
       "source": {
         "pdfPage": 13
@@ -3104,6 +3173,9 @@
       "meaning": {
         "es": "Aguja"
       },
+      "meaningPlural": {
+        "es": "Agujas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3119,6 +3191,9 @@
       },
       "meaning": {
         "es": "Manantial"
+      },
+      "meaningPlural": {
+        "es": "Manantiales"
       },
       "source": {
         "pdfPage": 13
@@ -3136,6 +3211,9 @@
       "meaning": {
         "es": "Disgusto, fastidio"
       },
+      "meaningPlural": {
+        "es": "Disgustos, fastidios"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3151,6 +3229,9 @@
       },
       "meaning": {
         "es": "Tenedor"
+      },
+      "meaningPlural": {
+        "es": "Tenedores"
       },
       "source": {
         "pdfPage": 13
@@ -3168,6 +3249,9 @@
       "meaning": {
         "es": "Bahía"
       },
+      "meaningPlural": {
+        "es": "Bahías"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3183,6 +3267,9 @@
       },
       "meaning": {
         "es": "Despensero"
+      },
+      "meaningPlural": {
+        "es": "Despenseros"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3200,6 +3287,9 @@
       "meaning": {
         "es": "Ardilla"
       },
+      "meaningPlural": {
+        "es": "Ardillas"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3215,6 +3305,9 @@
       },
       "meaning": {
         "es": "Antilope"
+      },
+      "meaningPlural": {
+        "es": "Antílopes"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3232,6 +3325,9 @@
       "meaning": {
         "es": "Bambú, costilla"
       },
+      "meaningPlural": {
+        "es": "Bambús, costillas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3247,6 +3343,9 @@
       },
       "meaning": {
         "es": "Patata"
+      },
+      "meaningPlural": {
+        "es": "Patatas"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3264,6 +3363,9 @@
       "meaning": {
         "es": "Red"
       },
+      "meaningPlural": {
+        "es": "Redes"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3279,6 +3381,9 @@
       },
       "meaning": {
         "es": "Perro"
+      },
+      "meaningPlural": {
+        "es": "Perros"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3296,6 +3401,9 @@
       "meaning": {
         "es": "Casa"
       },
+      "meaningPlural": {
+        "es": "Casas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3311,6 +3419,9 @@
       },
       "meaning": {
         "es": "Palabra, razonamiento"
+      },
+      "meaningPlural": {
+        "es": "Palabras, razonamientos"
       },
       "source": {
         "pdfPage": 13
@@ -3328,6 +3439,9 @@
       "meaning": {
         "es": "Sueño, desvario"
       },
+      "meaningPlural": {
+        "es": "Sueños, desvaríos"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3343,6 +3457,9 @@
       },
       "meaning": {
         "es": "Señal"
+      },
+      "meaningPlural": {
+        "es": "Señales"
       },
       "source": {
         "pdfPage": 13
@@ -3360,6 +3477,9 @@
       "meaning": {
         "es": "Enemigo"
       },
+      "meaningPlural": {
+        "es": "Enemigos"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3375,6 +3495,9 @@
       },
       "meaning": {
         "es": "Tío materno"
+      },
+      "meaningPlural": {
+        "es": "Tíos maternos"
       },
       "source": {
         "pdfPage": 13
@@ -3392,6 +3515,9 @@
       "meaning": {
         "es": "Cosecha, siega"
       },
+      "meaningPlural": {
+        "es": "Cosechas, siegas"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3407,6 +3533,9 @@
       },
       "meaning": {
         "es": "Confianza"
+      },
+      "meaningPlural": {
+        "es": "Confianzas"
       },
       "source": {
         "pdfPage": 14
@@ -3424,6 +3553,9 @@
       "meaning": {
         "es": "Pimiento"
       },
+      "meaningPlural": {
+        "es": "Pimientos"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3439,6 +3571,9 @@
       },
       "meaning": {
         "es": "Huésped"
+      },
+      "meaningPlural": {
+        "es": "Huéspedes"
       },
       "source": {
         "pdfPage": 14
@@ -3456,6 +3591,9 @@
       "meaning": {
         "es": "Ulcera"
       },
+      "meaningPlural": {
+        "es": "Úlceras"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3471,6 +3609,9 @@
       },
       "meaning": {
         "es": "Costumbre"
+      },
+      "meaningPlural": {
+        "es": "Costumbres"
       },
       "source": {
         "pdfPage": 13
@@ -3490,6 +3631,9 @@
       "meaning": {
         "es": "Cuchillo"
       },
+      "meaningPlural": {
+        "es": "Cuchillos"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3505,6 +3649,9 @@
       },
       "meaning": {
         "es": "Casco"
+      },
+      "meaningPlural": {
+        "es": "Cascos"
       },
       "source": {
         "pdfPage": 13
@@ -3522,6 +3669,9 @@
       "meaning": {
         "es": "Controversia"
       },
+      "meaningPlural": {
+        "es": "Controversias"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3537,6 +3687,9 @@
       },
       "meaning": {
         "es": "Pan, greda"
+      },
+      "meaningPlural": {
+        "es": "Panes, gredas"
       },
       "source": {
         "pdfPage": 13
@@ -3554,6 +3707,9 @@
       "meaning": {
         "es": "Riñón"
       },
+      "meaningPlural": {
+        "es": "Riñones"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3570,6 +3726,9 @@
       "meaning": {
         "es": "Coraje"
       },
+      "meaningPlural": {
+        "es": "Corajes"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3585,6 +3744,9 @@
       },
       "meaning": {
         "es": "Pólvora"
+      },
+      "meaningPlural": {
+        "es": "Pólvoras"
       },
       "source": {
         "pdfPage": 13
@@ -3604,6 +3766,9 @@
       "meaning": {
         "es": "Arpón"
       },
+      "meaningPlural": {
+        "es": "Arpones"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3619,6 +3784,9 @@
       },
       "meaning": {
         "es": "Sordera"
+      },
+      "meaningPlural": {
+        "es": "Sorderas"
       },
       "source": {
         "pdfPage": 13
@@ -3636,6 +3804,9 @@
       "meaning": {
         "es": "Maíz, grano"
       },
+      "meaningPlural": {
+        "es": "Maíces, granos"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3651,6 +3822,9 @@
       },
       "meaning": {
         "es": "Aire, aliento"
+      },
+      "meaningPlural": {
+        "es": "Aires, alientos"
       },
       "source": {
         "pdfPage": 13
@@ -3668,6 +3842,9 @@
       "meaning": {
         "es": "Gato"
       },
+      "meaningPlural": {
+        "es": "Gatos"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3683,6 +3860,9 @@
       },
       "meaning": {
         "es": "Jabón"
+      },
+      "meaningPlural": {
+        "es": "Jabones"
       },
       "source": {
         "pdfPage": 13
@@ -3700,6 +3880,9 @@
       "meaning": {
         "es": "Fiesta, noticia"
       },
+      "meaningPlural": {
+        "es": "Fiestas, noticias"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3715,6 +3898,9 @@
       },
       "meaning": {
         "es": "Palangana"
+      },
+      "meaningPlural": {
+        "es": "Palanganas"
       },
       "source": {
         "pdfPage": 13
@@ -3732,6 +3918,9 @@
       "meaning": {
         "es": "Escuela"
       },
+      "meaningPlural": {
+        "es": "Escuelas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3748,6 +3937,9 @@
       "meaning": {
         "es": "Isla"
       },
+      "meaningPlural": {
+        "es": "Islas"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3763,6 +3955,9 @@
       },
       "meaning": {
         "es": "Ración, porción"
+      },
+      "meaningPlural": {
+        "es": "Raciones, porciones"
       },
       "source": {
         "pdfPage": 13
@@ -3782,6 +3977,9 @@
       "meaning": {
         "es": "Alambre"
       },
+      "meaningPlural": {
+        "es": "Alambres"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3797,6 +3995,9 @@
       },
       "meaning": {
         "es": "Defensa"
+      },
+      "meaningPlural": {
+        "es": "Defensas"
       },
       "source": {
         "pdfPage": 13
@@ -3814,6 +4015,9 @@
       "meaning": {
         "es": "Ira, rencor"
       },
+      "meaningPlural": {
+        "es": "Iras, rencores"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3829,6 +4033,9 @@
       },
       "meaning": {
         "es": "Cocodrilo"
+      },
+      "meaningPlural": {
+        "es": "Cocodrilos"
       },
       "source": {
         "pdfPage": 13
@@ -3846,6 +4053,9 @@
       "meaning": {
         "es": "Globo, bola"
       },
+      "meaningPlural": {
+        "es": "Globos, bolas"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -3861,6 +4071,9 @@
       },
       "meaning": {
         "es": "Juego de manos"
+      },
+      "meaningPlural": {
+        "es": "Juegos de manos"
       },
       "source": {
         "pdfPage": 13
@@ -3878,6 +4091,9 @@
       "meaning": {
         "es": "Médico"
       },
+      "meaningPlural": {
+        "es": "Médicos"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3894,6 +4110,9 @@
       "meaning": {
         "es": "Acceso, entrada"
       },
+      "meaningPlural": {
+        "es": "Accesos, entradas"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3909,6 +4128,9 @@
       },
       "meaning": {
         "es": "Harpa"
+      },
+      "meaningPlural": {
+        "es": "Arpas"
       },
       "source": {
         "pdfPage": 13
@@ -3942,6 +4164,9 @@
       "meaning": {
         "es": "Capitán"
       },
+      "meaningPlural": {
+        "es": "Capitanes"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -3957,6 +4182,9 @@
       },
       "meaning": {
         "es": "Cristal"
+      },
+      "meaningPlural": {
+        "es": "Cristales"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3990,6 +4218,9 @@
       "meaning": {
         "es": "Puerco espín"
       },
+      "meaningPlural": {
+        "es": "Puercos espines"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -4005,6 +4236,9 @@
       },
       "meaning": {
         "es": "Pecho"
+      },
+      "meaningPlural": {
+        "es": "Pechos"
       },
       "source": {
         "pdfPage": 13
@@ -4022,6 +4256,9 @@
       "meaning": {
         "es": "Fuerza, voluntad"
       },
+      "meaningPlural": {
+        "es": "Fuerzas, voluntades"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -4038,6 +4275,9 @@
       "meaning": {
         "es": "Jefe, principal"
       },
+      "meaningPlural": {
+        "es": "Jefes, principales"
+      },
       "source": {
         "pdfPage": 13
       }
@@ -4053,6 +4293,9 @@
       },
       "meaning": {
         "es": "Yunque"
+      },
+      "meaningPlural": {
+        "es": "Yunques"
       },
       "source": {
         "pdfPage": 13
@@ -4086,6 +4329,9 @@
       "meaning": {
         "es": "Timpano, oido"
       },
+      "meaningPlural": {
+        "es": "Tímpanos, oídos"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -4101,6 +4347,9 @@
       },
       "meaning": {
         "es": "Cabello blanco, o canas"
+      },
+      "meaningPlural": {
+        "es": "Cabellos blancos, o canas"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4118,6 +4367,9 @@
       "meaning": {
         "es": "Chorro violento"
       },
+      "meaningPlural": {
+        "es": "Chorros violentos"
+      },
       "source": {
         "pdfPage": "13-14"
       }
@@ -4133,6 +4385,9 @@
       },
       "meaning": {
         "es": "Cangrejo"
+      },
+      "meaningPlural": {
+        "es": "Cangrejos"
       },
       "source": {
         "pdfPage": 14
