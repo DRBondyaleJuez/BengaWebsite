@@ -23,3 +23,5 @@ pnpm-debug.log*
 *.sw?
 
 context
+# Raw OCR cache of scripts/ocr-pdf.py
+.ocr-cache/

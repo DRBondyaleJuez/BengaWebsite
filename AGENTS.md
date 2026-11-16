@@ -68,9 +68,10 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 
   Each class starts part-way down a page, so a class's last page is usually the next class's first page. The class-7 list is printed in two columns that continue across the page break: on PDF page 13 the left column runs `Fala, francés` … `Ndomina, tío materno` and the right column `Penge, ulcera` … `Njadi, primogénito`; the top of PDF page 14 continues both, left `Ndonga, confianza` … `Ndumba, huésped` and right `Nyuñi, cabello blanco` … `Nyênjê, cangrejo`. The book's noun vocabulary («VOCABULARIO») starts on PDF page 15.
 
-- Extract with `pdftotext -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
+- **Extract text from `IMPROVED-salvado-y-cos-gramatica-benga.pdf`** (new OCR with `â ē ū`, Benga words of the site spelled right; doubtful words in `docs/ocr/ocr-doubts.csv`, see docs/OCR.md and REVIEW-LOG R-023). It is still machine OCR: always check doubtful words against the scan. The original PDF stays the cited source and the visitors' download.
+- Extract with `pdftotext -enc UTF-8 -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
 - **Never trust `src/data/chapter-2/class-N.json` for content.** Those files are not imported by any view and many of their Spanish glosses contradict the book (e.g. `class-3.json` says `woaha` = "fuego", the book says "Costado, lado"). The `.vue` `data()` blocks hold the real content.
-- When the OCR damage cannot be resolved (no tesseract available, and page images cannot be inspected), **omit the entry and say so** in a visible `.section-note` / `.example-note` rather than inventing a headword; leave an unreadable gloss as `meaning: null` instead of guessing a translation. Cross-check doubtful headwords against the book's own `Vocabulario` section (`grep` the extracted text) before reconstructing — e.g. the class-7 `Mora. Perro.` is really `Mbūa. Perro.` (the book writes `Mbua` for «perros» in its examples, PDF p. 31; confirmed by the developer, REVIEW-LOG R-021). Watch for words that legitimately appear in two classes with different spellings: `Ndâlâ, sueño, desvario` (class 7) is not the same as `Vid. Lid. sueño` (class 6).
+- When the OCR damage cannot be resolved (check the scan itself: e.g. render the page with PyMuPDF and look at it), **omit the entry and say so** in a visible `.section-note` / `.example-note` rather than inventing a headword; leave an unreadable gloss as `meaning: null` instead of guessing a translation. Cross-check doubtful headwords against the book's own `Vocabulario` section (`grep` the extracted text) before reconstructing — e.g. the class-7 `Mora. Perro.` is really `Mbūa. Perro.` (the book writes `Mbua` for «perros» in its examples, PDF p. 31; confirmed by the developer, REVIEW-LOG R-021). Watch for words that legitimately appear in two classes with different spellings: `Ndâlâ, sueño, desvario` (class 7) is not the same as `Vid. Lid. sueño` (class 6).
 
 ### Benga Orthography Rules
 - The Benga vowel inventory is `a, â, e, ē, i, o, u, ū`. The book itself prints Benga words in italics with `â`, `ē`, `ū` (seen on the scan, e.g. *Yâkâ*, *Yēkē*, *Ebokūedi*), but the old OCR text layer of the PDF turned them into `á`, `é`, `ú` (or `d`, `a`, `ñ`…). So in OCR'd text `á → â`, `é → ē`, `ú → ū` when the word is Benga. `IMPROVED-salvado-y-cos-gramatica-benga.pdf` already has a text layer with `â ē ū` (see docs/OCR.md). Leave Spanish text in the `meaning` fields untouched. Consecutive accented vowels are kept (`Múéngi` → `Mūēngi`).
@@ -157,7 +158,8 @@ benga-grammar-website/
 ├── public/                      # Copied as-is to the site root
 │   ├── favicon.ico
 │   └── downloads/
-│       └── salvado-y-cos-gramatica-benga.pdf   # Source of truth (see below) + public download
+│       ├── salvado-y-cos-gramatica-benga.pdf            # Source of truth (see below) + public download
+│       └── IMPROVED-salvado-y-cos-gramatica-benga.pdf   # Same scan, new searchable text layer with â ē ū (docs/OCR.md)
 ├── src/
 │   ├── main.js                  # App entry: Vue, router, vue-i18n, global styles
 │   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
@@ -240,8 +242,8 @@ benga-grammar-website/
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE
-├── scripts/                     # Node tools: validate-data, words-sync, words-import, extract-ch2 (one-time, task 2.4), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, OCR (+ ocr/ocr-doubts.csv)
+├── scripts/                     # Node tools: validate-data, words-sync, words-import, extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*) + ESLint config
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)

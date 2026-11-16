@@ -31,6 +31,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-020](#r-020) | 🟢 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | done |
 | [R-021](#r-021) | 🟢 | 2.4.2 | Chapter-2 nouns that don't match the book text | done |
 | [R-022](#r-022) | 🟢 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | done |
+| [R-023](#r-023) | 🔴 | OCR | 2 882 words of the new OCR the computer is not sure about | little by little (per chapter, Phase 6) |
 
 ---
 
@@ -268,6 +269,19 @@ Go through them every few tasks, decide, and fill in **Resolution**.
   3. The numerals page (`numerals-ordinals.json`) writes Benga with Spanish accents (`Páka`, `Dyom na páka`, `Páka páka`, `Mbusiha mbuúha`…) and shows numbers without `BengaWord`, so `npm run validate` and the word registry don't see them.
 - **Suggestion:** (1) Move "chapter 1 and chapter-3 section files" into Phase 3, right after task 3.5, so each page is converted together with the blocks that draw it (possibly adding block types such as `sound-list` for vowels/diphthongs). (3) Decide the Benga spelling of the numerals (`Páka` → `Pâka`?) and show them with `BengaWord`; the numerals can then join `adjectives.json` (`kind: "numeral"`).
 - **Resolution:** 2026-11-16 · Developer agreed: chapter-1 and chapter-3 section files moved to new roadmap task 3.7 (after `SectionPage`). The numerals page was work in progress before the refactor and will be redone from the improved OCR: new task 6.0a. Correct spelling for one is `Pâkâ` (uno); the words on PDF p. 20 are the Benga numbers. · commit `fix(content): apply R-021 decisions`
+
+### R-023
+**2 882 words of the new OCR the computer is not sure about**
+- **Status:** 🔴 Open
+- **Found in:** OCR (new text layer: `public/downloads/IMPROVED-salvado-y-cos-gramatica-benga.pdf`, `scripts/ocr-pdf.py`, guide `docs/OCR.md`)
+- **Where:** full list in `docs/ocr/ocr-doubts.csv` (opens in Excel: `pdf_page`, `ocr_read`, `written_in_pdf`, `confidence`, `kind`). Per part of the book: chapter 2 nouns (PDF 8-17) 87 words, chapter 3 adjectives and numerals (PDF 18-20) 64, the rest mostly verb tables and phrases (PDF 21-45 have the most).
+- **Doubt:** The scan is small (966 px wide), so Tesseract is unsure of some words. Listed: every word with confidence below 60 % that is neither a known Spanish word nor a known Benga word of the site. Two kinds:
+  - `benga-accent` (1 154): unknown word with `á é ú` and no Spanish-only letter, written in the PDF as Benga `â ē ū` (e.g. `Ngúnda.` → `Ngūnda.`; the right word is `Ngândâ`, R-021). Probably Benga, accents uncertain.
+  - `unknown` (1 728): left as read, often damaged (`Tirpedo.` = *Torpedo*, `Bralo.` = *Bialo*, `Jkogo.` = *Ikogo*: the OCR reads the italic capital `I` as `J`/`T`).
+  
+  Examples from PDF p. 9: `Bralo`, `Binmbe`, `Yzjá` (= *Yējâ*), `Makeéliné` (= *Makēlinē*), `Jtúndé` (= *Itândē*). Also known: the OCR often confuses `â` and `ū` on the noun lists (`Yákú` for *Yâkâ*).
+- **Suggestion:** Don't go through the whole list now. When a roadmap task works on a section (Phase 6 recipe, numerals task 6.0a), filter the CSV by its PDF pages and check those words against the scan. Each word added to the lexicon also improves the next OCR run (`python scripts/ocr-pdf.py --reuse` re-applies the rules in seconds).
+- **Resolution:**
 
 ---
 
