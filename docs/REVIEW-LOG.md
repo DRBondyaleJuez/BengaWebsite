@@ -29,8 +29,8 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
 | [R-019](#r-019) | 🟢 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | done |
 | [R-020](#r-020) | 🟢 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | done |
-| [R-021](#r-021) | 🔴 | 2.4.2 | Chapter-2 nouns that don't match the book text | any time (before Phase 3) |
-| [R-022](#r-022) | 🔴 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | now |
+| [R-021](#r-021) | 🟢 | 2.4.2 | Chapter-2 nouns that don't match the book text | done |
+| [R-022](#r-022) | 🟢 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | done |
 
 ---
 
@@ -239,7 +239,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-021
 **Chapter-2 nouns that don't match the book text**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 2.4.2 (comparing `src/data/lexicon/nouns.json` with `pdftotext` of PDF pages 8-17)
 - **Where:** `src/data/lexicon/nouns.json` (and the same words in `src/views/chapter-2/*.vue` and the practice deck) · book PDF pages 8-17 (printed 14-23)
 - **Doubt:** 119 of 437 words are not printed exactly like that in the OCR text. I checked each against its closest match: most are only OCR damage (`ū` read as `ñ`/`a`/`n`, `â` as `d`/`á`, `k` as `x`). These look like real differences:
@@ -255,11 +255,11 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
   Also: the 158 words that only exist in the practice deck (they come from the book's «Vocabulario», PDF 15-17) were never shown on a page, so nobody has compared them with the book; 59 of them are not found exactly in the OCR text. The full list: `node scripts/extract-ch2.mjs` (section "Not found in the PDF text").
 - **Suggestion:** Decide the six rows (look at the scan of each PDF page). The deck words can be reviewed little by little in the practice game. Corrections go into `nouns.json` with `"editorial": { "status": "corrected", "bookText": "…" }` and into the page that shows the word.
-- **Resolution:**
+- **Resolution:** 2026-11-16 · Developer decided: `Mbūa` = Perro (AGENTS.md said `Mba`: fixed), `Nyuūē` = Cabello blanco, o canas (unchanged), `Yâkâ` / `Biâkâ` = «Medicina supersticiosa» (the scan prints `Yâkâ`, so only the meaning changed, on `NounClass1.vue` and in `nouns.json`), `Dindē` / `Mandē` = «Ñame, tubérculo» (lower-case t, `NounClass2.vue` + `nouns.json`), `Ngândâ` = Habas and `Evelse` = Hueso (unchanged). The practice-deck words were reviewed by the developer earlier; later checks can use the new searchable PDF (R-023). · commit `fix(content): apply R-021 decisions`
 
 ### R-022
 **Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 2.6 (converting chapters 1 and 3 to the content schemas)
 - **Where:** `src/data/chapter-1/*.json` + `src/views/chapter-1/*Section.vue` · `src/data/chapter-3/*.json` + `src/views/chapter-3/*.vue` · `src/data/schemas/section.schema.json` · ROADMAP 2.6 and 3.5
 - **Doubt:**
@@ -267,7 +267,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
   2. What was done in 2.6: `src/data/lexicon/adjectives.json` (23 adjectives: `būamu` with its seven class forms, `bobe`, `bonene`, `bohole`, `bovindo`, and the 18 invariable ones), validated. The chapter-3 pages still show their own copies, as the noun pages do.
   3. The numerals page (`numerals-ordinals.json`) writes Benga with Spanish accents (`Páka`, `Dyom na páka`, `Páka páka`, `Mbusiha mbuúha`…) and shows numbers without `BengaWord`, so `npm run validate` and the word registry don't see them.
 - **Suggestion:** (1) Move "chapter 1 and chapter-3 section files" into Phase 3, right after task 3.5, so each page is converted together with the blocks that draw it (possibly adding block types such as `sound-list` for vowels/diphthongs). (3) Decide the Benga spelling of the numerals (`Páka` → `Pâka`?) and show them with `BengaWord`; the numerals can then join `adjectives.json` (`kind: "numeral"`).
-- **Resolution:**
+- **Resolution:** 2026-11-16 · Developer agreed: chapter-1 and chapter-3 section files moved to new roadmap task 3.7 (after `SectionPage`). The numerals page was work in progress before the refactor and will be redone from the improved OCR: new task 6.0a. Correct spelling for one is `Pâkâ` (uno); the words on PDF p. 20 are the Benga numbers. · commit `fix(content): apply R-021 decisions`
 
 ---
 

@@ -254,9 +254,9 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.5: make `NounPracticeGame.vue` build its deck from `lexicon/nouns.json` (filter by class) and delete `noun-practice-deck.json` (3 800 lines). The game must behave exactly as before."
   - **Commit:** `refactor(practice): build practice deck from the lexicon`
 
-- [ ] **2.6 Convert chapters 1 and 3 data to the same shapes** *(partly done; the rest proposed for Phase 3, see REVIEW-LOG R-022)*
+- [x] **2.6 Convert chapters 1 and 3 data to the same shapes** *(lexicon part done; section files moved to task 3.7, numerals to 6.0a — REVIEW-LOG R-022)*
   - **Done 2026-11-15 (2.6.2, lexicon part):** `lexicon/adjectives.json` with 23 chapter-3 adjectives (variable `būamu` with forms per class, `bobe`/`bonene`/`bohole`/`bovindo` with stems, 18 invariable). Pages unchanged.
-  - **Not done:** 2.6.1 (chapter-1 section files) and the chapter-3 section files: they need the block components (3.3) and `SectionPage` (3.5) to be drawn; numerals wait for a spelling decision (R-022).
+  - **Moved:** chapter-1 and chapter-3 section files → task 3.7 (they need the block components and `SectionPage`); numerals page → task 6.0a.
   - Subtasks: 2.6.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 2.6.2 chapter 3 adjectives → `lexicon/adjectives.json` + section files.
   - **Prompt:** "Task 2.6.x: convert `src/data/chapter-N/*.json` to the schemas from 2.1. Pages must look identical — compare before/after screenshots."
   - **Commits:** `refactor(data): move chapter-1 content to the common schema` · `refactor(data): move chapter-3 adjectives to the lexicon`
@@ -298,6 +298,12 @@ Branch: `refactor/blocks`
   - **Why:** P8.
   - **Prompt:** "Task 3.6: generate routes from `chapters-index.json` (each section names either a `component` or a `sectionFile`), so the sidebar, routes and prev/next buttons share one source. Keep all current URLs."
   - **Commit:** `refactor(router): generate routes from chapters index`
+
+- [ ] **3.7 Chapters 1 and 3 as section files** *(moved here from task 2.6, REVIEW-LOG R-022)*
+  - **Why:** these pages are custom designs; they can only become section files once the block components (3.3) and `SectionPage` (3.5) exist. Convert each page together with the blocks that draw it (new block types if needed, e.g. a `sound-list` for vowels and diphthongs).
+  - Subtasks: 3.7.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 3.7.2 chapter-3 adjective pages, reading `lexicon/adjectives.json` (forms of regular variable adjectives = class prefix + stem).
+  - **Prompt:** "Task 3.7.x: move <page> to `sections/ch-N/<name>.json` drawn by `SectionPage`. Pages must look identical — compare before/after screenshots. Delete the old `src/data/chapter-N/<name>.json`."
+  - **Commits:** `refactor(ch1): move chapter-1 pages to section files` · `refactor(ch3): build adjective pages from the lexicon`
 
 ---
 
@@ -361,6 +367,7 @@ Generic prompt: *"Task 6.X.Y: add section '<name>' of chapter N (book pp. A–B)
 
 | Task | Section(s) | New component needed | Commit |
 |---|---|---|---|
+| 6.0a | **Redo the numerals page** (Cap. 3, PDF p. 20) from `IMPROVED-salvado-y-cos-gramatica-benga.pdf`: Benga spelling (`Pâkâ` = uno, not `Páka`), every number with `BengaWord`, numerals into `lexicon/adjectives.json` (`kind: "numeral"`) — REVIEW-LOG R-022 | — | `feat(ch3): redo numerals page from the improved OCR` |
 | 6.0 | Prólogo, Prenotandos | — | `feat(front-matter): add prologue and prenotandos` |
 | 6.1 | Cap. 1: combinación de consonantes (check), síncopa, vocabulario | `VocabularyList` | `feat(ch1): add syncope and vocabulary` |
 | 6.2 | Cap. 2: vocabulario de substantivos | — | `feat(ch2): add noun vocabulary` |

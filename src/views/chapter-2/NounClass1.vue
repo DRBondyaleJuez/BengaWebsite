@@ -323,12 +323,12 @@ export default {
           singular: {
             word: 'Yâkâ',
             audio: 'y_a_k_a_',
-            meaning: 'Medicina'
+            meaning: 'Medicina supersticiosa'
           },
           plural: {
             word: 'Biâkâ',
             audio: 'bi_a_k_a_',
-            meaning: 'Medicinas'
+            meaning: 'Medicinas supersticiosas'
           }
         },
         {

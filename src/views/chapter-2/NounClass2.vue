@@ -434,12 +434,12 @@ export default {
           singular: {
             word: 'Dindē',
             audio: 'dind_e_',
-            meaning: 'Ñame, Tubérculo'
+            meaning: 'Ñame, tubérculo'
           },
           plural: {
             word: 'Mandē',
             audio: 'man_d_e_',
-            meaning: 'Ñames, Tubérculos'
+            meaning: 'Ñames, tubérculos'
           }
         },
         {
