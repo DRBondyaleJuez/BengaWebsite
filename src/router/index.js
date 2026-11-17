@@ -70,7 +70,8 @@ const routes = [
       {
         path: 'clase-3',
         name: 'NounClass3',
-        component: () => import('@/views/chapter-2/NounClass3.vue')
+        component: () => import('@/views/chapter-2/NounClassPage.vue'),
+        props: { section: 'class-3' }
       },
       {
         path: 'clase-4',
