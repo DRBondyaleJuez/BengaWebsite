@@ -200,6 +200,16 @@ export function validateContent(content, check) {
       if (seenChapters.has(chapter.id))
         add('error', 'ids', file, `chapters[${c}]`, `Chapter id "${chapter.id}" appears twice`)
       seenChapters.add(chapter.id)
+      if (chapter.component && !fileExists(`src/views/${chapter.component}`)) {
+        add(
+          'error',
+          'references',
+          file,
+          `chapters[${c}]`,
+          `component "${chapter.component}" doesn't exist`,
+          'Create the page or fix the path (relative to src/views)'
+        )
+      }
       const seenSections = new Set()
       ;(chapter.sections || []).forEach((section, s) => {
         const where = `chapters[${c}].sections[${s}]`

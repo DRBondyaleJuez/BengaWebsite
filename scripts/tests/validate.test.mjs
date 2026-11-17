@@ -23,6 +23,7 @@ function goodContent() {
           number: 2,
           titleKey: 'chapters.chapter2.title',
           path: '/capitulo-2',
+          component: 'chapter-2/ChapterTwoIndex.vue',
           sections: [
             {
               id: 'class1',
@@ -143,11 +144,18 @@ test('an exercise for a missing section is an error', () => {
 test('chapter index: repeated URL and missing section file are errors', () => {
   const content = goodContent()
   const sections = content.chaptersIndex.chapters[0].sections
-  sections.push({ id: 'class2', path: '/capitulo-2/clase-1', titleKey: 'x.class2' })
+  sections.push({
+    id: 'class2',
+    path: '/capitulo-2/clase-1',
+    titleKey: 'x.class2',
+    component: 'chapter-2/X.vue'
+  })
   content.fileExists = () => false
   const messages = only(run(content), 'error').map((problem) => problem.message)
   assert.ok(messages.some((message) => /used by two sections/.test(message)))
   assert.ok(messages.some((message) => /sectionFile .* doesn't exist/.test(message)))
+  assert.ok(messages.some((message) => /component "chapter-2\/X.vue" doesn't exist/.test(message)))
+  assert.ok(messages.some((message) => /component "chapter-2\/ChapterTwoIndex.vue"/.test(message)))
 })
 
 test('registry: key that no longer matches its word is a warning', () => {

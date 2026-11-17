@@ -37,9 +37,12 @@ export default {
     }
   },
   watch: {
-    $route() {
+    $route(to) {
       // Close sidebar on route change (mobile)
       this.sidebarOpen = false
+      // Browser-tab title from chapters-index.json (route meta). Runs before the new page is
+      // created, so a page that sets its own document.title still wins.
+      if (to.meta.titleKey) document.title = `${this.$t(to.meta.titleKey)} | Portal Benga`
     }
   }
 }

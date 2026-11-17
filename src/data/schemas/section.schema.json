@@ -20,6 +20,10 @@
       "minimum": 0,
       "maximum": 11
     },
+    "layout": {
+      "description": "Which page draws this file: article (SectionPage.vue, default) or noun-class (NounClassPage.vue).",
+      "enum": ["article", "noun-class"]
+    },
     "title": {
       "$ref": "common.schema.json#/$defs/localizedText"
     },

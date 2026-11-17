@@ -299,7 +299,8 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.5: create `SectionPage.vue` that renders the `blocks` array of a section file, mapping each block `type` to a block component. Unknown types show a visible warning in dev. Migrate one simple page (Síncopa or Adjectives intro) as proof."
   - **Commit:** `feat(sections): add generic block-based section page`
 
-- [ ] **3.6 Routes and sidebar from one list**
+- [x] **3.6 Routes and sidebar from one list**
+  - **Done 2026-11-17:** `chapters-index.json` now names each chapter's index page (`component`) and each section's `component` or `sectionFile`; `src/router/index.js` builds the chapter routes from it (all URLs kept). Section files say `"layout": "noun-class"` when NounClassPage draws them. The validator checks that every `component` exists. Side effect (fix): pages without their own title now get the sidebar title in the browser tab instead of the previous page's (REVIEW-LOG R-025).
   - **Why:** P8.
   - **Prompt:** "Task 3.6: generate routes from `chapters-index.json` (each section names either a `component` or a `sectionFile`), so the sidebar, routes and prev/next buttons share one source. Keep all current URLs."
   - **Commit:** `refactor(router): generate routes from chapters index`

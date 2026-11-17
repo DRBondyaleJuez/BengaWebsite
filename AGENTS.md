@@ -39,6 +39,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Transitions: classes are `*-enter-from` / `*-leave-from` (not `*-enter` / `*-leave`).
 - `router-link` has no `tag` prop: to make a non-link element clickable use `<router-link v-slot="{ navigate }" to="…" custom>` around it (see `NounsIntro.vue`), and give it `role="link"`, `tabindex="0"` and `@keydown.enter="navigate"`.
 - Unknown URLs are caught by `path: '/:pathMatch(.*)*'` in `src/router/index.js`.
+- Chapter and section routes are generated from `src/data/chapters-index.json` (each section has `component` = a page in `src/views`, or `sectionFile` = a section file). Never add a chapter route by hand in `src/router/index.js`. The browser-tab title falls back to the section's `titleKey` (`App.vue`).
 - In the browser console the app is at `document.getElementById('app').__vue_app__` (Vue 2's `__vue__` no longer exists).
 
 ### Noun Class Page Format
@@ -162,7 +163,7 @@ benga-grammar-website/
 │   ├── main.js                  # App entry: Vue, router, vue-i18n, global styles
 │   ├── App.vue                  # Shell: header, sidebar, <router-view>, footer
 │   ├── router/
-│   │   └── index.js             # Route definitions (Spanish URLs, lazy-loaded views)
+│   │   └── index.js             # Fixed routes + chapter routes GENERATED from data/chapters-index.json
 │   ├── config/
 │   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
 │   ├── utils/                   # Pure helpers (no imports) shared with scripts/, each with tests
@@ -197,7 +198,7 @@ benga-grammar-website/
 │   │   ├── sections/
 │   │   │   ├── ch-2/class-1.json … class-7.json   # Noun-class pages (section schema, words by lexicon id)
 │   │   │   └── ch-3/adjectives-intro.json          # Drawn by SectionPage.vue
-│   │   ├── chapters-index.json  # Sidebar/navigation metadata
+│   │   ├── chapters-index.json  # THE list of chapters/sections: sidebar, routes, prev/next buttons
 │   │   ├── author-info.json     # AboutAuthor page content
 │   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
 │   │   ├── chapter-2/

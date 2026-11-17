@@ -220,8 +220,8 @@ Every block may also have `id` (anchor), `source` and `editorial`.
   A `heading` may have `"style": "box"` (grey box) or `"highlight"` (light-blue box) for its part.
   Paragraph texts may use `**bold**` (nothing else: HTML is shown as text).
   `"look": "cards"` on `concepts` gives white cards with an `example` per item.
-- A route points to the page with the file: `props: { section: 'ch-3/adjectives-intro' }`
-  (`src/router/index.js`).
+- The route is generated from `chapters-index.json` (`"sectionFile"`); a file with
+  `"layout": "noun-class"` is drawn by NounClassPage.vue.
 
 ### How a page groups the blocks (noun classes: `NounClassPage.vue`)
 
@@ -278,7 +278,7 @@ Use a **generator** (questions built from the lexicon, so new words get exercise
 1. Extract the pages: `pdftotext -layout -f <first> -l <last> public/downloads/salvado-y-cos-gramatica-benga.pdf out.txt`
 2. Add every new word to the lexicon first (recipe above). Log unreadable words in `docs/REVIEW-LOG.md`.
 3. Create `src/data/sections/ch-N/<name>.json` with the blocks in book order.
-4. Add the section to `src/data/chapters-index.json` (and its title key to `src/locales/es.json`).
+4. Add the section to `src/data/chapters-index.json` with `"sectionFile": "sections/ch-N/<name>.json"` (and its title key to `src/locales/es.json`). That one line creates the route, the sidebar entry and the previous/next buttons; no code to change.
 5. Run the checks: `npm test`, `npm run words:sync`, then open the page.
 
 ### Correct or amplify the book

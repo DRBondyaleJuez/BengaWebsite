@@ -1,4 +1,60 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import chaptersIndex from '@/data/chapters-index.json'
+
+/** Every page in src/views, loaded only when visited: { '/src/views/chapter-1/AlphabetSection.vue': () => import(...) } */
+const VIEWS = import.meta.glob('../views/**/*.vue')
+/** Section files, read now (they are small) to know which page draws them. */
+const SECTION_FILES = import.meta.glob('../data/sections/**/*.json', {
+  eager: true,
+  import: 'default'
+})
+
+function view(component) {
+  const loader = VIEWS[`../views/${component}`]
+  if (!loader) throw new Error(`chapters-index.json: page src/views/${component} doesn't exist`)
+  return loader
+}
+
+/**
+ * Routes of the chapters, built from src/data/chapters-index.json — the same list as the sidebar
+ * and the previous/next buttons, so a new section is added in ONE place:
+ *
+ *   { "id": "alphabet", "path": "/capitulo-1/alfabeto", "titleKey": "…",
+ *     "component": "chapter-1/AlphabetSection.vue" }          → that page
+ *   { "id": "class1", "path": "/capitulo-2/clase-1", "titleKey": "…",
+ *     "sectionFile": "sections/ch-2/class-1.json" }           → SectionPage, or NounClassPage
+ *                                                               when the file says "layout": "noun-class"
+ *
+ * Each chapter's index page (chapter.component) shows its sections inside its <router-view>.
+ * meta.titleKey gives the browser-tab title when the page doesn't set one (App.vue).
+ */
+function chapterRoutes() {
+  return chaptersIndex.chapters.map((chapter) => ({
+    path: chapter.path,
+    name: `Chapter${chapter.number}Index`,
+    component: view(chapter.component),
+    meta: { titleKey: chapter.titleKey },
+    children: chapter.sections.map((section) => {
+      const route = {
+        path: section.path.slice(chapter.path.length + 1), // '/capitulo-1/alfabeto' → 'alfabeto'
+        name: `${chapter.id}-${section.id}`,
+        meta: { titleKey: section.titleKey }
+      }
+      if (section.component) return { ...route, component: view(section.component) }
+      const name = section.sectionFile.replace(/^sections\//, '').replace(/\.json$/, '')
+      const file = SECTION_FILES[`../data/${section.sectionFile}`]
+      if (!file)
+        throw new Error(`chapters-index.json: src/data/${section.sectionFile} doesn't exist`)
+      return file.layout === 'noun-class'
+        ? {
+            ...route,
+            component: view('chapter-2/NounClassPage.vue'),
+            props: { section: name.split('/').pop() }
+          }
+        : { ...route, component: view('SectionPage.vue'), props: { section: name } }
+    })
+  }))
+}
 
 const routes = [
   {
@@ -16,138 +72,8 @@ const routes = [
     name: 'Resources',
     component: () => import('@/views/ResourcesPage.vue')
   },
-  // Chapter 1: Preliminary Lessons
-  {
-    path: '/capitulo-1',
-    name: 'Chapter1Index',
-    component: () => import('@/views/chapter-1/ChapterOneIndex.vue'),
-    children: [
-      {
-        path: 'alfabeto',
-        name: 'Alphabet',
-        component: () => import('@/views/chapter-1/AlphabetSection.vue')
-      },
-      {
-        path: 'diptongos',
-        name: 'Diphthongs',
-        component: () => import('@/views/chapter-1/DiphthongsSection.vue')
-      },
-      {
-        path: 'triptongos',
-        name: 'Triphthongs',
-        component: () => import('@/views/chapter-1/TriphthongsSection.vue')
-      },
-      {
-        path: 'consonantes',
-        name: 'Consonants',
-        component: () => import('@/views/chapter-1/ConsonantsSection.vue')
-      }
-    ]
-  },
-  // Chapter 2: Nouns
-  {
-    path: '/capitulo-2',
-    name: 'Chapter2Index',
-    component: () => import('@/views/chapter-2/ChapterTwoIndex.vue'),
-    children: [
-      {
-        path: 'introduccion',
-        name: 'NounsIntro',
-        component: () => import('@/views/chapter-2/NounsIntro.vue')
-      },
-      {
-        path: 'clase-1',
-        name: 'NounClass1',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-1' }
-      },
-      {
-        path: 'clase-2',
-        name: 'NounClass2',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-2' }
-      },
-      {
-        path: 'clase-3',
-        name: 'NounClass3',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-3' }
-      },
-      {
-        path: 'clase-4',
-        name: 'NounClass4',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-4' }
-      },
-      {
-        path: 'clase-5',
-        name: 'NounClass5',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-5' }
-      },
-      {
-        path: 'clase-6',
-        name: 'NounClass6',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-6' }
-      },
-      {
-        path: 'clase-7',
-        name: 'NounClass7',
-        component: () => import('@/views/chapter-2/NounClassPage.vue'),
-        props: { section: 'class-7' }
-      },
-      {
-        path: 'irregulares',
-        name: 'IrregularNouns',
-        component: () => import('@/views/chapter-2/IrregularNouns.vue')
-      },
-      {
-        path: 'verbales',
-        name: 'VerbalNouns',
-        component: () => import('@/views/chapter-2/VerbalNouns.vue')
-      },
-      {
-        path: 'practica',
-        name: 'NounPracticeGame',
-        component: () => import('@/views/chapter-2/NounPracticeGame.vue')
-      }
-    ]
-  },
-  // Chapter 3: Adjectives
-  {
-    path: '/capitulo-3',
-    name: 'Chapter3Index',
-    component: () => import('@/views/chapter-3/ChapterThreeIndex.vue'),
-    children: [
-      {
-        path: 'introduccion',
-        name: 'AdjectivesIntro',
-        component: () => import('@/views/SectionPage.vue'),
-        props: { section: 'ch-3/adjectives-intro' }
-      },
-      {
-        path: 'adjetivos-regulares',
-        name: 'RegularAdjectives',
-        component: () => import('@/views/chapter-3/RegularAdjectivesSection.vue')
-      },
-      {
-        path: 'adjetivos-invariables',
-        name: 'InvariableAdjectives',
-        component: () => import('@/views/chapter-3/InvariableAdjectivesSection.vue')
-      },
-      {
-        path: 'comparativos-superlativos',
-        name: 'ComparativesSuperlatives',
-        component: () => import('@/views/chapter-3/ComparativesSuperlativesSection.vue')
-      },
-      {
-        path: 'numerales-ordinales',
-        name: 'NumeralOrdinalAdjectives',
-        component: () => import('@/views/chapter-3/NumeralOrdinalAdjectivesSection.vue')
-      }
-    ]
-  },
+  // Chapters and their sections: generated from src/data/chapters-index.json (chapterRoutes above)
+  ...chapterRoutes(),
   // Developer tools: these routes exist ONLY while running `npm run serve`.
   // In `npm run build` the condition is false, so the pages are not even included in the site.
   ...(import.meta.env.DEV
