@@ -1,0 +1,212 @@
+{
+  "id": "ch2-noun-class-1",
+  "chapter": 2,
+  "title": {
+    "es": "Primera Clase Nominal"
+  },
+  "subtitle": {
+    "es": "e → be / y → bi"
+  },
+  "source": {
+    "pdfPage": "8-9"
+  },
+  "nav": {
+    "prev": {
+      "to": "/capitulo-2/introduccion",
+      "label": {
+        "es": "Introducción"
+      }
+    },
+    "next": {
+      "to": "/capitulo-2/clase-2",
+      "label": {
+        "es": "Segunda Clase"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "e-",
+      "to": "be-",
+      "description": {
+        "es": "La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural"
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos Principales"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "ejanganangobo",
+        "epokolo",
+        "en_a_",
+        "ek_a_i",
+        "elinga",
+        "elombo",
+        "egala",
+        "elende"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "variants",
+      "text": {
+        "es": "Patrón Variant: Palabras que comienzan con 'y'"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en plural:"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "y-",
+      "to": "bi-",
+      "compact": true
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "yaho",
+        "yako",
+        "yalo",
+        "yambe",
+        "yapa",
+        "y_a_k_a_",
+        "y_e_j_a_",
+        "y_e_k_e_",
+        "yima",
+        "yoha",
+        "yoma",
+        "yomu"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "concordance",
+      "text": {
+        "es": "Concordancia con Adjetivos"
+      }
+    },
+    {
+      "type": "table",
+      "columns": [
+        {
+          "es": "Número"
+        },
+        {
+          "es": "Ejemplo"
+        },
+        {
+          "es": "Traducción"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "es": "Singular"
+          },
+          {
+            "benga": "Epokolo eyamu"
+          },
+          {
+            "es": "Sombrero bueno"
+          }
+        ],
+        [
+          {
+            "es": "Plural"
+          },
+          {
+            "benga": "Bepokolo beyamu"
+          },
+          {
+            "es": "Sombreros buenos"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia"
+      }
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Cambio Radical Simple"
+          },
+          "text": {
+            "es": "Esta es la clase más simple porque el cambio es predecible y consistente"
+          }
+        },
+        {
+          "title": {
+            "es": "Patrón e → be"
+          },
+          "text": {
+            "es": "Todos los nombres de esta clase siguen este mismo patrón sin excepción"
+          }
+        },
+        {
+          "title": {
+            "es": "Variante y → bi"
+          },
+          "text": {
+            "es": "Los nombres que comienzan con 'y' (consonante semivocal) siguen la misma lógica"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Cubre la columna plural y trata de transformar cada nombre singular"
+        },
+        {
+          "es": "Forma frases usando el adjetivo \"eyamu\" (bueno) con cada nombre"
+        },
+        {
+          "es": "Intenta agregar otros adjetivos que conozcas y mantener la concordancia"
+        },
+        {
+          "es": "Escucha la pronunciación de cada palabra en plural"
+        }
+      ]
+    }
+  ]
+}
