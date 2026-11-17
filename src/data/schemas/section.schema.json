@@ -25,7 +25,7 @@
       "enum": ["article", "noun-class", "lesson"]
     },
     "color": {
-      "enum": ["primary", "secondary"],
+      "enum": ["primary", "secondary", "accent"],
       "description": "lesson layout: theme colour of the page (buttons)."
     },
     "title": {
@@ -132,6 +132,9 @@
         },
         {
           "$ref": "#/$defs/sounds"
+        },
+        {
+          "$ref": "#/$defs/soundGroups"
         }
       ]
     },
@@ -356,7 +359,8 @@
             "culture",
             "modern-usage",
             "small",
-            "important"
+            "important",
+            "rule"
           ]
         },
         "title": {
@@ -653,11 +657,7 @@
           "const": "sounds"
         },
         "color": {
-          "enum": ["primary", "secondary"]
-        },
-        "wide": {
-          "type": "boolean",
-          "description": "Wider label boxes for longer sounds (aia, uai…)."
+          "enum": ["primary", "secondary", "accent"]
         },
         "items": {
           "type": "array",
@@ -687,9 +687,66 @@
                   "required": ["word"],
                   "additionalProperties": false
                 }
+              },
+              "note": {
+                "$ref": "#/$defs/text"
               }
             },
             "required": ["label", "soundsLike"],
+            "additionalProperties": false
+          }
+        },
+        "labelSize": {
+          "enum": ["normal", "wide", "small"],
+          "description": "wide = longer sounds (aia, uai…); small = single letters (consonants)."
+        }
+      },
+      "required": ["type", "items"],
+      "allOf": [
+        {
+          "$ref": "#/$defs/blockCommon"
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "soundGroups": {
+      "description": "Letter groups (e.g. consonant combinations) with pronunciation and example words (SoundGroups).",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "soundGroups"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pronunciation": {
+                "$ref": "#/$defs/text"
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "word": {
+                      "$ref": "common.schema.json#/$defs/bengaText"
+                    },
+                    "meaning": {
+                      "$ref": "#/$defs/text"
+                    }
+                  },
+                  "required": ["word"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["label", "pronunciation"],
             "additionalProperties": false
           }
         }

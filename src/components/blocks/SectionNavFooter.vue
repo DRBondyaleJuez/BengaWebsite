@@ -21,7 +21,7 @@ import chaptersIndex from '@/data/chapters-index.json'
  *
  * look="bar" (default): two wide coloured bars (noun classes) ·
  * look="buttons": a grey "back" button and a coloured "next" button (chapter-3 pages) ·
- * look="lesson": two coloured buttons at the ends (chapter-1 pages); `color` primary/secondary.
+ * look="lesson": two coloured buttons at the ends (chapter-1 pages); `color` primary/secondary/accent.
  */
 export default {
   name: 'SectionNavFooter',
@@ -156,6 +156,19 @@ export default {
       background: $color-secondary-dark;
       border-color: $color-secondary-dark;
       box-shadow: 0 4px 12px rgba($color-secondary, 0.3);
+    }
+  }
+
+  &--accent {
+    background: $color-accent;
+    color: $color-primary;
+    border: 2px solid $color-accent;
+
+    &:hover {
+      background: $color-accent-dark;
+      border-color: $color-accent-dark;
+      color: $color-text-inverse;
+      box-shadow: 0 4px 12px rgba($color-accent, 0.3);
     }
   }
 

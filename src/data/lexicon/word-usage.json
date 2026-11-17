@@ -2468,7 +2468,7 @@
     },
     "mb_e_ba": {
       "spellings": ["mbēba"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_a": {
       "spellings": ["Mbūa"],
@@ -2476,7 +2476,7 @@
     },
     "mb_u_edi": {
       "spellings": ["mbūedi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_ei": {
       "spellings": ["mbūei"],
@@ -2484,7 +2484,7 @@
     },
     "mb_u_engamb_u_enga": {
       "spellings": ["mbūengambūenga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_ia": {
       "spellings": ["mbūia"],
@@ -2504,7 +2504,7 @@
     },
     "mbambai": {
       "spellings": ["mbambai"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbana": {
       "spellings": ["Mbana"],
@@ -2516,11 +2516,11 @@
     },
     "mbeya": {
       "spellings": ["mbeya"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbimba": {
       "spellings": ["mbimba"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mboi": {
       "spellings": ["Mboi", "mboi"],
@@ -2532,7 +2532,7 @@
     },
     "mboka": {
       "spellings": ["mboka"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbuja": {
       "spellings": ["Mbuja"],
@@ -2540,7 +2540,7 @@
     },
     "mbute": {
       "spellings": ["mbute"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbyu": {
       "spellings": ["mbyu"],
@@ -2869,7 +2869,7 @@
     },
     "nd_a_l_a_": {
       "spellings": ["ndâlâ"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nd_a_t_a_": {
       "spellings": ["Ndâtâ"],
@@ -2877,15 +2877,11 @@
     },
     "nd_e_mb_e_": {
       "spellings": ["ndēmbē"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndabo": {
-      "spellings": ["ndabo", "Ndabo"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue"
-      ]
+      "spellings": ["Ndabo", "ndabo"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ndabo-eyamu": {
       "spellings": ["Ndabo eyamu"],
@@ -2900,12 +2896,8 @@
       "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndembo": {
-      "spellings": ["ndembo", "Ndembo"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue"
-      ]
+      "spellings": ["Ndembo", "ndembo"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ndiba": {
       "spellings": ["Ndiba"],
@@ -2913,7 +2905,7 @@
     },
     "nditi": {
       "spellings": ["nditi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndo-ebe": {
       "spellings": ["Ndo ebe"],
@@ -2953,7 +2945,7 @@
     },
     "ndomi": {
       "spellings": ["ndomi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndomina": {
       "spellings": ["Ndomina"],
@@ -2972,12 +2964,8 @@
       "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndumba": {
-      "spellings": ["ndumba", "Ndumba"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue"
-      ]
+      "spellings": ["Ndumba", "ndumba"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "nenge": {
       "spellings": ["Nenge"],
@@ -2992,11 +2980,10 @@
       "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ng_a_nde": {
-      "spellings": ["ngânde", "Ngânde"],
+      "spellings": ["Ngânde", "ngânde"],
       "usedIn": [
-        "src/data/chapter-1/consonants.json",
         "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
+        "src/data/sections/ch-1/consonants.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
@@ -3006,7 +2993,7 @@
     },
     "ng_e_b_e_": {
       "spellings": ["ngēbē"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ng_u_ae": {
       "spellings": ["ngūae"],
@@ -3014,7 +3001,7 @@
     },
     "ng_u_ahi": {
       "spellings": ["ngūahi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ng_u_anjang_u_anja": {
       "spellings": ["Ngūanjangūanja"],
@@ -3022,7 +3009,7 @@
     },
     "ng_u_ea": {
       "spellings": ["ngūea"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngabo": {
       "spellings": ["Ngabo"],
@@ -3030,7 +3017,7 @@
     },
     "ngadi": {
       "spellings": ["ngadi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngaho": {
       "spellings": ["Ngaho"],
@@ -3066,7 +3053,7 @@
     },
     "ngebo": {
       "spellings": ["ngebo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngejangeja": {
       "spellings": ["Ngejangeja"],
@@ -3078,7 +3065,7 @@
     },
     "nginga": {
       "spellings": ["nginga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngomba": {
       "spellings": ["Ngomba"],
@@ -3086,19 +3073,15 @@
     },
     "ngonda": {
       "spellings": ["ngonda"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngonga": {
       "spellings": ["Ngonga"],
       "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngudi": {
-      "spellings": ["ngudi", "Ngudi"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue"
-      ]
+      "spellings": ["Ngudi", "ngudi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ngumu": {
       "spellings": ["Ngumu"],
@@ -3106,48 +3089,43 @@
     },
     "nj_a_ku": {
       "spellings": ["njâku"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nj_e_ngi": {
       "spellings": ["njēngi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njadi": {
-      "spellings": ["njadi", "Njadi"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue"
-      ]
+      "spellings": ["Njadi", "njadi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "njea": {
-      "spellings": ["njea", "Njea"],
+      "spellings": ["Njea", "njea"],
       "usedIn": [
-        "src/data/chapter-1/consonants.json",
         "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
+        "src/data/sections/ch-1/consonants.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
     "njimbili": {
       "spellings": ["njimbili"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njongo": {
       "spellings": ["njongo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njunga": {
       "spellings": ["njunga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_a_nd_a_": {
       "spellings": ["nyândâ"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_e_l_e_li": {
       "spellings": ["nyēlēli"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_e_nj_e_": {
       "spellings": ["Nyēnjē"],
@@ -3166,7 +3144,7 @@
     },
     "nyanda": {
       "spellings": ["nyanda"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyang_u_a-dit_a_": {
       "spellings": ["Nyangūa ditâ"],
@@ -3178,7 +3156,7 @@
     },
     "nyele": {
       "spellings": ["nyele"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyeti": {
       "spellings": ["Nyeti"],
@@ -3186,7 +3164,7 @@
     },
     "nyilo": {
       "spellings": ["nyilo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyu_u_e_": {
       "spellings": ["Nyuūē"],

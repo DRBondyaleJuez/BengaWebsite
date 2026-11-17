@@ -36,6 +36,15 @@
           :key-prefix="`${partIdx}-${idx}`"
         />
         <div
+          v-else-if="block.type === 'note' && lesson && block.variant === 'rule'"
+          class="lesson__rule-box"
+        >
+          <BaseIcon name="info" />
+          <div class="lesson__info-content">
+            <p class="lesson__rule-text">{{ $localized(block.text) }}</p>
+          </div>
+        </div>
+        <div
           v-else-if="block.type === 'note' && lesson && block.variant === 'important'"
           class="lesson__info-box"
         >
@@ -85,7 +94,17 @@
           v-else-if="block.type === 'sounds'"
           :items="soundItems(block)"
           :color="block.color || 'primary'"
-          :wide="block.wide"
+          :label-size="block.labelSize || 'normal'"
+        />
+        <SoundGroups
+          v-else-if="block.type === 'soundGroups'"
+          :items="
+            block.items.map((item) => ({
+              label: item.label,
+              pronunciation: $localized(item.pronunciation),
+              examples: soundItems({ items: [item] })[0].examples
+            }))
+          "
         />
         <p v-else-if="isDev" class="section-page__unknown">
           Bloque desconocido: «{{ block.type }}» (añade su componente en SectionPage.vue)
@@ -119,6 +138,7 @@ import CheckList from '@/components/blocks/CheckList.vue'
 import SectionLinks from '@/components/blocks/SectionLinks.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import SoundCards from '@/components/blocks/SoundCards.vue'
+import SoundGroups from '@/components/blocks/SoundGroups.vue'
 import ContentSection from '@/components/content/ContentSection.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import { inlineMarkup } from '@/utils/inlineMarkup'
@@ -174,6 +194,7 @@ export default {
     SectionLinks,
     SectionNavFooter,
     SoundCards,
+    SoundGroups,
     ContentSection,
     BaseIcon
   },
@@ -227,7 +248,8 @@ export default {
     soundItems(block) {
       return block.items.map((item) => ({
         label: item.label,
-        soundsLike: this.$localized(item.soundsLike),
+        soundsLike: item.soundsLike ? this.$localized(item.soundsLike) : null,
+        note: item.note ? this.$localized(item.note) : null,
         examples: (item.examples || []).map((example) => ({
           word: example.word,
           meaning: example.meaning ? this.$localized(example.meaning) : null
@@ -398,6 +420,23 @@ export default {
 
   &__info-content {
     flex: 1;
+  }
+
+  &__rule-box {
+    display: flex;
+    gap: $spacing-md;
+    padding: $spacing-lg;
+    background: rgba($color-accent, 0.1);
+    border-left: 4px solid $color-accent;
+    border-radius: 8px;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__rule-text {
+    @include body-text;
+    font-size: $font-size-sm;
+    margin: 0;
+    line-height: $line-height-loose;
   }
 
   &__info-text {

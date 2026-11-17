@@ -30,7 +30,7 @@
           "id": "consonants",
           "path": "/capitulo-1/consonantes",
           "titleKey": "chapters.chapter1.sections.consonants",
-          "component": "chapter-1/ConsonantsSection.vue"
+          "sectionFile": "sections/ch-1/consonants.json"
         }
       ]
     },

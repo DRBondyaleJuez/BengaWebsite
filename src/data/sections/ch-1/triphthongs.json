@@ -53,7 +53,7 @@
     {
       "type": "sounds",
       "color": "secondary",
-      "wide": true,
+      "labelSize": "wide",
       "items": [
         {
           "label": "aia",
