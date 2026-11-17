@@ -39,6 +39,14 @@ test('the real chapters-index.json follows its schema', () => {
   assertValid('chapters-index', readJson(path.join(ROOT, 'src/data/chapters-index.json')))
 })
 
+test('the real section files follow their schema', () => {
+  const dir = path.join(ROOT, 'src/data/sections')
+  const files = fs.existsSync(dir)
+    ? fs.readdirSync(dir, { recursive: true }).filter((file) => file.endsWith('.json'))
+    : []
+  for (const file of files) assertValid('section', readJson(path.join(dir, file)))
+})
+
 test('the real word-registry.json follows its schema', () => {
   assertValid('word-registry', readJson(path.join(ROOT, 'src/data/lexicon/word-registry.json')))
 })

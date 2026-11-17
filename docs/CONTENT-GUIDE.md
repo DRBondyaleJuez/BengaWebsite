@@ -198,10 +198,10 @@ sections/ch-2/class-1.json                     what the visitor sees
 |---|---|---|---|
 | `heading` | a heading | `text`, optional `level` 2/3 | `{ "type": "heading", "text": { "es": "Excepciones" } }` |
 | `paragraph` | text | `text` | `{ "type": "paragraph", "text": { "es": "…" } }` |
-| `pattern` | prefix change box | `from`, `to` | `{ "type": "pattern", "from": "e-", "to": "be-" }` |
+| `pattern` | prefix change box | `from`, `to` (optional `compact`) | `{ "type": "pattern", "from": "e-", "to": "be-" }` |
 | `examples` | word cards | `entries` (lexicon ids) **or** `items` | `{ "type": "examples", "entries": ["epokolo"] }` |
 | `table` | a table | `columns`, `rows` | cell = `"text"`, `{ "es": … }` or `{ "benga": "Epokolo eyamu" }` |
-| `note` | highlighted box | `variant`, `text` | variants: `info`, `exception`, `warning`, `teacher`, `culture`, `modern-usage` |
+| `note` | highlighted box | `variant`, `text` | variants: `info`, `exception`, `warning`, `teacher`, `culture`, `modern-usage`, `small` |
 | `concepts` | concept cards | `items` [{title, text}] | «Conceptos Clave» |
 | `practice` | numbered tips | `items` [text] | «Para Practicar» |
 | `conjugation` | verb table | `verb`, `voice`, `polarity`, `tenses` | see `examples/section-verb-kalaka.example.json` |
@@ -210,6 +210,27 @@ sections/ch-2/class-1.json                     what the visitor sees
 
 `examples.layout`: `pairs` (singular + plural, default), `single`, `plural-only` (badge «Solo plural»).
 Every block may also have `id` (anchor), `source` and `editorial`.
+
+### How a page groups the blocks (noun classes: `NounClassPage.vue`)
+
+Each `heading` starts a new part of the page; the blocks after it go inside that part,
+until the next `heading`. The heading's `id` names the part (`examples` → `noun-class__examples`,
+`practice` → the grey practice box).
+
+```
+{ "type": "heading", "id": "exceptions", "text": { "es": "Excepciones" } }   ┐
+{ "type": "note", "variant": "info", "text": … }       yellow box at the top  │ one part
+{ "type": "examples", "entries": ["bolohi"] }           word cards            │
+{ "type": "note", "variant": "small", "text": … }      small grey line below  ┘
+```
+
+- A note right after its heading is a yellow box on top; a later note (e.g. after a table) is a
+  yellow box below the content; `"variant": "small"` is the small grey line.
+- `"compact": true` on a `pattern` draws the small variant box (`[y-] → [bi-]`).
+- `{count}` in a heading becomes the number of words of that part's `examples` block.
+- Top-level `nav` sets the two bottom buttons:
+  `"nav": { "prev": { "to": "/capitulo-2/clase-1", "label": { "es": "Clase 1" } }, "next": … }`.
+  Without it, the previous/next sections of `chapters-index.json` are used.
 
 ---
 
