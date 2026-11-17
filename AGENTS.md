@@ -216,6 +216,9 @@ benga-grammar-website/
 │   │   ├── content/
 │   │   │   ├── BengaWord.vue    # Benga word + audio button + dictionary link + highlight
 │   │   │   └── ContentSection.vue
+│   │   ├── blocks/              # Page building blocks (one per section-file block type), see each file's header
+│   │   │   ├── PatternBox.vue, ExampleGrid.vue, NoteBox.vue, TableBlock.vue
+│   │   │   └── ConceptList.vue, PracticeList.vue, SectionNavFooter.vue
 │   │   └── interactive/         # (planned) QuizCard, FlashCard...
 │   └── views/
 │       ├── HomePage.vue
@@ -265,7 +268,7 @@ benga-grammar-website/
 
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.
-- `PageLayout`, `SectionNav`, `BaseButton`, `BaseCard` → reusable blocks [Phase 3]
+- `PageLayout`, `BaseButton`, `BaseCard` → reusable blocks [later, when a page needs them] (`SectionNav` = `blocks/SectionNavFooter.vue`)
 - `NounClassCard` → generic noun-class page [task 3.4]
 - `QuizCard`, `FlashCard` (`components/interactive/`) → exercise engine [Phase 8]
 - `VowelChart` interactive vowel chart for chapter 1 [Phase 8]

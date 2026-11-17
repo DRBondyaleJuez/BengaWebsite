@@ -280,7 +280,8 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.2: let `BengaWord` take either `word` or an `entry` prop (+ `form: 'singular'|'plural'`), computing audioId and dictionary link itself. Add `lang=\"bng\"` (ISO code for Benga) on the word for screen readers. Keep old props working."
   - **Commit:** `feat(benga-word): accept lexicon entries and compute audio ids`
 
-- [ ] **3.3 Block components**
+- [x] **3.3 Block components**
+  - **Done 2026-11-17:** `src/components/blocks/`: `PatternBox` (+ `compact` variant pattern), `ExampleGrid` (`pairs` / `single` / `plural-only`), `NoteBox` (`section` / `after` / `small`), `ConceptList`, `PracticeList`, `SectionNavFooter` (prev/next from `chapters-index.json`, or explicit), plus `TableBlock` (the class-1 concordance table). `NounClass1.vue` uses them: identical on all 25 pages at 1280 px and 420 px (automatic comparison of text, positions and styles).
   - Subtasks, one commit each: `PatternBox`, `ExampleGrid` (singular/plural cards), `NoteBox` (`.section-note`), `ConceptList`, `PracticeList`, `SectionNavFooter` (prev/next from chapters-index).
   - **Prompt:** "Task 3.3.x: extract `<name>` from `NounClass1.vue` (the visual reference) into `src/components/blocks/<Name>.vue` with props + slots, BEM, `@include respond-below('md')`. Use it in NounClass1 only; page must look identical."
   - **Commit:** `feat(blocks): add <Name> component`
