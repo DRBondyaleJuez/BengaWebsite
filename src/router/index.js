@@ -94,7 +94,8 @@ const routes = [
       {
         path: 'clase-7',
         name: 'NounClass7',
-        component: () => import('@/views/chapter-2/NounClass7.vue')
+        component: () => import('@/views/chapter-2/NounClassPage.vue'),
+        props: { section: 'class-7' }
       },
       {
         path: 'irregulares',
