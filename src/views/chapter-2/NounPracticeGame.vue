@@ -57,7 +57,6 @@
                 :word="card.singular"
                 :meaning="card.translation"
                 :show-meaning="card.showTranslation"
-                :dictionary-url="getDictionaryUrl(card.singular)"
                 block
               />
 
@@ -93,7 +92,6 @@
                   :word="card.plural"
                   :meaning="card.pluralTranslation"
                   :show-meaning="card.showTranslation"
-                  :dictionary-url="getDictionaryUrl(card.plural)"
                   block
                 />
 
@@ -147,7 +145,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 import { getNouns, PLURAL_RULES } from '@/services/nouns'
 
 const MOBILE_BREAKPOINT = 768
@@ -207,7 +204,6 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl,
     // One card per noun of the lexicon (src/data/lexicon/nouns.json).
     buildDeck() {
       return practiceNouns().map((noun, index) => ({

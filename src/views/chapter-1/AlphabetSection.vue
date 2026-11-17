@@ -91,11 +91,7 @@
               :key="example.word"
               class="alphabet-section__example-item"
             >
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" />
             </div>
           </div>
         </div>
@@ -130,12 +126,7 @@
               :key="example.word"
               class="alphabet-section__word-item"
             >
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-                block
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
@@ -188,7 +179,6 @@ import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import alphabetData from '@/data/chapter-1/alphabet.json'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'AlphabetSection',
@@ -201,9 +191,6 @@ export default {
     return {
       sectionData: alphabetData
     }
-  },
-  methods: {
-    getDictionaryUrl
   }
 }
 </script>

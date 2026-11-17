@@ -27,22 +27,12 @@
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
-              <BengaWord
-                :word="example.imperative"
-                :meaning="example.imperativeMeaning"
-                :dictionary-url="getDictionaryUrl(example.imperative)"
-                block
-              />
+              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
@@ -66,22 +56,12 @@
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
-              <BengaWord
-                :word="example.imperative"
-                :meaning="example.imperativeMeaning"
-                :dictionary-url="getDictionaryUrl(example.imperative)"
-                block
-              />
+              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
@@ -106,22 +86,12 @@
           <div class="example-group">
             <div class="example-form">
               <span class="label">Nombre de acción</span>
-              <BengaWord
-                :word="example.actionForm"
-                :meaning="example.actionFormMeaning"
-                :dictionary-url="getDictionaryUrl(example.actionForm)"
-                block
-              />
+              <BengaWord :word="example.actionForm" :meaning="example.actionFormMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre de modo</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
@@ -192,30 +162,15 @@
         <div class="derivations-grid">
           <div class="derivation-item">
             <div class="derivation-label">Clase primera · abstracto</div>
-            <BengaWord
-              word="ilonga"
-              meaning="edificio"
-              :dictionary-url="getDictionaryUrl('ilonga')"
-              block
-            />
+            <BengaWord word="ilonga" meaning="edificio" block />
           </div>
           <div class="derivation-item">
             <div class="derivation-label">Clase segunda · agenciales</div>
-            <BengaWord
-              word="ulongi"
-              meaning="arquitecto"
-              :dictionary-url="getDictionaryUrl('ulongi')"
-              block
-            />
+            <BengaWord word="ulongi" meaning="arquitecto" block />
           </div>
           <div class="derivation-item">
             <div class="derivation-label">Clase tercera · de modo</div>
-            <BengaWord
-              word="ilongidi"
-              meaning="modo de construir"
-              :dictionary-url="getDictionaryUrl('ilongidi')"
-              block
-            />
+            <BengaWord word="ilongidi" meaning="modo de construir" block />
           </div>
         </div>
       </div>
@@ -247,7 +202,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'VerbalNouns',
@@ -422,9 +376,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    getDictionaryUrl
   },
   created() {
     document.title = 'Nombres Derivados | Portal Benga'

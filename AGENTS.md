@@ -96,7 +96,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 
 ### Word Registry (audio and dictionary links)
 - **Single source:** `src/data/lexicon/word-registry.json` holds one entry per Benga word key: `word`, `livingDictionaryId`, `audio` (`missing` | `recorded`), `audioFile` (only when the Cloudinary file name differs from the key), `notes`. Human guide: `docs/WORD-REGISTRY.md`.
-- Pages pass only the **word** to `BengaWord`. The component computes the key, looks it up in the registry, shows a play button only for `"audio": "recorded"`, and links to the exact Living Dictionary entry when `livingDictionaryId` is set (otherwise to the dictionary search).
+- Pages pass only the **word** (or a lexicon `entry` + `form`) to `BengaWord`. The component computes the key, looks it up in the registry, shows a play button only for `"audio": "recorded"`, and links to the exact Living Dictionary entry when `livingDictionaryId` is set (otherwise to the dictionary search). Don't pass `dictionary-url` (only `:dictionary-url="null"` to hide the link).
 - After adding or changing Benga content, run `npm run words:sync` and then `npm run validate` (must end with 0 errors; warnings are fixed or logged in the review log). It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
 - Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
 - `src/data/lexicon/word-usage.json` is generated; never edit it.

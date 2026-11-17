@@ -31,20 +31,10 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in mainExamples" :key="`ex-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -65,20 +55,10 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in yVariants" :key="`yvar-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -151,7 +131,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass1',
@@ -405,9 +384,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    getDictionaryUrl
   },
   created() {
     document.title = 'Primera Clase Nominal | Portal Benga'

@@ -28,20 +28,10 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in iExamples" :key="`i-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -52,20 +42,10 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in diExamples" :key="`di-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -98,20 +78,10 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(example, idx) in exceptionExamples" :key="`exc-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -129,12 +99,7 @@
              instead of the usual singular/plural pair. -->
         <div class="example-card" v-for="(example, idx) in liquidExamples" :key="`liquid-${idx}`">
           <div class="example-plural">
-            <BengaWord
-              :word="example.word"
-              :meaning="example.meaning"
-              :dictionary-url="getDictionaryUrl(example.word)"
-              block
-            />
+            <BengaWord :word="example.word" :meaning="example.meaning" block />
           </div>
           <span class="plural-only-tag">Solo plural</span>
         </div>
@@ -155,20 +120,10 @@
           :key="`class-six-${idx}`"
         >
           <div class="example-singular">
-            <BengaWord
-              :word="example.singular.word"
-              :meaning="example.singular.meaning"
-              :dictionary-url="getDictionaryUrl(example.singular.word)"
-              block
-            />
+            <BengaWord :word="example.singular.word" :meaning="example.singular.meaning" block />
           </div>
           <div class="example-plural">
-            <BengaWord
-              :word="example.plural.word"
-              :meaning="example.plural.meaning"
-              :dictionary-url="getDictionaryUrl(example.plural.word)"
-              block
-            />
+            <BengaWord :word="example.plural.word" :meaning="example.plural.meaning" block />
           </div>
         </div>
       </div>
@@ -210,7 +165,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass2',
@@ -516,9 +470,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    getDictionaryUrl
   },
   created() {
     document.title = 'Segunda Clase Nominal | Portal Benga'

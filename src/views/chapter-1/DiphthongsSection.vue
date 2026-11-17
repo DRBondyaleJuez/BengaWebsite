@@ -33,11 +33,7 @@
               :key="example.word"
               class="diphthongs-section__example-item"
             >
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" />
             </div>
           </div>
         </div>
@@ -66,7 +62,6 @@
 import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import diphthongsData from '@/data/chapter-1/diphthongs.json'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'DiphthongsSection',
@@ -78,9 +73,6 @@ export default {
     return {
       sectionData: diphthongsData
     }
-  },
-  methods: {
-    getDictionaryUrl
   }
 }
 </script>

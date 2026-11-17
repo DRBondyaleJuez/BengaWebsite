@@ -1,18 +1,18 @@
 <template>
   <span class="benga-word" :class="{ 'benga-word--block': block }">
-    <span class="benga-word__text">
+    <span class="benga-word__text" lang="bng">
       <template v-if="wordParts.highlight">
         {{ wordParts.before }}<span class="benga-word__highlight">{{ wordParts.highlight }}</span
         >{{ wordParts.after }}
       </template>
-      <template v-else>{{ word }}</template>
+      <template v-else>{{ text }}</template>
     </span>
 
     <button
       v-if="audioUrl"
       class="benga-word__audio-btn"
       @click="playAudio"
-      :aria-label="$t('audio.play') + ': ' + word"
+      :aria-label="$t('audio.play') + ': ' + text"
       :disabled="isLoading"
       :class="{ 'benga-word__audio-btn--error': hasError }"
     >
@@ -24,8 +24,8 @@
     </span>
 
     <a
-      v-if="dictionaryUrl"
-      :href="dictionaryUrl"
+      v-if="dictionaryLink"
+      :href="dictionaryLink"
       target="_blank"
       rel="noopener noreferrer"
       class="benga-word__dict-link"
@@ -34,13 +34,15 @@
       <BaseIcon name="external-link" />
     </a>
 
-    <span v-if="meaning && showMeaning" class="benga-word__meaning"> ({{ meaning }}) </span>
+    <span v-if="shownMeaning && showMeaning" class="benga-word__meaning">
+      ({{ shownMeaning }})
+    </span>
   </span>
 </template>
 
 <script>
 import BaseIcon from '@/components/common/BaseIcon.vue'
-import { getAudioUrl } from '@/services/wordLinks'
+import { getAudioUrl, getDictionaryUrl } from '@/services/wordLinks'
 import { audioState, play } from '@/services/audioPlayer'
 
 /**
@@ -49,6 +51,13 @@ import { audioState, play } from '@/services/audioPlayer'
  * The recording is found automatically from the word itself (word → key → word registry),
  * so pages only pass `word`. A play button appears only for words whose registry entry says
  * `"audio": "recorded"`; other words show a muted icon ("Audio no disponible").
+ * The Living Dictionary link is found the same way (pass `:dictionary-url="null"` to hide it).
+ *
+ *   <BengaWord word="Epokolo" meaning="Sombrero" />
+ *   <BengaWord :entry="noun" form="plural" />     ← a lexicon entry (src/services/nouns.js):
+ *                                                   word and meaning come from the entry
+ *
+ * The word gets lang="bng" (ISO 639-3 code of Benga) so screen readers don't read it as Spanish.
  * Sound goes through the shared player (src/services/audioPlayer.js): one word at a time.
  */
 export default {
@@ -57,17 +66,31 @@ export default {
     BaseIcon
   },
   props: {
+    /** The Benga word to show. Not needed when `entry` is given. */
     word: {
       type: String,
-      required: true
+      default: null
     },
+    /** A lexicon entry ({ singular, plural, meaning, … } or { word, meaning, … }). */
+    entry: {
+      type: Object,
+      default: null
+    },
+    /** For noun entries: which form to show. Default: singular, or plural if there is none. */
+    form: {
+      type: String,
+      default: null,
+      validator: (value) => ['singular', 'plural'].includes(value)
+    },
+    /** Meaning to show in brackets. Default: the entry's meaning (in the visitor's language). */
     meaning: {
       type: String,
       default: null
     },
+    /** Leave out to link to the Living Dictionary automatically; null hides the link. */
     dictionaryUrl: {
       type: String,
-      default: null
+      default: undefined
     },
     showMeaning: {
       type: Boolean,
@@ -83,6 +106,23 @@ export default {
     }
   },
   computed: {
+    /** The word shown: the `word` prop, or the right form of the `entry`. */
+    text() {
+      if (this.word) return this.word
+      if (!this.entry) return ''
+      if (this.entry.word) return this.entry.word
+      const form = this.form || (this.entry.singular ? 'singular' : 'plural')
+      return this.entry[form]?.word || ''
+    },
+    shownMeaning() {
+      if (this.meaning || !this.entry) return this.meaning
+      const plural = this.form === 'plural' || (!this.entry.singular && !this.entry.word)
+      const text = (plural && this.entry.meaningPlural) || this.entry.meaning
+      return text ? this.$localized(text) : null
+    },
+    dictionaryLink() {
+      return this.dictionaryUrl === undefined ? getDictionaryUrl(this.text) : this.dictionaryUrl
+    },
     /** This word's state in the shared player. */
     isPlaying() {
       return audioState.url === this.audioUrl && audioState.status === 'playing'
@@ -95,10 +135,10 @@ export default {
     },
     /** Recording URL, or null when the word has no recording yet. */
     audioUrl() {
-      return getAudioUrl(this.word)
+      return getAudioUrl(this.text)
     },
     wordParts() {
-      const text = this.word || ''
+      const text = this.text
       if (!this.highlightPrefix) {
         return { before: text, highlight: '', after: '' }
       }

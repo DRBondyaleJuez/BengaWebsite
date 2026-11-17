@@ -274,7 +274,8 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.1: create `src/services/audioPlayer.js` — one shared Audio object, stops the previous sound, exposes play/stop/state; reads `audio-manifest.json` to know which ids exist. Refactor `BengaWord` to use it and to show the 'pending' icon for ids not in the manifest. Add a `TODO(5.2)` where the manifest will be auto-generated."
   - **Commit:** `feat(audio): add shared audio player service`
 
-- [ ] **3.2 `BengaWord` accepts a lexicon entry**
+- [x] **3.2 `BengaWord` accepts a lexicon entry**
+  - **Done 2026-11-17:** `entry` + `form` props (word and meaning come from the lexicon entry, meaning in the visitor's language), `lang="bng"` on the word, and the Living Dictionary link is computed by `BengaWord` itself (`:dictionary-url="null"` hides it). The 54 hand-written `:dictionary-url="getDictionaryUrl(…)"` were removed from the pages; the chapter-3 adjective pages now show dictionary links too (the only visible change).
   - **Done early (2026-11-11, word registry):** `BengaWord` computes key, audio and dictionary link from `word` alone. Still to do: `lang="bng"`, and showing dictionary links on pages that don't pass `dictionary-url` yet (chapter 3).
   - **Prompt:** "Task 3.2: let `BengaWord` take either `word` or an `entry` prop (+ `form: 'singular'|'plural'`), computing audioId and dictionary link itself. Add `lang=\"bng\"` (ISO code for Benga) on the word for screen readers. Keep old props working."
   - **Commit:** `feat(benga-word): accept lexicon entries and compute audio ids`

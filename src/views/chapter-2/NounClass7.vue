@@ -30,12 +30,7 @@
       <div class="examples-grid">
         <div class="example-card" v-for="(word, idx) in words" :key="`word-${idx}`">
           <div class="example-singular">
-            <BengaWord
-              :word="word.word"
-              :meaning="word.meaning"
-              :dictionary-url="getDictionaryUrl(word.word)"
-              block
-            />
+            <BengaWord :word="word.word" :meaning="word.meaning" block />
           </div>
         </div>
       </div>
@@ -82,7 +77,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'NounClass7',
@@ -182,9 +176,6 @@ export default {
         { word: 'Nyēnjē', audio: 'ny_e_nj_e_', meaning: 'Cangrejo' }
       ]
     }
-  },
-  methods: {
-    getDictionaryUrl
   },
   created() {
     document.title = 'Séptima Clase Nominal | Portal Benga'

@@ -27,12 +27,7 @@
           <div class="example-form">
             <span class="label">Forma principal (plural):</span>
             <span class="value">
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-                block
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" block />
             </span>
           </div>
         </div>
@@ -55,12 +50,7 @@
           <div class="example-form">
             <span class="label">Forma principal (singular):</span>
             <span class="value">
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-                block
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" block />
             </span>
           </div>
         </div>
@@ -122,7 +112,6 @@
 
 <script>
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'IrregularNouns',
@@ -179,9 +168,6 @@ export default {
         { word: 'Peta', audio: 'peta', meaning: 'Disputa, etc.' }
       ]
     }
-  },
-  methods: {
-    getDictionaryUrl
   },
   created() {
     document.title = 'Nombres Irregulares | Portal Benga'
