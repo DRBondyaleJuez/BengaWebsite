@@ -267,7 +267,8 @@ Branch: `refactor/content-model`. This is the most important phase.
 
 Branch: `refactor/blocks`
 
-- [ ] **3.1 Shared audio player service**
+- [x] **3.1 Shared audio player service**
+  - **Done 2026-11-17:** `src/services/audioPlayer.js` (one `Audio` for the site, `play(url)` stops the previous sound and toggles, `stop()`, reactive `audioState` with `idle`/`loading`/`playing` + `error`). `BengaWord` and the admin page use it; a recording that fails shows a grey button. The 'pending' icon for unrecorded words already came from the registry.
   - **Done early (2026-11-11, word registry):** the "audio manifest" is the `audio` field of `word-registry.json`; `BengaWord` already hides the play button for words not recorded. Still to do: one shared player that stops the previous sound.
   - **Why:** today each `BengaWord` has its own `<audio>`; two can play at once, and missing files fail silently.
   - **Prompt:** "Task 3.1: create `src/services/audioPlayer.js` — one shared Audio object, stops the previous sound, exposes play/stop/state; reads `audio-manifest.json` to know which ids exist. Refactor `BengaWord` to use it and to show the 'pending' icon for ids not in the manifest. Add a `TODO(5.2)` where the manifest will be auto-generated."

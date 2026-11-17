@@ -14,6 +14,7 @@
       @click="playAudio"
       :aria-label="$t('audio.play') + ': ' + word"
       :disabled="isLoading"
+      :class="{ 'benga-word__audio-btn--error': hasError }"
     >
       <BaseIcon :name="isPlaying ? 'pause' : 'volume'" />
     </button>
@@ -34,20 +35,13 @@
     </a>
 
     <span v-if="meaning && showMeaning" class="benga-word__meaning"> ({{ meaning }}) </span>
-
-    <audio
-      v-if="audioUrl"
-      ref="audioElement"
-      @ended="isPlaying = false"
-      @error="handleAudioError"
-      preload="none"
-    />
   </span>
 </template>
 
 <script>
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import { getAudioUrl } from '@/services/wordLinks'
+import { audioState, play } from '@/services/audioPlayer'
 
 /**
  * Shows a Benga word with its pronunciation button and dictionary link.
@@ -55,6 +49,7 @@ import { getAudioUrl } from '@/services/wordLinks'
  * The recording is found automatically from the word itself (word → key → word registry),
  * so pages only pass `word`. A play button appears only for words whose registry entry says
  * `"audio": "recorded"`; other words show a muted icon ("Audio no disponible").
+ * Sound goes through the shared player (src/services/audioPlayer.js): one word at a time.
  */
 export default {
   name: 'BengaWord',
@@ -87,14 +82,17 @@ export default {
       default: null
     }
   },
-  data() {
-    return {
-      isPlaying: false,
-      isLoading: false,
-      hasError: false
-    }
-  },
   computed: {
+    /** This word's state in the shared player. */
+    isPlaying() {
+      return audioState.url === this.audioUrl && audioState.status === 'playing'
+    },
+    isLoading() {
+      return audioState.url === this.audioUrl && audioState.status === 'loading'
+    },
+    hasError() {
+      return Boolean(this.audioUrl) && audioState.error === this.audioUrl
+    },
     /** Recording URL, or null when the word has no recording yet. */
     audioUrl() {
       return getAudioUrl(this.word)
@@ -122,38 +120,8 @@ export default {
     }
   },
   methods: {
-    async playAudio() {
-      const el = this.$refs.audioElement
-      if (!el) return
-
-      // Lazily assign src so load events don't fire on render
-      if (!el.src) {
-        const src = this.audioUrl
-        if (!src) return
-        el.src = src
-      }
-
-      if (this.isPlaying) {
-        el.pause()
-        this.isPlaying = false
-        return
-      }
-
-      this.isLoading = true
-      try {
-        await el.play()
-        this.isPlaying = true
-      } catch (error) {
-        console.error('Audio playback failed:', error)
-        this.hasError = true
-      } finally {
-        this.isLoading = false
-      }
-    },
-    handleAudioError() {
-      this.isLoading = false
-      this.hasError = true
-      console.warn(`Audio unavailable for: ${this.word}`)
+    playAudio() {
+      play(this.audioUrl)
     }
   }
 }
@@ -212,6 +180,11 @@ export default {
     &:disabled {
       opacity: 0.5;
       cursor: wait;
+    }
+
+    // The recording could not be played (file missing on Cloudinary, no connection)
+    &--error {
+      background: $color-text-muted;
     }
 
     svg {

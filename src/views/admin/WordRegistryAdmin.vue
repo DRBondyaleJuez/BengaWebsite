@@ -146,6 +146,7 @@ import {
   LIVING_DICTIONARY_SEARCH
 } from '@/config/external'
 import { audioUrlFor, dictionarySearchUrl, dictionaryUrlFor } from '@/utils/linkRules'
+import { audioState, play } from '@/services/audioPlayer'
 
 const ROWS_PER_PAGE = 50
 const EDITABLE_FIELDS = ['word', 'livingDictionaryId', 'audio', 'audioFile', 'notes']
@@ -276,13 +277,16 @@ export default {
         searchBase: LIVING_DICTIONARY_SEARCH
       })
     },
-    playAudio(row) {
-      new Audio(audioUrlFor(row.key, row, CLOUDINARY_BASE)).play().catch(() => {
+    // Shared player (src/services/audioPlayer.js): stops any other sound first.
+    async playAudio(row) {
+      const url = audioUrlFor(row.key, row, CLOUDINARY_BASE)
+      await play(url)
+      if (audioState.error === url) {
         this.message = {
           type: 'error',
           text: `No se encontró el audio de «${row.word}» en Cloudinary (${row.audioFile || row.key}.mp3).`
         }
-      })
+      }
     },
     shortFileName(file) {
       return file.split('/').pop()

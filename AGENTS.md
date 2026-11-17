@@ -173,6 +173,7 @@ benga-grammar-website/
 │   │   └── linkRules.js         # how audio / Living Dictionary URLs are built
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
+│   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
 │   │   └── nouns.js             # getNouns({ nounClass, withBothForms }) from lexicon/nouns.json
 │   ├── assets/
 │   │   └── images/
@@ -265,7 +266,6 @@ benga-grammar-website/
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.
 - `PageLayout`, `SectionNav`, `BaseButton`, `BaseCard` → reusable blocks [Phase 3]
-- `AudioPlayer` → shared audio player service [task 3.1]
 - `NounClassCard` → generic noun-class page [task 3.4]
 - `QuizCard`, `FlashCard` (`components/interactive/`) → exercise engine [Phase 8]
 - `VowelChart` interactive vowel chart for chapter 1 [Phase 8]
