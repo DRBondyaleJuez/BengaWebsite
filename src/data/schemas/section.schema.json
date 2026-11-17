@@ -115,6 +115,12 @@
         },
         {
           "$ref": "#/$defs/vocabulary"
+        },
+        {
+          "$ref": "#/$defs/links"
+        },
+        {
+          "$ref": "#/$defs/checklist"
         }
       ]
     },
@@ -130,6 +136,10 @@
         },
         "level": {
           "enum": [2, 3]
+        },
+        "style": {
+          "enum": ["box", "highlight"],
+          "description": "SectionPage only: look of the part this heading starts. box = grey box, highlight = light-blue box; none = plain."
         }
       },
       "required": ["type", "text"],
@@ -365,11 +375,18 @@
               },
               "text": {
                 "$ref": "#/$defs/text"
+              },
+              "example": {
+                "$ref": "#/$defs/text"
               }
             },
             "required": ["title", "text"],
             "additionalProperties": false
           }
+        },
+        "look": {
+          "enum": ["list", "cards"],
+          "description": "list = green cards (default, ConceptList); cards = white cards with an example (ConceptCards)."
         }
       },
       "required": ["type", "items"],
@@ -547,6 +564,66 @@
       },
       "required": ["to", "label"],
       "additionalProperties": false
+    },
+    "links": {
+      "description": "A numbered list of pages to visit (SectionLinks): title, short text and a link.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "links"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "$ref": "#/$defs/text"
+              },
+              "text": {
+                "$ref": "#/$defs/text"
+              },
+              "to": {
+                "type": "string",
+                "pattern": "^/"
+              }
+            },
+            "required": ["title", "to"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["type", "items"],
+      "allOf": [
+        {
+          "$ref": "#/$defs/blockCommon"
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "checklist": {
+      "description": "Points to remember, each with a ✓ (CheckList).",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "checklist"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        }
+      },
+      "required": ["type", "items"],
+      "allOf": [
+        {
+          "$ref": "#/$defs/blockCommon"
+        }
+      ],
+      "unevaluatedProperties": false
     }
   }
 }

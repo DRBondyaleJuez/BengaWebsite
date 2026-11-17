@@ -293,7 +293,8 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.4.N: migrate noun class N to `NounClassPage` + `sections/ch-2/class-N.json` (exceptions section included). Compare old and new page side by side before deleting `NounClassN.vue`."
   - **Commits:** `feat(ch2): add generic noun class page` · `refactor(ch2): migrate noun class N to generic page`
 
-- [ ] **3.5 Generic `SectionPage` (block renderer)**
+- [x] **3.5 Generic `SectionPage` (block renderer)**
+  - **Done 2026-11-17:** `src/views/SectionPage.vue` renders any section file (`props: { section: 'ch-3/…' }`); heading `style` box/highlight, `**bold**` in paragraphs (`src/utils/inlineMarkup.js`, tested), new blocks `ConceptCards`, `SectionLinks` (`links`), `CheckList` (`checklist`), button-style `SectionNavFooter`. Unknown block types show a red warning in dev only. Proof: the chapter-3 introduction (`sections/ch-3/adjectives-intro.json`), identical to before; its four «Aprende más» links now go to the real pages (REVIEW-LOG R-024).
   - **Why:** new book sections should need **only a JSON file**.
   - **Prompt:** "Task 3.5: create `SectionPage.vue` that renders the `blocks` array of a section file, mapping each block `type` to a block component. Unknown types show a visible warning in dev. Migrate one simple page (Síncopa or Adjectives intro) as proof."
   - **Commit:** `feat(sections): add generic block-based section page`

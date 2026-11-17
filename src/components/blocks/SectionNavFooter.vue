@@ -1,8 +1,8 @@
 <template>
-  <router-link v-if="prevLink" :to="prevLink.to" class="nav-link prev">
+  <router-link v-if="prevLink" :to="prevLink.to" :class="classes.prev">
     ← {{ prevLink.label }}
   </router-link>
-  <router-link v-if="nextLink" :to="nextLink.to" class="nav-link next">
+  <router-link v-if="nextLink" :to="nextLink.to" :class="classes.next">
     {{ nextLink.label }} →
   </router-link>
 </template>
@@ -18,6 +18,9 @@ import chaptersIndex from '@/data/chapters-index.json'
  *
  * Without props, the neighbours of the current URL in src/data/chapters-index.json are used, with
  * their sidebar titles. Put it inside the page's nav container (e.g. <section class="noun-class__nav">).
+ *
+ * look="bar" (default): two wide coloured bars (noun classes) ·
+ * look="buttons": a grey "back" button and a coloured "next" button (chapter-3 pages).
  */
 export default {
   name: 'SectionNavFooter',
@@ -25,9 +28,19 @@ export default {
     /** { to, label } — label without the arrow. Default: previous section of the chapter. */
     prev: { type: Object, default: null },
     /** { to, label } — label without the arrow. Default: next section of the chapter. */
-    next: { type: Object, default: null }
+    next: { type: Object, default: null },
+    look: {
+      type: String,
+      default: 'bar',
+      validator: (value) => ['bar', 'buttons'].includes(value)
+    }
   },
   computed: {
+    classes() {
+      return this.look === 'buttons'
+        ? { prev: 'nav-button nav-button--back', next: 'nav-button nav-button--next' }
+        : { prev: 'nav-link prev', next: 'nav-link next' }
+    },
     /** Every section of every chapter, in reading order. */
     neighbours() {
       const sections = chaptersIndex.chapters.flatMap((chapter) => chapter.sections)
@@ -71,6 +84,33 @@ export default {
 
     &:hover {
       background: darken($color-secondary, 10%);
+    }
+  }
+}
+
+.nav-button {
+  @include button-base;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: $border-radius-base;
+  transition: all $transition-base;
+
+  &--back {
+    background-color: #f0f0f0;
+    color: $color-text-primary;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  &--next {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {
+      background-color: $color-primary-dark;
     }
   }
 }

@@ -207,9 +207,21 @@ sections/ch-2/class-1.json                     what the visitor sees
 | `conjugation` | verb table | `verb`, `voice`, `polarity`, `tenses` | see `examples/section-verb-kalaka.example.json` |
 | `dialogue` | phrases + translation | `lines` [{benga, translation}] | fraseología, saludos |
 | `vocabulary` | word list | `entries` (lexicon ids) | «Vocabulario» pages |
+| `links` | numbered «go to» list | `items` [{title, text, to}] | «Secciones del Capítulo» |
+| `checklist` | points with ✓ | `items` [text] | «Puntos Clave a Recordar» |
 
 `examples.layout`: `pairs` (singular + plural, default), `single`, `plural-only` (badge «Solo plural»).
 Every block may also have `id` (anchor), `source` and `editorial`.
+
+### Which page draws a section file
+
+- `src/views/chapter-2/NounClassPage.vue`: the noun classes (`sections/ch-2/class-N.json`), green noun-class frame.
+- `src/views/SectionPage.vue`: any other section (first one: `sections/ch-3/adjectives-intro.json`).
+  A `heading` may have `"style": "box"` (grey box) or `"highlight"` (light-blue box) for its part.
+  Paragraph texts may use `**bold**` (nothing else: HTML is shown as text).
+  `"look": "cards"` on `concepts` gives white cards with an `example` per item.
+- A route points to the page with the file: `props: { section: 'ch-3/adjectives-intro' }`
+  (`src/router/index.js`).
 
 ### How a page groups the blocks (noun classes: `NounClassPage.vue`)
 

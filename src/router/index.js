@@ -123,7 +123,8 @@ const routes = [
       {
         path: 'introduccion',
         name: 'AdjectivesIntro',
-        component: () => import('@/views/chapter-3/AdjectivesIntro.vue')
+        component: () => import('@/views/SectionPage.vue'),
+        props: { section: 'ch-3/adjectives-intro' }
       },
       {
         path: 'adjetivos-regulares',
