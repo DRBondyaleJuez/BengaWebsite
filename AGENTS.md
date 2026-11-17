@@ -110,13 +110,14 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 ### Chapter 3 Variable Adjectives
 - The source of truth for `src/data/chapter-3/regular-adjectives.json` is the "Adjetivos variables" table on PDF page 18 (book page 24). The four common adjectives are `bobe` (malo), `bonene` (grande), `bohole` (pequeño) and `bovindo` (negro); each is cited by its class-4 form, so the stem to which the class prefix is added is the root minus `bo-` (`bobe → -be`, `bonene → -nene`, `bohole → -hole`, `bovindo → -vindo`).
 - Concordance prefixes are identical for every variable adjective: class 1 `e-/be-`, class 2 `i-/ma-`, class 3 `u-/me-`, class 4 `bo-/me-`, class 5 `u-/ba-`, class 6 `vi-/lo-`, class 7 `e-/i-`. The same example nouns are reused per class (`Ekâi`, `Ilutu`, `Utē`, `Bova`, `Mondi`, `Viho`, `Ndo`) and their plural forms.
-- In `commonAdjectivesByMeaning`, every inflection is an object `{ "bengaForm": "Noun adjective", "audioId": … }`. The `classes[]` array uses the same `{ bengaForm, spanishTranslation, audioId }` shape for `singular`/`plural`, plus a `highlight` field. The `audioId` fields are legacy (see "Audio ID Convention"); the key of `Ekâi ebe` is computed automatically as `ek_a_i-ebe`.
+- The adjectives themselves (word, meaning, stem, irregular `forms`) live in `src/data/lexicon/adjectives.json`. `regular-adjectives.json` only lists which ones to show (`commonAdjectives`: lexicon ids) and the example noun of each class (`exampleNouns`); the page builds every «noun + adjective» phrase with `inflect()` from `src/utils/concord.js` (class prefix + stem, tested in `scripts/tests/concord.test.mjs`). Never type those phrases by hand; `words:sync` computes them the same way.
+- The `classes[]` array uses `{ bengaForm, spanishTranslation, audioId }` for `singular`/`plural`, plus a `highlight` field. The `audioId` fields are legacy (see "Audio ID Convention").
 - The `classes[]` examples inflect `būamu` (bueno). Because the radical changes with a linking **y** (`būamu → eyamu`, `maiyamu`, `beyamu`, …), each `singular`/`plural` object carries an explicit `highlight` string that includes that `y` (e.g. `ey`, `bey`, `iy`, `maiy`, `uy`, `mey`, `boy`, `baiy`, `viy`, `loy`). Use it as the `highlight-prefix` so the whole modified syllable is highlighted, not just the bare class prefix.
 - `BengaWord` accepts an optional `highlight-prefix` prop. When set, it splits `word` on spaces and underlines/colours that prefix at the start of the **last** token, which is how the conjugated syllable of the adjective is emphasised. Reuse it instead of hand-rolling highlighting.
 - In `RegularAdjectivesSection.vue` the `adjective-group__forms` grid is **two columns** (one on narrow screens), and each `.form-pair` groups one class's singular and plural forms together.
 
 ### Chapter 3 Invariable Adjectives
-- The source of truth for `src/data/chapter-3/invariable-adjectives.json` is the "Adjetivos invariables" list on PDF page 18 (book page 24); it feeds `InvariableAdjectivesSection.vue`.
+- The "Adjetivos invariables" list (PDF page 18, book page 24) is in `src/data/lexicon/adjectives.json` (`kind: "invariable"`); `InvariableAdjectivesSection.vue` reads it with `getAdjectives({ kind: 'invariable' })` (`src/services/adjectives.js`). `src/data/chapter-3/invariable-adjectives.json` keeps only the page texts (overview, examples, characteristics).
 - Every invariable adjective and every usage example is shown with `BengaWord`, because the language is mainly oral; their keys (and future recordings) come from the word itself, e.g. `Pēki Pēki → p_e_ki-p_e_ki`, `Bokolo bokolo → bokolo-bokolo`, `De de de → de-de-de`. The `audioId` fields in the JSON are legacy.
 - Invariable adjectives normally do **not** begin with the variable-adjective declension syllables (`e`, `be`, `i`, `ma`, `u`, `me`, `bo`, `ba`, `vi`, `lo`), although there are exceptions (e.g. `Bokolo`). This is the fifth entry in `characteristics` and is rendered both in the characteristics cards and the "Puntos Importantes" notes.
 - The `comparison-table` header row (`.table-row.header`) must be excluded from the zebra-striping rule — use `&:nth-child(odd):not(.header)` — otherwise its `#f9f9f9` background overrides the primary-colour header and the white text becomes illegible.
@@ -170,11 +171,13 @@ benga-grammar-website/
 │   │   ├── audioId.js           # toAudioId(word): THE word-key rule
 │   │   ├── localized.js         # localized(text, locale): pick a language, fall back to es ($localized)
 │   │   ├── linkRules.js         # how audio / Living Dictionary URLs are built
-│   │   └── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
+│   │   ├── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
+│   │   └── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
-│   │   └── nouns.js             # getNouns({ nounClass, withBothForms }) from lexicon/nouns.json
+│   │   ├── nouns.js             # getNouns({ nounClass, withBothForms }) from lexicon/nouns.json
+│   │   └── adjectives.js        # getAdjectives({ kind }), getAdjective(id), inflect() from lexicon/adjectives.json
 │   ├── assets/
 │   │   └── images/
 │   │       ├── logo.png
@@ -191,7 +194,7 @@ benga-grammar-website/
 │   ├── data/
 │   │   ├── schemas/             # JSON Schemas = the rules for content files (+ examples/)
 │   │   ├── lexicon/
-│   │   │   ├── adjectives.json     # Chapter-3 adjectives (lexicon schema), task 2.6; pages still use chapter-3/*.json
+│   │   │   ├── adjectives.json     # Chapter-3 adjectives (lexicon schema): the adjective pages read it
 │   │   │   ├── nouns.json          # Chapter-2 nouns (lexicon schema): source of truth since task 2.5
 │   │   │   ├── word-registry.json  # One entry per Benga word: dictionary id, audio state, notes
 │   │   │   └── word-usage.json     # GENERATED by words:sync (spellings + files per word)

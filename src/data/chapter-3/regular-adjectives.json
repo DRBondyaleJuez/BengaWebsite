@@ -145,88 +145,37 @@
       }
     }
   ],
-  "commonAdjectivesByMeaning": [
-    {
-      "meaning": "Malo",
-      "bengaRoot": "bobe",
-      "inflections": {
-        "class1_sg": { "bengaForm": "Ekâi ebe", "audioId": "ek_a_i-ebe" },
-        "class1_pl": { "bengaForm": "Bekâi bebe", "audioId": "bek_a_i-bebe" },
-        "class2_sg": { "bengaForm": "Ilutu ibe", "audioId": "ilutu-ibe" },
-        "class2_pl": { "bengaForm": "Malutu mabe", "audioId": "malutu-mabe" },
-        "class3_sg": { "bengaForm": "Utē ube", "audioId": "ut_e_-ube" },
-        "class3_pl": { "bengaForm": "Metē mebe", "audioId": "met_e_-mebe" },
-        "class4_sg": { "bengaForm": "Bova bobe", "audioId": "bova-bobe" },
-        "class4_pl": { "bengaForm": "Miova mebe", "audioId": "miova-mebe" },
-        "class5_sg": { "bengaForm": "Mondi ube", "audioId": "mondi-ube" },
-        "class5_pl": { "bengaForm": "Bondi babe", "audioId": "bondi-babe" },
-        "class6_sg": { "bengaForm": "Viho vibe", "audioId": "viho-vibe" },
-        "class6_pl": { "bengaForm": "Liho lobe", "audioId": "liho-lobe" },
-        "class7_sg": { "bengaForm": "Ndo ebe", "audioId": "ndo-ebe" },
-        "class7_pl": { "bengaForm": "Ndo ibe", "audioId": "ndo-ibe" }
-      }
+  "commonAdjectives": ["bobe", "bonene", "bohole", "bovindo"],
+  "exampleNouns": {
+    "1": {
+      "singular": "Ekâi",
+      "plural": "Bekâi"
     },
-    {
-      "meaning": "Grande",
-      "bengaRoot": "bonene",
-      "inflections": {
-        "class1_sg": { "bengaForm": "Ekâi enene", "audioId": "ek_a_i-enene" },
-        "class1_pl": { "bengaForm": "Bekâi benene", "audioId": "bek_a_i-benene" },
-        "class2_sg": { "bengaForm": "Ilutu inene", "audioId": "ilutu-inene" },
-        "class2_pl": { "bengaForm": "Malutu manene", "audioId": "malutu-manene" },
-        "class3_sg": { "bengaForm": "Utē unene", "audioId": "ut_e_-unene" },
-        "class3_pl": { "bengaForm": "Metē menene", "audioId": "met_e_-menene" },
-        "class4_sg": { "bengaForm": "Bova bonene", "audioId": "bova-bonene" },
-        "class4_pl": { "bengaForm": "Miova menene", "audioId": "miova-menene" },
-        "class5_sg": { "bengaForm": "Mondi unene", "audioId": "mondi-unene" },
-        "class5_pl": { "bengaForm": "Bondi banene", "audioId": "bondi-banene" },
-        "class6_sg": { "bengaForm": "Viho vinene", "audioId": "viho-vinene" },
-        "class6_pl": { "bengaForm": "Liho lonene", "audioId": "liho-lonene" },
-        "class7_sg": { "bengaForm": "Ndo enene", "audioId": "ndo-enene" },
-        "class7_pl": { "bengaForm": "Ndo inene", "audioId": "ndo-inene" }
-      }
+    "2": {
+      "singular": "Ilutu",
+      "plural": "Malutu"
     },
-    {
-      "meaning": "Pequeño",
-      "bengaRoot": "bohole",
-      "inflections": {
-        "class1_sg": { "bengaForm": "Ekâi ehole", "audioId": "ek_a_i-ehole" },
-        "class1_pl": { "bengaForm": "Bekâi behole", "audioId": "bek_a_i-behole" },
-        "class2_sg": { "bengaForm": "Ilutu ihole", "audioId": "ilutu-ihole" },
-        "class2_pl": { "bengaForm": "Malutu mahole", "audioId": "malutu-mahole" },
-        "class3_sg": { "bengaForm": "Utē uhole", "audioId": "ut_e_-uhole" },
-        "class3_pl": { "bengaForm": "Metē mehole", "audioId": "met_e_-mehole" },
-        "class4_sg": { "bengaForm": "Bova bohole", "audioId": "bova-bohole" },
-        "class4_pl": { "bengaForm": "Miova mehole", "audioId": "miova-mehole" },
-        "class5_sg": { "bengaForm": "Mondi uhole", "audioId": "mondi-uhole" },
-        "class5_pl": { "bengaForm": "Bondi bahole", "audioId": "bondi-bahole" },
-        "class6_sg": { "bengaForm": "Viho vihole", "audioId": "viho-vihole" },
-        "class6_pl": { "bengaForm": "Liho lohole", "audioId": "liho-lohole" },
-        "class7_sg": { "bengaForm": "Ndo ehole", "audioId": "ndo-ehole" },
-        "class7_pl": { "bengaForm": "Ndo ihole", "audioId": "ndo-ihole" }
-      }
+    "3": {
+      "singular": "Utē",
+      "plural": "Metē"
     },
-    {
-      "meaning": "Negro",
-      "bengaRoot": "bovindo",
-      "inflections": {
-        "class1_sg": { "bengaForm": "Ekâi evindo", "audioId": "ek_a_i-evindo" },
-        "class1_pl": { "bengaForm": "Bekâi bevindo", "audioId": "bek_a_i-bevindo" },
-        "class2_sg": { "bengaForm": "Ilutu ivindo", "audioId": "ilutu-ivindo" },
-        "class2_pl": { "bengaForm": "Malutu mavindo", "audioId": "malutu-mavindo" },
-        "class3_sg": { "bengaForm": "Utē uvindo", "audioId": "ut_e_-uvindo" },
-        "class3_pl": { "bengaForm": "Metē mevindo", "audioId": "met_e_-mevindo" },
-        "class4_sg": { "bengaForm": "Bova bovindo", "audioId": "bova-bovindo" },
-        "class4_pl": { "bengaForm": "Miova mevindo", "audioId": "miova-mevindo" },
-        "class5_sg": { "bengaForm": "Mondi uvindo", "audioId": "mondi-uvindo" },
-        "class5_pl": { "bengaForm": "Bondi bavindo", "audioId": "bondi-bavindo" },
-        "class6_sg": { "bengaForm": "Viho vivindo", "audioId": "viho-vivindo" },
-        "class6_pl": { "bengaForm": "Liho lovindo", "audioId": "liho-lovindo" },
-        "class7_sg": { "bengaForm": "Ndo evindo", "audioId": "ndo-evindo" },
-        "class7_pl": { "bengaForm": "Ndo ivindo", "audioId": "ndo-ivindo" }
-      }
+    "4": {
+      "singular": "Bova",
+      "plural": "Miova"
+    },
+    "5": {
+      "singular": "Mondi",
+      "plural": "Bondi"
+    },
+    "6": {
+      "singular": "Viho",
+      "plural": "Liho"
+    },
+    "7": {
+      "singular": "Ndo",
+      "plural": "Ndo"
     }
-  ],
+  },
   "notes": [
     "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase",
     "El adjetivo 'būamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",

@@ -24,6 +24,7 @@ import path from 'node:path'
 import vm from 'node:vm'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
+import { inflect } from '../../src/utils/concord.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const SRC = path.join(ROOT, 'src')
@@ -61,6 +62,34 @@ function lexiconWords(file) {
     }
     if (entry.word)
       results.push({ word: entry.word, storedAudioId: null, file: relativeFile, path: id })
+  }
+  return results
+}
+
+/**
+ * Phrases a page COMPUTES instead of storing: the chapter-3 table «noun + adjective» for every
+ * class (regular-adjectives.json → commonAdjectives + exampleNouns, forms from the lexicon with
+ * the concord rule of src/utils/concord.js). Same result as RegularAdjectivesSection.vue.
+ */
+function concordPhrases(data) {
+  if (!Array.isArray(data.commonAdjectives) || !data.exampleNouns) return []
+  const lexicon = JSON.parse(
+    fs.readFileSync(path.join(SRC, 'data/lexicon/adjectives.json'), 'utf8')
+  ).entries
+  const results = []
+  for (const id of data.commonAdjectives) {
+    const adjective = lexicon[id]
+    if (!adjective) continue
+    for (const [nounClass, nouns] of Object.entries(data.exampleNouns)) {
+      for (const number of ['singular', 'plural']) {
+        const word = `${nouns[number]} ${inflect(adjective, Number(nounClass), number)}`
+        results.push({
+          word,
+          storedAudioId: null,
+          path: `commonAdjectives(${id}).${nounClass}.${number}`
+        })
+      }
+    }
   }
   return results
 }
@@ -198,7 +227,9 @@ export function collectWords() {
       continue
     }
     const pairs = []
-    findPairs(JSON.parse(fs.readFileSync(file, 'utf8')), '', pairs)
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'))
+    findPairs(data, '', pairs)
+    pairs.push(...concordPhrases(data))
     pairs.forEach((pair) =>
       results.push({ ...pair, file: path.relative(ROOT, file).replace(/\\/g, '/') })
     )

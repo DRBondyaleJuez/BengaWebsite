@@ -188,16 +188,7 @@
 <script>
 import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const CLASS_PREFIXES = {
-  1: { sg: 'e', pl: 'be' },
-  2: { sg: 'i', pl: 'ma' },
-  3: { sg: 'u', pl: 'me' },
-  4: { sg: 'bo', pl: 'me' },
-  5: { sg: 'u', pl: 'ba' },
-  6: { sg: 'vi', pl: 'lo' },
-  7: { sg: 'e', pl: 'i' }
-}
+import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
 
 export default {
   name: 'RegularAdjectivesSection',
@@ -207,45 +198,44 @@ export default {
   data() {
     return {
       classes: [],
-      commonAdjectives: [],
-      notes: [],
-      classPrefixes: CLASS_PREFIXES
+      notes: []
     }
   },
   mounted() {
     this.loadData()
   },
   computed: {
+    /**
+     * The "Adjetivos Comunes" cards, built from the lexicon (lexicon/adjectives.json):
+     * example noun of each class + the adjective's form for that class (prefix + stem).
+     */
     adjectiveGroups() {
-      return this.commonAdjectives.map((adjective) => ({
-        meaning: adjective.meaning,
-        bengaRoot: adjective.bengaRoot,
-        pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => {
-          const sgKey = `class${classId}_sg`
-          const plKey = `class${classId}_pl`
-          const singular = adjective.inflections[sgKey] || {}
-          const plural = adjective.inflections[plKey] || {}
-          return {
+      const nouns = regularAdjectivesData.exampleNouns
+      return regularAdjectivesData.commonAdjectives.map((id) => {
+        const adjective = getAdjective(id)
+        return {
+          meaning: this.$localized(adjective.meaning),
+          bengaRoot: adjective.word,
+          pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => ({
             classId,
             label: `Clase ${classId}`,
-            singular: { ...singular, prefix: this.inflectionPrefix(sgKey) },
-            plural: { ...plural, prefix: this.inflectionPrefix(plKey) }
-          }
-        })
-      }))
+            singular: {
+              bengaForm: `${nouns[classId].singular} ${inflect(adjective, classId, 'singular')}`,
+              prefix: CONCORD_PREFIXES[classId].singular
+            },
+            plural: {
+              bengaForm: `${nouns[classId].plural} ${inflect(adjective, classId, 'plural')}`,
+              prefix: CONCORD_PREFIXES[classId].plural
+            }
+          }))
+        }
+      })
     }
   },
   methods: {
     loadData() {
       this.classes = regularAdjectivesData.classes
-      this.commonAdjectives = regularAdjectivesData.commonAdjectivesByMeaning
       this.notes = regularAdjectivesData.notes
-    },
-    inflectionPrefix(key) {
-      const match = /^class(\d+)_(sg|pl)$/.exec(key)
-      if (!match) return null
-      const rule = this.classPrefixes[Number(match[1])]
-      return rule ? rule[match[2]] : null
     }
   }
 }

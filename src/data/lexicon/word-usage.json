@@ -858,10 +858,7 @@
     },
     "bokolo": {
       "spellings": ["Bokolo"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "bokolo-bokolo": {
       "spellings": ["Bokolo bokolo"],
@@ -937,10 +934,7 @@
     },
     "de": {
       "spellings": ["De"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "de-de-de": {
       "spellings": ["De de de"],
@@ -1747,10 +1741,7 @@
     },
     "huhamba": {
       "spellings": ["Huhamba"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "i_u_e_la": {
       "spellings": ["iūēla"],
@@ -2034,10 +2025,7 @@
     },
     "kena": {
       "spellings": ["Kena"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "kiji": {
       "spellings": ["Kiji"],
@@ -2053,10 +2041,7 @@
     },
     "kopia": {
       "spellings": ["Kopia"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "kuma": {
       "spellings": ["Kuma"],
@@ -3133,10 +3118,7 @@
     },
     "ny_e_vi": {
       "spellings": ["Nyēvi"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "nya_u_e": {
       "spellings": ["nyaūe"],
@@ -3176,10 +3158,7 @@
     },
     "p_a_l_a_l_a_p_a_l_a_l_a_": {
       "spellings": ["Pâlâlâpâlâlâ"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_a_nd_a_": {
       "spellings": ["Pândâ"],
@@ -3187,17 +3166,11 @@
     },
     "p_e_kejomu": {
       "spellings": ["Pēkejomu"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_e_ki-p_e_ki": {
       "spellings": ["Pēki Pēki"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_u_isi": {
       "spellings": ["Pūisi"],
@@ -3217,10 +3190,7 @@
     },
     "pala": {
       "spellings": ["Pala"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "panga": {
       "spellings": ["Panga"],
@@ -3264,10 +3234,7 @@
     },
     "pivi": {
       "spellings": ["Pivi"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "pogo": {
       "spellings": ["Pogo"],
@@ -3275,10 +3242,7 @@
     },
     "pojaengo": {
       "spellings": ["Pojaengo"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "poke": {
       "spellings": ["Poke"],
@@ -3290,17 +3254,11 @@
     },
     "poso": {
       "spellings": ["Poso"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "potapota": {
       "spellings": ["Potapota"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "poti": {
       "spellings": ["Poti"],
@@ -3336,10 +3294,7 @@
     },
     "t_a_ndal_a_nda": {
       "spellings": ["Tândalânda"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "ta": {
       "spellings": ["ta"],
@@ -3351,10 +3306,7 @@
     },
     "tanana": {
       "spellings": ["Tanana"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "tataka": {
       "spellings": ["tataka"],
@@ -3426,10 +3378,7 @@
     },
     "ukuge": {
       "spellings": ["Ukuge"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "ulangi": {
       "spellings": ["Ulangi", "ulangi"],
@@ -3465,10 +3414,7 @@
     },
     "veivei": {
       "spellings": ["Veivei"],
-      "usedIn": [
-        "src/data/chapter-3/invariable-adjectives.json",
-        "src/data/lexicon/adjectives.json"
-      ]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "veya": {
       "spellings": ["Veya"],

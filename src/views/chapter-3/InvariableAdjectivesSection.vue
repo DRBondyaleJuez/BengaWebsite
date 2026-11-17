@@ -31,10 +31,10 @@
       <div class="adjectives-grid">
         <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
           <div class="adjective-card__bengaform">
-            <BengaWord :word="adj.bengaForm" />
+            <BengaWord :word="adj.word" />
           </div>
           <div class="adjective-card__meaning">
-            {{ adj.spanishMeaning }}
+            {{ $localized(adj.meaning) }}
           </div>
         </div>
       </div>
@@ -127,6 +127,7 @@
 <script>
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
+import { getAdjectives } from '@/services/adjectives'
 
 export default {
   name: 'InvariableAdjectivesSection',
@@ -145,7 +146,8 @@ export default {
   },
   methods: {
     loadData() {
-      this.adjectives = invariableAdjectivesData.adjectives
+      // The list comes from the lexicon (lexicon/adjectives.json, kind "invariable")
+      this.adjectives = getAdjectives({ kind: 'invariable' })
       this.examples = invariableAdjectivesData.examples
       this.characteristics = invariableAdjectivesData.characteristics
     }
