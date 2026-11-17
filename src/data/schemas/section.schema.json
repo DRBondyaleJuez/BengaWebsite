@@ -21,8 +21,12 @@
       "maximum": 11
     },
     "layout": {
-      "description": "Which page draws this file: article (SectionPage.vue, default) or noun-class (NounClassPage.vue).",
-      "enum": ["article", "noun-class"]
+      "description": "Which page draws this file: article (SectionPage.vue, default), lesson (SectionPage.vue, chapter-1 look) or noun-class (NounClassPage.vue).",
+      "enum": ["article", "noun-class", "lesson"]
+    },
+    "color": {
+      "enum": ["primary", "secondary"],
+      "description": "lesson layout: theme colour of the page (buttons)."
     },
     "title": {
       "$ref": "common.schema.json#/$defs/localizedText"
@@ -125,11 +129,14 @@
         },
         {
           "$ref": "#/$defs/checklist"
+        },
+        {
+          "$ref": "#/$defs/sounds"
         }
       ]
     },
     "heading": {
-      "description": "A section heading (h2) or sub-heading (h3). A level-2 heading starts a new page section; its id names the section (e.g. examples → class noun-class__examples). {count} in the text is replaced by the number of words of the section's examples block.",
+      "description": "A section heading (h2) or sub-heading (h3). A level-2 heading starts a new page section; its id names the section (e.g. examples → class noun-class__examples). {count} in the text is replaced by the number of words of the section's examples block. Without text: a part with no visible title.",
       "type": "object",
       "properties": {
         "type": {
@@ -146,7 +153,7 @@
           "description": "SectionPage only: look of the part this heading starts. box = grey box, highlight = light-blue box; none = plain."
         }
       },
-      "required": ["type", "text"],
+      "required": ["type"],
       "allOf": [
         {
           "$ref": "#/$defs/blockCommon"
@@ -341,7 +348,16 @@
           "const": "note"
         },
         "variant": {
-          "enum": ["info", "exception", "warning", "teacher", "culture", "modern-usage", "small"]
+          "enum": [
+            "info",
+            "exception",
+            "warning",
+            "teacher",
+            "culture",
+            "modern-usage",
+            "small",
+            "important"
+          ]
         },
         "title": {
           "$ref": "#/$defs/text"
@@ -618,6 +634,63 @@
           "minItems": 1,
           "items": {
             "$ref": "#/$defs/text"
+          }
+        }
+      },
+      "required": ["type", "items"],
+      "allOf": [
+        {
+          "$ref": "#/$defs/blockCommon"
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "sounds": {
+      "description": "One card per sound (diphthongs, triphthongs…): letters, how they sound, examples (SoundCards).",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "sounds"
+        },
+        "color": {
+          "enum": ["primary", "secondary"]
+        },
+        "wide": {
+          "type": "boolean",
+          "description": "Wider label boxes for longer sounds (aia, uai…)."
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "soundsLike": {
+                "$ref": "#/$defs/text"
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "word": {
+                      "$ref": "common.schema.json#/$defs/bengaText"
+                    },
+                    "meaning": {
+                      "$ref": "#/$defs/text"
+                    }
+                  },
+                  "required": ["word"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["label", "soundsLike"],
+            "additionalProperties": false
           }
         }
       },

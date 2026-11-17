@@ -4,6 +4,7 @@
  * It reads two kinds of files:
  *   - src/data/**\/*.json        content stored as data
  *   - src/data/lexicon/*.json    lexicon files: every singular / plural / word (no audio ids there)
+ *   - src/data/sections/**       section files: every "word" and "benga" text
  *   - src/views/**\/*.vue        content still written inside a page's data() block
  *                               (TODO(task 2.4): once all content lives in JSON, drop this part)
  *
@@ -61,6 +62,28 @@ function lexiconWords(file) {
     if (entry.word)
       results.push({ word: entry.word, storedAudioId: null, file: relativeFile, path: id })
   }
+  return results
+}
+
+/**
+ * Section files have no audio ids either: every `word` (example items, sound cards) and every
+ * `benga` (table cells, dialogue lines) is a Benga text the site shows. Words given by lexicon id
+ * ("entries") are found through the lexicon files.
+ */
+function sectionWords(file) {
+  const relativeFile = path.relative(ROOT, file).replace(/\\/g, '/')
+  const results = []
+  const walk = (value, where) => {
+    if (Array.isArray(value)) value.forEach((item, index) => walk(item, `${where}[${index}]`))
+    else if (value && typeof value === 'object') {
+      for (const [key, child] of Object.entries(value)) {
+        if ((key === 'word' || key === 'benga') && typeof child === 'string')
+          results.push({ word: child.trim(), storedAudioId: null, file: relativeFile, path: where })
+        else walk(child, where ? `${where}.${key}` : key)
+      }
+    }
+  }
+  walk(JSON.parse(fs.readFileSync(file, 'utf8')), '')
   return results
 }
 
@@ -170,6 +193,10 @@ export function collectWords() {
       continue // the registry itself is not content
     }
     if (file.includes(`${path.sep}schemas${path.sep}`)) continue // schemas and their examples are not site content
+    if (file.includes(`${path.sep}sections${path.sep}`)) {
+      results.push(...sectionWords(file))
+      continue
+    }
     const pairs = []
     findPairs(JSON.parse(fs.readFileSync(file, 'utf8')), '', pairs)
     pairs.forEach((pair) =>

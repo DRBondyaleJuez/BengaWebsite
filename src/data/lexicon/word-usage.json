@@ -3,14 +3,11 @@
   "words": {
     "_u_a_u_a_": {
       "spellings": ["ūâūâ"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "_u_eango": {
       "spellings": ["ūeango"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "_u_hi": {
       "spellings": ["ūhi"],
@@ -18,7 +15,7 @@
     },
     "au": {
       "spellings": ["au"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "b_u_alo": {
       "spellings": ["Būalo"],
@@ -50,7 +47,7 @@
     },
     "bab_u_e": {
       "spellings": ["babūe"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "bahano": {
       "spellings": ["Bahano"],
@@ -626,7 +623,10 @@
     },
     "bepokolo-beyamu": {
       "spellings": ["Bepokolo beyamu"],
-      "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
+      "usedIn": [
+        "src/data/chapter-3/regular-adjectives.json",
+        "src/data/sections/ch-2/class-1.json"
+      ]
     },
     "bepondoma": {
       "spellings": ["Bepondoma"],
@@ -1552,7 +1552,10 @@
     },
     "epokolo-eyamu": {
       "spellings": ["Epokolo eyamu"],
-      "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
+      "usedIn": [
+        "src/data/chapter-3/regular-adjectives.json",
+        "src/data/sections/ch-2/class-1.json"
+      ]
     },
     "epondoma": {
       "spellings": ["Epondoma"],
@@ -1711,11 +1714,10 @@
       "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "h_u_e_": {
-      "spellings": ["hūē", "Hūē"],
+      "spellings": ["Hūē", "hūē"],
       "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
         "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/DiphthongsSection.vue",
+        "src/data/sections/ch-1/diphthongs.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
@@ -1732,12 +1734,8 @@
       "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "ho_u_e": {
-      "spellings": ["hoūe", "Hoūe"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "spellings": ["Hoūe", "hoūe"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/triphthongs.json"]
     },
     "ho_u_e_": {
       "spellings": ["Hoūē"],
@@ -1756,17 +1754,11 @@
     },
     "i_u_e_la": {
       "spellings": ["iūēla"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "i_u_edo": {
       "spellings": ["iūedo"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ib_a_lu": {
       "spellings": ["Ibâlu"],
@@ -1846,10 +1838,7 @@
     },
     "ijo_u_ia": {
       "spellings": ["ijoūia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ik_e_l_e_n_e_": {
       "spellings": ["Ikēlēnē"],
@@ -1965,10 +1954,7 @@
     },
     "iu_u_a": {
       "spellings": ["iuūa"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "iv_e_": {
       "spellings": ["Ivē"],
@@ -2020,10 +2006,7 @@
     },
     "kaia": {
       "spellings": ["kaia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "kalaka": {
       "spellings": ["kalaka", "Kalaka"],
@@ -2221,7 +2204,7 @@
     },
     "m_u_ana": {
       "spellings": ["mūana"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "m_u_anga": {
       "spellings": ["Mūanga"],
@@ -2244,12 +2227,8 @@
       "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_idi": {
-      "spellings": ["mūidi", "Mūidi"],
-      "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
-        "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/DiphthongsSection.vue"
-      ]
+      "spellings": ["Mūidi", "mūidi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/diphthongs.json"]
     },
     "m_u_indi": {
       "spellings": ["Mūindi"],
@@ -2501,10 +2480,7 @@
     },
     "mb_u_ei": {
       "spellings": ["mbūei"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "mb_u_engamb_u_enga": {
       "spellings": ["mbūengambūenga"],
@@ -2512,10 +2488,7 @@
     },
     "mb_u_ia": {
       "spellings": ["mbūia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "mbadi": {
       "spellings": ["Mbadi"],
@@ -2550,11 +2523,10 @@
       "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
     },
     "mboi": {
-      "spellings": ["mboi", "Mboi"],
+      "spellings": ["Mboi", "mboi"],
       "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
         "src/data/lexicon/nouns.json",
-        "src/views/chapter-1/DiphthongsSection.vue",
+        "src/data/sections/ch-1/diphthongs.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
@@ -3038,10 +3010,7 @@
     },
     "ng_u_ae": {
       "spellings": ["ngūae"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ng_u_ahi": {
       "spellings": ["ngūahi"],
@@ -3193,10 +3162,7 @@
     },
     "nya_u_e": {
       "spellings": ["nyaūe"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "nyanda": {
       "spellings": ["nyanda"],
@@ -3269,10 +3235,7 @@
     },
     "paia": {
       "spellings": ["paia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "pala": {
       "spellings": ["Pala"],
@@ -3421,7 +3384,7 @@
     },
     "tekai": {
       "spellings": ["tekai"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "tina": {
       "spellings": ["Tina"],
@@ -3469,10 +3432,7 @@
     },
     "u_u_aka": {
       "spellings": ["uūaka"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ub_a_ki-uyamu": {
       "spellings": ["Ubâki uyamu"],
@@ -3523,10 +3483,7 @@
     },
     "uvangu_u_i": {
       "spellings": ["Uvanguūi"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "veivei": {
       "spellings": ["Veivei"],
@@ -3601,7 +3558,7 @@
     },
     "viu": {
       "spellings": ["viu"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "viyembo": {
       "spellings": ["Viyembo"],
@@ -3753,10 +3710,7 @@
     },
     "yo_u_ak_e_": {
       "spellings": ["yoūakē"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "yoha": {
       "spellings": ["Yoha"],

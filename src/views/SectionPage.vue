@@ -1,19 +1,23 @@
 <template>
-  <div class="section-page">
-    <div class="section-page__header">
+  <div :class="lesson ? 'lesson' : 'section-page'">
+    <div v-if="!lesson" class="section-page__header">
       <h1>{{ $localized(content.title) }}</h1>
       <p v-if="content.subtitle" class="subtitle">{{ $localized(content.subtitle) }}</p>
     </div>
 
-    <!-- One <section> per heading of the section file; its "style" picks the look of the part -->
-    <section
+    <!-- One part per heading: a <section> (article) or a ContentSection (lesson) -->
+    <component
+      :is="lesson ? 'ContentSection' : 'section'"
       v-for="(part, partIdx) in pageSections"
       :key="`part-${partIdx}`"
-      :class="['section-page__part', part.style && `section-page__part--${part.style}`]"
+      v-bind="partAttributes(part)"
     >
-      <h2 v-if="part.title">{{ part.title }}</h2>
+      <h2 v-if="part.title && !lesson">{{ part.title }}</h2>
       <template v-for="(block, idx) in part.blocks" :key="`${partIdx}-${idx}`">
-        <div v-if="block.type === 'paragraph'" class="section-page__text">
+        <p v-if="block.type === 'paragraph' && lesson" class="lesson__intro">
+          {{ $localized(block.text) }}
+        </p>
+        <div v-else-if="block.type === 'paragraph'" class="section-page__text">
           <p v-html="markup(block.text)"></p>
         </div>
         <PatternBox
@@ -31,6 +35,19 @@
           :layout="block.layout || 'pairs'"
           :key-prefix="`${partIdx}-${idx}`"
         />
+        <div
+          v-else-if="block.type === 'note' && lesson && block.variant === 'important'"
+          class="lesson__info-box"
+        >
+          <BaseIcon name="info" />
+          <div class="lesson__info-content">
+            <p class="lesson__info-text">{{ $localized(block.text) }}</p>
+          </div>
+        </div>
+        <div v-else-if="block.type === 'note' && lesson" class="lesson__note">
+          <BaseIcon name="info" />
+          <p>{{ $localized(block.text) }}</p>
+        </div>
         <NoteBox
           v-else-if="block.type === 'note'"
           :kind="block.variant === 'small' ? 'small' : idx === 0 ? 'section' : 'after'"
@@ -64,13 +81,27 @@
             }))
           "
         />
+        <SoundCards
+          v-else-if="block.type === 'sounds'"
+          :items="soundItems(block)"
+          :color="block.color || 'primary'"
+          :wide="block.wide"
+        />
         <p v-else-if="isDev" class="section-page__unknown">
           Bloque desconocido: «{{ block.type }}» (añade su componente en SectionPage.vue)
         </p>
       </template>
-    </section>
+    </component>
 
-    <div class="section-page__navigation">
+    <nav v-if="lesson" class="lesson__nav">
+      <SectionNavFooter
+        :prev="navLink('prev')"
+        :next="navLink('next')"
+        look="lesson"
+        :color="content.color || 'primary'"
+      />
+    </nav>
+    <div v-else class="section-page__navigation">
       <SectionNavFooter :prev="navLink('prev')" :next="navLink('next')" look="buttons" />
     </div>
   </div>
@@ -87,6 +118,9 @@ import PracticeList from '@/components/blocks/PracticeList.vue'
 import CheckList from '@/components/blocks/CheckList.vue'
 import SectionLinks from '@/components/blocks/SectionLinks.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
+import SoundCards from '@/components/blocks/SoundCards.vue'
+import ContentSection from '@/components/content/ContentSection.vue'
+import BaseIcon from '@/components/common/BaseIcon.vue'
 import { inlineMarkup } from '@/utils/inlineMarkup'
 
 /** Every section file, keyed by its path: { 'ch-3/adjectives-intro': {…}, … } */
@@ -118,6 +152,11 @@ const LEXICON = Object.assign(
  * its look: none (plain), "box" (grey box), "highlight" (blue box). The blocks after the heading
  * are drawn by the components of src/components/blocks/. An unknown block type shows a red
  * warning during `npm run serve` and nothing on the published site.
+ * Two frames, chosen by the file's "layout":
+ *   "article" (default)  title on top, parts as plain/box/highlight sections (chapter 3)
+ *   "lesson"             chapter-1 look: each part is a ContentSection (title underlined), no page
+ *                        title on top, coloured buttons at the bottom; "color": "secondary" on the
+ *                        file switches the theme colour.
  * The noun classes use NounClassPage.vue (same blocks, the green noun-class frame).
  * Guide: docs/CONTENT-GUIDE.md
  */
@@ -133,7 +172,10 @@ export default {
     PracticeList,
     CheckList,
     SectionLinks,
-    SectionNavFooter
+    SectionNavFooter,
+    SoundCards,
+    ContentSection,
+    BaseIcon
   },
   props: {
     /** Path of the section file under src/data/sections, without .json */
@@ -146,12 +188,20 @@ export default {
     content() {
       return SECTION_FILES[this.section]
     },
+    lesson() {
+      return this.content.layout === 'lesson'
+    },
     /** The blocks grouped by heading: [{ title, style, blocks: [...] }] */
     pageSections() {
       const parts = []
       for (const block of this.content.blocks) {
         if (block.type === 'heading') {
-          parts.push({ title: this.$localized(block.text), style: block.style, blocks: [] })
+          parts.push({
+            id: block.id,
+            title: block.text ? this.$localized(block.text) : null,
+            style: block.style,
+            blocks: []
+          })
         } else {
           if (!parts.length) parts.push({ title: null, style: null, blocks: [] })
           parts[parts.length - 1].blocks.push(block)
@@ -169,6 +219,21 @@ export default {
     }
   },
   methods: {
+    /** Attributes of a part: a ContentSection (lesson) or a <section> (article). */
+    partAttributes(part) {
+      if (this.lesson) return { id: part.id, title: part.title }
+      return { class: ['section-page__part', part.style && `section-page__part--${part.style}`] }
+    },
+    soundItems(block) {
+      return block.items.map((item) => ({
+        label: item.label,
+        soundsLike: this.$localized(item.soundsLike),
+        examples: (item.examples || []).map((example) => ({
+          word: example.word,
+          meaning: example.meaning ? this.$localized(example.meaning) : null
+        }))
+      }))
+    },
     markup(text) {
       return inlineMarkup(this.$localized(text))
     },
@@ -291,6 +356,69 @@ export default {
     padding: 1rem;
     border: 2px dashed #c0392b;
     color: #c0392b;
+  }
+}
+
+// The "lesson" frame (chapter-1 pages)
+.lesson {
+  padding: $spacing-xl 0;
+
+  &__intro {
+    @include body-text;
+    font-size: $font-size-lg;
+    color: $color-text-secondary;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__note {
+    display: flex;
+    gap: $spacing-md;
+    padding: $spacing-lg;
+    background: rgba($color-info, 0.05);
+    border-left: 4px solid $color-info;
+    border-radius: 8px;
+    margin-top: $spacing-lg;
+
+    p {
+      @include body-text;
+      font-size: $font-size-sm;
+      margin: 0;
+      line-height: $line-height-loose;
+    }
+  }
+
+  &__info-box {
+    display: flex;
+    gap: $spacing-md;
+    padding: $spacing-lg;
+    background: rgba($color-accent, 0.08);
+    border-left: 4px solid $color-accent;
+    border-radius: 8px;
+  }
+
+  &__info-content {
+    flex: 1;
+  }
+
+  &__info-text {
+    @include body-text;
+    font-size: $font-size-sm;
+    margin: 0;
+    line-height: $line-height-loose;
+    color: $color-text-primary;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-lg;
+    margin-top: $spacing-xl;
+    padding-top: $spacing-lg;
+    border-top: 2px solid $border-color;
+
+    @include respond-below('sm') {
+      flex-direction: column;
+    }
   }
 }
 </style>

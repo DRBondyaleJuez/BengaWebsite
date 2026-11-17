@@ -1,0 +1,192 @@
+{
+  "id": "ch1-diphthongs",
+  "chapter": 1,
+  "layout": "lesson",
+  "title": {
+    "es": "Los Diptongos",
+    "en": "Diphthongs",
+    "fr": "Les Diphtongues"
+  },
+  "nav": {
+    "prev": {
+      "to": "/capitulo-1/alfabeto",
+      "label": {
+        "es": "Alfabeto"
+      }
+    },
+    "next": {
+      "to": "/capitulo-1/triptongos",
+      "label": {
+        "es": "Triptongos"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "diphthongs-intro",
+      "text": {
+        "es": "Diptongos"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Podemos combinar dos vocales anteriormente descritas para formar diptongos. Algunos de los comunes en Benga son los siguientes:."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "simple-diphthongs"
+    },
+    {
+      "type": "sounds",
+      "items": [
+        {
+          "label": "ai",
+          "soundsLike": {
+            "es": "ai como en 'gaita'",
+            "en": "ai in aisle",
+            "fr": "aille dans paille"
+          },
+          "examples": [
+            {
+              "word": "tekai",
+              "meaning": {
+                "es": "cáscara"
+              }
+            }
+          ]
+        },
+        {
+          "label": "au",
+          "soundsLike": {
+            "es": "au como en 'causa'",
+            "en": "ow in bow",
+            "fr": "au dans cause"
+          },
+          "examples": [
+            {
+              "word": "au",
+              "meaning": {
+                "es": "pronombre y signo negativo"
+              }
+            }
+          ]
+        },
+        {
+          "label": "iu",
+          "soundsLike": {
+            "es": "iu como en 'ciudad'",
+            "en": "ew in few",
+            "fr": "ieu dans dieu"
+          },
+          "examples": [
+            {
+              "word": "viu",
+              "meaning": {
+                "es": "obscuridad"
+              }
+            }
+          ]
+        },
+        {
+          "label": "oi",
+          "soundsLike": {
+            "es": "oi como en 'boina'",
+            "en": "oy in boy",
+            "fr": "oi dans voix"
+          },
+          "examples": [
+            {
+              "word": "mboi",
+              "meaning": {
+                "es": "miel"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūa",
+          "soundsLike": {
+            "es": "úa como 'puas'",
+            "en": "wa in water",
+            "fr": "oua dans pouah"
+          },
+          "examples": [
+            {
+              "word": "mūana",
+              "meaning": {
+                "es": "niño, hijo"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūe",
+          "soundsLike": {
+            "es": "úe en 'acentiúe'",
+            "en": "we in wet",
+            "fr": "ue dans gueule"
+          },
+          "examples": [
+            {
+              "word": "babūe",
+              "meaning": {
+                "es": "inteligible"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūâ",
+          "soundsLike": {
+            "es": "uo como en 'cuota'",
+            "en": "wa in wand",
+            "fr": "oua dans guano"
+          },
+          "examples": [
+            {
+              "word": "ūâūâ",
+              "meaning": {
+                "es": "aprisa, pronto"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūē",
+          "soundsLike": {
+            "es": "ue en 'cueva'",
+            "en": "we in well",
+            "fr": "ue dans pluie"
+          },
+          "examples": [
+            {
+              "word": "hūē",
+              "meaning": {
+                "es": "nosotros"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūi",
+          "soundsLike": {
+            "es": "ui en 'cuita'",
+            "en": "ui in suite",
+            "fr": "ui dans fruit"
+          },
+          "examples": [
+            {
+              "word": "mūidi",
+              "meaning": {
+                "es": "banco, margen"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

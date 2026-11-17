@@ -267,7 +267,8 @@
         </section>
       </div>
 
-      <router-view v-else />
+      <!-- key: every section gets a fresh page, even when two sections share SectionPage.vue -->
+      <router-view v-else :key="$route.path" />
     </div>
   </div>
 </template>

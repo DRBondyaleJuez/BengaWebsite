@@ -20,7 +20,8 @@ import chaptersIndex from '@/data/chapters-index.json'
  * their sidebar titles. Put it inside the page's nav container (e.g. <section class="noun-class__nav">).
  *
  * look="bar" (default): two wide coloured bars (noun classes) ·
- * look="buttons": a grey "back" button and a coloured "next" button (chapter-3 pages).
+ * look="buttons": a grey "back" button and a coloured "next" button (chapter-3 pages) ·
+ * look="lesson": two coloured buttons at the ends (chapter-1 pages); `color` primary/secondary.
  */
 export default {
   name: 'SectionNavFooter',
@@ -32,14 +33,20 @@ export default {
     look: {
       type: String,
       default: 'bar',
-      validator: (value) => ['bar', 'buttons'].includes(value)
-    }
+      validator: (value) => ['bar', 'buttons', 'lesson'].includes(value)
+    },
+    /** look="lesson" only: primary or secondary colour. */
+    color: { type: String, default: 'primary' }
   },
   computed: {
     classes() {
-      return this.look === 'buttons'
-        ? { prev: 'nav-button nav-button--back', next: 'nav-button nav-button--next' }
-        : { prev: 'nav-link prev', next: 'nav-link next' }
+      if (this.look === 'buttons')
+        return { prev: 'nav-button nav-button--back', next: 'nav-button nav-button--next' }
+      if (this.look === 'lesson') {
+        const base = `lesson-link lesson-link--${this.color}`
+        return { prev: `${base} lesson-link--prev`, next: `${base} lesson-link--next` }
+      }
+      return { prev: 'nav-link prev', next: 'nav-link next' }
     },
     /** Every section of every chapter, in reading order. */
     neighbours() {
@@ -111,6 +118,60 @@ export default {
 
     &:hover {
       background-color: $color-primary-dark;
+    }
+  }
+}
+
+.lesson-link {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-lg;
+  color: $color-text-inverse;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: $font-weight-semibold;
+  transition: all $transition-base;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &--primary {
+    background: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background: $color-primary-dark;
+      border-color: $color-primary-dark;
+      box-shadow: 0 4px 12px rgba($color-primary, 0.3);
+    }
+  }
+
+  &--secondary {
+    background: $color-secondary;
+    border: 2px solid $color-secondary;
+
+    &:hover {
+      background: $color-secondary-dark;
+      border-color: $color-secondary-dark;
+      box-shadow: 0 4px 12px rgba($color-secondary, 0.3);
+    }
+  }
+
+  &--prev {
+    justify-self: flex-start;
+
+    @include respond-below('sm') {
+      justify-self: auto;
+    }
+  }
+
+  &--next {
+    justify-self: flex-end;
+
+    @include respond-below('sm') {
+      justify-self: auto;
     }
   }
 }

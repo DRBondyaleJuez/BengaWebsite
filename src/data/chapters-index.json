@@ -18,13 +18,13 @@
           "id": "diphthongs",
           "path": "/capitulo-1/diptongos",
           "titleKey": "chapters.chapter1.sections.diphthongs",
-          "component": "chapter-1/DiphthongsSection.vue"
+          "sectionFile": "sections/ch-1/diphthongs.json"
         },
         {
           "id": "triphthongs",
           "path": "/capitulo-1/triptongos",
           "titleKey": "chapters.chapter1.sections.triphthongs",
-          "component": "chapter-1/TriphthongsSection.vue"
+          "sectionFile": "sections/ch-1/triphthongs.json"
         },
         {
           "id": "consonants",
