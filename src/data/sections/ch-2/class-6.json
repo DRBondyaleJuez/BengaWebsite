@@ -1,0 +1,153 @@
+{
+  "id": "ch2-noun-class-6",
+  "chapter": 2,
+  "title": {
+    "es": "Sexta Clase Nominal"
+  },
+  "subtitle": {
+    "es": "v → l"
+  },
+  "source": {
+    "pdfPage": "12-13"
+  },
+  "nav": {
+    "prev": {
+      "to": "/capitulo-2/clase-5",
+      "label": {
+        "es": "Clase 5"
+      }
+    },
+    "next": {
+      "to": "/capitulo-2/clase-7",
+      "label": {
+        "es": "Séptima Clase"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "v-",
+      "to": "l-",
+      "description": {
+        "es": "La sexta clase muestra un cambio consonántico por el cual la fricativa inicial cambia al plural por l-."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos Principales"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "veya",
+        "vijo",
+        "vi_a_",
+        "viho",
+        "vilolombo",
+        "vingangambi",
+        "vingunguhu",
+        "vipupuhu",
+        "vit_u_a",
+        "viyonda",
+        "viyembo"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Cambio consonántico"
+          },
+          "text": {
+            "es": "La clase 6 es especialmente interesante porque el cambio ocurre en la consonante inicial."
+          }
+        },
+        {
+          "title": {
+            "es": "v → l"
+          },
+          "text": {
+            "es": "El patrón v- en singular se transforma por l- en plural con cierta regularidad."
+          }
+        },
+        {
+          "title": {
+            "es": "Observación"
+          },
+          "text": {
+            "es": "Algunos ejemplos muestran alternancias adicionales dentro de la raíz, pero la lógica principal es clara."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "exceptions",
+      "text": {
+        "es": "Excepciones"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la segunda clase (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta sexta clase."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["viaha", "vianga", "viyohi"]
+    },
+    {
+      "type": "note",
+      "variant": "small",
+      "text": {
+        "es": "En la segunda clase se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta sexta clase."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["in_a_ni", "iboko", "ikadada"]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Identifica la consonante inicial de cada sustantivo y luego busca el plural."
+        },
+        {
+          "es": "Prueba sustituir v- por l- antes de mirar la respuesta."
+        },
+        {
+          "es": "Repite los ejemplos orales para acostumbrarte a la forma plural."
+        }
+      ]
+    }
+  ]
+}
