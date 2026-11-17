@@ -42,12 +42,10 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - In the browser console the app is at `document.getElementById('app').__vue_app__` (Vue 2's `__vue__` no longer exists).
 
 ### Noun Class Page Format
-- All noun-class view pages should follow the same structural pattern as the first reference component: a root container using the `noun-class` BEM block, then sections ordered as `__header`, `__pattern`, `__examples`, `__variants`, `__concepts`, `__practice`, and `__nav`.
-- The class pages should remain visually aligned with `NounClass1.vue` as the reference standard: green gradient header, centered pattern transformation box, example cards with a singular/plural split, clearly styled section headings, and a consistent two-button navigation footer.
-- Reuse the same SCSS patterns from the first noun-class component: `@import '@/styles/variables'; @import '@/styles/mixins';`, BEM naming, `pattern-box`, `example-card`, `concept-item`, and responsive layout rules via `@include respond-below('md')`.
-- Avoid the old shorthand classes like `nc`, `h`, `pb`, `eg`, `b` and instead use the full `noun-class` BEM naming system across all noun-class pages. This keeps them consistent and easier to maintain.
-- The goal is visual similarity across all chapter-2 nominal-class views, so changes to spacing, color, typography, and card styling should be applied uniformly rather than re-designed per page.
-- When a class has exceptions, add a dedicated `noun-class__exceptions` section styled with `.section-note` (and `.example-note` when a clarifying remark is needed), and include its BEM selector in the shared `&__examples, &__variants, &__exceptions` SCSS block so the cards look identical to the main ones.
+- The seven noun classes are ONE page, `src/views/chapter-2/NounClassPage.vue`, drawn from `src/data/sections/ch-2/class-N.json` (the router passes `section: 'class-N'`). To change a class page, edit its JSON; to change how something looks, edit the block component in `src/components/blocks/` — every class changes together. Guide: `docs/CONTENT-GUIDE.md` → "How a page groups the blocks".
+- Page structure: green gradient `noun-class__header`, then one `<section class="noun-class__<id>">` per `heading` block (`pattern`, `examples`, `variants`, `concordance`, `concepts`, `exceptions`, `liquids`, `class-six`, `practice`), then the two-button `noun-class__nav`.
+- Example cards take lexicon ids (`"entries": ["epokolo"]`) from `lexicon/nouns.json`; never copy words or meanings into the section file. Exceptions go in an `exceptions` part: a note right after the heading (yellow `.section-note`), the examples, and optionally a `"variant": "small"` note (`.example-note`).
+- Keep BEM naming and the shared blocks; don't restyle one class on its own.
 
 ### Source of Truth: Salvado y Cos Grammar
 - The authoritative text is `public/downloads/salvado-y-cos-gramatica-benga.pdf` (a searchable scan, so its text layer has OCR damage; it is also the file visitors download from the site's "Descargar PDF" links). Book page numbers are offset from PDF page numbers; map them before extracting:
@@ -85,13 +83,13 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 ### Content Model (lexicon, sections, exercises)
 - Rules: JSON Schemas in `src/data/schemas/` (`common`, `lexicon`, `section`, `exercise`, `chapters-index`), with correct examples in `src/data/schemas/examples/`. Human guide with recipes: `docs/CONTENT-GUIDE.md`.
 - **Lexicon** (`src/data/lexicon/<kind>.json`; `nouns.json` exists since task 2.4): every Benga word once, as `{ "entries": { <id>: entry } }`. The id is `toAudioId(base form)` (singular for nouns, else `word`), plus `~2` for homonyms. Entries never contain audio ids or links.
-- **Sections** (`src/data/sections/ch-N/*.json`, from Phase 3): one page = `title` + ordered `blocks` (`heading`, `paragraph`, `pattern`, `examples`, `table`, `note`, `concepts`, `practice`, `conjugation`, `dialogue`, `vocabulary`). Blocks refer to lexicon entries by id instead of copying words.
+- **Sections** (`src/data/sections/ch-N/*.json`; noun classes 1-7 since task 3.4): one page = `title` + ordered `blocks` (`heading`, `paragraph`, `pattern`, `examples`, `table`, `note`, `concepts`, `practice`, `conjugation`, `dialogue`, `vocabulary`). Blocks refer to lexicon entries by id instead of copying words.
 - Every visitor-facing text is `{ "es": …, "en"?: …, "fr"?: … }` (Spanish required). Benga words are plain strings.
 - Show such texts in templates with `$localized(text)` (global, defined in `src/main.js`; rule in `src/utils/localized.js`). Never write `text[$i18n.locale] || text.es` again.
 - Unreadable meaning → `"meaning": null`; corrections or additions → `"editorial": { "status": "corrected" | "added", ... }` (never silently change book content).
 - When changing a schema: update its example, `docs/CONTENT-GUIDE.md` and the tests in `scripts/tests/schemas.test.mjs`, then run `npm test`.
 - `npm run validate` checks all content (schemas, ids, references, registry, orthography). Its checks are in `scripts/lib/validate.mjs`, each with a test in `scripts/tests/validate.test.mjs`; add a test when adding a check.
-- **Nouns:** `src/data/lexicon/nouns.json` is the source of truth (the practice game reads it through `src/services/nouns.js`). The noun pages still show their own `data()` copies until Phase 3, so a noun correction goes into **both** `nouns.json` and the page. `scripts/extract-ch2.mjs` was a one-time migration; don't run it again.
+- **Nouns:** `src/data/lexicon/nouns.json` is the source of truth: the noun-class pages and the practice game read it. Only `IrregularNouns.vue` and `VerbalNouns.vue` still have their own `data()` copies, so a correction to one of their words goes into **both** `nouns.json` and that page. `scripts/extract-ch2.mjs` was a one-time migration; don't run it again.
 - Until content is migrated (tasks 2.4-2.6, Phase 3), the existing chapter files keep their old shapes; don't mix the two in one file.
 
 ### Word Registry (audio and dictionary links)
@@ -195,6 +193,8 @@ benga-grammar-website/
 │   │   │   ├── nouns.json          # Chapter-2 nouns (lexicon schema): source of truth since task 2.5
 │   │   │   ├── word-registry.json  # One entry per Benga word: dictionary id, audio state, notes
 │   │   │   └── word-usage.json     # GENERATED by words:sync (spellings + files per word)
+│   │   ├── sections/
+│   │   │   └── ch-2/class-1.json … class-7.json   # Noun-class pages (section schema, words by lexicon id)
 │   │   ├── chapters-index.json  # Sidebar/navigation metadata
 │   │   ├── author-info.json     # AboutAuthor page content
 │   │   ├── chapter-1/           # alphabet, diphthongs, triphthongs, consonants (.json)
@@ -233,7 +233,7 @@ benga-grammar-website/
 │       ├── chapter-2/
 │       │   ├── ChapterTwoIndex.vue
 │       │   ├── NounsIntro.vue
-│       │   ├── NounClass1.vue … NounClass7.vue   # Content lives in each data() block
+│       │   ├── NounClassPage.vue   # The 7 noun classes, drawn from data/sections/ch-2/class-N.json
 │       │   ├── IrregularNouns.vue
 │       │   ├── VerbalNouns.vue
 │       │   └── NounPracticeGame.vue
@@ -269,7 +269,6 @@ benga-grammar-website/
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.
 - `PageLayout`, `BaseButton`, `BaseCard` → reusable blocks [later, when a page needs them] (`SectionNav` = `blocks/SectionNavFooter.vue`)
-- `NounClassCard` → generic noun-class page [task 3.4]
 - `QuizCard`, `FlashCard` (`components/interactive/`) → exercise engine [Phase 8]
 - `VowelChart` interactive vowel chart for chapter 1 [Phase 8]
 - SVG icon files `audio-play.svg`, `audio-pause.svg`, `external-link.svg` (icons are currently inline in `BaseIcon.vue`) [Phase 3, optional]

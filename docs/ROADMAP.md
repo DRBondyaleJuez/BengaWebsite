@@ -286,7 +286,8 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.3.x: extract `<name>` from `NounClass1.vue` (the visual reference) into `src/components/blocks/<Name>.vue` with props + slots, BEM, `@include respond-below('md')`. Use it in NounClass1 only; page must look identical."
   - **Commit:** `feat(blocks): add <Name> component`
 
-- [ ] **3.4 One generic noun-class page**
+- [x] **3.4 One generic noun-class page**
+  - **Done 2026-11-17:** `NounClassPage.vue` + `sections/ch-2/class-1.json … class-7.json` (generated from the old pages, words as lexicon ids); the seven `NounClassN.vue` files (≈4 000 lines) are deleted. Every class page is identical to before (automatic comparison at 1280 px and 420 px).
   - **Why:** P3 — 7 files × ~550 lines → 1 file + 7 JSON files.
   - Subtasks: 3.4.1 create `NounClassPage.vue` reading `sections/ch-2/class-N.json`; 3.4.2–3.4.8 switch class 1…7 one at a time and delete the old file.
   - **Prompt:** "Task 3.4.N: migrate noun class N to `NounClassPage` + `sections/ch-2/class-N.json` (exceptions section included). Compare old and new page side by side before deleting `NounClassN.vue`."
