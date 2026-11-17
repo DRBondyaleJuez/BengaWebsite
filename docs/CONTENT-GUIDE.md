@@ -209,6 +209,8 @@ sections/ch-2/class-1.json                     what the visitor sees
 | `vocabulary` | word list | `entries` (lexicon ids) | «Vocabulario» pages |
 | `links` | numbered «go to» list | `items` [{title, text, to}] | «Secciones del Capítulo» |
 | `checklist` | points with ✓ | `items` [text] | «Puntos Clave a Recordar» |
+| `sounds` | one card per sound | `items` [{label, soundsLike, note?, examples?}], `color`, `labelSize` | diphthongs, triphthongs, consonants |
+| `soundGroups` | letter group + pronunciation + examples | `items` [{label, pronunciation, examples}] | consonant combinations |
 
 `examples.layout`: `pairs` (singular + plural, default), `single`, `plural-only` (badge «Solo plural»).
 Every block may also have `id` (anchor), `source` and `editorial`.
@@ -220,6 +222,10 @@ Every block may also have `id` (anchor), `source` and `editorial`.
   A `heading` may have `"style": "box"` (grey box) or `"highlight"` (light-blue box) for its part.
   Paragraph texts may use `**bold**` (nothing else: HTML is shown as text).
   `"look": "cards"` on `concepts` gives white cards with an `example` per item.
+- `"layout": "lesson"` (chapter 1) draws the parts as underlined sections with no page title on top
+  (the first heading is the title) and coloured buttons at the bottom (`"color"`: `primary`,
+  `secondary`, `accent`). Notes in a lesson: `info` (blue box), `important` (yellow box),
+  `rule` (yellow box with space below). A `heading` without `text` makes a part with no title.
 - The route is generated from `chapters-index.json` (`"sectionFile"`); a file with
   `"layout": "noun-class"` is drawn by NounClassPage.vue.
 

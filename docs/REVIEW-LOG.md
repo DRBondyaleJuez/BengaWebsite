@@ -32,6 +32,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-021](#r-021) | 🟢 | 2.4.2 | Chapter-2 nouns that don't match the book text | done |
 | [R-022](#r-022) | 🟢 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | done |
 | [R-023](#r-023) | 🔴 | OCR | 2 882 words of the new OCR the computer is not sure about | little by little (per chapter, Phase 6) |
+| [R-024](#r-024) | 🟢 | 3.5, 3.7 | Links to pages that don't exist (chapter-3 intro, diphthongs) | done (check) |
+| [R-025](#r-025) | 🟢 | 3.6 | Browser-tab title showed the previous page's title | done (check) |
+| [R-026](#r-026) | 🔴 | 3.2 | The sidebar covers the left edge of the content on medium screens | Phase 9 (or any time) |
+| [R-027](#r-027) | 🔴 | 3.4 | Class 2 page shows «Conceptos Clave» twice | any time |
+| [R-028](#r-028) | 🔴 | 3.7 | Alphabet page and chapter-3 pages are not section files yet | your decision |
+| [R-029](#r-029) | 🔴 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | any time |
 
 ---
 
@@ -281,6 +287,60 @@ Go through them every few tasks, decide, and fill in **Resolution**.
   
   Examples from PDF p. 9: `Bralo`, `Binmbe`, `Yzjá` (= *Yējâ*), `Makeéliné` (= *Makēlinē*), `Jtúndé` (= *Itândē*). Also known: the OCR often confuses `â` and `ū` on the noun lists (`Yákú` for *Yâkâ*).
 - **Suggestion:** Don't go through the whole list now. When a roadmap task works on a section (Phase 6 recipe, numerals task 6.0a), filter the CSV by its PDF pages and check those words against the scan. Each word added to the lexicon also improves the next OCR run (`python scripts/ocr-pdf.py --reuse` re-applies the rules in seconds).
+- **Resolution:**
+
+### R-024
+**Links to pages that don't exist (chapter-3 intro, diphthongs)**
+- **Status:** 🟢 Resolved (please check)
+- **Found in:** 3.5 and 3.7 (moving the pages to section files)
+- **Where:** `/capitulo-3/introduccion` → «Secciones del Capítulo», four «Aprende más →» links · `/capitulo-1/diptongos` → button «← Alfabeto»
+- **Doubt:** The chapter-3 links went to `/capitulo-3/variable-adjectives`, `/invariable-adjectives`, `/comparatives-superlatives`, `/numeral-adjectives`, and the diphthongs button to `/capitulo-1/vocales`. None of these addresses exists, so visitors landed on the home page.
+- **Suggestion:** Point them to the real pages.
+- **Resolution:** 2026-11-17 · Fixed while moving the content: `/capitulo-3/adjetivos-regulares`, `/adjetivos-invariables`, `/comparativos-superlativos`, `/numerales-ordinales`, and `/capitulo-1/alfabeto` (in `sections/ch-3/adjectives-intro.json` and `sections/ch-1/diphthongs.json`). Nothing visible changed except where the links go. · commits `feat(sections): add generic block-based section page`, `refactor(ch1): move diphthongs and triphthongs to section files`
+
+### R-025
+**Browser-tab title showed the previous page's title**
+- **Status:** 🟢 Resolved (please check)
+- **Found in:** 3.6 (the page comparison also compares the tab title)
+- **Where:** pages that don't set `document.title`: the chapter-1 sections, the chapter-3 index and sections (e.g. `/capitulo-3/numerales-ordinales` showed «Nombres Derivados | Portal Benga»)
+- **Doubt:** The tab title kept whatever the previous page had set.
+- **Suggestion:** Fall back to the section's sidebar title.
+- **Resolution:** 2026-11-17 · `App.vue` sets «<sidebar title> | Portal Benga» on every route change (from `chapters-index.json`); pages that set their own title still win. Left as is: when a chapter-1 section is opened directly by URL, the chapter index page (`ChapterOneIndex.vue`) sets «Capítulo 1: Lecciones Preliminares» after it. · commit `refactor(router): generate routes from chapters index`
+
+### R-026
+**The sidebar covers the left edge of the content on medium screens**
+- **Status:** 🔴 Open
+- **Found in:** 3.2 (screenshots at 1280 px wide)
+- **Where:** `src/App.vue` (`.app__main`: centred with `margin: 0 auto`) and `src/components/layout/AppSidebar.vue` (`position: fixed`, 280 px wide)
+- **Doubt:** The content is centred in the whole window and doesn't leave room for the fixed sidebar, so between roughly 900 and 1500 px wide the sidebar hides the first ~130 px of every page (e.g. the start of the chapter-3 texts). Same before this phase (it dates from the first commit).
+- **Suggestion:** Give `.app__main` a left margin equal to the sidebar width when the sidebar is fixed (desktop), or centre it in the remaining space. A one-file CSS fix; it changes how every page sits, so check it on a few widths.
+- **Resolution:**
+
+### R-027
+**Class 2 page shows «Conceptos Clave» twice**
+- **Status:** 🔴 Open
+- **Found in:** 3.4 (generating `sections/ch-2/class-2.json` from the old page)
+- **Where:** `src/data/sections/ch-2/class-2.json` (two `heading` blocks with `id: concepts`, the same three cards) · `/capitulo-2/clase-2`
+- **Doubt:** The same three concept cards appear before «Excepciones» and again after the class-6 exception. It was like this in the old `NounClass2.vue`; I kept it so the page stays identical.
+- **Suggestion:** Delete the second «Conceptos Clave» heading and its `concepts` block (the one after `class-six`).
+- **Resolution:**
+
+### R-028
+**Alphabet page and chapter-3 pages are not section files yet**
+- **Status:** 🔴 Open
+- **Found in:** 3.7
+- **Where:** `src/views/chapter-1/AlphabetSection.vue` + `src/data/chapter-1/alphabet.json` · `src/views/chapter-3/RegularAdjectivesSection.vue`, `InvariableAdjectivesSection.vue`, `ComparativesSuperlativesSection.vue` (+ their `chapter-3/*.json`)
+- **Doubt:** Task 3.7 asked for these pages as section files. Done: diphthongs, triphthongs, consonants (section files) and the two adjective pages now read the lexicon. Not done: the alphabet page has six designs used nowhere else (letter list, vowel tags, vowel cards with a «larga» badge, the special letter y with word groups, note cards); as section files they would need six single-use block types. The chapter-3 pages are in the same situation (inflection cards, concordance tables, comparison tables).
+- **Suggestion:** Keep them as page components for now (they already take their words from the lexicon where it matters) and convert each one when its chapter is reviewed in Phase 6 (6.1 chapter 1, 6.3 chapter 3), so the new blocks are designed together with the new content. Alternatively I can convert them now, at the cost of ~10 new block components.
+- **Resolution:**
+
+### R-029
+**Chapter-3 introduction: `ña` uses ñ, and small Spanish typos**
+- **Status:** 🔴 Open
+- **Found in:** 3.5 (moving the text to `sections/ch-3/adjectives-intro.json`)
+- **Where:** `src/data/sections/ch-3/adjectives-intro.json` · `/capitulo-3/introduccion`
+- **Doubt:** «Comparativos y Superlativos» says the Benga use «palabras específicas como 'kebaka' (sobresalir) y 'ña' (exceder)»: `ñ` is not a Benga letter (AGENTS.md → Orthography), so `ña` is probably an OCR reading of another word. Also «en este capitulo» (capítulo) and «se apoyaran» (apoyarán) in the overview paragraph.
+- **Suggestion:** Check `ña` in the comparatives section of the book (PDF ~p. 19, now searchable in the IMPROVED PDF) and fix the two accents.
 - **Resolution:**
 
 ---

@@ -305,7 +305,9 @@ Branch: `refactor/blocks`
   - **Prompt:** "Task 3.6: generate routes from `chapters-index.json` (each section names either a `component` or a `sectionFile`), so the sidebar, routes and prev/next buttons share one source. Keep all current URLs."
   - **Commit:** `refactor(router): generate routes from chapters index`
 
-- [ ] **3.7 Chapters 1 and 3 as section files** *(moved here from task 2.6, REVIEW-LOG R-022)*
+- [x] **3.7 Chapters 1 and 3 as section files** *(moved here from task 2.6, REVIEW-LOG R-022)*
+  - **Done 2026-11-17 (mostly):** 3.7.1 diphthongs, triphthongs and consonants are section files (`sections/ch-1/*.json`, `"layout": "lesson"` of `SectionPage`, new blocks `SoundCards` and `SoundGroups`); 3.7.2 the regular and invariable adjective pages read `lexicon/adjectives.json` and compute the «noun + adjective» forms (`src/utils/concord.js`, tested). All identical to before.
+  - **Left open (REVIEW-LOG R-028):** the alphabet page (it would need ~6 blocks used by no other page) and turning the chapter-3 pages themselves (regular, invariable, comparatives) into section files.
   - **Why:** these pages are custom designs; they can only become section files once the block components (3.3) and `SectionPage` (3.5) exist. Convert each page together with the blocks that draw it (new block types if needed, e.g. a `sound-list` for vowels and diphthongs).
   - Subtasks: 3.7.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 3.7.2 chapter-3 adjective pages, reading `lexicon/adjectives.json` (forms of regular variable adjectives = class prefix + stem).
   - **Prompt:** "Task 3.7.x: move <page> to `sections/ch-N/<name>.json` drawn by `SectionPage`. Pages must look identical — compare before/after screenshots. Delete the old `src/data/chapter-N/<name>.json`."
