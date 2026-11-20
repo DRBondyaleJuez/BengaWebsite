@@ -2,6 +2,9 @@
  * Reads and writes docs/ocr/ocr-corrections.json: the corrections a person typed in /admin/ocr.
  * python scripts/ocr-pdf.py --reuse applies them to the text layer of the improved PDF.
  *
+ * "discard": true = not a word (stain, ornament, page number…): left out of the text layer and of
+ * the doubts list.
+ *
  *   { "corrections": { "p19-w156": { "pdfPage": 19, "ocr": "ña", "correction": "ūa",
  *                                    "comment": "…", "box": [556, 506, 575, 517], "updated": "2026-11-20" } } }
  *
@@ -22,14 +25,16 @@ function clean(corrections) {
   for (const [id, entry] of Object.entries(corrections)) {
     const match = ID.exec(id)
     if (!match) throw new Error(`Bad id "${id}" (expected p<page>-w<number>)`)
-    const correction = String(entry.correction || '').trim()
+    const discard = entry.discard === true
+    const correction = discard ? '' : String(entry.correction || '').trim()
     const comment = String(entry.comment || '').trim()
-    if (!correction && !comment) continue
+    if (!correction && !comment && !discard) continue
     out[id] = {
       pdfPage: Number(match[1]),
       ocr: String(entry.ocr || ''),
       correction,
       comment,
+      ...(discard ? { discard: true } : {}),
       ...(Array.isArray(entry.box) ? { box: entry.box.map(Number) } : {}),
       updated: entry.updated || new Date().toISOString().slice(0, 10)
     }

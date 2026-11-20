@@ -52,6 +52,9 @@ published site):
   in red (other doubtful words of the page in yellow). Zoom with − / +.
 - Type the right form in **Corrección** (buttons `â ē ū Â Ē Ū` write those letters at the
   cursor) and a **Comentario** if useful, then **Guardar cambios**.
+- If it is **not a word** (a stain, an ornament, a page number…), tick **No es una palabra**: it is
+  saved as `"discard": true`, left out of the PDF's text layer and dropped from the doubts list
+  (the page keeps showing it under «Descartadas» so you can undo it).
 - Corrections are saved in `docs/ocr/ocr-corrections.json` (key = word id, e.g. `p19-w156`).
   To put them into the PDF's text layer: `python scripts/ocr-pdf.py --reuse` (seconds; it reuses
   the saved OCR in `.ocr-cache/`). If the PDF is open in a viewer (Windows locks it), the new PDF

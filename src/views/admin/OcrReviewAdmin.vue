@@ -6,8 +6,9 @@
         Herramienta solo para desarrollo (no existe en la web publicada). Son las palabras del OCR
         mejorado del libro de las que el ordenador no está seguro
         (<code>docs/ocr/ocr-doubts.csv</code>). Pulsa el número de página para ver la palabra
-        marcada en el PDF, escribe la forma correcta y un comentario si hace falta, y guarda. Las
-        correcciones se guardan en
+        marcada en el PDF, escribe la forma correcta y un comentario si hace falta, y guarda. Si no
+        es una palabra (una mancha, un adorno, un número de página…), marca «No es una palabra»: se
+        quita del texto del PDF y de la lista de dudas. Las correcciones se guardan en
         <code>docs/ocr/ocr-corrections.json</code>; para aplicarlas al PDF:
         <code>python scripts/ocr-pdf.py --reuse</code>. Guía: <code>docs/OCR.md</code>
       </p>
@@ -17,6 +18,9 @@
         </li>
         <li>
           <strong>{{ stats.corrected }}</strong> corregidas
+        </li>
+        <li>
+          <strong>{{ stats.discarded }}</strong> descartadas (no son palabras)
         </li>
         <li>
           <strong>{{ stats.commented }}</strong> con comentario
@@ -51,11 +55,13 @@
         <option value="benga-accent">Probablemente benga (acentos dudosos)</option>
         <option value="unknown">Desconocidas</option>
         <option value="manual">Añadidas a mano</option>
+        <option value="discarded">No están en la lista (descartadas)</option>
       </select>
       <select v-model="statusFilter" class="ocr-admin__field" @change="listPage = 1">
         <option value="">Todas</option>
         <option value="pending">Sin corregir</option>
         <option value="corrected">Corregidas</option>
+        <option value="discarded">Descartadas (no son palabras)</option>
         <option value="changed">Sin guardar</option>
       </select>
       <button
@@ -89,6 +95,7 @@
               :key="row.id"
               :class="{
                 'ocr-admin__row--changed': isChanged(row),
+                'ocr-admin__row--discarded': row.discard,
                 'ocr-admin__row--selected': viewer && viewer.id === row.id
               }"
             >
@@ -121,10 +128,11 @@
                   class="ocr-admin__field ocr-admin__correction"
                   type="text"
                   lang="bng"
-                  :placeholder="row.written || row.ocr"
+                  :placeholder="row.discard ? 'No es una palabra' : row.written || row.ocr"
+                  :disabled="row.discard"
                   @focus="openViewer(row, false)"
                 />
-                <span class="ocr-admin__letters">
+                <span v-if="!row.discard" class="ocr-admin__letters">
                   <button
                     v-for="letter in LETTERS"
                     :key="letter"
@@ -137,6 +145,13 @@
                     {{ letter }}
                   </button>
                 </span>
+                <label
+                  class="ocr-admin__discard"
+                  title="Manchas, adornos, números de página…: se quita del texto del PDF y de la lista de dudas"
+                >
+                  <input v-model="row.discard" type="checkbox" />
+                  No es una palabra
+                </label>
               </td>
               <td>
                 <textarea
@@ -229,6 +244,15 @@ const ROWS_PER_PAGE = 25
 const LETTERS = ['â', 'ē', 'ū', 'Â', 'Ē', 'Ū']
 const SAVED_MESSAGE_KEY = 'ocr-admin-saved-message'
 
+/** What is saved for a row: compared with the fields to know whether it changed. */
+function savedState({ correction, comment, discard }) {
+  return {
+    correction: String(correction || '').trim(),
+    comment: String(comment || '').trim(),
+    discard: Boolean(discard)
+  }
+}
+
 /** pdf.js and the open document live outside Vue's reactivity (they are big objects). */
 let pdfjs = null
 let pdfDocument = null
@@ -258,7 +282,8 @@ export default {
         box: [line.x0, line.y0, line.x1, line.y1].map(Number),
         correction: saved.correction || '',
         comment: saved.comment || '',
-        saved: { correction: saved.correction || '', comment: saved.comment || '' }
+        discard: Boolean(saved.discard),
+        saved: savedState(saved)
       }
     })
     // Corrections of words that are not in the doubts list (added by hand, e.g. R-029)
@@ -271,11 +296,12 @@ export default {
         ocr: saved.ocr,
         written: '',
         confidence: '',
-        kind: 'manual',
+        kind: saved.discard ? 'discarded' : 'manual',
         box: saved.box || null,
         correction: saved.correction || '',
         comment: saved.comment || '',
-        saved: { correction: saved.correction || '', comment: saved.comment || '' }
+        discard: Boolean(saved.discard),
+        saved: savedState(saved)
       })
     }
     rows.sort((a, b) => a.page - b.page || a.id.localeCompare(b.id, 'en', { numeric: true }))
@@ -299,7 +325,8 @@ export default {
       kindLabels: {
         'benga-accent': 'probablemente benga',
         unknown: 'desconocida',
-        manual: 'añadida a mano'
+        manual: 'añadida a mano',
+        discarded: 'descartada: ya no está en la lista de dudas'
       }
     }
   },
@@ -309,8 +336,10 @@ export default {
       return this.rows.filter((row) => {
         if (this.pageFilter && row.page !== this.pageFilter) return false
         if (this.kindFilter && row.kind !== this.kindFilter) return false
-        if (this.statusFilter === 'pending' && row.saved.correction) return false
+        if (this.statusFilter === 'pending' && (row.saved.correction || row.saved.discard))
+          return false
         if (this.statusFilter === 'corrected' && !row.saved.correction) return false
+        if (this.statusFilter === 'discarded' && !row.saved.discard) return false
         if (this.statusFilter === 'changed' && !this.isChanged(row)) return false
         if (!text) return true
         return [row.ocr, row.written, row.correction, row.comment].some((value) =>
@@ -333,6 +362,7 @@ export default {
     stats() {
       return {
         corrected: this.rows.filter((row) => row.saved.correction).length,
+        discarded: this.rows.filter((row) => row.saved.discard).length,
         commented: this.rows.filter((row) => row.saved.comment).length
       }
     },
@@ -375,7 +405,9 @@ export default {
   methods: {
     isChanged(row) {
       return (
-        row.correction.trim() !== row.saved.correction || row.comment.trim() !== row.saved.comment
+        row.correction.trim() !== row.saved.correction ||
+        row.comment.trim() !== row.saved.comment ||
+        row.discard !== row.saved.discard
       )
     },
     /** Types â / ē / ū at the cursor of the row's correction field. */
@@ -457,14 +489,15 @@ export default {
       this.message = null
       const corrections = {}
       for (const row of this.rows) {
-        const correction = row.correction.trim()
+        const correction = row.discard ? '' : row.correction.trim()
         const comment = row.comment.trim()
-        if (!correction && !comment) continue
-        const unchanged = correction === row.saved.correction && comment === row.saved.comment
+        if (!correction && !comment && !row.discard) continue
+        const unchanged = !this.isChanged(row)
         corrections[row.id] = {
           ocr: row.ocr,
           correction,
           comment,
+          ...(row.discard ? { discard: true } : {}),
           box: row.box,
           ...(unchanged && correctionsFile.corrections[row.id]
             ? { updated: correctionsFile.corrections[row.id].updated }
@@ -480,7 +513,8 @@ export default {
         if (!response.ok) throw new Error(await response.text())
         const text = `Guardado (${Object.keys(corrections).length} correcciones/comentarios en docs/ocr/ocr-corrections.json). Para aplicarlas al PDF: python scripts/ocr-pdf.py --reuse`
         for (const row of this.rows) {
-          row.saved = { correction: row.correction.trim(), comment: row.comment.trim() }
+          if (row.discard) row.correction = ''
+          row.saved = savedState(row)
         }
         this.message = { type: 'success', text }
         try {
@@ -619,6 +653,24 @@ export default {
 
   &__row--changed {
     background: rgba($color-warning, 0.12);
+  }
+
+  &__row--discarded {
+    opacity: 0.55;
+
+    .ocr-admin__ocr {
+      text-decoration: line-through;
+    }
+  }
+
+  &__discard {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    margin-top: $spacing-xs;
+    font-size: $font-size-xs;
+    color: $color-text-secondary;
+    cursor: pointer;
   }
 
   &__row--selected {

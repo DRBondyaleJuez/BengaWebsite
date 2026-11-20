@@ -287,13 +287,19 @@ def main():
     )
     doubts, counts = [], {}
     for n in numbers:
+        kept = []  # the words that go into the text layer (not the discarded ones)
         for index, word in enumerate(results[n]):
             # Stable id of the word: PDF page + its position in the OCR output (from the cache)
             word_id = f"p{n + 1}-w{index}"
             word["ocr"] = word["text"]
             word["text"], how = correct_word(word["text"], benga, spanish_exact, spanish_unique)
             doubtful = how in ("unknown", "benga-accent") and word["conf"] < LOW_CONFIDENCE
-            fixed = (corrections.get(word_id) or {}).get("correction", "").strip()
+            correction = corrections.get(word_id) or {}
+            if correction.get("discard"):  # "not a word" in /admin/ocr: drop it everywhere
+                counts["discarded"] = counts.get("discarded", 0) + 1
+                continue
+            kept.append(word)
+            fixed = correction.get("correction", "").strip()
             if fixed:  # a person's correction always wins
                 word["text"] = fixed
                 how = "manual"
@@ -301,7 +307,7 @@ def main():
             if doubtful:
                 box = [round(word[k] * scale, 1) for k in ("x0", "y0", "x1", "y1")]
                 doubts.append([word_id, n + 1, word["ocr"], word["text"], round(word["conf"]), how, *box])
-        write_text_layer(source[n], results[n], font, scale)
+        write_text_layer(source[n], kept, font, scale)
 
     if args.pages:  # keep only the tested pages in the test file
         source.select(numbers)
