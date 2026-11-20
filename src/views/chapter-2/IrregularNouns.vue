@@ -22,8 +22,13 @@
         <a href="/capitulo-2/clase-2">sustantivos de Clase 2</a>
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in pluralOnlyNouns" :key="`plural-${idx}`">
+      <CardGrid
+        :items="pluralOnlyNouns"
+        class="examples-grid"
+        key-prefix="plural"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-form">
             <span class="label">Forma principal (plural):</span>
             <span class="value">
@@ -31,7 +36,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <section class="irregular-nouns__no-plural">
@@ -41,12 +46,13 @@
         correspondientes a dicho número singular.
       </p>
 
-      <div class="examples-grid">
-        <div
-          class="example-card"
-          v-for="(example, idx) in singularOnlyNouns"
-          :key="`singular-${idx}`"
-        >
+      <CardGrid
+        :items="singularOnlyNouns"
+        class="examples-grid"
+        key-prefix="singular"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-form">
             <span class="label">Forma principal (singular):</span>
             <span class="value">
@@ -54,7 +60,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <section class="irregular-nouns__notes">
@@ -106,12 +112,13 @@
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 
 export default {
   name: 'IrregularNouns',
-  components: { BengaWord, SectionNavFooter },
+  components: { CardGrid, BengaWord, SectionNavFooter },
   data() {
     return {
       pluralOnlyNouns: [

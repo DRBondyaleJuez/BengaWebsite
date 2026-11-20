@@ -28,8 +28,8 @@
     <!-- Adjectives List -->
     <section class="invariable-adjectives__list">
       <h2>Adjetivos Invariables</h2>
-      <div class="adjectives-grid">
-        <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
+      <CardGrid :items="adjectives" class="adjectives-grid" key-prefix="adj" v-slot="{ item: adj }">
+        <div class="adjective-card">
           <div class="adjective-card__bengaform">
             <BengaWord :word="adj.word" />
           </div>
@@ -37,7 +37,7 @@
             {{ $localized(adj.meaning) }}
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <!-- Usage Examples -->
@@ -114,6 +114,7 @@
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
@@ -122,6 +123,7 @@ import { getAdjectives } from '@/services/adjectives'
 export default {
   name: 'InvariableAdjectivesSection',
   components: {
+    CardGrid,
     SectionNavFooter,
     BengaWord
   },

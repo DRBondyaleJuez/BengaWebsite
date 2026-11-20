@@ -100,8 +100,13 @@
               Raíz: <span class="bengaform">{{ adjective.bengaRoot }}</span>
             </span>
           </div>
-          <div class="adjective-group__forms">
-            <div class="form-pair" v-for="pair in adjective.pairs" :key="`pair-${pair.classId}`">
+          <CardGrid
+            :items="adjective.pairs"
+            class="adjective-group__forms"
+            key-prefix="pair"
+            v-slot="{ item: pair }"
+          >
+            <div class="form-pair">
               <span class="form-pair__label">{{ pair.label }}</span>
               <div class="form-item">
                 <span class="form-number">Sg</span>
@@ -115,7 +120,7 @@
                 <BengaWord :word="pair.plural.bengaForm" :highlight-prefix="pair.plural.prefix" />
               </div>
             </div>
-          </div>
+          </CardGrid>
         </div>
       </div>
     </section>
@@ -175,6 +180,7 @@
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
@@ -183,6 +189,7 @@ import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
 export default {
   name: 'RegularAdjectivesSection',
   components: {
+    CardGrid,
     SectionNavFooter,
     BengaWord
   },

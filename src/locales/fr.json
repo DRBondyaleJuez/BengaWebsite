@@ -10,5 +10,9 @@
     "resources": "Ressources",
     "download": "Télécharger PDF",
     "pageNavigation": "Navigation entre les pages"
+  },
+  "content": {
+    "showAll": "Tout voir ({count})",
+    "showFewer": "Afficher moins"
   }
 }

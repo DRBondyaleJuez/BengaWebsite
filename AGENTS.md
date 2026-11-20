@@ -48,6 +48,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Page structure: green gradient `noun-class__header`, then one `<section class="noun-class__<id>">` per `heading` block (`pattern`, `examples`, `variants`, `concordance`, `concepts`, `exceptions`, `liquids`, `class-six`, `practice`), then the shared `SectionNavFooter`.
 - Example cards take lexicon ids (`"entries": ["epokolo"]`) from `lexicon/nouns.json`; never copy words or meanings into the section file. Exceptions go in an `exceptions` part: a note right after the heading (yellow `.section-note`), the examples, and optionally a `"variant": "small"` note (`.example-note`).
 - Keep BEM naming and the shared blocks; don't restyle one class on its own.
+- Lists of word cards (not practice exercises) use `CardGrid` (`ExampleGrid` already does): when the cards would fill more than two rows, only the first row shows, with a «Ver todas (N)» button.
 
 ### Source of Truth: Salvado y Cos Grammar
 - The authoritative text is `public/downloads/salvado-y-cos-gramatica-benga.pdf` (a searchable scan, so its text layer has OCR damage; it is also the file visitors download from the site's "Descargar PDF" links). Book page numbers are offset from PDF page numbers; map them before extracting:
@@ -222,6 +223,7 @@ benga-grammar-website/
 │   │   │   └── ContentSection.vue
 │   │   ├── blocks/              # Page building blocks (one per section-file block type), see each file's header
 │   │   │   ├── PatternBox.vue, ExampleGrid.vue, NoteBox.vue, TableBlock.vue
+│   │   │   ├── CardGrid.vue     # word-card grid: first row + «Ver todas» when it would fill > 2 rows
 │   │   │   ├── ConceptList.vue, ConceptCards.vue, PracticeList.vue, CheckList.vue
 │   │   │   ├── SoundCards.vue, SoundGroups.vue   # chapter-1 sounds
 │   │   │   └── SectionLinks.vue, SectionNavFooter.vue

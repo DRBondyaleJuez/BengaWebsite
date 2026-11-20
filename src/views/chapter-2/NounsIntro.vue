@@ -220,8 +220,8 @@
     <section class="nouns-intro__cta">
       <h2>¡Comienza Ahora!</h2>
       <p>
-        Estás listo para explorar cada clase nominal. Comienza con la Clase 1, que es la más
-        simple y accesible.
+        Estás listo para explorar cada clase nominal. Comienza con la Clase 1, que es la más simple
+        y accesible.
       </p>
       <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Clase 1 → </router-link>
     </section>

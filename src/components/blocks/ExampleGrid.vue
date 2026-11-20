@@ -1,6 +1,6 @@
 <template>
-  <div class="examples-grid">
-    <div v-for="(item, idx) in items" :key="`${keyPrefix}-${idx}`" class="example-card">
+  <CardGrid :items="items" class="examples-grid" :key-prefix="keyPrefix" v-slot="{ item }">
+    <div class="example-card">
       <!-- pairs: green singular above orange plural · single: one green word -->
       <div v-if="layout !== 'plural-only' && item.singular" class="example-singular">
         <BengaWord :word="item.singular.word" :meaning="item.singular.meaning" block />
@@ -10,10 +10,11 @@
       </div>
       <span v-if="layout === 'plural-only'" class="plural-only-tag">{{ badge }}</span>
     </div>
-  </div>
+  </CardGrid>
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 
 /**
@@ -34,7 +35,7 @@ import BengaWord from '@/components/content/BengaWord.vue'
  */
 export default {
   name: 'ExampleGrid',
-  components: { BengaWord },
+  components: { CardGrid, BengaWord },
   props: {
     items: { type: Array, required: true },
     layout: {

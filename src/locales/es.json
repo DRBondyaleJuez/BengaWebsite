@@ -85,7 +85,9 @@
     "importantNote": "Nota Importante",
     "firstConsonantRule": "Regla de la Primera Consonante",
     "nasalSounds": "Sonidos Nasales",
-    "greekExample": "Ejemplo"
+    "greekExample": "Ejemplo",
+    "showAll": "Ver todas ({count})",
+    "showFewer": "Mostrar menos"
   },
   "audio": {
     "play": "Reproducir pronunciación",

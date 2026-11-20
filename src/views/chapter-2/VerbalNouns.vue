@@ -22,8 +22,13 @@
         sílaba y anteponiendo a la palabra la letra i.
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in abstractNouns" :key="`abstract-${idx}`">
+      <CardGrid
+        :items="abstractNouns"
+        class="examples-grid"
+        key-prefix="abstract"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
@@ -36,7 +41,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
       <p class="classification-note">
         En la clasificación, estos nombres pertenecen a la
         <a href="/capitulo-2/clase-2">clase 2</a> en su número singular. (i->ma)
@@ -51,8 +56,13 @@
         última sílaba, anteponiendo a la palabra la letra u y la última letra siendo i.
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in agentNouns" :key="`agent-${idx}`">
+      <CardGrid
+        :items="agentNouns"
+        class="examples-grid"
+        key-prefix="agent"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
@@ -65,10 +75,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
       <p class="classification-note">
-        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">clase 3</a> en la
-        formación del plural. u->me
+        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">clase 3</a> en la formación del
+        plural. u->me
       </p>
     </section>
 
@@ -81,8 +91,13 @@
         nombres abstractos por "idi"
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in modalityNouns" :key="`modality-${idx}`">
+      <CardGrid
+        :items="modalityNouns"
+        class="examples-grid"
+        key-prefix="modality"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Nombre de acción</span>
@@ -95,7 +110,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <!-- Comparison Table -->
@@ -195,12 +210,13 @@
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 
 export default {
   name: 'VerbalNouns',
-  components: { BengaWord, SectionNavFooter },
+  components: { CardGrid, BengaWord, SectionNavFooter },
   data() {
     return {
       abstractNouns: [
