@@ -90,9 +90,9 @@ test('lexicon rejects typical mistakes', () => {
       type: 'verb',
       word: 'kalaka',
       meaning: { es: 'hablar' },
-      conjugation: 5
+      conjugation: 6
     }),
-    'conjugations are 1-4'
+    'conjugations are 1-5'
   )
 })
 

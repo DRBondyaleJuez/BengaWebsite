@@ -49,7 +49,7 @@ Book (≈150 pages)
 │                                        ✗ repetición, ejercicios (tiempo, edad), fraseología, vocabulario
 ├── Cap. 4  Pronombres ............... ✗
 ├── Cap. 5  Verbo (auxiliares, ser, haber) ✗
-├── Cap. 6  Verbos regulares (4 conjugaciones, ≈50 pages — the biggest) ✗
+├── Cap. 6  Verbos regulares (5 conjugaciones, ≈50 pages — the biggest) ✗
 ├── Cap. 7  Verbos irregulares ....... ✗
 ├── Cap. 8  Verbos impersonales ...... ✗
 ├── Cap. 9  Adverbios ................ ✗
@@ -246,7 +246,7 @@ Branch: `refactor/content-model`. This is the most important phase.
       - **Done 2026-11-15:** `scripts/extract-ch2.mjs` (one-time migration) → `lexicon/nouns.json`, 436 entries: 278 from the pages + 158 words only in the practice deck (book «Vocabulario», PDF 15-17). Each entry gets `source.pdfPage` via `pdftotext`; 119 words not found in the OCR text keep their class page range. Schema now allows `nounClass: null` (verbal nouns of manner: the book gives no class).
     - [x] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
       - **Done 2026-11-15 (first pass):** every word compared with the PDF text; only a sure fix applied (`Njadi` «Primogénito», and the script now keeps the second `Njadi` as homonym `njadi~2`). Six real doubts + the unchecked deck words → REVIEW-LOG R-021 (your decision).
-    - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(postponed to Phase 4: the developer wants to keep them until the site is multilingual, see REVIEW-LOG R-005)*
+    - [x] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(done 2026-11-20, REVIEW-LOG R-005)*
   - **Prompt:** "Task 2.4.x: (see subtask). Never invent a headword; mark unreadable OCR with `meaning: null` and an editorial note."
 
 - [x] **2.5 Practice deck built from the lexicon**
@@ -315,6 +315,9 @@ Branch: `refactor/blocks`
 
 ---
 
+### Review-log follow-ups (2026-11-20, branch `refactor/review-fixes`)
+Done outside the numbered tasks, from the developer's review-log decisions: stale chapter-2 files removed (R-005), Sass on `@use` (R-017), ESLint 10 + vue-router 5 (R-018), `/admin/ocr` for the OCR doubts (R-023, R-029), content clear of the sidebar (R-026), one automatic footer for every page that also crosses chapters, noun classes named «Clase N», long word-card lists collapsed to their first row (`CardGrid`), verb names checked against the improved OCR (R-007).
+
 ## Phase 4 — Translations (es → en → fr)
 
 Branch: `feat/i18n`. Rule: **UI words** (buttons, headings that repeat) go in `locales/*.json`; **content** (meanings, explanations) lives in the data as `{ "es": …, "en": …, "fr": … }`.
@@ -382,9 +385,9 @@ Generic prompt: *"Task 6.X.Y: add section '<name>' of chapter N (book pp. A–B)
 | 6.3 | Cap. 3: inflexiones de numerales, adjetivos de repetición, ejercicio del tiempo, la edad, fraseología, vocabulario | `Dialogue` (phrase ↔ translation) | `feat(ch3): add <section>` |
 | 6.4 | Cap. 4: pronombres personales, posesivos, relativos, interrogativos, tabla nombres-adjetivos-pronombres, definidos, indefinidos, reflexivos, recíprocos, ejercicios | `ConcordanceTable` | `feat(ch4): add <section>` |
 | 6.5 | Cap. 5: nociones, especies, voces/modos/tiempos, auxiliares, *diyaka* (ser), haber, ejercicios | `ConjugationTable` | `feat(ch5): add <section>` |
-| 6.6 | Cap. 6: verbos regulares — 4 conjugaciones (*kalaka, tandaka, yenika, vomuabidi*), voz activa/pasiva, afirmativa/negativa, listas de verbos | reuse `ConjugationTable` | `feat(ch6): add <conjugation>` |
-| 6.7 | Cap. 7: irregulares (*valaka, vaka, paka, yalaka*…), contracciones | — | `feat(ch7): add <verb>` |
-| 6.8 | Cap. 8: impersonales (*naka*…) | — | `feat(ch8): add impersonal verbs` |
+| 6.6 | Cap. 6: verbos regulares — **5** conjugaciones: 1ª -ka *kalaka* hablar (PDF 52), 2ª -kâ *tândâkâ* amar (PDF 60), 3ª -kē *yēnikē* ver (PDF 71), 4ª -kidē *vomuakidē* castigar (PDF 78), 5ª -kiya *tamūakiya* mirar (PDF 88); voz activa/pasiva, afirmativa/negativa, listas de verbos | reuse `ConjugationTable` | `feat(ch6): add <conjugation>` |
+| 6.7 | Cap. 7: irregulares: *valaka* ir (PDF 94), *vaka* venir (PDF 99), *pâkâ* llegar (PDF 102), *yalakē* poder (PDF 105)…, contracciones | — | `feat(ch7): add <verb>` |
+| 6.8 | Cap. 8: impersonales (*naka* llover, PDF 113…) | — | `feat(ch8): add impersonal verbs` |
 | 6.9 | Cap. 9: adverbios (lugar, modo, tiempo, cantidad, afirmación, negación, interrogación, duda, comparación) | — | `feat(ch9): add <type> adverbs` |
 | 6.10 | Cap. 10: preposición, conjunción, interjección | — | `feat(ch10): add <part>` |
 | 6.11 | Apéndice: saludos | `Dialogue` | `feat(appendix): add greetings` |

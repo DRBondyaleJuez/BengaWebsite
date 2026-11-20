@@ -13,9 +13,9 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-002](#r-002) | 🟢 | 0.1 | `context/AGENTS.md` is an old duplicate | any time |
 | [R-003](#r-003) | 🟢 | 0.1 | Rest of AGENTS.md is out of date | done |
 | [R-004](#r-004) | 🟢 | Roadmap | Roadmap lives in git-ignored `context/` | any time |
-| [R-005](#r-005) | 🔴 | 0.2 | Unused chapter-2 JSON files kept | Phase 4 (i18n) |
+| [R-005](#r-005) | 🟢 | 0.2 | Unused chapter-2 JSON files kept | done |
 | [R-006](#r-006) | 🟢 | 0.2 | `ExampleTable.vue` is not used by any page | done |
-| [R-007](#r-007) | 🔴 | Roadmap | Verb names in Phase 6 come from damaged OCR | Phase 6 (verbs) |
+| [R-007](#r-007) | 🟢 | Roadmap | Verb names in Phase 6 come from damaged OCR | done |
 | [R-008](#r-008) | 🟢 | Audit | Living Dictionary links may not open an entry | task 0.5 |
 | [R-009](#r-009) | 🟢 | 0.2 | Browser-support data is out of date (build warning) | done |
 | [R-010](#r-010) | 🟢 | 0.4 | PDF link written by hand in 4 files, and breaks if the site is hosted in a sub-folder | task 0.5 |
@@ -25,19 +25,20 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-014](#r-014) | 🟢 | words | 16 hand-typed audio ids have different letters than their word: possible content errors | done |
 | [R-015](#r-015) | 🟢 | words | `Itánde` / `Matánde` written with a Spanish accent | done |
 | [R-016](#r-016) | 🟢 | words | Vue warnings on the chapter 1 index (object used as list key) | done |
-| [R-017](#r-017) | 🔴 | 1.1 | Styles use Sass features that Sass 3 will remove (warnings silenced) | Phase 3 |
-| [R-018](#r-018) | 🔴 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | Phase 9 |
+| [R-017](#r-017) | 🟢 | 1.1 | Styles use Sass features that Sass 3 will remove (warnings silenced) | done |
+| [R-018](#r-018) | 🟢 | 1.2 | Newer major versions exist for ESLint, vue-router and vue-i18n | done |
 | [R-019](#r-019) | 🟢 | 2.2 | 4 Spanish interface keys missing: the raw key text is shown | done |
 | [R-020](#r-020) | 🟢 | 2.1 | Page table for the noun classes in AGENTS.md doesn't match the PDF | done |
 | [R-021](#r-021) | 🟢 | 2.4.2 | Chapter-2 nouns that don't match the book text | done |
 | [R-022](#r-022) | 🟢 | 2.6 | Chapter-1 and chapter-3 section files need the block renderer (Phase 3); numerals page not checked | done |
-| [R-023](#r-023) | 🔴 | OCR | 2 882 words of the new OCR the computer is not sure about | little by little (per chapter, Phase 6) |
+| [R-023](#r-023) | 🟡 | OCR | 2 882 words of the new OCR the computer is not sure about | little by little (per chapter, Phase 6) — use /admin/ocr |
 | [R-024](#r-024) | 🟢 | 3.5, 3.7 | Links to pages that don't exist (chapter-3 intro, diphthongs) | done (check) |
 | [R-025](#r-025) | 🟢 | 3.6 | Browser-tab title showed the previous page's title | done (check) |
-| [R-026](#r-026) | 🔴 | 3.2 | The sidebar covers the left edge of the content on medium screens | Phase 9 (or any time) |
-| [R-027](#r-027) | 🔴 | 3.4 | Class 2 page shows «Conceptos Clave» twice | any time |
-| [R-028](#r-028) | 🔴 | 3.7 | Alphabet page and chapter-3 pages are not section files yet | your decision |
-| [R-029](#r-029) | 🔴 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | any time |
+| [R-026](#r-026) | 🟢 | 3.2 | The sidebar covers the left edge of the content on medium screens | done |
+| [R-027](#r-027) | 🟢 | 3.4 | Class 2 page shows «Conceptos Clave» twice | done |
+| [R-028](#r-028) | ⚪ | 3.7 | Alphabet page and chapter-3 pages are not section files yet | done |
+| [R-029](#r-029) | 🟢 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | done |
+| [R-030](#r-030) | 🔴 | R-018 | Vite 8 is available (Vite 7 today) | Phase 9 |
 
 ---
 
@@ -81,12 +82,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-005
 **Unused chapter-2 JSON files kept**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 0.2
 - **Where:** `src/data/chapter-2/class-1.json … class-7.json`, `nouns-intro.json`, `irregular-nouns.json`, `verbal-nouns.json`
 - **Doubt:** No page imports them. `class-N.json` has known wrong glosses, and `class-1.json` is not even valid JSON (missing `,` after line 131; found in 0.6, so it's listed in `.prettierignore` until deleted). Do any of them hold text that isn't in the `.vue` pages, such as extra notes or examples?
 - **Suggestion:** In task 2.4, compare them with the pages and keep anything useful, then delete them in 2.4.3.
-- **Resolution:** 2026-11-11 · Developer: keep them for now; clean them up when the site becomes multilingual (Phase 4), since they contain `es/en/fr` text that may help. Still open.
+- **Resolution:** 2026-11-11 · Developer: keep them for now; clean them up when the site becomes multilingual (Phase 4), since they contain `es/en/fr` text that may help. Still open. · 2026-11-20 · Developer: remove them. The ten `src/data/chapter-2/*.json` files are deleted (their content lives in `lexicon/nouns.json` and `sections/ch-2/`); `collect-words` no longer needs an ignore list. · commit `chore(data): remove stale chapter-2 class files (R-005)`
 
 ### R-006
 **`ExampleTable.vue` is not used by any page**
@@ -99,12 +100,12 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-007
 **Verb names in Phase 6 come from damaged OCR**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** Roadmap (table of contents, PDF last pages)
 - **Where:** ROADMAP Phase 6, rows 6.6 and 6.7: *kalaka, tandaka, yenika, vomuabidi, valaka, vaka, paka, yalaka*
 - **Doubt:** The table of contents OCR reads e.g. `Tánddká`, `Yénik2`, `Vomualbidi`. The exact spelling and accents are unknown.
 - **Suggestion:** Check each one against its chapter page when starting that Phase 6 task.
-- **Resolution:** 2026-11-11 · Developer hasn't reviewed the verbs chapters yet; check the spellings together when Phase 6 reaches chapters 5–8. Still open.
+- **Resolution:** 2026-11-11 · Developer hasn't reviewed the verbs chapters yet; check the spellings together when Phase 6 reaches chapters 5–8. Still open. · 2026-11-20 · Checked against the improved OCR (PDF chapter headings and table of contents). The book has **five** regular conjugations, not four: 1ª -ka *kalaka* hablar (PDF 52), 2ª -kâ *tândâkâ* amar (PDF 60), 3ª -kē *yēnikē* ver (PDF 71), 4ª -kidē *vomuakidē* castigar (PDF 78, the roadmap said `vomuabidi`), 5ª -kiya *tamūakiya* mirar (PDF 88; the ū is the OCR's most frequent reading). Irregular: *valaka* ir (94), *vaka* venir (99), *pâkâ* llegar (102), *yalakē* poder (105); impersonal *naka* llover (113); *diyaka* ser (40). ROADMAP rows 6.6-6.8 and the lexicon schema (`conjugation` 1-5) are updated. Each spelling is still checked against the scan when its Phase 6 task starts (Phase 6 recipe; `/admin/ocr`). · commit `docs: verb names from the improved OCR; five conjugations (R-007)`
 
 ### R-008
 **Living Dictionary links may not open an entry**
@@ -210,21 +211,23 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-017
 **Styles use Sass features that Sass 3 will remove (warnings silenced)**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 1.1 (first Vite build printed Sass deprecation warnings; vue-cli showed the `@import` one too)
 - **Where:** every `<style lang="scss">` (`@import '@/styles/variables'`), `src/styles/main.scss`, `src/styles/_mixins.scss` / `_variables.scss` (`darken()`, `lighten()`, global `map-get` etc.); silenced in `vite.config.mjs` → `silenceDeprecations`
 - **Doubt:** Nothing is broken today, but Dart Sass 3 will remove `@import`, global built-in functions and `darken()`/`lighten()`. When Sass 3 arrives, the build will fail until this is changed.
 - **Suggestion:** In Phase 3, when styles move into shared block components: switch `@import` to `@use '@/styles/variables' as *`, use `sass:color` / `sass:map` functions (`color.adjust($c, $lightness: -10%)`), then remove `silenceDeprecations` from `vite.config.mjs`.
-- **Resolution:**
+- **Resolution:** 2026-11-20 · All styles use `@use '@/styles/…' as *` and `sass:color` (`darken()` → `color.adjust(…, $lightness: -N%)`); `vite.config.mjs` no longer silences deprecations and the build prints none. Every page compared before/after at 1280 px and 420 px: identical. · commit `refactor(styles): move Sass to @use and sass:color (R-017)`
+
 
 ### R-018
 **Newer major versions exist for ESLint, vue-router and vue-i18n**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 1.2 (choosing package versions)
 - **Where:** `package.json`: `eslint` 7 (no longer maintained) with `eslint-plugin-vue` 9; `vue-router` 4.6 (5.x exists); `vue-i18n` 11.4 (12 is in alpha)
 - **Doubt:** For the upgrade I chose the versions with the best-known, stable API, to change as little as possible at once. ESLint 7 still works but gets no fixes; ESLint 9 needs a new config file (`eslint.config.js`, "flat config").
 - **Suggestion:** In Phase 9 (quality and CI): upgrade ESLint to 9 with a flat config, then check whether vue-router 5 / vue-i18n 12 bring anything useful before moving.
-- **Resolution:**
+- **Resolution:** 2026-11-20 · ESLint 7 → 10 with `eslint-plugin-vue` 10 and a flat config (`eslint.config.mjs`); `npm run lint` now also checks `scripts/` and the config files (5 small findings fixed). vue-router 4.6 → 5.5. vue-i18n stays 11 (11.4.23; 12 is not stable). Every page identical, tests/validate/build OK. Vite 8 is a separate decision: R-030. · commit `build: upgrade to ESLint 10 and vue-router 5 (R-018)`
+
 
 ### R-019
 **4 Spanish interface keys missing: the raw key text is shown**
@@ -278,7 +281,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-023
 **2 882 words of the new OCR the computer is not sure about**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** OCR (new text layer: `public/downloads/IMPROVED-salvado-y-cos-gramatica-benga.pdf`, `scripts/ocr-pdf.py`, guide `docs/OCR.md`)
 - **Where:** full list in `docs/ocr/ocr-doubts.csv` (opens in Excel: `pdf_page`, `ocr_read`, `written_in_pdf`, `confidence`, `kind`). Per part of the book: chapter 2 nouns (PDF 8-17) 87 words, chapter 3 adjectives and numerals (PDF 18-20) 64, the rest mostly verb tables and phrases (PDF 21-45 have the most).
 - **Doubt:** The scan is small (966 px wide), so Tesseract is unsure of some words. Listed: every word with confidence below 60 % that is neither a known Spanish word nor a known Benga word of the site. Two kinds:
@@ -287,7 +290,8 @@ Go through them every few tasks, decide, and fill in **Resolution**.
   
   Examples from PDF p. 9: `Bralo`, `Binmbe`, `Yzjá` (= *Yējâ*), `Makeéliné` (= *Makēlinē*), `Jtúndé` (= *Itândē*). Also known: the OCR often confuses `â` and `ū` on the noun lists (`Yákú` for *Yâkâ*).
 - **Suggestion:** Don't go through the whole list now. When a roadmap task works on a section (Phase 6 recipe, numerals task 6.0a), filter the CSV by its PDF pages and check those words against the scan. Each word added to the lexicon also improves the next OCR run (`python scripts/ocr-pdf.py --reuse` re-applies the rules in seconds).
-- **Resolution:**
+- **Resolution:** 2026-11-20 · Developer will review the words later. Built the tool for it: `/admin/ocr` (only during `npm run serve`): filters, a correction field with `â ē ū Â Ē Ū` buttons, a comment field, and the PDF page shown beside the list with the word framed (click its page number). Corrections are saved in `docs/ocr/ocr-corrections.json` and applied to the improved PDF with `python scripts/ocr-pdf.py --reuse` (docs/OCR.md). First correction: R-029. · commit `feat(admin): /admin/ocr to review the OCR doubts beside the PDF page (R-023, R-029)`
+
 
 ### R-024
 **Links to pages that don't exist (chapter-3 intro, diphthongs)**
@@ -309,38 +313,50 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-026
 **The sidebar covers the left edge of the content on medium screens**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 3.2 (screenshots at 1280 px wide)
 - **Where:** `src/App.vue` (`.app__main`: centred with `margin: 0 auto`) and `src/components/layout/AppSidebar.vue` (`position: fixed`, 280 px wide)
 - **Doubt:** The content is centred in the whole window and doesn't leave room for the fixed sidebar, so between roughly 900 and 1500 px wide the sidebar hides the first ~130 px of every page (e.g. the start of the chapter-3 texts). Same before this phase (it dates from the first commit).
 - **Suggestion:** Give `.app__main` a left margin equal to the sidebar width when the sidebar is fixed (desktop), or centre it in the remaining space. A one-file CSS fix; it changes how every page sits, so check it on a few widths.
-- **Resolution:**
+- **Resolution:** 2026-11-20 · From 992 px the page body and footer leave the sidebar's 280 px free and centre the content in the remaining space; below 992 px the sidebar stays hidden behind the header's menu button (as before). · commit `fix(layout): keep the content clear of the fixed sidebar (R-026)`
+
 
 ### R-027
 **Class 2 page shows «Conceptos Clave» twice**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 3.4 (generating `sections/ch-2/class-2.json` from the old page)
 - **Where:** `src/data/sections/ch-2/class-2.json` (two `heading` blocks with `id: concepts`, the same three cards) · `/capitulo-2/clase-2`
 - **Doubt:** The same three concept cards appear before «Excepciones» and again after the class-6 exception. It was like this in the old `NounClass2.vue`; I kept it so the page stays identical.
 - **Suggestion:** Delete the second «Conceptos Clave» heading and its `concepts` block (the one after `class-six`).
-- **Resolution:**
+- **Resolution:** 2026-11-20 · Developer: delete it. The second «Conceptos Clave» (after the class-6 exception) is removed from `sections/ch-2/class-2.json`. · commit `fix(content): remove duplicated class-2 concepts; ūa and accents in chapter-3 intro (R-027, R-029)`
+
 
 ### R-028
 **Alphabet page and chapter-3 pages are not section files yet**
-- **Status:** 🔴 Open
+- **Status:** ⚪ Won't do now
 - **Found in:** 3.7
 - **Where:** `src/views/chapter-1/AlphabetSection.vue` + `src/data/chapter-1/alphabet.json` · `src/views/chapter-3/RegularAdjectivesSection.vue`, `InvariableAdjectivesSection.vue`, `ComparativesSuperlativesSection.vue` (+ their `chapter-3/*.json`)
 - **Doubt:** Task 3.7 asked for these pages as section files. Done: diphthongs, triphthongs, consonants (section files) and the two adjective pages now read the lexicon. Not done: the alphabet page has six designs used nowhere else (letter list, vowel tags, vowel cards with a «larga» badge, the special letter y with word groups, note cards); as section files they would need six single-use block types. The chapter-3 pages are in the same situation (inflection cards, concordance tables, comparison tables).
 - **Suggestion:** Keep them as page components for now (they already take their words from the lexicon where it matters) and convert each one when its chapter is reviewed in Phase 6 (6.1 chapter 1, 6.3 chapter 3), so the new blocks are designed together with the new content. Alternatively I can convert them now, at the cost of ~10 new block components.
-- **Resolution:**
+- **Resolution:** 2026-11-20 · Developer: fine as custom pages. Convert a part only if it turns out to be reusable as a component elsewhere.
+
 
 ### R-029
 **Chapter-3 introduction: `ña` uses ñ, and small Spanish typos**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 3.5 (moving the text to `sections/ch-3/adjectives-intro.json`)
 - **Where:** `src/data/sections/ch-3/adjectives-intro.json` · `/capitulo-3/introduccion`
 - **Doubt:** «Comparativos y Superlativos» says the Benga use «palabras específicas como 'kebaka' (sobresalir) y 'ña' (exceder)»: `ñ` is not a Benga letter (AGENTS.md → Orthography), so `ña` is probably an OCR reading of another word. Also «en este capitulo» (capítulo) and «se apoyaran» (apoyarán) in the overview paragraph.
 - **Suggestion:** Check `ña` in the comparatives section of the book (PDF ~p. 19, now searchable in the IMPROVED PDF) and fix the two accents.
+- **Resolution:** · 2026-11-20 · Developer: `ña` is really `ūa`. Fixed in `sections/ch-3/adjectives-intro.json` (with «capítulo», «apoyarán») and added as the first OCR correction (`p19-w156` in `docs/ocr/ocr-corrections.json`, PDF p. 19). · commits `fix(content): …(R-027, R-029)` and `feat(admin): …(R-023, R-029)`
+
+### R-030
+**Vite 8 is available (Vite 7 today)**
+- **Status:** 🔴 Open
+- **Found in:** R-018 (upgrading ESLint and vue-router)
+- **Where:** `package.json` (`vite` ^7.3.8, `@vitejs/plugin-vue` 6) · `vite.config.mjs`
+- **Doubt:** Vite 8 (new bundler, Rolldown) is the current major. R-018 only covered ESLint, vue-router and vue-i18n, so I didn't change the build tool in the same step.
+- **Suggestion:** Upgrade in Phase 9 (or any time) on its own branch: `npm install -D vite@8`, then build, compare every page and check `npm run preview`.
 - **Resolution:**
 
 ---

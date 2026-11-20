@@ -147,8 +147,8 @@
           "description": "Infinitive, e.g. kalaka (hablar)."
         },
         "conjugation": {
-          "description": "Regular conjugation 1-4 of the book (chapter 6), or null when irregular/unknown.",
-          "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 4 }, { "type": "null" }]
+          "description": "Regular conjugation 1-5 of the book (chapter 6: -ka kalaka, -kâ tândâkâ, -kē yēnikē, -kidē vomuakidē, -kiya tamūakiya), or null when irregular/unknown.",
+          "oneOf": [{ "type": "integer", "minimum": 1, "maximum": 5 }, { "type": "null" }]
         },
         "irregular": { "type": "boolean" },
         "impersonal": { "type": "boolean" },

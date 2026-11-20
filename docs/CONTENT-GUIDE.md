@@ -170,7 +170,7 @@ a section file (block `conjugation`), because they are page content.
 ### Not allowed (the tests check this)
 
 - `audioId` or any audio field: audio is found from the word (docs/WORD-REGISTRY.md).
-- Upper-case ids, noun class 8, conjugation 5, a text without `es`, unknown fields.
+- Upper-case ids, noun class 8, conjugation 6, a text without `es`, unknown fields.
 
 ---
 
