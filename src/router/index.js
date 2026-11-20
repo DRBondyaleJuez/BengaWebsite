@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import chaptersIndex from '@/data/chapters-index.json'
 
 /** Every page in src/views, loaded only when visited: { '/src/views/chapter-1/AlphabetSection.vue': () => import(...) } */
-const VIEWS = import.meta.glob('../views/**/*.vue')
+// The developer pages in views/admin are left out: they must never reach the published site
+const VIEWS = import.meta.glob(['../views/**/*.vue', '!../views/admin/**'])
 /** Section files, read now (they are small) to know which page draws them. */
 const SECTION_FILES = import.meta.glob('../data/sections/**/*.json', {
   eager: true,
