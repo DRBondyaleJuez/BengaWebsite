@@ -155,6 +155,11 @@ export default {
   margin-top: 3rem;
   border-top: 4px solid $color-accent;
 
+  // The fixed sidebar reaches the bottom of the window: keep the footer text clear of it
+  @include respond-to('lg') {
+    padding-left: $sidebar-width;
+  }
+
   &__container {
     max-width: $max-page-width;
     margin: 0 auto;

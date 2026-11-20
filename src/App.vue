@@ -61,6 +61,13 @@ export default {
     display: flex;
     flex: 1;
     padding-top: $header-height;
+
+    // From 992 px the sidebar is always visible (fixed on the left): keep its width free, so the
+    // page is centred in the space next to it instead of under it. Below 992 px the sidebar is
+    // hidden and opens with the menu button in the header.
+    @include respond-to('lg') {
+      padding-left: $sidebar-width;
+    }
   }
 
   &__main {
