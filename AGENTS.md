@@ -53,15 +53,15 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 
   In this part of the book **printed page = PDF page + 6** (e.g. PDF 8 = printed 14; chapter 3: PDF 18 = printed 24). The PDF page is what `pdftotext -f/-l` and PDF viewers use; the printed page is the number on the scan and in the book's table of contents. Verified with `pdftotext` (REVIEW-LOG R-020):
 
-  | Noun class | Printed pages | PDF pages | Component |
+  | Noun class | Printed pages | PDF pages | Content file |
   |---|---|---|---|
-  | 1 | 14-15 | 8-9 | `NounClass1.vue` |
-  | 2 (incl. exceptions, liquids, class-6 exception) | 15-16 | 9-10 | `NounClass2.vue` |
-  | 3 | 16-17 | 10-11 | `NounClass3.vue` |
-  | 4 | 17-18 | 11-12 | `NounClass4.vue` |
-  | 5 | 18 | 12 | `NounClass5.vue` |
-  | 6 | 18-19 | 12-13 | `NounClass6.vue` |
-  | 7 | 19-20 | 13-14 | `NounClass7.vue` |
+  | 1 | 14-15 | 8-9 | `sections/ch-2/class-1.json` |
+  | 2 (incl. exceptions, liquids, class-6 exception) | 15-16 | 9-10 | `sections/ch-2/class-2.json` |
+  | 3 | 16-17 | 10-11 | `sections/ch-2/class-3.json` |
+  | 4 | 17-18 | 11-12 | `sections/ch-2/class-4.json` |
+  | 5 | 18 | 12 | `sections/ch-2/class-5.json` |
+  | 6 | 18-19 | 12-13 | `sections/ch-2/class-6.json` |
+  | 7 | 19-20 | 13-14 | `sections/ch-2/class-7.json` |
   | Irregular nouns (§ 7, § 8) | 20 | 14 | `IrregularNouns.vue` |
   | Verbal nouns | 20-21 | 14-15 | `VerbalNouns.vue` |
 
@@ -69,7 +69,6 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 
 - **Extract text from `IMPROVED-salvado-y-cos-gramatica-benga.pdf`** (new OCR with `â ē ū`, Benga words of the site spelled right; doubtful words in `docs/ocr/ocr-doubts.csv`, see docs/OCR.md and REVIEW-LOG R-023). It is still machine OCR: always check doubtful words against the scan. The original PDF stays the cited source and the visitors' download.
 - Extract with `pdftotext -enc UTF-8 -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
-- **Never trust `src/data/chapter-2/class-N.json` for content.** Those files are not imported by any view and many of their Spanish glosses contradict the book (e.g. `class-3.json` says `woaha` = "fuego", the book says "Costado, lado"). The `.vue` `data()` blocks hold the real content.
 - When the OCR damage cannot be resolved (check the scan itself: e.g. render the page with PyMuPDF and look at it), **omit the entry and say so** in a visible `.section-note` / `.example-note` rather than inventing a headword; leave an unreadable gloss as `meaning: null` instead of guessing a translation. Cross-check doubtful headwords against the book's own `Vocabulario` section (`grep` the extracted text) before reconstructing — e.g. the class-7 `Mora. Perro.` is really `Mbūa. Perro.` (the book writes `Mbua` for «perros» in its examples, PDF p. 31; confirmed by the developer, REVIEW-LOG R-021). Watch for words that legitimately appear in two classes with different spellings: `Ndâlâ, sueño, desvario` (class 7) is not the same as `Vid. Lid. sueño` (class 6).
 
 ### Benga Orthography Rules
@@ -205,11 +204,8 @@ benga-grammar-website/
 │   │   ├── chapters-index.json  # THE list of chapters/sections: sidebar, routes, prev/next buttons
 │   │   ├── author-info.json     # AboutAuthor page content
 │   │   ├── chapter-1/           # alphabet.json (the other chapter-1 pages are section files now)
-│   │   ├── chapter-2/
-│   │   │   ├── class-1.json … class-7.json   # STALE, not imported (see Source of Truth)
-│   │   │   └── nouns-intro.json, irregular-nouns.json, verbal-nouns.json   # Not imported either; keep for Phase 2 cross-checks
-│   │   └── chapter-3/           # adjectives-intro, regular-adjectives, invariable-adjectives,
-│   │                            # comparatives-superlatives, numerals-ordinals (.json)
+│   │   └── chapter-3/           # regular-adjectives, invariable-adjectives, comparatives-superlatives,
+│   │                            # numerals-ordinals (.json): page texts of the chapter-3 pages
 │   ├── components/
 │   │   ├── common/
 │   │   │   └── BaseIcon.vue     # Inline SVG icons by name
@@ -248,7 +244,6 @@ benga-grammar-website/
 │       │   └── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
-│           ├── AdjectivesIntro.vue
 │           ├── RegularAdjectivesSection.vue
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue

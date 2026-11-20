@@ -34,12 +34,6 @@ const PLAIN_WORD_KEYS = ['word', 'bengaForm', 'bengaSentence', 'benga', 'form', 
 const PLAIN_AUDIO_KEYS = ['audio', 'audioId']
 const PREFIXED_AUDIO_KEY = /^(.+?)Audio(Id)?$/
 
-/** Files that are not imported by the website and must not feed the registry. */
-const IGNORED_DATA_FILES = [
-  /chapter-2[\\/]class-\d\.json$/,
-  /chapter-2[\\/](nouns-intro|irregular-nouns|verbal-nouns)\.json$/
-]
-
 /** Files in src/data/lexicon that list words but are not lexicon files. */
 const LEXICON_META_FILES = ['word-registry.json', 'word-usage.json']
 
@@ -216,7 +210,6 @@ export function collectWords() {
   const results = []
 
   for (const file of listFiles(path.join(SRC, 'data'), '.json')) {
-    if (IGNORED_DATA_FILES.some((pattern) => pattern.test(file))) continue
     if (file.includes(`${path.sep}lexicon${path.sep}`)) {
       if (!LEXICON_META_FILES.includes(path.basename(file))) results.push(...lexiconWords(file))
       continue // the registry itself is not content
