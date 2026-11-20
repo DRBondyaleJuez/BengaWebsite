@@ -136,7 +136,7 @@ function findPairs(value, currentPath, results) {
 
   for (const [key, audioValue] of Object.entries(value)) {
     if (typeof audioValue !== 'string') continue
-    let word = null
+    let word
     if (PLAIN_AUDIO_KEYS.includes(key)) {
       const wordKey = PLAIN_WORD_KEYS.find((candidate) => typeof value[candidate] === 'string')
       word = wordKey ? value[wordKey] : null

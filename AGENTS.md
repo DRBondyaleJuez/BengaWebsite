@@ -14,7 +14,7 @@
 A Vue 3 educational website teaching the Benga language (Ndowe language family) based on Salvado y Cos's historical grammar book. The platform transforms 19th-century linguistic documentation into an interactive digital learning experience with audio pronunciation support.
 
 ## Tech Stack
-- **Framework**: Vue 3 (Options API), vue-router 4, vue-i18n 11. Exact versions: `package.json`
+- **Framework**: Vue 3 (Options API), vue-router 5, vue-i18n 11. Exact versions: `package.json`
 - **Build tool / dev server**: Vite (`vite.config.mjs`); `npm run serve` → http://localhost:8080, `npm run build` → `dist/`, `npm run preview` serves `dist/` on port 8081
 - **Environment variables**: read with `import.meta.env` (`BASE_URL`, `DEV`, and custom ones that must start with `VITE_`); never `process.env` in `src/`
 - **Styling**: SCSS with BEM methodology, common imports
@@ -22,7 +22,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - **Media Storage**: Cloudinary (audio files)
 - **Images**: Wikimedia Commons, Unsplash
 - **Internationalization**: vue-i18n in composition mode with `globalInjection` (set up in `src/main.js`): use `$t('key')` and `$i18n.locale` in components. Spanish first, then French/English
-- **Linting**: ESLint 7 + `eslint-plugin-vue` (`plugin:vue/vue3-essential`), config in `package.json`; `npm run lint`
+- **Linting**: ESLint 10 + `eslint-plugin-vue` 10 (`flat/essential`), flat config in `eslint.config.mjs`; `npm run lint` checks `src/`, `scripts/` and the config files
 
 ## Architecture Principles
 
@@ -251,7 +251,8 @@ benga-grammar-website/
 ├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, OCR (+ ocr/ocr-doubts.csv)
 ├── scripts/                     # Node tools: validate-data, words-sync, words-import, extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
-├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*) + ESLint config
+├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
+├── eslint.config.mjs            # ESLint rules (flat config)
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
 ├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
@@ -266,7 +267,7 @@ benga-grammar-website/
 - **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
 - **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
 - **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.
-- **Versions:** `package.json` is the source of truth for dependencies. Phase 1 (Vite + Vue 3) is done; newer majors of ESLint, vue-router and vue-i18n are tracked in REVIEW-LOG R-018.
+- **Versions:** `package.json` is the source of truth for dependencies. ESLint 10 and vue-router 5 since R-018; Vite 8 is tracked in REVIEW-LOG R-030.
 
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.

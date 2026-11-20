@@ -100,7 +100,7 @@ export function validateContent(content, check) {
       } else {
         lexiconIds.set(id, file)
       }
-      let baseWord = null
+      let baseWord
       try {
         baseWord = baseWordOf(entry)
       } catch {

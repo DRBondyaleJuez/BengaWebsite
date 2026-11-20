@@ -228,7 +228,7 @@ export default {
       const savedMessage = sessionStorage.getItem(SAVED_MESSAGE_KEY)
       if (savedMessage) this.message = { type: 'success', text: savedMessage }
       sessionStorage.removeItem(SAVED_MESSAGE_KEY)
-    } catch (error) {
+    } catch {
       // Storage can be blocked (private mode); the message is only a convenience.
     }
   },
@@ -308,7 +308,7 @@ export default {
         this.message = { type: 'success', text }
         try {
           sessionStorage.setItem(SAVED_MESSAGE_KEY, text)
-        } catch (error) {
+        } catch {
           // Ignore: see SAVED_MESSAGE_KEY.
         }
         this.savedValues = Object.freeze(this.registryWords())
