@@ -10,7 +10,11 @@
     <div class="app__body">
       <AppSidebar :is-open="sidebarOpen" @close="sidebarOpen = false" />
 
-      <main id="main-content" class="app__main">
+      <main
+        id="main-content"
+        class="app__main"
+        :class="{ 'app__main--wide': $route.path.startsWith('/admin') }"
+      >
         <router-view />
       </main>
     </div>
@@ -79,6 +83,11 @@ export default {
 
     @include respond-below('md') {
       padding: $spacing-md;
+    }
+
+    // Developer pages (/admin/…, only during npm run serve) use the whole width
+    &--wide {
+      max-width: none;
     }
   }
 }

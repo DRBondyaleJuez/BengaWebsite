@@ -34,3 +34,8 @@ export const LIVING_DICTIONARY_SEARCH = `${LIVING_DICTIONARY_HOME}/entries`
  * link keeps working if the site is hosted in a sub-folder.
  */
 export const BOOK_PDF_URL = `${import.meta.env.BASE_URL}downloads/salvado-y-cos-gramatica-benga.pdf`
+
+/**
+ * The same scan with the improved, searchable OCR text layer (docs/OCR.md). Used by /admin/ocr.
+ */
+export const IMPROVED_PDF_URL = `${import.meta.env.BASE_URL}downloads/IMPROVED-salvado-y-cos-gramatica-benga.pdf`

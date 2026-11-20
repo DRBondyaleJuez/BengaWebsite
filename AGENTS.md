@@ -100,6 +100,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - After adding or changing Benga content, run `npm run words:sync` and then `npm run validate` (must end with 0 errors; warnings are fixed or logged in the review log). It adds new words and never overwrites existing entries. Then fix anything its report lists, or log it in `docs/REVIEW-LOG.md`. `npm run words:check` reports without writing.
 - Bulk links (dictionary ids, recorded audio) are imported with `npm run words:import -- file.csv` (columns `word` or `key`, plus `livingDictionaryId`, `audio`, `audioFile`, `notes`; an empty cell changes nothing). Keep imported lists in `scripts/imports/`.
 - `src/data/lexicon/word-usage.json` is generated; never edit it.
+- OCR doubts are corrected at `/admin/ocr` (same dev-only mechanism); corrections go to `docs/ocr/ocr-corrections.json` and into the improved PDF with `python scripts/ocr-pdf.py --reuse` (docs/OCR.md).
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
@@ -173,7 +174,8 @@ benga-grammar-website/
 │   │   ├── localized.js         # localized(text, locale): pick a language, fall back to es ($localized)
 │   │   ├── linkRules.js         # how audio / Living Dictionary URLs are built
 │   │   ├── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
-│   │   └── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
+│   │   ├── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
+│   │   └── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
@@ -244,14 +246,15 @@ benga-grammar-website/
 │       │   ├── VerbalNouns.vue
 │       │   └── NounPracticeGame.vue
 │       ├── admin/
-│       │   └── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
+│       │   ├── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
+│       │   └── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
 │           ├── RegularAdjectivesSection.vue
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, OCR (+ ocr/ocr-doubts.csv)
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json)
 ├── scripts/                     # Node tools: validate-data, words-sync, words-import, extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
@@ -259,7 +262,7 @@ benga-grammar-website/
 ├── .prettierrc.json / .prettierignore   # Code formatting rules (npm run format)
 ├── .editorconfig                # Basic editor settings (indent, charset, final newline)
 ├── package-lock.json
-├── vite.config.mjs              # Vite: Vue plugin, '@' alias, Sass options, port 8080, dev-only save endpoint
+├── vite.config.mjs              # Vite: Vue plugin, '@' alias, port 8080, dev-only save endpoints (/admin pages)
 ├── jsconfig.json                # '@' -> src alias for the editor
 ├── README.md
 └── AGENTS.md                    # This file

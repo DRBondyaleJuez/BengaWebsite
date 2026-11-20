@@ -42,6 +42,24 @@ neither a known Spanish nor a known Benga word. Columns: `pdf_page`, `ocr_read` 
 saw), `written_in_pdf` (after the rules), `confidence`, `kind`. Sort by page and check the ones
 in the section you are working on.
 
+## Correcting the doubts: `/admin/ocr`
+
+During `npm run serve`, open <http://localhost:8080/admin/ocr> (it doesn't exist on the
+published site):
+
+- Filter by PDF page, type («probablemente benga» / «desconocida»), status or text.
+- Click the **page number** of a word: the PDF page opens on the right with that word framed
+  in red (other doubtful words of the page in yellow). Zoom with − / +.
+- Type the right form in **Corrección** (buttons `â ē ū Â Ē Ū` write those letters at the
+  cursor) and a **Comentario** if useful, then **Guardar cambios**.
+- Corrections are saved in `docs/ocr/ocr-corrections.json` (key = word id, e.g. `p19-w156`).
+  To put them into the PDF's text layer: `python scripts/ocr-pdf.py --reuse` (seconds; it reuses
+  the saved OCR in `.ocr-cache/`). If the PDF is open in a viewer (Windows locks it), the new PDF
+  is written to `.ocr-cache/` instead: close the viewer and run the command again.
+
+`docs/ocr/ocr-doubts.csv` now also has the word `id` and its box on the page (`x0 y0 x1 y1`,
+points from the top-left corner), which is how the page finds the word.
+
 ## Running it again
 
 Do this after the lexicon grows (more known words → better spelling), or to tune the rules.

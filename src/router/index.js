@@ -82,6 +82,11 @@ const routes = [
           path: '/admin/palabras',
           name: 'WordRegistryAdmin',
           component: () => import('@/views/admin/WordRegistryAdmin.vue')
+        },
+        {
+          path: '/admin/ocr',
+          name: 'OcrReviewAdmin',
+          component: () => import('@/views/admin/OcrReviewAdmin.vue')
         }
       ]
     : []),

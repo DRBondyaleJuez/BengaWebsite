@@ -10,16 +10,17 @@ import vue from '@vitejs/plugin-vue'
 const LOCAL_ADDRESSES = ['127.0.0.1', '::1', '::ffff:127.0.0.1']
 
 /**
- * Dev-server endpoint used by the /admin/palabras page to save the word registry.
- * PUT /__dev/word-registry  with body { words: { <key>: { word, livingDictionaryId, ... } } }
- * It only exists during `npm run serve`; the published site has no server at all.
+ * A dev-server endpoint that receives JSON from an admin page and saves it to a file.
+ * Only during `npm run serve` (the published site has no server), only PUT, only from this computer.
+ *   path:  URL, e.g. '/__dev/word-registry'
+ *   save:  async (data) => { … }  — throws an Error with a readable message when data is wrong
  */
-function wordRegistryEndpoint() {
+function localJsonEndpoint(name, path, save) {
   return {
-    name: 'word-registry-endpoint',
+    name,
     apply: 'serve', // never part of `npm run build`
     configureServer(server) {
-      server.middlewares.use('/__dev/word-registry', (request, response) => {
+      server.middlewares.use(path, (request, response) => {
         const reply = (status, text) => {
           response.statusCode = status
           response.end(text)
@@ -32,11 +33,7 @@ function wordRegistryEndpoint() {
         request.on('data', (chunk) => (body += chunk))
         request.on('end', async () => {
           try {
-            const { words } = JSON.parse(body)
-            if (!words || typeof words !== 'object') throw new Error('missing "words"')
-            // Same writer as the npm scripts, so the file format never differs.
-            const { saveRegistry } = await import('./scripts/lib/registry.mjs')
-            await saveRegistry(words)
+            await save(JSON.parse(body))
             reply(200, 'ok')
           } catch (error) {
             reply(400, error.message)
@@ -47,8 +44,29 @@ function wordRegistryEndpoint() {
   }
 }
 
+/** /admin/palabras saves the word registry: PUT { words: { <key>: { word, livingDictionaryId, … } } } */
+const wordRegistryEndpoint = () =>
+  localJsonEndpoint('word-registry-endpoint', '/__dev/word-registry', async ({ words }) => {
+    if (!words || typeof words !== 'object') throw new Error('missing "words"')
+    // Same writer as the npm scripts, so the file format never differs.
+    const { saveRegistry } = await import('./scripts/lib/registry.mjs')
+    await saveRegistry(words)
+  })
+
+/** /admin/ocr saves the OCR corrections: PUT { corrections: { "p19-w156": { correction, … } } } */
+const ocrCorrectionsEndpoint = () =>
+  localJsonEndpoint(
+    'ocr-corrections-endpoint',
+    '/__dev/ocr-corrections',
+    async ({ corrections }) => {
+      if (!corrections || typeof corrections !== 'object') throw new Error('missing "corrections"')
+      const { saveOcrCorrections } = await import('./scripts/lib/ocr-corrections.mjs')
+      await saveOcrCorrections(corrections)
+    }
+  )
+
 export default defineConfig({
-  plugins: [vue(), wordRegistryEndpoint()],
+  plugins: [vue(), wordRegistryEndpoint(), ocrCorrectionsEndpoint()],
   define: {
     // vue-i18n build options: full install, no legacy API (we use composition mode), no devtools
     // in the published site. Without them vue-i18n prints a warning in the console.

@@ -9,8 +9,10 @@ Redo the OCR of Salvado y Cos's grammar and write a searchable copy:
         ▼
     public/downloads/IMPROVED-salvado-y-cos-gramatica-benga.pdf   (same images, new text layer)
     docs/ocr/ocr-doubts.csv                                       (words the OCR is not sure about)
+    docs/ocr/ocr-corrections.json  ← corrections typed in /admin/ocr; applied to the text layer
 
 Run:   python scripts/ocr-pdf.py                 (all pages, ~20 min: 3 layout modes per page)
+       python scripts/ocr-pdf.py --reuse         (seconds: reuse the saved OCR, e.g. after corrections)
        python scripts/ocr-pdf.py --pages 9,16    (PDF pages to test; writes to the scratch name *-TEST.pdf)
 
 Needs (see docs/OCR.md): Tesseract 5 (UB-Mannheim build), spa.traineddata + Latin.traineddata from
@@ -40,7 +42,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "public/downloads/salvado-y-cos-gramatica-benga.pdf"
 TARGET = ROOT / "public/downloads/IMPROVED-salvado-y-cos-gramatica-benga.pdf"
 DOUBTS = ROOT / "docs/ocr/ocr-doubts.csv"
-CACHE = ROOT / ".ocr-cache/words.json"  # raw OCR per page (git-ignored): --reuse skips Tesseract
+CACHE = ROOT / ".ocr-cache/words.json"
+# Corrections typed by a person in /admin/ocr (npm run serve): { "corrections": { "p19-w156": {…} } }
+CORRECTIONS = ROOT / "docs/ocr/ocr-corrections.json"  # raw OCR per page (git-ignored): --reuse skips Tesseract
 TESSERACT = Path(os.environ.get("TESSERACT", "C:/Program Files/Tesseract-OCR/tesseract.exe"))
 TESSDATA = Path(os.environ.get("TESSDATA_PREFIX", Path.home() / "tessdata"))
 FONT_FILE = "C:/Windows/Fonts/arial.ttf"  # has â ē ū; the text is invisible, only searchable
@@ -278,26 +282,50 @@ def main():
 
     font = pymupdf.Font(fontfile=FONT_FILE)
     scale = 72 / DPI
+    corrections = (
+        json.loads(CORRECTIONS.read_text("utf8")).get("corrections", {}) if CORRECTIONS.exists() else {}
+    )
     doubts, counts = [], {}
     for n in numbers:
-        for word in results[n]:
+        for index, word in enumerate(results[n]):
+            # Stable id of the word: PDF page + its position in the OCR output (from the cache)
+            word_id = f"p{n + 1}-w{index}"
             word["ocr"] = word["text"]
             word["text"], how = correct_word(word["text"], benga, spanish_exact, spanish_unique)
+            doubtful = how in ("unknown", "benga-accent") and word["conf"] < LOW_CONFIDENCE
+            fixed = (corrections.get(word_id) or {}).get("correction", "").strip()
+            if fixed:  # a person's correction always wins
+                word["text"] = fixed
+                how = "manual"
             counts[how] = counts.get(how, 0) + 1
-            if how in ("unknown", "benga-accent") and word["conf"] < LOW_CONFIDENCE:
-                doubts.append([n + 1, word["ocr"], word["text"], round(word["conf"]), how])
+            if doubtful:
+                box = [round(word[k] * scale, 1) for k in ("x0", "y0", "x1", "y1")]
+                doubts.append([word_id, n + 1, word["ocr"], word["text"], round(word["conf"]), how, *box])
         write_text_layer(source[n], results[n], font, scale)
 
     if args.pages:  # keep only the tested pages in the test file
         source.select(numbers)
     source.subset_fonts()  # embed only the letters used (keeps the file ~ the original size)
-    source.save(target, garbage=4, deflate=True, deflate_images=False, use_objstms=1, clean=True)
+    save_options = dict(garbage=4, deflate=True, deflate_images=False, use_objstms=1, clean=True)
+    try:
+        source.save(target, **save_options)
+    except Exception as error:  # Windows: the PDF is open in a viewer (Foxit, Edge…) and locked
+        pending = CACHE.parent / target.name
+        pending.parent.mkdir(exist_ok=True)
+        source.save(pending, **save_options)
+        print(f"! Could not replace {target.relative_to(ROOT)} ({error.__class__.__name__}): is it open")
+        print(f"  in a PDF viewer? Saved to {pending.relative_to(ROOT)}; close the viewer and run")
+        print("  python scripts/ocr-pdf.py --reuse again.")
+        target = pending
 
     DOUBTS.parent.mkdir(parents=True, exist_ok=True)
     doubts_file = DOUBTS.with_name("ocr-doubts-TEST.csv") if args.pages else DOUBTS
     with open(doubts_file, "w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["pdf_page", "ocr_read", "written_in_pdf", "confidence", "kind"])
+        # x0…y1: the word's box on the PDF page, in points from the top-left corner (for /admin/ocr)
+        writer.writerow(
+            ["id", "pdf_page", "ocr_read", "written_in_pdf", "confidence", "kind", "x0", "y0", "x1", "y1"]
+        )
         writer.writerows(doubts)
 
     total = sum(counts.values())
