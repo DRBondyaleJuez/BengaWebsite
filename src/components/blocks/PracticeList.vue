@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
+@use '@/styles/variables' as *;
 
 .practice-list {
   margin: 0;

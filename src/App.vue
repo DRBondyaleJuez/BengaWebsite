@@ -49,8 +49,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .app {
   min-height: 100vh;

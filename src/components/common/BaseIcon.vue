@@ -154,8 +154,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .icon {
   display: inline-flex;

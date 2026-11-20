@@ -60,16 +60,6 @@ export default defineConfig({
     // '@/...' means 'src/...' (same shortcut as before; also set in jsconfig.json for the editor)
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        // The styles still use older Sass features that Sass 3 will remove: `@import`,
-        // global functions and darken()/lighten(). They work today; the warnings only add noise.
-        // TODO(REVIEW-LOG R-017): move to `@use` + `sass:color`, then remove this line.
-        silenceDeprecations: ['import', 'global-builtin', 'color-functions']
-      }
-    }
-  },
   server: {
     port: 8080 // same address as before: http://localhost:8080
   }

@@ -25,8 +25,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .concepts-list {
   display: grid;

@@ -176,8 +176,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use 'sass:color';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .irregular-nouns {
   width: 100%;
@@ -355,7 +356,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        background: darken($color-primary, 10%);
+        background: color.adjust($color-primary, $lightness: -10%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }
@@ -364,7 +365,7 @@ export default {
         background: $color-secondary;
 
         &:hover {
-          background: darken($color-secondary, 10%);
+          background: color.adjust($color-secondary, $lightness: -10%);
         }
       }
     }
