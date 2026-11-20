@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Cuarta Clase Nominal"
+    "es": "Clase 4"
   },
   "subtitle": {
     "es": "bo / bū → mi"
   },
   "source": {
     "pdfPage": "11-12"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-3",
-      "label": {
-        "es": "Clase 3"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-5",
-      "label": {
-        "es": "Quinta Clase"
-      }
-    }
   },
   "blocks": [
     {
@@ -38,7 +24,7 @@
       "from": "bo- / bū-",
       "to": "mi-",
       "description": {
-        "es": "Los nombres de la cuarta clase toman el prefijo mi- al pasar al plural."
+        "es": "Los nombres de la clase 4 toman el prefijo mi- al pasar al plural."
       }
     },
     {
@@ -110,7 +96,7 @@
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la segunda clase."
+        "es": "Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la clase 2."
       }
     },
     {

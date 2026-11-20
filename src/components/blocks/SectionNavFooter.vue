@@ -1,191 +1,116 @@
 <template>
-  <router-link v-if="prevLink" :to="prevLink.to" :class="classes.prev">
-    ← {{ prevLink.label }}
-  </router-link>
-  <router-link v-if="nextLink" :to="nextLink.to" :class="classes.next">
-    {{ nextLink.label }} →
-  </router-link>
+  <nav v-if="prevLink || nextLink" class="section-nav" :aria-label="$t('nav.pageNavigation')">
+    <router-link
+      v-if="prevLink"
+      :to="prevLink.to"
+      class="section-nav__button section-nav__button--prev"
+    >
+      ← {{ prevLink.label }}
+    </router-link>
+    <router-link
+      v-if="nextLink"
+      :to="nextLink.to"
+      class="section-nav__button section-nav__button--next"
+    >
+      {{ nextLink.label }} →
+    </router-link>
+  </nav>
 </template>
 
 <script>
 import chaptersIndex from '@/data/chapters-index.json'
 
 /**
- * The two buttons at the bottom of a page: ← previous section · next section →
+ * The footer of every chapter page: ← previous page · next page →
  *
- *   <SectionNavFooter />                                       both from chapters-index.json
- *   <SectionNavFooter :prev="{ to: '/capitulo-2/clase-1', label: 'Clase 1' }" />   override one
+ *   <SectionNavFooter />
  *
- * Without props, the neighbours of the current URL in src/data/chapters-index.json are used, with
- * their sidebar titles. Put it inside the page's nav container (e.g. <section class="noun-class__nav">).
+ * Both buttons come from src/data/chapters-index.json, read as ONE path through the book:
  *
- * look="bar" (default): two wide coloured bars (noun classes) ·
- * look="buttons": a grey "back" button and a coloured "next" button (chapter-3 pages) ·
- * look="lesson": two coloured buttons at the ends (chapter-1 pages); `color` primary/secondary/accent.
+ *   Capítulo 1 → Alfabeto → Diptongos → Triptongos → Consonantes → Capítulo 2 → Clasificación… → …
+ *   (chapter index page, then its sections, then the next chapter's index page…)
+ *
+ * so the last section of a chapter leads to the next chapter, and the labels are the sidebar
+ * titles. Adding a section to chapters-index.json updates every footer. `prev` / `next`
+ * ({ to, label }) can override one button, but normally they are left out.
  */
 export default {
   name: 'SectionNavFooter',
   props: {
-    /** { to, label } — label without the arrow. Default: previous section of the chapter. */
     prev: { type: Object, default: null },
-    /** { to, label } — label without the arrow. Default: next section of the chapter. */
-    next: { type: Object, default: null },
-    look: {
-      type: String,
-      default: 'bar',
-      validator: (value) => ['bar', 'buttons', 'lesson'].includes(value)
-    },
-    /** look="lesson" only: primary or secondary colour. */
-    color: { type: String, default: 'primary' }
+    next: { type: Object, default: null }
   },
   computed: {
-    classes() {
-      if (this.look === 'buttons')
-        return { prev: 'nav-button nav-button--back', next: 'nav-button nav-button--next' }
-      if (this.look === 'lesson') {
-        const base = `lesson-link lesson-link--${this.color}`
-        return { prev: `${base} lesson-link--prev`, next: `${base} lesson-link--next` }
-      }
-      return { prev: 'nav-link prev', next: 'nav-link next' }
+    /** Every chapter index page and section, in reading order: [{ to, label }] */
+    readingOrder() {
+      return chaptersIndex.chapters.flatMap((chapter) => [
+        { to: chapter.path, label: this.$t(chapter.titleKey) },
+        ...chapter.sections.map((section) => ({
+          to: section.path,
+          label: this.$t(section.titleKey)
+        }))
+      ])
     },
-    /** Every section of every chapter, in reading order. */
-    neighbours() {
-      const sections = chaptersIndex.chapters.flatMap((chapter) => chapter.sections)
-      const here = sections.findIndex((section) => section.path === this.$route.path)
-      const link = (section) => section && { to: section.path, label: this.$t(section.titleKey) }
-      return here < 0 ? {} : { prev: link(sections[here - 1]), next: link(sections[here + 1]) }
+    here() {
+      return this.readingOrder.findIndex((page) => page.to === this.$route.path)
     },
     prevLink() {
-      return this.prev || this.neighbours.prev
+      if (this.prev) return this.prev
+      return this.here > 0 ? this.readingOrder[this.here - 1] : null
     },
     nextLink() {
-      return this.next || this.neighbours.next
+      if (this.next) return this.next
+      return this.here >= 0 ? this.readingOrder[this.here + 1] || null : null
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-@use 'sass:color';
 @use '@/styles/variables' as *;
 @use '@/styles/mixins' as *;
 
-.nav-link {
-  flex: 1;
-  padding: $spacing-md $spacing-lg;
-  background: $color-primary;
-  color: white;
-  text-decoration: none;
-  border-radius: $border-radius;
-  text-align: center;
-  transition: all 0.3s ease;
-  font-weight: bold;
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
 
-  &:hover {
-    background: color.adjust($color-primary, $lightness: -10%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
 
-  &.prev {
-    background: $color-secondary;
+  &__button {
+    @include button-base;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: $border-radius-base;
+    transition: all $transition-base;
 
-    &:hover {
-      background: color.adjust($color-secondary, $lightness: -10%);
+    // Only a "next" button (first page of the book): keep it on the right
+    &--next:only-child {
+      margin-left: auto;
     }
-  }
-}
 
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
+    &--prev {
+      background-color: #f0f0f0;
+      color: $color-text-primary;
 
-  &--back {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
+      &:hover {
+        background-color: #e0e0e0;
+      }
     }
-  }
 
-  &--next {
-    background-color: $color-primary;
-    color: white;
+    &--next {
+      background-color: $color-primary;
+      color: white;
 
-    &:hover {
-      background-color: $color-primary-dark;
-    }
-  }
-}
-
-.lesson-link {
-  display: inline-flex;
-  align-items: center;
-  gap: $spacing-sm;
-  padding: $spacing-md $spacing-lg;
-  color: $color-text-inverse;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: $font-weight-semibold;
-  transition: all $transition-base;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-
-  &--primary {
-    background: $color-primary;
-    border: 2px solid $color-primary;
-
-    &:hover {
-      background: $color-primary-dark;
-      border-color: $color-primary-dark;
-      box-shadow: 0 4px 12px rgba($color-primary, 0.3);
-    }
-  }
-
-  &--secondary {
-    background: $color-secondary;
-    border: 2px solid $color-secondary;
-
-    &:hover {
-      background: $color-secondary-dark;
-      border-color: $color-secondary-dark;
-      box-shadow: 0 4px 12px rgba($color-secondary, 0.3);
-    }
-  }
-
-  &--accent {
-    background: $color-accent;
-    color: $color-primary;
-    border: 2px solid $color-accent;
-
-    &:hover {
-      background: $color-accent-dark;
-      border-color: $color-accent-dark;
-      color: $color-text-inverse;
-      box-shadow: 0 4px 12px rgba($color-accent, 0.3);
-    }
-  }
-
-  &--prev {
-    justify-self: flex-start;
-
-    @include respond-below('sm') {
-      justify-self: auto;
-    }
-  }
-
-  &--next {
-    justify-self: flex-end;
-
-    @include respond-below('sm') {
-      justify-self: auto;
+      &:hover {
+        background-color: $color-primary-dark;
+      }
     }
   }
 }

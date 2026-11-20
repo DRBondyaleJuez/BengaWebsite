@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Séptima Clase Nominal"
+    "es": "Clase 7"
   },
   "subtitle": {
     "es": "Singular = Plural"
   },
   "source": {
     "pdfPage": "13-14"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-6",
-      "label": {
-        "es": "Clase 6"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/irregulares",
-      "label": {
-        "es": "Irregulares"
-      }
-    }
   },
   "blocks": [
     {

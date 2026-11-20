@@ -106,6 +106,7 @@
       <div class="chapter-three__cta">
         <router-link to="/capitulo-3/introduccion" class="cta-button">Comenzar →</router-link>
       </div>
+      <SectionNavFooter />
     </div>
 
     <!-- key: every section gets a fresh page, even when two sections share SectionPage.vue -->
@@ -114,8 +115,10 @@
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'ChapterThreeIndex',
+  components: { SectionNavFooter },
   data() {
     return {
       progress: {

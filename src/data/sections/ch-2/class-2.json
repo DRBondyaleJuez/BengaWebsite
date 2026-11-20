@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Segunda Clase Nominal"
+    "es": "Clase 2"
   },
   "subtitle": {
     "es": "i / di → ma"
   },
   "source": {
     "pdfPage": "9-10"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-1",
-      "label": {
-        "es": "Clase 1"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-3",
-      "label": {
-        "es": "Tercera Clase"
-      }
-    }
   },
   "blocks": [
     {
@@ -187,7 +173,7 @@
       "type": "heading",
       "id": "class-six",
       "text": {
-        "es": "Excepción: nombres con i- que pertenecen a la sexta clase"
+        "es": "Excepción: nombres con i- que pertenecen a la clase 6"
       }
     },
     {

@@ -19,7 +19,7 @@
         Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de
         líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos
         de éste. Algunos fueron introducido en los
-        <a href="/capitulo-2/clase-2">sustantivos de Segunda Clase</a>
+        <a href="/capitulo-2/clase-2">sustantivos de Clase 2</a>
       </p>
 
       <div class="examples-grid">
@@ -101,21 +101,17 @@
       </ol>
     </section>
 
-    <section class="irregular-nouns__nav">
-      <router-link to="/capitulo-2/clase-7" class="nav-link prev"
-        >← Clase 7 (Invariables)</router-link
-      >
-      <router-link to="/capitulo-2/verbales" class="nav-link next">Nombres Derivados →</router-link>
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 
 export default {
   name: 'IrregularNouns',
-  components: { BengaWord },
+  components: { BengaWord, SectionNavFooter },
   data() {
     return {
       pluralOnlyNouns: [
@@ -339,38 +335,6 @@ export default {
     }
   }
 
-  &__nav {
-    display: flex;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-
-    .nav-link {
-      flex: 1;
-      padding: $spacing-md $spacing-lg;
-      background: $color-primary;
-      color: white;
-      text-decoration: none;
-      border-radius: $border-radius;
-      text-align: center;
-      font-weight: bold;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background: color.adjust($color-primary, $lightness: -10%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      &.prev {
-        background: $color-secondary;
-
-        &:hover {
-          background: color.adjust($color-secondary, $lightness: -10%);
-        }
-      }
-    }
-  }
-
   @include respond-below('md') {
     padding: $spacing-md;
 
@@ -384,10 +348,6 @@ export default {
       .subtitle {
         font-size: 1rem;
       }
-    }
-
-    &__nav {
-      flex-direction: column;
     }
   }
 }

@@ -39,12 +39,13 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Transitions: classes are `*-enter-from` / `*-leave-from` (not `*-enter` / `*-leave`).
 - `router-link` has no `tag` prop: to make a non-link element clickable use `<router-link v-slot="{ navigate }" to="…" custom>` around it (see `NounsIntro.vue`), and give it `role="link"`, `tabindex="0"` and `@keydown.enter="navigate"`.
 - Unknown URLs are caught by `path: '/:pathMatch(.*)*'` in `src/router/index.js`.
+- Every chapter page ends with `<SectionNavFooter />` (no props): ← previous · next → from `chapters-index.json` as one path through the book, so the last section of a chapter leads to the next chapter. Don't hand-write footer navigation.
 - Chapter and section routes are generated from `src/data/chapters-index.json` (each section has `component` = a page in `src/views`, or `sectionFile` = a section file). Never add a chapter route by hand in `src/router/index.js`. The browser-tab title falls back to the section's `titleKey` (`App.vue`).
 - In the browser console the app is at `document.getElementById('app').__vue_app__` (Vue 2's `__vue__` no longer exists).
 
 ### Noun Class Page Format
 - The seven noun classes are ONE page, `src/views/chapter-2/NounClassPage.vue`, drawn from `src/data/sections/ch-2/class-N.json` (the router passes `section: 'class-N'`). To change a class page, edit its JSON; to change how something looks, edit the block component in `src/components/blocks/` — every class changes together. Guide: `docs/CONTENT-GUIDE.md` → "How a page groups the blocks".
-- Page structure: green gradient `noun-class__header`, then one `<section class="noun-class__<id>">` per `heading` block (`pattern`, `examples`, `variants`, `concordance`, `concepts`, `exceptions`, `liquids`, `class-six`, `practice`), then the two-button `noun-class__nav`.
+- Page structure: green gradient `noun-class__header`, then one `<section class="noun-class__<id>">` per `heading` block (`pattern`, `examples`, `variants`, `concordance`, `concepts`, `exceptions`, `liquids`, `class-six`, `practice`), then the shared `SectionNavFooter`.
 - Example cards take lexicon ids (`"entries": ["epokolo"]`) from `lexicon/nouns.json`; never copy words or meanings into the section file. Exceptions go in an `exceptions` part: a note right after the heading (yellow `.section-note`), the examples, and optionally a `"variant": "small"` note (`.example-note`).
 - Keep BEM naming and the shared blocks; don't restyle one class on its own.
 

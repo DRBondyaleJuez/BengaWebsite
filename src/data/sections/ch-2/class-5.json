@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Quinta Clase Nominal"
+    "es": "Clase 5"
   },
   "subtitle": {
     "es": "mo → ba"
   },
   "source": {
     "pdfPage": 12
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-4",
-      "label": {
-        "es": "Clase 4"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-6",
-      "label": {
-        "es": "Sexta Clase"
-      }
-    }
   },
   "blocks": [
     {
@@ -38,7 +24,7 @@
       "from": "mo-",
       "to": "ba-",
       "description": {
-        "es": "Los nombres de la quinta clase cambian la inicial mo- por ba- para expresarse en plural."
+        "es": "Los nombres de la clase 5 cambian la inicial mo- por ba- para expresarse en plural."
       }
     },
     {
@@ -99,7 +85,7 @@
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta quinta clase."
+        "es": "Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta clase 5."
       }
     },
     {

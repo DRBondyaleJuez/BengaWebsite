@@ -155,23 +155,17 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <div class="numeral-ordinal__navigation">
-      <router-link to="/capitulo-3/comparativos-superlativos" class="nav-button nav-button--back">
-        ← Comparativos y Superlativos
-      </router-link>
-      <router-link to="/capitulo-3" class="nav-button nav-button--index">
-        Índice del Capítulo
-      </router-link>
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import numeralsData from '@/data/chapter-3/numerals-ordinals.json'
 
 export default {
   name: 'NumeralOrdinalAdjectivesSection',
+  components: { SectionNavFooter },
   data() {
     return {
       cardinals_1_10: [],
@@ -500,48 +494,6 @@ export default {
     color: $color-text-primary;
     line-height: 1.6;
     padding-top: 0.1rem;
-  }
-}
-
-.numeral-ordinal__navigation {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-  }
-}
-
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
-  flex: 1;
-  text-align: center;
-
-  &--back {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
-    }
-  }
-
-  &--index {
-    background-color: $color-primary;
-    color: white;
-
-    &:hover {
-      background-color: $color-primary-dark;
-    }
   }
 }
 </style>

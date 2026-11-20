@@ -112,17 +112,7 @@
       </template>
     </component>
 
-    <nav v-if="lesson" class="lesson__nav">
-      <SectionNavFooter
-        :prev="navLink('prev')"
-        :next="navLink('next')"
-        look="lesson"
-        :color="content.color || 'primary'"
-      />
-    </nav>
-    <div v-else class="section-page__navigation">
-      <SectionNavFooter :prev="navLink('prev')" :next="navLink('next')" look="buttons" />
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
@@ -282,10 +272,6 @@ export default {
       return block.rows.map((row) =>
         row.map((cell) => (cell.benga ? { benga: cell.benga } : { text: this.$localized(cell) }))
       )
-    },
-    navLink(which) {
-      const link = this.content.nav && this.content.nav[which]
-      return link ? { to: link.to, label: this.$localized(link.label) } : null
     }
   }
 }
@@ -361,19 +347,6 @@ export default {
     }
   }
 
-  &__navigation {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
-
-    @media (max-width: 600px) {
-      flex-direction: column;
-    }
-  }
-
   &__unknown {
     padding: 1rem;
     border: 2px dashed #c0392b;
@@ -445,19 +418,6 @@ export default {
     margin: 0;
     line-height: $line-height-loose;
     color: $color-text-primary;
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-    padding-top: $spacing-lg;
-    border-top: 2px solid $border-color;
-
-    @include respond-below('sm') {
-      flex-direction: column;
-    }
   }
 }
 </style>

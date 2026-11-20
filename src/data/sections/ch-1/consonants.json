@@ -8,20 +8,6 @@
     "en": "Consonants",
     "fr": "Les Consonnes"
   },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-1/triptongos",
-      "label": {
-        "es": "Triptongos"
-      }
-    },
-    "next": {
-      "to": "/capitulo-1",
-      "label": {
-        "es": "Capítulo 1: Lecciones Preliminares"
-      }
-    }
-  },
   "blocks": [
     {
       "type": "heading",

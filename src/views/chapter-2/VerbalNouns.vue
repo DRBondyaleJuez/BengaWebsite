@@ -39,7 +39,7 @@
       </div>
       <p class="classification-note">
         En la clasificación, estos nombres pertenecen a la
-        <a href="/capitulo-2/clase-2">segunda clase</a> en su número singular. (i->ma)
+        <a href="/capitulo-2/clase-2">clase 2</a> en su número singular. (i->ma)
       </p>
     </section>
 
@@ -67,7 +67,7 @@
         </div>
       </div>
       <p class="classification-note">
-        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">tercera clase</a> en la
+        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">clase 3</a> en la
         formación del plural. u->me
       </p>
     </section>
@@ -190,22 +190,17 @@
       </ol>
     </section>
 
-    <!-- Navigation -->
-    <section class="verbal-nouns__nav">
-      <router-link to="/capitulo-2/irregulares" class="nav-link prev"
-        >← Nombres Irregulares</router-link
-      >
-      <router-link to="/capitulo-2" class="nav-link next">Volver a Capítulo 2 →</router-link>
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 
 export default {
   name: 'VerbalNouns',
-  components: { BengaWord },
+  components: { BengaWord, SectionNavFooter },
   data() {
     return {
       abstractNouns: [
@@ -359,14 +354,14 @@ export default {
           type: 'Abstracto',
           formation: 'Imperativo de 2.ª persona singular sin su última sílaba, con i inicial',
           example: 'Tândâkâ → itândē',
-          nounClass: 'Segunda clase'
+          nounClass: 'Clase 2'
         },
         {
           type: 'De acción',
           formation:
             'Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal',
           example: 'Longaka → ulongi',
-          nounClass: 'Tercera clase'
+          nounClass: 'Clase 3'
         },
         {
           type: 'De modo',
@@ -631,38 +626,6 @@ export default {
     }
   }
 
-  &__nav {
-    display: flex;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-
-    .nav-link {
-      flex: 1;
-      padding: $spacing-md $spacing-lg;
-      background: $color-primary;
-      color: white;
-      text-decoration: none;
-      border-radius: $border-radius;
-      text-align: center;
-      font-weight: bold;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background: color.adjust($color-primary, $lightness: -10%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      &.prev {
-        background: $color-secondary;
-
-        &:hover {
-          background: color.adjust($color-secondary, $lightness: -10%);
-        }
-      }
-    }
-  }
-
   @include respond-below('md') {
     padding: $spacing-md;
 
@@ -694,10 +657,6 @@ export default {
       div:first-child {
         border-top: none;
       }
-    }
-
-    &__nav {
-      flex-direction: column;
     }
   }
 }

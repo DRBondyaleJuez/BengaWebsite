@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Sexta Clase Nominal"
+    "es": "Clase 6"
   },
   "subtitle": {
     "es": "v → l"
   },
   "source": {
     "pdfPage": "12-13"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-5",
-      "label": {
-        "es": "Clase 5"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-7",
-      "label": {
-        "es": "Séptima Clase"
-      }
-    }
   },
   "blocks": [
     {
@@ -38,7 +24,7 @@
       "from": "v-",
       "to": "l-",
       "description": {
-        "es": "La sexta clase muestra un cambio consonántico por el cual la fricativa inicial cambia al plural por l-."
+        "es": "La clase 6 muestra un cambio consonántico por el cual la fricativa inicial cambia al plural por l-."
       }
     },
     {
@@ -111,7 +97,7 @@
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la segunda clase (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta sexta clase."
+        "es": "Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la clase 2 (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta clase 6."
       }
     },
     {
@@ -122,7 +108,7 @@
       "type": "note",
       "variant": "small",
       "text": {
-        "es": "En la segunda clase se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta sexta clase."
+        "es": "En la clase 2 se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta clase 6."
       }
     },
     {

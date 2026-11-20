@@ -265,6 +265,7 @@
             Comenzar con el Alfabeto →
           </router-link>
         </section>
+        <SectionNavFooter />
       </div>
 
       <!-- key: every section gets a fresh page, even when two sections share SectionPage.vue -->
@@ -274,8 +275,10 @@
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'ChapterOneIndex',
+  components: { SectionNavFooter },
   data() {
     return {
       chapter1Data: {

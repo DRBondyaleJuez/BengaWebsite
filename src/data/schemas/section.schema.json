@@ -40,19 +40,6 @@
     "editorial": {
       "$ref": "common.schema.json#/$defs/editorial"
     },
-    "nav": {
-      "description": "Optional: the two buttons at the bottom of the page. Without it, the previous/next sections of chapters-index.json are used.",
-      "type": "object",
-      "properties": {
-        "prev": {
-          "$ref": "#/$defs/navLink"
-        },
-        "next": {
-          "$ref": "#/$defs/navLink"
-        }
-      },
-      "additionalProperties": false
-    },
     "blocks": {
       "type": "array",
       "minItems": 1,
@@ -573,21 +560,6 @@
         }
       ],
       "unevaluatedProperties": false
-    },
-    "navLink": {
-      "type": "object",
-      "properties": {
-        "to": {
-          "type": "string",
-          "pattern": "^/"
-        },
-        "label": {
-          "$ref": "#/$defs/text",
-          "description": "Without the arrow, e.g. «Clase 1»."
-        }
-      },
-      "required": ["to", "label"],
-      "additionalProperties": false
     },
     "links": {
       "description": "A numbered list of pages to visit (SectionLinks): title, short text and a link.",

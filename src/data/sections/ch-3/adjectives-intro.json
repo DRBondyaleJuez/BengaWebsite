@@ -10,20 +10,6 @@
   "source": {
     "pdfPage": 17
   },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-3",
-      "label": {
-        "es": "Volver al Capítulo 3"
-      }
-    },
-    "next": {
-      "to": "/capitulo-3/adjetivos-regulares",
-      "label": {
-        "es": "Siguiente: Adjetivos Regulares"
-      }
-    }
-  },
   "blocks": [
     {
       "type": "heading",

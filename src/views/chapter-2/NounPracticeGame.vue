@@ -134,16 +134,12 @@
       </nav>
     </section>
 
-    <section class="noun-class__nav">
-      <router-link to="/capitulo-2/verbales" class="nav-link prev">
-        ← Nombres Derivados
-      </router-link>
-      <router-link to="/capitulo-2" class="nav-link next"> Volver al Capítulo 2 → </router-link>
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import { getNouns, PLURAL_RULES } from '@/services/nouns'
 
@@ -166,6 +162,7 @@ function shuffle(array) {
 export default {
   name: 'NounPracticeGame',
   components: {
+    SectionNavFooter,
     BengaWord
   },
   data() {
@@ -606,39 +603,6 @@ export default {
     }
   }
 
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-
-    .nav-link {
-      flex: 1;
-      padding: $spacing-md $spacing-lg;
-      background: $color-primary;
-      color: white;
-      text-decoration: none;
-      border-radius: $border-radius;
-      text-align: center;
-      transition: all 0.3s ease;
-      font-weight: bold;
-
-      &:hover {
-        background: color.adjust($color-primary, $lightness: -10%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      &.prev {
-        background: $color-secondary;
-
-        &:hover {
-          background: color.adjust($color-secondary, $lightness: -10%);
-        }
-      }
-    }
-  }
-
   @include respond-below('md') {
     padding: $spacing-md;
 
@@ -658,14 +622,6 @@ export default {
       .cards-grid--desktop,
       .cards-grid--mobile {
         grid-template-columns: 1fr;
-      }
-    }
-
-    &__nav {
-      flex-direction: column;
-
-      .nav-link {
-        text-align: center;
       }
     }
   }

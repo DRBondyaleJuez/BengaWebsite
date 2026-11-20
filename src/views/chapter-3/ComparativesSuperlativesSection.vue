@@ -151,26 +151,17 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <div class="comparatives-superlatives__navigation">
-      <router-link to="/capitulo-3/adjetivos-invariables" class="nav-button nav-button--back">
-        ← Adjetivos Invariables
-      </router-link>
-      <router-link to="/capitulo-3" class="nav-button nav-button--index">
-        Índice del Capítulo
-      </router-link>
-      <router-link to="/capitulo-3/numerales-ordinales" class="nav-button nav-button--next">
-        Siguiente: Numerales →
-      </router-link>
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import comparativesData from '@/data/chapter-3/comparatives-superlatives.json'
 
 export default {
   name: 'ComparativesSuperlativesSection',
+  components: { SectionNavFooter },
   data() {
     return {
       keyWords: [],
@@ -505,48 +496,6 @@ export default {
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-}
-
-.comparatives-superlatives__navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
-  text-align: center;
-
-  &--back,
-  &--index {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
-    }
-  }
-
-  &--next {
-    background-color: $color-primary;
-    color: white;
-
-    &:hover {
-      background-color: $color-primary-dark;
     }
   }
 }

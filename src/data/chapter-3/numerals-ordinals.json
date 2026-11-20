@@ -207,7 +207,7 @@
     "classes": [
       {
         "classId": 1,
-        "className": "Primera clase",
+        "className": "Clase 1",
         "uno": "Yáka",
         "dos": "Bebale",
         "tres": "Belalo",
@@ -216,7 +216,7 @@
       },
       {
         "classId": 2,
-        "className": "Segunda clase",
+        "className": "Clase 2",
         "uno": "Jáka",
         "dos": "Mabale",
         "tres": "Malalo",
@@ -225,7 +225,7 @@
       },
       {
         "classId": 3,
-        "className": "Tercera clase",
+        "className": "Clase 3",
         "uno": "Mbáka",
         "dos": "Mebale",
         "tres": "Melalo",
@@ -234,7 +234,7 @@
       },
       {
         "classId": 4,
-        "className": "Cuarta clase",
+        "className": "Clase 4",
         "uno": "Báka",
         "dos": "Mebale",
         "tres": "Melalo",
@@ -243,7 +243,7 @@
       },
       {
         "classId": 5,
-        "className": "Quinta clase",
+        "className": "Clase 5",
         "uno": "Mbáka",
         "dos": "Babale",
         "tres": "Balalo",
@@ -252,7 +252,7 @@
       },
       {
         "classId": 6,
-        "className": "Sexta clase",
+        "className": "Clase 6",
         "uno": "Vidki",
         "dos": "Lobale",
         "tres": "Lolalo",
@@ -261,7 +261,7 @@
       },
       {
         "classId": 7,
-        "className": "Séptima clase",
+        "className": "Clase 7",
         "uno": "Páka",
         "dos": "Tbabale",
         "tres": "Ilalo",

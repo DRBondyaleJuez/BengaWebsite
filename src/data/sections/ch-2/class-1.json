@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Primera Clase Nominal"
+    "es": "Clase 1"
   },
   "subtitle": {
     "es": "e → be / y → bi"
   },
   "source": {
     "pdfPage": "8-9"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/introduccion",
-      "label": {
-        "es": "Introducción"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-2",
-      "label": {
-        "es": "Segunda Clase"
-      }
-    }
   },
   "blocks": [
     {

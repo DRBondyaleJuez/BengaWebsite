@@ -6,7 +6,7 @@
   "classes": [
     {
       "classId": 1,
-      "classType": "Primera Clase",
+      "classType": "Clase 1",
       "nounClassRule": "Empieza con 'e' o 'y' en singular y antepone 'be' o 'bi' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'e' o 'ey' en singular y añade 'b' al comienzo en plural",
       "nounExample": "Epokolo",
@@ -26,7 +26,7 @@
     },
     {
       "classId": 2,
-      "classType": "Segunda Clase",
+      "classType": "Clase 2",
       "nounClassRule": "Empieza con 'i' o 'di' en singular y se cambia por 'ma' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'i' o 'iy' en singular y por 'ma' o 'may' en plural",
       "nounExample": "Ibongo",
@@ -46,7 +46,7 @@
     },
     {
       "classId": 3,
-      "classType": "Tercera Clase",
+      "classType": "Clase 3",
       "nounClassRule": "Empieza con 'u' o 'mū' en singular y se cambia por 'me' o 'mi' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'me' o 'mey' en plural",
       "nounExample": "Ubâki",
@@ -66,7 +66,7 @@
     },
     {
       "classId": 4,
-      "classType": "Cuarta Clase",
+      "classType": "Clase 4",
       "nounClassRule": "Empieza con 'bo' o 'bū' en singular y se cambia por 'mi' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'bo' o 'boy' en singular y por 'me' o 'mey' en plural",
       "nounExample": "Boho",
@@ -86,7 +86,7 @@
     },
     {
       "classId": 5,
-      "classType": "Quinta Clase",
+      "classType": "Clase 5",
       "nounClassRule": "Empieza con 'mo' en singular y se cambia por 'ba' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'ba' o 'baiy' en plural",
       "nounExample": "Moto",
@@ -106,7 +106,7 @@
     },
     {
       "classId": 6,
-      "classType": "Sexta Clase",
+      "classType": "Clase 6",
       "nounClassRule": "Empieza con 'v' en singular y por 'l' en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'vi' en singular y por 'lo' en plural",
       "nounExample": "Vitua",
@@ -126,7 +126,7 @@
     },
     {
       "classId": 7,
-      "classType": "Séptima Clase",
+      "classType": "Clase 7",
       "nounClassRule": "Empieza con consonantes no mencionadas en las otras clases o combinaciones de consonantes en singular y no cambian en plural",
       "adjectiveClassRule": "Sustituye la primera sílaba por 'e' en singular y por 'i' en plural",
       "nounExample": "Ndabo",

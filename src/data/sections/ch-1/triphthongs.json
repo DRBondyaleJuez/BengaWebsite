@@ -8,20 +8,6 @@
     "en": "Triphthongs",
     "fr": "Les Triphtongues"
   },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-1/diptongos",
-      "label": {
-        "es": "Diptongos"
-      }
-    },
-    "next": {
-      "to": "/capitulo-1/consonantes",
-      "label": {
-        "es": "Consonantes"
-      }
-    }
-  },
   "blocks": [
     {
       "type": "heading",

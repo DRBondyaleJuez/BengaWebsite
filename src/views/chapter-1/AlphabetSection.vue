@@ -156,25 +156,12 @@
       </div>
     </ContentSection>
 
-    <!-- Navigation -->
-    <nav class="alphabet-section__nav">
-      <router-link
-        to="/capitulo-1"
-        class="alphabet-section__nav-link alphabet-section__nav-link--prev"
-      >
-        ← {{ $t('chapters.chapter1.title') }}
-      </router-link>
-      <router-link
-        to="/capitulo-1/diptongos"
-        class="alphabet-section__nav-link alphabet-section__nav-link--next"
-      >
-        {{ $t('chapters.chapter1.sections.diphthongs') }} →
-      </router-link>
-    </nav>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
@@ -183,6 +170,7 @@ import alphabetData from '@/data/chapter-1/alphabet.json'
 export default {
   name: 'AlphabetSection',
   components: {
+    SectionNavFooter,
     ContentSection,
     BengaWord,
     BaseIcon
@@ -493,56 +481,6 @@ export default {
       font-size: $font-size-sm;
       margin: 0;
       line-height: $line-height-loose;
-    }
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-    padding-top: $spacing-lg;
-    border-top: 2px solid $border-color;
-
-    @include respond-below('sm') {
-      flex-direction: column;
-    }
-  }
-
-  &__nav-link {
-    display: inline-flex;
-    align-items: center;
-    gap: $spacing-sm;
-    padding: $spacing-md $spacing-lg;
-    background: $color-primary;
-    color: $color-text-inverse;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: $font-weight-semibold;
-    transition: all $transition-base;
-    border: 2px solid $color-primary;
-
-    &:hover {
-      background: $color-primary-dark;
-      border-color: $color-primary-dark;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba($color-primary, 0.3);
-    }
-
-    &--prev {
-      justify-self: flex-start;
-
-      @include respond-below('sm') {
-        justify-self: auto;
-      }
-    }
-
-    &--next {
-      justify-self: flex-end;
-
-      @include respond-below('sm') {
-        justify-self: auto;
-      }
     }
   }
 }

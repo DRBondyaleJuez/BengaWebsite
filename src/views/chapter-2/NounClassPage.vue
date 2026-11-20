@@ -56,9 +56,7 @@
       </template>
     </section>
 
-    <section class="noun-class__nav">
-      <SectionNavFooter :prev="navLink('prev')" :next="navLink('next')" />
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
@@ -172,10 +170,6 @@ export default {
       return block.rows.map((row) =>
         row.map((cell) => (cell.benga ? { benga: cell.benga } : { text: this.$localized(cell) }))
       )
-    },
-    navLink(which) {
-      const link = this.content.nav && this.content.nav[which]
-      return link ? { to: link.to, label: this.$localized(link.label) } : null
     }
   }
 }
@@ -232,13 +226,6 @@ export default {
     border-radius: $border-radius;
   }
 
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-  }
-
   .unknown-block {
     padding: $spacing-md;
     border: 2px dashed #c0392b;
@@ -258,10 +245,6 @@ export default {
       .subtitle {
         font-size: 1rem;
       }
-    }
-
-    &__nav {
-      flex-direction: column;
     }
   }
 }

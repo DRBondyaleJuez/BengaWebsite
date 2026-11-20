@@ -246,9 +246,9 @@ until the next `heading`. The heading's `id` names the part (`examples` → `nou
   yellow box below the content; `"variant": "small"` is the small grey line.
 - `"compact": true` on a `pattern` draws the small variant box (`[y-] → [bi-]`).
 - `{count}` in a heading becomes the number of words of that part's `examples` block.
-- Top-level `nav` sets the two bottom buttons:
-  `"nav": { "prev": { "to": "/capitulo-2/clase-1", "label": { "es": "Clase 1" } }, "next": … }`.
-  Without it, the previous/next sections of `chapters-index.json` are used.
+- The two buttons at the bottom of every page (`SectionNavFooter`) are automatic: previous and
+  next page in `chapters-index.json`, read as one path through the book (chapter index page, its
+  sections, then the next chapter), with the sidebar titles as labels. Nothing to write in the file.
 
 ---
 

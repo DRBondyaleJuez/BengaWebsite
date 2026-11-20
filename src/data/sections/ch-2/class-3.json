@@ -3,27 +3,13 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Tercera Clase Nominal"
+    "es": "Clase 3"
   },
   "subtitle": {
     "es": "u / mū → me / mi"
   },
   "source": {
     "pdfPage": "10-11"
-  },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-2/clase-2",
-      "label": {
-        "es": "Clase 2"
-      }
-    },
-    "next": {
-      "to": "/capitulo-2/clase-4",
-      "label": {
-        "es": "Cuarta Clase"
-      }
-    }
   },
   "blocks": [
     {

@@ -170,22 +170,12 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <div class="regular-adjectives__navigation">
-      <router-link to="/capitulo-3/introduccion" class="nav-button nav-button--back">
-        ← Introducción
-      </router-link>
-      <router-link to="/capitulo-3" class="nav-button nav-button--index">
-        Índice del Capítulo
-      </router-link>
-      <router-link to="/capitulo-3/adjetivos-invariables" class="nav-button nav-button--next">
-        Siguiente: Invariables →
-      </router-link>
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
 import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
@@ -193,6 +183,7 @@ import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
 export default {
   name: 'RegularAdjectivesSection',
   components: {
+    SectionNavFooter,
     BengaWord
   },
   data() {
@@ -643,48 +634,6 @@ export default {
     color: $color-primary;
     font-weight: bold;
     min-width: fit-content;
-  }
-}
-
-.regular-adjectives__navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
-  text-align: center;
-
-  &--back,
-  &--index {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
-    }
-  }
-
-  &--next {
-    background-color: $color-primary;
-    color: white;
-
-    &:hover {
-      background-color: $color-primary-dark;
-    }
   }
 }
 

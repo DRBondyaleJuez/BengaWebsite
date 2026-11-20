@@ -220,17 +220,20 @@
     <section class="nouns-intro__cta">
       <h2>¡Comienza Ahora!</h2>
       <p>
-        Estás listo para explorar cada clase nominal. Comienza con la Primera Clase, que es la más
+        Estás listo para explorar cada clase nominal. Comienza con la Clase 1, que es la más
         simple y accesible.
       </p>
-      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Primera Clase → </router-link>
+      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Clase 1 → </router-link>
     </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'NounsIntro',
+  components: { SectionNavFooter },
   created() {
     document.title = 'Introducción a Clasificación Nominal | Portal Benga'
   }

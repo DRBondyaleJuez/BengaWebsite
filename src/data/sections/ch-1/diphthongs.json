@@ -7,20 +7,6 @@
     "en": "Diphthongs",
     "fr": "Les Diphtongues"
   },
-  "nav": {
-    "prev": {
-      "to": "/capitulo-1/alfabeto",
-      "label": {
-        "es": "Alfabeto"
-      }
-    },
-    "next": {
-      "to": "/capitulo-1/triptongos",
-      "label": {
-        "es": "Triptongos"
-      }
-    }
-  },
   "blocks": [
     {
       "type": "heading",
