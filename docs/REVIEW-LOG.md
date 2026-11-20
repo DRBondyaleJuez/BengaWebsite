@@ -39,6 +39,7 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-028](#r-028) | ⚪ | 3.7 | Alphabet page and chapter-3 pages are not section files yet | done |
 | [R-029](#r-029) | 🟢 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | done |
 | [R-030](#r-030) | 🔴 | R-018 | Vite 8 is available (Vite 7 today) | Phase 9 |
+| [R-031](#r-031) | 🔴 | review fixes | On phones some pages are wider than the screen (pattern box) | any time |
 
 ---
 
@@ -357,6 +358,15 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `package.json` (`vite` ^7.3.8, `@vitejs/plugin-vue` 6) · `vite.config.mjs`
 - **Doubt:** Vite 8 (new bundler, Rolldown) is the current major. R-018 only covered ESLint, vue-router and vue-i18n, so I didn't change the build tool in the same step.
 - **Suggestion:** Upgrade in Phase 9 (or any time) on its own branch: `npm install -D vite@8`, then build, compare every page and check `npm run preview`.
+- **Resolution:**
+
+### R-031
+**On phones some pages are wider than the screen (pattern box)**
+- **Status:** 🔴 Open
+- **Found in:** final check of the review-log fixes (420 px wide); already like this before (same in the baseline taken at the start)
+- **Where:** `/capitulo-2/clase-2` and other noun classes · `src/components/blocks/PatternBox.vue` (`.pattern-box`: two big `pattern-value` boxes side by side, 1.8 rem monospace, `padding 2rem`)
+- **Doubt:** At 420 px the page content needs ~452 px, so the phone browser zooms the whole page out a little and the right edge looks cut (header language menu, «ma-» box).
+- **Suggestion:** In `PatternBox`, below 576 px stack the two boxes (arrow ↓) or reduce the font size and padding; then check every page at 375 px for anything else wider than the screen.
 - **Resolution:**
 
 ---
