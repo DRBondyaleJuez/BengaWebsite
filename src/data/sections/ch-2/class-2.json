@@ -203,42 +203,6 @@
     },
     {
       "type": "heading",
-      "id": "concepts",
-      "text": {
-        "es": "Conceptos Clave"
-      }
-    },
-    {
-      "type": "concepts",
-      "items": [
-        {
-          "title": {
-            "es": "Cambio inicial predecible"
-          },
-          "text": {
-            "es": "La clase 2 mantiene un prefijo plural muy estable: ma-."
-          }
-        },
-        {
-          "title": {
-            "es": "i- y di-"
-          },
-          "text": {
-            "es": "Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-."
-          }
-        },
-        {
-          "title": {
-            "es": "Concordancia"
-          },
-          "text": {
-            "es": "El plural del sustantivo afecta también al adjetivo que lo acompaña."
-          }
-        }
-      ]
-    },
-    {
-      "type": "heading",
       "id": "practice",
       "text": {
         "es": "Para Practicar"
