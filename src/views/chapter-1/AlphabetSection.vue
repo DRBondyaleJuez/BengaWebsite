@@ -8,14 +8,14 @@
     </ContentSection>
 
     <!-- Letters List -->
-    <ContentSection id="alphabet-letters" :title="$t('content.lettersList') || 'Lista de Letras'">
+    <ContentSection id="alphabet-letters" :title="$t('content.lettersList')">
       <div class="alphabet-section__letters-container">
         <p class="alphabet-section__letters">
           {{ $localized(sectionData.lettersList) }}
         </p>
         <p class="alphabet-section__note-inline">
-          <strong>{{ $t('content.totalLetters') || 'Total' }}:</strong>
-          {{ $t('content.twentyThreeLetters') || '23 letras' }}
+          <strong>{{ $t('content.totalLetters') }}:</strong>
+          {{ $t('content.twentyThreeLetters') }}
         </p>
       </div>
 
@@ -23,7 +23,7 @@
         <BaseIcon name="info" />
         <div class="alphabet-section__missing-content">
           <p class="alphabet-section__missing-title">
-            {{ $t('content.missingConsonants') || 'Consonantes ausentes' }}
+            {{ $t('content.missingConsonants') }}
           </p>
           <p>
             {{ $localized(sectionData.consonantsDescription) }}
@@ -33,10 +33,7 @@
     </ContentSection>
 
     <!-- Vowels Overview -->
-    <ContentSection
-      id="alphabet-vowels-overview"
-      :title="$t('content.vowelSounds') || 'Sonidos Vocales'"
-    >
+    <ContentSection id="alphabet-vowels-overview" :title="$t('content.vowelSounds')">
       <p class="alphabet-section__vowels-info">
         {{ $localized(sectionData.vowelsInfo) }}
       </p>
@@ -63,7 +60,7 @@
     <!-- Vowels Detail -->
     <ContentSection
       id="alphabet-vowels-detail"
-      :title="$t('content.vowelPronunciation') || 'Pronunciación de Vocales'"
+      :title="$t('content.vowelPronunciation')"
       class="alphabet-section__vowels-section"
     >
       <div class="alphabet-section__vowels-grid">
@@ -75,7 +72,7 @@
           <div class="alphabet-section__vowel-header">
             <span class="alphabet-section__vowel-letter">{{ vowel.benga }}</span>
             <span v-if="vowel.isLong" class="alphabet-section__vowel-badge">
-              {{ $t('content.long') || 'larga' }}
+              {{ $t('content.long') }}
             </span>
           </div>
 
@@ -91,7 +88,7 @@
               :key="example.word"
               class="alphabet-section__example-item"
             >
-              <BengaWord :word="example.word" :meaning="example.meaning" />
+              <BengaWord :word="example.word" :meaning="$localized(example.meaning)" />
             </div>
           </div>
         </div>
@@ -103,7 +100,7 @@
       v-for="specialLetter in sectionData.specialLetters"
       :key="`special-${specialLetter.letter}`"
       :id="`letter-${specialLetter.letter}`"
-      :title="`La letra '${specialLetter.letter}' como vocal y consonante`"
+      :title="$t('pages.alphabet.specialLetterTitle', { letter: specialLetter.letter })"
       class="alphabet-section__special"
     >
       <p class="alphabet-section__special-description">
@@ -117,7 +114,7 @@
           class="alphabet-section__special-group"
         >
           <h4 class="alphabet-section__special-group-title">
-            {{ exampleGroup.label }}
+            {{ $localized(exampleGroup.label) }}
           </h4>
 
           <div class="alphabet-section__word-grid">
@@ -126,7 +123,7 @@
               :key="example.word"
               class="alphabet-section__word-item"
             >
-              <BengaWord :word="example.word" :meaning="example.meaning" block />
+              <BengaWord :word="example.word" :meaning="$localized(example.meaning)" block />
             </div>
           </div>
         </div>
@@ -136,19 +133,19 @@
     <!-- Important Notes -->
     <ContentSection
       id="alphabet-notes"
-      :title="$t('content.importantNotes') || 'Notas Importantes'"
+      :title="$t('content.importantNotes')"
       class="alphabet-section__notes-section"
     >
       <div class="alphabet-section__notes-list">
         <div class="alphabet-section__note-item">
-          <h4>{{ $t('content.elision') || 'Elisión' }}</h4>
+          <h4>{{ $t('content.elision') }}</h4>
           <p>
             {{ $localized(sectionData.notes.elisionNote) }}
           </p>
         </div>
 
         <div class="alphabet-section__note-item">
-          <h4>{{ $t('content.pronunciation') || 'Pronunciación' }}</h4>
+          <h4>{{ $t('content.pronunciation') }}</h4>
           <p>
             {{ $localized(sectionData.notes.pronunciationNote) }}
           </p>

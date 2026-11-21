@@ -164,5 +164,46 @@
     "progressTracker": "Seguimiento de Progreso",
     "studyTips": "Consejos para Este Capítulo",
     "whatNext": "Próximo Paso: Capítulo 2"
+  },
+  "pages": {
+    "chapter1Index": {
+      "aprende23SonidosAlfabeto": "Aprende los 23 sonidos del alfabeto Benga, incluyendo vocales especiales y consonantes únicas.",
+      "n510Minutos": "5-10 minutos",
+      "domina9CombinacionesDiptongos": "Domina las 9 combinaciones de diptongos que producen sonidos únicos en la lengua Benga.",
+      "n1015Minutos": "10-15 minutos",
+      "aprende13CombinacionesTriptongos": "Aprende las 13 combinaciones de triptongos, especialmente comunes en conjugaciones verbales.",
+      "n1218Minutos": "12-18 minutos",
+      "completaTuComprensionCon": "Completa tu comprensión con 16 consonantes simples y 5 combinaciones consonánticas nasales.",
+      "n1520Minutos": "15-20 minutos",
+      "precisionOrtografica": "Precisión Ortográfica",
+      "bengaMantieneCorrespondenciaEstricta": "El Benga mantiene una correspondencia estricta entre escritura y pronunciación. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se pronuncia claro y distinto.",
+      "vocalesLargasCortas": "Vocales Largas y Cortas",
+      "soloVocalesEU": "Solo las vocales á, é y ü son \"largas\" (marca da con acento). Las demás son cortas. Esta distinción es crucial para comprender significados diferentes.",
+      "combinacionesNasales": "Combinaciones Nasales",
+      "combinacionesMbNdNg": "Las combinaciones Mb, Nd, Ng, Nj, Ny representan sonidos nasales únicos. Entender cómo articularlos es fundamental para la pronunciación correcta.",
+      "digrafo": "El Dígrafo Y",
+      "letraFuncionaTantoComo": "La letra Y funciona tanto como vocal como consonante. Su comportamiento es crucial para entender patrones silábicos y de estrés en Benga.",
+      "completado": "{progressPercentage}% completado",
+      "escuchaConAtencionUsa": "<strong>Escucha con Atención:</strong> Usa los archivos de audio para familiarizarte con los sonidos antes de intentar pronunciar.",
+      "tomaNotasEscribePalabras": "<strong>Toma Notas:</strong> Escribe las palabras de ejemplo y sus significados para reforzar la memoria.",
+      "practicaPronunciacionIntentaReproducir": "<strong>Practica la Pronunciación:</strong> Intenta reproducir los sonidos que escuchas. La práctica repetida es clave.",
+      "conectaPatronesBuscaSimilitudes": "<strong>Conecta Patrones:</strong> Busca similitudes entre combinaciones de sonidos para crear una mental map de la fonología.",
+      "revisionEspaciadaVuelveRevisar": "<strong>Revisión Espaciada:</strong> Vuelve a revisar secciones anteriores regularmente para consolidar el aprendizaje.",
+      "vezDominesFundamentosFoneticos": "Una vez que domines los fundamentos fonéticos del Benga, el Capítulo 2 te introducirá al <strong>sistema de clasificación de nombres sustantivos</strong>. Aprenderás sobre las siete clases nominales que son fundamentales para la gramática Benga.",
+      "capitulo2Proximamente": "Capítulo 2 Próximamente",
+      "comencemos": "¡Comencemos!",
+      "listoParaIniciarTu": "¿Listo para iniciar tu aprendizaje del Benga? Selecciona una sección arriba para comenzar.",
+      "comenzarConAlfabeto": "Comenzar con el Alfabeto →",
+      "subtitle": "Lecciones Preliminares: Fonética y Sonidos del Benga",
+      "introduction": "El Capítulo 1 sienta las bases para entender la lengua Benga. Comenzaremos con el sistema de escritura y los sonidos fundamentales, desde el alfabeto básico hasta las combinaciones complejas de vocales y consonantes. Este capítulo es esencial para poder leer, escribir y pronunciar correctamente en Benga.",
+      "outcome1": "Identificar y pronunciar correctamente todos los 23 sonidos del alfabeto Benga",
+      "outcome2": "Comprender la distinción entre vocales largas y cortas",
+      "outcome3": "Dominar la pronunciación de diptongos y triptongos",
+      "outcome4": "Articular correctamente las combinaciones consonánticas nasales",
+      "outcome5": "Leer y escribir palabras Benga con precisión ortográfica"
+    },
+    "alphabet": {
+      "specialLetterTitle": "La letra '{letter}' como vocal y consonante"
+    }
   }
 }

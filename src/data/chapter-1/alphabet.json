@@ -27,67 +27,93 @@
       "examples": [
         {
           "type": "consonant",
-          "label": "Es consonante en:",
+          "label": {
+            "es": "Es consonante en:"
+          },
           "words": [
             {
               "word": "yakia",
-              "meaning": "nuevo",
+              "meaning": {
+                "es": "nuevo"
+              },
               "audioId": "yakia"
             },
             {
               "word": "yâkâ",
-              "meaning": "uno",
+              "meaning": {
+                "es": "uno"
+              },
               "audioId": "yaka"
             },
             {
               "word": "yongo",
-              "meaning": "mayordomo",
+              "meaning": {
+                "es": "mayordomo"
+              },
               "audioId": "yongo"
             },
             {
               "word": "manyungâ",
-              "meaning": "leche",
+              "meaning": {
+                "es": "leche"
+              },
               "audioId": "manyunga"
             },
             {
               "word": "yēmē",
-              "meaning": "cojera",
+              "meaning": {
+                "es": "cojera"
+              },
               "audioId": "yeme"
             }
           ]
         },
         {
           "type": "vowel",
-          "label": "Es vocal en:",
+          "label": {
+            "es": "Es vocal en:"
+          },
           "words": [
             {
               "word": "byelele",
-              "meaning": "polilla",
+              "meaning": {
+                "es": "polilla"
+              },
               "audioId": "byelele"
             },
             {
               "word": "myadi",
-              "meaning": "agonía",
+              "meaning": {
+                "es": "agonía"
+              },
               "audioId": "myadi"
             },
             {
               "word": "myongo",
-              "meaning": "los muertos",
+              "meaning": {
+                "es": "los muertos"
+              },
               "audioId": "myongo"
             },
             {
               "word": "vyâ",
-              "meaning": "sereno",
+              "meaning": {
+                "es": "sereno"
+              },
               "audioId": "vy_a_"
             },
             {
               "word": "vyâdu",
-              "meaning": "gamuza",
+              "meaning": {
+                "es": "gamuza"
+              },
               "audioId": "vyadu"
             },
             {
               "word": "kya",
-              "meaning": "ahora",
+              "meaning": {
+                "es": "ahora"
+              },
               "audioId": "kya"
             }
           ]
@@ -106,17 +132,23 @@
       "examples": [
         {
           "word": "kalaka",
-          "meaning": "habla",
+          "meaning": {
+            "es": "habla"
+          },
           "audioId": "kalaka"
         },
         {
           "word": "tataka",
-          "meaning": "guardar",
+          "meaning": {
+            "es": "guardar"
+          },
           "audioId": "tataka"
         },
         {
           "word": "ta",
-          "meaning": "junto",
+          "meaning": {
+            "es": "junto"
+          },
           "audioId": "ta"
         }
       ]
@@ -132,7 +164,9 @@
       "examples": [
         {
           "word": "tândâkâ",
-          "meaning": "amar",
+          "meaning": {
+            "es": "amar"
+          },
           "audioId": "t_a_nd_a_k_a_"
         }
       ]
@@ -147,7 +181,9 @@
       "examples": [
         {
           "word": "bembe",
-          "meaning": "ganado vacuno",
+          "meaning": {
+            "es": "ganado vacuno"
+          },
           "audioId": "bembe"
         }
       ]
@@ -163,7 +199,9 @@
       "examples": [
         {
           "word": "kēnyēngē",
-          "meaning": "casto",
+          "meaning": {
+            "es": "casto"
+          },
           "audioId": "k_e_ny_e_ng_e_"
         }
       ]
@@ -178,7 +216,9 @@
       "examples": [
         {
           "word": "ipivi",
-          "meaning": "pensamiento",
+          "meaning": {
+            "es": "pensamiento"
+          },
           "audioId": "ipivi"
         }
       ]
@@ -193,7 +233,9 @@
       "examples": [
         {
           "word": "kodokodo",
-          "meaning": "palpitación",
+          "meaning": {
+            "es": "palpitación"
+          },
           "audioId": "kodokodo"
         }
       ]
@@ -208,7 +250,9 @@
       "examples": [
         {
           "word": "itutu",
-          "meaning": "humo",
+          "meaning": {
+            "es": "humo"
+          },
           "audioId": "itutu"
         }
       ]
@@ -224,7 +268,9 @@
       "examples": [
         {
           "word": "būamu",
-          "meaning": "bueno",
+          "meaning": {
+            "es": "bueno"
+          },
           "audioId": "buamu"
         }
       ]
@@ -239,12 +285,16 @@
       "examples": [
         {
           "word": "mbyu",
-          "meaning": "gozo",
+          "meaning": {
+            "es": "gozo"
+          },
           "audioId": "mbyu"
         },
         {
           "word": "vyâ",
-          "meaning": "sereno",
+          "meaning": {
+            "es": "sereno"
+          },
           "audioId": "vy_a_"
         }
       ]

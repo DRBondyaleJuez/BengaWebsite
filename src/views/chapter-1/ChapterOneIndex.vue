@@ -8,7 +8,7 @@
       <div class="chapter-one__container">
         <h1 class="chapter-one__title">{{ $t('chapters.chapter1.title') }}</h1>
         <p class="chapter-one__subtitle">
-          {{ $localized(chapter1Data.subtitle) }}
+          {{ $t('pages.chapter1Index.subtitle') }}
         </p>
       </div>
     </header>
@@ -18,23 +18,23 @@
       <div v-if="$route.name === 'Chapter1Index'">
         <section class="chapter-one__intro-section">
           <p class="chapter-one__intro-text">
-            {{ $localized(chapter1Data.introduction) }}
+            {{ $t('pages.chapter1Index.introduction') }}
           </p>
         </section>
 
         <!-- Learning Outcomes -->
         <section class="chapter-one__outcomes-section">
-          <h2>{{ $t('chapter1.learningOutcomes') || 'Al Completar Este Capítulo' }}</h2>
+          <h2>{{ $t('chapter1.learningOutcomes') }}</h2>
           <ul class="chapter-one__outcomes-list">
-            <li v-for="(outcome, index) in chapter1Data.learningOutcomes" :key="`outcome-${index}`">
-              ✓ {{ $localized(outcome) }}
+            <li v-for="n in 5" :key="`outcome-${n}`">
+              ✓ {{ $t(`pages.chapter1Index.outcome${n}`) }}
             </li>
           </ul>
         </section>
 
         <!-- Sections Overview -->
         <section class="chapter-one__sections-section">
-          <h2>{{ $t('chapter1.sections') || 'Secciones del Capítulo' }}</h2>
+          <h2>{{ $t('chapter1.sections') }}</h2>
 
           <div class="chapter-one__sections-grid">
             <!-- Alphabet Section -->
@@ -46,10 +46,11 @@
               <div class="chapter-one__section-icon">🔤</div>
               <h3>{{ $t('chapters.chapter1.sections.alphabet') }}</h3>
               <p>
-                Aprende los 23 sonidos del alfabeto Benga, incluyendo vocales especiales y
-                consonantes únicas.
+                {{ $t('pages.chapter1Index.aprende23SonidosAlfabeto') }}
               </p>
-              <span class="chapter-one__section-meta">5-10 minutos</span>
+              <span class="chapter-one__section-meta">{{
+                $t('pages.chapter1Index.n510Minutos')
+              }}</span>
             </router-link>
 
             <!-- Diphthongs Section -->
@@ -61,10 +62,11 @@
               <div class="chapter-one__section-icon">🔗</div>
               <h3>{{ $t('chapters.chapter1.sections.diphthongs') }}</h3>
               <p>
-                Domina las 9 combinaciones de diptongos que producen sonidos únicos en la lengua
-                Benga.
+                {{ $t('pages.chapter1Index.domina9CombinacionesDiptongos') }}
               </p>
-              <span class="chapter-one__section-meta">10-15 minutos</span>
+              <span class="chapter-one__section-meta">{{
+                $t('pages.chapter1Index.n1015Minutos')
+              }}</span>
             </router-link>
 
             <!-- Triphthongs Section -->
@@ -76,10 +78,11 @@
               <div class="chapter-one__section-icon">🌊</div>
               <h3>{{ $t('chapters.chapter1.sections.triphthongs') }}</h3>
               <p>
-                Aprende las 13 combinaciones de triptongos, especialmente comunes en conjugaciones
-                verbales.
+                {{ $t('pages.chapter1Index.aprende13CombinacionesTriptongos') }}
               </p>
-              <span class="chapter-one__section-meta">12-18 minutos</span>
+              <span class="chapter-one__section-meta">{{
+                $t('pages.chapter1Index.n1218Minutos')
+              }}</span>
             </router-link>
 
             <!-- Consonants Section -->
@@ -91,49 +94,45 @@
               <div class="chapter-one__section-icon">🔊</div>
               <h3>{{ $t('chapters.chapter1.sections.consonants') }}</h3>
               <p>
-                Completa tu comprensión con 16 consonantes simples y 5 combinaciones consonánticas
-                nasales.
+                {{ $t('pages.chapter1Index.completaTuComprensionCon') }}
               </p>
-              <span class="chapter-one__section-meta">15-20 minutos</span>
+              <span class="chapter-one__section-meta">{{
+                $t('pages.chapter1Index.n1520Minutos')
+              }}</span>
             </router-link>
           </div>
         </section>
 
         <!-- Key Concepts -->
         <section class="chapter-one__concepts-section">
-          <h2>{{ $t('chapter1.keyConcepts') || 'Conceptos Clave' }}</h2>
+          <h2>{{ $t('chapter1.keyConcepts') }}</h2>
 
           <div class="chapter-one__concepts-grid">
             <div class="chapter-one__concept-card">
-              <h3>Precisión Ortográfica</h3>
+              <h3>{{ $t('pages.chapter1Index.precisionOrtografica') }}</h3>
               <p>
-                El Benga mantiene una correspondencia estricta entre escritura y pronunciación. Todo
-                lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se pronuncia
-                claro y distinto.
+                {{ $t('pages.chapter1Index.bengaMantieneCorrespondenciaEstricta') }}
               </p>
             </div>
 
             <div class="chapter-one__concept-card">
-              <h3>Vocales Largas y Cortas</h3>
+              <h3>{{ $t('pages.chapter1Index.vocalesLargasCortas') }}</h3>
               <p>
-                Solo las vocales á, é y ü son "largas" (marca da con acento). Las demás son cortas.
-                Esta distinción es crucial para comprender significados diferentes.
+                {{ $t('pages.chapter1Index.soloVocalesEU') }}
               </p>
             </div>
 
             <div class="chapter-one__concept-card">
-              <h3>Combinaciones Nasales</h3>
+              <h3>{{ $t('pages.chapter1Index.combinacionesNasales') }}</h3>
               <p>
-                Las combinaciones Mb, Nd, Ng, Nj, Ny representan sonidos nasales únicos. Entender
-                cómo articularlos es fundamental para la pronunciación correcta.
+                {{ $t('pages.chapter1Index.combinacionesMbNdNg') }}
               </p>
             </div>
 
             <div class="chapter-one__concept-card">
-              <h3>El Dígrafo Y</h3>
+              <h3>{{ $t('pages.chapter1Index.digrafo') }}</h3>
               <p>
-                La letra Y funciona tanto como vocal como consonante. Su comportamiento es crucial
-                para entender patrones silábicos y de estrés en Benga.
+                {{ $t('pages.chapter1Index.letraFuncionaTantoComo') }}
               </p>
             </div>
           </div>
@@ -141,7 +140,7 @@
 
         <!-- Progress Tracker -->
         <section class="chapter-one__progress-section">
-          <h2>{{ $t('chapter1.progressTracker') || 'Seguimiento de Progreso' }}</h2>
+          <h2>{{ $t('chapter1.progressTracker') }}</h2>
 
           <div class="chapter-one__progress-list">
             <div class="chapter-one__progress-item">
@@ -209,60 +208,58 @@
               :style="{ width: progressPercentage + '%' }"
             ></div>
           </div>
-          <p class="chapter-one__progress-text">{{ progressPercentage }}% completado</p>
+          <p class="chapter-one__progress-text">
+            {{ $t('pages.chapter1Index.completado', { progressPercentage }) }}
+          </p>
         </section>
 
         <!-- Study Tips -->
         <section class="chapter-one__tips-section">
-          <h2>{{ $t('chapter1.studyTips') || 'Consejos para Este Capítulo' }}</h2>
+          <h2>{{ $t('chapter1.studyTips') }}</h2>
 
           <div class="chapter-one__tips-list">
-            <div class="chapter-one__tip">
-              <strong>Escucha con Atención:</strong> Usa los archivos de audio para familiarizarte
-              con los sonidos antes de intentar pronunciar.
-            </div>
-            <div class="chapter-one__tip">
-              <strong>Toma Notas:</strong> Escribe las palabras de ejemplo y sus significados para
-              reforzar la memoria.
-            </div>
-            <div class="chapter-one__tip">
-              <strong>Practica la Pronunciación:</strong> Intenta reproducir los sonidos que
-              escuchas. La práctica repetida es clave.
-            </div>
-            <div class="chapter-one__tip">
-              <strong>Conecta Patrones:</strong> Busca similitudes entre combinaciones de sonidos
-              para crear una mental map de la fonología.
-            </div>
-            <div class="chapter-one__tip">
-              <strong>Revisión Espaciada:</strong> Vuelve a revisar secciones anteriores
-              regularmente para consolidar el aprendizaje.
-            </div>
+            <div
+              class="chapter-one__tip"
+              v-html="$t('pages.chapter1Index.escuchaConAtencionUsa')"
+            ></div>
+            <div
+              class="chapter-one__tip"
+              v-html="$t('pages.chapter1Index.tomaNotasEscribePalabras')"
+            ></div>
+            <div
+              class="chapter-one__tip"
+              v-html="$t('pages.chapter1Index.practicaPronunciacionIntentaReproducir')"
+            ></div>
+            <div
+              class="chapter-one__tip"
+              v-html="$t('pages.chapter1Index.conectaPatronesBuscaSimilitudes')"
+            ></div>
+            <div
+              class="chapter-one__tip"
+              v-html="$t('pages.chapter1Index.revisionEspaciadaVuelveRevisar')"
+            ></div>
           </div>
         </section>
 
         <!-- Next Chapter Preview -->
         <section class="chapter-one__next-section">
-          <h2>{{ $t('chapter1.whatNext') || 'Próximo Paso: Capítulo 2' }}</h2>
+          <h2>{{ $t('chapter1.whatNext') }}</h2>
           <div class="chapter-one__next-preview">
-            <p>
-              Una vez que domines los fundamentos fonéticos del Benga, el Capítulo 2 te introducirá
-              al
-              <strong>sistema de clasificación de nombres sustantivos</strong>. Aprenderás sobre las
-              siete clases nominales que son fundamentales para la gramática Benga.
-            </p>
-            <button class="chapter-one__next-button" disabled>Capítulo 2 Próximamente</button>
+            <p v-html="$t('pages.chapter1Index.vezDominesFundamentosFoneticos')"></p>
+            <button class="chapter-one__next-button" disabled>
+              {{ $t('pages.chapter1Index.capitulo2Proximamente') }}
+            </button>
           </div>
         </section>
 
         <!-- Start Learning CTA -->
         <section class="chapter-one__cta-section">
-          <h2>¡Comencemos!</h2>
+          <h2>{{ $t('pages.chapter1Index.comencemos') }}</h2>
           <p>
-            ¿Listo para iniciar tu aprendizaje del Benga? Selecciona una sección arriba para
-            comenzar.
+            {{ $t('pages.chapter1Index.listoParaIniciarTu') }}
           </p>
           <router-link to="/capitulo-1/alfabeto" class="chapter-one__cta-button">
-            Comenzar con el Alfabeto →
+            {{ $t('pages.chapter1Index.comenzarConAlfabeto') }}
           </router-link>
         </section>
         <SectionNavFooter />
@@ -281,40 +278,6 @@ export default {
   components: { SectionNavFooter },
   data() {
     return {
-      chapter1Data: {
-        subtitle: {
-          es: 'Lecciones Preliminares: Fonética y Sonidos del Benga',
-          en: 'Preliminary Lessons: Phonetics and Sounds of Benga',
-          fr: 'Leçons Préliminaires: Phonétique et Sons du Benga'
-        },
-        introduction: {
-          es: 'El Capítulo 1 sienta las bases para entender la lengua Benga. Comenzaremos con el sistema de escritura y los sonidos fundamentales, desde el alfabeto básico hasta las combinaciones complejas de vocales y consonantes. Este capítulo es esencial para poder leer, escribir y pronunciar correctamente en Benga.',
-          en: "Chapter 1 lays the foundation for understanding the Benga language. We'll start with the writing system and fundamental sounds, from the basic alphabet to complex combinations of vowels and consonants. This chapter is essential for reading, writing, and pronouncing Benga correctly.",
-          fr: "Le chapitre 1 jette les bases pour comprendre la langue Benga. Nous commencerons par le système d'écriture et les sons fondamentaux, de l'alphabet de base aux combinaisons complexes de voyelles et de consonnes. Ce chapitre est essentiel pour lire, écrire et prononcer correctement le Benga."
-        },
-        learningOutcomes: [
-          {
-            es: 'Identificar y pronunciar correctamente todos los 23 sonidos del alfabeto Benga',
-            en: 'Identify and correctly pronounce all 23 sounds of the Benga alphabet'
-          },
-          {
-            es: 'Comprender la distinción entre vocales largas y cortas',
-            en: 'Understand the distinction between long and short vowels'
-          },
-          {
-            es: 'Dominar la pronunciación de diptongos y triptongos',
-            en: 'Master the pronunciation of diphthongs and triphthongs'
-          },
-          {
-            es: 'Articular correctamente las combinaciones consonánticas nasales',
-            en: 'Correctly articulate nasal consonant combinations'
-          },
-          {
-            es: 'Leer y escribir palabras Benga con precisión ortográfica',
-            en: 'Read and write Benga words with spelling accuracy'
-          }
-        ]
-      },
       colors: {
         alphabet: '#2D5A27', // Primary green
         vowels: '#2D5A27', // Primary green
@@ -662,7 +625,7 @@ export default {
     font-size: $font-size-base;
     line-height: $line-height-loose;
 
-    strong {
+    :deep(strong) {
       color: $color-primary;
     }
   }
@@ -691,7 +654,7 @@ export default {
       margin-bottom: $spacing-lg;
       line-height: $line-height-loose;
 
-      strong {
+      :deep(strong) {
         color: $color-secondary;
       }
     }

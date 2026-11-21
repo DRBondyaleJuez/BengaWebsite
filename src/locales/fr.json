@@ -14,5 +14,11 @@
   "content": {
     "showAll": "Tout voir ({count})",
     "showFewer": "Afficher moins"
+  },
+  "pages": {
+    "chapter1Index": {
+      "subtitle": "Leçons Préliminaires: Phonétique et Sons du Benga",
+      "introduction": "Le chapitre 1 jette les bases pour comprendre la langue Benga. Nous commencerons par le système d'écriture et les sons fondamentaux, de l'alphabet de base aux combinaisons complexes de voyelles et de consonnes. Ce chapitre est essentiel pour lire, écrire et prononcer correctement le Benga."
+    }
   }
 }

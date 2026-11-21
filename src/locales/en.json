@@ -14,5 +14,16 @@
   "content": {
     "showAll": "Show all ({count})",
     "showFewer": "Show fewer"
+  },
+  "pages": {
+    "chapter1Index": {
+      "subtitle": "Preliminary Lessons: Phonetics and Sounds of Benga",
+      "introduction": "Chapter 1 lays the foundation for understanding the Benga language. We'll start with the writing system and fundamental sounds, from the basic alphabet to complex combinations of vowels and consonants. This chapter is essential for reading, writing, and pronouncing Benga correctly.",
+      "outcome1": "Identify and correctly pronounce all 23 sounds of the Benga alphabet",
+      "outcome2": "Understand the distinction between long and short vowels",
+      "outcome3": "Master the pronunciation of diphthongs and triphthongs",
+      "outcome4": "Correctly articulate nasal consonant combinations",
+      "outcome5": "Read and write Benga words with spelling accuracy"
+    }
   }
 }
