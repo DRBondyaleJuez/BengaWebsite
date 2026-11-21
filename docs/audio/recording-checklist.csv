@@ -1,0 +1,909 @@
+﻿word,audioId,type,meaning,bookPage,usedIn,recorded
+au,au,word,,,src/data/sections/ch-1/diphthongs.json,no
+Âvē,_a_v_e_,word,,,,no
+babūe,bab_u_e,word,,,src/data/sections/ch-1/diphthongs.json,no
+Bahano,bahano,word,Promesas,12,src/data/lexicon/nouns.json,no
+Bajo,bajo,word,Mujeres,11,src/data/lexicon/nouns.json,no
+Bamo,bamo,word,Hombres,12,src/data/lexicon/nouns.json,no
+Banda,banda,word,Invitaciones,12,src/data/lexicon/nouns.json,no
+Bangolu,bangolu,word,Escarabajos,12,src/data/lexicon/nouns.json,no
+Bato,bato,word,Personas,12,src/data/lexicon/nouns.json,no
+Bato baiyamu,bato-baiyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Batoba,batoba,word,Caracoles,12,src/data/lexicon/nouns.json,no
+Bebâbâ,beb_a_b_a_,word,"Trapos, andrajos",16,src/data/lexicon/nouns.json,no
+Bebabadi,bebabadi,word,Sudores,16,src/data/lexicon/nouns.json,no
+Bebadu,bebadu,word,Barbas,16,src/data/lexicon/nouns.json,no
+Bebamba,bebamba,word,Caspas,16,src/data/lexicon/nouns.json,no
+Bebambamba,bebambamba,word,"Conchas, cáscaras",16,src/data/lexicon/nouns.json,no
+Bebambana,bebambana,word,Hijos de esclavos,16,src/data/lexicon/nouns.json,no
+Bebano,bebano,word,"Oficios, comercios",16,src/data/lexicon/nouns.json,no
+Bebodi,bebodi,word,Puños,16,src/data/lexicon/nouns.json,no
+Bebokūedi,bebok_u_edi,word,Nodrizas,15-17,src/data/lexicon/nouns.json,no
+Bebonga,bebonga,word,Sillas,16,src/data/lexicon/nouns.json,no
+Bebūela,beb_u_ela,word,"Presas, despojos",15-17,src/data/lexicon/nouns.json,no
+Bebuki,bebuki,word,"Faltas, culpas",15,src/data/lexicon/nouns.json,no
+Bebukūangonja,bebuk_u_angonja,word,Mangas marinas,15-17,src/data/lexicon/nouns.json,no
+Bebuma,bebuma,word,Frutas,15,src/data/lexicon/nouns.json,no
+Bebumulema,bebumulema,word,Corazones,15,src/data/lexicon/nouns.json,no
+Bebungu,bebungu,word,Esteras,15,src/data/lexicon/nouns.json,no
+Bebyâbyâ,beby_a_by_a_,word,Muslos,15-17,src/data/lexicon/nouns.json,no
+Bedingiha,bedingiha,word,Sombras,15,src/data/lexicon/nouns.json,no
+Bedoko,bedoko,word,Deseos,16,src/data/lexicon/nouns.json,no
+Bedubu,bedubu,word,Culebras negras,16,src/data/lexicon/nouns.json,no
+Beduka,beduka,word,"Riñas, guerras",16,src/data/lexicon/nouns.json,no
+Bedungu,bedungu,word,"Sonidos, ruidos",16,src/data/lexicon/nouns.json,no
+Befu,befu,word,"Mantas, mantos",16,src/data/lexicon/nouns.json,no
+Begala,begala,word,Cajones,8-9,src/data/lexicon/nouns.json,no
+Begâlani,beg_a_lani,word,Lepras,16,src/data/lexicon/nouns.json,no
+Begândaga,beg_a_ndaga,word,Esclavos,16,src/data/lexicon/nouns.json,no
+Begēja,beg_e_ja,word,Barrenos,16,src/data/lexicon/nouns.json,no
+Begeno,begeno,word,Espejos,16,src/data/lexicon/nouns.json,no
+Begombe,begombe,word,Tiempos,16,src/data/lexicon/nouns.json,no
+Beguba,beguba,word,"Brazas, fondos",15-17,src/data/lexicon/nouns.json,no
+Begumia,begumia,word,"Mástiles, palos",16,src/data/lexicon/nouns.json,no
+Begunguna,begunguna,word,Llaves,17,src/data/lexicon/nouns.json,no
+Behadi,behadi,word,Acciones,16,src/data/lexicon/nouns.json,no
+Behâhâni,beh_a_h_a_ni,word,"Vergüenzas, rubores",16,src/data/lexicon/nouns.json,no
+Behâlia,beh_a_lia,word,"Hilaridades, juegos",16,src/data/lexicon/nouns.json,no
+Behavu,behavu,word,"Tareas, hierbas",16,src/data/lexicon/nouns.json,no
+Beheheku,beheheku,word,Hipos,16,src/data/lexicon/nouns.json,no
+Behēkâ,beh_e_k_a_,word,Hígados,16,src/data/lexicon/nouns.json,no
+Behekūē,behek_u_e_,word,"Gracias, favores",15-17,src/data/lexicon/nouns.json,no
+Behelele,behelele,word,Lagartos,16,src/data/lexicon/nouns.json,no
+Behihila,behihila,word,"Visiones, espectros",16,src/data/lexicon/nouns.json,no
+Behila,behila,word,"Vírgenes, doncellas",16,src/data/lexicon/nouns.json,no
+Behilibeja,behilibeja,word,Paladares,16,src/data/lexicon/nouns.json,no
+Behini,behini,word,"Figuras, retratos",16,src/data/lexicon/nouns.json,no
+Behongola,behongola,word,Embudos,16,src/data/lexicon/nouns.json,no
+Behove,behove,word,"Ansias, deseos",16,src/data/lexicon/nouns.json,no
+Behuhu,behuhu,word,"Totales, los todos",16,src/data/lexicon/nouns.json,no
+Behuka,behuka,word,"Jarros, tinajas",16,src/data/lexicon/nouns.json,no
+Behukuluku,behukuluku,word,Lechuzas,15-17,src/data/lexicon/nouns.json,no
+Behutē,behut_e_,word,Náuseas,16,src/data/lexicon/nouns.json,no
+Beja,beja,word,Alimento,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Bejabavudi,bejabavudi,word,Tortugas,16,src/data/lexicon/nouns.json,no
+Bejaka,bejaka,word,"Peces, carnes",15-17,src/data/lexicon/nouns.json,no
+Bejalina,bejalina,word,Peines,15-17,src/data/lexicon/nouns.json,no
+Bejâmbi,bej_a_mbi,word,Patriarcas,16,src/data/lexicon/nouns.json,no
+Bejanganangobe,bejanganangobe,word,"Cartas, notas",17,src/data/lexicon/nouns.json,no
+Bejanganangobo,bejanganangobo,word,Libros,8-9,src/data/lexicon/nouns.json,no
+Bejangina,bejangina,word,Hornos,15-17,src/data/lexicon/nouns.json,no
+Bejânjâ,bej_a_nj_a_,word,"Setas, hongos",15-17,src/data/lexicon/nouns.json,no
+Beka,beka,word,Tronos,15-17,src/data/lexicon/nouns.json,no
+Bekaba,bekaba,word,Pimpollos,15-17,src/data/lexicon/nouns.json,no
+Bekahi,bekahi,word,"Héroes, corajes",15-17,src/data/lexicon/nouns.json,no
+Bekai,bekai,word,Hojas,16,src/data/lexicon/nouns.json,no
+Bekâi,bek_a_i,word,Plátanos,8,src/data/lexicon/nouns.json,no
+Bekâi bebe,bek_a_i-bebe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bekâi behole,bek_a_i-behole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bekâi benene,bek_a_i-benene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bekâi bevindo,bek_a_i-bevindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bekâkâ,bek_a_k_a_,word,Troncos muertos,15-17,src/data/lexicon/nouns.json,no
+Bekâkâlâ,bek_a_k_a_l_a_,word,Sarnas,15-17,src/data/lexicon/nouns.json,no
+Bekâkâyi,bek_a_k_a_yi,word,Toses muy fuertes,15-17,src/data/lexicon/nouns.json,no
+Bekalidi,bekalidi,word,Conversaciones,16,src/data/lexicon/nouns.json,no
+Bekâmbâ,bek_a_mb_a_,word,Flemas,16,src/data/lexicon/nouns.json,no
+Bekano,bekano,word,"Fábulas, ficciones",16,src/data/lexicon/nouns.json,no
+Bekedi,bekedi,word,Vanidades,16,src/data/lexicon/nouns.json,no
+Bekeha,bekeha,word,Criaturas,16,src/data/lexicon/nouns.json,no
+Bekelekeke,bekelekeke,word,Tórtolas,15-17,src/data/lexicon/nouns.json,no
+Bekēmbē,bek_e_mb_e_,word,Venenos,15-17,src/data/lexicon/nouns.json,no
+Bekēndâ,bek_e_nd_a_,word,"Jornadas, viajes",15-17,src/data/lexicon/nouns.json,no
+Bekendangolo,bekendangolo,word,"Montes, colinas",15-17,src/data/lexicon/nouns.json,no
+Bekengo,bekengo,word,Cadáveres,16,src/data/lexicon/nouns.json,no
+Bekeyi,bekeyi,word,Hierros,16,src/data/lexicon/nouns.json,no
+Bekiki,bekiki,word,"Países, bosques",15-17,src/data/lexicon/nouns.json,no
+Bekikindi,bekikindi,word,Talones,15-17,src/data/lexicon/nouns.json,no
+Beko,beko,word,"Piernas, pies",16,src/data/lexicon/nouns.json,no
+Bekoda,bekoda,word,Panales,15-17,src/data/lexicon/nouns.json,no
+Bekokobo,bekokobo,word,Párpados,16,src/data/lexicon/nouns.json,no
+Bekola,bekola,word,Malicias,15-17,src/data/lexicon/nouns.json,no
+Bekomba,bekomba,word,Esterilidades,16,src/data/lexicon/nouns.json,no
+Bekoto,bekoto,word,"Cueros, pieles",16,src/data/lexicon/nouns.json,no
+Bekudikudi,bekudikudi,word,"Tornados, tempestades",16,src/data/lexicon/nouns.json,no
+Bekūekūe,bek_u_ek_u_e,word,Mariposas,15-17,src/data/lexicon/nouns.json,no
+Bekuha,bekuha,word,Herencias,15-17,src/data/lexicon/nouns.json,no
+Bekukubi,bekukubi,word,"Furias, rabias",15-17,src/data/lexicon/nouns.json,no
+Bekulu,bekulu,word,"Mitades, partes",15-17,src/data/lexicon/nouns.json,no
+Belahe,belahe,word,Vasos,16,src/data/lexicon/nouns.json,no
+Belandi,belandi,word,Sacos,16,src/data/lexicon/nouns.json,no
+Belângi,bel_a_ngi,word,Cantores,16,src/data/lexicon/nouns.json,no
+Belape,belape,word,Ruedas,15,src/data/lexicon/nouns.json,no
+Bele,bele,word,"Árboles, palos",16,src/data/lexicon/nouns.json,no
+Belēbu,bel_e_bu,word,Labios,15-17,src/data/lexicon/nouns.json,no
+Belekanako,belekanako,word,"Leyes, mandatos",16,src/data/lexicon/nouns.json,no
+Belēmbē,bel_e_mb_e_,word,"Pórticos, portales",15-17,src/data/lexicon/nouns.json,no
+Belembo,belembo,word,"Milagros, signos",16,src/data/lexicon/nouns.json,no
+Belende,belende,word,Botes,8,src/data/lexicon/nouns.json,no
+Belēngi,bel_e_ngi,word,"Pródigos, gastadores",15-17,src/data/lexicon/nouns.json,no
+Belinga,belinga,word,Cestos,8,src/data/lexicon/nouns.json,no
+Belolo,belolo,word,Sardinas,16,src/data/lexicon/nouns.json,no
+Belombo,belombo,word,Cosas,8,src/data/lexicon/nouns.json,no
+Belongo,belongo,word,Torres,16,src/data/lexicon/nouns.json,no
+bembe,bembe,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Bemēnâ,bem_e_n_a_,word,"Vidas, existencias",16,src/data/lexicon/nouns.json,no
+Bemēngūē,bem_e_ng_u_e_,word,Lados izquierdos,15-17,src/data/lexicon/nouns.json,no
+Bemi,bemi,word,Lenguas,16,src/data/lexicon/nouns.json,no
+Bemina,bemina,word,Cerrojos,16,src/data/lexicon/nouns.json,no
+Benâ,ben_a_,word,Brazos,8,src/data/lexicon/nouns.json,no
+Benami,benami,word,Hombres poderosos,16,src/data/lexicon/nouns.json,no
+Benangi,benangi,word,"Sofás, camas",16,src/data/lexicon/nouns.json,no
+Bengamba,bengamba,word,Garrafones,16,src/data/lexicon/nouns.json,no
+Benge,benge,word,Costas,16,src/data/lexicon/nouns.json,no
+Bengumbi,bengumbi,word,Nieblas,16,src/data/lexicon/nouns.json,no
+Beningo,beningo,word,Mareas,16,src/data/lexicon/nouns.json,no
+Benjasigalanjenga,benjasigalanjenga,word,Ignorancias,17,src/data/lexicon/nouns.json,no
+Benjēli,benj_e_li,word,Ángeles,16,src/data/lexicon/nouns.json,no
+Bepambo,bepambo,word,"Respetos, arcos",15-17,src/data/lexicon/nouns.json,no
+Bepapi,bepapi,word,"Cortezas, pieles",15-17,src/data/lexicon/nouns.json,no
+Bepati,bepati,word,"Tonterías, locuras",15-17,src/data/lexicon/nouns.json,no
+Bepedi,bepedi,word,"Tiempos, estaciones",16,src/data/lexicon/nouns.json,no
+Bepēlē,bep_e_l_e_,word,Platos,16,src/data/lexicon/nouns.json,no
+Bepēlupēlu,bep_e_lup_e_lu,word,Relámpagos,15-17,src/data/lexicon/nouns.json,no
+Bepepa,bepepa,word,"Timones, abanicos",15-17,src/data/lexicon/nouns.json,no
+Bepikiliedi,bepikiliedi,word,Pensamientos,15-17,src/data/lexicon/nouns.json,no
+Bepima,bepima,word,"Muros, paredes",15-17,src/data/lexicon/nouns.json,no
+Bepokolo,bepokolo,word,Sombreros,8,src/data/lexicon/nouns.json,no
+Bepokolo beyamu,bepokolo-beyamu,phrase,,,src/data/chapter-3/regular-adjectives.json; src/data/sections/ch-2/class-1.json,no
+Bepondoma,bepondoma,word,Almohadas,15-17,src/data/lexicon/nouns.json,no
+Beponga,beponga,word,"Ceras, capas",15-17,src/data/lexicon/nouns.json,no
+Bepota,bepota,word,"Vidriados, lozas",15-17,src/data/lexicon/nouns.json,no
+Besâ,bes_a_,word,Anguilas,15-17,src/data/lexicon/nouns.json,no
+Besalagambūē,besalagamb_u_e_,word,Charlatanes,15-17,src/data/lexicon/nouns.json,no
+Besūagēnda,bes_u_ag_e_nda,word,"Bancos, asientos",15-17,src/data/lexicon/nouns.json,no
+Besuti,besuti,word,Minutos,15-17,src/data/lexicon/nouns.json,no
+Betâkâ,bet_a_k_a_,word,Familias,15-17,src/data/lexicon/nouns.json,no
+Betâki,bet_a_ki,word,Tumultos,15-17,src/data/lexicon/nouns.json,no
+Betējani,bet_e_jani,word,Rehenes,17,src/data/lexicon/nouns.json,no
+Betema,betema,word,"Cardialgías, dolores",15-17,src/data/lexicon/nouns.json,no
+Betima,betima,word,Lagos,15-17,src/data/lexicon/nouns.json,no
+Betimbe,betimbe,word,"Tablas, maderas",17,src/data/lexicon/nouns.json,no
+Betoli,betoli,word,Ratas,15-17,src/data/lexicon/nouns.json,no
+Betomba,betomba,word,"Tribus, familias",17,src/data/lexicon/nouns.json,no
+Betombi,betombi,word,Faldas de monte,15-17,src/data/lexicon/nouns.json,no
+Betundu,betundu,word,"Hatos, racimos",17,src/data/lexicon/nouns.json,no
+Betunia,betunia,word,Sufrimientos,17,src/data/lexicon/nouns.json,no
+Beūaha,be_u_aha,word,"Sierras, limas",15-17,src/data/lexicon/nouns.json,no
+Beva,beva,word,Vasijas,17,src/data/lexicon/nouns.json,no
+Bevandi,bevandi,word,Miembros,17,src/data/lexicon/nouns.json,no
+Bevango,bevango,word,Vasijas para agua,15-17,src/data/lexicon/nouns.json,no
+Bevēlē,bev_e_l_e_,word,Sedes,15-17,src/data/lexicon/nouns.json,no
+Bevēlēhi,bev_e_l_e_hi,word,Pañuelos,15-17,src/data/lexicon/nouns.json,no
+Bevelse,bevelse,word,Huesos,15-17,src/data/lexicon/nouns.json,no
+Bevema,bevema,word,Trampas,17,src/data/lexicon/nouns.json,no
+Bevemba,bevemba,word,"Valores, corajes",17,src/data/lexicon/nouns.json,no
+Bevila,bevila,word,Ébanos,17,src/data/lexicon/nouns.json,no
+Bevindi,bevindi,word,Nubes,17,src/data/lexicon/nouns.json,no
+Bevita,bevita,word,Persecuciones,17,src/data/lexicon/nouns.json,no
+Bevudi,bevudi,word,"Espumas, algodones",17,src/data/lexicon/nouns.json,no
+Bevunga,bevunga,word,Yelmos,17,src/data/lexicon/nouns.json,no
+Bevuva,bevuva,word,Plagas,17,src/data/lexicon/nouns.json,no
+Beyake,beyake,word,Panadizos,17,src/data/lexicon/nouns.json,no
+Beyokūedi,beyok_u_edi,word,Discípulos,15-17,src/data/lexicon/nouns.json,no
+Beyome,beyome,word,Lados derechos,17,src/data/lexicon/nouns.json,no
+Biaho,biaho,word,Quijadas,9,src/data/lexicon/nouns.json,no
+Biâkâ,bi_a_k_a_,word,Medicinas supersticiosas,8-9,src/data/lexicon/nouns.json,no
+Biako,biako,word,Camas,9,src/data/lexicon/nouns.json,no
+Bialo,bialo,word,Botes europeos,9,src/data/lexicon/nouns.json,no
+Biambe,biambe,word,Curas supersticiosas,9,src/data/lexicon/nouns.json,no
+Biapa,biapa,word,Canastas,9,src/data/lexicon/nouns.json,no
+Biejâ,biej_a_,word,Medidas,9,src/data/lexicon/nouns.json,no
+Biēke,bi_e_ke,word,Juicios,9,src/data/lexicon/nouns.json,no
+Biima,biima,word,Egoísmos,9,src/data/lexicon/nouns.json,no
+Binaka,binaka,word,,,src/data/chapter-2/verbal-nouns.json,no
+Bioha,bioha,word,Monos pequeños,9,src/data/lexicon/nouns.json,no
+Bioma,bioma,word,Ñames,9,src/data/lexicon/nouns.json,no
+Biomu,biomu,word,Calores,9,src/data/lexicon/nouns.json,no
+Bobâbu,bob_a_bu,word,Blandura,11,src/data/lexicon/nouns.json,no
+Bobako,bobako,word,"Vaina, funda",11,src/data/lexicon/nouns.json,no
+Bobapami,bobapami,word,Portadores,12,src/data/lexicon/nouns.json,no
+bobe,bobe,word,Malo,18,src/data/lexicon/adjectives.json,no
+Boho,boho,word,"Cara, frente",12,src/data/lexicon/nouns.json,no
+Boho boyamu,boho-boyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+bohole,bohole,word,Pequeño,18,src/data/lexicon/adjectives.json,no
+Bojoūa,bojo_u_a,word,Mentira,11-12,src/data/lexicon/nouns.json,no
+Bokâ,bok_a_,word,Estación lluviosa,12,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Bokolo,bokolo,word,"Duro, difícil, riguroso",18,src/data/lexicon/adjectives.json,no
+Bokolo bokolo,bokolo-bokolo,phrase,,,src/data/chapter-3/invariable-adjectives.json,no
+Bolohi,bolohi,word,Naranja,12,src/data/lexicon/nouns.json,no
+Bondi babe,bondi-babe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bondi bahole,bondi-bahole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bondi banene,bondi-banene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bondi bavindo,bondi-bavindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+bonene,bonene,word,Grande,18,src/data/lexicon/adjectives.json,no
+Bongo,bongo,word,"Espina, punta",11-12,src/data/lexicon/nouns.json,no
+Bonyamo,bonyamo,word,"Miseria, pobreza",12,src/data/lexicon/nouns.json,no
+Bova,bova,word,"Don, regalo",12,src/data/lexicon/nouns.json,no
+Bova bobe,bova-bobe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bova bohole,bova-bohole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bova bonene,bova-bonene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Bova bovindo,bova-bovindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+bovindo,bovindo,word,Negro,18,src/data/lexicon/adjectives.json,no
+Būalo,b_u_alo,word,Canoa,12,src/data/lexicon/nouns.json,no
+būamu,b_u_amu,word,Bueno,17-18,src/data/chapter-1/alphabet.json; src/data/lexicon/adjectives.json; src/views/chapter-1/AlphabetSection.vue,no
+Būanga,b_u_anga,word,Campana supersticiosa,11,src/data/lexicon/nouns.json,no
+Būayē,b_u_ay_e_,word,Violencia,12,src/data/lexicon/nouns.json,no
+Būe,b_u_e,word,Luz,12,src/data/lexicon/nouns.json,no
+Būeka,b_u_eka,word,Odio,12,src/data/lexicon/nouns.json,no
+Bulu,bulu,word,Noche,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Buūha,bu_u_ha,word,Día,11-12,src/data/lexicon/nouns.json,no
+byelele,byelele,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+De,de,word,"Derecho, recto",18,src/data/lexicon/adjectives.json,no
+De de de,de-de-de,phrase,,,src/data/chapter-3/invariable-adjectives.json,no
+Diâ,di_a_,word,Hogar,9-10,src/data/lexicon/nouns.json,no
+Diba,diba,word,Casamiento,10,src/data/lexicon/nouns.json,no
+Dibē,dib_e_,word,"Ubre, teta",10,src/data/lexicon/nouns.json,no
+Dihâ,dih_a_,word,Ojo,10,src/data/lexicon/nouns.json,no
+Dikē,dik_e_,word,Huevo,10,src/data/lexicon/nouns.json,no
+Diko,diko,word,Sur,15,src/data/lexicon/nouns.json,no
+Dimya,dimya,word,Torpedo,10,src/data/lexicon/nouns.json,no
+Dina,dina,word,Nombre,10,src/data/lexicon/nouns.json,no
+Dindē,dind_e_,word,"Ñame, tubérculo",9-10,src/data/lexicon/nouns.json,no
+Dingongola,dingongola,word,Plátano especial,9-10,src/data/lexicon/nouns.json,no
+Dinyâ,diny_a_,word,Escama,10,src/data/lexicon/nouns.json,no
+Diso,diso,word,Nigua,10,src/data/lexicon/nouns.json,no
+Ditâ,dit_a_,word,Oreja,10,src/data/lexicon/nouns.json,no
+Divyâ,divy_a_,word,Escoba,9-10,src/data/lexicon/nouns.json,no
+Dyâmbi,dy_a_mbi,word,Puerta,10,src/data/lexicon/nouns.json,no
+Dyango,dyango,word,,,,no
+Dyate,dyate,word,Cinta del sombrero,13-14,src/data/lexicon/nouns.json,no
+Dyoba,dyoba,word,Sol,10,src/data/lexicon/nouns.json,no
+Ebâbâ,eb_a_b_a_,word,"Trapo, andrajo",16,src/data/lexicon/nouns.json,no
+Ebabadi,ebabadi,word,Sudor,16,src/data/lexicon/nouns.json,no
+Ebadu,ebadu,word,Barba,16,src/data/lexicon/nouns.json,no
+Ebamba,ebamba,word,Caspa,16,src/data/lexicon/nouns.json,no
+Ebambamba,ebambamba,word,"Concha, cáscara",16,src/data/lexicon/nouns.json,no
+Ebambana,ebambana,word,Hijo de esclavos,16,src/data/lexicon/nouns.json,no
+Ebano,ebano,word,"Oficio, comercio",16,src/data/lexicon/nouns.json,no
+Ebodi,ebodi,word,Puño,16,src/data/lexicon/nouns.json,no
+Ebokūedi,ebok_u_edi,word,Nodriza,15-17,src/data/lexicon/nouns.json,no
+Ebonga,ebonga,word,Silla,16,src/data/lexicon/nouns.json,no
+Ebūela,eb_u_ela,word,"Presa, despojos",15-17,src/data/lexicon/nouns.json,no
+Ebuki,ebuki,word,"Falta, culpa",15,src/data/lexicon/nouns.json,no
+Ebukūangonja,ebuk_u_angonja,word,Manga marina,15-17,src/data/lexicon/nouns.json,no
+Ebuma,ebuma,word,Fruta,15,src/data/lexicon/nouns.json,no
+Ebumulema,ebumulema,word,Corazón,15,src/data/lexicon/nouns.json,no
+Ebungu,ebungu,word,Estera,15,src/data/lexicon/nouns.json,no
+Ebyâbyâ,eby_a_by_a_,word,Muslo,15-17,src/data/lexicon/nouns.json,no
+Edingiha,edingiha,word,Sombra,15,src/data/lexicon/nouns.json,no
+Edoko,edoko,word,Deseo,16,src/data/lexicon/nouns.json,no
+Edubu,edubu,word,Culebra negra,16,src/data/lexicon/nouns.json,no
+Eduka,eduka,word,"Riña, guerra",16,src/data/lexicon/nouns.json,no
+Edungu,edungu,word,"Sonido, ruido",16,src/data/lexicon/nouns.json,no
+Efu,efu,word,"Manta, manto",16,src/data/lexicon/nouns.json,no
+Egala,egala,word,Cajón,8-9,src/data/lexicon/nouns.json,no
+Egâlani,eg_a_lani,word,Lepra,16,src/data/lexicon/nouns.json,no
+Egândaga,eg_a_ndaga,word,Esclavo,16,src/data/lexicon/nouns.json,no
+Egēja,eg_e_ja,word,Barreno,16,src/data/lexicon/nouns.json,no
+Egeno,egeno,word,Espejo,16,src/data/lexicon/nouns.json,no
+Egombe,egombe,word,Tiempo,16,src/data/lexicon/nouns.json,no
+Eguba,eguba,word,"Braza, fondo",15-17,src/data/lexicon/nouns.json,no
+Egumia,egumia,word,"Mástil, palo",16,src/data/lexicon/nouns.json,no
+Egunguna,egunguna,word,Llave,17,src/data/lexicon/nouns.json,no
+Ehadi,ehadi,word,Acción,16,src/data/lexicon/nouns.json,no
+Ehâhâni,eh_a_h_a_ni,word,"Vergüenza, rubor",16,src/data/lexicon/nouns.json,no
+Ehâlia,eh_a_lia,word,"Hilaridad, juego",16,src/data/lexicon/nouns.json,no
+Ehavu,ehavu,word,"Tarea, hierba",16,src/data/lexicon/nouns.json,no
+Eheheku,eheheku,word,Hipo,16,src/data/lexicon/nouns.json,no
+Ehēkâ,eh_e_k_a_,word,Hígado,16,src/data/lexicon/nouns.json,no
+Ehekūē,ehek_u_e_,word,"Gracia, favor",15-17,src/data/lexicon/nouns.json,no
+Ehelele,ehelele,word,Lagarto,16,src/data/lexicon/nouns.json,no
+Ehihila,ehihila,word,"Visión, espectro",16,src/data/lexicon/nouns.json,no
+Ehila,ehila,word,"Virgen, doncella",16,src/data/lexicon/nouns.json,no
+Ehilibeja,ehilibeja,word,Paladar,16,src/data/lexicon/nouns.json,no
+Ehini,ehini,word,"Figura, retrato",16,src/data/lexicon/nouns.json,no
+Ehongola,ehongola,word,Embudo,16,src/data/lexicon/nouns.json,no
+Ehove,ehove,word,"Ansia, deseo",16,src/data/lexicon/nouns.json,no
+Ehuhu,ehuhu,word,"Total, el todo",16,src/data/lexicon/nouns.json,no
+Ehuka,ehuka,word,"Jarro, tinaja",16,src/data/lexicon/nouns.json,no
+Ehukuluku,ehukuluku,word,Lechuza,15-17,src/data/lexicon/nouns.json,no
+Ehutē,ehut_e_,word,Náusea,16,src/data/lexicon/nouns.json,no
+Eja,eja,word,Comida,16,src/data/lexicon/nouns.json,no
+Ejabavudi,ejabavudi,word,Tortuga,16,src/data/lexicon/nouns.json,no
+Ejaka,ejaka,word,"Pez, carne",15-17,src/data/lexicon/nouns.json,no
+Ejalina,ejalina,word,Peine,15-17,src/data/lexicon/nouns.json,no
+Ejâmbi,ej_a_mbi,word,Patriarca,16,src/data/lexicon/nouns.json,no
+Ejanganangobe,ejanganangobe,word,"Carta, nota",17,src/data/lexicon/nouns.json,no
+Ejanganangobo,ejanganangobo,word,Libro,8-9,src/data/lexicon/nouns.json,no
+Ejangina,ejangina,word,Horno,15-17,src/data/lexicon/nouns.json,no
+Ejânjâ,ej_a_nj_a_,word,"Seta, hongo",15-17,src/data/lexicon/nouns.json,no
+Eka,eka,word,Trono,15-17,src/data/lexicon/nouns.json,no
+Ekaba,ekaba,word,Pimpollo,15-17,src/data/lexicon/nouns.json,no
+Ekahi,ekahi,word,"Héroe, coraje",15-17,src/data/lexicon/nouns.json,no
+Ekai,ekai,word,Hoja,16,src/data/lexicon/nouns.json,no
+Ekâi,ek_a_i,word,Plátano,8,src/data/lexicon/nouns.json,no
+Ekâi ebe,ek_a_i-ebe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ekâi ehole,ek_a_i-ehole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ekâi enene,ek_a_i-enene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ekâi evindo,ek_a_i-evindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ekâkâ,ek_a_k_a_,word,Tronco muerto,15-17,src/data/lexicon/nouns.json,no
+Ekâkâlâ,ek_a_k_a_l_a_,word,Sarna,15-17,src/data/lexicon/nouns.json,no
+Ekâkâyi,ek_a_k_a_yi,word,Tos muy fuerte,15-17,src/data/lexicon/nouns.json,no
+Ekalidi,ekalidi,word,Conversación,16,src/data/lexicon/nouns.json,no
+Ekâmbâ,ek_a_mb_a_,word,Flema,16,src/data/lexicon/nouns.json,no
+Ekano,ekano,word,"Fábula, ficción",16,src/data/lexicon/nouns.json,no
+Ekedi,ekedi,word,Vanidad,16,src/data/lexicon/nouns.json,no
+Ekeha,ekeha,word,Criatura,16,src/data/lexicon/nouns.json,no
+Ekelekeke,ekelekeke,word,Tórtola,15-17,src/data/lexicon/nouns.json,no
+Ekēmbē,ek_e_mb_e_,word,Veneno,15-17,src/data/lexicon/nouns.json,no
+Ekēndâ,ek_e_nd_a_,word,"Jornada, viaje",15-17,src/data/lexicon/nouns.json,no
+Ekendangolo,ekendangolo,word,"Monte, colina",15-17,src/data/lexicon/nouns.json,no
+Ekengo,ekengo,word,Cadáver,16,src/data/lexicon/nouns.json,no
+Ekeyi,ekeyi,word,Hierro,16,src/data/lexicon/nouns.json,no
+Ekiki,ekiki,word,"País, bosque",15-17,src/data/lexicon/nouns.json,no
+Ekikindi,ekikindi,word,Talón,15-17,src/data/lexicon/nouns.json,no
+Eko,eko,word,"Pierna, pie",16,src/data/lexicon/nouns.json,no
+Ekoda,ekoda,word,Panal,15-17,src/data/lexicon/nouns.json,no
+Ekokobo,ekokobo,word,Párpado,16,src/data/lexicon/nouns.json,no
+Ekola,ekola,word,Malicia,15-17,src/data/lexicon/nouns.json,no
+Ekomba,ekomba,word,Esterilidad,16,src/data/lexicon/nouns.json,no
+Ekoto,ekoto,word,"Cuero, piel",16,src/data/lexicon/nouns.json,no
+Ekudikudi,ekudikudi,word,"Tornado, tempestad",16,src/data/lexicon/nouns.json,no
+Ekūekūe,ek_u_ek_u_e,word,Mariposa,15-17,src/data/lexicon/nouns.json,no
+Ekuha,ekuha,word,Herencia,15-17,src/data/lexicon/nouns.json,no
+Ekukubi,ekukubi,word,"Furia, rabia",15-17,src/data/lexicon/nouns.json,no
+Ekulu,ekulu,word,"Mitad, parte",15-17,src/data/lexicon/nouns.json,no
+Elahe,elahe,word,Vaso,16,src/data/lexicon/nouns.json,no
+Elandi,elandi,word,Saco,16,src/data/lexicon/nouns.json,no
+Elângi,el_a_ngi,word,Cantor,16,src/data/lexicon/nouns.json,no
+Elape,elape,word,Rueda,15,src/data/lexicon/nouns.json,no
+Ele,ele,word,"Árbol, palo",16,src/data/lexicon/nouns.json,no
+Elēbu,el_e_bu,word,Labio,15-17,src/data/lexicon/nouns.json,no
+Elekanako,elekanako,word,"Ley, mandato",16,src/data/lexicon/nouns.json,no
+Elēmbē,el_e_mb_e_,word,"Pórtico, portal",15-17,src/data/lexicon/nouns.json,no
+Elembo,elembo,word,"Milagro, signo",16,src/data/lexicon/nouns.json,no
+Elende,elende,word,Bote,8,src/data/lexicon/nouns.json,no
+Elēngi,el_e_ngi,word,"Pródigo, gastador",15-17,src/data/lexicon/nouns.json,no
+Elinga,elinga,word,Cesto,8,src/data/lexicon/nouns.json,no
+Elolo,elolo,word,Sardina,16,src/data/lexicon/nouns.json,no
+Elombo,elombo,word,Cosa,8,src/data/lexicon/nouns.json,no
+Elongo,elongo,word,Torre,16,src/data/lexicon/nouns.json,no
+Emēnâ,em_e_n_a_,word,"Vida, existencia",16,src/data/lexicon/nouns.json,no
+Emēngūē,em_e_ng_u_e_,word,Lado izquierdo,15-17,src/data/lexicon/nouns.json,no
+Emi,emi,word,Lengua,16,src/data/lexicon/nouns.json,no
+Emina,emina,word,Cerrojo,16,src/data/lexicon/nouns.json,no
+Enâ,en_a_,word,Brazo,8,src/data/lexicon/nouns.json,no
+Enami,enami,word,Hombre poderoso,16,src/data/lexicon/nouns.json,no
+Enangi,enangi,word,"Sofá, cama",16,src/data/lexicon/nouns.json,no
+Engamba,engamba,word,Garrafón,16,src/data/lexicon/nouns.json,no
+Enge,enge,word,Costa,16,src/data/lexicon/nouns.json,no
+Engumbi,engumbi,word,Niebla,16,src/data/lexicon/nouns.json,no
+Eningo,eningo,word,Marea,16,src/data/lexicon/nouns.json,no
+Enjasigalanjenga,enjasigalanjenga,word,Ignorancia,17,src/data/lexicon/nouns.json,no
+Enjēli,enj_e_li,word,Ángel,16,src/data/lexicon/nouns.json,no
+Epambo,epambo,word,"Respeto, arco",15-17,src/data/lexicon/nouns.json,no
+Epapi,epapi,word,"Corteza, piel",15-17,src/data/lexicon/nouns.json,no
+Epati,epati,word,"Tontería, locura",15-17,src/data/lexicon/nouns.json,no
+Epedi,epedi,word,"Tiempo, estación",16,src/data/lexicon/nouns.json,no
+Epēlē,ep_e_l_e_,word,Plato,16,src/data/lexicon/nouns.json,no
+Epēlupēlu,ep_e_lup_e_lu,word,Relámpago,15-17,src/data/lexicon/nouns.json,no
+Epepa,epepa,word,"Timón, abanico",15-17,src/data/lexicon/nouns.json,no
+Epikiliedi,epikiliedi,word,Pensamiento,15-17,src/data/lexicon/nouns.json,no
+Epima,epima,word,"Muro, pared",15-17,src/data/lexicon/nouns.json,no
+Epokolo,epokolo,word,Sombrero,8,src/data/lexicon/nouns.json,no
+Epokolo eyamu,epokolo-eyamu,phrase,,,src/data/chapter-3/regular-adjectives.json; src/data/sections/ch-2/class-1.json,no
+Epondoma,epondoma,word,Almohada,15-17,src/data/lexicon/nouns.json,no
+Eponga,eponga,word,"Cera, capa",15-17,src/data/lexicon/nouns.json,no
+Epota,epota,word,"Vidriado, loza",15-17,src/data/lexicon/nouns.json,no
+Esâ,es_a_,word,Anguila,15-17,src/data/lexicon/nouns.json,no
+Esalagambūē,esalagamb_u_e_,word,Charlatán,15-17,src/data/lexicon/nouns.json,no
+Esūagēnda,es_u_ag_e_nda,word,"Banco, asiento",15-17,src/data/lexicon/nouns.json,no
+Esuti,esuti,word,Minuto,15-17,src/data/lexicon/nouns.json,no
+Etâkâ,et_a_k_a_,word,Familia,15-17,src/data/lexicon/nouns.json,no
+Etâki,et_a_ki,word,Tumulto,15-17,src/data/lexicon/nouns.json,no
+Etējani,et_e_jani,word,Rehén,17,src/data/lexicon/nouns.json,no
+Etema,etema,word,"Cardialgía, dolor",15-17,src/data/lexicon/nouns.json,no
+Etima,etima,word,Lago,15-17,src/data/lexicon/nouns.json,no
+Etimbe,etimbe,word,"Tabla, madera",17,src/data/lexicon/nouns.json,no
+Etoli,etoli,word,Rata,15-17,src/data/lexicon/nouns.json,no
+Etomba,etomba,word,"Tribu, familia",17,src/data/lexicon/nouns.json,no
+Etombi,etombi,word,Falda de monte,15-17,src/data/lexicon/nouns.json,no
+Etundu,etundu,word,"Hato, racimo",17,src/data/lexicon/nouns.json,no
+Etunia,etunia,word,Sufrimiento,17,src/data/lexicon/nouns.json,no
+Eūaha,e_u_aha,word,"Sierra, lima",15-17,src/data/lexicon/nouns.json,no
+Eva,eva,word,Vasija,17,src/data/lexicon/nouns.json,no
+Evandi,evandi,word,Miembro,17,src/data/lexicon/nouns.json,no
+Evango,evango,word,Vasija para agua,15-17,src/data/lexicon/nouns.json,no
+Evēlē,ev_e_l_e_,word,Sed,15-17,src/data/lexicon/nouns.json,no
+Evēlēhi,ev_e_l_e_hi,word,Pañuelo,15-17,src/data/lexicon/nouns.json,no
+Evelse,evelse,word,Hueso,15-17,src/data/lexicon/nouns.json,no
+Evema,evema,word,Trampa,17,src/data/lexicon/nouns.json,no
+Evemba,evemba,word,"Valor, coraje",17,src/data/lexicon/nouns.json,no
+Evila,evila,word,Ébano,17,src/data/lexicon/nouns.json,no
+Evindi,evindi,word,Nube,17,src/data/lexicon/nouns.json,no
+Evita,evita,word,Persecución,17,src/data/lexicon/nouns.json,no
+Evudi,evudi,word,"Espuma, algodón",17,src/data/lexicon/nouns.json,no
+Evunga,evunga,word,Yelmo,17,src/data/lexicon/nouns.json,no
+Evuva,evuva,word,Plaga,17,src/data/lexicon/nouns.json,no
+Eyake,eyake,word,Panadizo,17,src/data/lexicon/nouns.json,no
+Eyokūedi,eyok_u_edi,word,Discípulo,15-17,src/data/lexicon/nouns.json,no
+Eyome,eyome,word,Lado derecho,17,src/data/lexicon/nouns.json,no
+Fala,fala,word,Francés,13,src/data/lexicon/nouns.json,no
+Fato,fato,word,"Media, calceta",13,src/data/lexicon/nouns.json,no
+Fula,fula,word,"Franco, moneda",13,src/data/lexicon/nouns.json,no
+Hâkâ,h_a_k_a_,word,"Ápice, punta",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Hako,hako,word,Hormiga,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Hāngā,h_a_ng_a_,word,,,,no
+Hapi,hapi,word,Cerradura,13,src/data/lexicon/nouns.json,no
+Henga,henga,word,Ocio,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Honji,honji,word,"Heno, yerba",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Hoūe,ho_u_e,word,"Pelo, cabello",13-14,src/data/lexicon/nouns.json; src/data/sections/ch-1/triphthongs.json,no
+Hoūē,ho_u_e_,word,"Cabellera, pelo",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+hūē,h_u_e_,word,Paz,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json; src/data/sections/ch-1/diphthongs.json,no
+Huhamba,huhamba,word,"Desnudo, descubierto",18,src/data/lexicon/adjectives.json,no
+Ibakē,ibak_e_,word,Cuidado,9,src/data/lexicon/nouns.json,no
+Ibala,ibala,word,Victoria,9,src/data/lexicon/nouns.json,no
+Ibâlu,ib_a_lu,word,Cuello,9,src/data/lexicon/nouns.json,no
+Ibângâ,ib_a_ng_a_,word,Rodilla,9-10,src/data/lexicon/nouns.json,no
+Ibâtâ,ib_a_t_a_,word,Bendición,9-10,src/data/lexicon/nouns.json,no
+Ibēkē,ib_e_k_e_,word,Hombro,9,src/data/lexicon/nouns.json,no
+Ibeku,ibeku,word,Apoyo,9,src/data/lexicon/nouns.json,no
+Ibendē,ibend_e_,word,Alabanza,9-10,src/data/lexicon/nouns.json,no
+ibina,ibina,word,odio,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+Ibobēlē,ibob_e_l_e_,word,Araña,9,src/data/lexicon/nouns.json,no
+Iboko,iboko,word,"Lugar, sitio",10,src/data/lexicon/nouns.json,no
+Ibomba,ibomba,word,Cuerno,9,src/data/lexicon/nouns.json,no
+Ibongo iyamu,ibongo-iyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ihana,ihana,word,Ayuda,9,src/data/lexicon/nouns.json,no
+Ihonga,ihonga,word,Diente,9,src/data/lexicon/nouns.json,no
+Ihuhu,ihuhu,word,"Estómago, vientre",9,src/data/lexicon/nouns.json,no
+Ihuku,ihuku,word,"Fin, extremidad",9,src/data/lexicon/nouns.json,no
+Ijane,ijane,word,Nacimiento,9,src/data/lexicon/nouns.json,no
+ijanja,ijanja,word,trabajo,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ijoūia,ijo_u_ia,word,,,src/data/sections/ch-1/triphthongs.json,no
+Ikabo,ikabo,word,"Porción, parte",9,src/data/lexicon/nouns.json,no
+Ikadada,ikadada,word,Pimienta,10,src/data/lexicon/nouns.json,no
+Ikadu,ikadu,word,Mano,9,src/data/lexicon/nouns.json,no
+ikala,ikala,word,razonamiento,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+Ikalia,ikalia,word,"Oración, súplica",9,src/data/lexicon/nouns.json,no
+ikalidi,ikalidi,word,modo de hablar,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ikalo,ikalo,word,oración,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+Ikana,ikana,word,Juramento,9,src/data/lexicon/nouns.json,no
+Ikēlēnē,ik_e_l_e_n_e_,word,Vanidad,9-10,src/data/lexicon/nouns.json,no
+Ikelenge,ikelenge,word,Campana,9,src/data/lexicon/nouns.json,no
+Ikēluku,ik_e_luku,word,Ambición,9,src/data/lexicon/nouns.json,no
+Ikogo,ikogo,word,Zapato,9-10,src/data/lexicon/nouns.json,no
+Ilale,ilale,word,Piedra,9,src/data/lexicon/nouns.json,no
+ilanga,ilanga,word,lectura,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ilangidi,ilangidi,word,modo de leer,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ilende,ilende,word,escritura,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ilonga,ilonga,word,edificio,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json; src/views/chapter-2/VerbalNouns.vue,no
+ilongidi,ilongidi,word,modo de construir,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json; src/views/chapter-2/VerbalNouns.vue,no
+Iluku,iluku,word,Hermana,9,src/data/lexicon/nouns.json,no
+Ilutu ibe,ilutu-ibe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ilutu ihole,ilutu-ihole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ilutu inene,ilutu-inene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ilutu ivindo,ilutu-ivindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Inâni,in_a_ni,word,Pájaro,10,src/data/lexicon/nouns.json,no
+Iovenda,iovenda,word,Gloria,9,src/data/lexicon/nouns.json,no
+ipivi,ipivi,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Itândē,it_a_nd_e_,word,Amor,9,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+itutu,itutu,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+iūedo,i_u_edo,word,,,src/data/sections/ch-1/triphthongs.json,no
+iūēla,i_u_e_la,word,,,src/data/sections/ch-1/triphthongs.json,no
+iuūa,iu_u_a,word,,,src/data/sections/ch-1/triphthongs.json,no
+Ivē,iv_e_,word,"Paga, recompensa",9,src/data/lexicon/nouns.json,no
+Jângâ,j_a_ng_a_,word,Temor (clase de),13,src/data/lexicon/nouns.json,no
+Janjaka,janjaka,word,,,src/data/chapter-2/verbal-nouns.json,no
+Jonda,jonda,word,Rana,13,src/data/lexicon/nouns.json,no
+Jubu,jubu,word,Ceniza,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Jumba,jumba,word,Carga,13,src/data/lexicon/nouns.json,no
+Kâ,k_a_,word,Caracol grande,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Kabala,kabala,word,Caballo,13,src/data/lexicon/nouns.json,no
+kaia,kaia,word,,,src/data/sections/ch-1/triphthongs.json,no
+Kâla,k_a_la,word,Reloj de caja,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+kalaka,kalaka,word,,,src/data/chapter-1/alphabet.json; src/data/chapter-2/verbal-nouns.json; src/views/chapter-1/AlphabetSection.vue,no
+Kalakia,kalakia,word,,,src/data/chapter-2/verbal-nouns.json,no
+Kama,kama,word,Ciento,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Kânde,k_a_nde,word,Perseverancia,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Kango,kango,word,"Sabor, gusto",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Kapi,kapi,word,Remo,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Kâtâ,k_a_t_a_,word,Tranca,13,src/data/lexicon/nouns.json,no
+Kena,kena,word,De tamaño extraordinario,18,src/data/lexicon/adjectives.json,no
+kēnyēngē,k_e_ny_e_ng_e_,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Kiji,kiji,word,Rastrojo,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+kodokodo,kodokodo,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Kono,kono,word,Bisagra,13,src/data/lexicon/nouns.json,no
+Kopia,kopia,word,"Prieto, avaro",18,src/data/lexicon/adjectives.json,no
+Kuma,kuma,word,"Fama, renombre",13,src/data/lexicon/nouns.json,no
+kya,kya,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Laha,laha,word,Limones,13,src/data/lexicon/nouns.json,no
+Langa,langa,word,Gran cantidad de sal,13,src/data/lexicon/nouns.json,no
+Langaka,langaka,word,,,src/data/chapter-2/verbal-nouns.json,no
+Lembo,lembo,word,"Himnos, cantos",12,src/data/lexicon/nouns.json,no
+Lēndēkē,l_e_nd_e_k_e_,word,,,src/data/chapter-2/verbal-nouns.json,no
+Leya,leya,word,"Fuegos, leñas",12,src/data/lexicon/nouns.json,no
+Liâ,li_a_,word,Sueños,12-13,src/data/lexicon/nouns.json,no
+Liho,liho,word,Ríos,12,src/data/lexicon/nouns.json,no
+Liho lobe,liho-lobe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Liho lohole,liho-lohole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Liho lonene,liho-lonene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Liho lovindo,liho-lovindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Lijo,lijo,word,Narices,12,src/data/lexicon/nouns.json,no
+Litūa,lit_u_a,word,"Velas, luces de candela",12-13,src/data/lexicon/nouns.json,no
+Litua loyamu,litua-loyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Loboko,loboko,word,"Lugares, sitios",10,src/data/lexicon/nouns.json,no
+Lohi,lohi,word,Rayos de sol,13,src/data/lexicon/nouns.json,no
+Lokadada,lokadada,word,Pimientas,10,src/data/lexicon/nouns.json,no
+Lololombo,lololombo,word,"Átomos, partículas",12,src/data/lexicon/nouns.json,no
+Lombongo,lombongo,word,Mosquitos,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Lonâni,lon_a_ni,word,Pájaros,10,src/data/lexicon/nouns.json,no
+Longaka,longaka,word,,,src/data/chapter-2/verbal-nouns.json,no
+Longangambi,longangambi,word,"Caprichos, extravagancias",12,src/data/lexicon/nouns.json,no
+Longunguhu,longunguhu,word,Migas,12,src/data/lexicon/nouns.json,no
+Lopupuhu,lopupuhu,word,Fragmentos,12,src/data/lexicon/nouns.json,no
+Loyonda,loyonda,word,Las estaciones secas,12,src/data/lexicon/nouns.json,no
+Maba,maba,word,Casamientos,10,src/data/lexicon/nouns.json,no
+Mabakē,mabak_e_,word,Cuidados,9,src/data/lexicon/nouns.json,no
+Mabala,mabala,word,Victorias,9,src/data/lexicon/nouns.json,no
+Mabâlu,mab_a_lu,word,Cuellos,9,src/data/lexicon/nouns.json,no
+Mabângâ,mab_a_ng_a_,word,Rodillas,9-10,src/data/lexicon/nouns.json,no
+Mabâtâ,mab_a_t_a_,word,Bendiciones,9-10,src/data/lexicon/nouns.json,no
+Mabē,mab_e_,word,"Ubres, tetas",10,src/data/lexicon/nouns.json,no
+Mabēkē,mab_e_k_e_,word,Hombros,9,src/data/lexicon/nouns.json,no
+Mabeku,mabeku,word,Apoyos,9,src/data/lexicon/nouns.json,no
+Mabendē,mabend_e_,word,Alabanzas,9-10,src/data/lexicon/nouns.json,no
+Mabobēlē,mabob_e_l_e_,word,Arañas,9,src/data/lexicon/nouns.json,no
+Mabomba,mabomba,word,Cuernos,9,src/data/lexicon/nouns.json,no
+Mabongo maiyamu,mabongo-maiyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mahana,mahana,word,Ayudas,9,src/data/lexicon/nouns.json,no
+Mahonga,mahonga,word,Dientes,9,src/data/lexicon/nouns.json,no
+Mahuhu,mahuhu,word,"Estómagos, vientres",9,src/data/lexicon/nouns.json,no
+Mahuku,mahuku,word,"Fines, extremidades",9,src/data/lexicon/nouns.json,no
+Majanē,majan_e_,word,Nacimientos,9,src/data/lexicon/nouns.json,no
+Majanja,majanja,word,trabajos,15,src/data/lexicon/nouns.json,no
+Majênjina,maj_e_njina,word,Rayos de la aurora,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Maka,maka,word,Jugo,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mâkâ,m_a_k_a_,word,Tienda de campaña,13-14,src/data/lexicon/nouns.json,no
+Makabo,makabo,word,"Porciones, partes",9,src/data/lexicon/nouns.json,no
+Makadu,makadu,word,Manos,9,src/data/lexicon/nouns.json,no
+Makalia,makalia,word,"Oraciones, súplicas",9,src/data/lexicon/nouns.json,no
+Makana,makana,word,Juramentos,9,src/data/lexicon/nouns.json,no
+Makândâ,mak_a_nd_a_,word,Savia,10,src/data/lexicon/nouns.json,no
+Makē,mak_e_,word,Huevos,10,src/data/lexicon/nouns.json,no
+Makēlēnē,mak_e_l_e_n_e_,word,Vanidades,9-10,src/data/lexicon/nouns.json,no
+Makelenge,makelenge,word,Campanas,9,src/data/lexicon/nouns.json,no
+Makēluku,mak_e_luku,word,Ambiciones,9,src/data/lexicon/nouns.json,no
+Makiya,makiya,word,Sangre,9-10,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mako,mako,word,Sures,15,src/data/lexicon/nouns.json,no
+Makogo,makogo,word,Zapatos,9-10,src/data/lexicon/nouns.json,no
+Maku,maku,word,"Ron, licor",9-10,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Malale,malale,word,Piedras,9,src/data/lexicon/nouns.json,no
+Malângâ,mal_a_ng_a_,word,Flores de los árboles,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Malonga,malonga,word,edificios,15,src/data/lexicon/nouns.json,no
+Maluku,maluku,word,Hermanas,9,src/data/lexicon/nouns.json,no
+Malutu mabe,malutu-mabe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Malutu mahole,malutu-mahole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Malutu manene,malutu-manene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Malutu mavindo,malutu-mavindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mâmbē,m_a_mb_e_,word,"Sobras, mendrugos",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mâmbi,m_a_mbi,word,Puertas,10,src/data/lexicon/nouns.json,no
+Mamya,mamya,word,Torpedos,10,src/data/lexicon/nouns.json,no
+Mandē,mand_e_,word,"Ñames, tubérculos",9-10,src/data/lexicon/nouns.json,no
+Manga,manga,word,Mar,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mangongola,mangongola,word,Plátanos especiales,9-10,src/data/lexicon/nouns.json,no
+Manyâ,many_a_,word,Escamas,10,src/data/lexicon/nouns.json,no
+Manyângâ,many_a_ng_a_,word,Leche,9-10,src/data/lexicon/nouns.json,no
+manyungâ,manyung_a_,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Maso,maso,word,Niguas,10,src/data/lexicon/nouns.json,no
+Matâ,mat_a_,word,Orejas,10,src/data/lexicon/nouns.json,no
+Matândē,mat_a_nd_e_,word,Amores,9,src/data/lexicon/nouns.json,no
+Mavē,mav_e_,word,"Pagas, recompensas",9,src/data/lexicon/nouns.json,no
+Mavenda,mavenda,word,Glorias,9,src/data/lexicon/nouns.json,no
+Mavule,mavule,word,Aceite,9-10,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mavyâ,mavy_a_,word,Escobas,9-10,src/data/lexicon/nouns.json,no
+Mbadi,mbadi,word,Ardilla,13-14,src/data/lexicon/nouns.json,no
+Mbai,mbai,word,"Virutas, astillas",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mbalanga,mbalanga,word,Antilope,13-14,src/data/lexicon/nouns.json,no
+mbambai,mbambai,word,,,src/data/sections/ch-1/consonants.json,no
+Mbana,mbana,word,"Pinzas, tenazuelas",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mbângâ,mb_a_ng_a_,word,Patata,13-14,src/data/lexicon/nouns.json,no
+Mbanja,mbanja,word,"Bambú, costilla",13,src/data/lexicon/nouns.json,no
+mbēba,mb_e_ba,word,,,src/data/sections/ch-1/consonants.json,no
+mbeya,mbeya,word,,,src/data/sections/ch-1/consonants.json,no
+mbimba,mbimba,word,,,src/data/sections/ch-1/consonants.json,no
+mboi,mboi,word,Miel,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json; src/data/sections/ch-1/diphthongs.json,no
+mboka,mboka,word,,,src/data/sections/ch-1/consonants.json,no
+Mbolo,mbolo,word,,,,no
+Mbūa,mb_u_a,word,Perro,13-14,src/data/lexicon/nouns.json,no
+mbūedi,mb_u_edi,word,,,src/data/sections/ch-1/consonants.json,no
+mbūei,mb_u_ei,word,,,src/data/sections/ch-1/triphthongs.json,no
+mbūengambūenga,mb_u_engamb_u_enga,word,,,src/data/sections/ch-1/consonants.json,no
+mbūia,mb_u_ia,word,,,src/data/sections/ch-1/triphthongs.json,no
+Mbuja,mbuja,word,Red,13-14,src/data/lexicon/nouns.json,no
+mbute,mbute,word,,,src/data/sections/ch-1/consonants.json,no
+mbyu,mbyu,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Mebaha,mebaha,word,"Costados, lados",11,src/data/lexicon/nouns.json,no
+Mebâki,meb_a_ki,word,"Hachas, destrales",11,src/data/lexicon/nouns.json,no
+Mebâki meyamu,meb_a_ki-meyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mebalani,mebalani,word,Conquistadores,11,src/data/lexicon/nouns.json,no
+Mebândâ,meb_a_nd_a_,word,Tiros de fusil,10-11,src/data/lexicon/nouns.json,no
+Mebanga,mebanga,word,Nueces,11,src/data/lexicon/nouns.json,no
+Mebango,mebango,word,Dientes de marfil,11,src/data/lexicon/nouns.json,no
+Mebēdi,meb_e_di,word,Enfermedades,11,src/data/lexicon/nouns.json,no
+Mebendi,mebendi,word,Aduladores,11,src/data/lexicon/nouns.json,no
+Mebūa,meb_u_a,word,Las mañanas,10-11,src/data/lexicon/nouns.json,no
+Mebulubulu,mebulubulu,word,Polvos,11,src/data/lexicon/nouns.json,no
+Medâmbē,med_a_mb_e_,word,Ovejas,11,src/data/lexicon/nouns.json,no
+Medumbu,medumbu,word,,11,src/data/lexicon/nouns.json,no
+Megangano,megangano,word,Compañerismos,10-11,src/data/lexicon/nouns.json,no
+Megulu,megulu,word,Cuerdas,10-11,src/data/lexicon/nouns.json,no
+Mehâ,meh_a_,word,Pipas,11,src/data/lexicon/nouns.json,no
+Mehēkē,meh_e_k_e_,word,Playas del mar,11,src/data/lexicon/nouns.json,no
+Mehēngē,meh_e_ng_e_,word,Calles,11,src/data/lexicon/nouns.json,no
+Mehiha,mehiha,word,"Nervios, venas",11,src/data/lexicon/nouns.json,no
+Mehinganakano,mehinganakano,word,Cadenas,11,src/data/lexicon/nouns.json,no
+Mehingi,mehingi,word,Gatos salvajes,11,src/data/lexicon/nouns.json,no
+Melangi,melangi,word,lectores,15,src/data/lexicon/nouns.json,no
+Melendi,melendi,word,escritores,15,src/data/lexicon/nouns.json,no
+Melohi,melohi,word,Naranjas,12,src/data/lexicon/nouns.json,no
+Metē mebe,met_e_-mebe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Metē mehole,met_e_-mehole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Metē menene,met_e_-menene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Metē mevindo,met_e_-mevindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miâ,mi_a_,word,Hogares,9-10,src/data/lexicon/nouns.json,no
+Miadi,miadi,word,Hembras,11,src/data/lexicon/nouns.json,no
+Miahi,miahi,word,"Erizos, peines de adorno",11,src/data/lexicon/nouns.json,no
+Miako,miako,word,Confianzas,11,src/data/lexicon/nouns.json,no
+Mialika,mialika,word,Vihuelas,11,src/data/lexicon/nouns.json,no
+Mialo,mialo,word,Canoas,12,src/data/lexicon/nouns.json,no
+Miambo,miambo,word,"Sacrificios, ofertas",11,src/data/lexicon/nouns.json,no
+Mianga,mianga,word,"Rebaños, huertos",11,src/data/lexicon/nouns.json,no
+Mianjo,mianjo,word,Justicias,11,src/data/lexicon/nouns.json,no
+Miayē,miay_e_,word,Violencias,12,src/data/lexicon/nouns.json,no
+Miba,miba,word,Agua,10,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Mibâbu,mib_a_bu,word,Blanduras,11,src/data/lexicon/nouns.json,no
+Mibako,mibako,word,"Vainas, fundas",11,src/data/lexicon/nouns.json,no
+Mie,mie,word,Luces,12,src/data/lexicon/nouns.json,no
+Mieka,mieka,word,Odios,12,src/data/lexicon/nouns.json,no
+Miemba,miemba,word,"Sopas, salsas",11,src/data/lexicon/nouns.json,no
+Miēngi,mi_e_ngi,word,Extranjeros,11,src/data/lexicon/nouns.json,no
+Miēni,mi_e_ni,word,Brazaletes,11,src/data/lexicon/nouns.json,no
+Mihâ,mih_a_,word,Ojos,10,src/data/lexicon/nouns.json,no
+Miidi,miidi,word,"Bancos, orillas",11,src/data/lexicon/nouns.json,no
+Miindi,miindi,word,"Montones, hatos",11,src/data/lexicon/nouns.json,no
+Miiya,miiya,word,Intestinos,11,src/data/lexicon/nouns.json,no
+Mijoūa,mijo_u_a,word,Mentiras,11-12,src/data/lexicon/nouns.json,no
+Mina,mina,word,Nombres,10,src/data/lexicon/nouns.json,no
+Mingomo,mingomo,word,"Miserias, pobrezas",12,src/data/lexicon/nouns.json,no
+Mioho,mioho,word,"Caras, frentes",12,src/data/lexicon/nouns.json,no
+Mioho meyamu,mioho-meyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miokâ,miok_a_,word,Estaciones lluviosas,12,src/data/lexicon/nouns.json,no
+Miolo,miolo,word,Cabezas,11,src/data/lexicon/nouns.json,no
+Miongo,miongo,word,"Espinas, puntas",11-12,src/data/lexicon/nouns.json,no
+Miova mebe,miova-mebe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miova mehole,miova-mehole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miova menene,miova-menene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miova mevindo,miova-mevindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Miva,miva,word,"Dones, regalos",12,src/data/lexicon/nouns.json,no
+Moda,moda,word,Soles,10,src/data/lexicon/nouns.json,no
+Mohano,mohano,word,Promesa,12,src/data/lexicon/nouns.json,no
+Molo,molo,word,Cabeza,11,src/data/lexicon/nouns.json,no
+Momo,momo,word,Hombre,12,src/data/lexicon/nouns.json,no
+Monda,monda,word,Invitación,12,src/data/lexicon/nouns.json,no
+Mondi ube,mondi-ube,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mondi uhole,mondi-uhole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mondi unene,mondi-unene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mondi uvindo,mondi-uvindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Mongolu,mongolu,word,Escarabajo,12,src/data/lexicon/nouns.json,no
+Moto,moto,word,Persona,12,src/data/lexicon/nouns.json,no
+Moto uyamu,moto-uyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Motoba,motoba,word,Caracol,12,src/data/lexicon/nouns.json,no
+Mūadi,m_u_adi,word,Hembra,11,src/data/lexicon/nouns.json,no
+Mūahi,m_u_ahi,word,"Erizo, peine de adorno",11,src/data/lexicon/nouns.json,no
+Muajo,muajo,word,Mujer,11,src/data/lexicon/nouns.json,no
+Mūako,m_u_ako,word,Confianza,11,src/data/lexicon/nouns.json,no
+Mūalika,m_u_alika,word,Vihuela,11,src/data/lexicon/nouns.json,no
+Mūambo,m_u_ambo,word,"Sacrificio, oferta",11,src/data/lexicon/nouns.json,no
+mūana,m_u_ana,word,,,src/data/sections/ch-1/diphthongs.json,no
+Mūanga,m_u_anga,word,"Rebaño, huerto",11,src/data/lexicon/nouns.json,no
+Mūanjo,m_u_anjo,word,Justicia,11,src/data/lexicon/nouns.json,no
+Mūemba,m_u_emba,word,"Sopa, salsa",11,src/data/lexicon/nouns.json,no
+Mūēngi,m_u_e_ngi,word,Extranjero,11,src/data/lexicon/nouns.json,no
+Mūēni,m_u_e_ni,word,Brazalete,11,src/data/lexicon/nouns.json,no
+mūidi,m_u_idi,word,"Banco, orilla",11,src/data/lexicon/nouns.json; src/data/sections/ch-1/diphthongs.json,no
+Mūindi,m_u_indi,word,"Montón, hato",11,src/data/lexicon/nouns.json,no
+Mūiya,m_u_iya,word,Intestinos,11,src/data/lexicon/nouns.json,no
+myadi,myadi,word,Agonía,14,src/data/chapter-1/alphabet.json; src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json; src/views/chapter-1/AlphabetSection.vue,no
+myongo,myongo,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Ndabo,ndabo,word,Casa,13,src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+Ndabo eyamu,ndabo-eyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndabo iyamu,ndabo-iyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndaga,ndaga,word,"Palabra, razonamiento",13,src/data/lexicon/nouns.json,no
+ndâlâ,nd_a_l_a_,word,,,src/data/sections/ch-1/consonants.json,no
+Ndâtâ,nd_a_t_a_,word,"Sueño, desvario",13,src/data/lexicon/nouns.json,no
+ndēmbē,nd_e_mb_e_,word,,,src/data/sections/ch-1/consonants.json,no
+Ndembo,ndembo,word,Señal,13,src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+Ndiba,ndiba,word,Profundidad,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+nditi,nditi,word,,,src/data/sections/ch-1/consonants.json,no
+Ndo ebe,ndo-ebe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo ehole,ndo-ehole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo enene,ndo-enene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo evindo,ndo-evindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo ibe,ndo-ibe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo ihole,ndo-ihole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo inene,ndo-inene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndo ivindo,ndo-ivindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ndoba,ndoba,word,Enemigo,13,src/data/lexicon/nouns.json,no
+ndomi,ndomi,word,,,src/data/sections/ch-1/consonants.json,no
+Ndomina,ndomina,word,Tío materno,13,src/data/lexicon/nouns.json,no
+Ndonda,ndonda,word,"Cosecha, siega",13-14,src/data/lexicon/nouns.json,no
+Ndonga,ndonga,word,Confianza,14,src/data/lexicon/nouns.json,no
+Ndongo,ndongo,word,Pimiento,13-14,src/data/lexicon/nouns.json,no
+Ndumba,ndumba,word,Huésped,14,src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+Nenge,nenge,word,Isla,13-14,src/data/lexicon/nouns.json,no
+Ngabo,ngabo,word,"Ración, porción",13,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+ngadi,ngadi,word,,,src/data/sections/ch-1/consonants.json,no
+Ngaho,ngaho,word,Alambre,13,src/data/lexicon/nouns.json,no
+Ngama,ngama,word,Defensa,13,src/data/lexicon/nouns.json,no
+Ngambi,ngambi,word,"Ira, rencor",13,src/data/lexicon/nouns.json,no
+Ngâmbi,ng_a_mbi,word,Harpa,13,src/data/lexicon/nouns.json,no
+Ngândâ,ng_a_nd_a_,word,Habas,13-14,src/data/lexicon/nouns.json,no
+ngânde,ng_a_nde,word,Luna,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+Ngandi,ngandi,word,"Globo, bola",13,src/data/lexicon/nouns.json,no
+Ngando,ngando,word,Cocodrilo,13,src/data/lexicon/nouns.json,no
+Nganga,nganga,word,Médico,13-14,src/data/lexicon/nouns.json,no
+Ngani,ngani,word,Juego de manos,13,src/data/lexicon/nouns.json,no
+Nganiyango,nganiyango,word,"Acceso, entrada",13-14,src/data/lexicon/nouns.json,no
+Ngâūē,ng_a_u_e_,word,Capitán,13-14,src/data/lexicon/nouns.json,no
+ngēbē,ng_e_b_e_,word,,,src/data/sections/ch-1/consonants.json,no
+ngebo,ngebo,word,,,src/data/sections/ch-1/consonants.json,no
+Ngejangeja,ngejangeja,word,Cristal,13-14,src/data/lexicon/nouns.json,no
+Ngenga,ngenga,word,Ciempiés,13,src/data/lexicon/nouns.json,no
+nginga,nginga,word,,,src/data/sections/ch-1/consonants.json,no
+Ngomba,ngomba,word,Puerco espín,13,src/data/lexicon/nouns.json,no
+ngonda,ngonda,word,,,src/data/sections/ch-1/consonants.json,no
+Ngonga,ngonga,word,Pecho,13,src/data/lexicon/nouns.json,no
+ngūae,ng_u_ae,word,,,src/data/sections/ch-1/triphthongs.json,no
+ngūahi,ng_u_ahi,word,,,src/data/sections/ch-1/consonants.json,no
+Ngūanjangūanja,ng_u_anjang_u_anja,word,Diligencia,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Ngudi,ngudi,word,"Fuerza, voluntad",13-14,src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+ngūea,ng_u_ea,word,,,src/data/sections/ch-1/consonants.json,no
+Ngumu,ngumu,word,"Jefe, principal",13,src/data/lexicon/nouns.json,no
+Njadi,njadi,word,Yunque,13,src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+njâku,nj_a_ku,word,,,src/data/sections/ch-1/consonants.json,no
+njea,njea,word,Sendero,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json; src/data/sections/ch-1/consonants.json,no
+njēngi,nj_e_ngi,word,,,src/data/sections/ch-1/consonants.json,no
+njimbili,njimbili,word,,,src/data/sections/ch-1/consonants.json,no
+njongo,njongo,word,,,src/data/sections/ch-1/consonants.json,no
+njunga,njunga,word,,,src/data/sections/ch-1/consonants.json,no
+nyanda,nyanda,word,,,src/data/sections/ch-1/consonants.json,no
+nyândâ,ny_a_nd_a_,word,,,src/data/sections/ch-1/consonants.json,no
+Nyangūa ditâ,nyang_u_a-dit_a_,phrase,"Timpano, oido",13-14,src/data/lexicon/nouns.json,no
+Nyati,nyati,word,Buey,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+nyaūe,nya_u_e,word,,,src/data/sections/ch-1/triphthongs.json,no
+nyele,nyele,word,,,src/data/sections/ch-1/consonants.json,no
+nyēlēli,ny_e_l_e_li,word,,,src/data/sections/ch-1/consonants.json,no
+Nyēnjē,ny_e_nj_e_,word,Cangrejo,14,src/data/lexicon/nouns.json,no
+Nyeti,nyeti,word,Chorro violento,13-14,src/data/lexicon/nouns.json,no
+Nyēvi,ny_e_vi,word,"Brillante, hermoso",18,src/data/lexicon/adjectives.json,no
+nyilo,nyilo,word,,,src/data/sections/ch-1/consonants.json,no
+Nyuūē,nyu_u_e_,word,"Cabello blanco, o canas",13-14,src/data/lexicon/nouns.json,no
+Oba,oba,word,,,,no
+Pago,pago,word,Tributo,13,src/data/lexicon/nouns.json,no
+Paha,paha,word,Rama,13,src/data/lexicon/nouns.json,no
+paia,paia,word,,,src/data/sections/ch-1/triphthongs.json,no
+Pâkūēpâkūē,p_a_k_u_e_p_a_k_u_e_,word,Verdad,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Pala,pala,word,"Relleno, atestado",18,src/data/lexicon/adjectives.json,no
+Pâlâlâpâlâlâ,p_a_l_a_l_a_p_a_l_a_l_a_,word,"Veloz, con delicadeza",18,src/data/lexicon/adjectives.json,no
+Pândâ,p_a_nd_a_,word,Casco,13,src/data/lexicon/nouns.json,no
+Panga,panga,word,"Cadena, promesa",13,src/data/lexicon/nouns.json,no
+Pani,pani,word,Costumbre,13,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Pavo,pavo,word,Cuchillo,13,src/data/lexicon/nouns.json,no
+Pēkejomu,p_e_kejomu,word,"Eterno, sin fin",18,src/data/lexicon/adjectives.json,no
+Pēki Pēki,p_e_ki-p_e_ki,phrase,"Perpetuo, constante",18,src/data/lexicon/adjectives.json,no
+Pembē,pemb_e_,word,"Pan, greda",13,src/data/lexicon/nouns.json,no
+Penda,penda,word,Controversia,13,src/data/lexicon/nouns.json,no
+Penge,penge,word,Ulcera,13,src/data/lexicon/nouns.json,no
+Peta,peta,word,"Disputa, etc.",14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Pika,pika,word,Riñón,13,src/data/lexicon/nouns.json,no
+Pimba,pimba,word,Coraje,13,src/data/lexicon/nouns.json,no
+Pita,pita,word,Pólvora,13,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Pivi,pivi,word,"Espeso, denso",18,src/data/lexicon/adjectives.json,no
+Pogo,pogo,word,Arpón,13-14,src/data/lexicon/nouns.json,no
+Pojaengo,pojaengo,word,"Anticuado, viejo",18,src/data/lexicon/adjectives.json,no
+Poke,poke,word,Sordera,13,src/data/lexicon/nouns.json,no
+Poli,poli,word,Trigo,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Poso,poso,word,"Superior, sobre todo",18,src/data/lexicon/adjectives.json,no
+Potapota,potapota,word,"Áspero, tosco",18,src/data/lexicon/adjectives.json,no
+Poti,poti,word,"Maíz, grano",13,src/data/lexicon/nouns.json,no
+Pudi,pudi,word,"Aire, aliento",13,src/data/lexicon/nouns.json,no
+Pūisi,p_u_isi,word,Gato,13-14,src/data/lexicon/nouns.json,no
+Sago,sago,word,Jabón,13,src/data/lexicon/nouns.json,no
+Sânâ,s_a_n_a_,word,,,,no
+Sango,sango,word,"Fiesta, noticia",13,src/data/lexicon/nouns.json,no
+Senge,senge,word,Palangana,13,src/data/lexicon/nouns.json,no
+Sikulu,sikulu,word,Escuela,13,src/data/lexicon/nouns.json,no
+ta,ta,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Tagulu,tagulu,word,Mesa,13-14,src/data/lexicon/nouns.json,no
+Tanana,tanana,word,Blanco,18,src/data/lexicon/adjectives.json,no
+Tândâkâ,t_a_nd_a_k_a_,word,,,src/data/chapter-1/alphabet.json; src/data/chapter-2/verbal-nouns.json; src/views/chapter-1/AlphabetSection.vue,no
+Tândalânda,t_a_ndal_a_nda,word,"Peculiar, escogido",18,src/data/lexicon/adjectives.json,no
+tataka,tataka,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+tekai,tekai,word,,,src/data/sections/ch-1/diphthongs.json,no
+Tina,tina,word,"Razón, causa",13,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Tito,tito,word,"Bestia, animal",13,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Toko,toko,word,Cuchara,13,src/data/lexicon/nouns.json,no
+Tolongo,tolongo,word,Baúl,13,src/data/lexicon/nouns.json,no
+Tombo,tombo,word,Aguja,13,src/data/lexicon/nouns.json,no
+Tonda,tonda,word,Diluvio,14,src/data/chapter-2/irregular-nouns.json; src/data/lexicon/nouns.json,no
+Tongo,tongo,word,Manantial,13,src/data/lexicon/nouns.json,no
+Tudi,tudi,word,"Disgusto, fastidio",13,src/data/lexicon/nouns.json,no
+Tuma,tuma,word,Tenedor,13,src/data/lexicon/nouns.json,no
+Tungu,tungu,word,Bahía,13-14,src/data/lexicon/nouns.json,no
+Tyoli,tyoli,word,Despensero,13-14,src/data/lexicon/nouns.json,no
+ūâūâ,_u_a_u_a_,word,,,src/data/sections/ch-1/diphthongs.json,no
+Ubâki uyamu,ub_a_ki-uyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Ubapami,ubapami,word,Portador,12,src/data/lexicon/nouns.json,no
+ūeango,_u_eango,word,,,src/data/sections/ch-1/triphthongs.json,no
+ūhi,_u_hi,word,Días,11-12,src/data/lexicon/nouns.json,no
+ukali,ukali,word,orador,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+Ukuge,ukuge,word,"Pobre, necesitado",18,src/data/lexicon/adjectives.json,no
+Ulangi,ulangi,word,lector,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ulendi,ulendi,word,escritor,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json,no
+ulongi,ulongi,word,arquitecto,15,src/data/chapter-2/verbal-nouns.json; src/data/lexicon/nouns.json; src/views/chapter-2/VerbalNouns.vue,no
+Utē ube,ut_e_-ube,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Utē uhole,ut_e_-uhole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Utē unene,ut_e_-unene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Utē uvindo,ut_e_-uvindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+uūaka,u_u_aka,word,,,src/data/sections/ch-1/triphthongs.json,no
+Uvanguūi,uvangu_u_i,word,,,src/data/sections/ch-1/triphthongs.json,no
+Veivei,veivei,word,"Rojo, encarnado",18,src/data/lexicon/adjectives.json,no
+Veya,veya,word,"Fuego, leña",12,src/data/lexicon/nouns.json,no
+Viâ,vi_a_,word,Sueño,12-13,src/data/lexicon/nouns.json,no
+Viaha,viaha,word,Limón,13,src/data/lexicon/nouns.json,no
+Vianga,vianga,word,sal,13,src/data/lexicon/nouns.json,no
+Viho,viho,word,Río,12,src/data/lexicon/nouns.json,no
+Viho vibe,viho-vibe,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Viho vihole,viho-vihole,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Viho vinene,viho-vinene,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Viho vivindo,viho-vivindo,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+Vijo,vijo,word,Nariz,12,src/data/lexicon/nouns.json,no
+Vilolombo,vilolombo,word,"Átomo, partícula",12,src/data/lexicon/nouns.json,no
+Vingangambi,vingangambi,word,"Capricho, extravagancia",12,src/data/lexicon/nouns.json,no
+Vingunguhu,vingunguhu,word,Miga,12,src/data/lexicon/nouns.json,no
+Vipupuhu,vipupuhu,word,Fragmento,12,src/data/lexicon/nouns.json,no
+Vitūa,vit_u_a,word,"Vela, luz de candela",12-13,src/data/lexicon/nouns.json,no
+Vitua viyamu,vitua-viyamu,phrase,,,src/data/chapter-3/regular-adjectives.json,no
+viu,viu,word,,,src/data/sections/ch-1/diphthongs.json,no
+Viyembo,viyembo,word,"Himno, canto",12,src/data/lexicon/nouns.json,no
+Viyohi,viyohi,word,Rayo de sol,13,src/data/lexicon/nouns.json,no
+Viyonda,viyonda,word,La estación seca,12,src/data/lexicon/nouns.json,no
+vyâ,vy_a_,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+vyâdu,vy_a_du,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Wbaha,wbaha,word,"Costado, lado",11,src/data/lexicon/nouns.json,no
+Wbâki,wb_a_ki,word,"Hacha, destral",11,src/data/lexicon/nouns.json,no
+Wbalani,wbalani,word,Conquistador,11,src/data/lexicon/nouns.json,no
+Wbândâ,wb_a_nd_a_,word,Tiro de fusil,10-11,src/data/lexicon/nouns.json,no
+Wbanga,wbanga,word,Nuez,11,src/data/lexicon/nouns.json,no
+Wbango,wbango,word,Diente de marfil,11,src/data/lexicon/nouns.json,no
+Wbēdi,wb_e_di,word,Enfermedad,11,src/data/lexicon/nouns.json,no
+Wbendi,wbendi,word,Adulador,11,src/data/lexicon/nouns.json,no
+Wbūa,wb_u_a,word,La mañana,10-11,src/data/lexicon/nouns.json,no
+Wbulubulu,wbulubulu,word,Polvo,11,src/data/lexicon/nouns.json,no
+Wdâmbē,wd_a_mb_e_,word,Oveja,11,src/data/lexicon/nouns.json,no
+Wdumbu,wdumbu,word,,11,src/data/lexicon/nouns.json,no
+Wgangano,wgangano,word,Compañerismo,10-11,src/data/lexicon/nouns.json,no
+Wgulu,wgulu,word,Cuerda,10-11,src/data/lexicon/nouns.json,no
+Whâ,wh_a_,word,Pipa,11,src/data/lexicon/nouns.json,no
+Whēkē,wh_e_k_e_,word,Playa del mar,11,src/data/lexicon/nouns.json,no
+Whēngē,wh_e_ng_e_,word,Calle,11,src/data/lexicon/nouns.json,no
+Whiha,whiha,word,"Nervio, vena",11,src/data/lexicon/nouns.json,no
+Whinganakano,whinganakano,word,Cadena,11,src/data/lexicon/nouns.json,no
+Whingi,whingi,word,Gato salvaje,11,src/data/lexicon/nouns.json,no
+Yaho,yaho,word,Quijada,9,src/data/lexicon/nouns.json,no
+yâkâ,y_a_k_a_,word,Medicina supersticiosa,8-9,src/data/chapter-1/alphabet.json; src/data/lexicon/nouns.json; src/views/chapter-1/AlphabetSection.vue,no
+yakia,yakia,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Yako,yako,word,Cama,9,src/data/lexicon/nouns.json,no
+Yalo,yalo,word,Bote europeo,9,src/data/lexicon/nouns.json,no
+Yambe,yambe,word,Cura supersticiosa,9,src/data/lexicon/nouns.json,no
+Yapa,yapa,word,Canasta,9,src/data/lexicon/nouns.json,no
+Yējâ,y_e_j_a_,word,Medida,9,src/data/lexicon/nouns.json,no
+Yēkē,y_e_k_e_,word,Juicio,9,src/data/lexicon/nouns.json,no
+yēmē,y_e_m_e_,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+Yima,yima,word,Egoísmo,9,src/data/lexicon/nouns.json,no
+Yoha,yoha,word,Mono pequeño,9,src/data/lexicon/nouns.json,no
+Yoma,yoma,word,Ñame,9,src/data/lexicon/nouns.json,no
+Yomu,yomu,word,Calor,9,src/data/lexicon/nouns.json,no
+yongo,yongo,word,,,src/data/chapter-1/alphabet.json; src/views/chapter-1/AlphabetSection.vue,no
+yoūakē,yo_u_ak_e_,word,,,src/data/sections/ch-1/triphthongs.json,no

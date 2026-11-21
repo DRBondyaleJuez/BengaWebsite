@@ -351,7 +351,7 @@ Branch: `feat/audio-pipeline`
    site ◄── audio-manifest.json ◄── npm run audio:sync ◄── Cloudinary ◄───┘ upload <audioId>.mp3
 ```
 
-- [ ] **5.1 Recording checklist** — CSV with word, audioId, meaning, book page, recorded yes/no.
+- [x] **5.1 Recording checklist** *(done 2026-11-21: `npm run audio:checklist` → `docs/audio/recording-checklist.csv`)* — CSV with word, audioId, meaning, book page, recorded yes/no.
   - **Done early (2026-11-11, word registry):** `/admin/palabras` → filter *Audio pendiente* → *Exportar CSV* already gives this list (without meaning and page).
   - **Prompt:** "Task 5.1: write `scripts/audio-checklist.js` producing `recording-checklist.csv` from all lexicon + example sentences."
   - **Commit:** `feat(scripts): generate audio recording checklist`
