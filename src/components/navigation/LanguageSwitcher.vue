@@ -6,14 +6,18 @@
       @change="changeLanguage"
       :aria-label="$t('accessibility.selectLanguage')"
     >
-      <option value="es">Español</option>
-      <option value="en">English</option>
-      <option value="fr">Français</option>
+      <option value="es" lang="es">Español</option>
+      <option value="en" lang="en">English</option>
+      <option value="fr" lang="fr">Français</option>
     </select>
   </div>
 </template>
 
 <script>
+/**
+ * The language menu in the header. Changing it is enough: src/main.js remembers the choice
+ * (localStorage) and updates <html lang>; every $t() / $localized() text updates by itself.
+ */
 export default {
   name: 'LanguageSwitcher',
   computed: {
@@ -24,15 +28,6 @@ export default {
   methods: {
     changeLanguage(event) {
       this.$i18n.locale = event.target.value
-      // Persist to localStorage for user preference
-      localStorage.setItem('app-language', event.target.value)
-    }
-  },
-  mounted() {
-    // Check for saved language preference
-    const savedLanguage = localStorage.getItem('app-language')
-    if (savedLanguage && ['es', 'en', 'fr'].includes(savedLanguage)) {
-      this.$i18n.locale = savedLanguage
     }
   }
 }
