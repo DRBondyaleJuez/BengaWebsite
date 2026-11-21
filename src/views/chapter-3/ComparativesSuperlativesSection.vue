@@ -1,24 +1,22 @@
 <template>
   <div class="comparatives-superlatives">
     <div class="comparatives-superlatives__header">
-      <h1>Comparativos y Superlativos</h1>
-      <p class="subtitle">Expresión de comparación y grado en Benga</p>
+      <h1>{{ $t('pages.comparatives.comparativosSuperlativos') }}</h1>
+      <p class="subtitle">{{ $t('pages.comparatives.expresionComparacionGradoBenga') }}</p>
     </div>
 
     <!-- Overview -->
     <section class="comparatives-superlatives__overview">
       <p>
-        Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los
-        objetos se comparan usando una variedad de formas: circunlocución, entonación particular,
-        énfasis consabido, y especialmente las palabras
-        <span class="bengaform">kebaka</span> (sobresalir) y
-        <span class="bengaform">ña</span> (exceder).
+        {{ $t('pages.comparatives.adjetivosBengaCarecenGrados') }}
+        <span class="bengaform">kebaka</span> {{ $t('pages.comparatives.sobresalir') }}
+        <span class="bengaform">ña</span> {{ $t('pages.comparatives.exceder') }}
       </p>
     </section>
 
     <!-- Key Words Section -->
     <section class="comparatives-superlatives__keywords">
-      <h2>Palabras Clave</h2>
+      <h2>{{ $t('pages.comparatives.palabrasClave') }}</h2>
       <div class="keywords-grid">
         <div class="keyword-card" v-for="(kw, idx) in keyWords" :key="`kw-${idx}`">
           <div class="keyword-bengaform">{{ kw.bengaForm }}</div>
@@ -29,11 +27,11 @@
 
     <!-- Comparatives -->
     <section class="comparatives-superlatives__comparatives">
-      <h2>Comparativos</h2>
+      <h2>{{ $t('pages.comparatives.comparativos') }}</h2>
       <p class="usage-note">
-        Se utilizan para comparar dos o más objetos, principalmente con las palabras
-        <span class="bengaform">kebaka</span> (sobresalir) y
-        <span class="bengaform">ña</span> (exceder).
+        {{ $t('pages.comparatives.seUtilizanParaComparar') }}
+        <span class="bengaform">kebaka</span> {{ $t('pages.comparatives.sobresalir') }}
+        <span class="bengaform">ña</span> {{ $t('pages.comparatives.exceder') }}
       </p>
       <div class="examples-container">
         <div class="example-card" v-for="(comp, idx) in comparatives" :key="`comp-${idx}`">
@@ -42,15 +40,15 @@
           </div>
           <div class="example-card__construction">
             <div class="construction-row">
-              <span class="label">Palabras:</span>
+              <span class="label">{{ $t('pages.comparatives.palabras') }}</span>
               <span class="bengaform">{{ comp.phrases.palabras }}</span>
             </div>
             <div class="construction-row">
-              <span class="label">Pronunciación:</span>
+              <span class="label">{{ $t('pages.comparatives.pronunciacion') }}</span>
               <span class="bengaform">{{ comp.phrases.pronunciacion }}</span>
             </div>
             <div class="construction-row">
-              <span class="label">Literal:</span>
+              <span class="label">{{ $t('pages.comparatives.literal') }}</span>
               <span class="translation">{{ comp.phrases.traduccionLiteral }}</span>
             </div>
           </div>
@@ -62,7 +60,7 @@
     <section class="comparatives-superlatives__superlatives">
       <h2>Superlativos</h2>
       <p class="usage-note">
-        Se utilizan para expresar el grado máximo de una cualidad entre varios objetos.
+        {{ $t('pages.comparatives.seUtilizanParaExpresar') }}
       </p>
       <div class="examples-container">
         <div class="example-card" v-for="(sup, idx) in superlatives" :key="`sup-${idx}`">
@@ -71,15 +69,15 @@
           </div>
           <div class="example-card__construction">
             <div class="construction-row">
-              <span class="label">Palabras:</span>
+              <span class="label">{{ $t('pages.comparatives.palabras') }}</span>
               <span class="bengaform">{{ sup.phrases.palabras }}</span>
             </div>
             <div class="construction-row">
-              <span class="label">Pronunciación:</span>
+              <span class="label">{{ $t('pages.comparatives.pronunciacion') }}</span>
               <span class="bengaform">{{ sup.phrases.pronunciacion }}</span>
             </div>
             <div class="construction-row">
-              <span class="label">Literal:</span>
+              <span class="label">{{ $t('pages.comparatives.literal') }}</span>
               <span class="translation">{{ sup.phrases.traduccionLiteral }}</span>
             </div>
           </div>
@@ -89,13 +87,12 @@
 
     <!-- Alternative Form with 'va' -->
     <section class="comparatives-superlatives__alternative">
-      <h2>Forma Alternativa (usando 'va')</h2>
+      <h2>{{ $t('pages.comparatives.formaAlternativaUsandoVa') }}</h2>
       <div class="alternative-content">
         <p class="alt-description">
-          Hay una forma más sencilla y acomodada al castellano: usar
+          {{ $t('pages.comparatives.hayFormaMasSencilla') }}
           <span class="bengaform">va</span>
-          en sentido de "más". Esta forma se acomoda principalmente con quienes han aprendido
-          inglés, francés, etc.
+          {{ $t('pages.comparatives.sentidoMasEstaForma') }}
         </p>
         <div class="alt-examples">
           <div
@@ -112,7 +109,7 @@
 
     <!-- Additional Expressions -->
     <section class="comparatives-superlatives__expressions">
-      <h2>Expresiones Adicionales</h2>
+      <h2>{{ $t('pages.comparatives.expresionesAdicionales') }}</h2>
       <div class="expressions-list">
         <div class="expression-item" v-for="(expr, idx) in expressions" :key="`expr-${idx}`">
           <div class="expression-spanish">{{ expr.spanishMeaning }}</div>
@@ -123,7 +120,7 @@
 
     <!-- Important Notes -->
     <section class="comparatives-superlatives__notes">
-      <h2>Notas Importantes</h2>
+      <h2>{{ $t('pages.comparatives.notasImportantes') }}</h2>
       <div class="notes-container">
         <div class="note-item" v-for="(note, idx) in notes" :key="`note-${idx}`">
           <span class="note-icon">✓</span>
@@ -134,19 +131,14 @@
 
     <!-- Linguistic Context -->
     <section class="comparatives-superlatives__context">
-      <h2>Contexto Lingüístico</h2>
+      <h2>{{ $t('pages.comparatives.contextoLinguistico') }}</h2>
       <div class="context-content">
-        <h3>¿Por qué no hay grados de comparación tradicionales?</h3>
+        <h3>{{ $t('pages.comparatives.porNoHayGrados') }}</h3>
         <p>
-          En la lengua Benga, los comparativos y superlativos funcionan a través de estrategias más
-          contextuales que formales. El uso de entonación, énfasis y circunlocuciones es fundamental
-          para la comunicación efectiva. Los Bengas se valen de la entonación peculiar y del énfasis
-          consabido para indicar los extremos en calidad y cantidad.
+          {{ $t('pages.comparatives.lenguaBengaComparativosSuperlativos') }}
         </p>
         <p>
-          Esto demuestra una característica importante de la lengua: la importancia de la "viva voz"
-          en la comunicación del significado, donde elementos prosódicos son cruciales para la
-          comprensión total.
+          {{ $t('pages.comparatives.estoDemuestraCaracteristicaImportante') }}
         </p>
       </div>
     </section>
@@ -157,6 +149,7 @@
 
 <script>
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
+import { localizeDeep } from '@/utils/localized'
 import comparativesData from '@/data/chapter-3/comparatives-superlatives.json'
 
 export default {
@@ -172,17 +165,23 @@ export default {
       notes: []
     }
   },
+  watch: {
+    // switching language reloads the texts
+    '$i18n.locale': 'loadData'
+  },
   mounted() {
     this.loadData()
   },
   methods: {
     loadData() {
-      this.keyWords = comparativesData.keyWords
-      this.comparatives = comparativesData.comparatives
-      this.superlatives = comparativesData.superlatives
-      this.alternativeForm = comparativesData.alternativeForm
-      this.expressions = comparativesData.expressions
-      this.notes = comparativesData.notes
+      // The texts of the data file in the visitor's language (Benga words unchanged)
+      const data = localizeDeep(comparativesData, this.$i18n.locale)
+      this.keyWords = data.keyWords
+      this.comparatives = data.comparatives
+      this.superlatives = data.superlatives
+      this.alternativeForm = data.alternativeForm
+      this.expressions = data.expressions
+      this.notes = data.notes
     }
   }
 }

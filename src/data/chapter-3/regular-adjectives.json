@@ -1,146 +1,222 @@
 {
   "sectionId": "variable-adjectives",
-  "title": "Adjetivos Variables",
-  "subtitle": "Flexión según clase nominal",
-  "overview": "Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en clasificación con los nombres que califican.",
+  "title": {
+    "es": "Adjetivos Variables"
+  },
+  "subtitle": {
+    "es": "Flexión según clase nominal"
+  },
+  "overview": {
+    "es": "Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en clasificación con los nombres que califican."
+  },
   "classes": [
     {
       "classId": 1,
-      "classType": "Clase 1",
-      "nounClassRule": "Empieza con 'e' o 'y' en singular y antepone 'be' o 'bi' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'e' o 'ey' en singular y añade 'b' al comienzo en plural",
+      "classType": {
+        "es": "Clase 1"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'e' o 'y' en singular y antepone 'be' o 'bi' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'e' o 'ey' en singular y añade 'b' al comienzo en plural"
+      },
       "nounExample": "Epokolo",
       "adjectiveExample": "eyamu",
       "singular": {
         "bengaForm": "Epokolo eyamu",
         "highlight": "ey",
-        "spanishTranslation": "Sombrero bueno",
+        "spanishTranslation": {
+          "es": "Sombrero bueno"
+        },
         "audioId": "epokolo-eyamu"
       },
       "plural": {
         "bengaForm": "Bepokolo beyamu",
         "highlight": "bey",
-        "spanishTranslation": "Sombreros buenos",
+        "spanishTranslation": {
+          "es": "Sombreros buenos"
+        },
         "audioId": "bepokolo-beyamu"
       }
     },
     {
       "classId": 2,
-      "classType": "Clase 2",
-      "nounClassRule": "Empieza con 'i' o 'di' en singular y se cambia por 'ma' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'i' o 'iy' en singular y por 'ma' o 'may' en plural",
+      "classType": {
+        "es": "Clase 2"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'i' o 'di' en singular y se cambia por 'ma' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'i' o 'iy' en singular y por 'ma' o 'may' en plural"
+      },
       "nounExample": "Ibongo",
       "adjectiveExample": "iyamu",
       "singular": {
         "bengaForm": "Ibongo iyamu",
         "highlight": "iy",
-        "spanishTranslation": "Desembarcadero bueno",
+        "spanishTranslation": {
+          "es": "Desembarcadero bueno"
+        },
         "audioId": "ibongo-iyamu"
       },
       "plural": {
         "bengaForm": "Mabongo maiyamu",
         "highlight": "maiy",
-        "spanishTranslation": "Desembarcaderos buenos",
+        "spanishTranslation": {
+          "es": "Desembarcaderos buenos"
+        },
         "audioId": "mabongo-maiyamu"
       }
     },
     {
       "classId": 3,
-      "classType": "Clase 3",
-      "nounClassRule": "Empieza con 'u' o 'mū' en singular y se cambia por 'me' o 'mi' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'me' o 'mey' en plural",
+      "classType": {
+        "es": "Clase 3"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'u' o 'mū' en singular y se cambia por 'me' o 'mi' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'me' o 'mey' en plural"
+      },
       "nounExample": "Ubâki",
       "adjectiveExample": "uyamu",
       "singular": {
         "bengaForm": "Ubâki uyamu",
         "highlight": "uy",
-        "spanishTranslation": "Hacha buena",
+        "spanishTranslation": {
+          "es": "Hacha buena"
+        },
         "audioId": "ub_a_ki-uyamu"
       },
       "plural": {
         "bengaForm": "Mebâki meyamu",
         "highlight": "mey",
-        "spanishTranslation": "Hachas buenas",
+        "spanishTranslation": {
+          "es": "Hachas buenas"
+        },
         "audioId": "meb_a_ki-meyamu"
       }
     },
     {
       "classId": 4,
-      "classType": "Clase 4",
-      "nounClassRule": "Empieza con 'bo' o 'bū' en singular y se cambia por 'mi' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'bo' o 'boy' en singular y por 'me' o 'mey' en plural",
+      "classType": {
+        "es": "Clase 4"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'bo' o 'bū' en singular y se cambia por 'mi' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'bo' o 'boy' en singular y por 'me' o 'mey' en plural"
+      },
       "nounExample": "Boho",
       "adjectiveExample": "boyamu",
       "singular": {
         "bengaForm": "Boho boyamu",
         "highlight": "boy",
-        "spanishTranslation": "Cara buena",
+        "spanishTranslation": {
+          "es": "Cara buena"
+        },
         "audioId": "boho-boyamu"
       },
       "plural": {
         "bengaForm": "Mioho meyamu",
         "highlight": "mey",
-        "spanishTranslation": "Caras buenas",
+        "spanishTranslation": {
+          "es": "Caras buenas"
+        },
         "audioId": "mioho-meyamu"
       }
     },
     {
       "classId": 5,
-      "classType": "Clase 5",
-      "nounClassRule": "Empieza con 'mo' en singular y se cambia por 'ba' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'ba' o 'baiy' en plural",
+      "classType": {
+        "es": "Clase 5"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'mo' en singular y se cambia por 'ba' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'ba' o 'baiy' en plural"
+      },
       "nounExample": "Moto",
       "adjectiveExample": "uyamu",
       "singular": {
         "bengaForm": "Moto uyamu",
         "highlight": "uy",
-        "spanishTranslation": "Persona buena",
+        "spanishTranslation": {
+          "es": "Persona buena"
+        },
         "audioId": "moto-uyamu"
       },
       "plural": {
         "bengaForm": "Bato baiyamu",
         "highlight": "baiy",
-        "spanishTranslation": "Personas buenas",
+        "spanishTranslation": {
+          "es": "Personas buenas"
+        },
         "audioId": "bato-baiyamu"
       }
     },
     {
       "classId": 6,
-      "classType": "Clase 6",
-      "nounClassRule": "Empieza con 'v' en singular y por 'l' en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'vi' en singular y por 'lo' en plural",
+      "classType": {
+        "es": "Clase 6"
+      },
+      "nounClassRule": {
+        "es": "Empieza con 'v' en singular y por 'l' en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'vi' en singular y por 'lo' en plural"
+      },
       "nounExample": "Vitua",
       "adjectiveExample": "viyamu",
       "singular": {
         "bengaForm": "Vitua viyamu",
         "highlight": "viy",
-        "spanishTranslation": "Candela buena",
+        "spanishTranslation": {
+          "es": "Candela buena"
+        },
         "audioId": "vitua-viyamu"
       },
       "plural": {
         "bengaForm": "Litua loyamu",
         "highlight": "loy",
-        "spanishTranslation": "Candelas buenas",
+        "spanishTranslation": {
+          "es": "Candelas buenas"
+        },
         "audioId": "litua-loyamu"
       }
     },
     {
       "classId": 7,
-      "classType": "Clase 7",
-      "nounClassRule": "Empieza con consonantes no mencionadas en las otras clases o combinaciones de consonantes en singular y no cambian en plural",
-      "adjectiveClassRule": "Sustituye la primera sílaba por 'e' en singular y por 'i' en plural",
+      "classType": {
+        "es": "Clase 7"
+      },
+      "nounClassRule": {
+        "es": "Empieza con consonantes no mencionadas en las otras clases o combinaciones de consonantes en singular y no cambian en plural"
+      },
+      "adjectiveClassRule": {
+        "es": "Sustituye la primera sílaba por 'e' en singular y por 'i' en plural"
+      },
       "nounExample": "Ndabo",
       "adjectiveExample": "eyamu",
       "singular": {
         "bengaForm": "Ndabo eyamu",
         "highlight": "ey",
-        "spanishTranslation": "Casa buena",
+        "spanishTranslation": {
+          "es": "Casa buena"
+        },
         "audioId": "ndabo-eyamu"
       },
       "plural": {
         "bengaForm": "Ndabo iyamu",
         "highlight": "iy",
-        "spanishTranslation": "Casas buenas",
+        "spanishTranslation": {
+          "es": "Casas buenas"
+        },
         "audioId": "ndabo-iyamu"
       }
     }
@@ -177,9 +253,17 @@
     }
   },
   "notes": [
-    "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase",
-    "El adjetivo 'būamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",
-    "La sílaba resaltada de cada adjetivo es la que marca la concordancia con la clase del sustantivo",
-    "La concordancia es obligatoria en la lengua Benga"
+    {
+      "es": "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase"
+    },
+    {
+      "es": "El adjetivo 'būamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase"
+    },
+    {
+      "es": "La sílaba resaltada de cada adjetivo es la que marca la concordancia con la clase del sustantivo"
+    },
+    {
+      "es": "La concordancia es obligatoria en la lengua Benga"
+    }
   ]
 }

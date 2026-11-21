@@ -1,57 +1,53 @@
 <template>
   <div class="regular-adjectives">
     <div class="regular-adjectives__header">
-      <h1>Adjetivos Variables (Regulares)</h1>
-      <p class="subtitle">Flexión según clase nominal</p>
+      <h1>{{ $t('pages.regularAdjectives.adjetivosVariablesRegulares') }}</h1>
+      <p class="subtitle">{{ $t('pages.regularAdjectives.flexionSegunClaseNominal') }}</p>
     </div>
 
     <!-- Overview -->
     <section class="regular-adjectives__overview">
       <p>
-        Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en
-        clasificación con los nombres que califican. Cada adjetivo varía según la clase del
-        sustantivo que modifica. Cada adjetivo de este tipo podría tener hasta 7 formas diferentes,
-        dependiendo de la clase nominal del sustantivo al que se refiere. Por ello, cuando nos
-        refiramos a alguna traducción usaremos una de estas formas para simplificar la explicación,
-        pero es importante recordar que cada adjetivo de este tipo puede variar según la clase
-        nominal del sustantivo. Las reglas de declinación son generales, pero puede haber alguna
-        excepción debido a facilitar la pronunciación.
+        {{ $t('pages.regularAdjectives.adjetivosVariablesTomanSu') }}
       </p>
     </section>
 
     <!-- Class Examples -->
     <section class="regular-adjectives__classes">
-      <h2>Flexión por Clases Nominales</h2>
+      <h2>{{ $t('pages.regularAdjectives.flexionPorClasesNominales') }}</h2>
       <p class="section-intro">
-        Veamos cómo se declina el adjetivo <strong class="bengaform">būamu</strong> (bueno) para
-        concordar con un sustantivo de cada clase. La sílaba
-        <span class="highlight-legend">resaltada</span> es la que marca la concordancia con el
-        sustantivo.
+        {{ $t('pages.regularAdjectives.veamosComoSeDeclina') }}
+        <strong class="bengaform">{{ $t('pages.regularAdjectives.buamu') }}</strong>
+        {{ $t('pages.regularAdjectives.buenoParaConcordarCon') }}
+        <span class="highlight-legend">resaltada</span>
+        {{ $t('pages.regularAdjectives.esMarcaConcordanciaCon') }}
       </p>
       <div class="classes-container">
         <div class="class-example" v-for="classEx in classes" :key="`class-${classEx.classId}`">
           <div class="class-example__header">
             <h3>{{ classEx.classType }}</h3>
-            <span class="class-label">Clase {{ classEx.classId }}</span>
+            <span class="class-label">{{
+              $t('pages.regularAdjectives.clase', { classId: classEx.classId })
+            }}</span>
           </div>
 
           <div class="class-example__rules">
             <div class="rule">
-              <span class="rule__label">Regla del nombre</span>
+              <span class="rule__label">{{ $t('pages.regularAdjectives.reglaNombre') }}</span>
               <p class="rule__text">{{ classEx.nounClassRule }}</p>
               <router-link class="rule__link" :to="`/capitulo-2/clase-${classEx.classId}`">
-                Repasar Clase {{ classEx.classId }} →
+                {{ $t('pages.regularAdjectives.repasarClase', { classId: classEx.classId }) }}
               </router-link>
             </div>
             <div class="rule rule--adjective">
-              <span class="rule__label">Regla del adjetivo</span>
+              <span class="rule__label">{{ $t('pages.regularAdjectives.reglaAdjetivo') }}</span>
               <p class="rule__text">{{ classEx.adjectiveClassRule }}</p>
             </div>
           </div>
 
           <div class="class-example__pattern">
             <div class="pattern-row">
-              <span class="label">Singular:</span>
+              <span class="label">{{ $t('pages.regularAdjectives.singular') }}</span>
               <BengaWord
                 :word="classEx.singular.bengaForm"
                 :highlight-prefix="classEx.singular.highlight"
@@ -59,7 +55,7 @@
             </div>
             <div class="pattern-arrow">↓</div>
             <div class="pattern-row">
-              <span class="label">Plural:</span>
+              <span class="label">{{ $t('pages.regularAdjectives.plural') }}</span>
               <BengaWord
                 :word="classEx.plural.bengaForm"
                 :highlight-prefix="classEx.plural.highlight"
@@ -78,14 +74,9 @@
 
     <!-- Adjective Variations Table -->
     <section class="regular-adjectives__variations">
-      <h2>Adjetivos Comunes y sus Variaciones</h2>
+      <h2>{{ $t('pages.regularAdjectives.adjetivosComunesSusVariaciones') }}</h2>
       <div class="variations-note">
-        <p>
-          <strong>Nota:</strong> Con pocas excepciones, todos los adjetivos varían concordando con
-          el sustantivo de su respectiva clase. El adjetivo 'būamu' (bueno) toma todas estas formas
-          para concordar con nombres de cada clase. Pulsa el icono de audio para escuchar cada
-          combinación de nombre y adjetivo.
-        </p>
+        <p v-html="$t('pages.regularAdjectives.notaConPocasExcepciones')"></p>
       </div>
 
       <div class="adjectives-list">
@@ -97,7 +88,8 @@
           <div class="adjective-group__meaning">
             <strong>{{ adjective.meaning }}</strong>
             <span class="adjective-group__root">
-              Raíz: <span class="bengaform">{{ adjective.bengaRoot }}</span>
+              {{ $t('pages.regularAdjectives.raiz') }}
+              <span class="bengaform">{{ adjective.bengaRoot }}</span>
             </span>
           </div>
           <CardGrid
@@ -127,18 +119,19 @@
 
     <!-- Concordance Example -->
     <section class="regular-adjectives__concordance">
-      <h2>Ejemplo de Concordancia</h2>
+      <h2>{{ $t('pages.regularAdjectives.ejemploConcordancia') }}</h2>
       <div class="concordance-example">
         <p class="description">
-          El adjetivo <span class="bengaform">būamu</span> (bueno) se flexiona así según la clase
-          del sustantivo:
+          {{ $t('pages.regularAdjectives.adjetivo') }}
+          <span class="bengaform">{{ $t('pages.regularAdjectives.buamu') }}</span>
+          {{ $t('pages.regularAdjectives.buenoSeFlexionaAsi') }}
         </p>
         <div class="concordance-table">
           <div class="table-header">
-            <div>Clase</div>
-            <div>Singular</div>
-            <div>Plural</div>
-            <div>Significado</div>
+            <div>{{ $t('pages.regularAdjectives.clase2') }}</div>
+            <div>{{ $t('pages.regularAdjectives.singular2') }}</div>
+            <div>{{ $t('pages.regularAdjectives.plural2') }}</div>
+            <div>{{ $t('pages.regularAdjectives.significado') }}</div>
           </div>
           <div class="table-body">
             <div class="table-row" v-for="classEx in classes" :key="`concord-${classEx.classId}`">
@@ -166,7 +159,7 @@
 
     <!-- Key Points -->
     <section class="regular-adjectives__keypoints">
-      <h2>Puntos Clave</h2>
+      <h2>{{ $t('pages.regularAdjectives.puntosClave') }}</h2>
       <div class="keypoints-list">
         <div class="keypoint-item" v-for="(note, idx) in notes" :key="`note-${idx}`">
           <span class="keypoint-icon">→</span>
@@ -182,6 +175,7 @@
 <script>
 import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
+import { localizeDeep } from '@/utils/localized'
 import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
 import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
@@ -198,6 +192,10 @@ export default {
       classes: [],
       notes: []
     }
+  },
+  watch: {
+    // switching language reloads the texts
+    '$i18n.locale': 'loadData'
   },
   mounted() {
     this.loadData()
@@ -216,7 +214,7 @@ export default {
           bengaRoot: adjective.word,
           pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => ({
             classId,
-            label: `Clase ${classId}`,
+            label: this.$t('pages.regularAdjectives.classLabel', { number: classId }),
             singular: {
               bengaForm: `${nouns[classId].singular} ${inflect(adjective, classId, 'singular')}`,
               prefix: CONCORD_PREFIXES[classId].singular
@@ -232,8 +230,10 @@ export default {
   },
   methods: {
     loadData() {
-      this.classes = regularAdjectivesData.classes
-      this.notes = regularAdjectivesData.notes
+      // The texts of the data file in the visitor's language (Benga words unchanged)
+      const data = localizeDeep(regularAdjectivesData, this.$i18n.locale)
+      this.classes = data.classes
+      this.notes = data.notes
     }
   }
 }
