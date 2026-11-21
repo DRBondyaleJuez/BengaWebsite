@@ -60,7 +60,7 @@ One noun → one lexicon entry → two registry keys (`epokolo`, `bepokolo`).
 ### Translated text — `{ "es": …, "en": …, "fr": … }`
 
 Every text a visitor reads is an object with one value per language. **Spanish is required**;
-English and French are added in Phase 4. If a language is missing, the site shows Spanish.
+English and French are filled in for chapters 1-3 (Phase 4). If a language is missing, the site shows Spanish. How translations work and how to review them: `docs/TRANSLATIONS.md`; what is missing: `npm run i18n:report`.
 
 In a component template, show such a text with **`$localized(...)`**: it picks the visitor's
 language, falls back to Spanish, and updates by itself when the language changes.
@@ -70,7 +70,7 @@ language, falls back to Spanish, and updates by itself when the language changes
 <!-- not: {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }} -->
 ```
 
-(The rule itself is `localized()` in `src/utils/localized.js`, with tests.)
+(The rule itself is `localized()` in `src/utils/localized.js`, with tests.) A page that reads a whole data file in `loadData()` can instead translate it at once with `localizeDeep(data, this.$i18n.locale)` and reload it with `watch: { '$i18n.locale': 'loadData' }` (see the chapter-3 pages).
 
 ```json
 "meaning": { "es": "Sombrero", "en": "Hat", "fr": "Chapeau" }

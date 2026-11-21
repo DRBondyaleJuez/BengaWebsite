@@ -40,6 +40,10 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-029](#r-029) | 🟢 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | done |
 | [R-030](#r-030) | 🔴 | R-018 | Vite 8 is available (Vite 7 today) | Phase 9 |
 | [R-031](#r-031) | 🔴 | review fixes | On phones some pages are wider than the screen (pattern box) | any time |
+| [R-032](#r-032) | 🔴 | 4.1 | Chapter-1 index: long vowels written «á, é y ü» | any time |
+| [R-033](#r-033) | 🔴 | 4.1 | Chapter-1 index: outdated or odd wording | any time |
+| [R-034](#r-034) | 🔴 | 4.1 | Numerals and comparatives: Benga words with Spanish accents / OCR errors | 6.0a |
+| [R-035](#r-035) | 🔴 | 4.4 | English and French translations are an AI draft | review |
 
 ---
 
@@ -367,6 +371,50 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `/capitulo-2/clase-2` and other noun classes · `src/components/blocks/PatternBox.vue` (`.pattern-box`: two big `pattern-value` boxes side by side, 1.8 rem monospace, `padding 2rem`)
 - **Doubt:** At 420 px the page content needs ~452 px, so the phone browser zooms the whole page out a little and the right edge looks cut (header language menu, «ma-» box).
 - **Suggestion:** In `PatternBox`, below 576 px stack the two boxes (arrow ↓) or reduce the font size and padding; then check every page at 375 px for anything else wider than the screen.
+- **Resolution:**
+
+---
+
+### R-032
+**Chapter-1 index: the long vowels are written «á, é y ü»**
+- **Status:** 🔴 Open
+- **Found in:** 4.1 (moving the chapter-1 texts into `es.json`)
+- **Where:** `src/locales/es.json` → `pages.chapter1Index.soloVocalesEU` (shown at `/capitulo-1`, «Vocales» card)
+- **Doubt:** The text says «Solo las vocales á, é y ü son "largas" (marca da con acento)». The site's vowel inventory is `a, â, e, ē, i, o, u, ū`, so the letters should be `â, ē, ū`; «marca da» is a typo for «marcadas». The English and French translations copy the same letters.
+- **Suggestion:** Change it to «Solo las vocales â, ē y ū …» (and check that the «largas» explanation matches the book), then update `en.json` / `fr.json` too.
+- **Resolution:**
+
+---
+
+### R-033
+**Chapter-1 index: outdated or odd wording**
+- **Status:** 🔴 Open
+- **Found in:** 4.1 / 4.4
+- **Where:** `src/locales/es.json` → `pages.chapter1Index.capitulo2Proximamente` («Capítulo 2 Próximamente», but chapter 2 exists), `…conectaPatronesBuscaSimilitudes` («una mental map»: English words in the Spanish text), `…letraFuncionaTantoComo` («patrones silábicos y de estrés»: in Spanish «acento» is the usual word)
+- **Doubt:** These texts were in the page before Phase 4; they were moved and translated as they are.
+- **Suggestion:** «Siguiente: Capítulo 2» with a link, «un mapa mental», «patrones silábicos y de acento». Change es, en and fr together.
+- **Resolution:**
+
+---
+
+### R-034
+**Numerals and comparatives: Benga words with Spanish accents or OCR errors**
+- **Status:** 🔴 Open
+- **Found in:** 4.1 (chapter-3 data files moved to `{ es }` texts)
+- **Where:** `src/data/chapter-3/numerals-ordinals.json` (e.g. `Páka`), `src/data/chapter-3/comparatives-superlatives.json` (`ña`, which uses a letter Benga does not have)
+- **Doubt:** These Benga forms come from the old OCR (`á` instead of `â`, `ñ`) and are not shown with `BengaWord`. The translations keep them unchanged, as Benga words are never translated.
+- **Suggestion:** Fix them against the scan when the numerals are reworked (roadmap task 6.0a); the en/fr texts that quote them must be changed at the same time (`npm run i18n:report` does not see such changes, search for the word).
+- **Resolution:**
+
+---
+
+### R-035
+**English and French translations are an AI draft**
+- **Status:** 🔴 Open
+- **Found in:** 4.4 / 4.5
+- **Where:** `src/locales/en.json`, `src/locales/fr.json`, the `en` / `fr` fields of every data file; status table in `docs/TRANSLATIONS.md`
+- **Doubt:** All English and French texts were translated by AI from the Spanish (one translation per unique Spanish text, so the same phrase is translated the same way everywhere). No human has checked them yet. Old Spanish glosses of the book (19th century) may have been misunderstood; the doubtful ones are listed in `docs/TRANSLATIONS.md` → «Doubtful translations».
+- **Suggestion:** A fluent speaker reviews each language file by file and ticks it in the status table of `docs/TRANSLATIONS.md`. Start with the interface (`locales`) and the noun glosses (`lexicon/nouns.json`).
 - **Resolution:**
 
 ---
