@@ -6,63 +6,74 @@
     "fr": "L'Alphabet"
   },
   "introduction": {
-    "es": "El alfabeto benga consta de veintitrés letras. El acento marca su sonido peculiar solo en las vocales â, ē, ū que denominamos largas. La elisión es muy frecuente al fin del vocablo. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+    "es": "El alfabeto benga consta de veintitrés letras. El acento marca su sonido peculiar solo en las vocales â, ē, ū que denominamos largas. La elisión es muy frecuente al fin del vocablo. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano.",
+    "en": "The Benga alphabet consists of twenty-three letters. The accent marks their peculiar sound only on the vowels â, ē, ū, which we call long. Elision is very frequent at the end of a word. Everything that is pronounced is written, and conversely, everything that is written is read and pronounced clearly and distinctly, as in Spanish."
   },
   "consonantsDescription": {
-    "es": "Carece de las consonantes c, ch, ll, ñ, q, r, x, z del castellano."
+    "es": "Carece de las consonantes c, ch, ll, ñ, q, r, x, z del castellano.",
+    "en": "It lacks the Spanish consonants c, ch, ll, ñ, q, r, x, z."
   },
   "lettersList": {
-    "es": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y"
+    "es": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y",
+    "en": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y"
   },
   "vowelsInfo": {
-    "es": "El benga admite nueve sonidos vocales: a, â, e, ē, i, o, u, ū, y"
+    "es": "El benga admite nueve sonidos vocales: a, â, e, ē, i, o, u, ū, y",
+    "en": "Benga has nine vowel sounds: a, â, e, ē, i, o, u, ū, y"
   },
   "specialLetters": [
     {
       "letter": "y",
       "type": "vowel-consonant",
       "description": {
-        "es": "Entre las vocales, la y es a la par vocal y consonante. Será consonante siempre que, seguida de vocal, empieza la dicción o la sílaba. Su sonido de i como vocal tiene lugar cuando en medio de la dicción viene herida por la consonante que la precede."
+        "es": "Entre las vocales, la y es a la par vocal y consonante. Será consonante siempre que, seguida de vocal, empieza la dicción o la sílaba. Su sonido de i como vocal tiene lugar cuando en medio de la dicción viene herida por la consonante que la precede.",
+        "en": "Among the vowels, y is at once vowel and consonant. It is always a consonant when, followed by a vowel, it begins the word or the syllable. It has its sound of i as a vowel when, in the middle of a word, it is struck by the consonant that precedes it."
       },
       "examples": [
         {
           "type": "consonant",
           "label": {
-            "es": "Es consonante en:"
+            "es": "Es consonante en:",
+            "en": "It is a consonant in:"
           },
           "words": [
             {
               "word": "yakia",
               "meaning": {
-                "es": "nuevo"
+                "es": "nuevo",
+                "en": "new"
               },
               "audioId": "yakia"
             },
             {
               "word": "yâkâ",
               "meaning": {
-                "es": "uno"
+                "es": "uno",
+                "en": "one"
               },
               "audioId": "yaka"
             },
             {
               "word": "yongo",
               "meaning": {
-                "es": "mayordomo"
+                "es": "mayordomo",
+                "en": "steward"
               },
               "audioId": "yongo"
             },
             {
               "word": "manyungâ",
               "meaning": {
-                "es": "leche"
+                "es": "leche",
+                "en": "milk"
               },
               "audioId": "manyunga"
             },
             {
               "word": "yēmē",
               "meaning": {
-                "es": "cojera"
+                "es": "cojera",
+                "en": "lameness"
               },
               "audioId": "yeme"
             }
@@ -71,48 +82,55 @@
         {
           "type": "vowel",
           "label": {
-            "es": "Es vocal en:"
+            "es": "Es vocal en:",
+            "en": "It is a vowel in:"
           },
           "words": [
             {
               "word": "byelele",
               "meaning": {
-                "es": "polilla"
+                "es": "polilla",
+                "en": "moth"
               },
               "audioId": "byelele"
             },
             {
               "word": "myadi",
               "meaning": {
-                "es": "agonía"
+                "es": "agonía",
+                "en": "agony"
               },
               "audioId": "myadi"
             },
             {
               "word": "myongo",
               "meaning": {
-                "es": "los muertos"
+                "es": "los muertos",
+                "en": "the dead"
               },
               "audioId": "myongo"
             },
             {
               "word": "vyâ",
               "meaning": {
-                "es": "sereno"
+                "es": "sereno",
+                "en": "serene"
               },
               "audioId": "vy_a_"
             },
             {
               "word": "vyâdu",
               "meaning": {
-                "es": "gamuza"
+                "es": "gamuza",
+                "en": "chamois"
               },
               "audioId": "vyadu"
             },
             {
               "word": "kya",
               "meaning": {
-                "es": "ahora"
+                "es": "ahora",
+                "en": "now"
               },
               "audioId": "kya"
             }
@@ -133,21 +151,24 @@
         {
           "word": "kalaka",
           "meaning": {
-            "es": "habla"
+            "es": "habla",
+            "en": "speech"
           },
           "audioId": "kalaka"
         },
         {
           "word": "tataka",
           "meaning": {
-            "es": "guardar"
+            "es": "guardar",
+            "en": "to keep"
           },
           "audioId": "tataka"
         },
         {
           "word": "ta",
           "meaning": {
-            "es": "junto"
+            "es": "junto",
+            "en": "together"
           },
           "audioId": "ta"
         }
@@ -165,7 +186,8 @@
         {
           "word": "tândâkâ",
           "meaning": {
-            "es": "amar"
+            "es": "amar",
+            "en": "to love"
           },
           "audioId": "t_a_nd_a_k_a_"
         }
@@ -182,7 +204,8 @@
         {
           "word": "bembe",
           "meaning": {
-            "es": "ganado vacuno"
+            "es": "ganado vacuno",
+            "en": "cattle"
           },
           "audioId": "bembe"
         }
@@ -200,7 +223,8 @@
         {
           "word": "kēnyēngē",
           "meaning": {
-            "es": "casto"
+            "es": "casto",
+            "en": "chaste"
           },
           "audioId": "k_e_ny_e_ng_e_"
         }
@@ -217,7 +241,8 @@
         {
           "word": "ipivi",
           "meaning": {
-            "es": "pensamiento"
+            "es": "pensamiento",
+            "en": "thought"
           },
           "audioId": "ipivi"
         }
@@ -234,7 +259,8 @@
         {
           "word": "kodokodo",
           "meaning": {
-            "es": "palpitación"
+            "es": "palpitación",
+            "en": "palpitation"
           },
           "audioId": "kodokodo"
         }
@@ -251,7 +277,8 @@
         {
           "word": "itutu",
           "meaning": {
-            "es": "humo"
+            "es": "humo",
+            "en": "smoke"
           },
           "audioId": "itutu"
         }
@@ -269,7 +296,8 @@
         {
           "word": "būamu",
           "meaning": {
-            "es": "bueno"
+            "es": "bueno",
+            "en": "good"
           },
           "audioId": "buamu"
         }
@@ -286,14 +314,16 @@
         {
           "word": "mbyu",
           "meaning": {
-            "es": "gozo"
+            "es": "gozo",
+            "en": "joy"
           },
           "audioId": "mbyu"
         },
         {
           "word": "vyâ",
           "meaning": {
-            "es": "sereno"
+            "es": "sereno",
+            "en": "serene"
           },
           "audioId": "vy_a_"
         }
@@ -302,13 +332,16 @@
   ],
   "notes": {
     "clarityNote": {
-      "es": "Todas las vocales forman un sonido simple (por sí solas) suenan como en castellano excepto la â, la ē y la ū, que a veces se presentan acentuadas, y por lo mismo las denominaremos largas."
+      "es": "Todas las vocales forman un sonido simple (por sí solas) suenan como en castellano excepto la â, la ē y la ū, que a veces se presentan acentuadas, y por lo mismo las denominaremos largas.",
+      "en": "All vowels form a simple sound (on their own) and sound as in Spanish, except â, ē and ū, which are sometimes written with an accent, and for that reason we call them long."
     },
     "elisionNote": {
-      "es": "La elisión es muy frecuente al fin del vocablo. El apóstrofo se emplea como signo de elisión."
+      "es": "La elisión es muy frecuente al fin del vocablo. El apóstrofo se emplea como signo de elisión.",
+      "en": "Elision is very frequent at the end of a word. The apostrophe is used as the sign of elision."
     },
     "pronunciationNote": {
-      "es": "Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+      "es": "Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano.",
+      "en": "Everything that is pronounced is written, and conversely, everything that is written is read and pronounced clearly and distinctly, as in Spanish."
     }
   }
 }

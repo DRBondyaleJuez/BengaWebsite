@@ -3,10 +3,12 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 3"
+    "es": "Clase 3",
+    "en": "Class 3"
   },
   "subtitle": {
-    "es": "u / mū → me / mi"
+    "es": "u / mū → me / mi",
+    "en": "u / mū → me / mi"
   },
   "source": {
     "pdfPage": "10-11"
@@ -16,7 +18,8 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern"
       }
     },
     {
@@ -24,14 +27,16 @@
       "from": "u- / mú-",
       "to": "me- / mi-",
       "description": {
-        "es": "La clase 3 usa prefijos de plural con variantes me- y mi- según el caso inicial del sustantivo."
+        "es": "La clase 3 usa prefijos de plural con variantes me- y mi- según el caso inicial del sustantivo.",
+        "en": "Class 3 uses plural prefixes with the variants me- and mi- depending on the initial of the noun."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos con u-"
+        "es": "Ejemplos con u-",
+        "en": "Examples with u-"
       }
     },
     {
@@ -63,7 +68,8 @@
       "type": "heading",
       "id": "variants",
       "text": {
-        "es": "Ejemplos con mū- / mu-"
+        "es": "Ejemplos con mū- / mu-",
+        "en": "Examples with mū- / mu-"
       }
     },
     {
@@ -88,7 +94,8 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts"
       }
     },
     {
@@ -96,26 +103,32 @@
       "items": [
         {
           "title": {
-            "es": "Prefijos plurales variables"
+            "es": "Prefijos plurales variables",
+            "en": "Variable plural prefixes"
           },
           "text": {
-            "es": "La clase 3 presenta una alternancia entre me- y mi- según la raíz nominal."
+            "es": "La clase 3 presenta una alternancia entre me- y mi- según la raíz nominal.",
+            "en": "Class 3 alternates between me- and mi- depending on the noun root."
           }
         },
         {
           "title": {
-            "es": "Raíces con u-"
+            "es": "Raíces con u-",
+            "en": "Roots with u-"
           },
           "text": {
-            "es": "Los nombres con u- / w- tienden a pasar a me- en plural."
+            "es": "Los nombres con u- / w- tienden a pasar a me- en plural.",
+            "en": "Nouns with u- / w- tend to change to me- in the plural."
           }
         },
         {
           "title": {
-            "es": "Raíces con mú-"
+            "es": "Raíces con mú-",
+            "en": "Roots with mú-"
           },
           "text": {
-            "es": "Los nombres con mú- / mu- se refuerzan con mi- como marca plural."
+            "es": "Los nombres con mú- / mu- se refuerzan con mi- como marca plural.",
+            "en": "Nouns with mú- / mu- are reinforced with mi- as the plural marker."
           }
         }
       ]
@@ -124,14 +137,16 @@
       "type": "heading",
       "id": "exceptions",
       "text": {
-        "es": "Excepciones"
+        "es": "Excepciones",
+        "en": "Exceptions"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural."
+        "es": "Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural.",
+        "en": "These class 3 nouns do not follow the regular me- / mi- change in the plural."
       }
     },
     {
@@ -142,27 +157,32 @@
       "type": "note",
       "variant": "small",
       "text": {
-        "es": "Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta."
+        "es": "Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta.",
+        "en": "Mola belongs to this class only as far as the plural is concerned: its singular form is a different word."
       }
     },
     {
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Identifica si la palabra pertenece a la variante u- o mu-."
+          "es": "Identifica si la palabra pertenece a la variante u- o mu-.",
+          "en": "Identify whether the word belongs to the u- or mu- variant."
         },
         {
-          "es": "Intenta transformar cada singular al plural sin mirar la respuesta."
+          "es": "Intenta transformar cada singular al plural sin mirar la respuesta.",
+          "en": "Try changing each singular into the plural without looking at the answer."
         },
         {
-          "es": "Comparte los ejemplos con adjuntos para reforzar la concordancia."
+          "es": "Comparte los ejemplos con adjuntos para reforzar la concordancia.",
+          "en": "Share the examples with accompanying words to reinforce agreement."
         }
       ]
     }

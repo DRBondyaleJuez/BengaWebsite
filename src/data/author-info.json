@@ -2,13 +2,16 @@
   "author": {
     "name": "Francisco Salvadó y Cos",
     "birth": {
-      "es": "siglo XIX"
+      "es": "siglo XIX",
+      "en": "19th century"
     },
     "nationality": {
-      "es": "español"
+      "es": "español",
+      "en": "Spanish"
     },
     "profession": {
-      "es": "misionero y lingüista"
+      "es": "misionero y lingüista",
+      "en": "missionary and linguist"
     },
     "workTitle": "Colección de apuntes preliminares sobre la lengua Benga",
     "subtitle": "o sea introducción a una gramática de este idioma que se habla en la isla de Corisco, pueblos de su bahía e islas adyacentes",
@@ -17,13 +20,16 @@
     "publicationPlace": "Madrid",
     "pages": 151,
     "binding": {
-      "es": "encuadernación en tela"
+      "es": "encuadernación en tela",
+      "en": "cloth binding"
     },
     "subject": {
-      "es": "Gramática, idiomas de Guinea Ecuatorial (Benga)"
+      "es": "Gramática, idiomas de Guinea Ecuatorial (Benga)",
+      "en": "Grammar, languages of Equatorial Guinea (Benga)"
     },
     "legacy": {
-      "es": "Primera documentación sistemática de la lengua Benga"
+      "es": "Primera documentación sistemática de la lengua Benga",
+      "en": "First systematic documentation of the Benga language"
     },
     "languages": ["Spanish", "Benga", "French", "Latin"],
     "biography": {

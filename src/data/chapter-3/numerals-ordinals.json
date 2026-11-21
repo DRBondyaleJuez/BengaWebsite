@@ -1,13 +1,16 @@
 {
   "sectionId": "numeral-adjectives",
   "title": {
-    "es": "Adjetivos Numerales"
+    "es": "Adjetivos Numerales",
+    "en": "Numeral Adjectives"
   },
   "subtitle": {
-    "es": "Sistema de conteo decimal y formas ordinales"
+    "es": "Sistema de conteo decimal y formas ordinales",
+    "en": "Decimal counting system and ordinal forms"
   },
   "overview": {
-    "es": "El modo de contar de los Bengas es rigurosamente decimal. Al llegar a diez, tiene lugar la reduplicación: diez y uno, diez y dos, etc.; dos dieces, tres dieces, etc., hasta ciento."
+    "es": "El modo de contar de los Bengas es rigurosamente decimal. Al llegar a diez, tiene lugar la reduplicación: diez y uno, diez y dos, etc.; dos dieces, tres dieces, etc., hasta ciento.",
+    "en": "The Benga way of counting is strictly decimal. On reaching ten, reduplication takes place: ten and one, ten and two, etc.; two tens, three tens, etc., up to a hundred."
   },
   "cardinalNumbers": {
     "1-10": [
@@ -15,63 +18,72 @@
         "number": 1,
         "bengaForm": "Páka",
         "spanishForm": {
-          "es": "Uno"
+          "es": "Uno",
+          "en": "One"
         }
       },
       {
         "number": 2,
         "bengaForm": "Ibale",
         "spanishForm": {
-          "es": "Dos"
+          "es": "Dos",
+          "en": "Two"
         }
       },
       {
         "number": 3,
         "bengaForm": "Ilalo",
         "spanishForm": {
-          "es": "Tres"
+          "es": "Tres",
+          "en": "Three"
         }
       },
       {
         "number": 4,
         "bengaForm": "Inai",
         "spanishForm": {
-          "es": "Cuatro"
+          "es": "Cuatro",
+          "en": "Four"
         }
       },
       {
         "number": 5,
         "bengaForm": "Itano",
         "spanishForm": {
-          "es": "Cinco"
+          "es": "Cinco",
+          "en": "Five"
         }
       },
       {
         "number": 6,
         "bengaForm": "Utoba",
         "spanishForm": {
-          "es": "Seis"
+          "es": "Seis",
+          "en": "Six"
         }
       },
       {
         "number": 7,
         "bengaForm": "Hembuedi",
         "spanishForm": {
-          "es": "Siete"
+          "es": "Siete",
+          "en": "Seven"
         }
       },
       {
         "number": 8,
         "bengaForm": "Loambi",
         "spanishForm": {
-          "es": "Ocho"
+          "es": "Ocho",
+          "en": "Eight"
         }
       },
       {
         "number": 9,
         "bengaForm": "Ibua",
         "spanishForm": {
-          "es": "Nueve"
+          "es": "Nueve",
+          "en": "Nine"
         }
       },
       {
@@ -79,7 +91,8 @@
         "bengaForm": "Dyom",
         "pronunciation": "Yom",
         "spanishForm": {
-          "es": "Diez"
+          "es": "Diez",
+          "en": "Ten"
         }
       }
     ],
@@ -88,70 +101,80 @@
         "number": 11,
         "bengaForm": "Dyom na páka",
         "spanishForm": {
-          "es": "Once"
+          "es": "Once",
+          "en": "Eleven"
         }
       },
       {
         "number": 12,
         "bengaForm": "Dyom n' ibale",
         "spanishForm": {
-          "es": "Doce"
+          "es": "Doce",
+          "en": "Twelve"
         }
       },
       {
         "number": 13,
         "bengaForm": "Dyom n' ilalo",
         "spanishForm": {
-          "es": "Trece"
+          "es": "Trece",
+          "en": "Thirteen"
         }
       },
       {
         "number": 14,
         "bengaForm": "Dyom n' inai",
         "spanishForm": {
-          "es": "Catorce"
+          "es": "Catorce",
+          "en": "Fourteen"
         }
       },
       {
         "number": 15,
         "bengaForm": "Dyom n' itano",
         "spanishForm": {
-          "es": "Quince"
+          "es": "Quince",
+          "en": "Fifteen"
         }
       },
       {
         "number": 16,
         "bengaForm": "Dyom n' utoba",
         "spanishForm": {
-          "es": "Dieciséis"
+          "es": "Dieciséis",
+          "en": "Sixteen"
         }
       },
       {
         "number": 17,
         "bengaForm": "Dyom himbaedi",
         "spanishForm": {
-          "es": "Diecisiete"
+          "es": "Diecisiete",
+          "en": "Seventeen"
         }
       },
       {
         "number": 18,
         "bengaForm": "Dyom loambi",
         "spanishForm": {
-          "es": "Dieciocho"
+          "es": "Dieciocho",
+          "en": "Eighteen"
         }
       },
       {
         "number": 19,
         "bengaForm": "Dyom n' ibua",
         "spanishForm": {
-          "es": "Diecinueve"
+          "es": "Diecinueve",
+          "en": "Nineteen"
         }
       },
       {
         "number": 20,
         "bengaForm": "Mabale",
         "spanishForm": {
-          "es": "Veinte (dos dieces)"
+          "es": "Veinte (dos dieces)",
+          "en": "Twenty (two tens)"
         }
       }
     ],
@@ -160,63 +183,72 @@
         "number": 21,
         "bengaForm": "Mabo mabale na páka",
         "spanishForm": {
-          "es": "Veintiuno"
+          "es": "Veintiuno",
+          "en": "Twenty-one"
         }
       },
       {
         "number": 30,
         "bengaForm": "Mabo malalo",
         "spanishForm": {
-          "es": "Treinta"
+          "es": "Treinta",
+          "en": "Thirty"
         }
       },
       {
         "number": 40,
         "bengaForm": "Mabo manai",
         "spanishForm": {
-          "es": "Cuarenta"
+          "es": "Cuarenta",
+          "en": "Forty"
         }
       },
       {
         "number": 50,
         "bengaForm": "Mabo matano",
         "spanishForm": {
-          "es": "Cincuenta"
+          "es": "Cincuenta",
+          "en": "Fifty"
         }
       },
       {
         "number": 60,
         "bengaForm": "Mab' utoba",
         "spanishForm": {
-          "es": "Sesenta"
+          "es": "Sesenta",
+          "en": "Sixty"
         }
       },
       {
         "number": 70,
         "bengaForm": "Mabo hembuedi",
         "spanishForm": {
-          "es": "Setenta"
+          "es": "Setenta",
+          "en": "Seventy"
         }
       },
       {
         "number": 80,
         "bengaForm": "Mabo loambi",
         "spanishForm": {
-          "es": "Ochenta"
+          "es": "Ochenta",
+          "en": "Eighty"
         }
       },
       {
         "number": 90,
         "bengaForm": "Mabo ibua",
         "spanishForm": {
-          "es": "Noventa"
+          "es": "Noventa",
+          "en": "Ninety"
         }
       },
       {
         "number": 100,
         "bengaForm": "Kama",
         "spanishForm": {
-          "es": "Ciento"
+          "es": "Ciento",
+          "en": "Hundred"
         }
       }
     ],
@@ -225,35 +257,40 @@
         "number": 101,
         "bengaForm": "Kama na páka",
         "spanishForm": {
-          "es": "Ciento uno"
+          "es": "Ciento uno",
+          "en": "One hundred and one"
         }
       },
       {
         "number": 200,
         "bengaForm": "Kam' ibale",
         "spanishForm": {
-          "es": "Doscientos"
+          "es": "Doscientos",
+          "en": "Two hundred"
         }
       },
       {
         "number": 300,
         "bengaForm": "Kam' ilalo",
         "spanishForm": {
-          "es": "Trescientos"
+          "es": "Trescientos",
+          "en": "Three hundred"
         }
       },
       {
         "number": 400,
         "bengaForm": "Kam' inai",
         "spanishForm": {
-          "es": "Cuatrocientos"
+          "es": "Cuatrocientos",
+          "en": "Four hundred"
         }
       },
       {
         "number": 500,
         "bengaForm": "Kam' itano",
         "spanishForm": {
-          "es": "Quinientos"
+          "es": "Quinientos",
+          "en": "Five hundred"
         }
       },
       {
@@ -261,14 +298,16 @@
         "bengaForm": "Todyen",
         "pronunciation": "Tojen",
         "spanishForm": {
-          "es": "Mil"
+          "es": "Mil",
+          "en": "One thousand"
         }
       },
       {
         "number": 2000,
         "bengaForm": "Todyen ibale",
         "spanishForm": {
-          "es": "Dos mil"
+          "es": "Dos mil",
+          "en": "Two thousand"
         }
       },
       {
@@ -276,23 +315,27 @@
         "bengaForm": "Dyom aya todyen",
         "pronunciation": "Jom ja tojen",
         "spanishForm": {
-          "es": "Diez mil"
+          "es": "Diez mil",
+          "en": "Ten thousand"
         }
       }
     ]
   },
   "numeralInflections": {
     "title": {
-      "es": "Inflexiones de los cinco primeros numerales"
+      "es": "Inflexiones de los cinco primeros numerales",
+      "en": "Inflections of the first five numerals"
     },
     "overview": {
-      "es": "Los cinco primeros numerales (1-5) son variables y, como todos los adjetivos variables, están sujetos a cambio y modificación según la concordancia con cada una de las 7 clases de sustantivos."
+      "es": "Los cinco primeros numerales (1-5) son variables y, como todos los adjetivos variables, están sujetos a cambio y modificación según la concordancia con cada una de las 7 clases de sustantivos.",
+      "en": "The first five numerals (1-5) are variable and, like all variable adjectives, are subject to change and modification according to agreement with each of the 7 noun classes."
     },
     "classes": [
       {
         "classId": 1,
         "className": {
-          "es": "Clase 1"
+          "es": "Clase 1",
+          "en": "Class 1"
         },
         "uno": "Yáka",
         "dos": "Bebale",
@@ -303,7 +346,8 @@
       {
         "classId": 2,
         "className": {
-          "es": "Clase 2"
+          "es": "Clase 2",
+          "en": "Class 2"
         },
         "uno": "Jáka",
         "dos": "Mabale",
@@ -314,7 +358,8 @@
       {
         "classId": 3,
         "className": {
-          "es": "Clase 3"
+          "es": "Clase 3",
+          "en": "Class 3"
         },
         "uno": "Mbáka",
         "dos": "Mebale",
@@ -325,7 +370,8 @@
       {
         "classId": 4,
         "className": {
-          "es": "Clase 4"
+          "es": "Clase 4",
+          "en": "Class 4"
         },
         "uno": "Báka",
         "dos": "Mebale",
@@ -336,7 +382,8 @@
       {
         "classId": 5,
         "className": {
-          "es": "Clase 5"
+          "es": "Clase 5",
+          "en": "Class 5"
         },
         "uno": "Mbáka",
         "dos": "Babale",
@@ -347,7 +394,8 @@
       {
         "classId": 6,
         "className": {
-          "es": "Clase 6"
+          "es": "Clase 6",
+          "en": "Class 6"
         },
         "uno": "Vidki",
         "dos": "Lobale",
@@ -358,7 +406,8 @@
       {
         "classId": 7,
         "className": {
-          "es": "Clase 7"
+          "es": "Clase 7",
+          "en": "Class 7"
         },
         "uno": "Páka",
         "dos": "Tbabale",
@@ -370,13 +419,16 @@
   },
   "ordinalNumbers": {
     "title": {
-      "es": "Números ordinales"
+      "es": "Números ordinales",
+      "en": "Ordinal numbers"
     },
     "overview": {
-      "es": "Los ordinales propiamente dichos no los conocen los Bengas; sin embargo, hay un modo muy general de expresarlos. Este método consiste en prefijar el número cardinal en caso posesivo."
+      "es": "Los ordinales propiamente dichos no los conocen los Bengas; sin embargo, hay un modo muy general de expresarlos. Este método consiste en prefijar el número cardinal en caso posesivo.",
+      "en": "The Bengas do not have ordinals as such; however, there is a very general way of expressing them. This method consists of prefixing the cardinal number in the possessive case."
     },
     "structure": {
-      "es": "Preposición de genitivo + Número cardinal"
+      "es": "Preposición de genitivo + Número cardinal",
+      "en": "Genitive preposition + Cardinal number"
     },
     "ordinals": [
       {
@@ -385,7 +437,8 @@
         "cardinal": "Báka",
         "ordinal": "Yabáka",
         "spanishMeaning": {
-          "es": "Primero"
+          "es": "Primero",
+          "en": "First"
         }
       },
       {
@@ -394,7 +447,8 @@
         "cardinal": "Bebale",
         "ordinal": "Biabebale",
         "spanishMeaning": {
-          "es": "Segundo"
+          "es": "Segundo",
+          "en": "Second"
         }
       },
       {
@@ -403,7 +457,8 @@
         "cardinal": "Ilalo",
         "ordinal": "Jailalo",
         "spanishMeaning": {
-          "es": "Tercero"
+          "es": "Tercero",
+          "en": "Third"
         }
       },
       {
@@ -412,7 +467,8 @@
         "cardinal": "Unai",
         "ordinal": "Múcunai",
         "spanishMeaning": {
-          "es": "Cuarto"
+          "es": "Cuarto",
+          "en": "Fourth"
         }
       },
       {
@@ -421,7 +477,8 @@
         "cardinal": "Botano",
         "ordinal": "Baabotano",
         "spanishMeaning": {
-          "es": "Quinto"
+          "es": "Quinto",
+          "en": "Fifth"
         }
       },
       {
@@ -430,7 +487,8 @@
         "cardinal": "Utoba",
         "ordinal": "Autoba",
         "spanishMeaning": {
-          "es": "Sexto"
+          "es": "Sexto",
+          "en": "Sixth"
         }
       },
       {
@@ -439,92 +497,110 @@
         "cardinal": "Hembúidi",
         "ordinal": "Vihembaédi",
         "spanishMeaning": {
-          "es": "Séptimo"
+          "es": "Séptimo",
+          "en": "Seventh"
         }
       }
     ]
   },
   "distributives": {
     "title": {
-      "es": "Números distributivos"
+      "es": "Números distributivos",
+      "en": "Distributive numbers"
     },
     "overview": {
-      "es": "Los distributivos se forman repitiendo los cardinales."
+      "es": "Los distributivos se forman repitiendo los cardinales.",
+      "en": "Distributives are formed by repeating the cardinals."
     },
     "examples": [
       {
         "bengaForm": "Páka páka",
         "spanishMeaning": {
-          "es": "De uno en uno"
+          "es": "De uno en uno",
+          "en": "One by one"
         }
       },
       {
         "bengaForm": "Ibale' bale",
         "spanishMeaning": {
-          "es": "De dos en dos"
+          "es": "De dos en dos",
+          "en": "Two by two"
         }
       },
       {
         "bengaForm": "Ilalo' lalo",
         "spanishMeaning": {
-          "es": "De tres en tres"
+          "es": "De tres en tres",
+          "en": "Three by three"
         }
       },
       {
         "bengaForm": "Boho boho",
         "spanishMeaning": {
-          "es": "El que va delante"
+          "es": "El que va delante",
+          "en": "The one in front"
         }
       },
       {
         "bengaForm": "Hangani",
         "spanishMeaning": {
-          "es": "El del centro"
+          "es": "El del centro",
+          "en": "The one in the middle"
         }
       },
       {
         "bengaForm": "Mbusiha mbuúha",
         "spanishMeaning": {
-          "es": "El de más atrás"
+          "es": "El de más atrás",
+          "en": "The one furthest back"
         }
       }
     ]
   },
   "specialNumeralUse": {
     "title": {
-      "es": "Usos particulares de los numerales"
+      "es": "Usos particulares de los numerales",
+      "en": "Particular uses of numerals"
     },
     "gestureMethod": {
-      "es": "Método de los dedos: Mostrar los dedos levantados y esperar a que los oyentes digan el número en voz alta"
+      "es": "Método de los dedos: Mostrar los dedos levantados y esperar a que los oyentes digan el número en voz alta",
+      "en": "Finger method: Hold up the raised fingers and wait for the listeners to say the number aloud"
     },
     "repetitionMethod": {
-      "es": "Método de repetición rápida: Repetir una palabra diez, quince o veinte veces con mucha prisa para indicar número, calidad o cantidad extraordinaria"
+      "es": "Método de repetición rápida: Repetir una palabra diez, quince o veinte veces con mucha prisa para indicar número, calidad o cantidad extraordinaria",
+      "en": "Rapid repetition method: Repeat a word ten, fifteen or twenty times in great haste to indicate an extraordinary number, quality or quantity"
     },
     "repCountWords": [
       {
         "word": "Njo",
         "meaning": {
-          "es": "Vez"
+          "es": "Vez",
+          "en": "Time (occasion)"
         },
         "example": "Njo ininge?",
         "spanishMeaning": {
-          "es": "¿Cuántas veces?"
+          "es": "¿Cuántas veces?",
+          "en": "How many times?"
         }
       }
     ]
   },
   "notes": [
     {
-      "es": "El número diez con sus múltiplos se usan como números redondos, y los nombres van después en caso posesivo"
+      "es": "El número diez con sus múltiplos se usan como números redondos, y los nombres van después en caso posesivo",
+      "en": "The number ten and its multiples are used as round numbers, and the nouns follow in the possessive case"
     },
     {
-      "es": "Ejemplo: 'diez espejos' (dyom dya dejeno) literalmente significa 'diez de espejos'"
+      "es": "Ejemplo: 'diez espejos' (dyom dya dejeno) literalmente significa 'diez de espejos'",
+      "en": "Example: 'ten mirrors' (dyom dya dejeno) literally means 'ten of mirrors'"
     },
     {
-      "es": "Cuando la cuenta incluye unidades, decenas y centenas, el nombre se repite"
+      "es": "Cuando la cuenta incluye unidades, decenas y centenas, el nombre se repite",
+      "en": "When the count includes units, tens and hundreds, the noun is repeated"
     },
     {
-      "es": "Ejemplo: 'ciento veinticinco pañuelos' = Kama bevéléhi páka, na mabo mabale na bevelehi betano"
+      "es": "Ejemplo: 'ciento veinticinco pañuelos' = Kama bevéléhi páka, na mabo mabale na bevelehi betano",
+      "en": "Example: 'one hundred and twenty-five handkerchiefs' = Kama bevéléhi páka, na mabo mabale na bevelehi betano"
     }
   ]
 }

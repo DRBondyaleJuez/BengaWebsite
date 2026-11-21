@@ -36,7 +36,8 @@
         }
       },
       "meaning": {
-        "es": "Bueno"
+        "es": "Bueno",
+        "en": "Good"
       },
       "source": {
         "pdfPage": "17-18",
@@ -49,7 +50,8 @@
       "word": "bobe",
       "stem": "-be",
       "meaning": {
-        "es": "Malo"
+        "es": "Malo",
+        "en": "Bad"
       },
       "source": {
         "pdfPage": 18,
@@ -62,7 +64,8 @@
       "word": "bonene",
       "stem": "-nene",
       "meaning": {
-        "es": "Grande"
+        "es": "Grande",
+        "en": "Big"
       },
       "source": {
         "pdfPage": 18,
@@ -75,7 +78,8 @@
       "word": "bohole",
       "stem": "-hole",
       "meaning": {
-        "es": "Pequeño"
+        "es": "Pequeño",
+        "en": "Small"
       },
       "source": {
         "pdfPage": 18,
@@ -88,7 +92,8 @@
       "word": "bovindo",
       "stem": "-vindo",
       "meaning": {
-        "es": "Negro"
+        "es": "Negro",
+        "en": "Black"
       },
       "source": {
         "pdfPage": 18,
@@ -100,7 +105,8 @@
       "kind": "invariable",
       "word": "De",
       "meaning": {
-        "es": "Derecho, recto"
+        "es": "Derecho, recto",
+        "en": "Straight, upright"
       },
       "source": {
         "pdfPage": 18,
@@ -112,7 +118,8 @@
       "kind": "invariable",
       "word": "Tanana",
       "meaning": {
-        "es": "Blanco"
+        "es": "Blanco",
+        "en": "White"
       },
       "source": {
         "pdfPage": 18,
@@ -124,7 +131,8 @@
       "kind": "invariable",
       "word": "Huhamba",
       "meaning": {
-        "es": "Desnudo, descubierto"
+        "es": "Desnudo, descubierto",
+        "en": "Naked, uncovered"
       },
       "source": {
         "pdfPage": 18,
@@ -136,7 +144,8 @@
       "kind": "invariable",
       "word": "Pala",
       "meaning": {
-        "es": "Relleno, atestado"
+        "es": "Relleno, atestado",
+        "en": "Filled, crammed"
       },
       "source": {
         "pdfPage": 18,
@@ -148,7 +157,8 @@
       "kind": "invariable",
       "word": "Nyēvi",
       "meaning": {
-        "es": "Brillante, hermoso"
+        "es": "Brillante, hermoso",
+        "en": "Bright, beautiful"
       },
       "source": {
         "pdfPage": 18,
@@ -160,7 +170,8 @@
       "kind": "invariable",
       "word": "Pivi",
       "meaning": {
-        "es": "Espeso, denso"
+        "es": "Espeso, denso",
+        "en": "Thick, dense"
       },
       "source": {
         "pdfPage": 18,
@@ -172,7 +183,8 @@
       "kind": "invariable",
       "word": "Pēki Pēki",
       "meaning": {
-        "es": "Perpetuo, constante"
+        "es": "Perpetuo, constante",
+        "en": "Perpetual, constant"
       },
       "source": {
         "pdfPage": 18,
@@ -184,7 +196,8 @@
       "kind": "invariable",
       "word": "Potapota",
       "meaning": {
-        "es": "Áspero, tosco"
+        "es": "Áspero, tosco",
+        "en": "Rough, coarse"
       },
       "source": {
         "pdfPage": 18,
@@ -196,7 +209,8 @@
       "kind": "invariable",
       "word": "Pojaengo",
       "meaning": {
-        "es": "Anticuado, viejo"
+        "es": "Anticuado, viejo",
+        "en": "Outdated, old"
       },
       "source": {
         "pdfPage": 18,
@@ -208,7 +222,8 @@
       "kind": "invariable",
       "word": "Bokolo",
       "meaning": {
-        "es": "Duro, difícil, riguroso"
+        "es": "Duro, difícil, riguroso",
+        "en": "Hard, difficult, strict"
       },
       "source": {
         "pdfPage": 18,
@@ -220,7 +235,8 @@
       "kind": "invariable",
       "word": "Veivei",
       "meaning": {
-        "es": "Rojo, encarnado"
+        "es": "Rojo, encarnado",
+        "en": "Red, crimson"
       },
       "source": {
         "pdfPage": 18,
@@ -232,7 +248,8 @@
       "kind": "invariable",
       "word": "Kopia",
       "meaning": {
-        "es": "Prieto, avaro"
+        "es": "Prieto, avaro",
+        "en": "Tight, miserly"
       },
       "source": {
         "pdfPage": 18,
@@ -244,7 +261,8 @@
       "kind": "invariable",
       "word": "Ukuge",
       "meaning": {
-        "es": "Pobre, necesitado"
+        "es": "Pobre, necesitado",
+        "en": "Poor, needy"
       },
       "source": {
         "pdfPage": 18,
@@ -256,7 +274,8 @@
       "kind": "invariable",
       "word": "Poso",
       "meaning": {
-        "es": "Superior, sobre todo"
+        "es": "Superior, sobre todo",
+        "en": "Superior, above all"
       },
       "source": {
         "pdfPage": 18,
@@ -268,7 +287,8 @@
       "kind": "invariable",
       "word": "Kena",
       "meaning": {
-        "es": "De tamaño extraordinario"
+        "es": "De tamaño extraordinario",
+        "en": "Of extraordinary size"
       },
       "source": {
         "pdfPage": 18,
@@ -280,7 +300,8 @@
       "kind": "invariable",
       "word": "Pēkejomu",
       "meaning": {
-        "es": "Eterno, sin fin"
+        "es": "Eterno, sin fin",
+        "en": "Eternal, endless"
       },
       "source": {
         "pdfPage": 18,
@@ -292,7 +313,8 @@
       "kind": "invariable",
       "word": "Pâlâlâpâlâlâ",
       "meaning": {
-        "es": "Veloz, con delicadeza"
+        "es": "Veloz, con delicadeza",
+        "en": "Swift, delicately"
       },
       "source": {
         "pdfPage": 18,
@@ -304,7 +326,8 @@
       "kind": "invariable",
       "word": "Tândalânda",
       "meaning": {
-        "es": "Peculiar, escogido"
+        "es": "Peculiar, escogido",
+        "en": "Peculiar, chosen"
       },
       "source": {
         "pdfPage": 18,

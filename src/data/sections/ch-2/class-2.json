@@ -3,10 +3,12 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 2"
+    "es": "Clase 2",
+    "en": "Class 2"
   },
   "subtitle": {
-    "es": "i / di → ma"
+    "es": "i / di → ma",
+    "en": "i / di → ma"
   },
   "source": {
     "pdfPage": "9-10"
@@ -16,7 +18,8 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern"
       }
     },
     {
@@ -24,14 +27,16 @@
       "from": "i- / di-",
       "to": "ma-",
       "description": {
-        "es": "La inicial de muchas palabras de esta clase se convierte en el prefijo ma- en plural."
+        "es": "La inicial de muchas palabras de esta clase se convierte en el prefijo ma- en plural.",
+        "en": "The initial of many words in this class becomes the prefix ma- in the plural."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos con i-"
+        "es": "Ejemplos con i-",
+        "en": "Examples with i-"
       }
     },
     {
@@ -71,7 +76,8 @@
       "type": "heading",
       "id": "variants",
       "text": {
-        "es": "Ejemplos con di-"
+        "es": "Ejemplos con di-",
+        "en": "Examples with di-"
       }
     },
     {
@@ -93,7 +99,8 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts"
       }
     },
     {
@@ -101,26 +108,32 @@
       "items": [
         {
           "title": {
-            "es": "Cambio inicial predecible"
+            "es": "Cambio inicial predecible",
+            "en": "Predictable initial change"
           },
           "text": {
-            "es": "La clase 2 mantiene un prefijo plural muy estable: ma-."
+            "es": "La clase 2 mantiene un prefijo plural muy estable: ma-.",
+            "en": "Class 2 keeps a very stable plural prefix: ma-."
           }
         },
         {
           "title": {
-            "es": "i- y di-"
+            "es": "i- y di-",
+            "en": "i- and di-"
           },
           "text": {
-            "es": "Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-."
+            "es": "Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-.",
+            "en": "Words beginning with i or di follow the same scheme and become ma-."
           }
         },
         {
           "title": {
-            "es": "Concordancia"
+            "es": "Concordancia",
+            "en": "Agreement"
           },
           "text": {
-            "es": "El plural del sustantivo afecta también al adjetivo que lo acompaña."
+            "es": "El plural del sustantivo afecta también al adjetivo que lo acompaña.",
+            "en": "The plural of the noun also affects the adjective that accompanies it."
           }
         }
       ]
@@ -129,14 +142,16 @@
       "type": "heading",
       "id": "exceptions",
       "text": {
-        "es": "Excepciones"
+        "es": "Excepciones",
+        "en": "Exceptions"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Hay muchas excepciones en esta clase: nombres que empiezan por i- o di- y que, sin embargo, forman el plural con mi-, mâ- o mo- en lugar de ma-."
+        "es": "Hay muchas excepciones en esta clase: nombres que empiezan por i- o di- y que, sin embargo, forman el plural con mi-, mâ- o mo- en lugar de ma-.",
+        "en": "There are many exceptions in this class: nouns that begin with i- or di- but nevertheless form the plural with mi-, mâ- or mo- instead of ma-."
       }
     },
     {
@@ -147,21 +162,24 @@
       "type": "note",
       "variant": "small",
       "text": {
-        "es": "Dyâmbi se pronuncia «Jombi» y Dyoba «Joba»."
+        "es": "Dyâmbi se pronuncia «Jombi» y Dyoba «Joba».",
+        "en": "Dyâmbi is pronounced «Jombi» and Dyoba «Joba»."
       }
     },
     {
       "type": "heading",
       "id": "liquids",
       "text": {
-        "es": "Excepción: líquidos siempre en plural"
+        "es": "Excepción: líquidos siempre en plural",
+        "en": "Exception: liquids always in the plural"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Hay también algunos nombres de líquidos que los bengas no usan en singular y que forman el plural como los pertenecientes a esta clase."
+        "es": "Hay también algunos nombres de líquidos que los bengas no usan en singular y que forman el plural como los pertenecientes a esta clase.",
+        "en": "There are also some names of liquids that the Bengas do not use in the singular and that form the plural like those belonging to this class."
       }
     },
     {
@@ -173,14 +191,16 @@
       "type": "heading",
       "id": "class-six",
       "text": {
-        "es": "Excepción: nombres con i- que pertenecen a la clase 6"
+        "es": "Excepción: nombres con i- que pertenecen a la clase 6",
+        "en": "Exception: nouns with i- that belong to class 6"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Se hallan asimismo algunos nombres que, si bien empiezan con i- en el singular, no pertenecen a esta clase, sino a la sexta. Estos forman el plural mudando la i- radical en lo-."
+        "es": "Se hallan asimismo algunos nombres que, si bien empiezan con i- en el singular, no pertenecen a esta clase, sino a la sexta. Estos forman el plural mudando la i- radical en lo-.",
+        "en": "There are also some nouns that, although they begin with i- in the singular, do not belong to this class but to the sixth. These form the plural by changing the radical i- into lo-."
       }
     },
     {
@@ -191,20 +211,24 @@
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Compara cada forma singular y plural y repite el cambio ma-."
+          "es": "Compara cada forma singular y plural y repite el cambio ma-.",
+          "en": "Compare each singular and plural form and repeat the change ma-."
         },
         {
-          "es": "Forma frases con un nombre singular y luego en plural."
+          "es": "Forma frases con un nombre singular y luego en plural.",
+          "en": "Make phrases with a singular noun and then in the plural."
         },
         {
-          "es": "Escucha la entonación de los ejemplos para detectar la diferencia."
+          "es": "Escucha la entonación de los ejemplos para detectar la diferencia.",
+          "en": "Listen to the intonation of the examples to hear the difference."
         }
       ]
     }

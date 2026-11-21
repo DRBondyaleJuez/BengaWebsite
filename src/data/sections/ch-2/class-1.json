@@ -3,10 +3,12 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 1"
+    "es": "Clase 1",
+    "en": "Class 1"
   },
   "subtitle": {
-    "es": "e → be / y → bi"
+    "es": "e → be / y → bi",
+    "en": "e → be / y → bi"
   },
   "source": {
     "pdfPage": "8-9"
@@ -16,7 +18,8 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern"
       }
     },
     {
@@ -24,14 +27,16 @@
       "from": "e-",
       "to": "be-",
       "description": {
-        "es": "La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural"
+        "es": "La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural",
+        "en": "The initial vowel 'e' is replaced by the prefix 'be-' in the plural form"
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos Principales"
+        "es": "Ejemplos Principales",
+        "en": "Main Examples"
       }
     },
     {
@@ -51,13 +56,15 @@
       "type": "heading",
       "id": "variants",
       "text": {
-        "es": "Patrón Variant: Palabras que comienzan con 'y'"
+        "es": "Patrón Variant: Palabras que comienzan con 'y'",
+        "en": "Variant Pattern: Words beginning with 'y'"
       }
     },
     {
       "type": "paragraph",
       "text": {
-        "es": "Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en plural:"
+        "es": "Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en plural:",
+        "en": "Nouns beginning with 'y' follow the same rule, but 'y' becomes 'bi' in the plural:"
       }
     },
     {
@@ -87,43 +94,51 @@
       "type": "heading",
       "id": "concordance",
       "text": {
-        "es": "Concordancia con Adjetivos"
+        "es": "Concordancia con Adjetivos",
+        "en": "Agreement with Adjectives"
       }
     },
     {
       "type": "table",
       "columns": [
         {
-          "es": "Número"
+          "es": "Número",
+          "en": "Number"
         },
         {
-          "es": "Ejemplo"
+          "es": "Ejemplo",
+          "en": "Example"
         },
         {
-          "es": "Traducción"
+          "es": "Traducción",
+          "en": "Translation"
         }
       ],
       "rows": [
         [
           {
-            "es": "Singular"
+            "es": "Singular",
+            "en": "Singular"
           },
           {
             "benga": "Epokolo eyamu"
           },
           {
-            "es": "Sombrero bueno"
+            "es": "Sombrero bueno",
+            "en": "Good hat"
           }
         ],
         [
           {
-            "es": "Plural"
+            "es": "Plural",
+            "en": "Plural"
           },
           {
             "benga": "Bepokolo beyamu"
           },
           {
-            "es": "Sombreros buenos"
+            "es": "Sombreros buenos",
+            "en": "Good hats"
           }
         ]
       ]
@@ -132,14 +147,16 @@
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia"
+        "es": "La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia",
+        "en": "The adjective form changes along with the noun, keeping agreement"
       }
     },
     {
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts"
       }
     },
     {
@@ -147,26 +164,32 @@
       "items": [
         {
           "title": {
-            "es": "Cambio Radical Simple"
+            "es": "Cambio Radical Simple",
+            "en": "Simple Radical Change"
           },
           "text": {
-            "es": "Esta es la clase más simple porque el cambio es predecible y consistente"
+            "es": "Esta es la clase más simple porque el cambio es predecible y consistente",
+            "en": "This is the simplest class because the change is predictable and consistent"
           }
         },
         {
           "title": {
-            "es": "Patrón e → be"
+            "es": "Patrón e → be",
+            "en": "Pattern e → be"
           },
           "text": {
-            "es": "Todos los nombres de esta clase siguen este mismo patrón sin excepción"
+            "es": "Todos los nombres de esta clase siguen este mismo patrón sin excepción",
+            "en": "All nouns in this class follow this same pattern without exception"
           }
         },
         {
           "title": {
-            "es": "Variante y → bi"
+            "es": "Variante y → bi",
+            "en": "Variant y → bi"
           },
           "text": {
-            "es": "Los nombres que comienzan con 'y' (consonante semivocal) siguen la misma lógica"
+            "es": "Los nombres que comienzan con 'y' (consonante semivocal) siguen la misma lógica",
+            "en": "Nouns beginning with 'y' (a semivowel consonant) follow the same logic"
           }
         }
       ]
@@ -175,23 +198,28 @@
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Cubre la columna plural y trata de transformar cada nombre singular"
+          "es": "Cubre la columna plural y trata de transformar cada nombre singular",
+          "en": "Cover the plural column and try to transform each singular noun"
         },
         {
-          "es": "Forma frases usando el adjetivo \"eyamu\" (bueno) con cada nombre"
+          "es": "Forma frases usando el adjetivo \"eyamu\" (bueno) con cada nombre",
+          "en": "Make phrases using the adjective \"eyamu\" (good) with each noun"
         },
         {
-          "es": "Intenta agregar otros adjetivos que conozcas y mantener la concordancia"
+          "es": "Intenta agregar otros adjetivos que conozcas y mantener la concordancia",
+          "en": "Try adding other adjectives you know and keep the agreement"
         },
         {
-          "es": "Escucha la pronunciación de cada palabra en plural"
+          "es": "Escucha la pronunciación de cada palabra en plural",
+          "en": "Listen to the pronunciation of each plural word"
         }
       ]
     }

@@ -2,10 +2,12 @@
   "id": "ch3-adjectives-intro",
   "chapter": 3,
   "title": {
-    "es": "Introducción a los Adjetivos"
+    "es": "Introducción a los Adjetivos",
+    "en": "Introduction to Adjectives"
   },
   "subtitle": {
-    "es": "Adjetivos - Capítulo 3 de Salvado y Cos"
+    "es": "Adjetivos - Capítulo 3 de Salvado y Cos",
+    "en": "Adjectives - Chapter 3 of Salvado y Cos"
   },
   "source": {
     "pdfPage": 17
@@ -15,19 +17,22 @@
       "type": "heading",
       "style": "box",
       "text": {
-        "es": "Conceptos Fundamentales"
+        "es": "Conceptos Fundamentales",
+        "en": "Fundamental Concepts"
       }
     },
     {
       "type": "paragraph",
       "text": {
-        "es": "En la lengua Benga, los adjetivos constan de **número** y **clasificación**, pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. Los adjetivos se dividen en dos categorías principales: **variables e invariables**. Aunque en este capítulo hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones y variaciones en el uso de los adjetivos. En muchas ocasiones se apoyarán en el uso de preposiciones para poder usarse para referirse a algún sustantivo."
+        "es": "En la lengua Benga, los adjetivos constan de **número** y **clasificación**, pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. Los adjetivos se dividen en dos categorías principales: **variables e invariables**. Aunque en este capítulo hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones y variaciones en el uso de los adjetivos. En muchas ocasiones se apoyarán en el uso de preposiciones para poder usarse para referirse a algún sustantivo.",
+        "en": "In the Benga language, adjectives have **number** and **classification**, but no case or gender. Unlike Spanish, they lack conventional degrees of comparison. Adjectives are divided into two main categories: **variable and invariable**. Although in this chapter we will discuss some general rules, it is important to bear in mind that there are exceptions and variations in the use of adjectives. On many occasions they will rely on prepositions in order to refer to a noun."
       }
     },
     {
       "type": "heading",
       "text": {
-        "es": "Características Principales"
+        "es": "Características Principales",
+        "en": "Main Characteristics"
       }
     },
     {
@@ -36,35 +41,44 @@
       "items": [
         {
           "title": {
-            "es": "Concordancia con el Nombre"
+            "es": "Concordancia con el Nombre",
+            "en": "Agreement with the Noun"
           },
           "text": {
-            "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre."
+            "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre.",
+            "en": "Variable adjectives must agree in classification with the noun they qualify, taking various inflections according to the class of the noun."
           },
           "example": {
-            "es": "Adjetivo Būamu (bueno) modifica su raiz dependiendo del sustantivo al que acompaña:Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)"
+            "es": "Adjetivo Būamu (bueno) modifica su raiz dependiendo del sustantivo al que acompaña:Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)",
+            "en": "The adjective Būamu (good) modifies its root depending on the noun it accompanies: Epokolo eyamu (good hat) → Bepokolo beyamu (good hats)"
           }
         },
         {
           "title": {
-            "es": "Número y Clasificación"
+            "es": "Número y Clasificación",
+            "en": "Number and Classification"
           },
           "text": {
-            "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes)."
+            "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes).",
+            "en": "Variable adjectives change form according to number (singular/plural) and the class of the noun (7 different classes)."
           },
           "example": {
-            "es": "La forma 'eyamu' (bueno singular) se convierte en 'beyamu', 'iyamu', 'maiyamu', etc."
+            "es": "La forma 'eyamu' (bueno singular) se convierte en 'beyamu', 'iyamu', 'maiyamu', etc.",
+            "en": "The form 'eyamu' (good, singular) becomes 'beyamu', 'iyamu', 'maiyamu', etc."
           }
         },
         {
           "title": {
-            "es": "Ausencia de Género"
+            "es": "Ausencia de Género",
+            "en": "Absence of Gender"
           },
           "text": {
-            "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino)."
+            "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino).",
+            "en": "Unlike Spanish, adjectives in Benga have no gender (masculine/feminine)."
           },
           "example": {
-            "es": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género. Cambia si cambia la clase del sustantivo al cambiar de género."
+            "es": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género. Cambia si cambia la clase del sustantivo al cambiar de género.",
+            "en": "The same adjective serves for multiple concepts without change of gender. It changes if the class of the noun changes when the gender changes."
           }
         }
       ]
@@ -72,7 +86,8 @@
     {
       "type": "heading",
       "text": {
-        "es": "Secciones del Capítulo"
+        "es": "Secciones del Capítulo",
+        "en": "Chapter Sections"
       }
     },
     {
@@ -80,37 +95,45 @@
       "items": [
         {
           "title": {
-            "es": "Adjetivos Variables"
+            "es": "Adjetivos Variables",
+            "en": "Variable Adjectives"
           },
           "text": {
-            "es": "Adjetivos que cambian de forma según la clase del sustantivo que modifican."
+            "es": "Adjetivos que cambian de forma según la clase del sustantivo que modifican.",
+            "en": "Adjectives that change form according to the class of the noun they modify."
           },
           "to": "/capitulo-3/adjetivos-regulares"
         },
         {
           "title": {
-            "es": "Adjetivos Invariables"
+            "es": "Adjetivos Invariables",
+            "en": "Invariable Adjectives"
           },
           "text": {
-            "es": "Adjetivos que no cambian de forma, usándose del mismo modo con cualquier sustantivo."
+            "es": "Adjetivos que no cambian de forma, usándose del mismo modo con cualquier sustantivo.",
+            "en": "Adjectives that do not change form, used in the same way with any noun."
           },
           "to": "/capitulo-3/adjetivos-invariables"
         },
         {
           "title": {
-            "es": "Comparativos y Superlativos"
+            "es": "Comparativos y Superlativos",
+            "en": "Comparatives and Superlatives"
           },
           "text": {
-            "es": "Los Benga expresan comparación y superioridad de maneras particulares, usando circunlocución, entonación y palabras específicas como 'kebaka' (sobresalir) y 'ūa' (exceder)."
+            "es": "Los Benga expresan comparación y superioridad de maneras particulares, usando circunlocución, entonación y palabras específicas como 'kebaka' (sobresalir) y 'ūa' (exceder).",
+            "en": "The Benga express comparison and superiority in particular ways, using circumlocution, intonation and specific words such as 'kebaka' (to stand out) and 'ūa' (to exceed)."
           },
           "to": "/capitulo-3/comparativos-superlativos"
         },
         {
           "title": {
-            "es": "Adjetivos Numerales"
+            "es": "Adjetivos Numerales",
+            "en": "Numeral Adjectives"
           },
           "text": {
-            "es": "Sistema decimal donde los números se cuentan hasta 10, luego se reducen (diez y uno, diez y dos, etc.)."
+            "es": "Sistema decimal donde los números se cuentan hasta 10, luego se reducen (diez y uno, diez y dos, etc.).",
+            "en": "Decimal system in which numbers are counted up to 10, then reduced (ten and one, ten and two, etc.)."
           },
           "to": "/capitulo-3/numerales-ordinales"
         }
@@ -120,20 +143,24 @@
       "type": "heading",
       "style": "highlight",
       "text": {
-        "es": "Puntos Clave a Recordar"
+        "es": "Puntos Clave a Recordar",
+        "en": "Key Points to Remember"
       }
     },
     {
       "type": "checklist",
       "items": [
         {
-          "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre."
+          "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre.",
+          "en": "Variable adjectives must agree in classification with the noun they qualify, taking various inflections according to the class of the noun."
         },
         {
-          "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes)."
+          "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes).",
+          "en": "Variable adjectives change form according to number (singular/plural) and the class of the noun (7 different classes)."
         },
         {
-          "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino)."
+          "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino).",
+          "en": "Unlike Spanish, adjectives in Benga have no gender (masculine/feminine)."
         }
       ]
     }

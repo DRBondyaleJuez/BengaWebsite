@@ -1,51 +1,63 @@
 {
   "sectionId": "invariable-adjectives",
   "title": {
-    "es": "Adjetivos Invariables"
+    "es": "Adjetivos Invariables",
+    "en": "Invariable Adjectives"
   },
   "subtitle": {
-    "es": "Formas fijas que no cambian"
+    "es": "Formas fijas que no cambian",
+    "en": "Fixed forms that do not change"
   },
   "overview": {
-    "es": "Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, sin experimentar cambio alguno en su única y simple forma, la que no conoce número, género ni clasificación."
+    "es": "Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, sin experimentar cambio alguno en su única y simple forma, la que no conoce número, género ni clasificación.",
+    "en": "Invariable adjectives do not change and are used in the same way with the nouns they qualify, undergoing no change in their single, simple form, which has no number, gender or classification."
   },
   "examples": [
     {
       "bengaSentence": "Bokolo bokolo",
       "spanishTranslation": {
-        "es": "Muy duro, dificilísimo"
+        "es": "Muy duro, dificilísimo",
+        "en": "Very hard, extremely difficult"
       },
       "explanation": {
-        "es": "La repetición intensifica el significado"
+        "es": "La repetición intensifica el significado",
+        "en": "Repetition intensifies the meaning"
       },
       "audioId": "bokolo-bokolo"
     },
     {
       "bengaSentence": "De de de",
       "spanishTranslation": {
-        "es": "Completamente recto"
+        "es": "Completamente recto",
+        "en": "Completely straight"
       },
       "explanation": {
-        "es": "Repetición para enfatizar"
+        "es": "Repetición para enfatizar",
+        "en": "Repetition for emphasis"
       },
       "audioId": "de-de-de"
     }
   ],
   "characteristics": [
     {
-      "es": "No cambian de forma según número, género o clasificación"
+      "es": "No cambian de forma según número, género o clasificación",
+      "en": "They do not change form according to number, gender or classification"
     },
     {
-      "es": "Se usan tal como están con cualquier sustantivo"
+      "es": "Se usan tal como están con cualquier sustantivo",
+      "en": "They are used as they are with any noun"
     },
     {
-      "es": "Algunas pueden repetirse para intensificar su significado"
+      "es": "Algunas pueden repetirse para intensificar su significado",
+      "en": "Some can be repeated to intensify their meaning"
     },
     {
-      "es": "Ocupan la misma posición que los adjetivos variables en la frase"
+      "es": "Ocupan la misma posición que los adjetivos variables en la frase",
+      "en": "They occupy the same position as variable adjectives in the sentence"
     },
     {
-      "es": "Normalmente no comienzan con las sílabas de las declinaciones de los adjetivos variables (e, be, i, ma, u, me, bo, ba, vi, lo), aunque puede haber excepciones"
+      "es": "Normalmente no comienzan con las sílabas de las declinaciones de los adjetivos variables (e, be, i, ma, u, me, bo, ba, vi, lo), aunque puede haber excepciones",
+      "en": "They do not normally begin with the declension syllables of variable adjectives (e, be, i, ma, u, me, bo, ba, vi, lo), although there may be exceptions"
     }
   ]
 }

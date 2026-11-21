@@ -13,27 +13,31 @@
       "type": "heading",
       "id": "triphthongs-intro",
       "text": {
-        "es": "Triptongos"
+        "es": "Triptongos",
+        "en": "Triphthongs"
       }
     },
     {
       "type": "paragraph",
       "text": {
-        "es": "Los triptongos son combinaciones de tres vocales que mantienen su sonido continuo."
+        "es": "Los triptongos son combinaciones de tres vocales que mantienen su sonido continuo.",
+        "en": "Triphthongs are combinations of three vowels that keep a continuous sound."
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Estas y semejantes combinaciones se hallarán en gran número y variedad al registrar la conjugación de los verbos regulares en su voz pasiva."
+        "es": "Estas y semejantes combinaciones se hallarán en gran número y variedad al registrar la conjugación de los verbos regulares en su voz pasiva.",
+        "en": "These and similar combinations will be found in great number and variety when going through the conjugation of regular verbs in the passive voice."
       }
     },
     {
       "type": "heading",
       "id": "triphthongs-list",
       "text": {
-        "es": "Triptongos"
+        "es": "Triptongos",
+        "en": "Triphthongs"
       }
     },
     {
@@ -52,7 +56,8 @@
             {
               "word": "paia",
               "meaning": {
-                "es": "padre"
+                "es": "padre",
+                "en": "father"
               }
             }
           ]
@@ -68,7 +73,8 @@
             {
               "word": "nyaūe",
               "meaning": {
-                "es": "no"
+                "es": "no",
+                "en": "no"
               }
             }
           ]
@@ -84,7 +90,8 @@
             {
               "word": "iuūa",
               "meaning": {
-                "es": "petición"
+                "es": "petición",
+                "en": "request"
               }
             }
           ]
@@ -100,7 +107,8 @@
             {
               "word": "iūēla",
               "meaning": {
-                "es": "hora"
+                "es": "hora",
+                "en": "hour"
               }
             }
           ]
@@ -116,7 +124,8 @@
             {
               "word": "iūedo",
               "meaning": {
-                "es": "muerte"
+                "es": "muerte",
+                "en": "death"
               }
             }
           ]
@@ -132,7 +141,8 @@
             {
               "word": "yoūakē",
               "meaning": {
-                "es": "conocer"
+                "es": "conocer",
+                "en": "to know"
               }
             }
           ]
@@ -148,7 +158,8 @@
             {
               "word": "hoūe",
               "meaning": {
-                "es": "cabellos"
+                "es": "cabellos",
+                "en": "hair"
               }
             }
           ]
@@ -164,7 +175,8 @@
             {
               "word": "ijoūia",
               "meaning": {
-                "es": "mentir"
+                "es": "mentir",
+                "en": "to lie"
               }
             }
           ]
@@ -180,7 +192,8 @@
             {
               "word": "uūaka",
               "meaning": {
-                "es": "vomitar"
+                "es": "vomitar",
+                "en": "to vomit"
               }
             }
           ]
@@ -196,7 +209,8 @@
             {
               "word": "Uvanguūi",
               "meaning": {
-                "es": "Redentor"
+                "es": "Redentor",
+                "en": "Redeemer"
               }
             }
           ]
@@ -212,7 +226,8 @@
             {
               "word": "ngūae",
               "meaning": {
-                "es": "perdiz"
+                "es": "perdiz",
+                "en": "partridge"
               }
             }
           ]
@@ -228,7 +243,8 @@
             {
               "word": "ūeango",
               "meaning": {
-                "es": "digno"
+                "es": "digno",
+                "en": "worthy"
               }
             }
           ]
@@ -244,7 +260,8 @@
             {
               "word": "mbūei",
               "meaning": {
-                "es": "amigo"
+                "es": "amigo",
+                "en": "friend"
               }
             }
           ]
@@ -260,13 +277,15 @@
             {
               "word": "mbūia",
               "meaning": {
-                "es": "lluvia"
+                "es": "lluvia",
+                "en": "rain"
               }
             },
             {
               "word": "kaia",
               "meaning": {
-                "es": "orangután"
+                "es": "orangután",
+                "en": "orangutan"
               }
             }
           ]
@@ -277,14 +296,16 @@
       "type": "heading",
       "id": "triphthongs-note",
       "text": {
-        "es": "Nota Importante"
+        "es": "Nota Importante",
+        "en": "Important Note"
       }
     },
     {
       "type": "note",
       "variant": "important",
       "text": {
-        "es": "Nótese que estas combinaciones aparecen frecuentemente en la conjugación de verbos regulares en voz pasiva. Ejemplos: haūudūendi (pasado del verbo hacer), Jaūē (pasado del verbo nacer), vēūēndi (pasado del verbo dar), Dubuūakuduūendi (pasado del verbo abrir)."
+        "es": "Nótese que estas combinaciones aparecen frecuentemente en la conjugación de verbos regulares en voz pasiva. Ejemplos: haūudūendi (pasado del verbo hacer), Jaūē (pasado del verbo nacer), vēūēndi (pasado del verbo dar), Dubuūakuduūendi (pasado del verbo abrir).",
+        "en": "Note that these combinations appear frequently in the conjugation of regular verbs in the passive voice. Examples: haūudūendi (past of the verb \"to do\"), Jaūē (past of the verb \"to be born\"), vēūēndi (past of the verb \"to give\"), Dubuūakuduūendi (past of the verb \"to open\")."
       }
     }
   ]

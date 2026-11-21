@@ -4,81 +4,97 @@
     {
       "imperative": "Tândâkâ",
       "imperativeMeaning": {
-        "es": "ama tú"
+        "es": "ama tú",
+        "en": "love (you)"
       },
       "nominalForm": "itândē",
       "meaning": {
-        "es": "amor"
+        "es": "amor",
+        "en": "love"
       }
     },
     {
       "imperative": "Binaka",
       "imperativeMeaning": {
-        "es": "aborrece tú"
+        "es": "aborrece tú",
+        "en": "hate (you)"
       },
       "nominalForm": "ibina",
       "meaning": {
-        "es": "odio"
+        "es": "odio",
+        "en": "hatred"
       }
     },
     {
       "imperative": "Kalaka",
       "imperativeMeaning": {
-        "es": "habla tú"
+        "es": "habla tú",
+        "en": "speak (you)"
       },
       "nominalForm": "ikala",
       "meaning": {
-        "es": "razonamiento"
+        "es": "razonamiento",
+        "en": "reasoning"
       }
     },
     {
       "imperative": "Langaka",
       "imperativeMeaning": {
-        "es": "lee tú"
+        "es": "lee tú",
+        "en": "read (you)"
       },
       "nominalForm": "ilanga",
       "meaning": {
-        "es": "lectura"
+        "es": "lectura",
+        "en": "reading"
       }
     },
     {
       "imperative": "Longaka",
       "imperativeMeaning": {
-        "es": "edifica tú"
+        "es": "edifica tú",
+        "en": "build (you)"
       },
       "nominalForm": "ilonga",
       "meaning": {
-        "es": "edificio"
+        "es": "edificio",
+        "en": "building"
       }
     },
     {
       "imperative": "Lēndēkē",
       "imperativeMeaning": {
-        "es": "escribe tú"
+        "es": "escribe tú",
+        "en": "write (you)"
       },
       "nominalForm": "ilende",
       "meaning": {
-        "es": "escritura"
+        "es": "escritura",
+        "en": "writing"
       }
     },
     {
       "imperative": "Kalakia",
       "imperativeMeaning": {
-        "es": "ora tú"
+        "es": "ora tú",
+        "en": "pray (you)"
       },
       "nominalForm": "ikalo",
       "meaning": {
-        "es": "oración"
+        "es": "oración",
+        "en": "prayer"
       }
     },
     {
       "imperative": "Janjaka",
       "imperativeMeaning": {
-        "es": "trabaja tú"
+        "es": "trabaja tú",
+        "en": "work (you)"
       },
       "nominalForm": "ijanja",
       "meaning": {
-        "es": "trabajo"
+        "es": "trabajo",
+        "en": "work"
       }
     }
   ],
@@ -86,41 +102,49 @@
     {
       "imperative": "Longaka",
       "imperativeMeaning": {
-        "es": "edifica tú"
+        "es": "edifica tú",
+        "en": "build (you)"
       },
       "nominalForm": "ulongi",
       "meaning": {
-        "es": "arquitecto"
+        "es": "arquitecto",
+        "en": "architect"
       }
     },
     {
       "imperative": "Langaka",
       "imperativeMeaning": {
-        "es": "lee tú"
+        "es": "lee tú",
+        "en": "read (you)"
       },
       "nominalForm": "ulangi",
       "meaning": {
-        "es": "lector"
+        "es": "lector",
+        "en": "reader"
       }
     },
     {
       "imperative": "Kalaka",
       "imperativeMeaning": {
-        "es": "habla tú"
+        "es": "habla tú",
+        "en": "speak (you)"
       },
       "nominalForm": "ukali",
       "meaning": {
-        "es": "orador"
+        "es": "orador",
+        "en": "speaker"
       }
     },
     {
       "imperative": "Lēndēkē",
       "imperativeMeaning": {
-        "es": "escribe tú"
+        "es": "escribe tú",
+        "en": "write (you)"
       },
       "nominalForm": "ulendi",
       "meaning": {
-        "es": "escritor"
+        "es": "escritor",
+        "en": "writer"
       }
     }
   ],
@@ -128,69 +152,84 @@
     {
       "actionForm": "Ulongi",
       "actionFormMeaning": {
-        "es": "arquitecto"
+        "es": "arquitecto",
+        "en": "architect"
       },
       "nominalForm": "ilongidi",
       "meaning": {
-        "es": "modo de construir"
+        "es": "modo de construir",
+        "en": "way of building"
       }
     },
     {
       "actionForm": "Ulangi",
       "actionFormMeaning": {
-        "es": "lector"
+        "es": "lector",
+        "en": "reader"
       },
       "nominalForm": "ilangidi",
       "meaning": {
-        "es": "modo de leer"
+        "es": "modo de leer",
+        "en": "way of reading"
       }
     },
     {
       "actionForm": "Ukali",
       "actionFormMeaning": {
-        "es": "orador"
+        "es": "orador",
+        "en": "speaker"
       },
       "nominalForm": "ikalidi",
       "meaning": {
-        "es": "modo de hablar"
+        "es": "modo de hablar",
+        "en": "way of speaking"
       }
     }
   ],
   "typeSummary": [
     {
       "type": {
-        "es": "Abstracto"
+        "es": "Abstracto",
+        "en": "Abstract"
       },
       "formation": {
-        "es": "Imperativo de 2.ª persona singular sin su última sílaba, con i inicial"
+        "es": "Imperativo de 2.ª persona singular sin su última sílaba, con i inicial",
+        "en": "2nd person singular imperative without its last syllable, with initial i"
       },
       "example": "Tândâkâ → itândē",
       "nounClass": {
-        "es": "Clase 2"
+        "es": "Clase 2",
+        "en": "Class 2"
       }
     },
     {
       "type": {
-        "es": "De acción"
+        "es": "De acción",
+        "en": "Of action"
       },
       "formation": {
-        "es": "Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal"
+        "es": "Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal",
+        "en": "2nd person singular imperative without its last syllable, dropping the last vowel or changing it to i"
       },
       "example": "Longaka → ulongi",
       "nounClass": {
-        "es": "Clase 3"
+        "es": "Clase 3",
+        "en": "Class 3"
       }
     },
     {
       "type": {
-        "es": "De modo"
+        "es": "De modo",
+        "en": "Of manner"
       },
       "formation": {
-        "es": "Nombre de acción con su u inicial mudada en i y terminación en -di"
+        "es": "Nombre de acción con su u inicial mudada en i y terminación en -di",
+        "en": "Action noun with its initial u changed to i and ending in -di"
       },
       "example": "Ulongi → ilongidi",
       "nounClass": {
-        "es": "—"
+        "es": "—",
+        "en": "—"
       }
     }
   ]

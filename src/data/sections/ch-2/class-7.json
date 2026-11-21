@@ -3,10 +3,12 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 7"
+    "es": "Clase 7",
+    "en": "Class 7"
   },
   "subtitle": {
-    "es": "Singular = Plural"
+    "es": "Singular = Plural",
+    "en": "Singular = Plural"
   },
   "source": {
     "pdfPage": "13-14"
@@ -16,7 +18,8 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern"
       }
     },
     {
@@ -24,14 +27,16 @@
       "from": "hako / tuma / mbadi / ndabo / nganga / sango",
       "to": "hako / tuma / mbadi / ndabo / nganga / sango",
       "description": {
-        "es": "Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número."
+        "es": "Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número.",
+        "en": "They are very numerous, since this rule is followed by many of those that begin with a consonant and almost all of those that begin with a double consonant. The number is recognised by the accompanying modifiers."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos del libro ({count})"
+        "es": "Ejemplos del libro ({count})",
+        "en": "Examples from the book ({count})"
       }
     },
     {
@@ -132,7 +137,8 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts"
       }
     },
     {
@@ -140,26 +146,32 @@
       "items": [
         {
           "title": {
-            "es": "Invariable"
+            "es": "Invariable",
+            "en": "Invariable"
           },
           "text": {
-            "es": "En esta clase, la forma del nombre no cambia entre singular y plural."
+            "es": "En esta clase, la forma del nombre no cambia entre singular y plural.",
+            "en": "In this class, the form of the noun does not change between singular and plural."
           }
         },
         {
           "title": {
-            "es": "Contexto gramatical"
+            "es": "Contexto gramatical",
+            "en": "Grammatical context"
           },
           "text": {
-            "es": "El número se infiere por los modificadores, los adjetivos o el contexto de la frase."
+            "es": "El número se infiere por los modificadores, los adjetivos o el contexto de la frase.",
+            "en": "The number is inferred from modifiers, adjectives or the context of the sentence."
           }
         },
         {
           "title": {
-            "es": "Gran grupo"
+            "es": "Gran grupo",
+            "en": "Large group"
           },
           "text": {
-            "es": "Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla."
+            "es": "Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla.",
+            "en": "Many of the nouns that begin with a consonant and almost all of those that begin with a double consonant follow this rule."
           }
         }
       ]
@@ -168,20 +180,24 @@
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Observa que la forma del nombre no cambia entre singular y plural."
+          "es": "Observa que la forma del nombre no cambia entre singular y plural.",
+          "en": "Notice that the form of the noun does not change between singular and plural."
         },
         {
-          "es": "Busca el número por el adjetivo o por el contexto en la oración."
+          "es": "Busca el número por el adjetivo o por el contexto en la oración.",
+          "en": "Look for the number in the adjective or in the context of the sentence."
         },
         {
-          "es": "Memoriza ejemplos comunes para reconocer la clase rápidamente."
+          "es": "Memoriza ejemplos comunes para reconocer la clase rápidamente.",
+          "en": "Memorise common examples to recognise the class quickly."
         }
       ]
     }

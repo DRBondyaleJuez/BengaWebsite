@@ -12,13 +12,15 @@
       "type": "heading",
       "id": "diphthongs-intro",
       "text": {
-        "es": "Diptongos"
+        "es": "Diptongos",
+        "en": "Diphthongs"
       }
     },
     {
       "type": "paragraph",
       "text": {
-        "es": "Podemos combinar dos vocales anteriormente descritas para formar diptongos. Algunos de los comunes en Benga son los siguientes:."
+        "es": "Podemos combinar dos vocales anteriormente descritas para formar diptongos. Algunos de los comunes en Benga son los siguientes:.",
+        "en": "We can combine two of the vowels described above to form diphthongs. Some of the common ones in Benga are the following:"
       }
     },
     {
@@ -39,7 +41,8 @@
             {
               "word": "tekai",
               "meaning": {
-                "es": "cáscara"
+                "es": "cáscara",
+                "en": "shell, husk"
               }
             }
           ]
@@ -55,7 +58,8 @@
             {
               "word": "au",
               "meaning": {
-                "es": "pronombre y signo negativo"
+                "es": "pronombre y signo negativo",
+                "en": "pronoun and negative sign"
               }
             }
           ]
@@ -71,7 +75,8 @@
             {
               "word": "viu",
               "meaning": {
-                "es": "obscuridad"
+                "es": "obscuridad",
+                "en": "darkness"
               }
             }
           ]
@@ -87,7 +92,8 @@
             {
               "word": "mboi",
               "meaning": {
-                "es": "miel"
+                "es": "miel",
+                "en": "honey"
               }
             }
           ]
@@ -103,7 +109,8 @@
             {
               "word": "mūana",
               "meaning": {
-                "es": "niño, hijo"
+                "es": "niño, hijo",
+                "en": "child, son"
               }
             }
           ]
@@ -119,7 +126,8 @@
             {
               "word": "babūe",
               "meaning": {
-                "es": "inteligible"
+                "es": "inteligible",
+                "en": "intelligible"
               }
             }
           ]
@@ -135,7 +143,8 @@
             {
               "word": "ūâūâ",
               "meaning": {
-                "es": "aprisa, pronto"
+                "es": "aprisa, pronto",
+                "en": "quickly, soon"
               }
             }
           ]
@@ -151,7 +160,8 @@
             {
               "word": "hūē",
               "meaning": {
-                "es": "nosotros"
+                "es": "nosotros",
+                "en": "we"
               }
             }
           ]
@@ -167,7 +177,8 @@
             {
               "word": "mūidi",
               "meaning": {
-                "es": "banco, margen"
+                "es": "banco, margen",
+                "en": "bank, margin"
               }
             }
           ]
