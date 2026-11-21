@@ -93,6 +93,11 @@ const routes = [
           path: '/admin/translations',
           name: 'TranslationsAdmin',
           component: () => import('@/views/admin/TranslationsAdmin.vue')
+        },
+        {
+          path: '/admin/audios',
+          name: 'AudiosAdmin',
+          component: () => import('@/views/admin/AudiosAdmin.vue')
         }
       ]
     : []),

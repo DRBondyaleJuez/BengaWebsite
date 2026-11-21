@@ -351,16 +351,16 @@ Branch: `feat/audio-pipeline`
    site ◄── audio-manifest.json ◄── npm run audio:sync ◄── Cloudinary ◄───┘ upload <audioId>.mp3
 ```
 
-- [ ] **5.1 Recording checklist** — CSV with word, audioId, meaning, book page, recorded yes/no.
+- [x] **5.1 Recording checklist** *(done 2026-11-21: `npm run audio:checklist` → `docs/audio/recording-checklist.csv`)* — CSV with word, audioId, meaning, book page, recorded yes/no.
   - **Done early (2026-11-11, word registry):** `/admin/palabras` → filter *Audio pendiente* → *Exportar CSV* already gives this list (without meaning and page).
   - **Prompt:** "Task 5.1: write `scripts/audio-checklist.js` producing `recording-checklist.csv` from all lexicon + example sentences."
   - **Commit:** `feat(scripts): generate audio recording checklist`
-- [ ] **5.2 Manifest sync from Cloudinary** — uses API key in `.env.local` (never committed).
+- [x] **5.2 Manifest sync from Cloudinary** *(done 2026-11-21: `npm run audio:sync`, options `--check`, `--unmark`, `--list file`)* — uses API key in `.env.local` (never committed).
   - **Note:** the "manifest" is now `word-registry.json` (`audio: recorded`). This task becomes a script that lists the Cloudinary files and marks matching keys as recorded via the same writer as `words:import`.
   - **Commit:** `feat(scripts): sync audio manifest from cloudinary`
-- [ ] **5.3 Audio guide** in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
+- [x] **5.3 Audio guide** *(done 2026-11-21)* in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
   - **Commit:** `docs(audio): document recording and upload process`
-- [ ] **5.4 Sentence audio and "play all"** for example tables.
+- [x] **5.4 Sentence audio and "play all"** *(done 2026-11-21: phrases already get their audio like words (key rule); `PlayAllButton` + `playAll()` in the shared player, shown in example grids and the chapter-3 sentence list once something is recorded)* for example tables.
   - **Commit:** `feat(audio): support sentence audio and play-all`
 
 ---

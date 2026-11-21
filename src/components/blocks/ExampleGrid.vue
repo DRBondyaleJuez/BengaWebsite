@@ -1,23 +1,27 @@
 <template>
-  <CardGrid :items="items" class="examples-grid" :key-prefix="keyPrefix" v-slot="{ item }">
-    <div class="example-card">
-      <!-- pairs: green singular above orange plural · single: one green word -->
-      <div v-if="layout !== 'plural-only' && item.singular" class="example-singular">
-        <BengaWord :word="item.singular.word" :meaning="item.singular.meaning" block />
+  <div class="examples">
+    <PlayAllButton :words="words" />
+    <CardGrid :items="items" class="examples-grid" :key-prefix="keyPrefix" v-slot="{ item }">
+      <div class="example-card">
+        <!-- pairs: green singular above orange plural · single: one green word -->
+        <div v-if="layout !== 'plural-only' && item.singular" class="example-singular">
+          <BengaWord :word="item.singular.word" :meaning="item.singular.meaning" block />
+        </div>
+        <div v-if="layout !== 'single' && item.plural" class="example-plural">
+          <BengaWord :word="item.plural.word" :meaning="item.plural.meaning" block />
+        </div>
+        <span v-if="layout === 'plural-only'" class="plural-only-tag">{{
+          badge || $t('content.pluralOnly')
+        }}</span>
       </div>
-      <div v-if="layout !== 'single' && item.plural" class="example-plural">
-        <BengaWord :word="item.plural.word" :meaning="item.plural.meaning" block />
-      </div>
-      <span v-if="layout === 'plural-only'" class="plural-only-tag">{{
-        badge || $t('content.pluralOnly')
-      }}</span>
-    </div>
-  </CardGrid>
+    </CardGrid>
+  </div>
 </template>
 
 <script>
 import CardGrid from '@/components/blocks/CardGrid.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
+import PlayAllButton from '@/components/content/PlayAllButton.vue'
 
 /**
  * A grid of example cards.
@@ -37,7 +41,7 @@ import BengaWord from '@/components/content/BengaWord.vue'
  */
 export default {
   name: 'ExampleGrid',
-  components: { CardGrid, BengaWord },
+  components: { CardGrid, BengaWord, PlayAllButton },
   props: {
     items: { type: Array, required: true },
     layout: {
@@ -49,6 +53,18 @@ export default {
     badge: { type: String, default: null },
     /** Prefix of the cards' keys, so two grids on one page never share keys. */
     keyPrefix: { type: String, default: 'ex' }
+  },
+  computed: {
+    /** Every word of the grid in card order, for the «play all» button. */
+    words() {
+      const forms =
+        this.layout === 'plural-only'
+          ? ['plural']
+          : this.layout === 'single'
+            ? ['singular']
+            : ['singular', 'plural']
+      return this.items.flatMap((item) => forms.map((form) => item[form]?.word))
+    }
   }
 }
 </script>

@@ -96,7 +96,9 @@
     "play": "Reproducir pronunciación",
     "pause": "Pausar",
     "loading": "Cargando audio...",
-    "unavailable": "Audio no disponible"
+    "unavailable": "Audio no disponible",
+    "playAll": "Escuchar todo ({count})",
+    "stopAll": "Detener"
   },
   "dictionary": {
     "viewInDictionary": "Ver en el Diccionario Vivo",

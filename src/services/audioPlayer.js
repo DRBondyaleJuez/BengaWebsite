@@ -7,8 +7,11 @@
  *   play('https://…/epokolo.mp3')   → stops whatever was playing, then plays this URL
  *   play(sameUrl again)            → stops it (the button works as play/stop)
  *   stop()                         → stops everything
- *   audioState                     → reactive { url, status, error }: components read it to
+ *   playAll([url, url, …])         → plays the files one after another («play all» buttons);
+ *                                    a file that fails is skipped; stop() or any play() ends it
+ *   audioState                     → reactive { url, status, error, queue }: components read it to
  *                                    show the right icon. status: 'idle' | 'loading' | 'playing'
+ *                                    queue = the URLs of the running «play all» (empty otherwise)
  *
  *   <button @click="play(url)">{{ audioState.url === url && audioState.status === 'playing' ? '⏸' : '▶' }}</button>
  *
@@ -20,8 +23,11 @@ import { reactive } from 'vue'
 export const audioState = reactive({
   url: null, // the URL being loaded or played, or null
   status: 'idle',
-  error: null // URL of the last file that could not be played (for a warning icon)
+  error: null, // URL of the last file that could not be played (for a warning icon)
+  queue: [] // URLs of the running «play all» (the one playing included); empty otherwise
 })
+
+let pending = [] // URLs of «play all» still to play after the current one
 
 let audio = null // created on the first play: no sound object exists until a visitor clicks
 
@@ -29,12 +35,12 @@ function player() {
   if (!audio && typeof Audio !== 'undefined') {
     audio = new Audio()
     audio.preload = 'none'
-    audio.addEventListener('ended', () => reset())
+    audio.addEventListener('ended', () => next())
     audio.addEventListener('error', () => {
       if (!audioState.url) return
       console.warn(`Audio unavailable: ${audioState.url}`)
       audioState.error = audioState.url
-      reset()
+      next()
     })
   }
   return audio
@@ -43,6 +49,15 @@ function player() {
 function reset() {
   audioState.url = null
   audioState.status = 'idle'
+  audioState.queue = []
+  pending = []
+}
+
+/** The current file ended (or failed): the next of «play all», or back to idle. */
+function next() {
+  const url = pending.shift()
+  if (url) start(url)
+  else reset()
 }
 
 export function stop() {
@@ -62,6 +77,22 @@ export async function play(url) {
     return
   }
   stop()
+  await start(url)
+}
+
+/** Plays the files one after another. Calling it again with the same list stops it. */
+export async function playAll(urls) {
+  const list = urls.filter(Boolean)
+  if (!list.length) return
+  const running = audioState.queue.length && audioState.queue.join() === list.join()
+  stop()
+  if (running) return
+  audioState.queue = list
+  pending = list.slice(1)
+  await start(list[0])
+}
+
+async function start(url) {
   const element = player()
   if (!element) return
   audioState.url = url
@@ -76,7 +107,7 @@ export async function play(url) {
     if (error.name !== 'AbortError' && audioState.url === url) {
       console.warn(`Audio playback failed: ${url}`, error)
       audioState.error = url
-      reset()
+      next()
     }
   }
 }

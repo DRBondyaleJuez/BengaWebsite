@@ -44,6 +44,7 @@
       <p class="section-intro">
         {{ $t('pages.invariableAdjectives.escuchaCadaEjemploPulsando') }}
       </p>
+      <PlayAllButton :words="examples.map((example) => example.bengaSentence)" />
       <div class="examples-container">
         <div class="example-item" v-for="(example, idx) in examples" :key="`ex-${idx}`">
           <div class="example-item__bengaform">
@@ -125,6 +126,7 @@ import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import { localizeDeep } from '@/utils/localized'
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
+import PlayAllButton from '@/components/content/PlayAllButton.vue'
 import { getAdjectives } from '@/services/adjectives'
 
 export default {
@@ -132,7 +134,8 @@ export default {
   components: {
     CardGrid,
     SectionNavFooter,
-    BengaWord
+    BengaWord,
+    PlayAllButton
   },
   data() {
     return {

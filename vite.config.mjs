@@ -75,8 +75,56 @@ const translationsEndpoint = () =>
     await saveTranslations(body)
   })
 
+/**
+ * /admin/audios talks to Cloudinary through the dev server, so the API secret in `.env.local`
+ * never reaches the browser (see scripts/lib/audio-admin.mjs for the three addresses).
+ * Only from this computer; the recording travels as raw bytes in a PUT.
+ */
+const audioEndpoint = () => ({
+  name: 'audio-endpoint',
+  apply: 'serve',
+  configureServer(server) {
+    server.middlewares.use('/__dev/audio', (request, response) => {
+      const send = ({ status, json }) => {
+        response.statusCode = status
+        response.setHeader('Content-Type', 'application/json')
+        response.end(JSON.stringify(json))
+      }
+      if (!LOCAL_ADDRESSES.includes(request.socket.remoteAddress)) {
+        return send({ status: 403, json: { error: 'Only allowed from this computer' } })
+      }
+      const chunks = []
+      let size = 0
+      request.on('data', (chunk) => {
+        size += chunk.length
+        if (size <= 16 * 1024 * 1024) chunks.push(chunk) // anything bigger is refused below
+      })
+      request.on('end', async () => {
+        const { handleAudioRequest } = await import('./scripts/lib/audio-admin.mjs')
+        const url = new URL(request.url, 'http://localhost')
+        send(
+          size > 16 * 1024 * 1024
+            ? { status: 413, json: { error: 'La grabación es demasiado grande' } }
+            : await handleAudioRequest({
+                method: request.method,
+                pathname: url.pathname,
+                query: Object.fromEntries(url.searchParams),
+                body: Buffer.concat(chunks)
+              })
+        )
+      })
+    })
+  }
+})
+
 export default defineConfig({
-  plugins: [vue(), wordRegistryEndpoint(), ocrCorrectionsEndpoint(), translationsEndpoint()],
+  plugins: [
+    vue(),
+    wordRegistryEndpoint(),
+    ocrCorrectionsEndpoint(),
+    translationsEndpoint(),
+    audioEndpoint()
+  ],
   define: {
     // vue-i18n build options: full install, no legacy API (we use composition mode), no devtools
     // in the published site. Without them vue-i18n prints a warning in the console.
