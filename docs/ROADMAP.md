@@ -358,7 +358,7 @@ Branch: `feat/audio-pipeline`
 - [x] **5.2 Manifest sync from Cloudinary** *(done 2026-11-21: `npm run audio:sync`, options `--check`, `--unmark`, `--list file`)* — uses API key in `.env.local` (never committed).
   - **Note:** the "manifest" is now `word-registry.json` (`audio: recorded`). This task becomes a script that lists the Cloudinary files and marks matching keys as recorded via the same writer as `words:import`.
   - **Commit:** `feat(scripts): sync audio manifest from cloudinary`
-- [ ] **5.3 Audio guide** in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
+- [x] **5.3 Audio guide** *(done 2026-11-21)* in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
   - **Commit:** `docs(audio): document recording and upload process`
 - [ ] **5.4 Sentence audio and "play all"** for example tables.
   - **Commit:** `feat(audio): support sentence audio and play-all`

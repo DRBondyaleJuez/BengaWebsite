@@ -1,0 +1,80 @@
+# Audio guide: recording, naming, uploading
+
+How a Benga word or phrase gets its pronunciation on the site. No recordings exist yet; this is the
+process for making them.
+
+```
+word-registry.json ──► npm run audio:checklist ──► docs/audio/recording-checklist.csv
+                                                              │  speaker records
+   site ◄── word-registry.json ◄── npm run audio:sync ◄── Cloudinary ◄── upload <audioId>.mp3
+        (play button appears)     (audio: "recorded")
+```
+
+## 1. What to record
+
+1. Run `npm run words:sync` so every word on the site is in the registry.
+2. Run `npm run audio:checklist`. It writes `docs/audio/recording-checklist.csv` (open it in Excel or
+   Google Sheets). Columns:
+
+   | Column     | Meaning                                                                          |
+   | ---------- | -------------------------------------------------------------------------------- |
+   | `word`     | The word or phrase as the site spells it                                         |
+   | `audioId`  | **The file name to record** (without `.mp3`)                                     |
+   | `type`     | `word` or `phrase` (a phrase has several words, e.g. an example sentence)       |
+   | `meaning`  | Spanish meaning, when the word is a lexicon entry                                |
+   | `bookPage` | PDF page of the book (printed page = PDF page + 6)                               |
+   | `usedIn`   | Files where the word appears                                                     |
+   | `recorded` | `yes` / `no`; rows still to record come first                                    |
+
+Words that appear on no page yet (`usedIn` empty) can be left for later.
+
+## 2. Format and naming
+
+- **Format:** MP3, mono, 44.1 kHz, about 128 kbps. One word or phrase per file, with a short
+  silence (about 0.2 s) at each end and no background noise.
+- **Name:** `<audioId>.mp3`, exactly the `audioId` of the checklist, e.g. `Whâki` → `wh_a_ki.mp3`,
+  `Ekâi ebe` → `ek_a_i-ebe.mp3`. Never type it by hand: copy it from the CSV. The rule is
+  `toAudioId()` in `src/utils/audioId.js` (see AGENTS.md → «Audio ID Convention»).
+- **Folder:** the root of the Cloudinary account (resource type _video_, where Cloudinary stores
+  audio). The address the site uses is `CLOUDINARY_BASE` in `src/config/external.js`
+  (override with `VITE_CLOUDINARY_BASE` in `.env.local`).
+- **Phrases:** same rule; the whole sentence is one file. The site shows a play button for a phrase
+  exactly like for a word (task 5.4).
+
+## 3. Upload and publish
+
+1. Upload the files to Cloudinary (Media Library → Upload; keep the file names, do not let
+   Cloudinary add random suffixes: _Unique filename_ on, _Overwrite_ on).
+2. Create `.env.local` (git-ignored, **never commit it**) with the keys of the Cloudinary
+   dashboard → _API Keys_:
+
+   ```
+   CLOUDINARY_CLOUD_NAME=dp5rofjyx
+   CLOUDINARY_API_KEY=...
+   CLOUDINARY_API_SECRET=...
+   ```
+
+3. Run `npm run audio:sync`. It lists the files in Cloudinary and sets `"audio": "recorded"` in
+   `src/data/lexicon/word-registry.json` for each word that has one. It also tells you about files
+   that match no word (usually a typo in the file name).
+   - `npm run audio:sync -- --check` only reports.
+   - `npm run audio:sync -- --unmark` also sets words whose file disappeared back to `missing`.
+   - `npm run audio:sync -- --list names.txt` uses a text file of names instead of Cloudinary.
+4. Run `npm run validate`, then commit `word-registry.json` (`feat(audio): add recordings of …`).
+
+Only words marked `recorded` get a play button, so the site never links to a missing file.
+
+## 4. Replacing a recording
+
+Upload the new file with the **same name** and _Overwrite_ on. Cloudinary caches files: if the old
+sound is still played, upload with a new name instead (e.g. `epokolo-2.mp3`), put that name in the
+word's `audioFile` field (at `/admin/palabras`) and commit.
+
+A word that must use a file with a different name (for example one recorded for a variant
+spelling) also uses `audioFile`.
+
+## 5. Playing
+
+`BengaWord` plays the file through the single shared player (`src/services/audioPlayer.js`): only
+one sound plays at a time. Example tables have a «play all» button that plays their words one after
+another (task 5.4).
