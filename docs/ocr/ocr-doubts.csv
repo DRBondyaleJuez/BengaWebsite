@@ -1,6 +1,4 @@
 ﻿id,pdf_page,ocr_read,written_in_pdf,confidence,kind,x0,y0,x1,y1
-p3-w1,3,—I”F,—I”F,1,unknown,346.0,75.7,372.0,86.7
-p3-w5,3,l¡lo0lf1,l¡lo0lf1,0,unknown,568.0,75.7,593.7,86.7
 p5-w298,5,tándidkd,tândidkd,18,benga-accent,553.0,879.0,611.0,893.0
 p5-w380,5,caste.,caste.,55,unknown,737.0,1069.0,777.0,1082.0
 p6-w2,6,SESE,SESE,27,unknown,623.0,70.0,862.0,97.0

@@ -1,6 +1,34 @@
 {
   "_about": "Corrections of the improved OCR, typed in /admin/ocr (npm run serve) or by hand. Key = word id (p<PDF page>-w<word number>, see docs/ocr/ocr-doubts.csv). Applied by: python scripts/ocr-pdf.py --reuse. Guide: docs/OCR.md",
   "corrections": {
+    "p3-w1": {
+      "pdfPage": 3,
+      "ocr": "—I”F",
+      "correction": "",
+      "comment": "",
+      "discard": true,
+      "box": [
+        346,
+        75.7,
+        372,
+        86.7
+      ],
+      "updated": "2026-11-20"
+    },
+    "p3-w5": {
+      "pdfPage": 3,
+      "ocr": "l¡lo0lf1",
+      "correction": "",
+      "comment": "",
+      "discard": true,
+      "box": [
+        568,
+        75.7,
+        593.7,
+        86.7
+      ],
+      "updated": "2026-11-20"
+    },
     "p19-w156": {
       "pdfPage": 19,
       "ocr": "ña",
