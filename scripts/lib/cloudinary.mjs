@@ -5,8 +5,15 @@
  *   CLOUDINARY_CLOUD_NAME=dp5rofjyx
  *   CLOUDINARY_API_KEY=...
  *   CLOUDINARY_API_SECRET=...
+ *   CLOUDINARY_WORDS_FOLDER=ndowe-audios/benga-audios/benga-words          (single words)
+ *   CLOUDINARY_SENTENCES_FOLDER=ndowe-audios/benga-audios/benga-sentences  (phrases, sentences)
  *
- * Pure helpers (signing, usage summary) are tested in scripts/tests/cloudinary.test.mjs.
+ * The account uses Cloudinary's "dynamic folders": a file's folder is only where it is shown in the
+ * Media Library, not part of its name. So a recording is always delivered as
+ * `…/video/upload/<audio id>.mp3` (CLOUDINARY_BASE in src/config/external.js), whatever its folder.
+ *
+ * Pure helpers (settings, folder, signing, usage summary) are tested in
+ * scripts/tests/cloudinary.test.mjs.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -25,16 +32,32 @@ export function loadEnvLocal() {
   }
 }
 
-/** @returns {{ cloud: string, key: string, secret: string, folder: string }|null} null when not set up */
+/**
+ * The settings from an environment (CLOUDINARY_URL=cloudinary://key:secret@cloud also works).
+ * @returns {{ cloud, key, secret, wordsFolder, sentencesFolder }|null} null when not set up
+ */
+export function configFromEnv(env) {
+  let { CLOUDINARY_CLOUD_NAME: cloud, CLOUDINARY_API_KEY: key, CLOUDINARY_API_SECRET: secret } = env
+  const url = (env.CLOUDINARY_URL || '').match(/^cloudinary:\/\/([^:]+):([^@]+)@(.+)$/)
+  if (url) [key, secret, cloud] = [key || url[1], secret || url[2], cloud || url[3]]
+  if (!cloud || !key || !secret) return null
+  return {
+    cloud,
+    key,
+    secret,
+    wordsFolder: env.CLOUDINARY_WORDS_FOLDER || '',
+    sentencesFolder: env.CLOUDINARY_SENTENCES_FOLDER || env.CLOUDINARY_WORDS_FOLDER || ''
+  }
+}
+
 export function cloudinaryConfig() {
   loadEnvLocal()
-  const {
-    CLOUDINARY_CLOUD_NAME: cloud,
-    CLOUDINARY_API_KEY: key,
-    CLOUDINARY_API_SECRET: secret
-  } = process.env
-  if (!cloud || !key || !secret) return null
-  return { cloud, key, secret, folder: process.env.CLOUDINARY_FOLDER || '' }
+  return configFromEnv(process.env)
+}
+
+/** The folder a recording goes to: phrases (several words) in the sentences folder. */
+export function folderFor(word, config) {
+  return /\s/.test(String(word).trim()) ? config.sentencesFolder : config.wordsFolder
 }
 
 export const MISSING_CONFIG_MESSAGE =
@@ -48,10 +71,12 @@ function requireConfig() {
 }
 
 const basicAuth = ({ key, secret }) => 'Basic ' + Buffer.from(`${key}:${secret}`).toString('base64')
+const apiUrl = (config, endpoint) => `https://api.cloudinary.com/v1_1/${config.cloud}/${endpoint}`
 
 async function adminGet(config, endpoint, query = {}) {
-  const url = `https://api.cloudinary.com/v1_1/${config.cloud}/${endpoint}?${new URLSearchParams(query)}`
-  const response = await fetch(url, { headers: { Authorization: basicAuth(config) } })
+  const response = await fetch(`${apiUrl(config, endpoint)}?${new URLSearchParams(query)}`, {
+    headers: { Authorization: basicAuth(config) }
+  })
   if (!response.ok) {
     throw new Error(`Cloudinary respondió ${response.status} ${response.statusText}`)
   }
@@ -59,28 +84,35 @@ async function adminGet(config, endpoint, query = {}) {
 }
 
 /**
- * Every audio file of the account (Admin API, 500 per page).
- * @returns {Promise<{ id: string, bytes: number, format: string, version: number, duration: number|null }[]>}
+ * The audio files of the recordings folders (or of the whole account when no folder is set),
+ * 500 per request.
+ * @returns {Promise<{ id, folder, bytes, format, version, duration }[]>}
  */
 export async function listAudioFiles(config = requireConfig()) {
+  const folders = [...new Set([config.wordsFolder, config.sentencesFolder].filter(Boolean))]
   const files = []
-  let cursor = null
-  do {
-    const query = { max_results: '500' }
-    if (config.folder) query.prefix = config.folder
-    if (cursor) query.next_cursor = cursor
-    const page = await adminGet(config, 'resources/video/upload', query)
-    for (const resource of page.resources) {
-      files.push({
-        id: resource.public_id,
-        bytes: resource.bytes || 0,
-        format: resource.format || '',
-        version: resource.version || 0,
-        duration: resource.duration ?? null
-      })
-    }
-    cursor = page.next_cursor || null
-  } while (cursor)
+  for (const folder of folders.length ? folders : [null]) {
+    let cursor = null
+    do {
+      const query = { max_results: '500' }
+      if (folder) query.asset_folder = folder
+      if (cursor) query.next_cursor = cursor
+      const endpoint = folder ? 'resources/by_asset_folder' : 'resources/video/upload'
+      const page = await adminGet(config, endpoint, query)
+      for (const resource of page.resources) {
+        if (resource.resource_type && resource.resource_type !== 'video') continue // images
+        files.push({
+          id: resource.public_id,
+          folder: resource.asset_folder ?? folder ?? '',
+          bytes: resource.bytes || 0,
+          format: resource.format || '',
+          version: resource.version || 0,
+          duration: resource.duration ?? null
+        })
+      }
+      cursor = page.next_cursor || null
+    } while (cursor)
+  }
   return files
 }
 
@@ -129,11 +161,14 @@ export function signUpload(params, secret) {
  * one; the site asks for `<id>.mp3`, which Cloudinary converts from whatever format was uploaded.
  * @param {Buffer} buffer
  * @param {string} publicId - the audio id, e.g. "wh_a_ki"
- * @returns {Promise<{ id: string, bytes: number, format: string, version: number }>}
+ * @param {string} mimeType
+ * @param {string} folder - Media Library folder (folderFor())
+ * @returns {Promise<{ id: string, folder: string, bytes: number, format: string, version: number }>}
  */
-export async function uploadAudio(buffer, publicId, mimeType = 'audio/webm') {
+export async function uploadAudio(buffer, publicId, mimeType = 'audio/webm', folder = '') {
   const config = requireConfig()
   const params = {
+    asset_folder: folder || undefined,
     invalidate: 'true',
     overwrite: 'true',
     public_id: publicId,
@@ -142,22 +177,32 @@ export async function uploadAudio(buffer, publicId, mimeType = 'audio/webm') {
     use_filename: 'false'
   }
   const form = new FormData()
-  for (const [name, value] of Object.entries(params)) form.append(name, value)
+  for (const [name, value] of Object.entries(params)) if (value) form.append(name, value)
   form.append('api_key', config.key)
   form.append('signature', signUpload(params, config.secret))
   form.append('file', new Blob([buffer], { type: mimeType }), `${publicId}.audio`)
-  const response = await fetch(`https://api.cloudinary.com/v1_1/${config.cloud}/video/upload`, {
-    method: 'POST',
-    body: form
-  })
+  const response = await fetch(apiUrl(config, 'video/upload'), { method: 'POST', body: form })
   const result = await response.json().catch(() => ({}))
   if (!response.ok) {
     throw new Error(`Cloudinary no aceptó el audio: ${result.error?.message || response.status}`)
   }
   return {
     id: result.public_id,
+    folder: result.asset_folder || folder,
     bytes: result.bytes || 0,
     format: result.format || '',
     version: result.version || 0
   }
+}
+
+/** Deletes recordings by audio id (used to clean up tests; the admin page does not delete). */
+export async function deleteAudio(publicIds, config = requireConfig()) {
+  const query = new URLSearchParams()
+  publicIds.forEach((id) => query.append('public_ids[]', id))
+  const response = await fetch(`${apiUrl(config, 'resources/video/upload')}?${query}`, {
+    method: 'DELETE',
+    headers: { Authorization: basicAuth(config) }
+  })
+  if (!response.ok) throw new Error(`Cloudinary respondió ${response.status}`)
+  return response.json()
 }

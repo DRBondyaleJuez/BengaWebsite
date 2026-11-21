@@ -68,7 +68,8 @@
         </p>
         <p class="audio-admin__hint">
           Cloudinary no mide una carpeta por separado: el tamaño de los audios se suma aquí; el
-          espacio libre es el de toda la cuenta.
+          espacio libre es el de toda la cuenta. En el plan gratuito el límite son los créditos
+          mensuales: 1 crédito ≈ 1 GB guardado o 1 GB descargado por los visitantes.
         </p>
       </template>
       <div class="audio-admin__toolbar">

@@ -10,7 +10,9 @@
  *   CLOUDINARY_CLOUD_NAME=dp5rofjyx
  *   CLOUDINARY_API_KEY=...
  *   CLOUDINARY_API_SECRET=...
- *   CLOUDINARY_FOLDER=          (optional: only files whose public id starts with this folder)
+ *   CLOUDINARY_WORDS_FOLDER=ndowe-audios/benga-audios/benga-words
+ *   CLOUDINARY_SENTENCES_FOLDER=ndowe-audios/benga-audios/benga-sentences
+ *   (only the files of these folders are read; without them, every audio file of the account)
  * The key and secret are used here only, to read the file list; they never reach the website.
  * Guide: docs/AUDIO-GUIDE.md
  */

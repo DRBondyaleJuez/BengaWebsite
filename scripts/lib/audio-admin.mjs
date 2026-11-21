@@ -15,6 +15,7 @@ import { loadRegistry, saveRegistry, normaliseEntry } from './registry.mjs'
 import { planAudioSync } from './audio-sync.mjs'
 import {
   cloudinaryConfig,
+  folderFor,
   getUsage,
   listAudioFiles,
   summariseUsage,
@@ -75,7 +76,8 @@ async function upload({ key, type }, body) {
   const mime = AUDIO_TYPE.test(type || '') ? type : 'audio/webm'
 
   const id = registry[key].audioFile || key
-  const result = await uploadAudio(body, id, mime)
+  const folder = folderFor(registry[key].word, cloudinaryConfig() || {})
+  const result = await uploadAudio(body, id, mime, folder)
   registry[key] = normaliseEntry({ ...registry[key], audio: 'recorded' })
   await saveRegistry(registry)
   return reply(200, result)

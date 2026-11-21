@@ -35,9 +35,11 @@ Words that appear on no page yet (`usedIn` empty) can be left for later.
 - **Name:** `<audioId>.mp3`, exactly the `audioId` of the checklist, e.g. `Whâki` → `wh_a_ki.mp3`,
   `Ekâi ebe` → `ek_a_i-ebe.mp3`. Never type it by hand: copy it from the CSV. The rule is
   `toAudioId()` in `src/utils/audioId.js` (see AGENTS.md → «Audio ID Convention»).
-- **Folder:** the root of the Cloudinary account (resource type _video_, where Cloudinary stores
-  audio). The address the site uses is `CLOUDINARY_BASE` in `src/config/external.js`
-  (override with `VITE_CLOUDINARY_BASE` in `.env.local`).
+- **Folders:** single words go to `ndowe-audios/benga-audios/benga-words`, phrases and sentences
+  to `ndowe-audios/benga-audios/benga-sentences` (set in `.env.local`). The account uses
+  Cloudinary's _dynamic folders_, so the folder is not part of the file's address: every recording
+  is played from `CLOUDINARY_BASE/<audioId>.mp3` (`src/config/external.js`), whatever its folder.
+  Cloudinary stores audio as resource type _video_.
 - **Phrases:** same rule; the whole sentence is one file. The site shows a play button for a phrase
   exactly like for a word (task 5.4).
 
@@ -52,7 +54,14 @@ Words that appear on no page yet (`usedIn` empty) can be left for later.
    CLOUDINARY_CLOUD_NAME=dp5rofjyx
    CLOUDINARY_API_KEY=...
    CLOUDINARY_API_SECRET=...
+   CLOUDINARY_WORDS_FOLDER=ndowe-audios/benga-audios/benga-words
+   CLOUDINARY_SENTENCES_FOLDER=ndowe-audios/benga-audios/benga-sentences
    ```
+
+   (`CLOUDINARY_URL=cloudinary://<key>:<secret>@dp5rofjyx` works instead of the first three.)
+   These variables do not start with `VITE_`, so Vite never puts them in the website: only the
+   npm scripts and the dev server read them. If the secret is ever exposed, create a new key in
+   Cloudinary (Settings → API Keys), delete the old one and update `.env.local`.
 
 3. Run `npm run audio:sync`. It lists the files in Cloudinary and sets `"audio": "recorded"` in
    `src/data/lexicon/word-registry.json` for each word that has one. It also tells you about files

@@ -4,7 +4,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import crypto from 'node:crypto'
-import { signUpload, summariseUsage } from '../lib/cloudinary.mjs'
+import { configFromEnv, folderFor, signUpload, summariseUsage } from '../lib/cloudinary.mjs'
 
 test('upload signature: sorted name=value pairs, empty values left out, then the secret', () => {
   const expected = crypto
@@ -18,6 +18,21 @@ test('upload signature: sorted name=value pairs, empty values left out, then the
     ),
     expected
   )
+})
+
+test('settings: separate variables or CLOUDINARY_URL; phrases go to the sentences folder', () => {
+  assert.equal(configFromEnv({}), null)
+  const fromUrl = configFromEnv({ CLOUDINARY_URL: 'cloudinary://123:abc@mycloud' })
+  assert.deepEqual([fromUrl.key, fromUrl.secret, fromUrl.cloud], ['123', 'abc', 'mycloud'])
+  const config = configFromEnv({
+    CLOUDINARY_CLOUD_NAME: 'c',
+    CLOUDINARY_API_KEY: 'k',
+    CLOUDINARY_API_SECRET: 's',
+    CLOUDINARY_WORDS_FOLDER: 'a/words',
+    CLOUDINARY_SENTENCES_FOLDER: 'a/sentences'
+  })
+  assert.equal(folderFor('Epokolo', config), 'a/words')
+  assert.equal(folderFor('Ekâi ebe', config), 'a/sentences')
 })
 
 test('usage summary adds up the audio files and tolerates missing fields', () => {
