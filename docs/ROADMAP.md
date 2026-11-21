@@ -355,7 +355,7 @@ Branch: `feat/audio-pipeline`
   - **Done early (2026-11-11, word registry):** `/admin/palabras` → filter *Audio pendiente* → *Exportar CSV* already gives this list (without meaning and page).
   - **Prompt:** "Task 5.1: write `scripts/audio-checklist.js` producing `recording-checklist.csv` from all lexicon + example sentences."
   - **Commit:** `feat(scripts): generate audio recording checklist`
-- [ ] **5.2 Manifest sync from Cloudinary** — uses API key in `.env.local` (never committed).
+- [x] **5.2 Manifest sync from Cloudinary** *(done 2026-11-21: `npm run audio:sync`, options `--check`, `--unmark`, `--list file`)* — uses API key in `.env.local` (never committed).
   - **Note:** the "manifest" is now `word-registry.json` (`audio: recorded`). This task becomes a script that lists the Cloudinary files and marks matching keys as recorded via the same writer as `words:import`.
   - **Commit:** `feat(scripts): sync audio manifest from cloudinary`
 - [ ] **5.3 Audio guide** in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).

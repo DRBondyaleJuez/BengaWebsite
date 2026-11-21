@@ -15,6 +15,7 @@
     "words:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs",
     "words:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs --check",
     "audio:checklist": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audio-checklist.mjs",
+    "audio:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audio-sync.mjs",
     "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs"
   },
   "dependencies": {
