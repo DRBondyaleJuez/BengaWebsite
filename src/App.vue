@@ -47,6 +47,12 @@ export default {
       // Browser-tab title from chapters-index.json (route meta). Runs before the new page is
       // created, so a page that sets its own document.title still wins.
       if (to.meta.titleKey) document.title = `${this.$t(to.meta.titleKey)} | Portal Benga`
+    },
+    // New language: the tab title follows (pages only set theirs when they open)
+    '$i18n.locale'() {
+      if (this.$route.meta.titleKey) {
+        document.title = `${this.$t(this.$route.meta.titleKey)} | Portal Benga`
+      }
     }
   }
 }

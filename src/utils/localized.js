@@ -23,3 +23,33 @@ export function localized(text, locale, fallbackLocale = 'es') {
   if (typeof text !== 'object') return String(text)
   return text[locale] || text[fallbackLocale] || ''
 }
+
+/** True for a translated text object: { es: '…' } plus optional en / fr, nothing else. */
+function isTranslatedText(value) {
+  return (
+    value !== null &&
+    typeof value === 'object' &&
+    !Array.isArray(value) &&
+    typeof value.es === 'string' &&
+    Object.keys(value).every((key) => ['es', 'en', 'fr'].includes(key))
+  )
+}
+
+/**
+ * Same as `localized`, for a whole data structure: every translated text inside it becomes the
+ * string of the wanted language; everything else (Benga words, numbers…) is copied unchanged.
+ * Pages whose templates read plain strings use it on their data file:
+ *
+ *   localizeDeep({ title: { es: 'Adjetivos', en: 'Adjectives' }, word: 'bobe' }, 'en')
+ *   → { title: 'Adjectives', word: 'bobe' }
+ */
+export function localizeDeep(value, locale, fallbackLocale = 'es') {
+  if (isTranslatedText(value)) return localized(value, locale, fallbackLocale)
+  if (Array.isArray(value)) return value.map((item) => localizeDeep(item, locale, fallbackLocale))
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, localizeDeep(item, locale, fallbackLocale)])
+    )
+  }
+  return value
+}

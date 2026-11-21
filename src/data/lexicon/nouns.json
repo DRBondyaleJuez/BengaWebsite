@@ -11,10 +11,14 @@
         "word": "Bejanganangobo"
       },
       "meaning": {
-        "es": "Libro"
+        "es": "Libro",
+        "en": "Book",
+        "fr": "Livre"
       },
       "meaningPlural": {
-        "es": "Libros"
+        "es": "Libros",
+        "en": "Books",
+        "fr": "Livres"
       },
       "source": {
         "pdfPage": "8-9"
@@ -30,10 +34,14 @@
         "word": "Bepokolo"
       },
       "meaning": {
-        "es": "Sombrero"
+        "es": "Sombrero",
+        "en": "Hat",
+        "fr": "Chapeau"
       },
       "meaningPlural": {
-        "es": "Sombreros"
+        "es": "Sombreros",
+        "en": "Hats",
+        "fr": "Chapeaux"
       },
       "source": {
         "pdfPage": 8
@@ -49,10 +57,14 @@
         "word": "Benâ"
       },
       "meaning": {
-        "es": "Brazo"
+        "es": "Brazo",
+        "en": "Arm",
+        "fr": "Bras"
       },
       "meaningPlural": {
-        "es": "Brazos"
+        "es": "Brazos",
+        "en": "Arms",
+        "fr": "Bras"
       },
       "source": {
         "pdfPage": 8
@@ -68,10 +80,14 @@
         "word": "Bekâi"
       },
       "meaning": {
-        "es": "Plátano"
+        "es": "Plátano",
+        "en": "Plantain",
+        "fr": "Banane plantain"
       },
       "meaningPlural": {
-        "es": "Plátanos"
+        "es": "Plátanos",
+        "en": "Plantains",
+        "fr": "Bananes plantain"
       },
       "source": {
         "pdfPage": 8
@@ -87,10 +103,14 @@
         "word": "Belinga"
       },
       "meaning": {
-        "es": "Cesto"
+        "es": "Cesto",
+        "en": "Basket",
+        "fr": "Panier"
       },
       "meaningPlural": {
-        "es": "Cestos"
+        "es": "Cestos",
+        "en": "Baskets",
+        "fr": "Paniers"
       },
       "source": {
         "pdfPage": 8
@@ -106,10 +126,14 @@
         "word": "Belombo"
       },
       "meaning": {
-        "es": "Cosa"
+        "es": "Cosa",
+        "en": "Thing",
+        "fr": "Chose"
       },
       "meaningPlural": {
-        "es": "Cosas"
+        "es": "Cosas",
+        "en": "Things",
+        "fr": "Choses"
       },
       "source": {
         "pdfPage": 8
@@ -125,10 +149,14 @@
         "word": "Begala"
       },
       "meaning": {
-        "es": "Cajón"
+        "es": "Cajón",
+        "en": "Box",
+        "fr": "Caisse"
       },
       "meaningPlural": {
-        "es": "Cajones"
+        "es": "Cajones",
+        "en": "Boxes",
+        "fr": "Caisses"
       },
       "source": {
         "pdfPage": "8-9"
@@ -144,10 +172,14 @@
         "word": "Belende"
       },
       "meaning": {
-        "es": "Bote"
+        "es": "Bote",
+        "en": "Boat",
+        "fr": "Canot"
       },
       "meaningPlural": {
-        "es": "Botes"
+        "es": "Botes",
+        "en": "Boats",
+        "fr": "Canots"
       },
       "source": {
         "pdfPage": 8
@@ -163,10 +195,14 @@
         "word": "Biaho"
       },
       "meaning": {
-        "es": "Quijada"
+        "es": "Quijada",
+        "en": "Jaw",
+        "fr": "Mâchoire"
       },
       "meaningPlural": {
-        "es": "Quijadas"
+        "es": "Quijadas",
+        "en": "Jaws",
+        "fr": "Mâchoires"
       },
       "source": {
         "pdfPage": 9
@@ -183,10 +219,14 @@
         "word": "Biako"
       },
       "meaning": {
-        "es": "Cama"
+        "es": "Cama",
+        "en": "Bed",
+        "fr": "Lit"
       },
       "meaningPlural": {
-        "es": "Camas"
+        "es": "Camas",
+        "en": "Beds",
+        "fr": "Lits"
       },
       "source": {
         "pdfPage": 9
@@ -203,10 +243,14 @@
         "word": "Bialo"
       },
       "meaning": {
-        "es": "Bote europeo"
+        "es": "Bote europeo",
+        "en": "European boat",
+        "fr": "Canot européen"
       },
       "meaningPlural": {
-        "es": "Botes europeos"
+        "es": "Botes europeos",
+        "en": "European boats",
+        "fr": "Canots européens"
       },
       "source": {
         "pdfPage": 9
@@ -223,10 +267,14 @@
         "word": "Biambe"
       },
       "meaning": {
-        "es": "Cura supersticiosa"
+        "es": "Cura supersticiosa",
+        "en": "Superstitious cure",
+        "fr": "Cure superstitieuse"
       },
       "meaningPlural": {
-        "es": "Curas supersticiosas"
+        "es": "Curas supersticiosas",
+        "en": "Superstitious cures",
+        "fr": "Cures superstitieuses"
       },
       "source": {
         "pdfPage": 9
@@ -243,10 +291,14 @@
         "word": "Biapa"
       },
       "meaning": {
-        "es": "Canasta"
+        "es": "Canasta",
+        "en": "Basket",
+        "fr": "Corbeille"
       },
       "meaningPlural": {
-        "es": "Canastas"
+        "es": "Canastas",
+        "en": "Baskets",
+        "fr": "Corbeilles"
       },
       "source": {
         "pdfPage": 9
@@ -263,10 +315,14 @@
         "word": "Biâkâ"
       },
       "meaning": {
-        "es": "Medicina supersticiosa"
+        "es": "Medicina supersticiosa",
+        "en": "Superstitious medicine",
+        "fr": "Médecine superstitieuse"
       },
       "meaningPlural": {
-        "es": "Medicinas supersticiosas"
+        "es": "Medicinas supersticiosas",
+        "en": "Superstitious medicines",
+        "fr": "Médecines superstitieuses"
       },
       "source": {
         "pdfPage": "8-9"
@@ -283,10 +339,14 @@
         "word": "Biejâ"
       },
       "meaning": {
-        "es": "Medida"
+        "es": "Medida",
+        "en": "Measure",
+        "fr": "Mesure"
       },
       "meaningPlural": {
-        "es": "Medidas"
+        "es": "Medidas",
+        "en": "Measures",
+        "fr": "Mesures"
       },
       "source": {
         "pdfPage": 9
@@ -303,10 +363,14 @@
         "word": "Biēke"
       },
       "meaning": {
-        "es": "Juicio"
+        "es": "Juicio",
+        "en": "Judgment",
+        "fr": "Jugement"
       },
       "meaningPlural": {
-        "es": "Juicios"
+        "es": "Juicios",
+        "en": "Judgments",
+        "fr": "Jugements"
       },
       "source": {
         "pdfPage": 9
@@ -323,10 +387,14 @@
         "word": "Biima"
       },
       "meaning": {
-        "es": "Egoísmo"
+        "es": "Egoísmo",
+        "en": "Selfishness",
+        "fr": "Égoïsme"
       },
       "meaningPlural": {
-        "es": "Egoísmos"
+        "es": "Egoísmos",
+        "en": "Selfishnesses",
+        "fr": "Égoïsmes"
       },
       "source": {
         "pdfPage": 9
@@ -343,10 +411,14 @@
         "word": "Bioha"
       },
       "meaning": {
-        "es": "Mono pequeño"
+        "es": "Mono pequeño",
+        "en": "Small monkey",
+        "fr": "Petit singe"
       },
       "meaningPlural": {
-        "es": "Monos pequeños"
+        "es": "Monos pequeños",
+        "en": "Small monkeys",
+        "fr": "Petits singes"
       },
       "source": {
         "pdfPage": 9
@@ -363,10 +435,14 @@
         "word": "Bioma"
       },
       "meaning": {
-        "es": "Ñame"
+        "es": "Ñame",
+        "en": "Yam",
+        "fr": "Igname"
       },
       "meaningPlural": {
-        "es": "Ñames"
+        "es": "Ñames",
+        "en": "Yams",
+        "fr": "Ignames"
       },
       "source": {
         "pdfPage": 9
@@ -383,10 +459,14 @@
         "word": "Biomu"
       },
       "meaning": {
-        "es": "Calor"
+        "es": "Calor",
+        "en": "Heat",
+        "fr": "Chaleur"
       },
       "meaningPlural": {
-        "es": "Calores"
+        "es": "Calores",
+        "en": "Heats",
+        "fr": "Chaleurs"
       },
       "source": {
         "pdfPage": 9
@@ -403,10 +483,14 @@
         "word": "Mabakē"
       },
       "meaning": {
-        "es": "Cuidado"
+        "es": "Cuidado",
+        "en": "Care",
+        "fr": "Soin"
       },
       "meaningPlural": {
-        "es": "Cuidados"
+        "es": "Cuidados",
+        "en": "Cares",
+        "fr": "Soins"
       },
       "source": {
         "pdfPage": 9
@@ -422,10 +506,14 @@
         "word": "Mabala"
       },
       "meaning": {
-        "es": "Victoria"
+        "es": "Victoria",
+        "en": "Victory",
+        "fr": "Victoire"
       },
       "meaningPlural": {
-        "es": "Victorias"
+        "es": "Victorias",
+        "en": "Victories",
+        "fr": "Victoires"
       },
       "source": {
         "pdfPage": 9
@@ -441,10 +529,14 @@
         "word": "Mabâlu"
       },
       "meaning": {
-        "es": "Cuello"
+        "es": "Cuello",
+        "en": "Neck",
+        "fr": "Cou"
       },
       "meaningPlural": {
-        "es": "Cuellos"
+        "es": "Cuellos",
+        "en": "Necks",
+        "fr": "Cous"
       },
       "source": {
         "pdfPage": 9
@@ -460,10 +552,14 @@
         "word": "Mabângâ"
       },
       "meaning": {
-        "es": "Rodilla"
+        "es": "Rodilla",
+        "en": "Knee",
+        "fr": "Genou"
       },
       "meaningPlural": {
-        "es": "Rodillas"
+        "es": "Rodillas",
+        "en": "Knees",
+        "fr": "Genoux"
       },
       "source": {
         "pdfPage": "9-10"
@@ -479,10 +575,14 @@
         "word": "Mabâtâ"
       },
       "meaning": {
-        "es": "Bendición"
+        "es": "Bendición",
+        "en": "Blessing",
+        "fr": "Bénédiction"
       },
       "meaningPlural": {
-        "es": "Bendiciones"
+        "es": "Bendiciones",
+        "en": "Blessings",
+        "fr": "Bénédictions"
       },
       "source": {
         "pdfPage": "9-10"
@@ -498,10 +598,14 @@
         "word": "Mabeku"
       },
       "meaning": {
-        "es": "Apoyo"
+        "es": "Apoyo",
+        "en": "Support",
+        "fr": "Appui"
       },
       "meaningPlural": {
-        "es": "Apoyos"
+        "es": "Apoyos",
+        "en": "Supports",
+        "fr": "Appuis"
       },
       "source": {
         "pdfPage": 9
@@ -517,10 +621,14 @@
         "word": "Mabendē"
       },
       "meaning": {
-        "es": "Alabanza"
+        "es": "Alabanza",
+        "en": "Praise",
+        "fr": "Louange"
       },
       "meaningPlural": {
-        "es": "Alabanzas"
+        "es": "Alabanzas",
+        "en": "Praises",
+        "fr": "Louanges"
       },
       "source": {
         "pdfPage": "9-10"
@@ -536,10 +644,14 @@
         "word": "Mabēkē"
       },
       "meaning": {
-        "es": "Hombro"
+        "es": "Hombro",
+        "en": "Shoulder",
+        "fr": "Épaule"
       },
       "meaningPlural": {
-        "es": "Hombros"
+        "es": "Hombros",
+        "en": "Shoulders",
+        "fr": "Épaules"
       },
       "source": {
         "pdfPage": 9
@@ -555,10 +667,14 @@
         "word": "Makadu"
       },
       "meaning": {
-        "es": "Mano"
+        "es": "Mano",
+        "en": "Hand",
+        "fr": "Main"
       },
       "meaningPlural": {
-        "es": "Manos"
+        "es": "Manos",
+        "en": "Hands",
+        "fr": "Mains"
       },
       "source": {
         "pdfPage": 9
@@ -574,10 +690,14 @@
         "word": "Malale"
       },
       "meaning": {
-        "es": "Piedra"
+        "es": "Piedra",
+        "en": "Stone",
+        "fr": "Pierre"
       },
       "meaningPlural": {
-        "es": "Piedras"
+        "es": "Piedras",
+        "en": "Stones",
+        "fr": "Pierres"
       },
       "source": {
         "pdfPage": 9
@@ -593,10 +713,14 @@
         "word": "Mabomba"
       },
       "meaning": {
-        "es": "Cuerno"
+        "es": "Cuerno",
+        "en": "Horn",
+        "fr": "Corne"
       },
       "meaningPlural": {
-        "es": "Cuernos"
+        "es": "Cuernos",
+        "en": "Horns",
+        "fr": "Cornes"
       },
       "source": {
         "pdfPage": 9
@@ -612,10 +736,14 @@
         "word": "Mahana"
       },
       "meaning": {
-        "es": "Ayuda"
+        "es": "Ayuda",
+        "en": "Help",
+        "fr": "Aide"
       },
       "meaningPlural": {
-        "es": "Ayudas"
+        "es": "Ayudas",
+        "en": "Helps",
+        "fr": "Aides"
       },
       "source": {
         "pdfPage": 9
@@ -631,10 +759,14 @@
         "word": "Mahonga"
       },
       "meaning": {
-        "es": "Diente"
+        "es": "Diente",
+        "en": "Tooth",
+        "fr": "Dent"
       },
       "meaningPlural": {
-        "es": "Dientes"
+        "es": "Dientes",
+        "en": "Teeth",
+        "fr": "Dents"
       },
       "source": {
         "pdfPage": 9
@@ -650,10 +782,14 @@
         "word": "Mahuhu"
       },
       "meaning": {
-        "es": "Estómago, vientre"
+        "es": "Estómago, vientre",
+        "en": "Stomach, belly",
+        "fr": "Estomac, ventre"
       },
       "meaningPlural": {
-        "es": "Estómagos, vientres"
+        "es": "Estómagos, vientres",
+        "en": "Stomachs, bellies",
+        "fr": "Estomacs, ventres"
       },
       "source": {
         "pdfPage": 9
@@ -669,10 +805,14 @@
         "word": "Mahuku"
       },
       "meaning": {
-        "es": "Fin, extremidad"
+        "es": "Fin, extremidad",
+        "en": "End, extremity",
+        "fr": "Fin, extrémité"
       },
       "meaningPlural": {
-        "es": "Fines, extremidades"
+        "es": "Fines, extremidades",
+        "en": "Ends, extremities",
+        "fr": "Fins, extrémités"
       },
       "source": {
         "pdfPage": 9
@@ -688,10 +828,14 @@
         "word": "Majanē"
       },
       "meaning": {
-        "es": "Nacimiento"
+        "es": "Nacimiento",
+        "en": "Birth",
+        "fr": "Naissance"
       },
       "meaningPlural": {
-        "es": "Nacimientos"
+        "es": "Nacimientos",
+        "en": "Births",
+        "fr": "Naissances"
       },
       "source": {
         "pdfPage": 9
@@ -707,10 +851,14 @@
         "word": "Makabo"
       },
       "meaning": {
-        "es": "Porción, parte"
+        "es": "Porción, parte",
+        "en": "Portion, part",
+        "fr": "Portion, partie"
       },
       "meaningPlural": {
-        "es": "Porciones, partes"
+        "es": "Porciones, partes",
+        "en": "Portions, parts",
+        "fr": "Portions, parties"
       },
       "source": {
         "pdfPage": 9
@@ -726,10 +874,14 @@
         "word": "Makalia"
       },
       "meaning": {
-        "es": "Oración, súplica"
+        "es": "Oración, súplica",
+        "en": "Prayer, supplication",
+        "fr": "Prière, supplication"
       },
       "meaningPlural": {
-        "es": "Oraciones, súplicas"
+        "es": "Oraciones, súplicas",
+        "en": "Prayers, supplications",
+        "fr": "Prières, supplications"
       },
       "source": {
         "pdfPage": 9
@@ -745,10 +897,14 @@
         "word": "Makana"
       },
       "meaning": {
-        "es": "Juramento"
+        "es": "Juramento",
+        "en": "Oath",
+        "fr": "Serment"
       },
       "meaningPlural": {
-        "es": "Juramentos"
+        "es": "Juramentos",
+        "en": "Oaths",
+        "fr": "Serments"
       },
       "source": {
         "pdfPage": 9
@@ -764,10 +920,14 @@
         "word": "Makelenge"
       },
       "meaning": {
-        "es": "Campana"
+        "es": "Campana",
+        "en": "Bell",
+        "fr": "Cloche"
       },
       "meaningPlural": {
-        "es": "Campanas"
+        "es": "Campanas",
+        "en": "Bells",
+        "fr": "Cloches"
       },
       "source": {
         "pdfPage": 9
@@ -783,10 +943,14 @@
         "word": "Makēlēnē"
       },
       "meaning": {
-        "es": "Vanidad"
+        "es": "Vanidad",
+        "en": "Vanity",
+        "fr": "Vanité"
       },
       "meaningPlural": {
-        "es": "Vanidades"
+        "es": "Vanidades",
+        "en": "Vanities",
+        "fr": "Vanités"
       },
       "source": {
         "pdfPage": "9-10"
@@ -802,10 +966,14 @@
         "word": "Makēluku"
       },
       "meaning": {
-        "es": "Ambición"
+        "es": "Ambición",
+        "en": "Ambition",
+        "fr": "Ambition"
       },
       "meaningPlural": {
-        "es": "Ambiciones"
+        "es": "Ambiciones",
+        "en": "Ambitions",
+        "fr": "Ambitions"
       },
       "source": {
         "pdfPage": 9
@@ -821,10 +989,14 @@
         "word": "Makogo"
       },
       "meaning": {
-        "es": "Zapato"
+        "es": "Zapato",
+        "en": "Shoe",
+        "fr": "Chaussure"
       },
       "meaningPlural": {
-        "es": "Zapatos"
+        "es": "Zapatos",
+        "en": "Shoes",
+        "fr": "Chaussures"
       },
       "source": {
         "pdfPage": "9-10"
@@ -840,10 +1012,14 @@
         "word": "Maluku"
       },
       "meaning": {
-        "es": "Hermana"
+        "es": "Hermana",
+        "en": "Sister",
+        "fr": "Sœur"
       },
       "meaningPlural": {
-        "es": "Hermanas"
+        "es": "Hermanas",
+        "en": "Sisters",
+        "fr": "Sœurs"
       },
       "source": {
         "pdfPage": 9
@@ -859,10 +1035,14 @@
         "word": "Matândē"
       },
       "meaning": {
-        "es": "Amor"
+        "es": "Amor",
+        "en": "Love",
+        "fr": "Amour"
       },
       "meaningPlural": {
-        "es": "Amores"
+        "es": "Amores",
+        "en": "Loves",
+        "fr": "Amours"
       },
       "source": {
         "pdfPage": 9
@@ -880,10 +1060,14 @@
         "word": "Mavenda"
       },
       "meaning": {
-        "es": "Gloria"
+        "es": "Gloria",
+        "en": "Glory",
+        "fr": "Gloire"
       },
       "meaningPlural": {
-        "es": "Glorias"
+        "es": "Glorias",
+        "en": "Glories",
+        "fr": "Gloires"
       },
       "source": {
         "pdfPage": 9
@@ -899,10 +1083,14 @@
         "word": "Mavē"
       },
       "meaning": {
-        "es": "Paga, recompensa"
+        "es": "Paga, recompensa",
+        "en": "Pay, reward",
+        "fr": "Paie, récompense"
       },
       "meaningPlural": {
-        "es": "Pagas, recompensas"
+        "es": "Pagas, recompensas",
+        "en": "Pay, rewards",
+        "fr": "Paies, récompenses"
       },
       "source": {
         "pdfPage": 9
@@ -918,10 +1106,14 @@
         "word": "Mabobēlē"
       },
       "meaning": {
-        "es": "Araña"
+        "es": "Araña",
+        "en": "Spider",
+        "fr": "Araignée"
       },
       "meaningPlural": {
-        "es": "Arañas"
+        "es": "Arañas",
+        "en": "Spiders",
+        "fr": "Araignées"
       },
       "source": {
         "pdfPage": 9
@@ -937,10 +1129,14 @@
         "word": "Maba"
       },
       "meaning": {
-        "es": "Casamiento"
+        "es": "Casamiento",
+        "en": "Marriage",
+        "fr": "Mariage"
       },
       "meaningPlural": {
-        "es": "Casamientos"
+        "es": "Casamientos",
+        "en": "Marriages",
+        "fr": "Mariages"
       },
       "source": {
         "pdfPage": 10
@@ -956,10 +1152,14 @@
         "word": "Mabē"
       },
       "meaning": {
-        "es": "Ubre, teta"
+        "es": "Ubre, teta",
+        "en": "Udder, teat",
+        "fr": "Pis, mamelle"
       },
       "meaningPlural": {
-        "es": "Ubres, tetas"
+        "es": "Ubres, tetas",
+        "en": "Udders, teats",
+        "fr": "Pis, mamelles"
       },
       "source": {
         "pdfPage": 10
@@ -975,10 +1175,14 @@
         "word": "Makē"
       },
       "meaning": {
-        "es": "Huevo"
+        "es": "Huevo",
+        "en": "Egg",
+        "fr": "Œuf"
       },
       "meaningPlural": {
-        "es": "Huevos"
+        "es": "Huevos",
+        "en": "Eggs",
+        "fr": "Œufs"
       },
       "source": {
         "pdfPage": 10
@@ -994,10 +1198,14 @@
         "word": "Mamya"
       },
       "meaning": {
-        "es": "Torpedo"
+        "es": "Torpedo",
+        "en": "Torpedo",
+        "fr": "Torpille"
       },
       "meaningPlural": {
-        "es": "Torpedos"
+        "es": "Torpedos",
+        "en": "Torpedoes",
+        "fr": "Torpilles"
       },
       "source": {
         "pdfPage": 10
@@ -1013,10 +1221,14 @@
         "word": "Maso"
       },
       "meaning": {
-        "es": "Nigua"
+        "es": "Nigua",
+        "en": "Chigoe flea",
+        "fr": "Chique"
       },
       "meaningPlural": {
-        "es": "Niguas"
+        "es": "Niguas",
+        "en": "Chigoe fleas",
+        "fr": "Chiques"
       },
       "source": {
         "pdfPage": 10
@@ -1032,10 +1244,14 @@
         "word": "Mandē"
       },
       "meaning": {
-        "es": "Ñame, tubérculo"
+        "es": "Ñame, tubérculo",
+        "en": "Yam, tuber",
+        "fr": "Igname, tubercule"
       },
       "meaningPlural": {
-        "es": "Ñames, tubérculos"
+        "es": "Ñames, tubérculos",
+        "en": "Yams, tubers",
+        "fr": "Ignames, tubercules"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1051,10 +1267,14 @@
         "word": "Mangongola"
       },
       "meaning": {
-        "es": "Plátano especial"
+        "es": "Plátano especial",
+        "en": "Special plantain",
+        "fr": "Banane plantain spéciale"
       },
       "meaningPlural": {
-        "es": "Plátanos especiales"
+        "es": "Plátanos especiales",
+        "en": "Special plantains",
+        "fr": "Bananes plantain spéciales"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1070,10 +1290,14 @@
         "word": "Manyâ"
       },
       "meaning": {
-        "es": "Escama"
+        "es": "Escama",
+        "en": "Scale",
+        "fr": "Écaille"
       },
       "meaningPlural": {
-        "es": "Escamas"
+        "es": "Escamas",
+        "en": "Scales",
+        "fr": "Écailles"
       },
       "source": {
         "pdfPage": 10
@@ -1089,10 +1313,14 @@
         "word": "Matâ"
       },
       "meaning": {
-        "es": "Oreja"
+        "es": "Oreja",
+        "en": "Ear",
+        "fr": "Oreille"
       },
       "meaningPlural": {
-        "es": "Orejas"
+        "es": "Orejas",
+        "en": "Ears",
+        "fr": "Oreilles"
       },
       "source": {
         "pdfPage": 10
@@ -1108,10 +1336,14 @@
         "word": "Mavyâ"
       },
       "meaning": {
-        "es": "Escoba"
+        "es": "Escoba",
+        "en": "Broom",
+        "fr": "Balai"
       },
       "meaningPlural": {
-        "es": "Escobas"
+        "es": "Escobas",
+        "en": "Brooms",
+        "fr": "Balais"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1127,10 +1359,14 @@
         "word": "Miâ"
       },
       "meaning": {
-        "es": "Hogar"
+        "es": "Hogar",
+        "en": "Home",
+        "fr": "Foyer"
       },
       "meaningPlural": {
-        "es": "Hogares"
+        "es": "Hogares",
+        "en": "Homes",
+        "fr": "Foyers"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1147,10 +1383,14 @@
         "word": "Mina"
       },
       "meaning": {
-        "es": "Nombre"
+        "es": "Nombre",
+        "en": "Noun",
+        "fr": "Nom"
       },
       "meaningPlural": {
-        "es": "Nombres"
+        "es": "Nombres",
+        "en": "Names",
+        "fr": "Noms"
       },
       "source": {
         "pdfPage": 10
@@ -1167,10 +1407,14 @@
         "word": "Mihâ"
       },
       "meaning": {
-        "es": "Ojo"
+        "es": "Ojo",
+        "en": "Eye",
+        "fr": "Œil"
       },
       "meaningPlural": {
-        "es": "Ojos"
+        "es": "Ojos",
+        "en": "Eyes",
+        "fr": "Yeux"
       },
       "source": {
         "pdfPage": 10
@@ -1187,10 +1431,14 @@
         "word": "Mâmbi"
       },
       "meaning": {
-        "es": "Puerta"
+        "es": "Puerta",
+        "en": "Door",
+        "fr": "Porte"
       },
       "meaningPlural": {
-        "es": "Puertas"
+        "es": "Puertas",
+        "en": "Doors",
+        "fr": "Portes"
       },
       "source": {
         "pdfPage": 10
@@ -1207,10 +1455,14 @@
         "word": "Moda"
       },
       "meaning": {
-        "es": "Sol"
+        "es": "Sol",
+        "en": "Sun",
+        "fr": "Soleil"
       },
       "meaningPlural": {
-        "es": "Soles"
+        "es": "Soles",
+        "en": "Suns",
+        "fr": "Soleils"
       },
       "source": {
         "pdfPage": 10
@@ -1225,7 +1477,9 @@
         "word": "Mavule"
       },
       "meaning": {
-        "es": "Aceite"
+        "es": "Aceite",
+        "en": "Oil",
+        "fr": "Huile"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1240,7 +1494,9 @@
         "word": "Manyângâ"
       },
       "meaning": {
-        "es": "Leche"
+        "es": "Leche",
+        "en": "Milk",
+        "fr": "Lait"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1255,7 +1511,9 @@
         "word": "Maku"
       },
       "meaning": {
-        "es": "Ron, licor"
+        "es": "Ron, licor",
+        "en": "Rum, liquor",
+        "fr": "Rhum, liqueur"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1270,7 +1528,9 @@
         "word": "Makândâ"
       },
       "meaning": {
-        "es": "Savia"
+        "es": "Savia",
+        "en": "Sap",
+        "fr": "Sève"
       },
       "source": {
         "pdfPage": 10
@@ -1285,7 +1545,9 @@
         "word": "Makiya"
       },
       "meaning": {
-        "es": "Sangre"
+        "es": "Sangre",
+        "en": "Blood",
+        "fr": "Sang"
       },
       "source": {
         "pdfPage": "9-10"
@@ -1300,7 +1562,9 @@
         "word": "Miba"
       },
       "meaning": {
-        "es": "Agua"
+        "es": "Agua",
+        "en": "Water",
+        "fr": "Eau"
       },
       "source": {
         "pdfPage": 10
@@ -1317,10 +1581,14 @@
         "word": "Lonâni"
       },
       "meaning": {
-        "es": "Pájaro"
+        "es": "Pájaro",
+        "en": "Bird",
+        "fr": "Oiseau"
       },
       "meaningPlural": {
-        "es": "Pájaros"
+        "es": "Pájaros",
+        "en": "Birds",
+        "fr": "Oiseaux"
       },
       "source": {
         "pdfPage": 10
@@ -1337,10 +1605,14 @@
         "word": "Loboko"
       },
       "meaning": {
-        "es": "Lugar, sitio"
+        "es": "Lugar, sitio",
+        "en": "Place, site",
+        "fr": "Lieu, endroit"
       },
       "meaningPlural": {
-        "es": "Lugares, sitios"
+        "es": "Lugares, sitios",
+        "en": "Places, sites",
+        "fr": "Lieux, endroits"
       },
       "source": {
         "pdfPage": 10
@@ -1357,10 +1629,14 @@
         "word": "Lokadada"
       },
       "meaning": {
-        "es": "Pimienta"
+        "es": "Pimienta",
+        "en": "Pepper",
+        "fr": "Poivre"
       },
       "meaningPlural": {
-        "es": "Pimientas"
+        "es": "Pimientas",
+        "en": "Peppers",
+        "fr": "Poivres"
       },
       "source": {
         "pdfPage": 10
@@ -1377,10 +1653,14 @@
         "word": "Mebaha"
       },
       "meaning": {
-        "es": "Costado, lado"
+        "es": "Costado, lado",
+        "en": "Side, flank",
+        "fr": "Flanc, côté"
       },
       "meaningPlural": {
-        "es": "Costados, lados"
+        "es": "Costados, lados",
+        "en": "Sides, flanks",
+        "fr": "Flancs, côtés"
       },
       "source": {
         "pdfPage": 11
@@ -1396,10 +1676,14 @@
         "word": "Mebalani"
       },
       "meaning": {
-        "es": "Conquistador"
+        "es": "Conquistador",
+        "en": "Conqueror",
+        "fr": "Conquérant"
       },
       "meaningPlural": {
-        "es": "Conquistadores"
+        "es": "Conquistadores",
+        "en": "Conquerors",
+        "fr": "Conquérants"
       },
       "source": {
         "pdfPage": 11
@@ -1415,10 +1699,14 @@
         "word": "Mebanga"
       },
       "meaning": {
-        "es": "Nuez"
+        "es": "Nuez",
+        "en": "Nut",
+        "fr": "Noix"
       },
       "meaningPlural": {
-        "es": "Nueces"
+        "es": "Nueces",
+        "en": "Nuts",
+        "fr": "Noix"
       },
       "source": {
         "pdfPage": 11
@@ -1434,10 +1722,14 @@
         "word": "Mebango"
       },
       "meaning": {
-        "es": "Diente de marfil"
+        "es": "Diente de marfil",
+        "en": "Ivory tusk",
+        "fr": "Défense d'ivoire"
       },
       "meaningPlural": {
-        "es": "Dientes de marfil"
+        "es": "Dientes de marfil",
+        "en": "Ivory tusks",
+        "fr": "Défenses d'ivoire"
       },
       "source": {
         "pdfPage": 11
@@ -1453,10 +1745,14 @@
         "word": "Mebâki"
       },
       "meaning": {
-        "es": "Hacha, destral"
+        "es": "Hacha, destral",
+        "en": "Axe, hatchet",
+        "fr": "Hache, hachette"
       },
       "meaningPlural": {
-        "es": "Hachas, destrales"
+        "es": "Hachas, destrales",
+        "en": "Axes, hatchets",
+        "fr": "Haches, hachettes"
       },
       "source": {
         "pdfPage": 11
@@ -1472,10 +1768,14 @@
         "word": "Mebândâ"
       },
       "meaning": {
-        "es": "Tiro de fusil"
+        "es": "Tiro de fusil",
+        "en": "Gunshot",
+        "fr": "Coup de fusil"
       },
       "meaningPlural": {
-        "es": "Tiros de fusil"
+        "es": "Tiros de fusil",
+        "en": "Gunshots",
+        "fr": "Coups de fusil"
       },
       "source": {
         "pdfPage": "10-11"
@@ -1491,10 +1791,14 @@
         "word": "Mebendi"
       },
       "meaning": {
-        "es": "Adulador"
+        "es": "Adulador",
+        "en": "Flatterer",
+        "fr": "Flatteur"
       },
       "meaningPlural": {
-        "es": "Aduladores"
+        "es": "Aduladores",
+        "en": "Flatterers",
+        "fr": "Flatteurs"
       },
       "source": {
         "pdfPage": 11
@@ -1510,10 +1814,14 @@
         "word": "Mebēdi"
       },
       "meaning": {
-        "es": "Enfermedad"
+        "es": "Enfermedad",
+        "en": "Illness",
+        "fr": "Maladie"
       },
       "meaningPlural": {
-        "es": "Enfermedades"
+        "es": "Enfermedades",
+        "en": "Illnesses",
+        "fr": "Maladies"
       },
       "source": {
         "pdfPage": 11
@@ -1529,10 +1837,14 @@
         "word": "Mebulubulu"
       },
       "meaning": {
-        "es": "Polvo"
+        "es": "Polvo",
+        "en": "Dust",
+        "fr": "Poussière"
       },
       "meaningPlural": {
-        "es": "Polvos"
+        "es": "Polvos",
+        "en": "Dusts",
+        "fr": "Poussières"
       },
       "source": {
         "pdfPage": 11
@@ -1548,10 +1860,14 @@
         "word": "Mebūa"
       },
       "meaning": {
-        "es": "La mañana"
+        "es": "La mañana",
+        "en": "The morning",
+        "fr": "Le matin"
       },
       "meaningPlural": {
-        "es": "Las mañanas"
+        "es": "Las mañanas",
+        "en": "The mornings",
+        "fr": "Les matins"
       },
       "source": {
         "pdfPage": "10-11"
@@ -1567,10 +1883,14 @@
         "word": "Medâmbē"
       },
       "meaning": {
-        "es": "Oveja"
+        "es": "Oveja",
+        "en": "Sheep",
+        "fr": "Brebis"
       },
       "meaningPlural": {
-        "es": "Ovejas"
+        "es": "Ovejas",
+        "en": "Sheep",
+        "fr": "Brebis"
       },
       "source": {
         "pdfPage": 11
@@ -1600,10 +1920,14 @@
         "word": "Megangano"
       },
       "meaning": {
-        "es": "Compañerismo"
+        "es": "Compañerismo",
+        "en": "Fellowship",
+        "fr": "Camaraderie"
       },
       "meaningPlural": {
-        "es": "Compañerismos"
+        "es": "Compañerismos",
+        "en": "Fellowships",
+        "fr": "Camaraderies"
       },
       "source": {
         "pdfPage": "10-11"
@@ -1619,10 +1943,14 @@
         "word": "Megulu"
       },
       "meaning": {
-        "es": "Cuerda"
+        "es": "Cuerda",
+        "en": "Rope",
+        "fr": "Corde"
       },
       "meaningPlural": {
-        "es": "Cuerdas"
+        "es": "Cuerdas",
+        "en": "Ropes",
+        "fr": "Cordes"
       },
       "source": {
         "pdfPage": "10-11"
@@ -1638,10 +1966,14 @@
         "word": "Mehâ"
       },
       "meaning": {
-        "es": "Pipa"
+        "es": "Pipa",
+        "en": "Pipe",
+        "fr": "Pipe"
       },
       "meaningPlural": {
-        "es": "Pipas"
+        "es": "Pipas",
+        "en": "Pipes",
+        "fr": "Pipes"
       },
       "source": {
         "pdfPage": 11
@@ -1657,10 +1989,14 @@
         "word": "Mehēkē"
       },
       "meaning": {
-        "es": "Playa del mar"
+        "es": "Playa del mar",
+        "en": "Seashore",
+        "fr": "Plage de mer"
       },
       "meaningPlural": {
-        "es": "Playas del mar"
+        "es": "Playas del mar",
+        "en": "Seashores",
+        "fr": "Plages de mer"
       },
       "source": {
         "pdfPage": 11
@@ -1676,10 +2012,14 @@
         "word": "Mehēngē"
       },
       "meaning": {
-        "es": "Calle"
+        "es": "Calle",
+        "en": "Street",
+        "fr": "Rue"
       },
       "meaningPlural": {
-        "es": "Calles"
+        "es": "Calles",
+        "en": "Streets",
+        "fr": "Rues"
       },
       "source": {
         "pdfPage": 11
@@ -1695,10 +2035,14 @@
         "word": "Mehiha"
       },
       "meaning": {
-        "es": "Nervio, vena"
+        "es": "Nervio, vena",
+        "en": "Nerve, vein",
+        "fr": "Nerf, veine"
       },
       "meaningPlural": {
-        "es": "Nervios, venas"
+        "es": "Nervios, venas",
+        "en": "Nerves, veins",
+        "fr": "Nerfs, veines"
       },
       "source": {
         "pdfPage": 11
@@ -1714,10 +2058,14 @@
         "word": "Mehinganakano"
       },
       "meaning": {
-        "es": "Cadena"
+        "es": "Cadena",
+        "en": "Chain",
+        "fr": "Chaîne"
       },
       "meaningPlural": {
-        "es": "Cadenas"
+        "es": "Cadenas",
+        "en": "Chains",
+        "fr": "Chaînes"
       },
       "source": {
         "pdfPage": 11
@@ -1733,10 +2081,14 @@
         "word": "Mehingi"
       },
       "meaning": {
-        "es": "Gato salvaje"
+        "es": "Gato salvaje",
+        "en": "Wildcat",
+        "fr": "Chat sauvage"
       },
       "meaningPlural": {
-        "es": "Gatos salvajes"
+        "es": "Gatos salvajes",
+        "en": "Wildcats",
+        "fr": "Chats sauvages"
       },
       "source": {
         "pdfPage": 11
@@ -1752,10 +2104,14 @@
         "word": "Miadi"
       },
       "meaning": {
-        "es": "Hembra"
+        "es": "Hembra",
+        "en": "Female",
+        "fr": "Femelle"
       },
       "meaningPlural": {
-        "es": "Hembras"
+        "es": "Hembras",
+        "en": "Females",
+        "fr": "Femelles"
       },
       "source": {
         "pdfPage": 11
@@ -1771,10 +2127,14 @@
         "word": "Miahi"
       },
       "meaning": {
-        "es": "Erizo, peine de adorno"
+        "es": "Erizo, peine de adorno",
+        "en": "Hedgehog, ornamental comb",
+        "fr": "Hérisson, peigne d'ornement"
       },
       "meaningPlural": {
-        "es": "Erizos, peines de adorno"
+        "es": "Erizos, peines de adorno",
+        "en": "Hedgehogs, ornamental combs",
+        "fr": "Hérissons, peignes d'ornement"
       },
       "source": {
         "pdfPage": 11
@@ -1790,10 +2150,14 @@
         "word": "Miako"
       },
       "meaning": {
-        "es": "Confianza"
+        "es": "Confianza",
+        "en": "Trust",
+        "fr": "Confiance"
       },
       "meaningPlural": {
-        "es": "Confianzas"
+        "es": "Confianzas",
+        "en": "Trusts",
+        "fr": "Confiances"
       },
       "source": {
         "pdfPage": 11
@@ -1809,10 +2173,14 @@
         "word": "Mialika"
       },
       "meaning": {
-        "es": "Vihuela"
+        "es": "Vihuela",
+        "en": "Vihuela",
+        "fr": "Vihuela"
       },
       "meaningPlural": {
-        "es": "Vihuelas"
+        "es": "Vihuelas",
+        "en": "Vihuelas",
+        "fr": "Vihuelas"
       },
       "source": {
         "pdfPage": 11
@@ -1828,10 +2196,14 @@
         "word": "Miambo"
       },
       "meaning": {
-        "es": "Sacrificio, oferta"
+        "es": "Sacrificio, oferta",
+        "en": "Sacrifice, offering",
+        "fr": "Sacrifice, offrande"
       },
       "meaningPlural": {
-        "es": "Sacrificios, ofertas"
+        "es": "Sacrificios, ofertas",
+        "en": "Sacrifices, offerings",
+        "fr": "Sacrifices, offrandes"
       },
       "source": {
         "pdfPage": 11
@@ -1847,10 +2219,14 @@
         "word": "Mianga"
       },
       "meaning": {
-        "es": "Rebaño, huerto"
+        "es": "Rebaño, huerto",
+        "en": "Flock, garden",
+        "fr": "Troupeau, jardin"
       },
       "meaningPlural": {
-        "es": "Rebaños, huertos"
+        "es": "Rebaños, huertos",
+        "en": "Flocks, gardens",
+        "fr": "Troupeaux, jardins"
       },
       "source": {
         "pdfPage": 11
@@ -1866,10 +2242,14 @@
         "word": "Mianjo"
       },
       "meaning": {
-        "es": "Justicia"
+        "es": "Justicia",
+        "en": "Justice",
+        "fr": "Justice"
       },
       "meaningPlural": {
-        "es": "Justicias"
+        "es": "Justicias",
+        "en": "Justices",
+        "fr": "Justices"
       },
       "source": {
         "pdfPage": 11
@@ -1885,10 +2265,14 @@
         "word": "Miemba"
       },
       "meaning": {
-        "es": "Sopa, salsa"
+        "es": "Sopa, salsa",
+        "en": "Soup, sauce",
+        "fr": "Soupe, sauce"
       },
       "meaningPlural": {
-        "es": "Sopas, salsas"
+        "es": "Sopas, salsas",
+        "en": "Soups, sauces",
+        "fr": "Soupes, sauces"
       },
       "source": {
         "pdfPage": 11
@@ -1904,10 +2288,14 @@
         "word": "Miēngi"
       },
       "meaning": {
-        "es": "Extranjero"
+        "es": "Extranjero",
+        "en": "Foreigner",
+        "fr": "Étranger"
       },
       "meaningPlural": {
-        "es": "Extranjeros"
+        "es": "Extranjeros",
+        "en": "Foreigners",
+        "fr": "Étrangers"
       },
       "source": {
         "pdfPage": 11
@@ -1923,10 +2311,14 @@
         "word": "Miēni"
       },
       "meaning": {
-        "es": "Brazalete"
+        "es": "Brazalete",
+        "en": "Bracelet",
+        "fr": "Bracelet"
       },
       "meaningPlural": {
-        "es": "Brazaletes"
+        "es": "Brazaletes",
+        "en": "Bracelets",
+        "fr": "Bracelets"
       },
       "source": {
         "pdfPage": 11
@@ -1942,10 +2334,14 @@
         "word": "Miidi"
       },
       "meaning": {
-        "es": "Banco, orilla"
+        "es": "Banco, orilla",
+        "en": "Bench, bank",
+        "fr": "Banc, rive"
       },
       "meaningPlural": {
-        "es": "Bancos, orillas"
+        "es": "Bancos, orillas",
+        "en": "Benches, banks",
+        "fr": "Bancs, rives"
       },
       "source": {
         "pdfPage": 11
@@ -1961,10 +2357,14 @@
         "word": "Miindi"
       },
       "meaning": {
-        "es": "Montón, hato"
+        "es": "Montón, hato",
+        "en": "Heap, herd",
+        "fr": "Tas, troupeau"
       },
       "meaningPlural": {
-        "es": "Montones, hatos"
+        "es": "Montones, hatos",
+        "en": "Heaps, herds",
+        "fr": "Tas, troupeaux"
       },
       "source": {
         "pdfPage": 11
@@ -1980,7 +2380,9 @@
         "word": "Miiya"
       },
       "meaning": {
-        "es": "Intestinos"
+        "es": "Intestinos",
+        "en": "Intestines",
+        "fr": "Intestins"
       },
       "source": {
         "pdfPage": 11
@@ -1996,10 +2398,14 @@
         "word": "Bajo"
       },
       "meaning": {
-        "es": "Mujer"
+        "es": "Mujer",
+        "en": "Woman",
+        "fr": "Femme"
       },
       "meaningPlural": {
-        "es": "Mujeres"
+        "es": "Mujeres",
+        "en": "Women",
+        "fr": "Femmes"
       },
       "source": {
         "pdfPage": 11
@@ -2016,10 +2422,14 @@
         "word": "Miolo"
       },
       "meaning": {
-        "es": "Cabeza"
+        "es": "Cabeza",
+        "en": "Head",
+        "fr": "Tête"
       },
       "meaningPlural": {
-        "es": "Cabezas"
+        "es": "Cabezas",
+        "en": "Heads",
+        "fr": "Têtes"
       },
       "source": {
         "pdfPage": 11
@@ -2036,10 +2446,14 @@
         "word": "Mibako"
       },
       "meaning": {
-        "es": "Vaina, funda"
+        "es": "Vaina, funda",
+        "en": "Sheath, cover",
+        "fr": "Gaine, fourreau"
       },
       "meaningPlural": {
-        "es": "Vainas, fundas"
+        "es": "Vainas, fundas",
+        "en": "Sheaths, covers",
+        "fr": "Gaines, fourreaux"
       },
       "source": {
         "pdfPage": 11
@@ -2055,10 +2469,14 @@
         "word": "Mibâbu"
       },
       "meaning": {
-        "es": "Blandura"
+        "es": "Blandura",
+        "en": "Softness",
+        "fr": "Douceur"
       },
       "meaningPlural": {
-        "es": "Blanduras"
+        "es": "Blanduras",
+        "en": "Softnesses",
+        "fr": "Douceurs"
       },
       "source": {
         "pdfPage": 11
@@ -2074,10 +2492,14 @@
         "word": "Mioho"
       },
       "meaning": {
-        "es": "Cara, frente"
+        "es": "Cara, frente",
+        "en": "Face, forehead",
+        "fr": "Visage, front"
       },
       "meaningPlural": {
-        "es": "Caras, frentes"
+        "es": "Caras, frentes",
+        "en": "Faces, foreheads",
+        "fr": "Visages, fronts"
       },
       "source": {
         "pdfPage": 12
@@ -2093,10 +2515,14 @@
         "word": "Mijoūa"
       },
       "meaning": {
-        "es": "Mentira"
+        "es": "Mentira",
+        "en": "Lie",
+        "fr": "Mensonge"
       },
       "meaningPlural": {
-        "es": "Mentiras"
+        "es": "Mentiras",
+        "en": "Lies",
+        "fr": "Mensonges"
       },
       "source": {
         "pdfPage": "11-12"
@@ -2112,10 +2538,14 @@
         "word": "Miongo"
       },
       "meaning": {
-        "es": "Espina, punta"
+        "es": "Espina, punta",
+        "en": "Thorn, point",
+        "fr": "Épine, pointe"
       },
       "meaningPlural": {
-        "es": "Espinas, puntas"
+        "es": "Espinas, puntas",
+        "en": "Thorns, points",
+        "fr": "Épines, pointes"
       },
       "source": {
         "pdfPage": "11-12"
@@ -2131,10 +2561,14 @@
         "word": "Mingomo"
       },
       "meaning": {
-        "es": "Miseria, pobreza"
+        "es": "Miseria, pobreza",
+        "en": "Misery, poverty",
+        "fr": "Misère, pauvreté"
       },
       "meaningPlural": {
-        "es": "Miserias, pobrezas"
+        "es": "Miserias, pobrezas",
+        "en": "Miseries, poverties",
+        "fr": "Misères, pauvretés"
       },
       "source": {
         "pdfPage": 12
@@ -2150,10 +2584,14 @@
         "word": "Miva"
       },
       "meaning": {
-        "es": "Don, regalo"
+        "es": "Don, regalo",
+        "en": "Gift, present",
+        "fr": "Don, cadeau"
       },
       "meaningPlural": {
-        "es": "Dones, regalos"
+        "es": "Dones, regalos",
+        "en": "Gifts, presents",
+        "fr": "Dons, cadeaux"
       },
       "source": {
         "pdfPage": 12
@@ -2169,10 +2607,14 @@
         "word": "Miokâ"
       },
       "meaning": {
-        "es": "Estación lluviosa"
+        "es": "Estación lluviosa",
+        "en": "Rainy season",
+        "fr": "Saison des pluies"
       },
       "meaningPlural": {
-        "es": "Estaciones lluviosas"
+        "es": "Estaciones lluviosas",
+        "en": "Rainy seasons",
+        "fr": "Saisons des pluies"
       },
       "source": {
         "pdfPage": 12
@@ -2190,10 +2632,14 @@
         "word": "Mialo"
       },
       "meaning": {
-        "es": "Canoa"
+        "es": "Canoa",
+        "en": "Canoe",
+        "fr": "Pirogue"
       },
       "meaningPlural": {
-        "es": "Canoas"
+        "es": "Canoas",
+        "en": "Canoes",
+        "fr": "Pirogues"
       },
       "source": {
         "pdfPage": 12
@@ -2209,10 +2655,14 @@
         "word": "Mianga"
       },
       "meaning": {
-        "es": "Campana supersticiosa"
+        "es": "Campana supersticiosa",
+        "en": "Superstitious bell",
+        "fr": "Cloche superstitieuse"
       },
       "meaningPlural": {
-        "es": "Campanas supersticiosas"
+        "es": "Campanas supersticiosas",
+        "en": "Superstitious bells",
+        "fr": "Cloches superstitieuses"
       },
       "source": {
         "pdfPage": 11
@@ -2228,10 +2678,14 @@
         "word": "Miayē"
       },
       "meaning": {
-        "es": "Violencia"
+        "es": "Violencia",
+        "en": "Violence",
+        "fr": "Violence"
       },
       "meaningPlural": {
-        "es": "Violencias"
+        "es": "Violencias",
+        "en": "Acts of violence",
+        "fr": "Violences"
       },
       "source": {
         "pdfPage": 12
@@ -2247,10 +2701,14 @@
         "word": "Mie"
       },
       "meaning": {
-        "es": "Luz"
+        "es": "Luz",
+        "en": "Light",
+        "fr": "Lumière"
       },
       "meaningPlural": {
-        "es": "Luces"
+        "es": "Luces",
+        "en": "Lights",
+        "fr": "Lumières"
       },
       "source": {
         "pdfPage": 12
@@ -2266,10 +2724,14 @@
         "word": "Mieka"
       },
       "meaning": {
-        "es": "Odio"
+        "es": "Odio",
+        "en": "Hatred",
+        "fr": "Haine"
       },
       "meaningPlural": {
-        "es": "Odios"
+        "es": "Odios",
+        "en": "Hatreds",
+        "fr": "Haines"
       },
       "source": {
         "pdfPage": 12
@@ -2285,10 +2747,14 @@
         "word": "Melohi"
       },
       "meaning": {
-        "es": "Naranja"
+        "es": "Naranja",
+        "en": "Orange",
+        "fr": "Orange"
       },
       "meaningPlural": {
-        "es": "Naranjas"
+        "es": "Naranjas",
+        "en": "Oranges",
+        "fr": "Oranges"
       },
       "source": {
         "pdfPage": 12
@@ -2305,10 +2771,14 @@
         "word": "ūhi"
       },
       "meaning": {
-        "es": "Día"
+        "es": "Día",
+        "en": "Day",
+        "fr": "Jour"
       },
       "meaningPlural": {
-        "es": "Días"
+        "es": "Días",
+        "en": "Days",
+        "fr": "Jours"
       },
       "source": {
         "pdfPage": "11-12"
@@ -2325,10 +2795,14 @@
         "word": "Bahano"
       },
       "meaning": {
-        "es": "Promesa"
+        "es": "Promesa",
+        "en": "Promise",
+        "fr": "Promesse"
       },
       "meaningPlural": {
-        "es": "Promesas"
+        "es": "Promesas",
+        "en": "Promises",
+        "fr": "Promesses"
       },
       "source": {
         "pdfPage": 12
@@ -2344,10 +2818,14 @@
         "word": "Bamo"
       },
       "meaning": {
-        "es": "Hombre"
+        "es": "Hombre",
+        "en": "Man",
+        "fr": "Homme"
       },
       "meaningPlural": {
-        "es": "Hombres"
+        "es": "Hombres",
+        "en": "Men",
+        "fr": "Hommes"
       },
       "source": {
         "pdfPage": 12
@@ -2363,10 +2841,14 @@
         "word": "Bato"
       },
       "meaning": {
-        "es": "Persona"
+        "es": "Persona",
+        "en": "Person",
+        "fr": "Personne"
       },
       "meaningPlural": {
-        "es": "Personas"
+        "es": "Personas",
+        "en": "People",
+        "fr": "Personnes"
       },
       "source": {
         "pdfPage": 12
@@ -2382,10 +2864,14 @@
         "word": "Banda"
       },
       "meaning": {
-        "es": "Invitación"
+        "es": "Invitación",
+        "en": "Invitation",
+        "fr": "Invitation"
       },
       "meaningPlural": {
-        "es": "Invitaciones"
+        "es": "Invitaciones",
+        "en": "Invitations",
+        "fr": "Invitations"
       },
       "source": {
         "pdfPage": 12
@@ -2401,10 +2887,14 @@
         "word": "Batoba"
       },
       "meaning": {
-        "es": "Caracol"
+        "es": "Caracol",
+        "en": "Snail",
+        "fr": "Escargot"
       },
       "meaningPlural": {
-        "es": "Caracoles"
+        "es": "Caracoles",
+        "en": "Snails",
+        "fr": "Escargots"
       },
       "source": {
         "pdfPage": 12
@@ -2420,10 +2910,14 @@
         "word": "Bangolu"
       },
       "meaning": {
-        "es": "Escarabajo"
+        "es": "Escarabajo",
+        "en": "Beetle",
+        "fr": "Scarabée"
       },
       "meaningPlural": {
-        "es": "Escarabajos"
+        "es": "Escarabajos",
+        "en": "Beetles",
+        "fr": "Scarabées"
       },
       "source": {
         "pdfPage": 12
@@ -2439,10 +2933,14 @@
         "word": "Bobapami"
       },
       "meaning": {
-        "es": "Portador"
+        "es": "Portador",
+        "en": "Bearer",
+        "fr": "Porteur"
       },
       "meaningPlural": {
-        "es": "Portadores"
+        "es": "Portadores",
+        "en": "Bearers",
+        "fr": "Porteurs"
       },
       "source": {
         "pdfPage": 12
@@ -2459,10 +2957,14 @@
         "word": "Leya"
       },
       "meaning": {
-        "es": "Fuego, leña"
+        "es": "Fuego, leña",
+        "en": "Fire, firewood",
+        "fr": "Feu, bois de chauffage"
       },
       "meaningPlural": {
-        "es": "Fuegos, leñas"
+        "es": "Fuegos, leñas",
+        "en": "Fires, firewood",
+        "fr": "Feux, bois de chauffage"
       },
       "source": {
         "pdfPage": 12
@@ -2478,10 +2980,14 @@
         "word": "Lijo"
       },
       "meaning": {
-        "es": "Nariz"
+        "es": "Nariz",
+        "en": "Nose",
+        "fr": "Nez"
       },
       "meaningPlural": {
-        "es": "Narices"
+        "es": "Narices",
+        "en": "Noses",
+        "fr": "Nez"
       },
       "source": {
         "pdfPage": 12
@@ -2497,10 +3003,14 @@
         "word": "Liâ"
       },
       "meaning": {
-        "es": "Sueño"
+        "es": "Sueño",
+        "en": "Dream",
+        "fr": "Rêve"
       },
       "meaningPlural": {
-        "es": "Sueños"
+        "es": "Sueños",
+        "en": "Dreams",
+        "fr": "Rêves"
       },
       "source": {
         "pdfPage": "12-13"
@@ -2516,10 +3026,14 @@
         "word": "Liho"
       },
       "meaning": {
-        "es": "Río"
+        "es": "Río",
+        "en": "River",
+        "fr": "Rivière"
       },
       "meaningPlural": {
-        "es": "Ríos"
+        "es": "Ríos",
+        "en": "Rivers",
+        "fr": "Rivières"
       },
       "source": {
         "pdfPage": 12
@@ -2535,10 +3049,14 @@
         "word": "Lololombo"
       },
       "meaning": {
-        "es": "Átomo, partícula"
+        "es": "Átomo, partícula",
+        "en": "Atom, particle",
+        "fr": "Atome, particule"
       },
       "meaningPlural": {
-        "es": "Átomos, partículas"
+        "es": "Átomos, partículas",
+        "en": "Atoms, particles",
+        "fr": "Atomes, particules"
       },
       "source": {
         "pdfPage": 12
@@ -2554,10 +3072,14 @@
         "word": "Longangambi"
       },
       "meaning": {
-        "es": "Capricho, extravagancia"
+        "es": "Capricho, extravagancia",
+        "en": "Whim, extravagance",
+        "fr": "Caprice, extravagance"
       },
       "meaningPlural": {
-        "es": "Caprichos, extravagancias"
+        "es": "Caprichos, extravagancias",
+        "en": "Whims, extravagances",
+        "fr": "Caprices, extravagances"
       },
       "source": {
         "pdfPage": 12
@@ -2573,10 +3095,14 @@
         "word": "Longunguhu"
       },
       "meaning": {
-        "es": "Miga"
+        "es": "Miga",
+        "en": "Crumb",
+        "fr": "Miette"
       },
       "meaningPlural": {
-        "es": "Migas"
+        "es": "Migas",
+        "en": "Crumbs",
+        "fr": "Miettes"
       },
       "source": {
         "pdfPage": 12
@@ -2592,10 +3118,14 @@
         "word": "Lopupuhu"
       },
       "meaning": {
-        "es": "Fragmento"
+        "es": "Fragmento",
+        "en": "Fragment",
+        "fr": "Fragment"
       },
       "meaningPlural": {
-        "es": "Fragmentos"
+        "es": "Fragmentos",
+        "en": "Fragments",
+        "fr": "Fragments"
       },
       "source": {
         "pdfPage": 12
@@ -2611,10 +3141,14 @@
         "word": "Litūa"
       },
       "meaning": {
-        "es": "Vela, luz de candela"
+        "es": "Vela, luz de candela",
+        "en": "Candle, candlelight",
+        "fr": "Bougie, lumière de bougie"
       },
       "meaningPlural": {
-        "es": "Velas, luces de candela"
+        "es": "Velas, luces de candela",
+        "en": "Candles, candlelights",
+        "fr": "Bougies, lumières de bougie"
       },
       "source": {
         "pdfPage": "12-13"
@@ -2630,10 +3164,14 @@
         "word": "Loyonda"
       },
       "meaning": {
-        "es": "La estación seca"
+        "es": "La estación seca",
+        "en": "The dry season",
+        "fr": "La saison sèche"
       },
       "meaningPlural": {
-        "es": "Las estaciones secas"
+        "es": "Las estaciones secas",
+        "en": "The dry seasons",
+        "fr": "Les saisons sèches"
       },
       "source": {
         "pdfPage": 12
@@ -2649,10 +3187,14 @@
         "word": "Lembo"
       },
       "meaning": {
-        "es": "Himno, canto"
+        "es": "Himno, canto",
+        "en": "Hymn, song",
+        "fr": "Hymne, chant"
       },
       "meaningPlural": {
-        "es": "Himnos, cantos"
+        "es": "Himnos, cantos",
+        "en": "Hymns, songs",
+        "fr": "Hymnes, chants"
       },
       "source": {
         "pdfPage": 12
@@ -2668,10 +3210,14 @@
         "word": "Laha"
       },
       "meaning": {
-        "es": "Limón"
+        "es": "Limón",
+        "en": "Lemon",
+        "fr": "Citron"
       },
       "meaningPlural": {
-        "es": "Limones"
+        "es": "Limones",
+        "en": "Lemons",
+        "fr": "Citrons"
       },
       "source": {
         "pdfPage": 13
@@ -2688,10 +3234,14 @@
         "word": "Langa"
       },
       "meaning": {
-        "es": "sal"
+        "es": "sal",
+        "en": "salt",
+        "fr": "sel"
       },
       "meaningPlural": {
-        "es": "Gran cantidad de sal"
+        "es": "Gran cantidad de sal",
+        "en": "Large amount of salt",
+        "fr": "Grande quantité de sel"
       },
       "source": {
         "pdfPage": 13
@@ -2708,10 +3258,14 @@
         "word": "Lohi"
       },
       "meaning": {
-        "es": "Rayo de sol"
+        "es": "Rayo de sol",
+        "en": "Sunbeam",
+        "fr": "Rayon de soleil"
       },
       "meaningPlural": {
-        "es": "Rayos de sol"
+        "es": "Rayos de sol",
+        "en": "Sunbeams",
+        "fr": "Rayons de soleil"
       },
       "source": {
         "pdfPage": 13
@@ -2728,10 +3282,14 @@
         "word": "Fala"
       },
       "meaning": {
-        "es": "Francés"
+        "es": "Francés",
+        "en": "Frenchman",
+        "fr": "Français"
       },
       "meaningPlural": {
-        "es": "Franceses"
+        "es": "Franceses",
+        "en": "Frenchmen",
+        "fr": "Français"
       },
       "source": {
         "pdfPage": 13
@@ -2747,10 +3305,14 @@
         "word": "Fato"
       },
       "meaning": {
-        "es": "Media, calceta"
+        "es": "Media, calceta",
+        "en": "Stocking, sock",
+        "fr": "Bas, chaussette"
       },
       "meaningPlural": {
-        "es": "Medias, calcetas"
+        "es": "Medias, calcetas",
+        "en": "Stockings, socks",
+        "fr": "Bas, chaussettes"
       },
       "source": {
         "pdfPage": 13
@@ -2766,10 +3328,14 @@
         "word": "Fula"
       },
       "meaning": {
-        "es": "Franco, moneda"
+        "es": "Franco, moneda",
+        "en": "Franc, coin",
+        "fr": "Franc, pièce de monnaie"
       },
       "meaningPlural": {
-        "es": "Francos, monedas"
+        "es": "Francos, monedas",
+        "en": "Francs, coins",
+        "fr": "Francs, pièces de monnaie"
       },
       "source": {
         "pdfPage": 13
@@ -2785,10 +3351,14 @@
         "word": "Dyate"
       },
       "meaning": {
-        "es": "Cinta del sombrero"
+        "es": "Cinta del sombrero",
+        "en": "Hatband",
+        "fr": "Ruban de chapeau"
       },
       "meaningPlural": {
-        "es": "Cintas del sombrero"
+        "es": "Cintas del sombrero",
+        "en": "Hatbands",
+        "fr": "Rubans de chapeau"
       },
       "source": {
         "pdfPage": "13-14"
@@ -2804,10 +3374,14 @@
         "word": "Hako"
       },
       "meaning": {
-        "es": "Hormiga"
+        "es": "Hormiga",
+        "en": "Ant",
+        "fr": "Fourmi"
       },
       "meaningPlural": {
-        "es": "Hormigas"
+        "es": "Hormigas",
+        "en": "Ants",
+        "fr": "Fourmis"
       },
       "source": {
         "pdfPage": 14
@@ -2825,10 +3399,14 @@
         "word": "Hapi"
       },
       "meaning": {
-        "es": "Cerradura"
+        "es": "Cerradura",
+        "en": "Lock",
+        "fr": "Serrure"
       },
       "meaningPlural": {
-        "es": "Cerraduras"
+        "es": "Cerraduras",
+        "en": "Locks",
+        "fr": "Serrures"
       },
       "source": {
         "pdfPage": 13
@@ -2844,10 +3422,14 @@
         "word": "Hoūe"
       },
       "meaning": {
-        "es": "Pelo, cabello"
+        "es": "Pelo, cabello",
+        "en": "Hair, strand of hair",
+        "fr": "Poil, cheveu"
       },
       "meaningPlural": {
-        "es": "Pelos, cabellos"
+        "es": "Pelos, cabellos",
+        "en": "Hairs, strands of hair",
+        "fr": "Poils, cheveux"
       },
       "source": {
         "pdfPage": "13-14"
@@ -2863,10 +3445,14 @@
         "word": "Jângâ"
       },
       "meaning": {
-        "es": "Temor (clase de)"
+        "es": "Temor (clase de)",
+        "en": "Fear (a kind of)",
+        "fr": "Crainte (une sorte de)"
       },
       "meaningPlural": {
-        "es": "Temores (clases de)"
+        "es": "Temores (clases de)",
+        "en": "Fears (kinds of)",
+        "fr": "Craintes (sortes de)"
       },
       "source": {
         "pdfPage": 13
@@ -2882,10 +3468,14 @@
         "word": "Jonda"
       },
       "meaning": {
-        "es": "Rana"
+        "es": "Rana",
+        "en": "Frog",
+        "fr": "Grenouille"
       },
       "meaningPlural": {
-        "es": "Ranas"
+        "es": "Ranas",
+        "en": "Frogs",
+        "fr": "Grenouilles"
       },
       "source": {
         "pdfPage": 13
@@ -2901,10 +3491,14 @@
         "word": "Jumba"
       },
       "meaning": {
-        "es": "Carga"
+        "es": "Carga",
+        "en": "Load",
+        "fr": "Charge"
       },
       "meaningPlural": {
-        "es": "Cargas"
+        "es": "Cargas",
+        "en": "Loads",
+        "fr": "Charges"
       },
       "source": {
         "pdfPage": 13
@@ -2920,10 +3514,14 @@
         "word": "Kabala"
       },
       "meaning": {
-        "es": "Caballo"
+        "es": "Caballo",
+        "en": "Horse",
+        "fr": "Cheval"
       },
       "meaningPlural": {
-        "es": "Caballos"
+        "es": "Caballos",
+        "en": "Horses",
+        "fr": "Chevaux"
       },
       "source": {
         "pdfPage": 13
@@ -2939,10 +3537,14 @@
         "word": "Kâtâ"
       },
       "meaning": {
-        "es": "Tranca"
+        "es": "Tranca",
+        "en": "Bar",
+        "fr": "Barre"
       },
       "meaningPlural": {
-        "es": "Trancas"
+        "es": "Trancas",
+        "en": "Bars",
+        "fr": "Barres"
       },
       "source": {
         "pdfPage": 13
@@ -2958,10 +3560,14 @@
         "word": "Kono"
       },
       "meaning": {
-        "es": "Bisagra"
+        "es": "Bisagra",
+        "en": "Hinge",
+        "fr": "Charnière"
       },
       "meaningPlural": {
-        "es": "Bisagras"
+        "es": "Bisagras",
+        "en": "Hinges",
+        "fr": "Charnières"
       },
       "source": {
         "pdfPage": 13
@@ -2977,10 +3583,14 @@
         "word": "Kuma"
       },
       "meaning": {
-        "es": "Fama, renombre"
+        "es": "Fama, renombre",
+        "en": "Fame, renown",
+        "fr": "Renommée, célébrité"
       },
       "meaningPlural": {
-        "es": "Famas, renombres"
+        "es": "Famas, renombres",
+        "en": "Fames, renowns",
+        "fr": "Renommées, célébrités"
       },
       "source": {
         "pdfPage": 13
@@ -2996,10 +3606,14 @@
         "word": "Mâkâ"
       },
       "meaning": {
-        "es": "Tienda de campaña"
+        "es": "Tienda de campaña",
+        "en": "Tent",
+        "fr": "Tente"
       },
       "meaningPlural": {
-        "es": "Tiendas de campaña"
+        "es": "Tiendas de campaña",
+        "en": "Tents",
+        "fr": "Tentes"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3015,10 +3629,14 @@
         "word": "Pago"
       },
       "meaning": {
-        "es": "Tributo"
+        "es": "Tributo",
+        "en": "Tribute",
+        "fr": "Tribut"
       },
       "meaningPlural": {
-        "es": "Tributos"
+        "es": "Tributos",
+        "en": "Tributes",
+        "fr": "Tributs"
       },
       "source": {
         "pdfPage": 13
@@ -3034,10 +3652,14 @@
         "word": "Paha"
       },
       "meaning": {
-        "es": "Rama"
+        "es": "Rama",
+        "en": "Branch",
+        "fr": "Branche"
       },
       "meaningPlural": {
-        "es": "Ramas"
+        "es": "Ramas",
+        "en": "Branches",
+        "fr": "Branches"
       },
       "source": {
         "pdfPage": 13
@@ -3053,10 +3675,14 @@
         "word": "Panga"
       },
       "meaning": {
-        "es": "Cadena, promesa"
+        "es": "Cadena, promesa",
+        "en": "Chain, promise",
+        "fr": "Chaîne, promesse"
       },
       "meaningPlural": {
-        "es": "Cadenas, promesas"
+        "es": "Cadenas, promesas",
+        "en": "Chains, promises",
+        "fr": "Chaînes, promesses"
       },
       "source": {
         "pdfPage": 13
@@ -3072,10 +3698,14 @@
         "word": "Tagulu"
       },
       "meaning": {
-        "es": "Mesa"
+        "es": "Mesa",
+        "en": "Table",
+        "fr": "Table"
       },
       "meaningPlural": {
-        "es": "Mesas"
+        "es": "Mesas",
+        "en": "Tables",
+        "fr": "Tables"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3091,10 +3721,14 @@
         "word": "Tina"
       },
       "meaning": {
-        "es": "Razón, causa"
+        "es": "Razón, causa",
+        "en": "Reason, cause",
+        "fr": "Raison, cause"
       },
       "meaningPlural": {
-        "es": "Razones, causas"
+        "es": "Razones, causas",
+        "en": "Reasons, causes",
+        "fr": "Raisons, causes"
       },
       "source": {
         "pdfPage": 13
@@ -3112,10 +3746,14 @@
         "word": "Tito"
       },
       "meaning": {
-        "es": "Bestia, animal"
+        "es": "Bestia, animal",
+        "en": "Beast, animal",
+        "fr": "Bête, animal"
       },
       "meaningPlural": {
-        "es": "Bestias, animales"
+        "es": "Bestias, animales",
+        "en": "Beasts, animals",
+        "fr": "Bêtes, animaux"
       },
       "source": {
         "pdfPage": 13
@@ -3133,10 +3771,14 @@
         "word": "Toko"
       },
       "meaning": {
-        "es": "Cuchara"
+        "es": "Cuchara",
+        "en": "Spoon",
+        "fr": "Cuillère"
       },
       "meaningPlural": {
-        "es": "Cucharas"
+        "es": "Cucharas",
+        "en": "Spoons",
+        "fr": "Cuillères"
       },
       "source": {
         "pdfPage": 13
@@ -3152,10 +3794,14 @@
         "word": "Tolongo"
       },
       "meaning": {
-        "es": "Baúl"
+        "es": "Baúl",
+        "en": "Trunk",
+        "fr": "Malle"
       },
       "meaningPlural": {
-        "es": "Baúles"
+        "es": "Baúles",
+        "en": "Trunks",
+        "fr": "Malles"
       },
       "source": {
         "pdfPage": 13
@@ -3171,10 +3817,14 @@
         "word": "Tombo"
       },
       "meaning": {
-        "es": "Aguja"
+        "es": "Aguja",
+        "en": "Needle",
+        "fr": "Aiguille"
       },
       "meaningPlural": {
-        "es": "Agujas"
+        "es": "Agujas",
+        "en": "Needles",
+        "fr": "Aiguilles"
       },
       "source": {
         "pdfPage": 13
@@ -3190,10 +3840,14 @@
         "word": "Tongo"
       },
       "meaning": {
-        "es": "Manantial"
+        "es": "Manantial",
+        "en": "Spring",
+        "fr": "Source"
       },
       "meaningPlural": {
-        "es": "Manantiales"
+        "es": "Manantiales",
+        "en": "Springs",
+        "fr": "Sources"
       },
       "source": {
         "pdfPage": 13
@@ -3209,10 +3863,14 @@
         "word": "Tudi"
       },
       "meaning": {
-        "es": "Disgusto, fastidio"
+        "es": "Disgusto, fastidio",
+        "en": "Displeasure, annoyance",
+        "fr": "Déplaisir, ennui"
       },
       "meaningPlural": {
-        "es": "Disgustos, fastidios"
+        "es": "Disgustos, fastidios",
+        "en": "Displeasures, annoyances",
+        "fr": "Déplaisirs, ennuis"
       },
       "source": {
         "pdfPage": 13
@@ -3228,10 +3886,14 @@
         "word": "Tuma"
       },
       "meaning": {
-        "es": "Tenedor"
+        "es": "Tenedor",
+        "en": "Fork",
+        "fr": "Fourchette"
       },
       "meaningPlural": {
-        "es": "Tenedores"
+        "es": "Tenedores",
+        "en": "Forks",
+        "fr": "Fourchettes"
       },
       "source": {
         "pdfPage": 13
@@ -3247,10 +3909,14 @@
         "word": "Tungu"
       },
       "meaning": {
-        "es": "Bahía"
+        "es": "Bahía",
+        "en": "Bay",
+        "fr": "Baie"
       },
       "meaningPlural": {
-        "es": "Bahías"
+        "es": "Bahías",
+        "en": "Bays",
+        "fr": "Baies"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3266,10 +3932,14 @@
         "word": "Tyoli"
       },
       "meaning": {
-        "es": "Despensero"
+        "es": "Despensero",
+        "en": "Steward",
+        "fr": "Intendant"
       },
       "meaningPlural": {
-        "es": "Despenseros"
+        "es": "Despenseros",
+        "en": "Stewards",
+        "fr": "Intendants"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3285,10 +3955,14 @@
         "word": "Mbadi"
       },
       "meaning": {
-        "es": "Ardilla"
+        "es": "Ardilla",
+        "en": "Squirrel",
+        "fr": "Écureuil"
       },
       "meaningPlural": {
-        "es": "Ardillas"
+        "es": "Ardillas",
+        "en": "Squirrels",
+        "fr": "Écureuils"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3304,10 +3978,14 @@
         "word": "Mbalanga"
       },
       "meaning": {
-        "es": "Antilope"
+        "es": "Antilope",
+        "en": "Antelope",
+        "fr": "Antilope"
       },
       "meaningPlural": {
-        "es": "Antílopes"
+        "es": "Antílopes",
+        "en": "Antelopes",
+        "fr": "Antilopes"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3323,10 +4001,14 @@
         "word": "Mbanja"
       },
       "meaning": {
-        "es": "Bambú, costilla"
+        "es": "Bambú, costilla",
+        "en": "Bamboo, rib",
+        "fr": "Bambou, côte"
       },
       "meaningPlural": {
-        "es": "Bambús, costillas"
+        "es": "Bambús, costillas",
+        "en": "Bamboos, ribs",
+        "fr": "Bambous, côtes"
       },
       "source": {
         "pdfPage": 13
@@ -3342,10 +4024,14 @@
         "word": "Mbângâ"
       },
       "meaning": {
-        "es": "Patata"
+        "es": "Patata",
+        "en": "Potato",
+        "fr": "Pomme de terre"
       },
       "meaningPlural": {
-        "es": "Patatas"
+        "es": "Patatas",
+        "en": "Potatoes",
+        "fr": "Pommes de terre"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3361,10 +4047,14 @@
         "word": "Mbuja"
       },
       "meaning": {
-        "es": "Red"
+        "es": "Red",
+        "en": "Net",
+        "fr": "Filet"
       },
       "meaningPlural": {
-        "es": "Redes"
+        "es": "Redes",
+        "en": "Nets",
+        "fr": "Filets"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3380,10 +4070,14 @@
         "word": "Mbūa"
       },
       "meaning": {
-        "es": "Perro"
+        "es": "Perro",
+        "en": "Dog",
+        "fr": "Chien"
       },
       "meaningPlural": {
-        "es": "Perros"
+        "es": "Perros",
+        "en": "Dogs",
+        "fr": "Chiens"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3399,10 +4093,14 @@
         "word": "Ndabo"
       },
       "meaning": {
-        "es": "Casa"
+        "es": "Casa",
+        "en": "House",
+        "fr": "Maison"
       },
       "meaningPlural": {
-        "es": "Casas"
+        "es": "Casas",
+        "en": "Houses",
+        "fr": "Maisons"
       },
       "source": {
         "pdfPage": 13
@@ -3418,10 +4116,14 @@
         "word": "Ndaga"
       },
       "meaning": {
-        "es": "Palabra, razonamiento"
+        "es": "Palabra, razonamiento",
+        "en": "Word, reasoning",
+        "fr": "Parole, raisonnement"
       },
       "meaningPlural": {
-        "es": "Palabras, razonamientos"
+        "es": "Palabras, razonamientos",
+        "en": "Words, reasonings",
+        "fr": "Paroles, raisonnements"
       },
       "source": {
         "pdfPage": 13
@@ -3437,10 +4139,14 @@
         "word": "Ndâtâ"
       },
       "meaning": {
-        "es": "Sueño, desvario"
+        "es": "Sueño, desvario",
+        "en": "Dream, delirium",
+        "fr": "Rêve, délire"
       },
       "meaningPlural": {
-        "es": "Sueños, desvaríos"
+        "es": "Sueños, desvaríos",
+        "en": "Dreams, deliriums",
+        "fr": "Rêves, délires"
       },
       "source": {
         "pdfPage": 13
@@ -3456,10 +4162,14 @@
         "word": "Ndembo"
       },
       "meaning": {
-        "es": "Señal"
+        "es": "Señal",
+        "en": "Sign",
+        "fr": "Signe"
       },
       "meaningPlural": {
-        "es": "Señales"
+        "es": "Señales",
+        "en": "Signs",
+        "fr": "Signes"
       },
       "source": {
         "pdfPage": 13
@@ -3475,10 +4185,14 @@
         "word": "Ndoba"
       },
       "meaning": {
-        "es": "Enemigo"
+        "es": "Enemigo",
+        "en": "Enemy",
+        "fr": "Ennemi"
       },
       "meaningPlural": {
-        "es": "Enemigos"
+        "es": "Enemigos",
+        "en": "Enemies",
+        "fr": "Ennemis"
       },
       "source": {
         "pdfPage": 13
@@ -3494,10 +4208,14 @@
         "word": "Ndomina"
       },
       "meaning": {
-        "es": "Tío materno"
+        "es": "Tío materno",
+        "en": "Maternal uncle",
+        "fr": "Oncle maternel"
       },
       "meaningPlural": {
-        "es": "Tíos maternos"
+        "es": "Tíos maternos",
+        "en": "Maternal uncles",
+        "fr": "Oncles maternels"
       },
       "source": {
         "pdfPage": 13
@@ -3513,10 +4231,14 @@
         "word": "Ndonda"
       },
       "meaning": {
-        "es": "Cosecha, siega"
+        "es": "Cosecha, siega",
+        "en": "Harvest, reaping",
+        "fr": "Récolte, moisson"
       },
       "meaningPlural": {
-        "es": "Cosechas, siegas"
+        "es": "Cosechas, siegas",
+        "en": "Harvests, reapings",
+        "fr": "Récoltes, moissons"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3532,10 +4254,14 @@
         "word": "Ndonga"
       },
       "meaning": {
-        "es": "Confianza"
+        "es": "Confianza",
+        "en": "Trust",
+        "fr": "Confiance"
       },
       "meaningPlural": {
-        "es": "Confianzas"
+        "es": "Confianzas",
+        "en": "Trusts",
+        "fr": "Confiances"
       },
       "source": {
         "pdfPage": 14
@@ -3551,10 +4277,14 @@
         "word": "Ndongo"
       },
       "meaning": {
-        "es": "Pimiento"
+        "es": "Pimiento",
+        "en": "Pepper",
+        "fr": "Poivron"
       },
       "meaningPlural": {
-        "es": "Pimientos"
+        "es": "Pimientos",
+        "en": "Peppers",
+        "fr": "Poivrons"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3570,10 +4300,14 @@
         "word": "Ndumba"
       },
       "meaning": {
-        "es": "Huésped"
+        "es": "Huésped",
+        "en": "Guest",
+        "fr": "Hôte"
       },
       "meaningPlural": {
-        "es": "Huéspedes"
+        "es": "Huéspedes",
+        "en": "Guests",
+        "fr": "Hôtes"
       },
       "source": {
         "pdfPage": 14
@@ -3589,10 +4323,14 @@
         "word": "Penge"
       },
       "meaning": {
-        "es": "Ulcera"
+        "es": "Ulcera",
+        "en": "Ulcer",
+        "fr": "Ulcère"
       },
       "meaningPlural": {
-        "es": "Úlceras"
+        "es": "Úlceras",
+        "en": "Ulcers",
+        "fr": "Ulcères"
       },
       "source": {
         "pdfPage": 13
@@ -3608,10 +4346,14 @@
         "word": "Pani"
       },
       "meaning": {
-        "es": "Costumbre"
+        "es": "Costumbre",
+        "en": "Custom",
+        "fr": "Coutume"
       },
       "meaningPlural": {
-        "es": "Costumbres"
+        "es": "Costumbres",
+        "en": "Customs",
+        "fr": "Coutumes"
       },
       "source": {
         "pdfPage": 13
@@ -3629,10 +4371,14 @@
         "word": "Pavo"
       },
       "meaning": {
-        "es": "Cuchillo"
+        "es": "Cuchillo",
+        "en": "Knife",
+        "fr": "Couteau"
       },
       "meaningPlural": {
-        "es": "Cuchillos"
+        "es": "Cuchillos",
+        "en": "Knives",
+        "fr": "Couteaux"
       },
       "source": {
         "pdfPage": 13
@@ -3648,10 +4394,14 @@
         "word": "Pândâ"
       },
       "meaning": {
-        "es": "Casco"
+        "es": "Casco",
+        "en": "Hoof",
+        "fr": "Sabot"
       },
       "meaningPlural": {
-        "es": "Cascos"
+        "es": "Cascos",
+        "en": "Hooves",
+        "fr": "Sabots"
       },
       "source": {
         "pdfPage": 13
@@ -3667,10 +4417,14 @@
         "word": "Penda"
       },
       "meaning": {
-        "es": "Controversia"
+        "es": "Controversia",
+        "en": "Controversy",
+        "fr": "Controverse"
       },
       "meaningPlural": {
-        "es": "Controversias"
+        "es": "Controversias",
+        "en": "Controversies",
+        "fr": "Controverses"
       },
       "source": {
         "pdfPage": 13
@@ -3686,10 +4440,14 @@
         "word": "Pembē"
       },
       "meaning": {
-        "es": "Pan, greda"
+        "es": "Pan, greda",
+        "en": "Bread, clay",
+        "fr": "Pain, argile"
       },
       "meaningPlural": {
-        "es": "Panes, gredas"
+        "es": "Panes, gredas",
+        "en": "Loaves of bread, clays",
+        "fr": "Pains, argiles"
       },
       "source": {
         "pdfPage": 13
@@ -3705,10 +4463,14 @@
         "word": "Pika"
       },
       "meaning": {
-        "es": "Riñón"
+        "es": "Riñón",
+        "en": "Kidney",
+        "fr": "Rein"
       },
       "meaningPlural": {
-        "es": "Riñones"
+        "es": "Riñones",
+        "en": "Kidneys",
+        "fr": "Reins"
       },
       "source": {
         "pdfPage": 13
@@ -3724,10 +4486,14 @@
         "word": "Pimba"
       },
       "meaning": {
-        "es": "Coraje"
+        "es": "Coraje",
+        "en": "Courage",
+        "fr": "Courage"
       },
       "meaningPlural": {
-        "es": "Corajes"
+        "es": "Corajes",
+        "en": "Courages",
+        "fr": "Courages"
       },
       "source": {
         "pdfPage": 13
@@ -3743,10 +4509,14 @@
         "word": "Pita"
       },
       "meaning": {
-        "es": "Pólvora"
+        "es": "Pólvora",
+        "en": "Gunpowder",
+        "fr": "Poudre à canon"
       },
       "meaningPlural": {
-        "es": "Pólvoras"
+        "es": "Pólvoras",
+        "en": "Gunpowders",
+        "fr": "Poudres"
       },
       "source": {
         "pdfPage": 13
@@ -3764,10 +4534,14 @@
         "word": "Pogo"
       },
       "meaning": {
-        "es": "Arpón"
+        "es": "Arpón",
+        "en": "Harpoon",
+        "fr": "Harpon"
       },
       "meaningPlural": {
-        "es": "Arpones"
+        "es": "Arpones",
+        "en": "Harpoons",
+        "fr": "Harpons"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3783,10 +4557,14 @@
         "word": "Poke"
       },
       "meaning": {
-        "es": "Sordera"
+        "es": "Sordera",
+        "en": "Deafness",
+        "fr": "Surdité"
       },
       "meaningPlural": {
-        "es": "Sorderas"
+        "es": "Sorderas",
+        "en": "Deafnesses",
+        "fr": "Surdités"
       },
       "source": {
         "pdfPage": 13
@@ -3802,10 +4580,14 @@
         "word": "Poti"
       },
       "meaning": {
-        "es": "Maíz, grano"
+        "es": "Maíz, grano",
+        "en": "Maize, grain",
+        "fr": "Maïs, grain"
       },
       "meaningPlural": {
-        "es": "Maíces, granos"
+        "es": "Maíces, granos",
+        "en": "Maizes, grains",
+        "fr": "Maïs, grains"
       },
       "source": {
         "pdfPage": 13
@@ -3821,10 +4603,14 @@
         "word": "Pudi"
       },
       "meaning": {
-        "es": "Aire, aliento"
+        "es": "Aire, aliento",
+        "en": "Air, breath",
+        "fr": "Air, souffle"
       },
       "meaningPlural": {
-        "es": "Aires, alientos"
+        "es": "Aires, alientos",
+        "en": "Airs, breaths",
+        "fr": "Airs, souffles"
       },
       "source": {
         "pdfPage": 13
@@ -3840,10 +4626,14 @@
         "word": "Pūisi"
       },
       "meaning": {
-        "es": "Gato"
+        "es": "Gato",
+        "en": "Cat",
+        "fr": "Chat"
       },
       "meaningPlural": {
-        "es": "Gatos"
+        "es": "Gatos",
+        "en": "Cats",
+        "fr": "Chats"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3859,10 +4649,14 @@
         "word": "Sago"
       },
       "meaning": {
-        "es": "Jabón"
+        "es": "Jabón",
+        "en": "Soap",
+        "fr": "Savon"
       },
       "meaningPlural": {
-        "es": "Jabones"
+        "es": "Jabones",
+        "en": "Soaps",
+        "fr": "Savons"
       },
       "source": {
         "pdfPage": 13
@@ -3878,10 +4672,14 @@
         "word": "Sango"
       },
       "meaning": {
-        "es": "Fiesta, noticia"
+        "es": "Fiesta, noticia",
+        "en": "Feast, news",
+        "fr": "Fête, nouvelle"
       },
       "meaningPlural": {
-        "es": "Fiestas, noticias"
+        "es": "Fiestas, noticias",
+        "en": "Feasts, news items",
+        "fr": "Fêtes, nouvelles"
       },
       "source": {
         "pdfPage": 13
@@ -3897,10 +4695,14 @@
         "word": "Senge"
       },
       "meaning": {
-        "es": "Palangana"
+        "es": "Palangana",
+        "en": "Washbasin",
+        "fr": "Cuvette"
       },
       "meaningPlural": {
-        "es": "Palanganas"
+        "es": "Palanganas",
+        "en": "Washbasins",
+        "fr": "Cuvettes"
       },
       "source": {
         "pdfPage": 13
@@ -3916,10 +4718,14 @@
         "word": "Sikulu"
       },
       "meaning": {
-        "es": "Escuela"
+        "es": "Escuela",
+        "en": "School",
+        "fr": "École"
       },
       "meaningPlural": {
-        "es": "Escuelas"
+        "es": "Escuelas",
+        "en": "Schools",
+        "fr": "Écoles"
       },
       "source": {
         "pdfPage": 13
@@ -3935,10 +4741,14 @@
         "word": "Nenge"
       },
       "meaning": {
-        "es": "Isla"
+        "es": "Isla",
+        "en": "Island",
+        "fr": "Île"
       },
       "meaningPlural": {
-        "es": "Islas"
+        "es": "Islas",
+        "en": "Islands",
+        "fr": "Îles"
       },
       "source": {
         "pdfPage": "13-14"
@@ -3954,10 +4764,14 @@
         "word": "Ngabo"
       },
       "meaning": {
-        "es": "Ración, porción"
+        "es": "Ración, porción",
+        "en": "Ration, portion",
+        "fr": "Ration, portion"
       },
       "meaningPlural": {
-        "es": "Raciones, porciones"
+        "es": "Raciones, porciones",
+        "en": "Rations, portions",
+        "fr": "Rations, portions"
       },
       "source": {
         "pdfPage": 13
@@ -3975,10 +4789,14 @@
         "word": "Ngaho"
       },
       "meaning": {
-        "es": "Alambre"
+        "es": "Alambre",
+        "en": "Wire",
+        "fr": "Fil de fer"
       },
       "meaningPlural": {
-        "es": "Alambres"
+        "es": "Alambres",
+        "en": "Wires",
+        "fr": "Fils de fer"
       },
       "source": {
         "pdfPage": 13
@@ -3994,10 +4812,14 @@
         "word": "Ngama"
       },
       "meaning": {
-        "es": "Defensa"
+        "es": "Defensa",
+        "en": "Defence",
+        "fr": "Défense"
       },
       "meaningPlural": {
-        "es": "Defensas"
+        "es": "Defensas",
+        "en": "Defences",
+        "fr": "Défenses"
       },
       "source": {
         "pdfPage": 13
@@ -4013,10 +4835,14 @@
         "word": "Ngambi"
       },
       "meaning": {
-        "es": "Ira, rencor"
+        "es": "Ira, rencor",
+        "en": "Anger, resentment",
+        "fr": "Colère, rancune"
       },
       "meaningPlural": {
-        "es": "Iras, rencores"
+        "es": "Iras, rencores",
+        "en": "Angers, resentments",
+        "fr": "Colères, rancunes"
       },
       "source": {
         "pdfPage": 13
@@ -4032,10 +4858,14 @@
         "word": "Ngando"
       },
       "meaning": {
-        "es": "Cocodrilo"
+        "es": "Cocodrilo",
+        "en": "Crocodile",
+        "fr": "Crocodile"
       },
       "meaningPlural": {
-        "es": "Cocodrilos"
+        "es": "Cocodrilos",
+        "en": "Crocodiles",
+        "fr": "Crocodiles"
       },
       "source": {
         "pdfPage": 13
@@ -4051,10 +4881,14 @@
         "word": "Ngandi"
       },
       "meaning": {
-        "es": "Globo, bola"
+        "es": "Globo, bola",
+        "en": "Balloon, ball",
+        "fr": "Ballon, boule"
       },
       "meaningPlural": {
-        "es": "Globos, bolas"
+        "es": "Globos, bolas",
+        "en": "Balloons, balls",
+        "fr": "Ballons, boules"
       },
       "source": {
         "pdfPage": 13
@@ -4070,10 +4904,14 @@
         "word": "Ngani"
       },
       "meaning": {
-        "es": "Juego de manos"
+        "es": "Juego de manos",
+        "en": "Sleight of hand",
+        "fr": "Tour de passe-passe"
       },
       "meaningPlural": {
-        "es": "Juegos de manos"
+        "es": "Juegos de manos",
+        "en": "Sleights of hand",
+        "fr": "Tours de passe-passe"
       },
       "source": {
         "pdfPage": 13
@@ -4089,10 +4927,14 @@
         "word": "Nganga"
       },
       "meaning": {
-        "es": "Médico"
+        "es": "Médico",
+        "en": "Doctor",
+        "fr": "Médecin"
       },
       "meaningPlural": {
-        "es": "Médicos"
+        "es": "Médicos",
+        "en": "Doctors",
+        "fr": "Médecins"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4108,10 +4950,14 @@
         "word": "Nganiyango"
       },
       "meaning": {
-        "es": "Acceso, entrada"
+        "es": "Acceso, entrada",
+        "en": "Access, entrance",
+        "fr": "Accès, entrée"
       },
       "meaningPlural": {
-        "es": "Accesos, entradas"
+        "es": "Accesos, entradas",
+        "en": "Accesses, entrances",
+        "fr": "Accès, entrées"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4127,10 +4973,14 @@
         "word": "Ngâmbi"
       },
       "meaning": {
-        "es": "Harpa"
+        "es": "Harpa",
+        "en": "Harp",
+        "fr": "Harpe"
       },
       "meaningPlural": {
-        "es": "Arpas"
+        "es": "Arpas",
+        "en": "Harps",
+        "fr": "Harpes"
       },
       "source": {
         "pdfPage": 13
@@ -4146,7 +4996,9 @@
         "word": "Ngândâ"
       },
       "meaning": {
-        "es": "Habas"
+        "es": "Habas",
+        "en": "Beans",
+        "fr": "Fèves"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4162,10 +5014,14 @@
         "word": "Ngâūē"
       },
       "meaning": {
-        "es": "Capitán"
+        "es": "Capitán",
+        "en": "Captain",
+        "fr": "Capitaine"
       },
       "meaningPlural": {
-        "es": "Capitanes"
+        "es": "Capitanes",
+        "en": "Captains",
+        "fr": "Capitaines"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4181,10 +5037,14 @@
         "word": "Ngejangeja"
       },
       "meaning": {
-        "es": "Cristal"
+        "es": "Cristal",
+        "en": "Crystal",
+        "fr": "Cristal"
       },
       "meaningPlural": {
-        "es": "Cristales"
+        "es": "Cristales",
+        "en": "Crystals",
+        "fr": "Cristaux"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4200,7 +5060,9 @@
         "word": "Ngenga"
       },
       "meaning": {
-        "es": "Ciempiés"
+        "es": "Ciempiés",
+        "en": "Centipede",
+        "fr": "Mille-pattes"
       },
       "source": {
         "pdfPage": 13
@@ -4216,10 +5078,14 @@
         "word": "Ngomba"
       },
       "meaning": {
-        "es": "Puerco espín"
+        "es": "Puerco espín",
+        "en": "Porcupine",
+        "fr": "Porc-épic"
       },
       "meaningPlural": {
-        "es": "Puercos espines"
+        "es": "Puercos espines",
+        "en": "Porcupines",
+        "fr": "Porcs-épics"
       },
       "source": {
         "pdfPage": 13
@@ -4235,10 +5101,14 @@
         "word": "Ngonga"
       },
       "meaning": {
-        "es": "Pecho"
+        "es": "Pecho",
+        "en": "Chest",
+        "fr": "Poitrine"
       },
       "meaningPlural": {
-        "es": "Pechos"
+        "es": "Pechos",
+        "en": "Chests",
+        "fr": "Poitrines"
       },
       "source": {
         "pdfPage": 13
@@ -4254,10 +5124,14 @@
         "word": "Ngudi"
       },
       "meaning": {
-        "es": "Fuerza, voluntad"
+        "es": "Fuerza, voluntad",
+        "en": "Strength, will",
+        "fr": "Force, volonté"
       },
       "meaningPlural": {
-        "es": "Fuerzas, voluntades"
+        "es": "Fuerzas, voluntades",
+        "en": "Strengths, wills",
+        "fr": "Forces, volontés"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4273,10 +5147,14 @@
         "word": "Ngumu"
       },
       "meaning": {
-        "es": "Jefe, principal"
+        "es": "Jefe, principal",
+        "en": "Chief, leader",
+        "fr": "Chef, principal"
       },
       "meaningPlural": {
-        "es": "Jefes, principales"
+        "es": "Jefes, principales",
+        "en": "Chiefs, leaders",
+        "fr": "Chefs, principaux"
       },
       "source": {
         "pdfPage": 13
@@ -4292,10 +5170,14 @@
         "word": "Njadi"
       },
       "meaning": {
-        "es": "Yunque"
+        "es": "Yunque",
+        "en": "Anvil",
+        "fr": "Enclume"
       },
       "meaningPlural": {
-        "es": "Yunques"
+        "es": "Yunques",
+        "en": "Anvils",
+        "fr": "Enclumes"
       },
       "source": {
         "pdfPage": 13
@@ -4311,7 +5193,9 @@
         "word": "Njadi"
       },
       "meaning": {
-        "es": "Primogénito"
+        "es": "Primogénito",
+        "en": "Firstborn",
+        "fr": "Premier-né"
       },
       "source": {
         "pdfPage": 13
@@ -4327,10 +5211,14 @@
         "word": "Nyangūa ditâ"
       },
       "meaning": {
-        "es": "Timpano, oido"
+        "es": "Timpano, oido",
+        "en": "Eardrum, ear",
+        "fr": "Tympan, oreille"
       },
       "meaningPlural": {
-        "es": "Tímpanos, oídos"
+        "es": "Tímpanos, oídos",
+        "en": "Eardrums, ears",
+        "fr": "Tympans, oreilles"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4346,10 +5234,14 @@
         "word": "Nyuūē"
       },
       "meaning": {
-        "es": "Cabello blanco, o canas"
+        "es": "Cabello blanco, o canas",
+        "en": "White hair, or grey hairs",
+        "fr": "Cheveux blancs, ou cheveux gris"
       },
       "meaningPlural": {
-        "es": "Cabellos blancos, o canas"
+        "es": "Cabellos blancos, o canas",
+        "en": "White hairs, or grey hairs",
+        "fr": "Cheveux blancs, ou cheveux gris"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4365,10 +5257,14 @@
         "word": "Nyeti"
       },
       "meaning": {
-        "es": "Chorro violento"
+        "es": "Chorro violento",
+        "en": "Violent jet",
+        "fr": "Jet violent"
       },
       "meaningPlural": {
-        "es": "Chorros violentos"
+        "es": "Chorros violentos",
+        "en": "Violent jets",
+        "fr": "Jets violents"
       },
       "source": {
         "pdfPage": "13-14"
@@ -4384,10 +5280,14 @@
         "word": "Nyēnjē"
       },
       "meaning": {
-        "es": "Cangrejo"
+        "es": "Cangrejo",
+        "en": "Crab",
+        "fr": "Crabe"
       },
       "meaningPlural": {
-        "es": "Cangrejos"
+        "es": "Cangrejos",
+        "en": "Crabs",
+        "fr": "Crabes"
       },
       "source": {
         "pdfPage": 14
@@ -4401,7 +5301,9 @@
         "word": "Hoūē"
       },
       "meaning": {
-        "es": "Cabellera, pelo"
+        "es": "Cabellera, pelo",
+        "en": "Head of hair, hair",
+        "fr": "Chevelure, cheveux"
       },
       "source": {
         "pdfPage": 14
@@ -4416,7 +5318,9 @@
         "word": "Honji"
       },
       "meaning": {
-        "es": "Heno, yerba"
+        "es": "Heno, yerba",
+        "en": "Hay, grass",
+        "fr": "Foin, herbe"
       },
       "source": {
         "pdfPage": 14
@@ -4431,7 +5335,9 @@
         "word": "Jubu"
       },
       "meaning": {
-        "es": "Ceniza"
+        "es": "Ceniza",
+        "en": "Ash",
+        "fr": "Cendre"
       },
       "source": {
         "pdfPage": 14
@@ -4446,7 +5352,9 @@
         "word": "Malângâ"
       },
       "meaning": {
-        "es": "Flores de los árboles"
+        "es": "Flores de los árboles",
+        "en": "Tree blossoms",
+        "fr": "Fleurs des arbres"
       },
       "source": {
         "pdfPage": 14
@@ -4461,7 +5369,9 @@
         "word": "Majênjina"
       },
       "meaning": {
-        "es": "Rayos de la aurora"
+        "es": "Rayos de la aurora",
+        "en": "Rays of dawn",
+        "fr": "Rayons de l'aurore"
       },
       "source": {
         "pdfPage": 14
@@ -4476,7 +5386,9 @@
         "word": "Mbana"
       },
       "meaning": {
-        "es": "Pinzas, tenazuelas"
+        "es": "Pinzas, tenazuelas",
+        "en": "Tweezers, small tongs",
+        "fr": "Pinces, petites tenailles"
       },
       "source": {
         "pdfPage": 14
@@ -4491,7 +5403,9 @@
         "word": "Mbai"
       },
       "meaning": {
-        "es": "Virutas, astillas"
+        "es": "Virutas, astillas",
+        "en": "Shavings, splinters",
+        "fr": "Copeaux, éclats"
       },
       "source": {
         "pdfPage": 14
@@ -4506,7 +5420,9 @@
         "word": "Mâmbē"
       },
       "meaning": {
-        "es": "Sobras, mendrugos"
+        "es": "Sobras, mendrugos",
+        "en": "Leftovers, crusts",
+        "fr": "Restes, croûtons"
       },
       "source": {
         "pdfPage": 14
@@ -4521,7 +5437,9 @@
         "word": "Lombongo"
       },
       "meaning": {
-        "es": "Mosquitos"
+        "es": "Mosquitos",
+        "en": "Mosquitoes",
+        "fr": "Moustiques"
       },
       "source": {
         "pdfPage": 14
@@ -4536,7 +5454,9 @@
         "word": "Kiji"
       },
       "meaning": {
-        "es": "Rastrojo"
+        "es": "Rastrojo",
+        "en": "Stubble",
+        "fr": "Chaume"
       },
       "source": {
         "pdfPage": 14
@@ -4551,7 +5471,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Ápice, punta"
+        "es": "Ápice, punta",
+        "en": "Apex, tip",
+        "fr": "Sommet, pointe"
       },
       "source": {
         "pdfPage": 14
@@ -4566,7 +5488,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Luna"
+        "es": "Luna",
+        "en": "Moon",
+        "fr": "Lune"
       },
       "source": {
         "pdfPage": 14
@@ -4581,7 +5505,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Agonía"
+        "es": "Agonía",
+        "en": "Agony",
+        "fr": "Agonie"
       },
       "source": {
         "pdfPage": 14
@@ -4596,7 +5522,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Verdad"
+        "es": "Verdad",
+        "en": "Truth",
+        "fr": "Vérité"
       },
       "source": {
         "pdfPage": 14
@@ -4611,7 +5539,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Reloj de caja"
+        "es": "Reloj de caja",
+        "en": "Case clock",
+        "fr": "Horloge à caisse"
       },
       "source": {
         "pdfPage": 14
@@ -4626,7 +5556,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Profundidad"
+        "es": "Profundidad",
+        "en": "Depth",
+        "fr": "Profondeur"
       },
       "source": {
         "pdfPage": 14
@@ -4641,7 +5573,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Remo"
+        "es": "Remo",
+        "en": "Oar",
+        "fr": "Rame"
       },
       "source": {
         "pdfPage": 14
@@ -4656,7 +5590,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Ciento"
+        "es": "Ciento",
+        "en": "Hundred",
+        "fr": "Cent"
       },
       "source": {
         "pdfPage": 14
@@ -4671,7 +5607,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Buey"
+        "es": "Buey",
+        "en": "Ox",
+        "fr": "Bœuf"
       },
       "source": {
         "pdfPage": 14
@@ -4686,7 +5624,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Diligencia"
+        "es": "Diligencia",
+        "en": "Diligence",
+        "fr": "Diligence"
       },
       "source": {
         "pdfPage": 14
@@ -4701,7 +5641,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Noche"
+        "es": "Noche",
+        "en": "Night",
+        "fr": "Nuit"
       },
       "source": {
         "pdfPage": 14
@@ -4716,7 +5658,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Mar"
+        "es": "Mar",
+        "en": "Sea",
+        "fr": "Mer"
       },
       "source": {
         "pdfPage": 14
@@ -4731,7 +5675,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Sendero"
+        "es": "Sendero",
+        "en": "Path",
+        "fr": "Sentier"
       },
       "source": {
         "pdfPage": 14
@@ -4746,7 +5692,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Trigo"
+        "es": "Trigo",
+        "en": "Wheat",
+        "fr": "Blé"
       },
       "source": {
         "pdfPage": 14
@@ -4761,7 +5709,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Diluvio"
+        "es": "Diluvio",
+        "en": "Flood",
+        "fr": "Déluge"
       },
       "source": {
         "pdfPage": 14
@@ -4776,7 +5726,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Ocio"
+        "es": "Ocio",
+        "en": "Leisure",
+        "fr": "Loisir"
       },
       "source": {
         "pdfPage": 14
@@ -4791,7 +5743,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Paz"
+        "es": "Paz",
+        "en": "Peace",
+        "fr": "Paix"
       },
       "source": {
         "pdfPage": 14
@@ -4806,7 +5760,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Jugo"
+        "es": "Jugo",
+        "en": "Juice",
+        "fr": "Jus"
       },
       "source": {
         "pdfPage": 14
@@ -4821,7 +5777,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Sabor, gusto"
+        "es": "Sabor, gusto",
+        "en": "Flavour, taste",
+        "fr": "Saveur, goût"
       },
       "source": {
         "pdfPage": 14
@@ -4836,7 +5794,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Caracol grande"
+        "es": "Caracol grande",
+        "en": "Large snail",
+        "fr": "Gros escargot"
       },
       "source": {
         "pdfPage": 14
@@ -4851,7 +5811,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Perseverancia"
+        "es": "Perseverancia",
+        "en": "Perseverance",
+        "fr": "Persévérance"
       },
       "source": {
         "pdfPage": 14
@@ -4866,7 +5828,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Alimento"
+        "es": "Alimento",
+        "en": "Food",
+        "fr": "Nourriture"
       },
       "source": {
         "pdfPage": 14
@@ -4881,7 +5845,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Miel"
+        "es": "Miel",
+        "en": "Honey",
+        "fr": "Miel"
       },
       "source": {
         "pdfPage": 14
@@ -4896,7 +5862,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "Disputa, etc."
+        "es": "Disputa, etc.",
+        "en": "Dispute, etc.",
+        "fr": "Dispute, etc."
       },
       "source": {
         "pdfPage": 14
@@ -4913,10 +5881,14 @@
         "word": "Malonga"
       },
       "meaning": {
-        "es": "edificio"
+        "es": "edificio",
+        "en": "building",
+        "fr": "édifice"
       },
       "meaningPlural": {
-        "es": "edificios"
+        "es": "edificios",
+        "en": "buildings",
+        "fr": "bâtiments"
       },
       "source": {
         "pdfPage": 15
@@ -4934,10 +5906,14 @@
         "word": "Majanja"
       },
       "meaning": {
-        "es": "trabajo"
+        "es": "trabajo",
+        "en": "work",
+        "fr": "travail"
       },
       "meaningPlural": {
-        "es": "trabajos"
+        "es": "trabajos",
+        "en": "jobs",
+        "fr": "travaux"
       },
       "source": {
         "pdfPage": 15
@@ -4953,7 +5929,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "odio"
+        "es": "odio",
+        "en": "hatred",
+        "fr": "haine"
       },
       "source": {
         "pdfPage": 15
@@ -4969,7 +5947,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "razonamiento"
+        "es": "razonamiento",
+        "en": "reasoning",
+        "fr": "raisonnement"
       },
       "source": {
         "pdfPage": 15
@@ -4985,7 +5965,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "lectura"
+        "es": "lectura",
+        "en": "reading",
+        "fr": "lecture"
       },
       "source": {
         "pdfPage": 15
@@ -5001,7 +5983,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "escritura"
+        "es": "escritura",
+        "en": "writing",
+        "fr": "écriture"
       },
       "source": {
         "pdfPage": 15
@@ -5017,7 +6001,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "oración"
+        "es": "oración",
+        "en": "prayer",
+        "fr": "prière"
       },
       "source": {
         "pdfPage": 15
@@ -5035,10 +6021,14 @@
         "word": "Melangi"
       },
       "meaning": {
-        "es": "lector"
+        "es": "lector",
+        "en": "reader",
+        "fr": "lecteur"
       },
       "meaningPlural": {
-        "es": "lectores"
+        "es": "lectores",
+        "en": "readers",
+        "fr": "lecteurs"
       },
       "source": {
         "pdfPage": 15
@@ -5056,10 +6046,14 @@
         "word": "Melendi"
       },
       "meaning": {
-        "es": "escritor"
+        "es": "escritor",
+        "en": "writer",
+        "fr": "écrivain"
       },
       "meaningPlural": {
-        "es": "escritores"
+        "es": "escritores",
+        "en": "writers",
+        "fr": "écrivains"
       },
       "source": {
         "pdfPage": 15
@@ -5075,7 +6069,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "arquitecto"
+        "es": "arquitecto",
+        "en": "architect",
+        "fr": "architecte"
       },
       "source": {
         "pdfPage": 15
@@ -5091,7 +6087,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "orador"
+        "es": "orador",
+        "en": "speaker",
+        "fr": "orateur"
       },
       "source": {
         "pdfPage": 15
@@ -5107,7 +6105,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "modo de construir"
+        "es": "modo de construir",
+        "en": "way of building",
+        "fr": "manière de construire"
       },
       "source": {
         "pdfPage": 15
@@ -5123,7 +6123,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "modo de leer"
+        "es": "modo de leer",
+        "en": "way of reading",
+        "fr": "manière de lire"
       },
       "source": {
         "pdfPage": 15
@@ -5139,7 +6141,9 @@
       },
       "plural": null,
       "meaning": {
-        "es": "modo de hablar"
+        "es": "modo de hablar",
+        "en": "way of speaking",
+        "fr": "manière de parler"
       },
       "source": {
         "pdfPage": 15
@@ -5157,10 +6161,14 @@
         "word": "Belape"
       },
       "meaning": {
-        "es": "Rueda"
+        "es": "Rueda",
+        "en": "Wheel",
+        "fr": "Roue"
       },
       "meaningPlural": {
-        "es": "Ruedas"
+        "es": "Ruedas",
+        "en": "Wheels",
+        "fr": "Roues"
       },
       "source": {
         "pdfPage": 15
@@ -5177,10 +6185,14 @@
         "word": "Mako"
       },
       "meaning": {
-        "es": "Sur"
+        "es": "Sur",
+        "en": "South",
+        "fr": "Sud"
       },
       "meaningPlural": {
-        "es": "Sures"
+        "es": "Sures",
+        "en": "Souths",
+        "fr": "Suds"
       },
       "source": {
         "pdfPage": 15
@@ -5197,10 +6209,14 @@
         "word": "Bebuki"
       },
       "meaning": {
-        "es": "Falta, culpa"
+        "es": "Falta, culpa",
+        "en": "Fault, blame",
+        "fr": "Faute, culpabilité"
       },
       "meaningPlural": {
-        "es": "Faltas, culpas"
+        "es": "Faltas, culpas",
+        "en": "Faults, blames",
+        "fr": "Fautes, culpabilités"
       },
       "source": {
         "pdfPage": 15
@@ -5217,10 +6233,14 @@
         "word": "Bebuma"
       },
       "meaning": {
-        "es": "Fruta"
+        "es": "Fruta",
+        "en": "Fruit",
+        "fr": "Fruit"
       },
       "meaningPlural": {
-        "es": "Frutas"
+        "es": "Frutas",
+        "en": "Fruits",
+        "fr": "Fruits"
       },
       "source": {
         "pdfPage": 15
@@ -5237,10 +6257,14 @@
         "word": "Bebukūangonja"
       },
       "meaning": {
-        "es": "Manga marina"
+        "es": "Manga marina",
+        "en": "Waterspout",
+        "fr": "Trombe marine"
       },
       "meaningPlural": {
-        "es": "Mangas marinas"
+        "es": "Mangas marinas",
+        "en": "Waterspouts",
+        "fr": "Trombes marines"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5257,10 +6281,14 @@
         "word": "Bebumulema"
       },
       "meaning": {
-        "es": "Corazón"
+        "es": "Corazón",
+        "en": "Heart",
+        "fr": "Cœur"
       },
       "meaningPlural": {
-        "es": "Corazones"
+        "es": "Corazones",
+        "en": "Hearts",
+        "fr": "Cœurs"
       },
       "source": {
         "pdfPage": 15
@@ -5277,10 +6305,14 @@
         "word": "Bebungu"
       },
       "meaning": {
-        "es": "Estera"
+        "es": "Estera",
+        "en": "Mat",
+        "fr": "Natte"
       },
       "meaningPlural": {
-        "es": "Esteras"
+        "es": "Esteras",
+        "en": "Mats",
+        "fr": "Nattes"
       },
       "source": {
         "pdfPage": 15
@@ -5297,10 +6329,14 @@
         "word": "Bebūela"
       },
       "meaning": {
-        "es": "Presa, despojos"
+        "es": "Presa, despojos",
+        "en": "Prey, spoils",
+        "fr": "Proie, butin"
       },
       "meaningPlural": {
-        "es": "Presas, despojos"
+        "es": "Presas, despojos",
+        "en": "Preys, spoils",
+        "fr": "Proies, butins"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5317,10 +6353,14 @@
         "word": "Bebyâbyâ"
       },
       "meaning": {
-        "es": "Muslo"
+        "es": "Muslo",
+        "en": "Thigh",
+        "fr": "Cuisse"
       },
       "meaningPlural": {
-        "es": "Muslos"
+        "es": "Muslos",
+        "en": "Thighs",
+        "fr": "Cuisses"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5337,10 +6377,14 @@
         "word": "Bedingiha"
       },
       "meaning": {
-        "es": "Sombra"
+        "es": "Sombra",
+        "en": "Shadow",
+        "fr": "Ombre"
       },
       "meaningPlural": {
-        "es": "Sombras"
+        "es": "Sombras",
+        "en": "Shadows",
+        "fr": "Ombres"
       },
       "source": {
         "pdfPage": 15
@@ -5357,10 +6401,14 @@
         "word": "Bebabadi"
       },
       "meaning": {
-        "es": "Sudor"
+        "es": "Sudor",
+        "en": "Sweat",
+        "fr": "Sueur"
       },
       "meaningPlural": {
-        "es": "Sudores"
+        "es": "Sudores",
+        "en": "Sweats",
+        "fr": "Sueurs"
       },
       "source": {
         "pdfPage": 16
@@ -5377,10 +6425,14 @@
         "word": "Bebamba"
       },
       "meaning": {
-        "es": "Caspa"
+        "es": "Caspa",
+        "en": "Dandruff",
+        "fr": "Pellicules"
       },
       "meaningPlural": {
-        "es": "Caspas"
+        "es": "Caspas",
+        "en": "Dandruffs",
+        "fr": "Pellicules"
       },
       "source": {
         "pdfPage": 16
@@ -5397,10 +6449,14 @@
         "word": "Bebambana"
       },
       "meaning": {
-        "es": "Hijo de esclavos"
+        "es": "Hijo de esclavos",
+        "en": "Child of slaves",
+        "fr": "Enfant d'esclaves"
       },
       "meaningPlural": {
-        "es": "Hijos de esclavos"
+        "es": "Hijos de esclavos",
+        "en": "Children of slaves",
+        "fr": "Enfants d'esclaves"
       },
       "source": {
         "pdfPage": 16
@@ -5417,10 +6473,14 @@
         "word": "Bebambamba"
       },
       "meaning": {
-        "es": "Concha, cáscara"
+        "es": "Concha, cáscara",
+        "en": "Shell, husk",
+        "fr": "Coquille, écorce"
       },
       "meaningPlural": {
-        "es": "Conchas, cáscaras"
+        "es": "Conchas, cáscaras",
+        "en": "Shells, husks",
+        "fr": "Coquilles, écorces"
       },
       "source": {
         "pdfPage": 16
@@ -5437,10 +6497,14 @@
         "word": "Bebâbâ"
       },
       "meaning": {
-        "es": "Trapo, andrajo"
+        "es": "Trapo, andrajo",
+        "en": "Rag, tatter",
+        "fr": "Chiffon, haillon"
       },
       "meaningPlural": {
-        "es": "Trapos, andrajos"
+        "es": "Trapos, andrajos",
+        "en": "Rags, tatters",
+        "fr": "Chiffons, haillons"
       },
       "source": {
         "pdfPage": 16
@@ -5457,10 +6521,14 @@
         "word": "Bebadu"
       },
       "meaning": {
-        "es": "Barba"
+        "es": "Barba",
+        "en": "Beard",
+        "fr": "Barbe"
       },
       "meaningPlural": {
-        "es": "Barbas"
+        "es": "Barbas",
+        "en": "Beards",
+        "fr": "Barbes"
       },
       "source": {
         "pdfPage": 16
@@ -5477,10 +6545,14 @@
         "word": "Bebano"
       },
       "meaning": {
-        "es": "Oficio, comercio"
+        "es": "Oficio, comercio",
+        "en": "Trade, commerce",
+        "fr": "Métier, commerce"
       },
       "meaningPlural": {
-        "es": "Oficios, comercios"
+        "es": "Oficios, comercios",
+        "en": "Trades, commerces",
+        "fr": "Métiers, commerces"
       },
       "source": {
         "pdfPage": 16
@@ -5497,10 +6569,14 @@
         "word": "Bebodi"
       },
       "meaning": {
-        "es": "Puño"
+        "es": "Puño",
+        "en": "Fist",
+        "fr": "Poing"
       },
       "meaningPlural": {
-        "es": "Puños"
+        "es": "Puños",
+        "en": "Fists",
+        "fr": "Poings"
       },
       "source": {
         "pdfPage": 16
@@ -5517,10 +6593,14 @@
         "word": "Bebokūedi"
       },
       "meaning": {
-        "es": "Nodriza"
+        "es": "Nodriza",
+        "en": "Wet nurse",
+        "fr": "Nourrice"
       },
       "meaningPlural": {
-        "es": "Nodrizas"
+        "es": "Nodrizas",
+        "en": "Wet nurses",
+        "fr": "Nourrices"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5537,10 +6617,14 @@
         "word": "Bebonga"
       },
       "meaning": {
-        "es": "Silla"
+        "es": "Silla",
+        "en": "Chair",
+        "fr": "Chaise"
       },
       "meaningPlural": {
-        "es": "Sillas"
+        "es": "Sillas",
+        "en": "Chairs",
+        "fr": "Chaises"
       },
       "source": {
         "pdfPage": 16
@@ -5557,10 +6641,14 @@
         "word": "Beguba"
       },
       "meaning": {
-        "es": "Braza, fondo"
+        "es": "Braza, fondo",
+        "en": "Fathom, depth",
+        "fr": "Brasse, fond"
       },
       "meaningPlural": {
-        "es": "Brazas, fondos"
+        "es": "Brazas, fondos",
+        "en": "Fathoms, depths",
+        "fr": "Brasses, fonds"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5577,10 +6665,14 @@
         "word": "Behadi"
       },
       "meaning": {
-        "es": "Acción"
+        "es": "Acción",
+        "en": "Action",
+        "fr": "Action"
       },
       "meaningPlural": {
-        "es": "Acciones"
+        "es": "Acciones",
+        "en": "Actions",
+        "fr": "Actions"
       },
       "source": {
         "pdfPage": 16
@@ -5597,10 +6689,14 @@
         "word": "Behâhâni"
       },
       "meaning": {
-        "es": "Vergüenza, rubor"
+        "es": "Vergüenza, rubor",
+        "en": "Shame, blush",
+        "fr": "Honte, rougeur"
       },
       "meaningPlural": {
-        "es": "Vergüenzas, rubores"
+        "es": "Vergüenzas, rubores",
+        "en": "Shames, blushes",
+        "fr": "Hontes, rougeurs"
       },
       "source": {
         "pdfPage": 16
@@ -5617,10 +6713,14 @@
         "word": "Behekūē"
       },
       "meaning": {
-        "es": "Gracia, favor"
+        "es": "Gracia, favor",
+        "en": "Grace, favour",
+        "fr": "Grâce, faveur"
       },
       "meaningPlural": {
-        "es": "Gracias, favores"
+        "es": "Gracias, favores",
+        "en": "Graces, favours",
+        "fr": "Grâces, faveurs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5637,10 +6737,14 @@
         "word": "Behelele"
       },
       "meaning": {
-        "es": "Lagarto"
+        "es": "Lagarto",
+        "en": "Lizard",
+        "fr": "Lézard"
       },
       "meaningPlural": {
-        "es": "Lagartos"
+        "es": "Lagartos",
+        "en": "Lizards",
+        "fr": "Lézards"
       },
       "source": {
         "pdfPage": 16
@@ -5657,10 +6761,14 @@
         "word": "Behihila"
       },
       "meaning": {
-        "es": "Visión, espectro"
+        "es": "Visión, espectro",
+        "en": "Vision, apparition",
+        "fr": "Vision, spectre"
       },
       "meaningPlural": {
-        "es": "Visiones, espectros"
+        "es": "Visiones, espectros",
+        "en": "Visions, apparitions",
+        "fr": "Visions, spectres"
       },
       "source": {
         "pdfPage": 16
@@ -5677,10 +6785,14 @@
         "word": "Behila"
       },
       "meaning": {
-        "es": "Virgen, doncella"
+        "es": "Virgen, doncella",
+        "en": "Virgin, maiden",
+        "fr": "Vierge, jeune fille"
       },
       "meaningPlural": {
-        "es": "Vírgenes, doncellas"
+        "es": "Vírgenes, doncellas",
+        "en": "Virgins, maidens",
+        "fr": "Vierges, jeunes filles"
       },
       "source": {
         "pdfPage": 16
@@ -5697,10 +6809,14 @@
         "word": "Behini"
       },
       "meaning": {
-        "es": "Figura, retrato"
+        "es": "Figura, retrato",
+        "en": "Figure, portrait",
+        "fr": "Figure, portrait"
       },
       "meaningPlural": {
-        "es": "Figuras, retratos"
+        "es": "Figuras, retratos",
+        "en": "Figures, portraits",
+        "fr": "Figures, portraits"
       },
       "source": {
         "pdfPage": 16
@@ -5717,10 +6833,14 @@
         "word": "Behove"
       },
       "meaning": {
-        "es": "Ansia, deseo"
+        "es": "Ansia, deseo",
+        "en": "Longing, desire",
+        "fr": "Désir ardent, envie"
       },
       "meaningPlural": {
-        "es": "Ansias, deseos"
+        "es": "Ansias, deseos",
+        "en": "Longings, desires",
+        "fr": "Désirs ardents, envies"
       },
       "source": {
         "pdfPage": 16
@@ -5737,10 +6857,14 @@
         "word": "Behuka"
       },
       "meaning": {
-        "es": "Jarro, tinaja"
+        "es": "Jarro, tinaja",
+        "en": "Jug, large jar",
+        "fr": "Cruche, jarre"
       },
       "meaningPlural": {
-        "es": "Jarros, tinajas"
+        "es": "Jarros, tinajas",
+        "en": "Jugs, large jars",
+        "fr": "Cruches, jarres"
       },
       "source": {
         "pdfPage": 16
@@ -5757,10 +6881,14 @@
         "word": "Behutē"
       },
       "meaning": {
-        "es": "Náusea"
+        "es": "Náusea",
+        "en": "Nausea",
+        "fr": "Nausée"
       },
       "meaningPlural": {
-        "es": "Náuseas"
+        "es": "Náuseas",
+        "en": "Nauseas",
+        "fr": "Nausées"
       },
       "source": {
         "pdfPage": 16
@@ -5777,10 +6905,14 @@
         "word": "Bejaka"
       },
       "meaning": {
-        "es": "Pez, carne"
+        "es": "Pez, carne",
+        "en": "Fish, meat",
+        "fr": "Poisson, viande"
       },
       "meaningPlural": {
-        "es": "Peces, carnes"
+        "es": "Peces, carnes",
+        "en": "Fishes, meats",
+        "fr": "Poissons, viandes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5797,10 +6929,14 @@
         "word": "Bejalina"
       },
       "meaning": {
-        "es": "Peine"
+        "es": "Peine",
+        "en": "Comb",
+        "fr": "Peigne"
       },
       "meaningPlural": {
-        "es": "Peines"
+        "es": "Peines",
+        "en": "Combs",
+        "fr": "Peignes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5817,10 +6953,14 @@
         "word": "Bejâmbi"
       },
       "meaning": {
-        "es": "Patriarca"
+        "es": "Patriarca",
+        "en": "Patriarch",
+        "fr": "Patriarche"
       },
       "meaningPlural": {
-        "es": "Patriarcas"
+        "es": "Patriarcas",
+        "en": "Patriarchs",
+        "fr": "Patriarches"
       },
       "source": {
         "pdfPage": 16
@@ -5837,10 +6977,14 @@
         "word": "Beka"
       },
       "meaning": {
-        "es": "Trono"
+        "es": "Trono",
+        "en": "Throne",
+        "fr": "Trône"
       },
       "meaningPlural": {
-        "es": "Tronos"
+        "es": "Tronos",
+        "en": "Thrones",
+        "fr": "Trônes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5857,10 +7001,14 @@
         "word": "Bekai"
       },
       "meaning": {
-        "es": "Hoja"
+        "es": "Hoja",
+        "en": "Leaf",
+        "fr": "Feuille"
       },
       "meaningPlural": {
-        "es": "Hojas"
+        "es": "Hojas",
+        "en": "Leaves",
+        "fr": "Feuilles"
       },
       "source": {
         "pdfPage": 16
@@ -5877,10 +7025,14 @@
         "word": "Bekalidi"
       },
       "meaning": {
-        "es": "Conversación"
+        "es": "Conversación",
+        "en": "Conversation",
+        "fr": "Conversation"
       },
       "meaningPlural": {
-        "es": "Conversaciones"
+        "es": "Conversaciones",
+        "en": "Conversations",
+        "fr": "Conversations"
       },
       "source": {
         "pdfPage": 16
@@ -5897,10 +7049,14 @@
         "word": "Bekano"
       },
       "meaning": {
-        "es": "Fábula, ficción"
+        "es": "Fábula, ficción",
+        "en": "Fable, fiction",
+        "fr": "Fable, fiction"
       },
       "meaningPlural": {
-        "es": "Fábulas, ficciones"
+        "es": "Fábulas, ficciones",
+        "en": "Fables, fictions",
+        "fr": "Fables, fictions"
       },
       "source": {
         "pdfPage": 16
@@ -5917,10 +7073,14 @@
         "word": "Bekâkâlâ"
       },
       "meaning": {
-        "es": "Sarna"
+        "es": "Sarna",
+        "en": "Scabies",
+        "fr": "Gale"
       },
       "meaningPlural": {
-        "es": "Sarnas"
+        "es": "Sarnas",
+        "en": "Scabies (plural)",
+        "fr": "Gales"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5937,10 +7097,14 @@
         "word": "Bekâkâyi"
       },
       "meaning": {
-        "es": "Tos muy fuerte"
+        "es": "Tos muy fuerte",
+        "en": "Very violent cough",
+        "fr": "Toux très violente"
       },
       "meaningPlural": {
-        "es": "Toses muy fuertes"
+        "es": "Toses muy fuertes",
+        "en": "Very violent coughs",
+        "fr": "Toux très violentes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -5957,10 +7121,14 @@
         "word": "Bekeha"
       },
       "meaning": {
-        "es": "Criatura"
+        "es": "Criatura",
+        "en": "Infant, creature",
+        "fr": "Enfant, créature"
       },
       "meaningPlural": {
-        "es": "Criaturas"
+        "es": "Criaturas",
+        "en": "Infants, creatures",
+        "fr": "Enfants, créatures"
       },
       "source": {
         "pdfPage": 16
@@ -5977,10 +7145,14 @@
         "word": "Bekengo"
       },
       "meaning": {
-        "es": "Cadáver"
+        "es": "Cadáver",
+        "en": "Corpse",
+        "fr": "Cadavre"
       },
       "meaningPlural": {
-        "es": "Cadáveres"
+        "es": "Cadáveres",
+        "en": "Corpses",
+        "fr": "Cadavres"
       },
       "source": {
         "pdfPage": 16
@@ -5997,10 +7169,14 @@
         "word": "Bekēmbē"
       },
       "meaning": {
-        "es": "Veneno"
+        "es": "Veneno",
+        "en": "Poison",
+        "fr": "Poison"
       },
       "meaningPlural": {
-        "es": "Venenos"
+        "es": "Venenos",
+        "en": "Poisons",
+        "fr": "Poisons"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6017,10 +7193,14 @@
         "word": "Bekikindi"
       },
       "meaning": {
-        "es": "Talón"
+        "es": "Talón",
+        "en": "Heel",
+        "fr": "Talon"
       },
       "meaningPlural": {
-        "es": "Talones"
+        "es": "Talones",
+        "en": "Heels",
+        "fr": "Talons"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6037,10 +7217,14 @@
         "word": "Bekoda"
       },
       "meaning": {
-        "es": "Panal"
+        "es": "Panal",
+        "en": "Honeycomb",
+        "fr": "Rayon de miel"
       },
       "meaningPlural": {
-        "es": "Panales"
+        "es": "Panales",
+        "en": "Honeycombs",
+        "fr": "Rayons de miel"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6057,10 +7241,14 @@
         "word": "Bekola"
       },
       "meaning": {
-        "es": "Malicia"
+        "es": "Malicia",
+        "en": "Malice",
+        "fr": "Malice"
       },
       "meaningPlural": {
-        "es": "Malicias"
+        "es": "Malicias",
+        "en": "Malices",
+        "fr": "Malices"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6077,10 +7265,14 @@
         "word": "Bekoto"
       },
       "meaning": {
-        "es": "Cuero, piel"
+        "es": "Cuero, piel",
+        "en": "Hide, skin",
+        "fr": "Cuir, peau"
       },
       "meaningPlural": {
-        "es": "Cueros, pieles"
+        "es": "Cueros, pieles",
+        "en": "Hides, skins",
+        "fr": "Cuirs, peaux"
       },
       "source": {
         "pdfPage": 16
@@ -6097,10 +7289,14 @@
         "word": "Bekuha"
       },
       "meaning": {
-        "es": "Herencia"
+        "es": "Herencia",
+        "en": "Inheritance",
+        "fr": "Héritage"
       },
       "meaningPlural": {
-        "es": "Herencias"
+        "es": "Herencias",
+        "en": "Inheritances",
+        "fr": "Héritages"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6117,10 +7313,14 @@
         "word": "Bekulu"
       },
       "meaning": {
-        "es": "Mitad, parte"
+        "es": "Mitad, parte",
+        "en": "Half, part",
+        "fr": "Moitié, partie"
       },
       "meaningPlural": {
-        "es": "Mitades, partes"
+        "es": "Mitades, partes",
+        "en": "Halves, parts",
+        "fr": "Moitiés, parties"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6137,10 +7337,14 @@
         "word": "Bekūekūe"
       },
       "meaning": {
-        "es": "Mariposa"
+        "es": "Mariposa",
+        "en": "Butterfly",
+        "fr": "Papillon"
       },
       "meaningPlural": {
-        "es": "Mariposas"
+        "es": "Mariposas",
+        "en": "Butterflies",
+        "fr": "Papillons"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6157,10 +7361,14 @@
         "word": "Belângi"
       },
       "meaning": {
-        "es": "Cantor"
+        "es": "Cantor",
+        "en": "Singer",
+        "fr": "Chanteur"
       },
       "meaningPlural": {
-        "es": "Cantores"
+        "es": "Cantores",
+        "en": "Singers",
+        "fr": "Chanteurs"
       },
       "source": {
         "pdfPage": 16
@@ -6177,10 +7385,14 @@
         "word": "Belekanako"
       },
       "meaning": {
-        "es": "Ley, mandato"
+        "es": "Ley, mandato",
+        "en": "Law, command",
+        "fr": "Loi, ordre"
       },
       "meaningPlural": {
-        "es": "Leyes, mandatos"
+        "es": "Leyes, mandatos",
+        "en": "Laws, commands",
+        "fr": "Lois, ordres"
       },
       "source": {
         "pdfPage": 16
@@ -6197,10 +7409,14 @@
         "word": "Belēngi"
       },
       "meaning": {
-        "es": "Pródigo, gastador"
+        "es": "Pródigo, gastador",
+        "en": "Prodigal, spendthrift",
+        "fr": "Prodigue, dépensier"
       },
       "meaningPlural": {
-        "es": "Pródigos, gastadores"
+        "es": "Pródigos, gastadores",
+        "en": "Prodigals, spendthrifts",
+        "fr": "Prodigues, dépensiers"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6217,10 +7433,14 @@
         "word": "Bemēnâ"
       },
       "meaning": {
-        "es": "Vida, existencia"
+        "es": "Vida, existencia",
+        "en": "Life, existence",
+        "fr": "Vie, existence"
       },
       "meaningPlural": {
-        "es": "Vidas, existencias"
+        "es": "Vidas, existencias",
+        "en": "Lives, existences",
+        "fr": "Vies, existences"
       },
       "source": {
         "pdfPage": 16
@@ -6237,10 +7457,14 @@
         "word": "Bemina"
       },
       "meaning": {
-        "es": "Cerrojo"
+        "es": "Cerrojo",
+        "en": "Bolt",
+        "fr": "Verrou"
       },
       "meaningPlural": {
-        "es": "Cerrojos"
+        "es": "Cerrojos",
+        "en": "Bolts",
+        "fr": "Verrous"
       },
       "source": {
         "pdfPage": 16
@@ -6257,10 +7481,14 @@
         "word": "Benangi"
       },
       "meaning": {
-        "es": "Sofá, cama"
+        "es": "Sofá, cama",
+        "en": "Sofa, bed",
+        "fr": "Sofa, lit"
       },
       "meaningPlural": {
-        "es": "Sofás, camas"
+        "es": "Sofás, camas",
+        "en": "Sofas, beds",
+        "fr": "Sofas, lits"
       },
       "source": {
         "pdfPage": 16
@@ -6277,10 +7505,14 @@
         "word": "Bengamba"
       },
       "meaning": {
-        "es": "Garrafón"
+        "es": "Garrafón",
+        "en": "Demijohn",
+        "fr": "Dame-jeanne"
       },
       "meaningPlural": {
-        "es": "Garrafones"
+        "es": "Garrafones",
+        "en": "Demijohns",
+        "fr": "Dames-jeannes"
       },
       "source": {
         "pdfPage": 16
@@ -6297,10 +7529,14 @@
         "word": "Bengumbi"
       },
       "meaning": {
-        "es": "Niebla"
+        "es": "Niebla",
+        "en": "Fog",
+        "fr": "Brouillard"
       },
       "meaningPlural": {
-        "es": "Nieblas"
+        "es": "Nieblas",
+        "en": "Fogs",
+        "fr": "Brouillards"
       },
       "source": {
         "pdfPage": 16
@@ -6317,10 +7553,14 @@
         "word": "Benjēli"
       },
       "meaning": {
-        "es": "Ángel"
+        "es": "Ángel",
+        "en": "Angel",
+        "fr": "Ange"
       },
       "meaningPlural": {
-        "es": "Ángeles"
+        "es": "Ángeles",
+        "en": "Angels",
+        "fr": "Anges"
       },
       "source": {
         "pdfPage": 16
@@ -6337,10 +7577,14 @@
         "word": "Bepedi"
       },
       "meaning": {
-        "es": "Tiempo, estación"
+        "es": "Tiempo, estación",
+        "en": "Time, season",
+        "fr": "Temps, saison"
       },
       "meaningPlural": {
-        "es": "Tiempos, estaciones"
+        "es": "Tiempos, estaciones",
+        "en": "Times, seasons",
+        "fr": "Temps, saisons"
       },
       "source": {
         "pdfPage": 16
@@ -6357,10 +7601,14 @@
         "word": "Bepēlupēlu"
       },
       "meaning": {
-        "es": "Relámpago"
+        "es": "Relámpago",
+        "en": "Lightning",
+        "fr": "Éclair"
       },
       "meaningPlural": {
-        "es": "Relámpagos"
+        "es": "Relámpagos",
+        "en": "Lightning flashes",
+        "fr": "Éclairs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6377,10 +7625,14 @@
         "word": "Bepima"
       },
       "meaning": {
-        "es": "Muro, pared"
+        "es": "Muro, pared",
+        "en": "Wall",
+        "fr": "Mur"
       },
       "meaningPlural": {
-        "es": "Muros, paredes"
+        "es": "Muros, paredes",
+        "en": "Walls",
+        "fr": "Murs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6397,10 +7649,14 @@
         "word": "Besâ"
       },
       "meaning": {
-        "es": "Anguila"
+        "es": "Anguila",
+        "en": "Eel",
+        "fr": "Anguille"
       },
       "meaningPlural": {
-        "es": "Anguilas"
+        "es": "Anguilas",
+        "en": "Eels",
+        "fr": "Anguilles"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6417,10 +7673,14 @@
         "word": "Besūagēnda"
       },
       "meaning": {
-        "es": "Banco, asiento"
+        "es": "Banco, asiento",
+        "en": "Bench, seat",
+        "fr": "Banc, siège"
       },
       "meaningPlural": {
-        "es": "Bancos, asientos"
+        "es": "Bancos, asientos",
+        "en": "Benches, seats",
+        "fr": "Bancs, sièges"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6437,10 +7697,14 @@
         "word": "Betâki"
       },
       "meaning": {
-        "es": "Tumulto"
+        "es": "Tumulto",
+        "en": "Tumult",
+        "fr": "Tumulte"
       },
       "meaningPlural": {
-        "es": "Tumultos"
+        "es": "Tumultos",
+        "en": "Tumults",
+        "fr": "Tumultes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6457,10 +7721,14 @@
         "word": "Bedoko"
       },
       "meaning": {
-        "es": "Deseo"
+        "es": "Deseo",
+        "en": "Desire",
+        "fr": "Désir"
       },
       "meaningPlural": {
-        "es": "Deseos"
+        "es": "Deseos",
+        "en": "Desires",
+        "fr": "Désirs"
       },
       "source": {
         "pdfPage": 16
@@ -6477,10 +7745,14 @@
         "word": "Bedubu"
       },
       "meaning": {
-        "es": "Culebra negra"
+        "es": "Culebra negra",
+        "en": "Black snake",
+        "fr": "Serpent noir"
       },
       "meaningPlural": {
-        "es": "Culebras negras"
+        "es": "Culebras negras",
+        "en": "Black snakes",
+        "fr": "Serpents noirs"
       },
       "source": {
         "pdfPage": 16
@@ -6497,10 +7769,14 @@
         "word": "Beduka"
       },
       "meaning": {
-        "es": "Riña, guerra"
+        "es": "Riña, guerra",
+        "en": "Quarrel, war",
+        "fr": "Querelle, guerre"
       },
       "meaningPlural": {
-        "es": "Riñas, guerras"
+        "es": "Riñas, guerras",
+        "en": "Quarrels, wars",
+        "fr": "Querelles, guerres"
       },
       "source": {
         "pdfPage": 16
@@ -6517,10 +7793,14 @@
         "word": "Bedungu"
       },
       "meaning": {
-        "es": "Sonido, ruido"
+        "es": "Sonido, ruido",
+        "en": "Sound, noise",
+        "fr": "Son, bruit"
       },
       "meaningPlural": {
-        "es": "Sonidos, ruidos"
+        "es": "Sonidos, ruidos",
+        "en": "Sounds, noises",
+        "fr": "Sons, bruits"
       },
       "source": {
         "pdfPage": 16
@@ -6537,10 +7817,14 @@
         "word": "Befu"
       },
       "meaning": {
-        "es": "Manta, manto"
+        "es": "Manta, manto",
+        "en": "Blanket, cloak",
+        "fr": "Couverture, manteau"
       },
       "meaningPlural": {
-        "es": "Mantas, mantos"
+        "es": "Mantas, mantos",
+        "en": "Blankets, cloaks",
+        "fr": "Couvertures, manteaux"
       },
       "source": {
         "pdfPage": 16
@@ -6557,10 +7841,14 @@
         "word": "Begâlani"
       },
       "meaning": {
-        "es": "Lepra"
+        "es": "Lepra",
+        "en": "Leprosy",
+        "fr": "Lèpre"
       },
       "meaningPlural": {
-        "es": "Lepras"
+        "es": "Lepras",
+        "en": "Leprosies",
+        "fr": "Lèpres"
       },
       "source": {
         "pdfPage": 16
@@ -6577,10 +7865,14 @@
         "word": "Begândaga"
       },
       "meaning": {
-        "es": "Esclavo"
+        "es": "Esclavo",
+        "en": "Slave",
+        "fr": "Esclave"
       },
       "meaningPlural": {
-        "es": "Esclavos"
+        "es": "Esclavos",
+        "en": "Slaves",
+        "fr": "Esclaves"
       },
       "source": {
         "pdfPage": 16
@@ -6597,10 +7889,14 @@
         "word": "Begēja"
       },
       "meaning": {
-        "es": "Barreno"
+        "es": "Barreno",
+        "en": "Auger",
+        "fr": "Tarière"
       },
       "meaningPlural": {
-        "es": "Barrenos"
+        "es": "Barrenos",
+        "en": "Augers",
+        "fr": "Tarières"
       },
       "source": {
         "pdfPage": 16
@@ -6617,10 +7913,14 @@
         "word": "Begeno"
       },
       "meaning": {
-        "es": "Espejo"
+        "es": "Espejo",
+        "en": "Mirror",
+        "fr": "Miroir"
       },
       "meaningPlural": {
-        "es": "Espejos"
+        "es": "Espejos",
+        "en": "Mirrors",
+        "fr": "Miroirs"
       },
       "source": {
         "pdfPage": 16
@@ -6637,10 +7937,14 @@
         "word": "Begombe"
       },
       "meaning": {
-        "es": "Tiempo"
+        "es": "Tiempo",
+        "en": "Time",
+        "fr": "Temps"
       },
       "meaningPlural": {
-        "es": "Tiempos"
+        "es": "Tiempos",
+        "en": "Times",
+        "fr": "Temps"
       },
       "source": {
         "pdfPage": 16
@@ -6657,10 +7961,14 @@
         "word": "Begumia"
       },
       "meaning": {
-        "es": "Mástil, palo"
+        "es": "Mástil, palo",
+        "en": "Mast, pole",
+        "fr": "Mât, perche"
       },
       "meaningPlural": {
-        "es": "Mástiles, palos"
+        "es": "Mástiles, palos",
+        "en": "Masts, poles",
+        "fr": "Mâts, perches"
       },
       "source": {
         "pdfPage": 16
@@ -6677,10 +7985,14 @@
         "word": "Behavu"
       },
       "meaning": {
-        "es": "Tarea, hierba"
+        "es": "Tarea, hierba",
+        "en": "Task, grass",
+        "fr": "Tâche, herbe"
       },
       "meaningPlural": {
-        "es": "Tareas, hierbas"
+        "es": "Tareas, hierbas",
+        "en": "Tasks, grasses",
+        "fr": "Tâches, herbes"
       },
       "source": {
         "pdfPage": 16
@@ -6697,10 +8009,14 @@
         "word": "Behâlia"
       },
       "meaning": {
-        "es": "Hilaridad, juego"
+        "es": "Hilaridad, juego",
+        "en": "Hilarity, play",
+        "fr": "Hilarité, jeu"
       },
       "meaningPlural": {
-        "es": "Hilaridades, juegos"
+        "es": "Hilaridades, juegos",
+        "en": "Hilarities, plays",
+        "fr": "Hilarités, jeux"
       },
       "source": {
         "pdfPage": 16
@@ -6717,10 +8033,14 @@
         "word": "Beheheku"
       },
       "meaning": {
-        "es": "Hipo"
+        "es": "Hipo",
+        "en": "Hiccup",
+        "fr": "Hoquet"
       },
       "meaningPlural": {
-        "es": "Hipos"
+        "es": "Hipos",
+        "en": "Hiccups",
+        "fr": "Hoquets"
       },
       "source": {
         "pdfPage": 16
@@ -6737,10 +8057,14 @@
         "word": "Behēkâ"
       },
       "meaning": {
-        "es": "Hígado"
+        "es": "Hígado",
+        "en": "Liver",
+        "fr": "Foie"
       },
       "meaningPlural": {
-        "es": "Hígados"
+        "es": "Hígados",
+        "en": "Livers",
+        "fr": "Foies"
       },
       "source": {
         "pdfPage": 16
@@ -6757,10 +8081,14 @@
         "word": "Bekiki"
       },
       "meaning": {
-        "es": "País, bosque"
+        "es": "País, bosque",
+        "en": "Country, forest",
+        "fr": "Pays, forêt"
       },
       "meaningPlural": {
-        "es": "Países, bosques"
+        "es": "Países, bosques",
+        "en": "Countries, forests",
+        "fr": "Pays, forêts"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6777,10 +8105,14 @@
         "word": "Behilibeja"
       },
       "meaning": {
-        "es": "Paladar"
+        "es": "Paladar",
+        "en": "Palate",
+        "fr": "Palais"
       },
       "meaningPlural": {
-        "es": "Paladares"
+        "es": "Paladares",
+        "en": "Palates",
+        "fr": "Palais"
       },
       "source": {
         "pdfPage": 16
@@ -6797,10 +8129,14 @@
         "word": "Behongola"
       },
       "meaning": {
-        "es": "Embudo"
+        "es": "Embudo",
+        "en": "Funnel",
+        "fr": "Entonnoir"
       },
       "meaningPlural": {
-        "es": "Embudos"
+        "es": "Embudos",
+        "en": "Funnels",
+        "fr": "Entonnoirs"
       },
       "source": {
         "pdfPage": 16
@@ -6817,10 +8153,14 @@
         "word": "Behuhu"
       },
       "meaning": {
-        "es": "Total, el todo"
+        "es": "Total, el todo",
+        "en": "Total, the whole",
+        "fr": "Total, le tout"
       },
       "meaningPlural": {
-        "es": "Totales, los todos"
+        "es": "Totales, los todos",
+        "en": "Totals, the wholes",
+        "fr": "Totaux, les touts"
       },
       "source": {
         "pdfPage": 16
@@ -6837,10 +8177,14 @@
         "word": "Behukuluku"
       },
       "meaning": {
-        "es": "Lechuza"
+        "es": "Lechuza",
+        "en": "Barn owl",
+        "fr": "Chouette effraie"
       },
       "meaningPlural": {
-        "es": "Lechuzas"
+        "es": "Lechuzas",
+        "en": "Barn owls",
+        "fr": "Chouettes effraies"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6857,10 +8201,14 @@
         "word": "Beja"
       },
       "meaning": {
-        "es": "Comida"
+        "es": "Comida",
+        "en": "Food",
+        "fr": "Nourriture"
       },
       "meaningPlural": {
-        "es": "Comidas"
+        "es": "Comidas",
+        "en": "Foods",
+        "fr": "Nourritures"
       },
       "source": {
         "pdfPage": 16
@@ -6877,10 +8225,14 @@
         "word": "Bejabavudi"
       },
       "meaning": {
-        "es": "Tortuga"
+        "es": "Tortuga",
+        "en": "Tortoise",
+        "fr": "Tortue"
       },
       "meaningPlural": {
-        "es": "Tortugas"
+        "es": "Tortugas",
+        "en": "Tortoises",
+        "fr": "Tortues"
       },
       "source": {
         "pdfPage": 16
@@ -6897,10 +8249,14 @@
         "word": "Bejangina"
       },
       "meaning": {
-        "es": "Horno"
+        "es": "Horno",
+        "en": "Oven",
+        "fr": "Four"
       },
       "meaningPlural": {
-        "es": "Hornos"
+        "es": "Hornos",
+        "en": "Ovens",
+        "fr": "Fours"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6917,10 +8273,14 @@
         "word": "Bejânjâ"
       },
       "meaning": {
-        "es": "Seta, hongo"
+        "es": "Seta, hongo",
+        "en": "Mushroom, fungus",
+        "fr": "Champignon, fongus"
       },
       "meaningPlural": {
-        "es": "Setas, hongos"
+        "es": "Setas, hongos",
+        "en": "Mushrooms, fungi",
+        "fr": "Champignons, fongus"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6937,10 +8297,14 @@
         "word": "Bekaba"
       },
       "meaning": {
-        "es": "Pimpollo"
+        "es": "Pimpollo",
+        "en": "Bud, shoot",
+        "fr": "Bourgeon, pousse"
       },
       "meaningPlural": {
-        "es": "Pimpollos"
+        "es": "Pimpollos",
+        "en": "Buds, shoots",
+        "fr": "Bourgeons, pousses"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6957,10 +8321,14 @@
         "word": "Bekahi"
       },
       "meaning": {
-        "es": "Héroe, coraje"
+        "es": "Héroe, coraje",
+        "en": "Hero, courage",
+        "fr": "Héros, courage"
       },
       "meaningPlural": {
-        "es": "Héroes, corajes"
+        "es": "Héroes, corajes",
+        "en": "Heroes, courages",
+        "fr": "Héros, courages"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6977,10 +8345,14 @@
         "word": "Bekendangolo"
       },
       "meaning": {
-        "es": "Monte, colina"
+        "es": "Monte, colina",
+        "en": "Mountain, hill",
+        "fr": "Mont, colline"
       },
       "meaningPlural": {
-        "es": "Montes, colinas"
+        "es": "Montes, colinas",
+        "en": "Mountains, hills",
+        "fr": "Monts, collines"
       },
       "source": {
         "pdfPage": "15-17"
@@ -6997,10 +8369,14 @@
         "word": "Bekâkâ"
       },
       "meaning": {
-        "es": "Tronco muerto"
+        "es": "Tronco muerto",
+        "en": "Dead trunk",
+        "fr": "Tronc mort"
       },
       "meaningPlural": {
-        "es": "Troncos muertos"
+        "es": "Troncos muertos",
+        "en": "Dead trunks",
+        "fr": "Troncs morts"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7017,10 +8393,14 @@
         "word": "Bekâmbâ"
       },
       "meaning": {
-        "es": "Flema"
+        "es": "Flema",
+        "en": "Phlegm",
+        "fr": "Flegme"
       },
       "meaningPlural": {
-        "es": "Flemas"
+        "es": "Flemas",
+        "en": "Phlegms",
+        "fr": "Flegmes"
       },
       "source": {
         "pdfPage": 16
@@ -7037,10 +8417,14 @@
         "word": "Bekedi"
       },
       "meaning": {
-        "es": "Vanidad"
+        "es": "Vanidad",
+        "en": "Vanity",
+        "fr": "Vanité"
       },
       "meaningPlural": {
-        "es": "Vanidades"
+        "es": "Vanidades",
+        "en": "Vanities",
+        "fr": "Vanités"
       },
       "source": {
         "pdfPage": 16
@@ -7057,10 +8441,14 @@
         "word": "Bekelekeke"
       },
       "meaning": {
-        "es": "Tórtola"
+        "es": "Tórtola",
+        "en": "Turtledove",
+        "fr": "Tourterelle"
       },
       "meaningPlural": {
-        "es": "Tórtolas"
+        "es": "Tórtolas",
+        "en": "Turtledoves",
+        "fr": "Tourterelles"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7077,10 +8465,14 @@
         "word": "Bekeyi"
       },
       "meaning": {
-        "es": "Hierro"
+        "es": "Hierro",
+        "en": "Iron",
+        "fr": "Fer"
       },
       "meaningPlural": {
-        "es": "Hierros"
+        "es": "Hierros",
+        "en": "Irons",
+        "fr": "Fers"
       },
       "source": {
         "pdfPage": 16
@@ -7097,10 +8489,14 @@
         "word": "Bekēndâ"
       },
       "meaning": {
-        "es": "Jornada, viaje"
+        "es": "Jornada, viaje",
+        "en": "Day's journey, trip",
+        "fr": "Journée de marche, voyage"
       },
       "meaningPlural": {
-        "es": "Jornadas, viajes"
+        "es": "Jornadas, viajes",
+        "en": "Day's journeys, trips",
+        "fr": "Journées de marche, voyages"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7117,10 +8513,14 @@
         "word": "Beko"
       },
       "meaning": {
-        "es": "Pierna, pie"
+        "es": "Pierna, pie",
+        "en": "Leg, foot",
+        "fr": "Jambe, pied"
       },
       "meaningPlural": {
-        "es": "Piernas, pies"
+        "es": "Piernas, pies",
+        "en": "Legs, feet",
+        "fr": "Jambes, pieds"
       },
       "source": {
         "pdfPage": 16
@@ -7137,10 +8537,14 @@
         "word": "Bekokobo"
       },
       "meaning": {
-        "es": "Párpado"
+        "es": "Párpado",
+        "en": "Eyelid",
+        "fr": "Paupière"
       },
       "meaningPlural": {
-        "es": "Párpados"
+        "es": "Párpados",
+        "en": "Eyelids",
+        "fr": "Paupières"
       },
       "source": {
         "pdfPage": 16
@@ -7157,10 +8561,14 @@
         "word": "Bekomba"
       },
       "meaning": {
-        "es": "Esterilidad"
+        "es": "Esterilidad",
+        "en": "Sterility",
+        "fr": "Stérilité"
       },
       "meaningPlural": {
-        "es": "Esterilidades"
+        "es": "Esterilidades",
+        "en": "Sterilities",
+        "fr": "Stérilités"
       },
       "source": {
         "pdfPage": 16
@@ -7177,10 +8585,14 @@
         "word": "Bekudikudi"
       },
       "meaning": {
-        "es": "Tornado, tempestad"
+        "es": "Tornado, tempestad",
+        "en": "Tornado, storm",
+        "fr": "Tornade, tempête"
       },
       "meaningPlural": {
-        "es": "Tornados, tempestades"
+        "es": "Tornados, tempestades",
+        "en": "Tornadoes, storms",
+        "fr": "Tornades, tempêtes"
       },
       "source": {
         "pdfPage": 16
@@ -7197,10 +8609,14 @@
         "word": "Bekukubi"
       },
       "meaning": {
-        "es": "Furia, rabia"
+        "es": "Furia, rabia",
+        "en": "Fury, rage",
+        "fr": "Furie, rage"
       },
       "meaningPlural": {
-        "es": "Furias, rabias"
+        "es": "Furias, rabias",
+        "en": "Furies, rages",
+        "fr": "Furies, rages"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7217,10 +8633,14 @@
         "word": "Belahe"
       },
       "meaning": {
-        "es": "Vaso"
+        "es": "Vaso",
+        "en": "Glass",
+        "fr": "Verre"
       },
       "meaningPlural": {
-        "es": "Vasos"
+        "es": "Vasos",
+        "en": "Glasses",
+        "fr": "Verres"
       },
       "source": {
         "pdfPage": 16
@@ -7237,10 +8657,14 @@
         "word": "Belandi"
       },
       "meaning": {
-        "es": "Saco"
+        "es": "Saco",
+        "en": "Sack",
+        "fr": "Sac"
       },
       "meaningPlural": {
-        "es": "Sacos"
+        "es": "Sacos",
+        "en": "Sacks",
+        "fr": "Sacs"
       },
       "source": {
         "pdfPage": 16
@@ -7257,10 +8681,14 @@
         "word": "Bele"
       },
       "meaning": {
-        "es": "Árbol, palo"
+        "es": "Árbol, palo",
+        "en": "Tree, stick",
+        "fr": "Arbre, bâton"
       },
       "meaningPlural": {
-        "es": "Árboles, palos"
+        "es": "Árboles, palos",
+        "en": "Trees, sticks",
+        "fr": "Arbres, bâtons"
       },
       "source": {
         "pdfPage": 16
@@ -7277,10 +8705,14 @@
         "word": "Belembo"
       },
       "meaning": {
-        "es": "Milagro, signo"
+        "es": "Milagro, signo",
+        "en": "Miracle, sign",
+        "fr": "Miracle, signe"
       },
       "meaningPlural": {
-        "es": "Milagros, signos"
+        "es": "Milagros, signos",
+        "en": "Miracles, signs",
+        "fr": "Miracles, signes"
       },
       "source": {
         "pdfPage": 16
@@ -7297,10 +8729,14 @@
         "word": "Belēbu"
       },
       "meaning": {
-        "es": "Labio"
+        "es": "Labio",
+        "en": "Lip",
+        "fr": "Lèvre"
       },
       "meaningPlural": {
-        "es": "Labios"
+        "es": "Labios",
+        "en": "Lips",
+        "fr": "Lèvres"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7317,10 +8753,14 @@
         "word": "Belolo"
       },
       "meaning": {
-        "es": "Sardina"
+        "es": "Sardina",
+        "en": "Sardine",
+        "fr": "Sardine"
       },
       "meaningPlural": {
-        "es": "Sardinas"
+        "es": "Sardinas",
+        "en": "Sardines",
+        "fr": "Sardines"
       },
       "source": {
         "pdfPage": 16
@@ -7337,10 +8777,14 @@
         "word": "Belēmbē"
       },
       "meaning": {
-        "es": "Pórtico, portal"
+        "es": "Pórtico, portal",
+        "en": "Portico, portal",
+        "fr": "Portique, portail"
       },
       "meaningPlural": {
-        "es": "Pórticos, portales"
+        "es": "Pórticos, portales",
+        "en": "Porticoes, portals",
+        "fr": "Portiques, portails"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7357,10 +8801,14 @@
         "word": "Belongo"
       },
       "meaning": {
-        "es": "Torre"
+        "es": "Torre",
+        "en": "Tower",
+        "fr": "Tour"
       },
       "meaningPlural": {
-        "es": "Torres"
+        "es": "Torres",
+        "en": "Towers",
+        "fr": "Tours"
       },
       "source": {
         "pdfPage": 16
@@ -7377,10 +8825,14 @@
         "word": "Bemi"
       },
       "meaning": {
-        "es": "Lengua"
+        "es": "Lengua",
+        "en": "Tongue",
+        "fr": "Langue"
       },
       "meaningPlural": {
-        "es": "Lenguas"
+        "es": "Lenguas",
+        "en": "Tongues",
+        "fr": "Langues"
       },
       "source": {
         "pdfPage": 16
@@ -7397,10 +8849,14 @@
         "word": "Benami"
       },
       "meaning": {
-        "es": "Hombre poderoso"
+        "es": "Hombre poderoso",
+        "en": "Powerful man",
+        "fr": "Homme puissant"
       },
       "meaningPlural": {
-        "es": "Hombres poderosos"
+        "es": "Hombres poderosos",
+        "en": "Powerful men",
+        "fr": "Hommes puissants"
       },
       "source": {
         "pdfPage": 16
@@ -7417,10 +8873,14 @@
         "word": "Benge"
       },
       "meaning": {
-        "es": "Costa"
+        "es": "Costa",
+        "en": "Coast",
+        "fr": "Côte"
       },
       "meaningPlural": {
-        "es": "Costas"
+        "es": "Costas",
+        "en": "Coasts",
+        "fr": "Côtes"
       },
       "source": {
         "pdfPage": 16
@@ -7437,10 +8897,14 @@
         "word": "Beningo"
       },
       "meaning": {
-        "es": "Marea"
+        "es": "Marea",
+        "en": "Tide",
+        "fr": "Marée"
       },
       "meaningPlural": {
-        "es": "Mareas"
+        "es": "Mareas",
+        "en": "Tides",
+        "fr": "Marées"
       },
       "source": {
         "pdfPage": 16
@@ -7457,10 +8921,14 @@
         "word": "Bepapi"
       },
       "meaning": {
-        "es": "Corteza, piel"
+        "es": "Corteza, piel",
+        "en": "Bark, skin",
+        "fr": "Écorce, peau"
       },
       "meaningPlural": {
-        "es": "Cortezas, pieles"
+        "es": "Cortezas, pieles",
+        "en": "Barks, skins",
+        "fr": "Écorces, peaux"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7477,10 +8945,14 @@
         "word": "Bepēlē"
       },
       "meaning": {
-        "es": "Plato"
+        "es": "Plato",
+        "en": "Plate",
+        "fr": "Assiette"
       },
       "meaningPlural": {
-        "es": "Platos"
+        "es": "Platos",
+        "en": "Plates",
+        "fr": "Assiettes"
       },
       "source": {
         "pdfPage": 16
@@ -7497,10 +8969,14 @@
         "word": "Bepikiliedi"
       },
       "meaning": {
-        "es": "Pensamiento"
+        "es": "Pensamiento",
+        "en": "Thought",
+        "fr": "Pensée"
       },
       "meaningPlural": {
-        "es": "Pensamientos"
+        "es": "Pensamientos",
+        "en": "Thoughts",
+        "fr": "Pensées"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7517,10 +8993,14 @@
         "word": "Bepondoma"
       },
       "meaning": {
-        "es": "Almohada"
+        "es": "Almohada",
+        "en": "Pillow",
+        "fr": "Oreiller"
       },
       "meaningPlural": {
-        "es": "Almohadas"
+        "es": "Almohadas",
+        "en": "Pillows",
+        "fr": "Oreillers"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7537,10 +9017,14 @@
         "word": "Besuti"
       },
       "meaning": {
-        "es": "Minuto"
+        "es": "Minuto",
+        "en": "Minute",
+        "fr": "Minute"
       },
       "meaningPlural": {
-        "es": "Minutos"
+        "es": "Minutos",
+        "en": "Minutes",
+        "fr": "Minutes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7557,10 +9041,14 @@
         "word": "Betâkâ"
       },
       "meaning": {
-        "es": "Familia"
+        "es": "Familia",
+        "en": "Family",
+        "fr": "Famille"
       },
       "meaningPlural": {
-        "es": "Familias"
+        "es": "Familias",
+        "en": "Families",
+        "fr": "Familles"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7577,10 +9065,14 @@
         "word": "Betima"
       },
       "meaning": {
-        "es": "Lago"
+        "es": "Lago",
+        "en": "Lake",
+        "fr": "Lac"
       },
       "meaningPlural": {
-        "es": "Lagos"
+        "es": "Lagos",
+        "en": "Lakes",
+        "fr": "Lacs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7597,10 +9089,14 @@
         "word": "Betimbe"
       },
       "meaning": {
-        "es": "Tabla, madera"
+        "es": "Tabla, madera",
+        "en": "Board, wood",
+        "fr": "Planche, bois"
       },
       "meaningPlural": {
-        "es": "Tablas, maderas"
+        "es": "Tablas, maderas",
+        "en": "Boards, woods",
+        "fr": "Planches, bois"
       },
       "source": {
         "pdfPage": 17
@@ -7617,10 +9113,14 @@
         "word": "Betomba"
       },
       "meaning": {
-        "es": "Tribu, familia"
+        "es": "Tribu, familia",
+        "en": "Tribe, family",
+        "fr": "Tribu, famille"
       },
       "meaningPlural": {
-        "es": "Tribus, familias"
+        "es": "Tribus, familias",
+        "en": "Tribes, families",
+        "fr": "Tribus, familles"
       },
       "source": {
         "pdfPage": 17
@@ -7637,10 +9137,14 @@
         "word": "Betombi"
       },
       "meaning": {
-        "es": "Falda de monte"
+        "es": "Falda de monte",
+        "en": "Mountainside",
+        "fr": "Flanc de montagne"
       },
       "meaningPlural": {
-        "es": "Faldas de monte"
+        "es": "Faldas de monte",
+        "en": "Mountainsides",
+        "fr": "Flancs de montagne"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7657,10 +9161,14 @@
         "word": "Bevango"
       },
       "meaning": {
-        "es": "Vasija para agua"
+        "es": "Vasija para agua",
+        "en": "Water vessel",
+        "fr": "Récipient pour l'eau"
       },
       "meaningPlural": {
-        "es": "Vasijas para agua"
+        "es": "Vasijas para agua",
+        "en": "Water vessels",
+        "fr": "Récipients pour l'eau"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7677,10 +9185,14 @@
         "word": "Bevēlēhi"
       },
       "meaning": {
-        "es": "Pañuelo"
+        "es": "Pañuelo",
+        "en": "Handkerchief",
+        "fr": "Mouchoir"
       },
       "meaningPlural": {
-        "es": "Pañuelos"
+        "es": "Pañuelos",
+        "en": "Handkerchiefs",
+        "fr": "Mouchoirs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7697,10 +9209,14 @@
         "word": "Bevemba"
       },
       "meaning": {
-        "es": "Valor, coraje"
+        "es": "Valor, coraje",
+        "en": "Valour, courage",
+        "fr": "Valeur, courage"
       },
       "meaningPlural": {
-        "es": "Valores, corajes"
+        "es": "Valores, corajes",
+        "en": "Valours, courages",
+        "fr": "Valeurs, courages"
       },
       "source": {
         "pdfPage": 17
@@ -7717,10 +9233,14 @@
         "word": "Bevila"
       },
       "meaning": {
-        "es": "Ébano"
+        "es": "Ébano",
+        "en": "Ebony",
+        "fr": "Ébène"
       },
       "meaningPlural": {
-        "es": "Ébanos"
+        "es": "Ébanos",
+        "en": "Ebonies",
+        "fr": "Ébènes"
       },
       "source": {
         "pdfPage": 17
@@ -7737,10 +9257,14 @@
         "word": "Bevindi"
       },
       "meaning": {
-        "es": "Nube"
+        "es": "Nube",
+        "en": "Cloud",
+        "fr": "Nuage"
       },
       "meaningPlural": {
-        "es": "Nubes"
+        "es": "Nubes",
+        "en": "Clouds",
+        "fr": "Nuages"
       },
       "source": {
         "pdfPage": 17
@@ -7757,10 +9281,14 @@
         "word": "Bevuva"
       },
       "meaning": {
-        "es": "Plaga"
+        "es": "Plaga",
+        "en": "Plague",
+        "fr": "Fléau"
       },
       "meaningPlural": {
-        "es": "Plagas"
+        "es": "Plagas",
+        "en": "Plagues",
+        "fr": "Fléaux"
       },
       "source": {
         "pdfPage": 17
@@ -7777,10 +9305,14 @@
         "word": "Bevudi"
       },
       "meaning": {
-        "es": "Espuma, algodón"
+        "es": "Espuma, algodón",
+        "en": "Foam, cotton",
+        "fr": "Écume, coton"
       },
       "meaningPlural": {
-        "es": "Espumas, algodones"
+        "es": "Espumas, algodones",
+        "en": "Foams, cottons",
+        "fr": "Écumes, cotons"
       },
       "source": {
         "pdfPage": 17
@@ -7797,10 +9329,14 @@
         "word": "Bevunga"
       },
       "meaning": {
-        "es": "Yelmo"
+        "es": "Yelmo",
+        "en": "Helmet",
+        "fr": "Heaume"
       },
       "meaningPlural": {
-        "es": "Yelmos"
+        "es": "Yelmos",
+        "en": "Helmets",
+        "fr": "Heaumes"
       },
       "source": {
         "pdfPage": 17
@@ -7817,10 +9353,14 @@
         "word": "Beyome"
       },
       "meaning": {
-        "es": "Lado derecho"
+        "es": "Lado derecho",
+        "en": "Right side",
+        "fr": "Côté droit"
       },
       "meaningPlural": {
-        "es": "Lados derechos"
+        "es": "Lados derechos",
+        "en": "Right sides",
+        "fr": "Côtés droits"
       },
       "source": {
         "pdfPage": 17
@@ -7837,10 +9377,14 @@
         "word": "Begunguna"
       },
       "meaning": {
-        "es": "Llave"
+        "es": "Llave",
+        "en": "Key",
+        "fr": "Clé"
       },
       "meaningPlural": {
-        "es": "Llaves"
+        "es": "Llaves",
+        "en": "Keys",
+        "fr": "Clés"
       },
       "source": {
         "pdfPage": 17
@@ -7857,10 +9401,14 @@
         "word": "Bepati"
       },
       "meaning": {
-        "es": "Tontería, locura"
+        "es": "Tontería, locura",
+        "en": "Foolishness, madness",
+        "fr": "Sottise, folie"
       },
       "meaningPlural": {
-        "es": "Tonterías, locuras"
+        "es": "Tonterías, locuras",
+        "en": "Foolishnesses, madnesses",
+        "fr": "Sottises, folies"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7877,10 +9425,14 @@
         "word": "Bepota"
       },
       "meaning": {
-        "es": "Vidriado, loza"
+        "es": "Vidriado, loza",
+        "en": "Glaze, earthenware",
+        "fr": "Vernis, faïence"
       },
       "meaningPlural": {
-        "es": "Vidriados, lozas"
+        "es": "Vidriados, lozas",
+        "en": "Glazes, earthenwares",
+        "fr": "Vernis, faïences"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7897,10 +9449,14 @@
         "word": "Bepepa"
       },
       "meaning": {
-        "es": "Timón, abanico"
+        "es": "Timón, abanico",
+        "en": "Rudder, fan",
+        "fr": "Gouvernail, éventail"
       },
       "meaningPlural": {
-        "es": "Timones, abanicos"
+        "es": "Timones, abanicos",
+        "en": "Rudders, fans",
+        "fr": "Gouvernails, éventails"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7917,10 +9473,14 @@
         "word": "Betema"
       },
       "meaning": {
-        "es": "Cardialgía, dolor"
+        "es": "Cardialgía, dolor",
+        "en": "Cardialgia, pain",
+        "fr": "Cardialgie, douleur"
       },
       "meaningPlural": {
-        "es": "Cardialgías, dolores"
+        "es": "Cardialgías, dolores",
+        "en": "Cardialgias, pains",
+        "fr": "Cardialgies, douleurs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7937,10 +9497,14 @@
         "word": "Beyake"
       },
       "meaning": {
-        "es": "Panadizo"
+        "es": "Panadizo",
+        "en": "Whitlow",
+        "fr": "Panaris"
       },
       "meaningPlural": {
-        "es": "Panadizos"
+        "es": "Panadizos",
+        "en": "Whitlows",
+        "fr": "Panaris"
       },
       "source": {
         "pdfPage": 17
@@ -7957,10 +9521,14 @@
         "word": "Bejanganangobe"
       },
       "meaning": {
-        "es": "Carta, nota"
+        "es": "Carta, nota",
+        "en": "Letter, note",
+        "fr": "Lettre, billet"
       },
       "meaningPlural": {
-        "es": "Cartas, notas"
+        "es": "Cartas, notas",
+        "en": "Letters, notes",
+        "fr": "Lettres, billets"
       },
       "source": {
         "pdfPage": 17
@@ -7977,10 +9545,14 @@
         "word": "Betoli"
       },
       "meaning": {
-        "es": "Rata"
+        "es": "Rata",
+        "en": "Rat",
+        "fr": "Rat"
       },
       "meaningPlural": {
-        "es": "Ratas"
+        "es": "Ratas",
+        "en": "Rats",
+        "fr": "Rats"
       },
       "source": {
         "pdfPage": "15-17"
@@ -7997,10 +9569,14 @@
         "word": "Betunia"
       },
       "meaning": {
-        "es": "Sufrimiento"
+        "es": "Sufrimiento",
+        "en": "Suffering",
+        "fr": "Souffrance"
       },
       "meaningPlural": {
-        "es": "Sufrimientos"
+        "es": "Sufrimientos",
+        "en": "Sufferings",
+        "fr": "Souffrances"
       },
       "source": {
         "pdfPage": 17
@@ -8017,10 +9593,14 @@
         "word": "Bevandi"
       },
       "meaning": {
-        "es": "Miembro"
+        "es": "Miembro",
+        "en": "Limb, member",
+        "fr": "Membre"
       },
       "meaningPlural": {
-        "es": "Miembros"
+        "es": "Miembros",
+        "en": "Limbs, members",
+        "fr": "Membres"
       },
       "source": {
         "pdfPage": 17
@@ -8037,10 +9617,14 @@
         "word": "Bevelse"
       },
       "meaning": {
-        "es": "Hueso"
+        "es": "Hueso",
+        "en": "Bone",
+        "fr": "Os"
       },
       "meaningPlural": {
-        "es": "Huesos"
+        "es": "Huesos",
+        "en": "Bones",
+        "fr": "Os"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8057,10 +9641,14 @@
         "word": "Bevema"
       },
       "meaning": {
-        "es": "Trampa"
+        "es": "Trampa",
+        "en": "Trap",
+        "fr": "Piège"
       },
       "meaningPlural": {
-        "es": "Trampas"
+        "es": "Trampas",
+        "en": "Traps",
+        "fr": "Pièges"
       },
       "source": {
         "pdfPage": 17
@@ -8077,10 +9665,14 @@
         "word": "Bevēlē"
       },
       "meaning": {
-        "es": "Sed"
+        "es": "Sed",
+        "en": "Thirst",
+        "fr": "Soif"
       },
       "meaningPlural": {
-        "es": "Sedes"
+        "es": "Sedes",
+        "en": "Thirsts",
+        "fr": "Soifs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8097,10 +9689,14 @@
         "word": "Bevita"
       },
       "meaning": {
-        "es": "Persecución"
+        "es": "Persecución",
+        "en": "Persecution",
+        "fr": "Persécution"
       },
       "meaningPlural": {
-        "es": "Persecuciones"
+        "es": "Persecuciones",
+        "en": "Persecutions",
+        "fr": "Persécutions"
       },
       "source": {
         "pdfPage": 17
@@ -8117,10 +9713,14 @@
         "word": "Beūaha"
       },
       "meaning": {
-        "es": "Sierra, lima"
+        "es": "Sierra, lima",
+        "en": "Saw, file",
+        "fr": "Scie, lime"
       },
       "meaningPlural": {
-        "es": "Sierras, limas"
+        "es": "Sierras, limas",
+        "en": "Saws, files",
+        "fr": "Scies, limes"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8137,10 +9737,14 @@
         "word": "Beva"
       },
       "meaning": {
-        "es": "Vasija"
+        "es": "Vasija",
+        "en": "Vessel",
+        "fr": "Récipient"
       },
       "meaningPlural": {
-        "es": "Vasijas"
+        "es": "Vasijas",
+        "en": "Vessels",
+        "fr": "Récipients"
       },
       "source": {
         "pdfPage": 17
@@ -8157,10 +9761,14 @@
         "word": "Beyokūedi"
       },
       "meaning": {
-        "es": "Discípulo"
+        "es": "Discípulo",
+        "en": "Disciple",
+        "fr": "Disciple"
       },
       "meaningPlural": {
-        "es": "Discípulos"
+        "es": "Discípulos",
+        "en": "Disciples",
+        "fr": "Disciples"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8177,10 +9785,14 @@
         "word": "Bemēngūē"
       },
       "meaning": {
-        "es": "Lado izquierdo"
+        "es": "Lado izquierdo",
+        "en": "Left side",
+        "fr": "Côté gauche"
       },
       "meaningPlural": {
-        "es": "Lados izquierdos"
+        "es": "Lados izquierdos",
+        "en": "Left sides",
+        "fr": "Côtés gauches"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8197,10 +9809,14 @@
         "word": "Benjasigalanjenga"
       },
       "meaning": {
-        "es": "Ignorancia"
+        "es": "Ignorancia",
+        "en": "Ignorance",
+        "fr": "Ignorance"
       },
       "meaningPlural": {
-        "es": "Ignorancias"
+        "es": "Ignorancias",
+        "en": "Ignorances",
+        "fr": "Ignorances"
       },
       "source": {
         "pdfPage": 17
@@ -8217,10 +9833,14 @@
         "word": "Besalagambūē"
       },
       "meaning": {
-        "es": "Charlatán"
+        "es": "Charlatán",
+        "en": "Charlatan",
+        "fr": "Charlatan"
       },
       "meaningPlural": {
-        "es": "Charlatanes"
+        "es": "Charlatanes",
+        "en": "Charlatans",
+        "fr": "Charlatans"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8237,10 +9857,14 @@
         "word": "Beponga"
       },
       "meaning": {
-        "es": "Cera, capa"
+        "es": "Cera, capa",
+        "en": "Wax, layer",
+        "fr": "Cire, couche"
       },
       "meaningPlural": {
-        "es": "Ceras, capas"
+        "es": "Ceras, capas",
+        "en": "Waxes, layers",
+        "fr": "Cires, couches"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8257,10 +9881,14 @@
         "word": "Bepambo"
       },
       "meaning": {
-        "es": "Respeto, arco"
+        "es": "Respeto, arco",
+        "en": "Respect, bow",
+        "fr": "Respect, arc"
       },
       "meaningPlural": {
-        "es": "Respetos, arcos"
+        "es": "Respetos, arcos",
+        "en": "Respects, bows",
+        "fr": "Respects, arcs"
       },
       "source": {
         "pdfPage": "15-17"
@@ -8277,10 +9905,14 @@
         "word": "Betundu"
       },
       "meaning": {
-        "es": "Hato, racimo"
+        "es": "Hato, racimo",
+        "en": "Flock, cluster",
+        "fr": "Troupeau, grappe"
       },
       "meaningPlural": {
-        "es": "Hatos, racimos"
+        "es": "Hatos, racimos",
+        "en": "Flocks, clusters",
+        "fr": "Troupeaux, grappes"
       },
       "source": {
         "pdfPage": 17
@@ -8297,10 +9929,14 @@
         "word": "Betējani"
       },
       "meaning": {
-        "es": "Rehén"
+        "es": "Rehén",
+        "en": "Hostage",
+        "fr": "Otage"
       },
       "meaningPlural": {
-        "es": "Rehenes"
+        "es": "Rehenes",
+        "en": "Hostages",
+        "fr": "Otages"
       },
       "source": {
         "pdfPage": 17

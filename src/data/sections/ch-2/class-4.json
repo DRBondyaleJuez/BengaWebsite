@@ -3,10 +3,14 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 4"
+    "es": "Clase 4",
+    "en": "Class 4",
+    "fr": "Classe 4"
   },
   "subtitle": {
-    "es": "bo / bū → mi"
+    "es": "bo / bū → mi",
+    "en": "bo / bū → mi",
+    "fr": "bo / bū → mi"
   },
   "source": {
     "pdfPage": "11-12"
@@ -16,7 +20,9 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -24,14 +30,18 @@
       "from": "bo- / bū-",
       "to": "mi-",
       "description": {
-        "es": "Los nombres de la clase 4 toman el prefijo mi- al pasar al plural."
+        "es": "Los nombres de la clase 4 toman el prefijo mi- al pasar al plural.",
+        "en": "Class 4 nouns take the prefix mi- in the plural.",
+        "fr": "Les noms de la classe 4 prennent le préfixe mi- au pluriel."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos con bo-"
+        "es": "Ejemplos con bo-",
+        "en": "Examples with bo-",
+        "fr": "Exemples avec bo-"
       }
     },
     {
@@ -42,7 +52,9 @@
       "type": "heading",
       "id": "variants",
       "text": {
-        "es": "Ejemplos con bū-"
+        "es": "Ejemplos con bū-",
+        "en": "Examples with bū-",
+        "fr": "Exemples avec bū-"
       }
     },
     {
@@ -53,7 +65,9 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -61,26 +75,38 @@
       "items": [
         {
           "title": {
-            "es": "Prefijo mi-"
+            "es": "Prefijo mi-",
+            "en": "Prefix mi-",
+            "fr": "Préfixe mi-"
           },
           "text": {
-            "es": "La marca plural más característica de esta clase es mi-."
+            "es": "La marca plural más característica de esta clase es mi-.",
+            "en": "The most characteristic plural marker of this class is mi-.",
+            "fr": "La marque de pluriel la plus caractéristique de cette classe est mi-."
           }
         },
         {
           "title": {
-            "es": "Raíces bo-/bū-"
+            "es": "Raíces bo-/bū-",
+            "en": "Roots bo-/bū-",
+            "fr": "Racines bo-/bū-"
           },
           "text": {
-            "es": "La raíz singular puede empezar con bo- o bū- antes de emerger en plural."
+            "es": "La raíz singular puede empezar con bo- o bū- antes de emerger en plural.",
+            "en": "The singular root may begin with bo- or bū- before emerging in the plural.",
+            "fr": "La racine du singulier peut commencer par bo- ou bū- avant d’apparaître au pluriel."
           }
         },
         {
           "title": {
-            "es": "Uso práctico"
+            "es": "Uso práctico",
+            "en": "Practical use",
+            "fr": "Usage pratique"
           },
           "text": {
-            "es": "Los nombres aparecen con el plural marcado de manera clara y regular."
+            "es": "Los nombres aparecen con el plural marcado de manera clara y regular.",
+            "en": "The nouns appear with a clearly and regularly marked plural.",
+            "fr": "Les noms apparaissent avec un pluriel marqué de façon claire et régulière."
           }
         }
       ]
@@ -89,14 +115,18 @@
       "type": "heading",
       "id": "exceptions",
       "text": {
-        "es": "Excepciones"
+        "es": "Excepciones",
+        "en": "Exceptions",
+        "fr": "Exceptions"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la clase 2."
+        "es": "Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la clase 2.",
+        "en": "Bolohi forms its plural, melohi, with me- instead of mi-. Buūha, day, belongs to this class in the singular, but its plural, ūhi, is irregular and takes all its adjectives according to the plural formation of class 2.",
+        "fr": "Bolohi forme son pluriel, melohi, avec me- au lieu de mi-. Buūha, jour, appartient à cette classe au singulier, mais son pluriel, ūhi, est irrégulier et prend tous ses adjectifs selon la formation du pluriel de la classe 2."
       }
     },
     {
@@ -107,20 +137,28 @@
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Repite el cambio bo-/bū- → mi- con los ejemplos."
+          "es": "Repite el cambio bo-/bū- → mi- con los ejemplos.",
+          "en": "Repeat the change bo-/bū- → mi- with the examples.",
+          "fr": "Répétez le changement bo-/bū- → mi- avec les exemples."
         },
         {
-          "es": "Forma una frase oral con uno de los sustantivos en singular."
+          "es": "Forma una frase oral con uno de los sustantivos en singular.",
+          "en": "Make an oral phrase with one of the nouns in the singular.",
+          "fr": "Formez une phrase orale avec l’un des noms au singulier."
         },
         {
-          "es": "Luego repite la misma frase en plural con el mismo patrón."
+          "es": "Luego repite la misma frase en plural con el mismo patrón.",
+          "en": "Then repeat the same phrase in the plural with the same pattern.",
+          "fr": "Répétez ensuite la même phrase au pluriel selon le même schéma."
         }
       ]
     }

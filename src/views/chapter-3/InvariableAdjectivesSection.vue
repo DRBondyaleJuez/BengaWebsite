@@ -1,22 +1,20 @@
 <template>
   <div class="invariable-adjectives">
     <div class="invariable-adjectives__header">
-      <h1>Adjetivos Invariables</h1>
-      <p class="subtitle">Formas fijas que no cambian</p>
+      <h1>{{ $t('pages.invariableAdjectives.adjetivosInvariables') }}</h1>
+      <p class="subtitle">{{ $t('pages.invariableAdjectives.formasFijasNoCambian') }}</p>
     </div>
 
     <!-- Overview -->
     <section class="invariable-adjectives__overview">
       <p>
-        Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que
-        califican, sin experimentar cambio alguno en su única y simple forma. Estos adjetivos no
-        tienen número, género ni clasificación.
+        {{ $t('pages.invariableAdjectives.adjetivosInvariablesNoVarian') }}
       </p>
     </section>
 
     <!-- Characteristics -->
     <section class="invariable-adjectives__characteristics">
-      <h2>Características</h2>
+      <h2>{{ $t('pages.invariableAdjectives.caracteristicas') }}</h2>
       <div class="characteristics-grid">
         <div class="char-card" v-for="(char, idx) in characteristics" :key="`char-${idx}`">
           <span class="char-icon">✓</span>
@@ -27,7 +25,7 @@
 
     <!-- Adjectives List -->
     <section class="invariable-adjectives__list">
-      <h2>Adjetivos Invariables</h2>
+      <h2>{{ $t('pages.invariableAdjectives.adjetivosInvariables') }}</h2>
       <CardGrid :items="adjectives" class="adjectives-grid" key-prefix="adj" v-slot="{ item: adj }">
         <div class="adjective-card">
           <div class="adjective-card__bengaform">
@@ -42,28 +40,36 @@
 
     <!-- Usage Examples -->
     <section class="invariable-adjectives__examples">
-      <h2>Ejemplos de Uso</h2>
+      <h2>{{ $t('pages.invariableAdjectives.ejemplosUso') }}</h2>
       <p class="section-intro">
-        Escucha cada ejemplo pulsando el icono de audio: la lengua benga es principalmente oral.
+        {{ $t('pages.invariableAdjectives.escuchaCadaEjemploPulsando') }}
       </p>
       <div class="examples-container">
         <div class="example-item" v-for="(example, idx) in examples" :key="`ex-${idx}`">
           <div class="example-item__bengaform">
             <BengaWord :word="example.bengaSentence" />
           </div>
-          <div class="example-item__translation">
-            <strong>Traducción:</strong> {{ example.spanishTranslation }}
-          </div>
-          <div class="example-item__explanation">
-            <strong>Explicación:</strong> {{ example.explanation }}
-          </div>
+          <div
+            class="example-item__translation"
+            v-html="
+              $t('pages.invariableAdjectives.traduccion', {
+                spanishTranslation: example.spanishTranslation
+              })
+            "
+          ></div>
+          <div
+            class="example-item__explanation"
+            v-html="
+              $t('pages.invariableAdjectives.explicacion', { explanation: example.explanation })
+            "
+          ></div>
         </div>
       </div>
     </section>
 
     <!-- Important Notes -->
     <section class="invariable-adjectives__notes">
-      <h2>Puntos Importantes</h2>
+      <h2>{{ $t('pages.invariableAdjectives.puntosImportantes') }}</h2>
       <div class="notes-container">
         <div class="note-item" v-for="(note, idx) in characteristics" :key="`note-${idx}`">
           <span class="note-number">{{ idx + 1 }}</span>
@@ -74,37 +80,37 @@
 
     <!-- Comparison Table -->
     <section class="invariable-adjectives__comparison">
-      <h2>Variables vs Invariables</h2>
+      <h2>{{ $t('pages.invariableAdjectives.variablesVsInvariables') }}</h2>
       <div class="comparison-table">
         <div class="table-row header">
-          <div class="cell">Aspecto</div>
-          <div class="cell">Adjetivos Variables</div>
-          <div class="cell">Adjetivos Invariables</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.aspecto') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.adjetivosVariables') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.adjetivosInvariables') }}</div>
         </div>
         <div class="table-row">
-          <div class="cell"><strong>Cambio de forma</strong></div>
-          <div class="cell">Sí, según la clase del sustantivo</div>
-          <div class="cell">No, forma fija</div>
+          <div class="cell" v-html="$t('pages.invariableAdjectives.cambioForma')"></div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.siSegunClaseSustantivo') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.noFormaFija') }}</div>
         </div>
         <div class="table-row">
-          <div class="cell"><strong>Número</strong></div>
-          <div class="cell">Singular y Plural</div>
-          <div class="cell">Sin distinción</div>
+          <div class="cell" v-html="$t('pages.invariableAdjectives.numero')"></div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.singularPlural') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.sinDistincion') }}</div>
         </div>
         <div class="table-row">
-          <div class="cell"><strong>Género</strong></div>
-          <div class="cell">Sin distinción (como todos en Benga)</div>
-          <div class="cell">Sin distinción</div>
+          <div class="cell" v-html="$t('pages.invariableAdjectives.genero')"></div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.sinDistincionComoTodos') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.sinDistincion') }}</div>
         </div>
         <div class="table-row">
-          <div class="cell"><strong>Concordancia</strong></div>
-          <div class="cell">Obligatoria con el sustantivo</div>
-          <div class="cell">No aplica</div>
+          <div class="cell" v-html="$t('pages.invariableAdjectives.concordancia')"></div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.obligatoriaConSustantivo') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.noAplica') }}</div>
         </div>
         <div class="table-row">
-          <div class="cell"><strong>Ejemplo</strong></div>
-          <div class="cell">eyamu (bueno), beyamu, iyamu...</div>
-          <div class="cell">bokolo (duro), tanana (blanco)</div>
+          <div class="cell" v-html="$t('pages.invariableAdjectives.ejemplo')"></div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.eyamuBuenoBeyamuIyamu') }}</div>
+          <div class="cell">{{ $t('pages.invariableAdjectives.bokoloDuroTananaBlanco') }}</div>
         </div>
       </div>
     </section>
@@ -116,6 +122,7 @@
 <script>
 import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
+import { localizeDeep } from '@/utils/localized'
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
 import { getAdjectives } from '@/services/adjectives'
@@ -134,15 +141,21 @@ export default {
       characteristics: []
     }
   },
+  watch: {
+    // switching language reloads the texts
+    '$i18n.locale': 'loadData'
+  },
   mounted() {
     this.loadData()
   },
   methods: {
     loadData() {
+      // The texts of the data file in the visitor's language (Benga words unchanged)
+      const data = localizeDeep(invariableAdjectivesData, this.$i18n.locale)
       // The list comes from the lexicon (lexicon/adjectives.json, kind "invariable")
       this.adjectives = getAdjectives({ kind: 'invariable' })
-      this.examples = invariableAdjectivesData.examples
-      this.characteristics = invariableAdjectivesData.characteristics
+      this.examples = data.examples
+      this.characteristics = data.characteristics
     }
   }
 }
@@ -343,7 +356,7 @@ export default {
     color: $color-text-primary;
     line-height: 1.6;
 
-    strong {
+    :deep(strong) {
       color: $color-heading-dark;
     }
   }
@@ -352,7 +365,7 @@ export default {
     color: $color-text-secondary;
     font-style: italic;
 
-    strong {
+    :deep(strong) {
       color: $color-text-primary;
       font-style: normal;
     }

@@ -13,27 +13,35 @@
       "type": "heading",
       "id": "triphthongs-intro",
       "text": {
-        "es": "Triptongos"
+        "es": "Triptongos",
+        "en": "Triphthongs",
+        "fr": "Triphtongues"
       }
     },
     {
       "type": "paragraph",
       "text": {
-        "es": "Los triptongos son combinaciones de tres vocales que mantienen su sonido continuo."
+        "es": "Los triptongos son combinaciones de tres vocales que mantienen su sonido continuo.",
+        "en": "Triphthongs are combinations of three vowels that keep a continuous sound.",
+        "fr": "Les triphtongues sont des combinaisons de trois voyelles qui gardent un son continu."
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Estas y semejantes combinaciones se hallarán en gran número y variedad al registrar la conjugación de los verbos regulares en su voz pasiva."
+        "es": "Estas y semejantes combinaciones se hallarán en gran número y variedad al registrar la conjugación de los verbos regulares en su voz pasiva.",
+        "en": "These and similar combinations will be found in great number and variety when going through the conjugation of regular verbs in the passive voice.",
+        "fr": "On trouvera ces combinaisons, et d’autres semblables, en grand nombre et en grande variété dans la conjugaison des verbes réguliers à la voix passive."
       }
     },
     {
       "type": "heading",
       "id": "triphthongs-list",
       "text": {
-        "es": "Triptongos"
+        "es": "Triptongos",
+        "en": "Triphthongs",
+        "fr": "Triphtongues"
       }
     },
     {
@@ -52,7 +60,9 @@
             {
               "word": "paia",
               "meaning": {
-                "es": "padre"
+                "es": "padre",
+                "en": "father",
+                "fr": "père"
               }
             }
           ]
@@ -68,7 +78,9 @@
             {
               "word": "nyaūe",
               "meaning": {
-                "es": "no"
+                "es": "no",
+                "en": "no",
+                "fr": "non"
               }
             }
           ]
@@ -84,7 +96,9 @@
             {
               "word": "iuūa",
               "meaning": {
-                "es": "petición"
+                "es": "petición",
+                "en": "request",
+                "fr": "demande"
               }
             }
           ]
@@ -100,7 +114,9 @@
             {
               "word": "iūēla",
               "meaning": {
-                "es": "hora"
+                "es": "hora",
+                "en": "hour",
+                "fr": "heure"
               }
             }
           ]
@@ -116,7 +132,9 @@
             {
               "word": "iūedo",
               "meaning": {
-                "es": "muerte"
+                "es": "muerte",
+                "en": "death",
+                "fr": "mort"
               }
             }
           ]
@@ -132,7 +150,9 @@
             {
               "word": "yoūakē",
               "meaning": {
-                "es": "conocer"
+                "es": "conocer",
+                "en": "to know",
+                "fr": "connaître"
               }
             }
           ]
@@ -148,7 +168,9 @@
             {
               "word": "hoūe",
               "meaning": {
-                "es": "cabellos"
+                "es": "cabellos",
+                "en": "hair",
+                "fr": "cheveux"
               }
             }
           ]
@@ -164,7 +186,9 @@
             {
               "word": "ijoūia",
               "meaning": {
-                "es": "mentir"
+                "es": "mentir",
+                "en": "to lie",
+                "fr": "mentir"
               }
             }
           ]
@@ -180,7 +204,9 @@
             {
               "word": "uūaka",
               "meaning": {
-                "es": "vomitar"
+                "es": "vomitar",
+                "en": "to vomit",
+                "fr": "vomir"
               }
             }
           ]
@@ -196,7 +222,9 @@
             {
               "word": "Uvanguūi",
               "meaning": {
-                "es": "Redentor"
+                "es": "Redentor",
+                "en": "Redeemer",
+                "fr": "Rédempteur"
               }
             }
           ]
@@ -212,7 +240,9 @@
             {
               "word": "ngūae",
               "meaning": {
-                "es": "perdiz"
+                "es": "perdiz",
+                "en": "partridge",
+                "fr": "perdrix"
               }
             }
           ]
@@ -228,7 +258,9 @@
             {
               "word": "ūeango",
               "meaning": {
-                "es": "digno"
+                "es": "digno",
+                "en": "worthy",
+                "fr": "digne"
               }
             }
           ]
@@ -244,7 +276,9 @@
             {
               "word": "mbūei",
               "meaning": {
-                "es": "amigo"
+                "es": "amigo",
+                "en": "friend",
+                "fr": "ami"
               }
             }
           ]
@@ -260,13 +294,17 @@
             {
               "word": "mbūia",
               "meaning": {
-                "es": "lluvia"
+                "es": "lluvia",
+                "en": "rain",
+                "fr": "pluie"
               }
             },
             {
               "word": "kaia",
               "meaning": {
-                "es": "orangután"
+                "es": "orangután",
+                "en": "orangutan",
+                "fr": "orang-outan"
               }
             }
           ]
@@ -277,14 +315,18 @@
       "type": "heading",
       "id": "triphthongs-note",
       "text": {
-        "es": "Nota Importante"
+        "es": "Nota Importante",
+        "en": "Important Note",
+        "fr": "Remarque importante"
       }
     },
     {
       "type": "note",
       "variant": "important",
       "text": {
-        "es": "Nótese que estas combinaciones aparecen frecuentemente en la conjugación de verbos regulares en voz pasiva. Ejemplos: haūudūendi (pasado del verbo hacer), Jaūē (pasado del verbo nacer), vēūēndi (pasado del verbo dar), Dubuūakuduūendi (pasado del verbo abrir)."
+        "es": "Nótese que estas combinaciones aparecen frecuentemente en la conjugación de verbos regulares en voz pasiva. Ejemplos: haūudūendi (pasado del verbo hacer), Jaūē (pasado del verbo nacer), vēūēndi (pasado del verbo dar), Dubuūakuduūendi (pasado del verbo abrir).",
+        "en": "Note that these combinations appear frequently in the conjugation of regular verbs in the passive voice. Examples: haūudūendi (past of the verb \"to do\"), Jaūē (past of the verb \"to be born\"), vēūēndi (past of the verb \"to give\"), Dubuūakuduūendi (past of the verb \"to open\").",
+        "fr": "Remarquez que ces combinaisons apparaissent fréquemment dans la conjugaison des verbes réguliers à la voix passive. Exemples : haūudūendi (passé du verbe « faire »), Jaūē (passé du verbe « naître »), vēūēndi (passé du verbe « donner »), Dubuūakuduūendi (passé du verbe « ouvrir »)."
       }
     }
   ]

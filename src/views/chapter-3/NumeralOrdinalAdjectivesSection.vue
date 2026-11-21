@@ -1,25 +1,24 @@
 <template>
   <div class="numeral-ordinal">
     <div class="numeral-ordinal__header">
-      <h1>Numerales y Ordinales</h1>
-      <p class="subtitle">Sistema decimal y números ordinales</p>
+      <h1>{{ $t('pages.numerals.numeralesOrdinales') }}</h1>
+      <p class="subtitle">{{ $t('pages.numerals.sistemaDecimalNumerosOrdinales') }}</p>
     </div>
 
     <!-- Overview -->
     <section class="numeral-ordinal__overview">
       <p>
-        El modo de contar de los Bengas es rigurosamente decimal. Al llegar a diez, tiene lugar la
-        reduplicación: diez y uno, diez y dos, etc.; dos dieces, tres dieces, etc., hasta ciento.
+        {{ $t('pages.numerals.modoContarBengasEs') }}
       </p>
     </section>
 
     <!-- Cardinal Numbers -->
     <section class="numeral-ordinal__cardinals">
-      <h2>Números Cardinales</h2>
+      <h2>{{ $t('pages.numerals.numerosCardinales') }}</h2>
 
       <!-- 1-10 -->
       <div class="cardinal-group">
-        <h3>Números del 1 al 10</h3>
+        <h3>{{ $t('pages.numerals.numeros110') }}</h3>
         <div class="numbers-grid">
           <div class="number-card" v-for="num in cardinals_1_10" :key="`card1-${num.number}`">
             <span class="number-arabic">{{ num.number }}</span>
@@ -31,7 +30,7 @@
 
       <!-- 11-20 -->
       <div class="cardinal-group">
-        <h3>Números del 11 al 20</h3>
+        <h3>{{ $t('pages.numerals.numeros1120') }}</h3>
         <div class="numbers-list">
           <div class="number-row" v-for="num in cardinals_11_20" :key="`card11-${num.number}`">
             <span class="number-arabic">{{ num.number }}</span>
@@ -43,7 +42,7 @@
 
       <!-- 21-100 -->
       <div class="cardinal-group">
-        <h3>Números Mayores (21 a 100+)</h3>
+        <h3>{{ $t('pages.numerals.numerosMayores21100') }}</h3>
         <div class="numbers-list">
           <div class="number-row" v-for="num in cardinals_21_100" :key="`card21-${num.number}`">
             <span class="number-arabic">{{ num.number }}</span>
@@ -56,19 +55,18 @@
 
     <!-- Inflections -->
     <section class="numeral-ordinal__inflections">
-      <h2>Inflexiones de los Primeros Numerales</h2>
+      <h2>{{ $t('pages.numerals.inflexionesPrimerosNumerales') }}</h2>
       <p class="inflections-note">
-        Los cinco primeros numerales (1-5) son variables y están sujetos a cambio según la clase del
-        sustantivo.
+        {{ $t('pages.numerals.cincoPrimerosNumerales1') }}
       </p>
       <div class="inflections-table">
         <div class="table-header">
-          <div class="cell">Clase</div>
-          <div class="cell">Uno</div>
-          <div class="cell">Dos</div>
-          <div class="cell">Tres</div>
-          <div class="cell">Cuatro</div>
-          <div class="cell">Cinco</div>
+          <div class="cell">{{ $t('pages.numerals.clase') }}</div>
+          <div class="cell">{{ $t('pages.numerals.uno') }}</div>
+          <div class="cell">{{ $t('pages.numerals.dos') }}</div>
+          <div class="cell">{{ $t('pages.numerals.tres') }}</div>
+          <div class="cell">{{ $t('pages.numerals.cuatro') }}</div>
+          <div class="cell">{{ $t('pages.numerals.cinco') }}</div>
         </div>
         <div class="table-body">
           <div class="table-row" v-for="cls in numeralInflections" :key="`class-${cls.classId}`">
@@ -85,18 +83,17 @@
 
     <!-- Ordinal Numbers -->
     <section class="numeral-ordinal__ordinals">
-      <h2>Números Ordinales</h2>
+      <h2>{{ $t('pages.numerals.numerosOrdinales') }}</h2>
       <p class="ordinals-note">
-        Los ordinales propiamente dichos no los conocen los Bengas; sin embargo, hay un modo general
-        de expresarlos. Este método consiste en prefijar el número cardinal en caso posesivo.
+        {{ $t('pages.numerals.ordinalesPropiamenteDichosNo') }}
       </p>
       <div class="ordinals-table">
         <div class="table-header">
-          <div class="cell">Posición</div>
-          <div class="cell">Preposición</div>
-          <div class="cell">Cardinal</div>
-          <div class="cell">Ordinal</div>
-          <div class="cell">Significado</div>
+          <div class="cell">{{ $t('pages.numerals.posicion') }}</div>
+          <div class="cell">{{ $t('pages.numerals.preposicion') }}</div>
+          <div class="cell">{{ $t('pages.numerals.cardinal') }}</div>
+          <div class="cell">{{ $t('pages.numerals.ordinal') }}</div>
+          <div class="cell">{{ $t('pages.numerals.significado') }}</div>
         </div>
         <div class="table-body">
           <div class="table-row" v-for="ord in ordinals" :key="`ord-${ord.class}`">
@@ -112,8 +109,8 @@
 
     <!-- Distributives -->
     <section class="numeral-ordinal__distributives">
-      <h2>Números Distributivos</h2>
-      <p class="distributives-note">Los distributivos se forman repitiendo los cardinales.</p>
+      <h2>{{ $t('pages.numerals.numerosDistributivos') }}</h2>
+      <p class="distributives-note">{{ $t('pages.numerals.distributivosSeFormanRepitiendo') }}</p>
       <div class="distributives-list">
         <div class="distributive-item" v-for="(dist, idx) in distributives" :key="`dist-${idx}`">
           <span class="bengaform">{{ dist.bengaForm }}</span>
@@ -124,21 +121,18 @@
 
     <!-- Special Uses -->
     <section class="numeral-ordinal__special">
-      <h2>Usos Especiales de Numerales</h2>
+      <h2>{{ $t('pages.numerals.usosEspecialesNumerales') }}</h2>
       <div class="special-methods">
         <div class="method-card">
-          <h3>Método de los Dedos</h3>
+          <h3>{{ $t('pages.numerals.metodoDedos') }}</h3>
           <p>
-            Mostrar los dedos levantados y esperar a que los oyentes digan el número en voz alta.
-            Este método es muy eficaz para representar centenas, decenas y unidades sin equívocos.
+            {{ $t('pages.numerals.mostrarDedosLevantadosEsperar') }}
           </p>
         </div>
         <div class="method-card">
-          <h3>Método de Repetición Rápida</h3>
+          <h3>{{ $t('pages.numerals.metodoRepeticionRapida') }}</h3>
           <p>
-            Repetir una palabra diez, quince o veinte veces con mucha prisa para indicar número,
-            calidad o cantidad extraordinaria. Es propio de la narración, especialmente en el sexo
-            femenino.
+            {{ $t('pages.numerals.repetirPalabraDiezQuince') }}
           </p>
         </div>
       </div>
@@ -146,7 +140,7 @@
 
     <!-- Key Notes -->
     <section class="numeral-ordinal__notes">
-      <h2>Notas Importantes</h2>
+      <h2>{{ $t('pages.numerals.notasImportantes') }}</h2>
       <div class="notes-list">
         <div class="note-item" v-for="(note, idx) in notes" :key="`note-${idx}`">
           <span class="note-number">{{ idx + 1 }}</span>
@@ -161,6 +155,7 @@
 
 <script>
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
+import { localizeDeep } from '@/utils/localized'
 import numeralsData from '@/data/chapter-3/numerals-ordinals.json'
 
 export default {
@@ -177,20 +172,26 @@ export default {
       notes: []
     }
   },
+  watch: {
+    // switching language reloads the texts
+    '$i18n.locale': 'loadData'
+  },
   mounted() {
     this.loadData()
   },
   methods: {
     loadData() {
-      this.cardinals_1_10 = numeralsData.cardinalNumbers['1-10']
-      this.cardinals_11_20 = numeralsData.cardinalNumbers['11-20']
-      this.cardinals_21_100 = numeralsData.cardinalNumbers['21-100'].concat(
-        numeralsData.cardinalNumbers['101-1000']
+      // The texts of the data file in the visitor's language (Benga words unchanged)
+      const data = localizeDeep(numeralsData, this.$i18n.locale)
+      this.cardinals_1_10 = data.cardinalNumbers['1-10']
+      this.cardinals_11_20 = data.cardinalNumbers['11-20']
+      this.cardinals_21_100 = data.cardinalNumbers['21-100'].concat(
+        data.cardinalNumbers['101-1000']
       )
-      this.numeralInflections = numeralsData.numeralInflections.classes
-      this.ordinals = numeralsData.ordinalNumbers.ordinals
-      this.distributives = numeralsData.distributives.examples
-      this.notes = numeralsData.notes
+      this.numeralInflections = data.numeralInflections.classes
+      this.ordinals = data.ordinalNumbers.ordinals
+      this.distributives = data.distributives.examples
+      this.notes = data.notes
     }
   }
 }

@@ -65,8 +65,18 @@ const ocrCorrectionsEndpoint = () =>
     }
   )
 
+/**
+ * /admin/translations saves edited texts and the doubts that were resolved:
+ * PUT { edits: [{ file, path, value }], doubts: [...] } (see scripts/lib/translations-save.mjs)
+ */
+const translationsEndpoint = () =>
+  localJsonEndpoint('translations-endpoint', '/__dev/translations', async (body) => {
+    const { saveTranslations } = await import('./scripts/lib/translations-save.mjs')
+    await saveTranslations(body)
+  })
+
 export default defineConfig({
-  plugins: [vue(), wordRegistryEndpoint(), ocrCorrectionsEndpoint()],
+  plugins: [vue(), wordRegistryEndpoint(), ocrCorrectionsEndpoint(), translationsEndpoint()],
   define: {
     // vue-i18n build options: full install, no legacy API (we use composition mode), no devtools
     // in the published site. Without them vue-i18n prints a warning in the console.

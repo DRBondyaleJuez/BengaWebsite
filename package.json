@@ -11,6 +11,7 @@
     "format:check": "prettier --check .",
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"scripts/tests/**/*.test.mjs\"",
     "validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate-data.mjs",
+    "i18n:report": "node scripts/i18n-report.mjs",
     "words:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs",
     "words:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs --check",
     "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs"

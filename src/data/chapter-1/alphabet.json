@@ -6,88 +6,150 @@
     "fr": "L'Alphabet"
   },
   "introduction": {
-    "es": "El alfabeto benga consta de veintitrés letras. El acento marca su sonido peculiar solo en las vocales â, ē, ū que denominamos largas. La elisión es muy frecuente al fin del vocablo. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+    "es": "El alfabeto benga consta de veintitrés letras. El acento marca su sonido peculiar solo en las vocales â, ē, ū que denominamos largas. La elisión es muy frecuente al fin del vocablo. Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano.",
+    "en": "The Benga alphabet consists of twenty-three letters. The accent marks their peculiar sound only on the vowels â, ē, ū, which we call long. Elision is very frequent at the end of a word. Everything that is pronounced is written, and conversely, everything that is written is read and pronounced clearly and distinctly, as in Spanish.",
+    "fr": "L'alphabet benga compte vingt-trois lettres. L'accent marque leur son particulier uniquement sur les voyelles â, ē, ū, que nous appelons longues. L'élision est très fréquente à la fin du mot. Tout ce qui se prononce s'écrit et, inversement, tout ce qui s'écrit se lit et se prononce clairement et distinctement, comme en espagnol."
   },
   "consonantsDescription": {
-    "es": "Carece de las consonantes c, ch, ll, ñ, q, r, x, z del castellano."
+    "es": "Carece de las consonantes c, ch, ll, ñ, q, r, x, z del castellano.",
+    "en": "It lacks the Spanish consonants c, ch, ll, ñ, q, r, x, z.",
+    "fr": "Il n'a pas les consonnes espagnoles c, ch, ll, ñ, q, r, x, z."
   },
   "lettersList": {
-    "es": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y"
+    "es": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y",
+    "en": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y",
+    "fr": "a, â, b, d, e, ē, f, g, h, i, j, k, l, m, n, o, p, s, t, u, ū, w, y"
   },
   "vowelsInfo": {
-    "es": "El benga admite nueve sonidos vocales: a, â, e, ē, i, o, u, ū, y"
+    "es": "El benga admite nueve sonidos vocales: a, â, e, ē, i, o, u, ū, y",
+    "en": "Benga has nine vowel sounds: a, â, e, ē, i, o, u, ū, y",
+    "fr": "Le benga compte neuf sons vocaliques : a, â, e, ē, i, o, u, ū, y"
   },
   "specialLetters": [
     {
       "letter": "y",
       "type": "vowel-consonant",
       "description": {
-        "es": "Entre las vocales, la y es a la par vocal y consonante. Será consonante siempre que, seguida de vocal, empieza la dicción o la sílaba. Su sonido de i como vocal tiene lugar cuando en medio de la dicción viene herida por la consonante que la precede."
+        "es": "Entre las vocales, la y es a la par vocal y consonante. Será consonante siempre que, seguida de vocal, empieza la dicción o la sílaba. Su sonido de i como vocal tiene lugar cuando en medio de la dicción viene herida por la consonante que la precede.",
+        "en": "Among the vowels, y is at once vowel and consonant. It is always a consonant when, followed by a vowel, it begins the word or the syllable. It has its sound of i as a vowel when, in the middle of a word, it is struck by the consonant that precedes it.",
+        "fr": "Parmi les voyelles, le y est à la fois voyelle et consonne. Il est toujours consonne lorsque, suivi d'une voyelle, il commence le mot ou la syllabe. Il a le son de i comme voyelle lorsque, au milieu du mot, il est frappé par la consonne qui le précède."
       },
       "examples": [
         {
           "type": "consonant",
-          "label": "Es consonante en:",
+          "label": {
+            "es": "Es consonante en:",
+            "en": "It is a consonant in:",
+            "fr": "Il est consonne dans :"
+          },
           "words": [
             {
               "word": "yakia",
-              "meaning": "nuevo",
+              "meaning": {
+                "es": "nuevo",
+                "en": "new",
+                "fr": "nouveau"
+              },
               "audioId": "yakia"
             },
             {
               "word": "yâkâ",
-              "meaning": "uno",
+              "meaning": {
+                "es": "uno",
+                "en": "one",
+                "fr": "un"
+              },
               "audioId": "yaka"
             },
             {
               "word": "yongo",
-              "meaning": "mayordomo",
+              "meaning": {
+                "es": "mayordomo",
+                "en": "steward",
+                "fr": "majordome"
+              },
               "audioId": "yongo"
             },
             {
               "word": "manyungâ",
-              "meaning": "leche",
+              "meaning": {
+                "es": "leche",
+                "en": "milk",
+                "fr": "lait"
+              },
               "audioId": "manyunga"
             },
             {
               "word": "yēmē",
-              "meaning": "cojera",
+              "meaning": {
+                "es": "cojera",
+                "en": "lameness",
+                "fr": "boiterie"
+              },
               "audioId": "yeme"
             }
           ]
         },
         {
           "type": "vowel",
-          "label": "Es vocal en:",
+          "label": {
+            "es": "Es vocal en:",
+            "en": "It is a vowel in:",
+            "fr": "Il est voyelle dans :"
+          },
           "words": [
             {
               "word": "byelele",
-              "meaning": "polilla",
+              "meaning": {
+                "es": "polilla",
+                "en": "moth",
+                "fr": "mite"
+              },
               "audioId": "byelele"
             },
             {
               "word": "myadi",
-              "meaning": "agonía",
+              "meaning": {
+                "es": "agonía",
+                "en": "agony",
+                "fr": "agonie"
+              },
               "audioId": "myadi"
             },
             {
               "word": "myongo",
-              "meaning": "los muertos",
+              "meaning": {
+                "es": "los muertos",
+                "en": "the dead",
+                "fr": "les morts"
+              },
               "audioId": "myongo"
             },
             {
               "word": "vyâ",
-              "meaning": "sereno",
+              "meaning": {
+                "es": "sereno",
+                "en": "serene",
+                "fr": "serein"
+              },
               "audioId": "vy_a_"
             },
             {
               "word": "vyâdu",
-              "meaning": "gamuza",
+              "meaning": {
+                "es": "gamuza",
+                "en": "chamois",
+                "fr": "chamois"
+              },
               "audioId": "vyadu"
             },
             {
               "word": "kya",
-              "meaning": "ahora",
+              "meaning": {
+                "es": "ahora",
+                "en": "now",
+                "fr": "maintenant"
+              },
               "audioId": "kya"
             }
           ]
@@ -106,17 +168,29 @@
       "examples": [
         {
           "word": "kalaka",
-          "meaning": "habla",
+          "meaning": {
+            "es": "habla",
+            "en": "speech",
+            "fr": "parole"
+          },
           "audioId": "kalaka"
         },
         {
           "word": "tataka",
-          "meaning": "guardar",
+          "meaning": {
+            "es": "guardar",
+            "en": "to keep",
+            "fr": "garder"
+          },
           "audioId": "tataka"
         },
         {
           "word": "ta",
-          "meaning": "junto",
+          "meaning": {
+            "es": "junto",
+            "en": "together",
+            "fr": "ensemble"
+          },
           "audioId": "ta"
         }
       ]
@@ -132,7 +206,11 @@
       "examples": [
         {
           "word": "tândâkâ",
-          "meaning": "amar",
+          "meaning": {
+            "es": "amar",
+            "en": "to love",
+            "fr": "aimer"
+          },
           "audioId": "t_a_nd_a_k_a_"
         }
       ]
@@ -147,7 +225,11 @@
       "examples": [
         {
           "word": "bembe",
-          "meaning": "ganado vacuno",
+          "meaning": {
+            "es": "ganado vacuno",
+            "en": "cattle",
+            "fr": "bétail bovin"
+          },
           "audioId": "bembe"
         }
       ]
@@ -163,7 +245,11 @@
       "examples": [
         {
           "word": "kēnyēngē",
-          "meaning": "casto",
+          "meaning": {
+            "es": "casto",
+            "en": "chaste",
+            "fr": "chaste"
+          },
           "audioId": "k_e_ny_e_ng_e_"
         }
       ]
@@ -178,7 +264,11 @@
       "examples": [
         {
           "word": "ipivi",
-          "meaning": "pensamiento",
+          "meaning": {
+            "es": "pensamiento",
+            "en": "thought",
+            "fr": "pensée"
+          },
           "audioId": "ipivi"
         }
       ]
@@ -193,7 +283,11 @@
       "examples": [
         {
           "word": "kodokodo",
-          "meaning": "palpitación",
+          "meaning": {
+            "es": "palpitación",
+            "en": "palpitation",
+            "fr": "palpitation"
+          },
           "audioId": "kodokodo"
         }
       ]
@@ -208,7 +302,11 @@
       "examples": [
         {
           "word": "itutu",
-          "meaning": "humo",
+          "meaning": {
+            "es": "humo",
+            "en": "smoke",
+            "fr": "fumée"
+          },
           "audioId": "itutu"
         }
       ]
@@ -224,7 +322,11 @@
       "examples": [
         {
           "word": "būamu",
-          "meaning": "bueno",
+          "meaning": {
+            "es": "bueno",
+            "en": "good",
+            "fr": "bon"
+          },
           "audioId": "buamu"
         }
       ]
@@ -239,12 +341,20 @@
       "examples": [
         {
           "word": "mbyu",
-          "meaning": "gozo",
+          "meaning": {
+            "es": "gozo",
+            "en": "joy",
+            "fr": "joie"
+          },
           "audioId": "mbyu"
         },
         {
           "word": "vyâ",
-          "meaning": "sereno",
+          "meaning": {
+            "es": "sereno",
+            "en": "serene",
+            "fr": "serein"
+          },
           "audioId": "vy_a_"
         }
       ]
@@ -252,13 +362,19 @@
   ],
   "notes": {
     "clarityNote": {
-      "es": "Todas las vocales forman un sonido simple (por sí solas) suenan como en castellano excepto la â, la ē y la ū, que a veces se presentan acentuadas, y por lo mismo las denominaremos largas."
+      "es": "Todas las vocales forman un sonido simple (por sí solas) suenan como en castellano excepto la â, la ē y la ū, que a veces se presentan acentuadas, y por lo mismo las denominaremos largas.",
+      "en": "All vowels form a simple sound (on their own) and sound as in Spanish, except â, ē and ū, which are sometimes written with an accent, and for that reason we call them long.",
+      "fr": "Toutes les voyelles forment un son simple (à elles seules) et se prononcent comme en espagnol, à l'exception de â, ē et ū, qui sont parfois accentuées, et que, pour cette raison, nous appelons longues."
     },
     "elisionNote": {
-      "es": "La elisión es muy frecuente al fin del vocablo. El apóstrofo se emplea como signo de elisión."
+      "es": "La elisión es muy frecuente al fin del vocablo. El apóstrofo se emplea como signo de elisión.",
+      "en": "Elision is very frequent at the end of a word. The apostrophe is used as the sign of elision.",
+      "fr": "L'élision est très fréquente à la fin du mot. L'apostrophe sert de signe d'élision."
     },
     "pronunciationNote": {
-      "es": "Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano."
+      "es": "Todo lo que se pronuncia se escribe, y viceversa, todo lo que se escribe se lee y pronuncia claro y distinto, como en castellano.",
+      "en": "Everything that is pronounced is written, and conversely, everything that is written is read and pronounced clearly and distinctly, as in Spanish.",
+      "fr": "Tout ce qui se prononce s'écrit et, inversement, tout ce qui s'écrit se lit et se prononce clairement et distinctement, comme en espagnol."
     }
   }
 }

@@ -3,7 +3,7 @@
  */
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { localized } from '../../src/utils/localized.js'
+import { localized, localizeDeep } from '../../src/utils/localized.js'
 
 const hat = { es: 'Sombrero', en: 'Hat', fr: 'Chapeau' }
 
@@ -33,4 +33,23 @@ test('nothing to show gives an empty string, never "undefined"', () => {
   assert.equal(localized(undefined, 'es'), '')
   assert.equal(localized({}, 'es'), '')
   assert.equal(localized({ en: 'Hat' }, 'fr'), '') // neither French nor Spanish
+})
+
+test('localizeDeep translates every text of a data structure and keeps Benga words', () => {
+  const data = {
+    title: { es: 'Adjetivos', en: 'Adjectives' },
+    notes: [{ es: 'Nota uno', fr: 'Note un' }, { es: 'Nota dos' }],
+    example: {
+      bengaForm: 'Ekâi ebe',
+      spanishTranslation: { es: 'Plátano malo', en: 'Bad banana' }
+    },
+    count: 7
+  }
+  assert.deepEqual(localizeDeep(data, 'en'), {
+    title: 'Adjectives',
+    notes: ['Nota uno', 'Nota dos'],
+    example: { bengaForm: 'Ekâi ebe', spanishTranslation: 'Bad banana' },
+    count: 7
+  })
+  assert.deepEqual(localizeDeep(data, 'fr').notes, ['Note un', 'Nota dos'])
 })

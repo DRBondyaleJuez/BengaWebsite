@@ -8,7 +8,7 @@
         {{ item.text }}
       </p>
       <div v-if="item.example" class="concept-card__example">
-        <strong>{{ exampleLabel }}</strong>
+        <strong>{{ exampleLabel || $t('content.exampleLabel') }}</strong>
         <span class="bengaword">{{ item.example }}</span>
       </div>
     </div>
@@ -29,7 +29,8 @@ export default {
   props: {
     /** [{ title, text, example? }] as plain strings. */
     items: { type: Array, required: true },
-    exampleLabel: { type: String, default: 'Ejemplo:' }
+    /** Default: «Ejemplo:» in the visitor's language (content.exampleLabel) */
+    exampleLabel: { type: String, default: null }
   }
 }
 </script>

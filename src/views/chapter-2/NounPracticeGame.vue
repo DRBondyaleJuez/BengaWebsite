@@ -1,35 +1,30 @@
 <template>
   <div class="noun-class noun-class--practice">
     <div class="noun-class__header">
-      <h1>Práctica de Nombres Sustantivos</h1>
-      <p class="subtitle">Juega con el singular, el plural y las clases nominales</p>
+      <h1>{{ $t('pages.practice.practicaNombresSustantivos') }}</h1>
+      <p class="subtitle">{{ $t('pages.practice.juegaConSingularPlural') }}</p>
     </div>
 
     <section class="noun-class__instructions">
-      <h2>¿Cómo funciona?</h2>
+      <h2>{{ $t('pages.practice.comoFunciona') }}</h2>
       <ol class="practice-list">
+        <li v-html="$t('pages.practice.cadaTarjetaMuestraSingular')"></li>
+        <li v-html="$t('pages.practice.pulsaIconoGiroPara')"></li>
+        <li v-html="$t('pages.practice.pulsaloNuevoParaRevelar')"></li>
         <li>
-          Cada tarjeta muestra el <strong>singular</strong> con su audio. La traducción permanece
-          oculta hasta que la pidas.
+          {{ $t('pages.practice.pulsaloUltimaVezPara') }}
         </li>
-        <li>
-          Pulsa el icono de giro (↺) para ver la <strong>clase</strong> y el resumen de conversión
-          (por ejemplo <em>i- → ma-</em>).
-        </li>
-        <li>Púlsalo de nuevo para revelar el <strong>plural</strong> con su audio.</li>
-        <li>
-          Púlsalo una última vez para volver al singular. Al activar una tarjeta, las demás vuelven
-          a su estado inicial.
-        </li>
-        <li>Baraja y navega por páginas (~10 tarjetas en escritorio, 2 en móvil).</li>
+        <li>{{ $t('pages.practice.barajaNavegaPorPaginas') }}</li>
       </ol>
     </section>
 
     <section class="noun-class__cards">
       <div class="cards-toolbar">
-        <button class="refresh-btn" @click="refreshDeck">Barajar de nuevo</button>
+        <button class="refresh-btn" @click="refreshDeck">
+          {{ $t('pages.practice.barajarNuevo') }}
+        </button>
         <span class="deck-count">
-          {{ deck.length }} palabras · {{ currentPage }} / {{ totalPages }}
+          {{ $t('pages.practice.palabras', { length: deck.length, currentPage, totalPages }) }}
         </span>
       </div>
 
@@ -45,23 +40,27 @@
               <button
                 class="flip-card__icon"
                 type="button"
-                title="Ver clase y plural"
+                :title="$t('pages.practice.verClasePlural')"
                 @click="flipCard(card.id)"
               >
                 ↺
               </button>
-              <span class="flip-card__badge">Singular</span>
+              <span class="flip-card__badge">{{ $t('pages.practice.singular') }}</span>
 
               <BengaWord
                 class="flip-card__word"
                 :word="card.singular"
-                :meaning="card.translation"
+                :meaning="$localized(card.meaning)"
                 :show-meaning="card.showTranslation"
                 block
               />
 
               <button class="translate-btn" type="button" @click="toggleTranslation(card.id)">
-                {{ card.showTranslation ? 'Ocultar' : 'Mostrar' }} traducción
+                {{
+                  card.showTranslation
+                    ? $t('pages.practice.hideTranslation')
+                    : $t('pages.practice.showTranslation')
+                }}
               </button>
             </div>
 
@@ -69,7 +68,11 @@
               <button
                 class="flip-card__icon"
                 type="button"
-                :title="card.pluralRevealed ? 'Volver al singular' : 'Ver plural'"
+                :title="
+                  card.pluralRevealed
+                    ? $t('pages.practice.backToSingular')
+                    : $t('pages.practice.seePlural')
+                "
                 @click="flipCard(card.id)"
               >
                 ↺
@@ -79,24 +82,30 @@
               </span>
 
               <div v-if="!card.pluralRevealed" class="flip-card__class">
-                <strong>{{ card.nounClass }}</strong>
+                <strong>{{ $t('pages.practice.classLabel', { number: card.nounClass }) }}</strong>
                 <span class="flip-card__conversion">
-                  {{ card.conversionSummary }}
+                  {{
+                    card.nounClass === 7 ? $t('pages.practice.invariable') : card.conversionSummary
+                  }}
                 </span>
-                <span class="flip-card__hint"> Pulsa ↺ para ver el plural </span>
+                <span class="flip-card__hint"> {{ $t('pages.practice.pulsaParaVerPlural') }} </span>
               </div>
 
               <template v-else>
                 <BengaWord
                   class="flip-card__word"
                   :word="card.plural"
-                  :meaning="card.pluralTranslation"
+                  :meaning="$localized(card.meaningPlural)"
                   :show-meaning="card.showTranslation"
                   block
                 />
 
                 <button class="translate-btn" type="button" @click="toggleTranslation(card.id)">
-                  {{ card.showTranslation ? 'Ocultar' : 'Mostrar' }} traducción
+                  {{
+                    card.showTranslation
+                      ? $t('pages.practice.hideTranslation')
+                      : $t('pages.practice.showTranslation')
+                  }}
                 </button>
               </template>
             </div>
@@ -104,7 +113,7 @@
         </div>
       </div>
 
-      <nav v-if="totalPages > 1" class="pagination" aria-label="Paginación">
+      <nav v-if="totalPages > 1" class="pagination" :aria-label="$t('pages.practice.paginacion')">
         <button
           class="pagination__arrow"
           type="button"
@@ -207,9 +216,10 @@ export default {
         id: index + 1,
         singular: noun.singular.word,
         plural: noun.plural.word,
-        translation: this.$localized(noun.meaning),
-        pluralTranslation: this.$localized(noun.meaningPlural || noun.meaning),
-        nounClass: `Clase ${noun.nounClass}`,
+        // meanings stay { es, en, fr }: the card shows the visitor's language ($localized)
+        meaning: noun.meaning,
+        meaningPlural: noun.meaningPlural || noun.meaning,
+        nounClass: noun.nounClass,
         conversionSummary: PLURAL_RULES[noun.nounClass],
         flipped: false,
         pluralRevealed: false,
@@ -281,7 +291,7 @@ export default {
   },
   created() {
     this.deck = shuffle(this.buildDeck())
-    document.title = 'Práctica de Nombres Sustantivos | Portal Benga'
+    document.title = `${this.$t('pages.practice.pageTitle')} | Portal Benga`
   },
   mounted() {
     window.addEventListener('resize', this.handleResize)
@@ -524,7 +534,7 @@ export default {
         gap: $spacing-sm;
         text-align: center;
 
-        strong {
+        :deep(strong) {
           font-size: 1.2rem;
           color: #e65100;
         }

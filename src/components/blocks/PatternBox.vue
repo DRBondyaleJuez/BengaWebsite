@@ -9,12 +9,12 @@
   <template v-else>
     <div class="pattern-box">
       <div class="pattern-item">
-        <span class="pattern-label">{{ fromLabel }}:</span>
+        <span class="pattern-label">{{ fromLabel || $t('content.singular') }}:</span>
         <span class="pattern-value singular">{{ from }}</span>
       </div>
       <div class="pattern-arrow">→</div>
       <div class="pattern-item">
-        <span class="pattern-label">{{ toLabel }}:</span>
+        <span class="pattern-label">{{ toLabel || $t('content.plural') }}:</span>
         <span class="pattern-value plural">{{ to }}</span>
       </div>
     </div>
@@ -41,8 +41,9 @@ export default {
   props: {
     from: { type: String, required: true },
     to: { type: String, required: true },
-    fromLabel: { type: String, default: 'Singular' },
-    toLabel: { type: String, default: 'Plural' },
+    /** Defaults: «Singular» / «Plural» in the visitor's language (content.singular / content.plural) */
+    fromLabel: { type: String, default: null },
+    toLabel: { type: String, default: null },
     description: { type: String, default: null },
     compact: { type: Boolean, default: false }
   }

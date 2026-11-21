@@ -327,16 +327,16 @@ Branch: `feat/i18n`. Rule: **UI words** (buttons, headings that repeat) go in `l
 "Sombrero" (meaning of Epokolo) → lexicon/nouns.json → meaning.es
 ```
 
-- [ ] **4.1 Move hard-coded UI text into locales** — one commit per chapter.
+- [x] **4.1 Move hard-coded UI text into locales** — one commit per chapter.
   - **Prompt:** "Task 4.1.N: replace hard-coded Spanish UI text in chapter N views/blocks with `$t()` keys, grouped by component in `es.json`. Content text must go to the section JSON instead."
   - **Commit:** `feat(i18n): externalise chapter N interface text`
-- [ ] **4.2 Remember the chosen language** (localStorage + `<html lang>`)
+- [x] **4.2 Remember the chosen language** (localStorage + `<html lang>`)
   - **Commit:** `feat(i18n): persist selected language`
-- [ ] **4.3 Translation-coverage report** (`npm run i18n:report` — missing keys / missing `en`/`fr` meanings)
+- [x] **4.3 Translation-coverage report** (`npm run i18n:report` — missing keys / missing `en`/`fr` meanings)
   - **Commit:** `feat(scripts): add translation coverage report`
-- [ ] **4.4 English translation** — AI draft marked `"reviewed": false`, you review.
+- [x] **4.4 English translation** — AI draft, you review. *(done 2026-11-21: review status per file in `docs/TRANSLATIONS.md` instead of a `reviewed` flag on every text; REVIEW-LOG R-035)*
   - **Commit:** `feat(i18n): add english translation for chapters 1-3`
-- [ ] **4.5 French translation** — same process.
+- [x] **4.5 French translation** — same process.
   - **Commit:** `feat(i18n): add french translation for chapters 1-3`
 
 ---

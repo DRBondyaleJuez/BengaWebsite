@@ -1,0 +1,231 @@
+{
+  "_about": "Doubtful translations, shown highlighted in /admin/translations (npm run serve). A doubt lists the Spanish text(s) it is about in \"es\" (one text or a list; the same Spanish text in several places matches in all); a note without \"es\" is a general note. Resolved doubts are removed from this file by that page. Guide: docs/TRANSLATIONS.md",
+  "doubts": [
+    {
+      "id": "d001",
+      "es": "vara",
+      "note": "Translated \"rod\" / «bâton»; it could also be \"staff\" or \"measuring rod\"."
+    },
+    {
+      "id": "d002",
+      "es": "banco, margen",
+      "note": "Diphthong example: which sense of «banco», river bank or bench? (bank, margin / banc, bord)"
+    },
+    {
+      "id": "d003",
+      "es": "cabellos",
+      "note": "Plural in Spanish; English \"hair\" is uncountable (\"hairs\" would be the literal plural)."
+    },
+    {
+      "id": "d004",
+      "es": "úe en 'acentiúe'",
+      "note": "The Spanish looks like a typo for «acentúe» (fix the Spanish too); en/fr use «acentúe»."
+    },
+    {
+      "id": "d005",
+      "es": "Patrón Variant: Palabras que comienzan con 'y'",
+      "note": "The Spanish text mixes Spanish and English («Variant»). Translated \"Variant Pattern\" / «Schéma variant»."
+    },
+    {
+      "id": "d006",
+      "es": "Portador",
+      "note": "Gloss of *Ubapami*: translated \"bearer\" / «porteur»."
+    },
+    {
+      "id": "d007",
+      "es": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género. Cambia si cambia la clase del sustantivo al cambiar de género.",
+      "note": "Awkward Spanish, translated literally."
+    },
+    {
+      "id": "d008",
+      "es": "edifica tú",
+      "note": "Imperative of *Longaka*: \"build (you)\" / «construis (toi)», literal; a reviewer may prefer \"build!\" / «construis !»."
+    },
+    {
+      "id": "d009",
+      "es": "edificio",
+      "note": "Translated \"building\" / «édifice»; «bâtiment» is an alternative in French."
+    },
+    {
+      "id": "d010",
+      "es": "Los adjuntos (adjetivos, pronombres, preposiciones...) deben concordar con la clase del nombre, tanto en singular como en plural. Siendo estos elementos que están vinculados, rodean o van unidos al sustantivo como",
+      "note": "«adjuntos» (words that agree with the noun) → \"adjuncts\" / «adjoints»: a linguist may prefer \"agreeing words\" / «mots accordés». The Spanish is also cut off mid-sentence («…van unidos al sustantivo como»)."
+    },
+    {
+      "id": "d011",
+      "es": "Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos de éste. Algunos fueron introducido en los",
+      "note": "The Spanish is cut off mid-sentence («Algunos fueron introducido en los») and has a grammar slip («introducido»); translated literally, also cut off."
+    },
+    {
+      "id": "d012",
+      "es": "Estos se reforman mudando la \"u\" inicial de los nombres agenciales por una \"i\", y añadiendo \"di\" a su terminación. (Se podría entender también como sustituyendo la última letra de los nombres abstractos por \"idi\"",
+      "note": "The Spanish is cut off at the end («…sustituyendo la última letra de los nombres abstractos por \"idi\"»); translated literally."
+    },
+    {
+      "id": "d013",
+      "es": "Solo las vocales á, é y ü son \"largas\" (marca da con acento). Las demás son cortas. Esta distinción es crucial para comprender significados diferentes.",
+      "note": "Spanish letters «á, é y ü»: the long vowels of the book are â, ē, ū (REVIEW-LOG R-032). en/fr copy the Spanish letters."
+    },
+    {
+      "id": "d014",
+      "es": ["Sueño", "sueño"],
+      "note": "Noun *vi_a_*: «Sueño» → \"Dream\" / «Rêve»; it could also be \"sleep\" / «sommeil»."
+    },
+    {
+      "id": "d015",
+      "es": "Rebaño, huerto",
+      "note": "Noun *m_u_anga*: «huerto» → \"garden\" / «jardin» (vegetable garden / «potager»?)."
+    },
+    {
+      "id": "d016",
+      "es": "Prieto, avaro",
+      "note": "Adjective *kopia*: «prieto» → \"tight\" / «serré». Old Spanish «prieto» also means \"dark\"; next to «avaro» it means \"stingy\"."
+    },
+    {
+      "id": "d017",
+      "es": "Torpedo",
+      "note": "Noun *dimya*: probably the electric ray (fish), not the weapon."
+    },
+    {
+      "id": "d018",
+      "es": "Nigua",
+      "note": "Noun *diso*: chigoe flea / «chique»."
+    },
+    {
+      "id": "d019",
+      "es": "Vihuela",
+      "note": "Noun *m_u_alika*: an old Spanish guitar-like instrument, kept as \"vihuela\"."
+    },
+    {
+      "id": "d020",
+      "es": "Despensero",
+      "note": "Noun *tyoli*: \"steward\" / «intendant»; it could also be \"pantry keeper\"."
+    },
+    {
+      "id": "d021",
+      "es": "Diente de marfil",
+      "note": "Noun *wbango*: \"ivory tusk\" / «défense d'ivoire»; the Spanish literally says \"tooth\"."
+    },
+    {
+      "id": "d022",
+      "es": "Bote",
+      "note": "Boat («canot») or jar? Translated \"Boat\" / «Canot»."
+    },
+    {
+      "id": "d023",
+      "es": "Cajón",
+      "note": "Box or drawer? Translated \"Box\" / «Caisse»."
+    },
+    {
+      "id": "d024",
+      "es": "Temor (clase de)",
+      "note": "Translated \"Fear (a kind of)\" / «Crainte (une sorte de)»."
+    },
+    {
+      "id": "d025",
+      "es": "Timpano, oido",
+      "note": "Missing accents in the Spanish («Tímpano, oído»). Translated \"Eardrum, ear\"."
+    },
+    {
+      "id": "d026",
+      "es": "Harpa",
+      "note": "Old spelling of «arpa». Translated \"harp\" / «harpe»."
+    },
+    {
+      "id": "d027",
+      "es": "Pólvoras",
+      "note": "Noun *pita*: plural of a mass noun; \"gunpowders\" / «poudres»."
+    },
+    {
+      "id": "d028",
+      "es": "Tiempo, estación",
+      "note": "Noun *egombe*: time or weather? Translated \"time, season\"."
+    },
+    {
+      "id": "d029",
+      "es": "Tiempo",
+      "note": "Noun *egombe*: time or weather?"
+    },
+    {
+      "id": "d030",
+      "es": "Tarea, hierba",
+      "note": "Odd pair of meanings, possibly an OCR error in the Spanish. Translated literally."
+    },
+    {
+      "id": "d031",
+      "es": "Respeto, arco",
+      "note": "Noun *epambo*: odd pair of meanings, possibly an OCR error in the Spanish. Translated literally."
+    },
+    {
+      "id": "d032",
+      "es": "Timón, abanico",
+      "note": "Odd pair of meanings. Translated literally."
+    },
+    {
+      "id": "d033",
+      "es": "Vidriado, loza",
+      "note": "Odd pair of meanings. Translated literally."
+    },
+    {
+      "id": "d034",
+      "es": "Cera, capa",
+      "note": "Odd pair of meanings. Translated \"Wax, layer\"."
+    },
+    {
+      "id": "d035",
+      "es": "Hato, racimo",
+      "note": "Odd pair of meanings. Translated \"Flock, cluster\"."
+    },
+    {
+      "id": "d036",
+      "es": "Cardialgía, dolor",
+      "note": "Noun *etema*: rare medical term, kept as \"cardialgia\" / «cardialgie»."
+    },
+    {
+      "id": "d037",
+      "es": "Sedes",
+      "note": "Noun *ev_e_l_e_*: «Sedes» (plural of «sed») is odd; translated \"Thirsts\"."
+    },
+    {
+      "id": "d038",
+      "es": "Reloj de caja",
+      "note": "Translated literally \"Case clock\" / «Horloge à caisse»; it may mean a longcase (grandfather) clock."
+    },
+    {
+      "id": "d039",
+      "es": "Diligencia",
+      "note": "Care, haste or stagecoach? Left as \"Diligence\"."
+    },
+    {
+      "id": "d040",
+      "es": "Licor, caña",
+      "note": "«caña» = cane spirit or sugar cane? Translated \"Liquor, cane spirit\"."
+    },
+    {
+      "id": "d041",
+      "es": "sereno",
+      "note": "Alphabet, *y* as a vowel: serene, night watchman or night dew? Translated \"serene\" / «serein»."
+    },
+    {
+      "id": "d042",
+      "es": "Matuta é Ibia, Matuta es viejo",
+      "note": "The Spanish sentence above spells the name «Ibiya», this line «Ibia» (Spanish source to check)."
+    },
+    {
+      "id": "d043",
+      "note": "Sentences that the page splits around bold words or links (chapter-3 index, regular adjectives page, noun-intro): the English and French pieces keep the Spanish word order. Read them on the page, especially in French."
+    },
+    {
+      "id": "d044",
+      "note": "Class headings are spelled differently in different places (`u-/mú-` vs `u-/mū-`, `bo-/ba-` vs `bo-/bū-`): the Spanish source needs checking; the translations copy them."
+    },
+    {
+      "id": "d045",
+      "note": "Consonants page: the comparisons with sounds of Spanish (hueso, huevo, Huesca…) and of English/French words were kept as examples; check they still make sense to an English or French reader."
+    },
+    {
+      "id": "d046",
+      "note": "Imperatives of the verbal nouns («ama tú», «edifica tú»…) are translated literally, «love (you)» / «aime (toi)»."
+    }
+  ]
+}

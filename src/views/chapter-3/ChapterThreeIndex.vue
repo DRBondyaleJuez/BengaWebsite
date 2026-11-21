@@ -2,96 +2,86 @@
   <div class="chapter-three">
     <div v-if="$route.name === 'Chapter3Index'">
       <div class="chapter-three__header">
-        <h1>Capítulo 3: Del Nombre Adjetivo</h1>
-        <p>Adjetivos variables, invariables, comparativos y numerales</p>
+        <h1>{{ $t('pages.chapter3Index.capitulo3NombreAdjetivo') }}</h1>
+        <p>{{ $t('pages.chapter3Index.adjetivosVariablesInvariablesComparativos') }}</p>
       </div>
 
       <section class="chapter-three__overview">
-        <h2 class="overview-title">¿Qué aprenderás en este capítulo?</h2>
+        <h2 class="overview-title">{{ $t('pages.chapter3Index.aprenderasEsteCapitulo') }}</h2>
 
         <p class="overview-lead">
-          Los adjetivos en benga <strong>no varían según el género</strong>, pero deben
-          <strong>concordar de forma radical estrictamente</strong> en <em>clase</em> y
-          <em>número</em>
-          (singular o plural) con el sustantivo al que modifican. Las
-          <router-link to="/capitulo-3/introduccion" class="overview-link"
-            >clases nominales</router-link
-          >
-          condicionan, por tanto, todas las palabras que acompañan al nombre (adjunto).
+          {{ $t('pages.chapter3Index.adjetivosBenga') }}
+          <strong>{{ $t('pages.chapter3Index.noVarianSegunGenero') }}</strong
+          >{{ $t('pages.chapter3Index.peroDeben') }}
+          <strong>{{ $t('pages.chapter3Index.concordarFormaRadicalEstrictamente') }}</strong> en
+          <em>{{ $t('pages.chapter3Index.clase') }}</em> y
+          <em>{{ $t('pages.chapter3Index.numero') }}</em>
+          {{ $t('pages.chapter3Index.singularPluralConSustantivo') }}
+          <router-link to="/capitulo-3/introduccion" class="overview-link">{{
+            $t('pages.chapter3Index.clasesNominales')
+          }}</router-link>
+          {{ $t('pages.chapter3Index.condicionanPorTantoTodas') }}
         </p>
 
         <div class="overview-highlights">
           <router-link to="/capitulo-3/adjetivos-regulares" class="highlight-card">
             <span class="highlight-card__icon">🌿</span>
-            <h3>Adjetivos variables</h3>
-            <p>
-              Parten de una forma base que se <strong>inflexiona</strong> para adaptarse a las
-              <em>siete clases</em> de sustantivos.
-            </p>
+            <h3>{{ $t('pages.chapter3Index.adjetivosVariables') }}</h3>
+            <p v-html="$t('pages.chapter3Index.partenFormaBaseSe')"></p>
           </router-link>
 
           <router-link to="/capitulo-3/adjetivos-invariables" class="highlight-card">
             <span class="highlight-card__icon">🔒</span>
-            <h3>Adjetivos invariables</h3>
-            <p>
-              Conservan una <strong>forma única</strong> en cualquier contexto, sin variar con la
-              clase nominal.
-            </p>
+            <h3>{{ $t('pages.chapter3Index.adjetivosInvariables') }}</h3>
+            <p v-html="$t('pages.chapter3Index.conservanFormaUnicaCualquier')"></p>
           </router-link>
 
           <router-link to="/capitulo-3/comparativos-superlativos" class="highlight-card">
             <span class="highlight-card__icon">⚖️</span>
-            <h3>Comparativos y superlativos</h3>
-            <p>
-              El benga <strong>carece de grados formales</strong> de comparación y recurre a
-              <em>circunloquios</em> o giros expresivos.
-            </p>
+            <h3>{{ $t('pages.chapter3Index.comparativosSuperlativos') }}</h3>
+            <p v-html="$t('pages.chapter3Index.bengaCareceGradosFormales')"></p>
           </router-link>
 
           <router-link to="/capitulo-3/numerales-ordinales" class="highlight-card">
             <span class="highlight-card__icon">🔢</span>
-            <h3>Numerales y ordinales</h3>
-            <p>
-              Los <strong>cinco primeros números</strong> concuerdan como adjetivos variables; los
-              ordinales usan la <em>preposición "de" declinada</em> más el número cardinal.
-            </p>
+            <h3>{{ $t('pages.chapter3Index.numeralesOrdinales') }}</h3>
+            <p v-html="$t('pages.chapter3Index.cincoPrimerosNumerosConcuerdan')"></p>
           </router-link>
           <p class="overview-note">
             <span class="overview-note__icon">✓</span>
-            Dominar estas variaciones e inflexiones es fundamental para la estructura y la
-            concordancia de la lengua benga.
+            {{ $t('pages.chapter3Index.dominarEstasVariacionesE') }}
           </p>
         </div>
       </section>
 
       <section class="chapter-three__sections">
-        <h2>Secciones del Capítulo</h2>
+        <h2>{{ $t('pages.chapter3Index.seccionesCapitulo') }}</h2>
         <div class="sections-grid">
           <router-link to="/capitulo-3/introduccion" class="section-card">
-            <h3>Introducción</h3>
-            <p>Conceptos fundamentales de los adjetivos</p>
+            <h3>{{ $t('pages.chapter3Index.introduccion') }}</h3>
+            <p>{{ $t('pages.chapter3Index.conceptosFundamentalesAdjetivos') }}</p>
           </router-link>
           <router-link to="/capitulo-3/adjetivos-regulares" class="section-card">
-            <h3>Adjetivos Regulares</h3>
-            <p>Adjetivos variables y concordancia</p>
+            <h3>{{ $t('pages.chapter3Index.adjetivosRegulares') }}</h3>
+            <p>{{ $t('pages.chapter3Index.adjetivosVariablesConcordancia') }}</p>
           </router-link>
           <router-link to="/capitulo-3/adjetivos-invariables" class="section-card">
-            <h3>Adjetivos Invariables</h3>
-            <p>Formas fijas sin cambio</p>
+            <h3>{{ $t('pages.chapter3Index.adjetivosInvariables2') }}</h3>
+            <p>{{ $t('pages.chapter3Index.formasFijasSinCambio') }}</p>
           </router-link>
           <router-link to="/capitulo-3/comparativos-superlativos" class="section-card">
-            <h3>Comparativos y Superlativos</h3>
-            <p>Expresión de comparación y grado</p>
+            <h3>{{ $t('pages.chapter3Index.comparativosSuperlativos2') }}</h3>
+            <p>{{ $t('pages.chapter3Index.expresionComparacionGrado') }}</p>
           </router-link>
           <router-link to="/capitulo-3/numerales-ordinales" class="section-card">
-            <h3>Numerales y Ordinales</h3>
-            <p>Sistema decimal y números ordinales</p>
+            <h3>{{ $t('pages.chapter3Index.numeralesOrdinales2') }}</h3>
+            <p>{{ $t('pages.chapter3Index.sistemaDecimalNumerosOrdinales') }}</p>
           </router-link>
         </div>
       </section>
 
       <section class="chapter-three__progress">
-        <h2>Mi Progreso</h2>
+        <h2>{{ $t('pages.chapter3Index.miProgreso') }}</h2>
         <div class="progress-items">
           <div class="progress-item" v-for="(value, key) in progress" :key="key">
             <input type="checkbox" :id="`ch3-${key}`" v-model="progress[key]" />
@@ -104,7 +94,9 @@
       </section>
 
       <div class="chapter-three__cta">
-        <router-link to="/capitulo-3/introduccion" class="cta-button">Comenzar →</router-link>
+        <router-link to="/capitulo-3/introduccion" class="cta-button">{{
+          $t('pages.chapter3Index.comenzar')
+        }}</router-link>
       </div>
       <SectionNavFooter />
     </div>
@@ -138,14 +130,7 @@ export default {
   },
   methods: {
     formatLabel(key) {
-      const labels = {
-        introduccion: 'Introducción',
-        regulares: 'Adjetivos Regulares',
-        invariables: 'Adjetivos Invariables',
-        comparativos: 'Comparativos y Superlativos',
-        numerales: 'Numerales y Ordinales'
-      }
-      return labels[key] || key
+      return this.$t(`pages.chapter3Index.progressLabels.${key}`)
     }
   },
   watch: {
@@ -219,11 +204,11 @@ export default {
       color: $color-text-primary;
       margin: 0 0 $spacing-xl 0;
 
-      strong {
+      :deep(strong) {
         color: $color-primary-dark;
       }
 
-      em {
+      :deep(em) {
         color: $color-secondary-dark;
       }
     }
@@ -287,11 +272,11 @@ export default {
     color: $color-text-secondary;
     margin: 0;
 
-    strong {
+    :deep(strong) {
       color: $color-text-primary;
     }
 
-    em {
+    :deep(em) {
       color: $color-secondary-dark;
     }
   }

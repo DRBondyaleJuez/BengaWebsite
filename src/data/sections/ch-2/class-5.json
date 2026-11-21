@@ -3,10 +3,14 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 5"
+    "es": "Clase 5",
+    "en": "Class 5",
+    "fr": "Classe 5"
   },
   "subtitle": {
-    "es": "mo → ba"
+    "es": "mo → ba",
+    "en": "mo → ba",
+    "fr": "mo → ba"
   },
   "source": {
     "pdfPage": 12
@@ -16,7 +20,9 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -24,14 +30,18 @@
       "from": "mo-",
       "to": "ba-",
       "description": {
-        "es": "Los nombres de la clase 5 cambian la inicial mo- por ba- para expresarse en plural."
+        "es": "Los nombres de la clase 5 cambian la inicial mo- por ba- para expresarse en plural.",
+        "en": "Class 5 nouns change the initial mo- to ba- to express the plural.",
+        "fr": "Les noms de la classe 5 remplacent l’initiale mo- par ba- pour exprimer le pluriel."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos Principales"
+        "es": "Ejemplos Principales",
+        "en": "Main Examples",
+        "fr": "Exemples principaux"
       }
     },
     {
@@ -42,7 +52,9 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -50,26 +62,38 @@
       "items": [
         {
           "title": {
-            "es": "Patrón mo → ba"
+            "es": "Patrón mo → ba",
+            "en": "Pattern mo → ba",
+            "fr": "Schéma mo → ba"
           },
           "text": {
-            "es": "Este cambio es muy regular y se mantiene en la mayoría de los sustantivos."
+            "es": "Este cambio es muy regular y se mantiene en la mayoría de los sustantivos.",
+            "en": "This change is very regular and holds for most nouns.",
+            "fr": "Ce changement est très régulier et vaut pour la plupart des noms."
           }
         },
         {
           "title": {
-            "es": "Plural claro"
+            "es": "Plural claro",
+            "en": "Clear plural",
+            "fr": "Pluriel clair"
           },
           "text": {
-            "es": "La oposición singular/plural se reconoce rápidamente por la nueva marca ba-."
+            "es": "La oposición singular/plural se reconoce rápidamente por la nueva marca ba-.",
+            "en": "The singular/plural contrast is quickly recognised by the new marker ba-.",
+            "fr": "L’opposition singulier/pluriel se reconnaît vite grâce à la nouvelle marque ba-."
           }
         },
         {
           "title": {
-            "es": "Memorización"
+            "es": "Memorización",
+            "en": "Memorisation",
+            "fr": "Mémorisation"
           },
           "text": {
-            "es": "La clase 5 es buena para practicar formación de plural por contraste."
+            "es": "La clase 5 es buena para practicar formación de plural por contraste.",
+            "en": "Class 5 is good for practising plural formation by contrast.",
+            "fr": "La classe 5 est idéale pour s’exercer à former le pluriel par contraste."
           }
         }
       ]
@@ -78,14 +102,18 @@
       "type": "heading",
       "id": "exceptions",
       "text": {
-        "es": "Excepciones"
+        "es": "Excepciones",
+        "en": "Exceptions",
+        "fr": "Exceptions"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta clase 5."
+        "es": "Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta clase 5.",
+        "en": "Ubapami, bearer, does not begin with mo-, but it forms the plural like the nouns of this class 5.",
+        "fr": "Ubapami, porteur, ne commence pas par mo-, mais il forme son pluriel comme les noms de cette classe 5."
       }
     },
     {
@@ -96,20 +124,28 @@
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Escribe la forma plural de cada palabra antes de comprobarla."
+          "es": "Escribe la forma plural de cada palabra antes de comprobarla.",
+          "en": "Write the plural form of each word before checking it.",
+          "fr": "Écrivez la forme plurielle de chaque mot avant de la vérifier."
         },
         {
-          "es": "Haz frases breves con singular y plural alternados."
+          "es": "Haz frases breves con singular y plural alternados.",
+          "en": "Make short phrases alternating singular and plural.",
+          "fr": "Formez de courtes phrases en alternant singulier et pluriel."
         },
         {
-          "es": "Escucha la diferencia tonal y léxica en cada ejemplo."
+          "es": "Escucha la diferencia tonal y léxica en cada ejemplo.",
+          "en": "Listen to the difference in tone and vocabulary in each example.",
+          "fr": "Écoutez la différence de ton et de vocabulaire dans chaque exemple."
         }
       ]
     }

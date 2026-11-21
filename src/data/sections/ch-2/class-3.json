@@ -3,10 +3,14 @@
   "chapter": 2,
   "layout": "noun-class",
   "title": {
-    "es": "Clase 3"
+    "es": "Clase 3",
+    "en": "Class 3",
+    "fr": "Classe 3"
   },
   "subtitle": {
-    "es": "u / mū → me / mi"
+    "es": "u / mū → me / mi",
+    "en": "u / mū → me / mi",
+    "fr": "u / mū → me / mi"
   },
   "source": {
     "pdfPage": "10-11"
@@ -16,7 +20,9 @@
       "type": "heading",
       "id": "pattern",
       "text": {
-        "es": "Patrón de Transformación"
+        "es": "Patrón de Transformación",
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -24,14 +30,18 @@
       "from": "u- / mú-",
       "to": "me- / mi-",
       "description": {
-        "es": "La clase 3 usa prefijos de plural con variantes me- y mi- según el caso inicial del sustantivo."
+        "es": "La clase 3 usa prefijos de plural con variantes me- y mi- según el caso inicial del sustantivo.",
+        "en": "Class 3 uses plural prefixes with the variants me- and mi- depending on the initial of the noun.",
+        "fr": "La classe 3 utilise des préfixes de pluriel avec les variantes me- et mi- selon l’initiale du nom."
       }
     },
     {
       "type": "heading",
       "id": "examples",
       "text": {
-        "es": "Ejemplos con u-"
+        "es": "Ejemplos con u-",
+        "en": "Examples with u-",
+        "fr": "Exemples avec u-"
       }
     },
     {
@@ -63,7 +73,9 @@
       "type": "heading",
       "id": "variants",
       "text": {
-        "es": "Ejemplos con mū- / mu-"
+        "es": "Ejemplos con mū- / mu-",
+        "en": "Examples with mū- / mu-",
+        "fr": "Exemples avec mū- / mu-"
       }
     },
     {
@@ -88,7 +100,9 @@
       "type": "heading",
       "id": "concepts",
       "text": {
-        "es": "Conceptos Clave"
+        "es": "Conceptos Clave",
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -96,26 +110,38 @@
       "items": [
         {
           "title": {
-            "es": "Prefijos plurales variables"
+            "es": "Prefijos plurales variables",
+            "en": "Variable plural prefixes",
+            "fr": "Préfixes de pluriel variables"
           },
           "text": {
-            "es": "La clase 3 presenta una alternancia entre me- y mi- según la raíz nominal."
+            "es": "La clase 3 presenta una alternancia entre me- y mi- según la raíz nominal.",
+            "en": "Class 3 alternates between me- and mi- depending on the noun root.",
+            "fr": "La classe 3 alterne entre me- et mi- selon la racine du nom."
           }
         },
         {
           "title": {
-            "es": "Raíces con u-"
+            "es": "Raíces con u-",
+            "en": "Roots with u-",
+            "fr": "Racines en u-"
           },
           "text": {
-            "es": "Los nombres con u- / w- tienden a pasar a me- en plural."
+            "es": "Los nombres con u- / w- tienden a pasar a me- en plural.",
+            "en": "Nouns with u- / w- tend to change to me- in the plural.",
+            "fr": "Les noms en u- / w- passent généralement à me- au pluriel."
           }
         },
         {
           "title": {
-            "es": "Raíces con mú-"
+            "es": "Raíces con mú-",
+            "en": "Roots with mú-",
+            "fr": "Racines en mú-"
           },
           "text": {
-            "es": "Los nombres con mú- / mu- se refuerzan con mi- como marca plural."
+            "es": "Los nombres con mú- / mu- se refuerzan con mi- como marca plural.",
+            "en": "Nouns with mú- / mu- are reinforced with mi- as the plural marker.",
+            "fr": "Les noms en mú- / mu- se renforcent avec mi- comme marque du pluriel."
           }
         }
       ]
@@ -124,14 +150,18 @@
       "type": "heading",
       "id": "exceptions",
       "text": {
-        "es": "Excepciones"
+        "es": "Excepciones",
+        "en": "Exceptions",
+        "fr": "Exceptions"
       }
     },
     {
       "type": "note",
       "variant": "info",
       "text": {
-        "es": "Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural."
+        "es": "Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural.",
+        "en": "These class 3 nouns do not follow the regular me- / mi- change in the plural.",
+        "fr": "Ces noms de la classe 3 ne suivent pas le changement régulier me- / mi- au pluriel."
       }
     },
     {
@@ -142,27 +172,37 @@
       "type": "note",
       "variant": "small",
       "text": {
-        "es": "Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta."
+        "es": "Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta.",
+        "en": "Mola belongs to this class only as far as the plural is concerned: its singular form is a different word.",
+        "fr": "Mola appartient à cette classe uniquement pour le pluriel : sa forme du singulier est un mot différent."
       }
     },
     {
       "type": "heading",
       "id": "practice",
       "text": {
-        "es": "Para Practicar"
+        "es": "Para Practicar",
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
       "type": "practice",
       "items": [
         {
-          "es": "Identifica si la palabra pertenece a la variante u- o mu-."
+          "es": "Identifica si la palabra pertenece a la variante u- o mu-.",
+          "en": "Identify whether the word belongs to the u- or mu- variant.",
+          "fr": "Identifiez si le mot appartient à la variante u- ou mu-."
         },
         {
-          "es": "Intenta transformar cada singular al plural sin mirar la respuesta."
+          "es": "Intenta transformar cada singular al plural sin mirar la respuesta.",
+          "en": "Try changing each singular into the plural without looking at the answer.",
+          "fr": "Essayez de mettre chaque singulier au pluriel sans regarder la réponse."
         },
         {
-          "es": "Comparte los ejemplos con adjuntos para reforzar la concordancia."
+          "es": "Comparte los ejemplos con adjuntos para reforzar la concordancia.",
+          "en": "Share the examples with accompanying words to reinforce agreement.",
+          "fr": "Partagez les exemples avec les mots qui les accompagnent pour renforcer l’accord."
         }
       ]
     }

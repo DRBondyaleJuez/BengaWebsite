@@ -1,27 +1,75 @@
 {
   "sectionId": "invariable-adjectives",
-  "title": "Adjetivos Invariables",
-  "subtitle": "Formas fijas que no cambian",
-  "overview": "Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, sin experimentar cambio alguno en su única y simple forma, la que no conoce número, género ni clasificación.",
+  "title": {
+    "es": "Adjetivos Invariables",
+    "en": "Invariable Adjectives",
+    "fr": "Adjectifs invariables"
+  },
+  "subtitle": {
+    "es": "Formas fijas que no cambian",
+    "en": "Fixed forms that do not change",
+    "fr": "Formes fixes qui ne changent pas"
+  },
+  "overview": {
+    "es": "Los adjetivos invariables no varían y se usan del mismo modo en unión con los nombres que califican, sin experimentar cambio alguno en su única y simple forma, la que no conoce número, género ni clasificación.",
+    "en": "Invariable adjectives do not change and are used in the same way with the nouns they qualify, undergoing no change in their single, simple form, which has no number, gender or classification.",
+    "fr": "Les adjectifs invariables ne varient pas et s'emploient de la même manière avec les noms qu'ils qualifient, sans subir aucun changement de leur forme unique et simple, qui ne connaît ni nombre, ni genre, ni classification."
+  },
   "examples": [
     {
       "bengaSentence": "Bokolo bokolo",
-      "spanishTranslation": "Muy duro, dificilísimo",
-      "explanation": "La repetición intensifica el significado",
+      "spanishTranslation": {
+        "es": "Muy duro, dificilísimo",
+        "en": "Very hard, extremely difficult",
+        "fr": "Très dur, extrêmement difficile"
+      },
+      "explanation": {
+        "es": "La repetición intensifica el significado",
+        "en": "Repetition intensifies the meaning",
+        "fr": "La répétition intensifie le sens"
+      },
       "audioId": "bokolo-bokolo"
     },
     {
       "bengaSentence": "De de de",
-      "spanishTranslation": "Completamente recto",
-      "explanation": "Repetición para enfatizar",
+      "spanishTranslation": {
+        "es": "Completamente recto",
+        "en": "Completely straight",
+        "fr": "Tout à fait droit"
+      },
+      "explanation": {
+        "es": "Repetición para enfatizar",
+        "en": "Repetition for emphasis",
+        "fr": "Répétition pour insister"
+      },
       "audioId": "de-de-de"
     }
   ],
   "characteristics": [
-    "No cambian de forma según número, género o clasificación",
-    "Se usan tal como están con cualquier sustantivo",
-    "Algunas pueden repetirse para intensificar su significado",
-    "Ocupan la misma posición que los adjetivos variables en la frase",
-    "Normalmente no comienzan con las sílabas de las declinaciones de los adjetivos variables (e, be, i, ma, u, me, bo, ba, vi, lo), aunque puede haber excepciones"
+    {
+      "es": "No cambian de forma según número, género o clasificación",
+      "en": "They do not change form according to number, gender or classification",
+      "fr": "Ils ne changent pas de forme selon le nombre, le genre ou la classification"
+    },
+    {
+      "es": "Se usan tal como están con cualquier sustantivo",
+      "en": "They are used as they are with any noun",
+      "fr": "Ils s'emploient tels quels avec n'importe quel nom"
+    },
+    {
+      "es": "Algunas pueden repetirse para intensificar su significado",
+      "en": "Some can be repeated to intensify their meaning",
+      "fr": "Certains peuvent être répétés pour intensifier leur sens"
+    },
+    {
+      "es": "Ocupan la misma posición que los adjetivos variables en la frase",
+      "en": "They occupy the same position as variable adjectives in the sentence",
+      "fr": "Ils occupent la même position que les adjectifs variables dans la phrase"
+    },
+    {
+      "es": "Normalmente no comienzan con las sílabas de las declinaciones de los adjetivos variables (e, be, i, ma, u, me, bo, ba, vi, lo), aunque puede haber excepciones",
+      "en": "They do not normally begin with the declension syllables of variable adjectives (e, be, i, ma, u, me, bo, ba, vi, lo), although there may be exceptions",
+      "fr": "Ils ne commencent normalement pas par les syllabes de déclinaison des adjectifs variables (e, be, i, ma, u, me, bo, ba, vi, lo), bien qu'il puisse y avoir des exceptions"
+    }
   ]
 }

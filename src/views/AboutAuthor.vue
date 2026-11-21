@@ -19,18 +19,18 @@
           <div class="about-author__portrait-container">
             <img
               src="@/assets/images/salvado-y-cos-portrait.png"
-              alt="Retrato de Francisco Salvadó y Cos"
+              :alt="$t('pages.about.retratoFranciscoSalvadoCos')"
               class="about-author__portrait"
             />
             <div class="about-author__portrait-info">
               <p class="about-author__passion">{{ authorData.author.name }}</p>
-              <p class="about-author__dates">{{ authorData.author.birth }}</p>
-              <p class="about-author__role">{{ authorData.author.profession }}</p>
+              <p class="about-author__dates">{{ $localized(authorData.author.birth) }}</p>
+              <p class="about-author__role">{{ $localized(authorData.author.profession) }}</p>
             </div>
           </div>
 
           <div class="about-author__biography">
-            <h2>{{ $t('about.biographical') || 'Biografía' }}</h2>
+            <h2>{{ $t('about.biographical') }}</h2>
             <p class="about-author__bio-text">
               {{ $localized(authorData.author.biography) }}
             </p>
@@ -40,11 +40,11 @@
 
       <!-- Publication Details -->
       <section class="about-author__section about-author__publication-section">
-        <h2>{{ $t('about.masterwork') || 'Obra Maestra' }}</h2>
+        <h2>{{ $t('about.masterwork') }}</h2>
 
         <div class="about-author__publication-details">
           <div class="about-author__detail-card">
-            <h3>{{ $t('about.workTitle') || 'Título de la Obra' }}</h3>
+            <h3>{{ $t('about.workTitle') }}</h3>
             <p class="about-author__detail-text">
               {{ authorData.author.workTitle }}
             </p>
@@ -55,22 +55,22 @@
 
           <div class="about-author__detail-grid">
             <div class="about-author__detail-card">
-              <h4>{{ $t('about.publicationYear') || 'Año de Publicación' }}</h4>
+              <h4>{{ $t('about.publicationYear') }}</h4>
               <p class="about-author__detail-value">{{ authorData.author.publicationYear }}</p>
             </div>
 
             <div class="about-author__detail-card">
-              <h4>{{ $t('about.publisher') || 'Editorial' }}</h4>
+              <h4>{{ $t('about.publisher') }}</h4>
               <p class="about-author__detail-value">{{ authorData.author.publisher }}</p>
             </div>
 
             <div class="about-author__detail-card">
-              <h4>{{ $t('about.location') || 'Lugar de Publicación' }}</h4>
+              <h4>{{ $t('about.location') }}</h4>
               <p class="about-author__detail-value">{{ authorData.author.publicationPlace }}</p>
             </div>
 
             <div class="about-author__detail-card">
-              <h4>{{ $t('about.pagination') || 'Páginas' }}</h4>
+              <h4>{{ $t('about.pagination') }}</h4>
               <p class="about-author__detail-value">~{{ authorData.author.pages }}pp</p>
             </div>
           </div>
@@ -79,71 +79,49 @@
         <!-- Book Description -->
         <div class="about-author__book-description">
           <p>
-            Esta obra representa el primer esfuerzo sistemático de documentación del idioma Benga.
-            En ella, Salvadó y Cos presenta una introducción exhaustiva a la gramática Benga,
-            incluyendo:
+            {{ $t('pages.about.estaObraRepresentaPrimer') }}
           </p>
           <ul>
-            <li>
-              <strong>Alfabeto y sonidos:</strong> Una explicación detallada del sistema de
-              escritura y pronunciación
-            </li>
-            <li>
-              <strong>Vocales y diptongos:</strong> Análisis fonético de todos los sonidos vocálicos
-            </li>
-            <li><strong>Consonantes:</strong> Descripción de consonantes simples y combinadas</li>
-            <li>
-              <strong>Nombres y sustantivos:</strong> Sistema de clasificación nominal con siete
-              clases
-            </li>
-            <li><strong>Adjetivos:</strong> Adjetivos variables e invariables y sus usos</li>
-            <li>
-              <strong>Ejemplos prácticos:</strong> Cientos de palabras y expresiones en contexto
-            </li>
+            <li v-html="$t('pages.about.alfabetoSonidosExplicacionDetallada')"></li>
+            <li v-html="$t('pages.about.vocalesDiptongosAnalisisFonetico')"></li>
+            <li v-html="$t('pages.about.consonantesDescripcionConsonantesSimples')"></li>
+            <li v-html="$t('pages.about.nombresSustantivosSistemaClasificacion')"></li>
+            <li v-html="$t('pages.about.adjetivosAdjetivosVariablesE')"></li>
+            <li v-html="$t('pages.about.ejemplosPracticosCientosPalabras')"></li>
           </ul>
         </div>
       </section>
 
       <!-- Historical Context -->
       <section class="about-author__section">
-        <h2>{{ $t('about.historicalContext') || 'Contexto Histórico' }}</h2>
+        <h2>{{ $t('about.historicalContext') }}</h2>
 
         <div class="about-author__context-cards">
           <div class="about-author__context-item">
-            <h3>🌍 {{ $t('about.colonialLinguistics') || 'Lingüística Colonial' }}</h3>
+            <h3>🌍 {{ $t('about.colonialLinguistics') }}</h3>
             <p>
-              En el siglo XIX, el estudio de lenguas africanas era parte de la empresa colonial
-              europea. Sin embargo, la obra de Salvadó y Cos se destaca por su rigor científico y su
-              respeto por la lengua estudiada, recopilando materiales que de otra forma se hubiesen
-              perdido.
+              {{ $t('pages.about.sigloXixEstudioLenguas') }}
             </p>
           </div>
 
           <div class="about-author__context-item">
-            <h3>📚 {{ $t('about.linguisticValue') || 'Valor Lingüístico' }}</h3>
+            <h3>📚 {{ $t('about.linguisticValue') }}</h3>
             <p>
-              Como una de las primeras descripciones sistemáticas del Benga, esta gramática conserva
-              información invaluable sobre la lengua que de otro modo estaría perdida. Para
-              estudiosos modernos del Benga y lenguas relacionadas, representa una fuente primaria
-              de importancia crítica.
+              {{ $t('pages.about.comoPrimerasDescripcionesSistematicas') }}
             </p>
           </div>
 
           <div class="about-author__context-item">
-            <h3>🙏 {{ $t('about.missionaryWork') || 'Labor Misionera' }}</h3>
+            <h3>🙏 {{ $t('about.missionaryWork') }}</h3>
             <p>
-              Como misionero, Salvadó y Cos pasó años viviendo con hablantes nativos de Benga. Esta
-              cercanía le permitió recopilar datos lingüísticos authenticos directamente de la
-              comunidad de habla, en lugar de trabajar con informantes limitados o de segunda mano.
+              {{ $t('pages.about.comoMisioneroSalvadoCos') }}
             </p>
           </div>
 
           <div class="about-author__context-item">
-            <h3>🔍 {{ $t('about.legacy') || 'Legado' }}</h3>
+            <h3>🔍 {{ $t('about.legacy') }}</h3>
             <p>
-              La obra de Salvadó y Cos sigue siendo referencia en estudios de lenguas Ndowe. Su
-              contribución a la documentación del Benga es reconocida por lingüistas africanos
-              modernos y forma parte del patrimonio intelectual colectivo de la comunidad académica.
+              {{ $t('pages.about.obraSalvadoCosSigue') }}
             </p>
           </div>
         </div>
@@ -151,28 +129,25 @@
 
       <!-- About This Portal -->
       <section class="about-author__section about-author__portal-section">
-        <h2>{{ $t('about.aboutPortal') || 'Sobre Este Portal' }}</h2>
+        <h2>{{ $t('about.aboutPortal') }}</h2>
         <div class="about-author__portal-content">
           <p>
-            Este portal digital representa un esfuerzo por hacer accesible la valiosa obra de
-            Salvadó y Cos a nuevas audiencias. Al transformar la gramática de 1891 en un formato
-            interactivo, buscamos:
+            {{ $t('pages.about.estePortalDigitalRepresenta') }}
           </p>
           <ul>
-            <li>✓ Preservar el conocimiento lingüístico histórico para futuras generaciones</li>
-            <li>✓ Facilitar el acceso a estudiantes de lenguas africanas en todo el mundo</li>
-            <li>✓ Apoyar a hablantes nativos de Benga en la revitalización de su lengua</li>
-            <li>✓ Contribuir a la documentación de lenguas en peligro de extinción</li>
+            <li>{{ $t('pages.about.preservarConocimientoLinguisticoHistorico') }}</li>
+            <li>{{ $t('pages.about.facilitarAccesoEstudiantesLenguas') }}</li>
+            <li>{{ $t('pages.about.apoyarHablantesNativosBenga') }}</li>
+            <li>{{ $t('pages.about.contribuirDocumentacionLenguasPeligro') }}</li>
             <li>
-              ✓ Demostrar el valor de las fuentes históricas para la investigación contemporánea
+              {{ $t('pages.about.demostrarValorFuentesHistoricas') }}
             </li>
           </ul>
 
           <div class="about-author__download-box">
-            <h3>{{ $t('about.originalWork') || 'Acceso a la Obra Original' }}</h3>
+            <h3>{{ $t('about.originalWork') }}</h3>
             <p>
-              Para complementar tu aprendizaje en el portal, puedes descargar la gramática original
-              de Salvadó y Cos en formato PDF:
+              {{ $t('pages.about.paraComplementarTuAprendizaje') }}
             </p>
             <a :href="bookPdfUrl" class="about-author__download-button" download>
               📄 {{ $t('nav.download') }}
@@ -183,29 +158,27 @@
 
       <!-- Resources -->
       <section class="about-author__section">
-        <h2>{{ $t('about.furtherReading') || 'Lecturas Complementarias' }}</h2>
+        <h2>{{ $t('about.furtherReading') }}</h2>
 
         <div class="about-author__resources">
           <div class="about-author__resource-card">
-            <h3>{{ $t('about.languageFamily') || 'Familia Lingüística Ndowe' }}</h3>
+            <h3>{{ $t('about.languageFamily') }}</h3>
             <p>
-              El Benga pertenece a la familia de lenguas Ndowe, que incluye también Bubi (en Bioko)
-              y otras lenguas relacionadas habladas en la región del Golfo de Guinea.
+              {{ $t('pages.about.bengaPerteneceFamiliaLenguas') }}
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Ndowe_languages"
               target="_blank"
               class="about-author__resource-link"
             >
-              Leer en Wikipedia →
+              {{ $t('pages.about.leerWikipedia') }}
             </a>
           </div>
 
           <div class="about-author__resource-card">
-            <h3>{{ $t('about.livingDictionary') || 'Living Dictionary' }}</h3>
+            <h3>{{ $t('about.livingDictionary') }}</h3>
             <p>
-              El Living Dictionary es un recurso comunitario que documenta lenguas en peligro.
-              Consulta las palabras Benga recopiladas por la comunidad de hablantes.
+              {{ $t('pages.about.livingDictionaryEsRecurso') }}
             </p>
             <a
               :href="livingDictionaryHome"
@@ -213,33 +186,31 @@
               rel="noopener noreferrer"
               class="about-author__resource-link"
             >
-              Visitar Living Dictionary →
+              {{ $t('pages.about.visitarLivingDictionary') }}
             </a>
           </div>
 
           <div class="about-author__resource-card">
-            <h3>{{ $t('about.sil') || 'SIL International' }}</h3>
+            <h3>{{ $t('about.sil') }}</h3>
             <p>
-              SIL (Institución Lingüística de Verano) trabaja en la documentación y preservación de
-              lenguas minoritarias en todo el mundo, incluyendo el Benga.
+              {{ $t('pages.about.silInstitucionLinguisticaVerano') }}
             </p>
             <a href="https://www.sil.org/" target="_blank" class="about-author__resource-link">
-              Visitar SIL →
+              {{ $t('pages.about.visitarSil') }}
             </a>
           </div>
 
           <div class="about-author__resource-card">
-            <h3>{{ $t('about.guineaInfo') || 'Guinea Ecuatorial' }}</h3>
+            <h3>{{ $t('about.guineaInfo') }}</h3>
             <p>
-              Información sobre la geografía, cultura y lenguas de Guinea Ecuatorial, donde se habla
-              el Benga.
+              {{ $t('pages.about.informacionSobreGeografiaCultura') }}
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Equatorial_Guinea"
               target="_blank"
               class="about-author__resource-link"
             >
-              Leer en Wikipedia →
+              {{ $t('pages.about.leerWikipedia') }}
             </a>
           </div>
         </div>
@@ -248,7 +219,7 @@
 
     <!-- CTA Footer -->
     <section class="about-author__cta-footer">
-      <h2>{{ $t('home.readyToLearn') || '¿Listo para Comenzar?' }}</h2>
+      <h2>{{ $t('home.readyToLearn') }}</h2>
       <router-link to="/capitulo-1" class="about-author__cta-button">
         {{ $t('home.startLearning') }} →
       </router-link>
@@ -270,7 +241,7 @@ export default {
     }
   },
   created() {
-    document.title = 'Sobre el Autor - ' + this.$t('about.title')
+    document.title = this.$t('pages.about.pageTitle', { title: this.$t('about.title') })
   }
 }
 </script>
@@ -511,7 +482,7 @@ export default {
         padding: $spacing-sm 0;
         line-height: $line-height-loose;
 
-        strong {
+        :deep(strong) {
           color: $color-primary;
         }
       }

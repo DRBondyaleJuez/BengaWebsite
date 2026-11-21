@@ -6,7 +6,7 @@
         <div class="hero__overlay"></div>
         <img
           src="@/assets/images/equatorial-guinea-map.png"
-          alt="Mapa de Guinea Ecuatorial"
+          :alt="$t('pages.home.mapaGuineaEcuatorial')"
           class="hero__image"
         />
       </div>
@@ -33,34 +33,30 @@
     <!-- Introduction Section -->
     <section class="home-page__intro-section">
       <div class="home-page__container">
-        <h2>{{ $t('home.aboutBenga') || 'Sobre la Lengua Benga' }}</h2>
+        <h2>{{ $t('home.aboutBenga') }}</h2>
 
         <div class="home-page__intro-grid">
           <div class="home-page__intro-card">
             <div class="home-page__intro-icon">🗣️</div>
-            <h3>{{ $t('home.languageFamily') || 'Familia Lingüística' }}</h3>
+            <h3>{{ $t('home.languageFamily') }}</h3>
             <p>
-              El Benga pertenece a la familia de lenguas Ndowe, habladas en Guinea Ecuatorial y
-              regiones adyacentes. Es una lengua rica en matices gramaticales y sonidos únicos.
+              {{ $t('pages.home.bengaPerteneceFamiliaLenguas') }}
             </p>
           </div>
 
           <div class="home-page__intro-card">
             <div class="home-page__intro-icon">🏝️</div>
-            <h3>{{ $t('home.geography') || 'Ubicación Geográfica' }}</h3>
+            <h3>{{ $t('home.geography') }}</h3>
             <p>
-              Hablada principalmente en la isla de Corisco, pueblos de su bahía e islas adyacentes
-              en Guinea Ecuatorial. Esta región tiene una rica tradición cultural y lingüística.
+              {{ $t('pages.home.habladaPrincipalmenteIslaCorisco') }}
             </p>
           </div>
 
           <div class="home-page__intro-card">
             <div class="home-page__intro-icon">📚</div>
-            <h3>{{ $t('home.heritage') || 'Patrimonio Lingüístico' }}</h3>
+            <h3>{{ $t('home.heritage') }}</h3>
             <p>
-              El Benga representa parte importante del patrimonio lingüístico africano. Su
-              preservación es esencial para mantener la diversidad cultural y el conocimiento
-              ancestral.
+              {{ $t('pages.home.bengaRepresentaParteImportante') }}
             </p>
           </div>
         </div>
@@ -72,37 +68,30 @@
       <div class="home-page__container">
         <div class="home-page__grammar-content">
           <div class="home-page__grammar-text">
-            <h2>{{ $t('home.aboutGrammar') || 'Sobre Esta Gramática' }}</h2>
+            <h2>{{ $t('home.aboutGrammar') }}</h2>
             <p>
-              Este portal está basado en la obra seminal de Francisco Salvadó y Cos, publicada en
-              1891:
+              {{ $t('pages.home.estePortalEstaBasado') }}
             </p>
             <blockquote class="home-page__quote">
               <p>
-                "Colección de apuntes preliminares sobre la lengua Benga, o sea introducción a una
-                gramática de este idioma que se habla en la isla de Corisco, pueblos de su bahía e
-                islas adyacentes"
+                {{ $t('pages.home.coleccionApuntesPreliminaresSobre') }}
               </p>
             </blockquote>
             <p>
-              La obra original, publicada en Madrid por la Imprenta de A. Pérez Dubrull, representa
-              el primer esfuerzo sistemático de documentación de esta lengua. Hoy la presentamos en
-              formato digital interactivo para que estudiantes de lenguas africanas, investigadores
-              y hablantes de Benga puedan acceder y aprender de esta valiosa documentación
-              histórica.
+              {{ $t('pages.home.obraOriginalPublicadaMadrid') }}
             </p>
           </div>
 
           <div class="home-page__grammar-image">
             <img
               src="@/assets/images/salvado-y-cos-portrait.png"
-              alt="Francisco Salvadó y Cos - Retrato"
+              :alt="$t('pages.home.franciscoSalvadoCosRetrato')"
               class="home-page__portrait"
             />
-            <p class="home-page__image-caption">
-              Francisco Salvadó y Cos (Siglo XIX)<br />
-              Misionero y Lingüista
-            </p>
+            <p
+              class="home-page__image-caption"
+              v-html="$t('pages.home.franciscoSalvadoCosSiglo')"
+            ></p>
           </div>
         </div>
       </div>
@@ -111,51 +100,50 @@
     <!-- Curriculum Overview -->
     <section class="home-page__curriculum-section">
       <div class="home-page__container">
-        <h2>{{ $t('home.curriculum') || 'Estructura del Curso' }}</h2>
+        <h2>{{ $t('home.curriculum') }}</h2>
 
         <div class="home-page__chapters-preview">
           <div class="home-page__chapter-card">
             <h3>{{ $t('chapters.chapter1.title') }}</h3>
             <p>
-              Fundamentos de la lengua Benga incluyendo alfabeto, vocales, diptongos, triptongos y
-              consonantes.
+              {{ $t('pages.home.fundamentosLenguaBengaIncluyendo') }}
             </p>
             <ul>
-              <li>✓ Alfabeto y escritura</li>
-              <li>✓ Sonidos vocales</li>
+              <li>{{ $t('pages.home.alfabetoEscritura') }}</li>
+              <li>{{ $t('pages.home.sonidosVocales') }}</li>
               <li>✓ Diptongos y triptongos</li>
-              <li>✓ Consonantes y combinaciones</li>
+              <li>{{ $t('pages.home.consonantesCombinaciones') }}</li>
             </ul>
             <router-link to="/capitulo-1" class="home-page__chapter-link">
-              Ir a Capítulo 1 →
+              {{ $t('pages.home.irCapitulo1') }}
             </router-link>
           </div>
 
           <div class="home-page__chapter-card">
             <h3>{{ $t('chapters.chapter2.title') }}</h3>
-            <p>Sistema de clasificación de nombres y sustantivos en Benga.</p>
+            <p>{{ $t('pages.home.sistemaClasificacionNombresSustantivos') }}</p>
             <ul>
-              <li>✓ Introducción a los nombres</li>
-              <li>✓ Siete clases nominales</li>
-              <li>✓ Nombres irregulares</li>
-              <li>✓ Nombres derivados</li>
+              <li>{{ $t('pages.home.introduccionNombres') }}</li>
+              <li>{{ $t('pages.home.sieteClasesNominales') }}</li>
+              <li>{{ $t('pages.home.nombresIrregulares') }}</li>
+              <li>{{ $t('pages.home.nombresDerivados') }}</li>
             </ul>
             <button class="home-page__chapter-link home-page__chapter-link--disabled" disabled>
-              Próximamente
+              {{ $t('pages.home.proximamente') }}
             </button>
           </div>
 
           <div class="home-page__chapter-card">
             <h3>{{ $t('chapters.chapter3.title') }}</h3>
-            <p>Adjetivos, modificadores y estructuras de concordancia.</p>
+            <p>{{ $t('pages.home.adjetivosModificadoresEstructurasConcordancia') }}</p>
             <ul>
-              <li>✓ Adjetivos variables</li>
-              <li>✓ Adjetivos invariables</li>
-              <li>✓ Concordancia nominal</li>
-              <li>✓ Ejemplos en contexto</li>
+              <li>{{ $t('pages.home.adjetivosVariables') }}</li>
+              <li>{{ $t('pages.home.adjetivosInvariables') }}</li>
+              <li>{{ $t('pages.home.concordanciaNominal') }}</li>
+              <li>{{ $t('pages.home.ejemplosContexto') }}</li>
             </ul>
             <button class="home-page__chapter-link home-page__chapter-link--disabled" disabled>
-              Próximamente
+              {{ $t('pages.home.proximamente') }}
             </button>
           </div>
         </div>
@@ -165,43 +153,43 @@
     <!-- Features -->
     <section class="home-page__features-section">
       <div class="home-page__container">
-        <h2>{{ $t('home.features') || 'Características' }}</h2>
+        <h2>{{ $t('home.features') }}</h2>
 
         <div class="home-page__features-grid">
           <div class="home-page__feature">
             <div class="home-page__feature-icon">🔊</div>
-            <h4>{{ $t('home.audioSupport') || 'Pronunciación con Audio' }}</h4>
-            <p>Aprende la pronunciación correcta con ejemplos de audio para cada palabra.</p>
+            <h4>{{ $t('home.audioSupport') }}</h4>
+            <p>{{ $t('pages.home.aprendePronunciacionCorrectaCon') }}</p>
           </div>
 
           <div class="home-page__feature">
             <div class="home-page__feature-icon">📖</div>
-            <h4>{{ $t('home.liveDict') || 'Diccionario Vivo' }}</h4>
-            <p>Acceso integrado al Living Dictionary para explorar palabras en contexto.</p>
+            <h4>{{ $t('home.liveDict') }}</h4>
+            <p>{{ $t('pages.home.accesoIntegradoLivingDictionary') }}</p>
           </div>
 
           <div class="home-page__feature">
             <div class="home-page__feature-icon">📱</div>
-            <h4>{{ $t('home.responsive') || 'Diseño Responsivo' }}</h4>
-            <p>Aprende en cualquier dispositivo: escritorio, tablet o móvil.</p>
+            <h4>{{ $t('home.responsive') }}</h4>
+            <p>{{ $t('pages.home.aprendeCualquierDispositivoEscritorio') }}</p>
           </div>
 
           <div class="home-page__feature">
             <div class="home-page__feature-icon">🌐</div>
-            <h4>{{ $t('home.multiLanguage') || 'Multilingüe' }}</h4>
-            <p>Disponible en español, con soporte para inglés y francés próximamente.</p>
+            <h4>{{ $t('home.multiLanguage') }}</h4>
+            <p>{{ $t('pages.home.disponibleEspanolConSoporte') }}</p>
           </div>
 
           <div class="home-page__feature">
             <div class="home-page__feature-icon">📚</div>
-            <h4>{{ $t('home.systematiC') || 'Método Sistemático' }}</h4>
-            <p>Basado en la gramática histórica rigurosa de Salvadó y Cos.</p>
+            <h4>{{ $t('home.systematic') }}</h4>
+            <p>{{ $t('pages.home.basadoGramaticaHistoricaRigurosa') }}</p>
           </div>
 
           <div class="home-page__feature">
             <div class="home-page__feature-icon">🤝</div>
-            <h4>{{ $t('home.community') || 'Comunidad' }}</h4>
-            <p>Conecta con otros estudiosos de la lengua Benga y la cultura Ndowe.</p>
+            <h4>{{ $t('home.community') }}</h4>
+            <p>{{ $t('pages.home.conectaConOtrosEstudiosos') }}</p>
           </div>
         </div>
       </div>
@@ -210,9 +198,9 @@
     <!-- Call to Action -->
     <section class="home-page__cta-section">
       <div class="home-page__container">
-        <h2>{{ $t('home.readyToLearn') || '¿Listo para Comenzar?' }}</h2>
+        <h2>{{ $t('home.readyToLearn') }}</h2>
         <p>
-          {{ $t('home.ctaSubtitle') || 'Inicia tu viaje en el aprendizaje del idioma Benga hoy.' }}
+          {{ $t('home.ctaSubtitle') }}
         </p>
 
         <div class="home-page__cta-buttons">
@@ -243,7 +231,7 @@ export default {
     BaseIcon
   },
   created() {
-    document.title = 'Portal de Aprendizaje Benga - ' + this.$t('home.welcome')
+    document.title = this.$t('pages.home.pageTitle', { welcome: this.$t('home.welcome') })
   }
 }
 </script>

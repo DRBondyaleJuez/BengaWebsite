@@ -1,25 +1,21 @@
 <template>
   <div class="irregular-nouns">
     <div class="irregular-nouns__header">
-      <h1>Nombres Irregulares</h1>
-      <p class="subtitle">Excepciones que no siguen los patrones estándar</p>
+      <h1>{{ $t('pages.irregularNouns.nombresIrregulares') }}</h1>
+      <p class="subtitle">{{ $t('pages.irregularNouns.excepcionesNoSiguenPatrones') }}</p>
     </div>
 
     <section class="irregular-nouns__intro">
       <p>
-        Aunque el sistema de siete clases es muy regular, el Benga contiene un número de nombres que
-        no cumplen con los patrones esperados. Salvado y Cos los agrupa en dos apartados: nombres
-        que carecen de singular y nombres que carecen de plural.
+        {{ $t('pages.irregularNouns.aunqueSistemaSieteClases') }}
       </p>
     </section>
 
     <section class="irregular-nouns__no-singular">
-      <h2>§ 7. Nombres que carecen de singular</h2>
+      <h2>{{ $t('pages.irregularNouns.n7NombresCarecenSingular') }}</h2>
       <p class="description">
-        Hay cierta porción de nombres que expresan cantidad de alguna cosa (especialmente de
-        líquidos), los que jamás se usan en singular, sino siempre en plural, tomando los adjuntos
-        de éste. Algunos fueron introducido en los
-        <a href="/capitulo-2/clase-2">sustantivos de Clase 2</a>
+        {{ $t('pages.irregularNouns.hayCiertaPorcionNombres') }}
+        <a href="/capitulo-2/clase-2">{{ $t('pages.irregularNouns.sustantivosClase2') }}</a>
       </p>
 
       <CardGrid
@@ -30,9 +26,9 @@
       >
         <div class="example-card">
           <div class="example-form">
-            <span class="label">Forma principal (plural):</span>
+            <span class="label">{{ $t('pages.irregularNouns.formaPrincipalPlural') }}</span>
             <span class="value">
-              <BengaWord :word="example.word" :meaning="example.meaning" block />
+              <BengaWord :word="example.word" :meaning="$localized(example.meaning)" block />
             </span>
           </div>
         </div>
@@ -40,10 +36,9 @@
     </section>
 
     <section class="irregular-nouns__no-plural">
-      <h2>§ 8. Nombres que carecen de plural</h2>
+      <h2>{{ $t('pages.irregularNouns.n8NombresCarecenPlural') }}</h2>
       <p class="description">
-        Otros muchos nombres hay que no se usan sino en singular, los cuales toman sus adjuntos
-        correspondientes a dicho número singular.
+        {{ $t('pages.irregularNouns.otrosMuchosNombresHay') }}
       </p>
 
       <CardGrid
@@ -54,9 +49,9 @@
       >
         <div class="example-card">
           <div class="example-form">
-            <span class="label">Forma principal (singular):</span>
+            <span class="label">{{ $t('pages.irregularNouns.formaPrincipalSingular') }}</span>
             <span class="value">
-              <BengaWord :word="example.word" :meaning="example.meaning" block />
+              <BengaWord :word="example.word" :meaning="$localized(example.meaning)" block />
             </span>
           </div>
         </div>
@@ -64,46 +59,42 @@
     </section>
 
     <section class="irregular-nouns__notes">
-      <h2>Notas Importantes</h2>
+      <h2>{{ $t('pages.irregularNouns.notasImportantes') }}</h2>
       <div class="notes-list">
         <div class="note-item">
-          <h4>Patrón semántico</h4>
+          <h4>{{ $t('pages.irregularNouns.patronSemantico') }}</h4>
           <p>
-            Los nombres sin singular suelen expresar conceptos masivos o colectivos (líquidos,
-            cantidades, masas)
+            {{ $t('pages.irregularNouns.nombresSinSingularSuelen') }}
           </p>
         </div>
         <div class="note-item">
-          <h4>Uso en contexto</h4>
+          <h4>{{ $t('pages.irregularNouns.usoContexto') }}</h4>
           <p>
-            Aunque un nombre carezca de plural gramatical, la cantidad se expresa mediante otros
-            medios sintácticos
+            {{ $t('pages.irregularNouns.aunqueNombreCarezcaPlural') }}
           </p>
         </div>
         <div class="note-item">
-          <h4>Frecuencia</h4>
+          <h4>{{ $t('pages.irregularNouns.frecuencia') }}</h4>
           <p>
-            Los nombres irregulares son relativamente pocos en comparación con el total de
-            vocabulario nominal
+            {{ $t('pages.irregularNouns.nombresIrregularesSonRelativamente') }}
           </p>
         </div>
         <div class="note-item">
-          <h4>Aprendizaje</h4>
+          <h4>{{ $t('pages.irregularNouns.aprendizaje') }}</h4>
           <p>
-            Es recomendable memorizarlos explícitamente porque no siguen patrones que se puedan
-            inferir
+            {{ $t('pages.irregularNouns.esRecomendableMemorizarlosExplicitamente') }}
           </p>
         </div>
       </div>
     </section>
 
     <section class="irregular-nouns__practice">
-      <h2>Para Practicar</h2>
+      <h2>{{ $t('pages.irregularNouns.paraPracticar') }}</h2>
       <ol>
-        <li>Memoriza la lista de nombres que carecen de singular y plural</li>
-        <li>Úsalos en frases con adjetivos para practicar la concordancia correcta</li>
-        <li>Presta atención a cómo se expresan la cantidad y modificaciones con estos nombres</li>
-        <li>Crea una lista personal de otros irregulares que encuentres en tu estudio</li>
+        <li>{{ $t('pages.irregularNouns.memorizaListaNombresCarecen') }}</li>
+        <li>{{ $t('pages.irregularNouns.usalosFrasesConAdjetivos') }}</li>
+        <li>{{ $t('pages.irregularNouns.prestaAtencionComoSe') }}</li>
+        <li>{{ $t('pages.irregularNouns.creaListaPersonalOtros') }}</li>
       </ol>
     </section>
 
@@ -112,6 +103,7 @@
 </template>
 
 <script>
+import irregularNounsData from '@/data/chapter-2/irregular-nouns.json'
 import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
@@ -120,60 +112,11 @@ export default {
   name: 'IrregularNouns',
   components: { CardGrid, BengaWord, SectionNavFooter },
   data() {
-    return {
-      pluralOnlyNouns: [
-        { word: 'Hoūē', audio: 'ho_u_e_', meaning: 'Cabellera, pelo' },
-        { word: 'Honji', audio: 'honji', meaning: 'Heno, yerba' },
-        { word: 'Jubu', audio: 'jubu', meaning: 'Ceniza' },
-        { word: 'Mavule', audio: 'mavule', meaning: 'Aceite' },
-        { word: 'Miba', audio: 'miba', meaning: 'Agua' },
-        { word: 'Makiya', audio: 'makiya', meaning: 'Sangre' },
-        { word: 'Maku', audio: 'maku', meaning: 'Licor, caña' },
-        { word: 'Tito', audio: 'tito', meaning: 'Animal' },
-        { word: 'Malângâ', audio: 'mal_a_ng_a_', meaning: 'Flores de los árboles' },
-        { word: 'Majênjina', audio: 'maj_e_njina', meaning: 'Rayos de la aurora' },
-        { word: 'Mbana', audio: 'mbana', meaning: 'Pinzas, tenazuelas' },
-        { word: 'Mbai', audio: 'mbai', meaning: 'Virutas, astillas' },
-        { word: 'Mâmbē', audio: 'm_a_mb_e_', meaning: 'Sobras, mendrugos' },
-        { word: 'Lombongo', audio: 'lombongo', meaning: 'Mosquitos' },
-        { word: 'Kiji', audio: 'kiji', meaning: 'Rastrojo' },
-        { word: 'Hako', audio: 'hako', meaning: 'Hormiga, etc.' }
-      ],
-      singularOnlyNouns: [
-        { word: 'Hâkâ', audio: 'h_a_k_a_', meaning: 'Ápice, punta' },
-        { word: 'Ngânde', audio: 'ng_a_nde', meaning: 'Luna' },
-        { word: 'Myadi', audio: 'myadi', meaning: 'Agonía' },
-        { word: 'Ngabo', audio: 'ngabo', meaning: 'Porción, división' },
-        { word: 'Tina', audio: 'tina', meaning: 'Origen, causa' },
-        { word: 'Pâkūēpâkūē', audio: 'p_a_k_u_e_p_a_k_u_e', meaning: 'Verdad' },
-        { word: 'Kâla', audio: 'k_a_la', meaning: 'Reloj de caja' },
-        { word: 'Ndiba', audio: 'ndiba', meaning: 'Profundidad' },
-        { word: 'Kapi', audio: 'kapi', meaning: 'Remo' },
-        { word: 'Kama', audio: 'kama', meaning: 'Ciento' },
-        { word: 'Nyati', audio: 'nyati', meaning: 'Buey' },
-        { word: 'Pita', audio: 'pita', meaning: 'Pólvora' },
-        { word: 'Ngūanjangūanja', audio: 'ng_u_anjang_u_anja', meaning: 'Diligencia' },
-        { word: 'Bokâ', audio: 'bok_a_', meaning: 'Estación lluviosa' },
-        { word: 'Bulu', audio: 'bulu', meaning: 'Noche' },
-        { word: 'Manga', audio: 'manga', meaning: 'Mar' },
-        { word: 'Njea', audio: 'njea', meaning: 'Sendero' },
-        { word: 'Poli', audio: 'poli', meaning: 'Trigo' },
-        { word: 'Tonda', audio: 'tonda', meaning: 'Diluvio' },
-        { word: 'Henga', audio: 'henga', meaning: 'Ocio' },
-        { word: 'Hūē', audio: 'h_u_e_', meaning: 'Paz' },
-        { word: 'Maka', audio: 'maka', meaning: 'Jugo' },
-        { word: 'Kango', audio: 'kango', meaning: 'Sabor, gusto' },
-        { word: 'Kâ', audio: 'k_a_', meaning: 'Caracol grande' },
-        { word: 'Kânde', audio: 'k_a_nde', meaning: 'Perseverancia' },
-        { word: 'Pani', audio: 'pani', meaning: 'Uso, hábito' },
-        { word: 'Beja', audio: 'beja', meaning: 'Alimento' },
-        { word: 'Mboi', audio: 'mboi', meaning: 'Miel' },
-        { word: 'Peta', audio: 'peta', meaning: 'Disputa, etc.' }
-      ]
-    }
+    // Words and texts of this page: @/data/chapter-2/irregular-nouns.json
+    return { ...irregularNounsData }
   },
   created() {
-    document.title = 'Nombres Irregulares | Portal Benga'
+    document.title = `${this.$t('pages.irregularNouns.pageTitle')} | Portal Benga`
   }
 }
 </script>

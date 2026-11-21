@@ -21,7 +21,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - **IDE**: VSCode with GitHub Copilot
 - **Media Storage**: Cloudinary (audio files)
 - **Images**: Wikimedia Commons, Unsplash
-- **Internationalization**: vue-i18n in composition mode with `globalInjection` (set up in `src/main.js`): use `$t('key')` and `$i18n.locale` in components. Spanish first, then French/English
+- **Internationalization**: vue-i18n in composition mode with `globalInjection` (set up in `src/main.js`): use `$t('key')` and `$i18n.locale` in components. Spanish is the source; English and French exist for chapters 1-3 (see "Translations" below)
 - **Linting**: ESLint 10 + `eslint-plugin-vue` 10 (`flat/essential`), flat config in `eslint.config.mjs`; `npm run lint` checks `src/`, `scripts/` and the config files
 
 ## Architecture Principles
@@ -73,6 +73,16 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Extract with `pdftotext -enc UTF-8 -layout -f <first> -l <last> <pdf> out.txt`. When a row looks garbled (e.g. `Whdki` for `Whâki`, `Medambu` for `Medumbu`, `mija` for `Mijona`), re-run with `pdftotext -bbox` and use the `xMin` coordinates to work out which column each token belongs to, then reconstruct the form from the class's plural rule.
 - When the OCR damage cannot be resolved (check the scan itself: e.g. render the page with PyMuPDF and look at it), **omit the entry and say so** in a visible `.section-note` / `.example-note` rather than inventing a headword; leave an unreadable gloss as `meaning: null` instead of guessing a translation. Cross-check doubtful headwords against the book's own `Vocabulario` section (`grep` the extracted text) before reconstructing — e.g. the class-7 `Mora. Perro.` is really `Mbūa. Perro.` (the book writes `Mbua` for «perros» in its examples, PDF p. 31; confirmed by the developer, REVIEW-LOG R-021). Watch for words that legitimately appear in two classes with different spellings: `Ndâlâ, sueño, desvario` (class 7) is not the same as `Vid. Lid. sueño` (class 6).
 
+### Translations (Spanish → English, French)
+- Human guide: `docs/TRANSLATIONS.md` (where texts live, special signs, review status, doubtful translations).
+- **Only Spanish is translated. Benga words are never translated**, not even inside a sentence; Benga fields (`word`, `bengaForm`, `bengaSentence`, `imperative`, …) stay plain strings.
+- Interface and custom-page texts: `src/locales/es.json`, `en.json`, `fr.json` with the **same keys in the same order**. Groups: shared (`app`, `nav`, `accessibility`, `chapters`, `content`), `pages.<page>.<key>`, `components.<component>.<key>`. Key names are camelCase slugs of the Spanish text. Never hard-code Spanish in a template or a prop default: add the key to all three files.
+- Messages may contain `{param}`, HTML (rendered with `v-html="$t(key)"`; style `strong`/`em` inside them with `:deep(strong)`) and literal `{'@'}`. Keep them identical in every language.
+- Content texts: `{ "es": …, "en": …, "fr": … }` in the data files. Show one with `$localized(text)`, or translate a whole file in `loadData()` with `localizeDeep(data, this.$i18n.locale)` (`src/utils/localized.js`) plus `watch: { '$i18n.locale': 'loadData' }`.
+- The chosen language is saved in `localStorage` (`app-language`) and sets `<html lang>` (`src/main.js`); `App.vue` updates the tab title on a language change.
+- The developer reviews and edits translations at `/admin/translations` (dev-only, `npm run serve`): every text with its Benga word, es/en/fr, page link and book page; saves through `scripts/lib/translations-save.mjs`. Doubtful translations are in `docs/translations/doubts.json` (tied to the Spanish text, resolved from that page); add a doubt there instead of a list in the docs.
+- When changing a Spanish text, update `en` and `fr` too. After adding texts run `npm run i18n:report` (`--all` lists every missing text). The en/fr texts are an AI draft until reviewed (REVIEW-LOG R-035).
+
 ### Benga Orthography Rules
 - The Benga vowel inventory is `a, â, e, ē, i, o, u, ū`. The book itself prints Benga words in italics with `â`, `ē`, `ū` (seen on the scan, e.g. *Yâkâ*, *Yēkē*, *Ebokūedi*), but the old OCR text layer of the PDF turned them into `á`, `é`, `ú` (or `d`, `a`, `ñ`…). So in OCR'd text `á → â`, `é → ē`, `ú → ū` when the word is Benga. `IMPROVED-salvado-y-cos-gramatica-benga.pdf` already has a text layer with `â ē ū` (see docs/OCR.md). Leave Spanish text in the `meaning` fields untouched. Consecutive accented vowels are kept (`Múéngi` → `Mūēngi`).
 - `c`, `q`, `r`, `x`, `z` and `ñ` are not consonants in benga. Any letter similar has to be another letter.
@@ -91,7 +101,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Unreadable meaning → `"meaning": null`; corrections or additions → `"editorial": { "status": "corrected" | "added", ... }` (never silently change book content).
 - When changing a schema: update its example, `docs/CONTENT-GUIDE.md` and the tests in `scripts/tests/schemas.test.mjs`, then run `npm test`.
 - `npm run validate` checks all content (schemas, ids, references, registry, orthography). Its checks are in `scripts/lib/validate.mjs`, each with a test in `scripts/tests/validate.test.mjs`; add a test when adding a check.
-- **Nouns:** `src/data/lexicon/nouns.json` is the source of truth: the noun-class pages and the practice game read it. Only `IrregularNouns.vue` and `VerbalNouns.vue` still have their own `data()` copies, so a correction to one of their words goes into **both** `nouns.json` and that page. `scripts/extract-ch2.mjs` was a one-time migration; don't run it again.
+- **Nouns:** `src/data/lexicon/nouns.json` is the source of truth: the noun-class pages and the practice game read it. Only the irregular and verbal noun pages still have their own copies, in `src/data/chapter-2/irregular-nouns.json` and `verbal-nouns.json`, so a correction to one of their words goes into **both** `nouns.json` and that file. `scripts/extract-ch2.mjs` was a one-time migration; don't run it again.
 - Until content is migrated (tasks 2.4-2.6, Phase 3), the existing chapter files keep their old shapes; don't mix the two in one file.
 
 ### Word Registry (audio and dictionary links)
@@ -175,7 +185,8 @@ benga-grammar-website/
 │   │   ├── linkRules.js         # how audio / Living Dictionary URLs are built
 │   │   ├── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
 │   │   ├── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
-│   │   └── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
+│   │   ├── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
+│   │   └── translationRows.js   # every translatable text as a row (benga, es/en/fr, page, book page): /admin/translations
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
@@ -208,6 +219,7 @@ benga-grammar-website/
 │   │   ├── chapters-index.json  # THE list of chapters/sections: sidebar, routes, prev/next buttons
 │   │   ├── author-info.json     # AboutAuthor page content
 │   │   ├── chapter-1/           # alphabet.json (the other chapter-1 pages are section files now)
+│   │   ├── chapter-2/           # irregular-nouns.json, verbal-nouns.json: words + { es, en, fr } texts of those pages
 │   │   └── chapter-3/           # regular-adjectives, invariable-adjectives, comparatives-superlatives,
 │   │                            # numerals-ordinals (.json): page texts of the chapter-3 pages
 │   ├── components/
@@ -247,15 +259,16 @@ benga-grammar-website/
 │       │   └── NounPracticeGame.vue
 │       ├── admin/
 │       │   ├── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
-│       │   └── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
+│       │   ├── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
+│       │   └── TranslationsAdmin.vue   # /admin/translations, dev-only: edit every text (benga, es, en, fr), resolve doubts
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
 │           ├── RegularAdjectivesSection.vue
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json)
-├── scripts/                     # Node tools: validate-data, words-sync, words-import, extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
+├── scripts/                     # Node tools: validate-data, words-sync, words-import, i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
 ├── eslint.config.mjs            # ESLint rules (flat config)
