@@ -80,6 +80,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Messages may contain `{param}`, HTML (rendered with `v-html="$t(key)"`; style `strong`/`em` inside them with `:deep(strong)`) and literal `{'@'}`. Keep them identical in every language.
 - Content texts: `{ "es": …, "en": …, "fr": … }` in the data files. Show one with `$localized(text)`, or translate a whole file in `loadData()` with `localizeDeep(data, this.$i18n.locale)` (`src/utils/localized.js`) plus `watch: { '$i18n.locale': 'loadData' }`.
 - The chosen language is saved in `localStorage` (`app-language`) and sets `<html lang>` (`src/main.js`); `App.vue` updates the tab title on a language change.
+- The developer reviews and edits translations at `/admin/translations` (dev-only, `npm run serve`): every text with its Benga word, es/en/fr, page link and book page; saves through `scripts/lib/translations-save.mjs`. Doubtful translations are in `docs/translations/doubts.json` (tied to the Spanish text, resolved from that page); add a doubt there instead of a list in the docs.
 - When changing a Spanish text, update `en` and `fr` too. After adding texts run `npm run i18n:report` (`--all` lists every missing text). The en/fr texts are an AI draft until reviewed (REVIEW-LOG R-035).
 
 ### Benga Orthography Rules
@@ -184,7 +185,8 @@ benga-grammar-website/
 │   │   ├── linkRules.js         # how audio / Living Dictionary URLs are built
 │   │   ├── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
 │   │   ├── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
-│   │   └── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
+│   │   ├── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
+│   │   └── translationRows.js   # every translatable text as a row (benga, es/en/fr, page, book page): /admin/translations
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
@@ -257,15 +259,16 @@ benga-grammar-website/
 │       │   └── NounPracticeGame.vue
 │       ├── admin/
 │       │   ├── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
-│       │   └── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
+│       │   ├── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
+│       │   └── TranslationsAdmin.vue   # /admin/translations, dev-only: edit every text (benga, es, en, fr), resolve doubts
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
 │           ├── RegularAdjectivesSection.vue
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json)
-├── scripts/                     # Node tools: validate-data, words-sync, words-import, i18n-report (translation coverage), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
+├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
+├── scripts/                     # Node tools: validate-data, words-sync, words-import, i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
 ├── eslint.config.mjs            # ESLint rules (flat config)

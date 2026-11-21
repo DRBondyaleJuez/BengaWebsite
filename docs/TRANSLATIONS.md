@@ -80,7 +80,31 @@ npm run i18n:report -- --all   # every missing text, with its key or its place i
 It also reports keys whose `{parameters}` differ from Spanish (a typo there would show «{numero}»
 on the page) and keys that exist only in `en.json` / `fr.json` (left over, can be deleted).
 
-## 4. How to change or add a text
+## 4. Edit translations on a page: /admin/translations
+
+While `npm run serve` is running, open **http://localhost:8080/admin/translations** (like
+`/admin/palabras` it does not exist in the published site). It lists every text of the site, one
+row each, with:
+
+- the **Benga word** the text is about (if any; editable, with buttons for â ē ū; Benga words are
+  not translated, they are shown so you know which word a gloss belongs to),
+- the **Spanish**, **English** and **French** texts, all editable (empty English or French removes
+  it, so the site shows Spanish),
+- where it lives (locale key, or data file and path),
+- **Ver en la web**: the page of the site that shows it ("compartido" = used on every page), and
+  **Libro**: the PDF opened at the book page (PDF page and printed page) when the data records it,
+- the doubts about it, with a **Resuelta** tick.
+
+Filters: search, file, web page, and status (open doubts, missing English / French, not saved).
+**Guardar** writes every edited row into `src/locales/*.json` and the data files (key order and
+formatting kept, so git shows only the lines you edited) and removes the resolved doubts. If you
+changed a Benga word, run `npm run words:sync` and then `npm run validate` afterwards.
+
+How it works: `src/utils/translationRows.js` turns the files into rows (tested),
+`src/views/admin/TranslationsAdmin.vue` is the page and `scripts/lib/translations-save.mjs` (tested)
+writes the files through a local-only endpoint of `vite.config.mjs` (`/__dev/translations`).
+
+## 5. How to change or add a text
 
 - **Fix a translation:** edit the `en` / `fr` text (locale file or data file). Nothing else to do.
 - **Change a Spanish text:** change it in Spanish **and** update `en` and `fr`, otherwise they keep
@@ -92,7 +116,7 @@ on the page) and keys that exist only in `en.json` / `fr.json` (left over, can b
 - **Never** put a Benga word inside `{ "es": … }` to "translate" it, and never translate the
   Benga fields (`word`, `bengaForm`, `bengaSentence`, `imperative`, …).
 
-## 5. Review status
+## 6. Review status
 
 The English and French texts are a **first draft made by AI** (November 2026, roadmap tasks 4.4
 and 4.5). Each unique Spanish text was translated once and reused everywhere, so the same phrase
@@ -111,42 +135,11 @@ it is reviewed and note who did it (REVIEW-LOG R-035).
 
 ### Doubtful translations
 
-Spanish glosses that were hard to translate (old words, possible OCR errors). Check them first.
-
-- «vara» → rod / bâton (could be "staff" or "measuring rod").
-- «banco, margen» (diphthong example) → bank, margin / banc, bord: which sense of «banco» (river bank or bench)?
-- «cabellos» → hair / cheveux.
-- «úe en 'acentiúe'»: the Spanish looks like a typo for «acentúe» (fix the Spanish too).
-- «Patrón Variant:» mixes Spanish and English in the Spanish text → "Variant Pattern" / «Schéma variant».
-- «Ubapami, portador» → bearer / porteur.
-- «Cambia si cambia la clase del sustantivo al cambiar de género»: awkward Spanish, translated literally.
-- Imperatives of the verbal nouns («ama tú», «edifica tú»…) → "love (you)" / « aime (toi) »: literal, a reviewer may prefer "love!" / « aime ! ».
-- «edificio» → building / édifice (or « bâtiment »).
-- «adjuntos» (words that agree with the noun) → adjuncts / adjoints: a linguist may prefer "agreeing words" / « mots accordés ».
-- Sentences split around bold words (chapter-3 index, regular adjectives page): the pieces keep the Spanish word order; read them on the page.
-- Class headings spelled differently in different places (`u-/mú-` vs `u-/mū-`, `bo-/ba-` vs `bo-/bū-`): Spanish source to check, the translations copy them.
-- Noun *vi_a_* «Sueño» → Dream / Rêve (could be "sleep" / « sommeil »).
-- Noun *m_u_anga* «Rebaño, huerto»: «huerto» → garden / jardin (vegetable garden / potager?).
-- Adjective *kopia* «Prieto, avaro»: «prieto» → tight / serré (old Spanish «prieto» also means "dark"; next to «avaro» it means "stingy").
-- Nouns «Torpedo» (*dimya*: probably the electric ray fish, not the weapon) and «Nigua» (*diso*: chigoe flea / chique).
-- Noun «Vihuela» (*m_u_alika*): an old Spanish guitar-like instrument, kept as "vihuela".
-- Noun «Despensero» (*tyoli*) → steward / intendant.
-- Noun «Diente de marfil» (*wbango*) → ivory tusk / défense d'ivoire.
-- Nouns «Bote» (boat or jar?) and «Cajón» (box or drawer?).
-- Noun «Temor (clase de)» → Fear (a kind of) / Crainte (une sorte de).
-- «Timpano, oido» (missing accents in the Spanish: «Tímpano, oído») → Eardrum, ear.
-- «Harpa» (old spelling of «arpa») → harp / harpe.
-- «Pólvoras» (*pita*) → gunpowders / poudres.
-- «Tiempo, estación» (*egombe*): time or weather? → time, season.
-- Odd pairs of meanings, possibly OCR errors in the Spanish: «Tarea, hierba», «Respeto, arco» (*epambo*), «Timón, abanico», «Vidriado, loza», «Cera, capa», «Hato, racimo». Translated literally.
-- «Cardialgía, dolor» (*etema*) → cardialgia / cardialgie.
-- «Sed» / «Sedes» (*ev_e_l_e_*) → thirst / thirsts.
-- Consonants page: the comparisons with sounds of Spanish (hueso, huevo, Huesca…) and of English/French words were kept as examples; check that they still make sense to an English or French reader.
-- «Reloj de caja» → case clock / horloge à caisse (longcase clock?).
-- «Diligencia» → diligence (care) or stagecoach?
-- «Licor, caña» → liquor, cane spirit / liqueur, eau-de-vie de canne.
-- «sereno» (alphabet, *y* as a vowel) → serene / serein (could be night watchman or night dew).
-- Alphabet: «Matuta é Ibia» vs «Ibiya» in the sentence above it (Spanish source to check).
+Spanish glosses that were hard to translate (old words, possible OCR errors) and general notes are in
+`docs/translations/doubts.json`. They show highlighted in yellow in the translations admin page
+(next section); when you have decided, tick «Resuelta» there and save: the doubt is removed from
+the file. A doubt is tied to the **Spanish text** it is about (`"es"`, one text or a list), so it
+shows in every place where that Spanish text appears; a note without `"es"` is a general note.
 
 ### Things that stay in Spanish on purpose
 

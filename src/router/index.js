@@ -88,6 +88,11 @@ const routes = [
           path: '/admin/ocr',
           name: 'OcrReviewAdmin',
           component: () => import('@/views/admin/OcrReviewAdmin.vue')
+        },
+        {
+          path: '/admin/translations',
+          name: 'TranslationsAdmin',
+          component: () => import('@/views/admin/TranslationsAdmin.vue')
         }
       ]
     : []),

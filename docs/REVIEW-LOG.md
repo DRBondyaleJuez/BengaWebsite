@@ -413,8 +413,8 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Status:** 🔴 Open
 - **Found in:** 4.4 / 4.5
 - **Where:** `src/locales/en.json`, `src/locales/fr.json`, the `en` / `fr` fields of every data file; status table in `docs/TRANSLATIONS.md`
-- **Doubt:** All English and French texts were translated by AI from the Spanish (one translation per unique Spanish text, so the same phrase is translated the same way everywhere). No human has checked them yet. Old Spanish glosses of the book (19th century) may have been misunderstood; the doubtful ones are listed in `docs/TRANSLATIONS.md` → «Doubtful translations».
-- **Suggestion:** A fluent speaker reviews each language file by file and ticks it in the status table of `docs/TRANSLATIONS.md`. Start with the interface (`locales`) and the noun glosses (`lexicon/nouns.json`).
+- **Doubt:** All English and French texts were translated by AI from the Spanish (one translation per unique Spanish text, so the same phrase is translated the same way everywhere). No human has checked them yet. Old Spanish glosses of the book (19th century) may have been misunderstood; the doubtful ones are in `docs/translations/doubts.json` and are highlighted in `/admin/translations`.
+- **Suggestion:** A fluent speaker reviews the texts in `/admin/translations` (edit, tick «Resuelta» on resolved doubts, save) and ticks each part in the status table of `docs/TRANSLATIONS.md`. Start with the interface (`locales`) and the noun glosses (`lexicon/nouns.json`).
 - **Resolution:**
 
 ---
