@@ -229,6 +229,7 @@ benga-grammar-website/
 │   │   ├── layout/
 │   │   │   ├── AppHeader.vue
 │   │   │   ├── AppFooter.vue
+│   │   ├── AdminNav.vue         # bar linking the /admin pages (shown by App.vue; add new admin pages here)
 │   │   │   └── AppSidebar.vue
 │   │   ├── navigation/
 │   │   │   ├── ChapterNav.vue

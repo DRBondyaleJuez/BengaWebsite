@@ -15,6 +15,7 @@
         class="app__main"
         :class="{ 'app__main--wide': $route.path.startsWith('/admin') }"
       >
+        <AdminNav v-if="$route.path.startsWith('/admin')" />
         <router-view />
       </main>
     </div>
@@ -27,13 +28,15 @@
 import AppHeader from '@/components/layout/AppHeader.vue'
 import AppSidebar from '@/components/layout/AppSidebar.vue'
 import AppFooter from '@/components/layout/AppFooter.vue'
+import AdminNav from '@/components/layout/AdminNav.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppSidebar,
-    AppFooter
+    AppFooter,
+    AdminNav
   },
   data() {
     return {
