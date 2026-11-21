@@ -31,6 +31,19 @@ const SRC = path.join(ROOT, 'src')
 
 /** Keys that hold the word itself when the audio key is just "audio" / "audioId". */
 const PLAIN_WORD_KEYS = ['word', 'bengaForm', 'bengaSentence', 'benga', 'form', 'text']
+/**
+ * Fields that hold a Benga word in the data files that no longer carry audio ids (task 4.1):
+ * only the files of PLAIN_WORD_FILES, whose pages show these words with BengaWord.
+ */
+const BENGA_FIELDS = [
+  'word',
+  'bengaForm',
+  'bengaSentence',
+  'imperative',
+  'nominalForm',
+  'actionForm'
+]
+const PLAIN_WORD_FILES = /chapter-2[\\/](irregular-nouns|verbal-nouns)\.json$/
 const PLAIN_AUDIO_KEYS = ['audio', 'audioId']
 const PREFIXED_AUDIO_KEY = /^(.+?)Audio(Id)?$/
 
@@ -127,9 +140,11 @@ function listFiles(dir, extension) {
 }
 
 /** Walks any value and collects { word, storedAudioId, path } pairs. */
-function findPairs(value, currentPath, results) {
+function findPairs(value, currentPath, results, plainFields = false) {
   if (Array.isArray(value)) {
-    value.forEach((item, index) => findPairs(item, `${currentPath}[${index}]`, results))
+    value.forEach((item, index) =>
+      findPairs(item, `${currentPath}[${index}]`, results, plainFields)
+    )
     return
   }
   if (!value || typeof value !== 'object') return
@@ -150,9 +165,23 @@ function findPairs(value, currentPath, results) {
       results.push({ word: word.trim(), storedAudioId: audioValue, path: currentPath || '(root)' })
     }
   }
+  // Content moved to JSON without the (legacy) audio ids: the Benga fields themselves
+  const hasAudio = Object.keys(value).some(
+    (key) => PLAIN_AUDIO_KEYS.includes(key) || PREFIXED_AUDIO_KEY.test(key)
+  )
+  if (plainFields && !hasAudio) {
+    for (const key of BENGA_FIELDS) {
+      if (typeof value[key] === 'string' && value[key].trim())
+        results.push({
+          word: value[key].trim(),
+          storedAudioId: null,
+          path: `${currentPath}.${key}`
+        })
+    }
+  }
   for (const [key, child] of Object.entries(value)) {
     if (child && typeof child === 'object') {
-      findPairs(child, currentPath ? `${currentPath}.${key}` : key, results)
+      findPairs(child, currentPath ? `${currentPath}.${key}` : key, results, plainFields)
     }
   }
 }
@@ -221,7 +250,7 @@ export function collectWords() {
     }
     const pairs = []
     const data = JSON.parse(fs.readFileSync(file, 'utf8'))
-    findPairs(data, '', pairs)
+    findPairs(data, '', pairs, PLAIN_WORD_FILES.test(file))
     pairs.push(...concordPhrases(data))
     pairs.forEach((pair) =>
       results.push({ ...pair, file: path.relative(ROOT, file).replace(/\\/g, '/') })
