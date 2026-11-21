@@ -360,7 +360,7 @@ Branch: `feat/audio-pipeline`
   - **Commit:** `feat(scripts): sync audio manifest from cloudinary`
 - [x] **5.3 Audio guide** *(done 2026-11-21)* in `docs/AUDIO-GUIDE.md` (format mp3 mono 44.1 kHz, naming = audioId, folder, how to replace a recording).
   - **Commit:** `docs(audio): document recording and upload process`
-- [ ] **5.4 Sentence audio and "play all"** for example tables.
+- [x] **5.4 Sentence audio and "play all"** *(done 2026-11-21: phrases already get their audio like words (key rule); `PlayAllButton` + `playAll()` in the shared player, shown in example grids and the chapter-3 sentence list once something is recorded)* for example tables.
   - **Commit:** `feat(audio): support sentence audio and play-all`
 
 ---

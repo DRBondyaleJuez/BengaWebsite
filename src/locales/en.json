@@ -96,7 +96,9 @@
     "play": "Play pronunciation",
     "pause": "Pause",
     "loading": "Loading audio...",
-    "unavailable": "Audio not available"
+    "unavailable": "Audio not available",
+    "playAll": "Play all ({count})",
+    "stopAll": "Stop"
   },
   "dictionary": {
     "viewInDictionary": "View in the Living Dictionary",
