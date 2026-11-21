@@ -8,7 +8,7 @@
       <div class="chapter-one__container">
         <h1 class="chapter-one__title">{{ $t('chapters.chapter1.title') }}</h1>
         <p class="chapter-one__subtitle">
-          {{ chapter1Data.subtitle[$i18n.locale] || chapter1Data.subtitle.es }}
+          {{ $localized(chapter1Data.subtitle) }}
         </p>
       </div>
     </header>
@@ -18,7 +18,7 @@
       <div v-if="$route.name === 'Chapter1Index'">
         <section class="chapter-one__intro-section">
           <p class="chapter-one__intro-text">
-            {{ chapter1Data.introduction[$i18n.locale] || chapter1Data.introduction.es }}
+            {{ $localized(chapter1Data.introduction) }}
           </p>
         </section>
 
@@ -27,7 +27,7 @@
           <h2>{{ $t('chapter1.learningOutcomes') || 'Al Completar Este Capítulo' }}</h2>
           <ul class="chapter-one__outcomes-list">
             <li v-for="(outcome, index) in chapter1Data.learningOutcomes" :key="`outcome-${index}`">
-              ✓ {{ outcome[$i18n.locale] || outcome.es }}
+              ✓ {{ $localized(outcome) }}
             </li>
           </ul>
         </section>
@@ -265,16 +265,20 @@
             Comenzar con el Alfabeto →
           </router-link>
         </section>
+        <SectionNavFooter />
       </div>
 
-      <router-view v-else />
+      <!-- key: every section gets a fresh page, even when two sections share SectionPage.vue -->
+      <router-view v-else :key="$route.path" />
     </div>
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'ChapterOneIndex',
+  components: { SectionNavFooter },
   data() {
     return {
       chapter1Data: {
@@ -353,8 +357,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .chapter-one {
   &__header {

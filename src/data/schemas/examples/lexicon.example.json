@@ -1,0 +1,69 @@
+{
+  "_about": "EXAMPLE of a lexicon file (see lexicon.schema.json and docs/CONTENT-GUIDE.md). Real words from the book, used by the schema tests. Not loaded by the site.",
+  "entries": {
+    "epokolo": {
+      "type": "noun",
+      "nounClass": 1,
+      "singular": { "word": "Epokolo" },
+      "plural": { "word": "Bepokolo" },
+      "meaning": { "es": "Sombrero", "en": "Hat", "fr": "Chapeau" },
+      "meaningPlural": { "es": "Sombreros", "en": "Hats", "fr": "Chapeaux" },
+      "source": { "pdfPage": 8 },
+      "editorial": { "status": "original" }
+    },
+    "dyoba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": { "word": "Dyoba", "pronunciation": { "es": "Joba" } },
+      "plural": { "word": "Moda" },
+      "meaning": { "es": "Sol" },
+      "meaningPlural": { "es": "Soles" },
+      "source": { "pdfPage": 10, "note": "Excepciones de la segunda clase" },
+      "tags": ["class-exception"]
+    },
+    "miba": {
+      "type": "noun",
+      "nounClass": 2,
+      "singular": null,
+      "plural": { "word": "Miba" },
+      "meaning": { "es": "Agua" },
+      "source": { "pdfPage": 10, "note": "Líquidos que no se usan en singular" },
+      "tags": ["liquid", "plural-only"]
+    },
+    "bobe": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "bobe",
+      "stem": "-be",
+      "meaning": { "es": "malo" }
+    },
+    "b_u_amu": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "būamu",
+      "forms": {
+        "1": { "singular": "eyamu", "plural": "beyamu", "highlight": "ey" }
+      },
+      "meaning": { "es": "bueno" },
+      "notes": "Only class 1 shown here; the real entry lists the classes whose forms add the linking y."
+    },
+    "p_e_ki-p_e_ki": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pēki Pēki",
+      "meaning": { "es": "Perpetuo, constante" }
+    },
+    "kalaka": {
+      "type": "verb",
+      "word": "kalaka",
+      "conjugation": 1,
+      "meaning": { "es": "hablar", "en": "to speak" },
+      "source": { "pdfPage": 53, "note": "Ejemplo de la primera conjugación" }
+    },
+    "ta": {
+      "type": "adverb",
+      "word": "ta",
+      "meaning": { "es": "junto" }
+    }
+  }
+}

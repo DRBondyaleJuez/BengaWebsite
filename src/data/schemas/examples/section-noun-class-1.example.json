@@ -1,0 +1,78 @@
+{
+  "_about": "EXAMPLE of a section file (see section.schema.json and docs/CONTENT-GUIDE.md), modelled on the current NounClass1.vue page. Used by the schema tests. Not loaded by the site.",
+  "id": "ch2-noun-class-1",
+  "chapter": 2,
+  "title": { "es": "Primera Clase Nominal", "en": "First Noun Class" },
+  "subtitle": { "es": "e → be / y → bi" },
+  "source": { "pdfPage": "8-9" },
+  "blocks": [
+    {
+      "type": "pattern",
+      "from": "e-",
+      "to": "be-",
+      "fromLabel": { "es": "Singular" },
+      "toLabel": { "es": "Plural" },
+      "description": {
+        "es": "La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural"
+      }
+    },
+    {
+      "type": "examples",
+      "title": { "es": "Ejemplos Principales" },
+      "layout": "pairs",
+      "entries": ["epokolo"]
+    },
+    {
+      "type": "table",
+      "id": "concordancia",
+      "title": { "es": "Concordancia con Adjetivos" },
+      "columns": [{ "es": "Número" }, { "es": "Ejemplo" }, { "es": "Traducción" }],
+      "rows": [
+        [
+          { "es": "Singular" },
+          { "benga": "Epokolo eyamu", "highlight": "ey" },
+          { "es": "Sombrero bueno" }
+        ],
+        [
+          { "es": "Plural" },
+          { "benga": "Bepokolo beyamu", "highlight": "bey" },
+          { "es": "Sombreros buenos" }
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia"
+      }
+    },
+    {
+      "type": "concepts",
+      "title": { "es": "Conceptos Clave" },
+      "items": [
+        {
+          "title": { "es": "Patrón e → be" },
+          "text": { "es": "Todos los nombres de esta clase siguen este mismo patrón sin excepción" }
+        }
+      ]
+    },
+    {
+      "type": "practice",
+      "title": { "es": "Para Practicar" },
+      "items": [
+        { "es": "Cubre la columna plural y trata de transformar cada nombre singular" },
+        { "es": "Escucha la pronunciación de cada palabra en plural" }
+      ]
+    },
+    {
+      "type": "note",
+      "variant": "teacher",
+      "title": { "es": "Para el docente" },
+      "text": {
+        "es": "Ejemplo de nota añadida por el portal (no está en el libro): por eso lleva editorial.status = added."
+      },
+      "editorial": { "status": "added" }
+    }
+  ]
+}

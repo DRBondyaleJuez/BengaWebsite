@@ -100,8 +100,13 @@
               Raíz: <span class="bengaform">{{ adjective.bengaRoot }}</span>
             </span>
           </div>
-          <div class="adjective-group__forms">
-            <div class="form-pair" v-for="pair in adjective.pairs" :key="`pair-${pair.classId}`">
+          <CardGrid
+            :items="adjective.pairs"
+            class="adjective-group__forms"
+            key-prefix="pair"
+            v-slot="{ item: pair }"
+          >
+            <div class="form-pair">
               <span class="form-pair__label">{{ pair.label }}</span>
               <div class="form-item">
                 <span class="form-number">Sg</span>
@@ -115,7 +120,7 @@
                 <BengaWord :word="pair.plural.bengaForm" :highlight-prefix="pair.plural.prefix" />
               </div>
             </div>
-          </div>
+          </CardGrid>
         </div>
       </div>
     </section>
@@ -170,90 +175,73 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <div class="regular-adjectives__navigation">
-      <router-link to="/capitulo-3/introduccion" class="nav-button nav-button--back">
-        ← Introducción
-      </router-link>
-      <router-link to="/capitulo-3" class="nav-button nav-button--index">
-        Índice del Capítulo
-      </router-link>
-      <router-link to="/capitulo-3/adjetivos-invariables" class="nav-button nav-button--next">
-        Siguiente: Invariables →
-      </router-link>
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import regularAdjectivesData from '@/data/chapter-3/regular-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
-
-const CLASS_PREFIXES = {
-  1: { sg: 'e', pl: 'be' },
-  2: { sg: 'i', pl: 'ma' },
-  3: { sg: 'u', pl: 'me' },
-  4: { sg: 'bo', pl: 'me' },
-  5: { sg: 'u', pl: 'ba' },
-  6: { sg: 'vi', pl: 'lo' },
-  7: { sg: 'e', pl: 'i' }
-}
+import { CONCORD_PREFIXES, getAdjective, inflect } from '@/services/adjectives'
 
 export default {
   name: 'RegularAdjectivesSection',
   components: {
+    CardGrid,
+    SectionNavFooter,
     BengaWord
   },
   data() {
     return {
       classes: [],
-      commonAdjectives: [],
-      notes: [],
-      classPrefixes: CLASS_PREFIXES
+      notes: []
     }
   },
   mounted() {
     this.loadData()
   },
   computed: {
+    /**
+     * The "Adjetivos Comunes" cards, built from the lexicon (lexicon/adjectives.json):
+     * example noun of each class + the adjective's form for that class (prefix + stem).
+     */
     adjectiveGroups() {
-      return this.commonAdjectives.map((adjective) => ({
-        meaning: adjective.meaning,
-        bengaRoot: adjective.bengaRoot,
-        pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => {
-          const sgKey = `class${classId}_sg`
-          const plKey = `class${classId}_pl`
-          const singular = adjective.inflections[sgKey] || {}
-          const plural = adjective.inflections[plKey] || {}
-          return {
+      const nouns = regularAdjectivesData.exampleNouns
+      return regularAdjectivesData.commonAdjectives.map((id) => {
+        const adjective = getAdjective(id)
+        return {
+          meaning: this.$localized(adjective.meaning),
+          bengaRoot: adjective.word,
+          pairs: [1, 2, 3, 4, 5, 6, 7].map((classId) => ({
             classId,
             label: `Clase ${classId}`,
-            singular: { ...singular, prefix: this.inflectionPrefix(sgKey) },
-            plural: { ...plural, prefix: this.inflectionPrefix(plKey) }
-          }
-        })
-      }))
+            singular: {
+              bengaForm: `${nouns[classId].singular} ${inflect(adjective, classId, 'singular')}`,
+              prefix: CONCORD_PREFIXES[classId].singular
+            },
+            plural: {
+              bengaForm: `${nouns[classId].plural} ${inflect(adjective, classId, 'plural')}`,
+              prefix: CONCORD_PREFIXES[classId].plural
+            }
+          }))
+        }
+      })
     }
   },
   methods: {
     loadData() {
       this.classes = regularAdjectivesData.classes
-      this.commonAdjectives = regularAdjectivesData.commonAdjectivesByMeaning
       this.notes = regularAdjectivesData.notes
-    },
-    inflectionPrefix(key) {
-      const match = /^class(\d+)_(sg|pl)$/.exec(key)
-      if (!match) return null
-      const rule = this.classPrefixes[Number(match[1])]
-      return rule ? rule[match[2]] : null
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .regular-adjectives {
   @include page-container;
@@ -653,48 +641,6 @@ export default {
     color: $color-primary;
     font-weight: bold;
     min-width: fit-content;
-  }
-}
-
-.regular-adjectives__navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
-  text-align: center;
-
-  &--back,
-  &--index {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
-    }
-  }
-
-  &--next {
-    background-color: $color-primary;
-    color: white;
-
-    &:hover {
-      background-color: $color-primary-dark;
-    }
   }
 }
 

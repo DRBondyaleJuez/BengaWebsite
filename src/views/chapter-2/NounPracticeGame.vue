@@ -57,7 +57,6 @@
                 :word="card.singular"
                 :meaning="card.translation"
                 :show-meaning="card.showTranslation"
-                :dictionary-url="getDictionaryUrl(card.singular)"
                 block
               />
 
@@ -93,7 +92,6 @@
                   :word="card.plural"
                   :meaning="card.pluralTranslation"
                   :show-meaning="card.showTranslation"
-                  :dictionary-url="getDictionaryUrl(card.plural)"
                   block
                 />
 
@@ -136,21 +134,21 @@
       </nav>
     </section>
 
-    <section class="noun-class__nav">
-      <router-link to="/capitulo-2/verbales" class="nav-link prev">
-        ← Nombres Derivados
-      </router-link>
-      <router-link to="/capitulo-2" class="nav-link next"> Volver al Capítulo 2 → </router-link>
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
-import deckData from '@/data/chapter-2/noun-practice-deck.json'
-import { getDictionaryUrl } from '@/services/wordLinks'
+import { getNouns, PLURAL_RULES } from '@/services/nouns'
 
 const MOBILE_BREAKPOINT = 768
+
+/** The deck: every noun of classes 1-7 that has a singular and a plural (no liquids, no irregulars). */
+function practiceNouns() {
+  return getNouns({ withBothForms: true }).filter((noun) => Number.isInteger(noun.nounClass))
+}
 
 function shuffle(array) {
   const copy = [...array]
@@ -164,6 +162,7 @@ function shuffle(array) {
 export default {
   name: 'NounPracticeGame',
   components: {
+    SectionNavFooter,
     BengaWord
   },
   data() {
@@ -202,18 +201,16 @@ export default {
     }
   },
   methods: {
-    getDictionaryUrl,
+    // One card per noun of the lexicon (src/data/lexicon/nouns.json).
     buildDeck() {
-      return deckData.map((item, index) => ({
+      return practiceNouns().map((noun, index) => ({
         id: index + 1,
-        singular: item.singular,
-        plural: item.plural,
-        translation: item.translation,
-        pluralTranslation: item.pluralTranslation || item.translation,
-        singularAudioId: item.singularAudioId,
-        pluralAudioId: item.pluralAudioId,
-        nounClass: item.nounClass,
-        conversionSummary: item.conversionSummary,
+        singular: noun.singular.word,
+        plural: noun.plural.word,
+        translation: this.$localized(noun.meaning),
+        pluralTranslation: this.$localized(noun.meaningPlural || noun.meaning),
+        nounClass: `Clase ${noun.nounClass}`,
+        conversionSummary: PLURAL_RULES[noun.nounClass],
         flipped: false,
         pluralRevealed: false,
         showTranslation: false
@@ -296,8 +293,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use 'sass:color';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .noun-class {
   width: 100%;
@@ -383,7 +381,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        background: darken($color-primary, 8%);
+        background: color.adjust($color-primary, $lightness: -8%);
         transform: translateY(-2px);
       }
     }
@@ -605,39 +603,6 @@ export default {
     }
   }
 
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-
-    .nav-link {
-      flex: 1;
-      padding: $spacing-md $spacing-lg;
-      background: $color-primary;
-      color: white;
-      text-decoration: none;
-      border-radius: $border-radius;
-      text-align: center;
-      transition: all 0.3s ease;
-      font-weight: bold;
-
-      &:hover {
-        background: darken($color-primary, 10%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      &.prev {
-        background: $color-secondary;
-
-        &:hover {
-          background: darken($color-secondary, 10%);
-        }
-      }
-    }
-  }
-
   @include respond-below('md') {
     padding: $spacing-md;
 
@@ -657,14 +622,6 @@ export default {
       .cards-grid--desktop,
       .cards-grid--mobile {
         grid-template-columns: 1fr;
-      }
-    }
-
-    &__nav {
-      flex-direction: column;
-
-      .nav-link {
-        text-align: center;
       }
     }
   }

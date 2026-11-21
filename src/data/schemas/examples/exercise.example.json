@@ -1,0 +1,13 @@
+{
+  "_about": "EXAMPLE of an exercise file (see exercise.schema.json and docs/CONTENT-GUIDE.md). Used by the schema tests. Not loaded by the site.",
+  "id": "ch2-pluralize-class-1",
+  "section": "ch2-noun-class-1",
+  "kind": "fill-in",
+  "title": { "es": "Forma el plural (primera clase)" },
+  "instructions": { "es": "Escribe el plural de cada nombre." },
+  "generator": {
+    "ask": "pluralize",
+    "filter": { "type": "noun", "nounClass": 1 },
+    "count": 10
+  }
+}

@@ -49,7 +49,7 @@ Book (≈150 pages)
 │                                        ✗ repetición, ejercicios (tiempo, edad), fraseología, vocabulario
 ├── Cap. 4  Pronombres ............... ✗
 ├── Cap. 5  Verbo (auxiliares, ser, haber) ✗
-├── Cap. 6  Verbos regulares (4 conjugaciones, ≈50 pages — the biggest) ✗
+├── Cap. 6  Verbos regulares (5 conjugaciones, ≈50 pages — the biggest) ✗
 ├── Cap. 7  Verbos irregulares ....... ✗
 ├── Cap. 8  Verbos impersonales ...... ✗
 ├── Cap. 9  Adverbios ................ ✗
@@ -205,7 +205,8 @@ Branch: `build/vue3-vite`. **Decide first:** upgrade now (recommended — the co
 
 Branch: `refactor/content-model`. This is the most important phase.
 
-- [ ] **2.1 Design the data shapes (schemas)**
+- [x] **2.1 Design the data shapes (schemas)**
+  - **Done 2026-11-12:** 5 JSON Schemas (draft 2020-12) in `src/data/schemas/` + real-content examples, `scripts/lib/schemas.mjs` (Ajv loader, reused by 2.3), 7 schema tests, `docs/CONTENT-GUIDE.md`. Lexicon ids = word keys; links stay in the word registry; `editorial` status for corrections/additions.
   - **Why:** P1, P4. One shape for every word, everywhere.
   - Example of the target lexicon entry:
     ```json
@@ -225,30 +226,37 @@ Branch: `refactor/content-model`. This is the most important phase.
   - **Prompt:** "Task 2.1: propose JSON Schemas in `src/data/schemas/` for: lexicon entry (noun, adjective, verb, other), section file (a list of typed blocks: paragraph, rule, pattern, examples, table, note, conjugation, dialogue), exercise, and chapters-index. Explain each field with an example before writing files. Write `docs/CONTENT-GUIDE.md` describing how I add a word or a section."
   - **Commit:** `docs(data): define content schemas and content guide`
 
-- [ ] **2.2 Helper functions with tests**
+- [x] **2.2 Helper functions with tests**
+  - **Done 2026-11-12:** `localized()` + global `$localized(text)` (replaced 24 `x[$i18n.locale] || x.es` in 6 chapter-1/AboutAuthor files); URL rules extracted to `src/utils/linkRules.js` (used by `wordLinks.js` and the admin page) with tests. With `audioId` (done earlier): 25 tests, Node's built-in runner instead of Vitest.
   - **Done early (2026-11-11, word registry):** `toAudioId` + tests (`npm test`, Node's built-in runner instead of Vitest) and the dictionary link (`src/services/wordLinks.js`). Still to do: `localized.js`.
   - **Prompt:** "Task 2.2: create `src/utils/audioId.js` (`toAudioId(word)` implementing the AGENTS.md rule, multi-word joined with `-`), `src/utils/dictionaryUrl.js`, `src/utils/localized.js` (`localized(field, locale)` falls back to `es`). Add Vitest and unit tests using the AGENTS.md examples (`Whâki → wh_a_ki`, `Mūēngi → m_u_e_ngi`, `Pēki Pēki → p_e_ki-p_e_ki`). Comment each function for a beginner."
   - **Commit:** `feat(utils): add audioId, dictionary-link and localization helpers with tests`
 
-- [ ] **2.3 Content validator script**
+- [x] **2.3 Content validator script**
+  - **Done 2026-11-14:** `npm run validate` (`scripts/validate-data.mjs` + checks in `scripts/lib/validate.mjs`): schemas (incl. new `word-registry.schema.json`), ids, references, registry, orthography, legacy audio ids; error / warning / note levels, exit code 1 on errors; 11 validator tests (37 total). First run on current data: 0 errors, 0 warnings, 21 notes (old accent-only audio ids).
   - **Done early (2026-11-11, word registry):** `npm run words:sync/check` already reports orthography problems and hand-typed audio ids; extend it here instead of starting from scratch.
   - **Why:** P13. Catches mistakes before you see them in the browser.
   - **Prompt:** "Task 2.3: write `scripts/validate-data.js` (`npm run validate`) that checks all JSON against the schemas and reports, in plain Spanish/English: duplicate ids, sections referring to missing ids, Benga words containing `c q r x z ñ` or Spanish accents `á é ú`, explicit `audioId` that differs from `toAudioId(word)`. Run it on the current data and show me the report — don't fix data yet."
   - **Commit:** `feat(scripts): add content validator`
 
-- [ ] **2.4 Build the noun lexicon from the real source**
+- [x] **2.4 Build the noun lexicon from the real source** *(open content doubts: REVIEW-LOG R-021)*
   - **Why:** P1, P2. AGENTS.md: the `.vue` `data()` blocks hold the real content, `class-N.json` must not be trusted.
   - Subtasks (one commit each so you can review class by class):
-    - [ ] 2.4.1 Script `scripts/extract-ch2.js` that reads `NounClass1-7.vue`, `IrregularNouns.vue`, `VerbalNouns.vue` data and writes `lexicon/nouns.json` — **Commit:** `feat(scripts): extract chapter-2 nouns from views`
-    - [ ] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
-    - [ ] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(postponed to Phase 4: the developer wants to keep them until the site is multilingual, see REVIEW-LOG R-005)*
+    - [x] 2.4.1 Script `scripts/extract-ch2.js` that reads `NounClass1-7.vue`, `IrregularNouns.vue`, `VerbalNouns.vue` data and writes `lexicon/nouns.json` — **Commit:** `feat(scripts): extract chapter-2 nouns from views`
+      - **Done 2026-11-15:** `scripts/extract-ch2.mjs` (one-time migration) → `lexicon/nouns.json`, 436 entries: 278 from the pages + 158 words only in the practice deck (book «Vocabulario», PDF 15-17). Each entry gets `source.pdfPage` via `pdftotext`; 119 words not found in the OCR text keep their class page range. Schema now allows `nounClass: null` (verbal nouns of manner: the book gives no class).
+    - [x] 2.4.2 Review diff against the PDF for each class (I list doubtful entries; you decide) — **Commit:** `fix(content): correct chapter-2 nouns against the book`
+      - **Done 2026-11-15 (first pass):** every word compared with the PDF text; only a sure fix applied (`Njadi` «Primogénito», and the script now keeps the second `Njadi` as homonym `njadi~2`). Six real doubts + the unchecked deck words → REVIEW-LOG R-021 (your decision).
+    - [x] 2.4.3 Delete stale `class-N.json` — **Commit:** `chore(data): remove stale chapter-2 class files` *(done 2026-11-20, REVIEW-LOG R-005)*
   - **Prompt:** "Task 2.4.x: (see subtask). Never invent a headword; mark unreadable OCR with `meaning: null` and an editorial note."
 
-- [ ] **2.5 Practice deck built from the lexicon**
+- [x] **2.5 Practice deck built from the lexicon**
+  - **Done 2026-11-15:** `NounPracticeGame.vue` builds its cards from `lexicon/nouns.json` via `src/services/nouns.js` (`getNouns`, `PLURAL_RULES`); deck file deleted (the 158 vocabulary words and the class-7 plural meanings were moved into `nouns.json` first). Same game; 387 cards instead of 381 (new: `Wdumbu`, the second `Njadi`, and 4 verbal nouns with a plural: `Ilonga`, `Ijanja`, `Ulangi`, `Ulendi`). `words:sync` now also reads lexicon files.
   - **Prompt:** "Task 2.5: make `NounPracticeGame.vue` build its deck from `lexicon/nouns.json` (filter by class) and delete `noun-practice-deck.json` (3 800 lines). The game must behave exactly as before."
   - **Commit:** `refactor(practice): build practice deck from the lexicon`
 
-- [ ] **2.6 Convert chapters 1 and 3 data to the same shapes**
+- [x] **2.6 Convert chapters 1 and 3 data to the same shapes** *(lexicon part done; section files moved to task 3.7, numerals to 6.0a — REVIEW-LOG R-022)*
+  - **Done 2026-11-15 (2.6.2, lexicon part):** `lexicon/adjectives.json` with 23 chapter-3 adjectives (variable `būamu` with forms per class, `bobe`/`bonene`/`bohole`/`bovindo` with stems, 18 invariable). Pages unchanged.
+  - **Moved:** chapter-1 and chapter-3 section files → task 3.7 (they need the block components and `SectionPage`); numerals page → task 6.0a.
   - Subtasks: 2.6.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 2.6.2 chapter 3 adjectives → `lexicon/adjectives.json` + section files.
   - **Prompt:** "Task 2.6.x: convert `src/data/chapter-N/*.json` to the schemas from 2.1. Pages must look identical — compare before/after screenshots."
   - **Commits:** `refactor(data): move chapter-1 content to the common schema` · `refactor(data): move chapter-3 adjectives to the lexicon`
@@ -259,39 +267,56 @@ Branch: `refactor/content-model`. This is the most important phase.
 
 Branch: `refactor/blocks`
 
-- [ ] **3.1 Shared audio player service**
+- [x] **3.1 Shared audio player service**
+  - **Done 2026-11-17:** `src/services/audioPlayer.js` (one `Audio` for the site, `play(url)` stops the previous sound and toggles, `stop()`, reactive `audioState` with `idle`/`loading`/`playing` + `error`). `BengaWord` and the admin page use it; a recording that fails shows a grey button. The 'pending' icon for unrecorded words already came from the registry.
   - **Done early (2026-11-11, word registry):** the "audio manifest" is the `audio` field of `word-registry.json`; `BengaWord` already hides the play button for words not recorded. Still to do: one shared player that stops the previous sound.
   - **Why:** today each `BengaWord` has its own `<audio>`; two can play at once, and missing files fail silently.
   - **Prompt:** "Task 3.1: create `src/services/audioPlayer.js` — one shared Audio object, stops the previous sound, exposes play/stop/state; reads `audio-manifest.json` to know which ids exist. Refactor `BengaWord` to use it and to show the 'pending' icon for ids not in the manifest. Add a `TODO(5.2)` where the manifest will be auto-generated."
   - **Commit:** `feat(audio): add shared audio player service`
 
-- [ ] **3.2 `BengaWord` accepts a lexicon entry**
+- [x] **3.2 `BengaWord` accepts a lexicon entry**
+  - **Done 2026-11-17:** `entry` + `form` props (word and meaning come from the lexicon entry, meaning in the visitor's language), `lang="bng"` on the word, and the Living Dictionary link is computed by `BengaWord` itself (`:dictionary-url="null"` hides it). The 54 hand-written `:dictionary-url="getDictionaryUrl(…)"` were removed from the pages; the chapter-3 adjective pages now show dictionary links too (the only visible change).
   - **Done early (2026-11-11, word registry):** `BengaWord` computes key, audio and dictionary link from `word` alone. Still to do: `lang="bng"`, and showing dictionary links on pages that don't pass `dictionary-url` yet (chapter 3).
   - **Prompt:** "Task 3.2: let `BengaWord` take either `word` or an `entry` prop (+ `form: 'singular'|'plural'`), computing audioId and dictionary link itself. Add `lang=\"bng\"` (ISO code for Benga) on the word for screen readers. Keep old props working."
   - **Commit:** `feat(benga-word): accept lexicon entries and compute audio ids`
 
-- [ ] **3.3 Block components**
+- [x] **3.3 Block components**
+  - **Done 2026-11-17:** `src/components/blocks/`: `PatternBox` (+ `compact` variant pattern), `ExampleGrid` (`pairs` / `single` / `plural-only`), `NoteBox` (`section` / `after` / `small`), `ConceptList`, `PracticeList`, `SectionNavFooter` (prev/next from `chapters-index.json`, or explicit), plus `TableBlock` (the class-1 concordance table). `NounClass1.vue` uses them: identical on all 25 pages at 1280 px and 420 px (automatic comparison of text, positions and styles).
   - Subtasks, one commit each: `PatternBox`, `ExampleGrid` (singular/plural cards), `NoteBox` (`.section-note`), `ConceptList`, `PracticeList`, `SectionNavFooter` (prev/next from chapters-index).
   - **Prompt:** "Task 3.3.x: extract `<name>` from `NounClass1.vue` (the visual reference) into `src/components/blocks/<Name>.vue` with props + slots, BEM, `@include respond-below('md')`. Use it in NounClass1 only; page must look identical."
   - **Commit:** `feat(blocks): add <Name> component`
 
-- [ ] **3.4 One generic noun-class page**
+- [x] **3.4 One generic noun-class page**
+  - **Done 2026-11-17:** `NounClassPage.vue` + `sections/ch-2/class-1.json … class-7.json` (generated from the old pages, words as lexicon ids); the seven `NounClassN.vue` files (≈4 000 lines) are deleted. Every class page is identical to before (automatic comparison at 1280 px and 420 px).
   - **Why:** P3 — 7 files × ~550 lines → 1 file + 7 JSON files.
   - Subtasks: 3.4.1 create `NounClassPage.vue` reading `sections/ch-2/class-N.json`; 3.4.2–3.4.8 switch class 1…7 one at a time and delete the old file.
   - **Prompt:** "Task 3.4.N: migrate noun class N to `NounClassPage` + `sections/ch-2/class-N.json` (exceptions section included). Compare old and new page side by side before deleting `NounClassN.vue`."
   - **Commits:** `feat(ch2): add generic noun class page` · `refactor(ch2): migrate noun class N to generic page`
 
-- [ ] **3.5 Generic `SectionPage` (block renderer)**
+- [x] **3.5 Generic `SectionPage` (block renderer)**
+  - **Done 2026-11-17:** `src/views/SectionPage.vue` renders any section file (`props: { section: 'ch-3/…' }`); heading `style` box/highlight, `**bold**` in paragraphs (`src/utils/inlineMarkup.js`, tested), new blocks `ConceptCards`, `SectionLinks` (`links`), `CheckList` (`checklist`), button-style `SectionNavFooter`. Unknown block types show a red warning in dev only. Proof: the chapter-3 introduction (`sections/ch-3/adjectives-intro.json`), identical to before; its four «Aprende más» links now go to the real pages (REVIEW-LOG R-024).
   - **Why:** new book sections should need **only a JSON file**.
   - **Prompt:** "Task 3.5: create `SectionPage.vue` that renders the `blocks` array of a section file, mapping each block `type` to a block component. Unknown types show a visible warning in dev. Migrate one simple page (Síncopa or Adjectives intro) as proof."
   - **Commit:** `feat(sections): add generic block-based section page`
 
-- [ ] **3.6 Routes and sidebar from one list**
+- [x] **3.6 Routes and sidebar from one list**
+  - **Done 2026-11-17:** `chapters-index.json` now names each chapter's index page (`component`) and each section's `component` or `sectionFile`; `src/router/index.js` builds the chapter routes from it (all URLs kept). Section files say `"layout": "noun-class"` when NounClassPage draws them. The validator checks that every `component` exists. Side effect (fix): pages without their own title now get the sidebar title in the browser tab instead of the previous page's (REVIEW-LOG R-025).
   - **Why:** P8.
   - **Prompt:** "Task 3.6: generate routes from `chapters-index.json` (each section names either a `component` or a `sectionFile`), so the sidebar, routes and prev/next buttons share one source. Keep all current URLs."
   - **Commit:** `refactor(router): generate routes from chapters index`
 
+- [x] **3.7 Chapters 1 and 3 as section files** *(moved here from task 2.6, REVIEW-LOG R-022)*
+  - **Done 2026-11-17 (mostly):** 3.7.1 diphthongs, triphthongs and consonants are section files (`sections/ch-1/*.json`, `"layout": "lesson"` of `SectionPage`, new blocks `SoundCards` and `SoundGroups`); 3.7.2 the regular and invariable adjective pages read `lexicon/adjectives.json` and compute the «noun + adjective» forms (`src/utils/concord.js`, tested). All identical to before.
+  - **Left open (REVIEW-LOG R-028):** the alphabet page (it would need ~6 blocks used by no other page) and turning the chapter-3 pages themselves (regular, invariable, comparatives) into section files.
+  - **Why:** these pages are custom designs; they can only become section files once the block components (3.3) and `SectionPage` (3.5) exist. Convert each page together with the blocks that draw it (new block types if needed, e.g. a `sound-list` for vowels and diphthongs).
+  - Subtasks: 3.7.1 chapter 1 (`alphabet`, `diphthongs`, `triphthongs`, `consonants`) · 3.7.2 chapter-3 adjective pages, reading `lexicon/adjectives.json` (forms of regular variable adjectives = class prefix + stem).
+  - **Prompt:** "Task 3.7.x: move <page> to `sections/ch-N/<name>.json` drawn by `SectionPage`. Pages must look identical — compare before/after screenshots. Delete the old `src/data/chapter-N/<name>.json`."
+  - **Commits:** `refactor(ch1): move chapter-1 pages to section files` · `refactor(ch3): build adjective pages from the lexicon`
+
 ---
+
+### Review-log follow-ups (2026-11-20, branch `refactor/review-fixes`)
+Done outside the numbered tasks, from the developer's review-log decisions: stale chapter-2 files removed (R-005), Sass on `@use` (R-017), ESLint 10 + vue-router 5 (R-018), `/admin/ocr` for the OCR doubts (R-023, R-029), content clear of the sidebar (R-026), one automatic footer for every page that also crosses chapters, noun classes named «Clase N», long word-card lists collapsed to their first row (`CardGrid`), verb names checked against the improved OCR (R-007).
 
 ## Phase 4 — Translations (es → en → fr)
 
@@ -353,15 +378,16 @@ Generic prompt: *"Task 6.X.Y: add section '<name>' of chapter N (book pp. A–B)
 
 | Task | Section(s) | New component needed | Commit |
 |---|---|---|---|
+| 6.0a | **Redo the numerals page** (Cap. 3, PDF p. 20) from `IMPROVED-salvado-y-cos-gramatica-benga.pdf`: Benga spelling (`Pâkâ` = uno, not `Páka`), every number with `BengaWord`, numerals into `lexicon/adjectives.json` (`kind: "numeral"`) — REVIEW-LOG R-022 | — | `feat(ch3): redo numerals page from the improved OCR` |
 | 6.0 | Prólogo, Prenotandos | — | `feat(front-matter): add prologue and prenotandos` |
 | 6.1 | Cap. 1: combinación de consonantes (check), síncopa, vocabulario | `VocabularyList` | `feat(ch1): add syncope and vocabulary` |
 | 6.2 | Cap. 2: vocabulario de substantivos | — | `feat(ch2): add noun vocabulary` |
 | 6.3 | Cap. 3: inflexiones de numerales, adjetivos de repetición, ejercicio del tiempo, la edad, fraseología, vocabulario | `Dialogue` (phrase ↔ translation) | `feat(ch3): add <section>` |
 | 6.4 | Cap. 4: pronombres personales, posesivos, relativos, interrogativos, tabla nombres-adjetivos-pronombres, definidos, indefinidos, reflexivos, recíprocos, ejercicios | `ConcordanceTable` | `feat(ch4): add <section>` |
 | 6.5 | Cap. 5: nociones, especies, voces/modos/tiempos, auxiliares, *diyaka* (ser), haber, ejercicios | `ConjugationTable` | `feat(ch5): add <section>` |
-| 6.6 | Cap. 6: verbos regulares — 4 conjugaciones (*kalaka, tandaka, yenika, vomuabidi*), voz activa/pasiva, afirmativa/negativa, listas de verbos | reuse `ConjugationTable` | `feat(ch6): add <conjugation>` |
-| 6.7 | Cap. 7: irregulares (*valaka, vaka, paka, yalaka*…), contracciones | — | `feat(ch7): add <verb>` |
-| 6.8 | Cap. 8: impersonales (*naka*…) | — | `feat(ch8): add impersonal verbs` |
+| 6.6 | Cap. 6: verbos regulares — **5** conjugaciones: 1ª -ka *kalaka* hablar (PDF 52), 2ª -kâ *tândâkâ* amar (PDF 60), 3ª -kē *yēnikē* ver (PDF 71), 4ª -kidē *vomuakidē* castigar (PDF 78), 5ª -kiya *tamūakiya* mirar (PDF 88); voz activa/pasiva, afirmativa/negativa, listas de verbos | reuse `ConjugationTable` | `feat(ch6): add <conjugation>` |
+| 6.7 | Cap. 7: irregulares: *valaka* ir (PDF 94), *vaka* venir (PDF 99), *pâkâ* llegar (PDF 102), *yalakē* poder (PDF 105)…, contracciones | — | `feat(ch7): add <verb>` |
+| 6.8 | Cap. 8: impersonales (*naka* llover, PDF 113…) | — | `feat(ch8): add impersonal verbs` |
 | 6.9 | Cap. 9: adverbios (lugar, modo, tiempo, cantidad, afirmación, negación, interrogación, duda, comparación) | — | `feat(ch9): add <type> adverbs` |
 | 6.10 | Cap. 10: preposición, conjunción, interjección | — | `feat(ch10): add <part>` |
 | 6.11 | Apéndice: saludos | `Dialogue` | `feat(appendix): add greetings` |

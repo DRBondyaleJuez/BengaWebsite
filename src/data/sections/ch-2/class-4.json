@@ -1,0 +1,128 @@
+{
+  "id": "ch2-noun-class-4",
+  "chapter": 2,
+  "layout": "noun-class",
+  "title": {
+    "es": "Clase 4"
+  },
+  "subtitle": {
+    "es": "bo / bū → mi"
+  },
+  "source": {
+    "pdfPage": "11-12"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "bo- / bū-",
+      "to": "mi-",
+      "description": {
+        "es": "Los nombres de la clase 4 toman el prefijo mi- al pasar al plural."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos con bo-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["bobako", "bob_a_bu", "boho", "bojo_u_a", "bongo", "bonyamo", "bova", "bok_a_"]
+    },
+    {
+      "type": "heading",
+      "id": "variants",
+      "text": {
+        "es": "Ejemplos con bū-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["b_u_alo", "b_u_anga", "b_u_ay_e_", "b_u_e", "b_u_eka"]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Prefijo mi-"
+          },
+          "text": {
+            "es": "La marca plural más característica de esta clase es mi-."
+          }
+        },
+        {
+          "title": {
+            "es": "Raíces bo-/bū-"
+          },
+          "text": {
+            "es": "La raíz singular puede empezar con bo- o bū- antes de emerger en plural."
+          }
+        },
+        {
+          "title": {
+            "es": "Uso práctico"
+          },
+          "text": {
+            "es": "Los nombres aparecen con el plural marcado de manera clara y regular."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "exceptions",
+      "text": {
+        "es": "Excepciones"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Bolohi forma su plural, melohi, con me- en lugar de mi-. Buūha, día, pertenece a esta clase en el singular, pero su plural, ūhi, es irregular y toma todos sus adjetivos según la formación del plural de la clase 2."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["bolohi", "bu_u_ha"]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Repite el cambio bo-/bū- → mi- con los ejemplos."
+        },
+        {
+          "es": "Forma una frase oral con uno de los sustantivos en singular."
+        },
+        {
+          "es": "Luego repite la misma frase en plural con el mismo patrón."
+        }
+      ]
+    }
+  ]
+}

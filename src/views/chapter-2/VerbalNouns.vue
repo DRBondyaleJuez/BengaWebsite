@@ -22,34 +22,29 @@
         sílaba y anteponiendo a la palabra la letra i.
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in abstractNouns" :key="`abstract-${idx}`">
+      <CardGrid
+        :items="abstractNouns"
+        class="examples-grid"
+        key-prefix="abstract"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
-              <BengaWord
-                :word="example.imperative"
-                :meaning="example.imperativeMeaning"
-                :dictionary-url="getDictionaryUrl(example.imperative)"
-                block
-              />
+              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
       <p class="classification-note">
         En la clasificación, estos nombres pertenecen a la
-        <a href="/capitulo-2/clase-2">segunda clase</a> en su número singular. (i->ma)
+        <a href="/capitulo-2/clase-2">clase 2</a> en su número singular. (i->ma)
       </p>
     </section>
 
@@ -61,34 +56,29 @@
         última sílaba, anteponiendo a la palabra la letra u y la última letra siendo i.
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in agentNouns" :key="`agent-${idx}`">
+      <CardGrid
+        :items="agentNouns"
+        class="examples-grid"
+        key-prefix="agent"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Imperativo</span>
-              <BengaWord
-                :word="example.imperative"
-                :meaning="example.imperativeMeaning"
-                :dictionary-url="getDictionaryUrl(example.imperative)"
-                block
-              />
+              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
       <p class="classification-note">
-        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">tercera clase</a> en la
-        formación del plural. u->me
+        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">clase 3</a> en la formación del
+        plural. u->me
       </p>
     </section>
 
@@ -101,31 +91,26 @@
         nombres abstractos por "idi"
       </p>
 
-      <div class="examples-grid">
-        <div class="example-card" v-for="(example, idx) in modalityNouns" :key="`modality-${idx}`">
+      <CardGrid
+        :items="modalityNouns"
+        class="examples-grid"
+        key-prefix="modality"
+        v-slot="{ item: example }"
+      >
+        <div class="example-card">
           <div class="example-group">
             <div class="example-form">
               <span class="label">Nombre de acción</span>
-              <BengaWord
-                :word="example.actionForm"
-                :meaning="example.actionFormMeaning"
-                :dictionary-url="getDictionaryUrl(example.actionForm)"
-                block
-              />
+              <BengaWord :word="example.actionForm" :meaning="example.actionFormMeaning" block />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
               <span class="label">Nombre de modo</span>
-              <BengaWord
-                :word="example.nominalForm"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.nominalForm)"
-                block
-              />
+              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <!-- Comparison Table -->
@@ -192,30 +177,15 @@
         <div class="derivations-grid">
           <div class="derivation-item">
             <div class="derivation-label">Clase primera · abstracto</div>
-            <BengaWord
-              word="ilonga"
-              meaning="edificio"
-              :dictionary-url="getDictionaryUrl('ilonga')"
-              block
-            />
+            <BengaWord word="ilonga" meaning="edificio" block />
           </div>
           <div class="derivation-item">
             <div class="derivation-label">Clase segunda · agenciales</div>
-            <BengaWord
-              word="ulongi"
-              meaning="arquitecto"
-              :dictionary-url="getDictionaryUrl('ulongi')"
-              block
-            />
+            <BengaWord word="ulongi" meaning="arquitecto" block />
           </div>
           <div class="derivation-item">
             <div class="derivation-label">Clase tercera · de modo</div>
-            <BengaWord
-              word="ilongidi"
-              meaning="modo de construir"
-              :dictionary-url="getDictionaryUrl('ilongidi')"
-              block
-            />
+            <BengaWord word="ilongidi" meaning="modo de construir" block />
           </div>
         </div>
       </div>
@@ -235,23 +205,18 @@
       </ol>
     </section>
 
-    <!-- Navigation -->
-    <section class="verbal-nouns__nav">
-      <router-link to="/capitulo-2/irregulares" class="nav-link prev"
-        >← Nombres Irregulares</router-link
-      >
-      <router-link to="/capitulo-2" class="nav-link next">Volver a Capítulo 2 →</router-link>
-    </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'VerbalNouns',
-  components: { BengaWord },
+  components: { CardGrid, BengaWord, SectionNavFooter },
   data() {
     return {
       abstractNouns: [
@@ -405,14 +370,14 @@ export default {
           type: 'Abstracto',
           formation: 'Imperativo de 2.ª persona singular sin su última sílaba, con i inicial',
           example: 'Tândâkâ → itândē',
-          nounClass: 'Segunda clase'
+          nounClass: 'Clase 2'
         },
         {
           type: 'De acción',
           formation:
             'Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal',
           example: 'Longaka → ulongi',
-          nounClass: 'Tercera clase'
+          nounClass: 'Clase 3'
         },
         {
           type: 'De modo',
@@ -423,9 +388,6 @@ export default {
       ]
     }
   },
-  methods: {
-    getDictionaryUrl
-  },
   created() {
     document.title = 'Nombres Derivados | Portal Benga'
   }
@@ -433,8 +395,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use 'sass:color';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .verbal-nouns {
   width: 100%;
@@ -679,38 +642,6 @@ export default {
     }
   }
 
-  &__nav {
-    display: flex;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-
-    .nav-link {
-      flex: 1;
-      padding: $spacing-md $spacing-lg;
-      background: $color-primary;
-      color: white;
-      text-decoration: none;
-      border-radius: $border-radius;
-      text-align: center;
-      font-weight: bold;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background: darken($color-primary, 10%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      &.prev {
-        background: $color-secondary;
-
-        &:hover {
-          background: darken($color-secondary, 10%);
-        }
-      }
-    }
-  }
-
   @include respond-below('md') {
     padding: $spacing-md;
 
@@ -742,10 +673,6 @@ export default {
       div:first-child {
         border-top: none;
       }
-    }
-
-    &__nav {
-      flex-direction: column;
     }
   }
 }

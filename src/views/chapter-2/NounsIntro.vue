@@ -220,17 +220,20 @@
     <section class="nouns-intro__cta">
       <h2>¡Comienza Ahora!</h2>
       <p>
-        Estás listo para explorar cada clase nominal. Comienza con la Primera Clase, que es la más
-        simple y accesible.
+        Estás listo para explorar cada clase nominal. Comienza con la Clase 1, que es la más simple
+        y accesible.
       </p>
-      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Primera Clase → </router-link>
+      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Clase 1 → </router-link>
     </section>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'NounsIntro',
+  components: { SectionNavFooter },
   created() {
     document.title = 'Introducción a Clasificación Nominal | Portal Benga'
   }
@@ -238,8 +241,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use 'sass:color';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .nouns-intro {
   width: 100%;
@@ -472,7 +476,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        background: darken($color-accent, 10%);
+        background: color.adjust($color-accent, $lightness: -10%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       }

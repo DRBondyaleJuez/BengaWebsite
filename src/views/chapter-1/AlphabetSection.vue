@@ -3,7 +3,7 @@
     <!-- Introduction -->
     <ContentSection id="alphabet-intro" :title="$t('chapters.chapter1.sections.alphabet')">
       <p class="alphabet-section__intro">
-        {{ sectionData.introduction[$i18n.locale] || sectionData.introduction.es }}
+        {{ $localized(sectionData.introduction) }}
       </p>
     </ContentSection>
 
@@ -11,7 +11,7 @@
     <ContentSection id="alphabet-letters" :title="$t('content.lettersList') || 'Lista de Letras'">
       <div class="alphabet-section__letters-container">
         <p class="alphabet-section__letters">
-          {{ sectionData.lettersList[$i18n.locale] || sectionData.lettersList.es }}
+          {{ $localized(sectionData.lettersList) }}
         </p>
         <p class="alphabet-section__note-inline">
           <strong>{{ $t('content.totalLetters') || 'Total' }}:</strong>
@@ -26,10 +26,7 @@
             {{ $t('content.missingConsonants') || 'Consonantes ausentes' }}
           </p>
           <p>
-            {{
-              sectionData.consonantsDescription[$i18n.locale] ||
-              sectionData.consonantsDescription.es
-            }}
+            {{ $localized(sectionData.consonantsDescription) }}
           </p>
         </div>
       </div>
@@ -41,7 +38,7 @@
       :title="$t('content.vowelSounds') || 'Sonidos Vocales'"
     >
       <p class="alphabet-section__vowels-info">
-        {{ sectionData.vowelsInfo[$i18n.locale] || sectionData.vowelsInfo.es }}
+        {{ $localized(sectionData.vowelsInfo) }}
       </p>
 
       <div class="alphabet-section__vowel-tags">
@@ -58,7 +55,7 @@
       <div class="alphabet-section__clarity-note">
         <p class="alphabet-section__note-text">
           <strong>{{ $t('content.note') }}:</strong>
-          {{ sectionData.notes.clarityNote[$i18n.locale] || sectionData.notes.clarityNote.es }}
+          {{ $localized(sectionData.notes.clarityNote) }}
         </p>
       </div>
     </ContentSection>
@@ -84,7 +81,7 @@
 
           <p class="alphabet-section__sounds-like">
             <strong>{{ $t('content.soundsLike') }}:</strong><br />
-            {{ vowel.soundsLike[$i18n.locale] || vowel.soundsLike.es }}
+            {{ $localized(vowel.soundsLike) }}
           </p>
 
           <div class="alphabet-section__vowel-examples">
@@ -94,11 +91,7 @@
               :key="example.word"
               class="alphabet-section__example-item"
             >
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" />
             </div>
           </div>
         </div>
@@ -114,7 +107,7 @@
       class="alphabet-section__special"
     >
       <p class="alphabet-section__special-description">
-        {{ specialLetter.description[$i18n.locale] || specialLetter.description.es }}
+        {{ $localized(specialLetter.description) }}
       </p>
 
       <div class="alphabet-section__special-examples">
@@ -133,12 +126,7 @@
               :key="example.word"
               class="alphabet-section__word-item"
             >
-              <BengaWord
-                :word="example.word"
-                :meaning="example.meaning"
-                :dictionary-url="getDictionaryUrl(example.word)"
-                block
-              />
+              <BengaWord :word="example.word" :meaning="example.meaning" block />
             </div>
           </div>
         </div>
@@ -155,50 +143,34 @@
         <div class="alphabet-section__note-item">
           <h4>{{ $t('content.elision') || 'Elisión' }}</h4>
           <p>
-            {{ sectionData.notes.elisionNote[$i18n.locale] || sectionData.notes.elisionNote.es }}
+            {{ $localized(sectionData.notes.elisionNote) }}
           </p>
         </div>
 
         <div class="alphabet-section__note-item">
           <h4>{{ $t('content.pronunciation') || 'Pronunciación' }}</h4>
           <p>
-            {{
-              sectionData.notes.pronunciationNote[$i18n.locale] ||
-              sectionData.notes.pronunciationNote.es
-            }}
+            {{ $localized(sectionData.notes.pronunciationNote) }}
           </p>
         </div>
       </div>
     </ContentSection>
 
-    <!-- Navigation -->
-    <nav class="alphabet-section__nav">
-      <router-link
-        to="/capitulo-1"
-        class="alphabet-section__nav-link alphabet-section__nav-link--prev"
-      >
-        ← {{ $t('chapters.chapter1.title') }}
-      </router-link>
-      <router-link
-        to="/capitulo-1/diptongos"
-        class="alphabet-section__nav-link alphabet-section__nav-link--next"
-      >
-        {{ $t('chapters.chapter1.sections.diphthongs') }} →
-      </router-link>
-    </nav>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import ContentSection from '@/components/content/ContentSection.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
 import BaseIcon from '@/components/common/BaseIcon.vue'
 import alphabetData from '@/data/chapter-1/alphabet.json'
-import { getDictionaryUrl } from '@/services/wordLinks'
 
 export default {
   name: 'AlphabetSection',
   components: {
+    SectionNavFooter,
     ContentSection,
     BengaWord,
     BaseIcon
@@ -207,16 +179,13 @@ export default {
     return {
       sectionData: alphabetData
     }
-  },
-  methods: {
-    getDictionaryUrl
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .alphabet-section {
   padding: $spacing-xl 0;
@@ -512,56 +481,6 @@ export default {
       font-size: $font-size-sm;
       margin: 0;
       line-height: $line-height-loose;
-    }
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    margin-top: $spacing-xl;
-    padding-top: $spacing-lg;
-    border-top: 2px solid $border-color;
-
-    @include respond-below('sm') {
-      flex-direction: column;
-    }
-  }
-
-  &__nav-link {
-    display: inline-flex;
-    align-items: center;
-    gap: $spacing-sm;
-    padding: $spacing-md $spacing-lg;
-    background: $color-primary;
-    color: $color-text-inverse;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: $font-weight-semibold;
-    transition: all $transition-base;
-    border: 2px solid $color-primary;
-
-    &:hover {
-      background: $color-primary-dark;
-      border-color: $color-primary-dark;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba($color-primary, 0.3);
-    }
-
-    &--prev {
-      justify-self: flex-start;
-
-      @include respond-below('sm') {
-        justify-self: auto;
-      }
-    }
-
-    &--next {
-      justify-self: flex-end;
-
-      @include respond-below('sm') {
-        justify-self: auto;
-      }
     }
   }
 }

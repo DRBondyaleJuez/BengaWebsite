@@ -1,0 +1,315 @@
+{
+  "_about": "Chapter-3 adjectives (task 2.6.2), from src/data/chapter-3/regular-adjectives.json and invariable-adjectives.json. The chapter-3 pages still show their own copies until Phase 3. Guide: docs/CONTENT-GUIDE.md",
+  "entries": {
+    "b_u_amu": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "būamu",
+      "forms": {
+        "1": {
+          "singular": "eyamu",
+          "plural": "beyamu"
+        },
+        "2": {
+          "singular": "iyamu",
+          "plural": "maiyamu"
+        },
+        "3": {
+          "singular": "uyamu",
+          "plural": "meyamu"
+        },
+        "4": {
+          "singular": "boyamu",
+          "plural": "meyamu"
+        },
+        "5": {
+          "singular": "uyamu",
+          "plural": "baiyamu"
+        },
+        "6": {
+          "singular": "viyamu",
+          "plural": "loyamu"
+        },
+        "7": {
+          "singular": "eyamu",
+          "plural": "iyamu"
+        }
+      },
+      "meaning": {
+        "es": "Bueno"
+      },
+      "source": {
+        "pdfPage": "17-18",
+        "note": "Ejemplos de concordancia por clase"
+      }
+    },
+    "bobe": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "bobe",
+      "stem": "-be",
+      "meaning": {
+        "es": "Malo"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos variables"
+      }
+    },
+    "bonene": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "bonene",
+      "stem": "-nene",
+      "meaning": {
+        "es": "Grande"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos variables"
+      }
+    },
+    "bohole": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "bohole",
+      "stem": "-hole",
+      "meaning": {
+        "es": "Pequeño"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos variables"
+      }
+    },
+    "bovindo": {
+      "type": "adjective",
+      "kind": "variable",
+      "word": "bovindo",
+      "stem": "-vindo",
+      "meaning": {
+        "es": "Negro"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos variables"
+      }
+    },
+    "de": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "De",
+      "meaning": {
+        "es": "Derecho, recto"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "tanana": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Tanana",
+      "meaning": {
+        "es": "Blanco"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "huhamba": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Huhamba",
+      "meaning": {
+        "es": "Desnudo, descubierto"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "pala": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pala",
+      "meaning": {
+        "es": "Relleno, atestado"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "ny_e_vi": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Nyēvi",
+      "meaning": {
+        "es": "Brillante, hermoso"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "pivi": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pivi",
+      "meaning": {
+        "es": "Espeso, denso"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "p_e_ki-p_e_ki": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pēki Pēki",
+      "meaning": {
+        "es": "Perpetuo, constante"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "potapota": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Potapota",
+      "meaning": {
+        "es": "Áspero, tosco"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "pojaengo": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pojaengo",
+      "meaning": {
+        "es": "Anticuado, viejo"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "bokolo": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Bokolo",
+      "meaning": {
+        "es": "Duro, difícil, riguroso"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "veivei": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Veivei",
+      "meaning": {
+        "es": "Rojo, encarnado"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "kopia": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Kopia",
+      "meaning": {
+        "es": "Prieto, avaro"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "ukuge": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Ukuge",
+      "meaning": {
+        "es": "Pobre, necesitado"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "poso": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Poso",
+      "meaning": {
+        "es": "Superior, sobre todo"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "kena": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Kena",
+      "meaning": {
+        "es": "De tamaño extraordinario"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "p_e_kejomu": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pēkejomu",
+      "meaning": {
+        "es": "Eterno, sin fin"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "p_a_l_a_l_a_p_a_l_a_l_a_": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Pâlâlâpâlâlâ",
+      "meaning": {
+        "es": "Veloz, con delicadeza"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    },
+    "t_a_ndal_a_nda": {
+      "type": "adjective",
+      "kind": "invariable",
+      "word": "Tândalânda",
+      "meaning": {
+        "es": "Peculiar, escogido"
+      },
+      "source": {
+        "pdfPage": 18,
+        "note": "Adjetivos invariables"
+      }
+    }
+  }
+}

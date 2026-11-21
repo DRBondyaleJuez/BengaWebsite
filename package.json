@@ -6,43 +6,32 @@
     "serve": "vite",
     "build": "vite build",
     "preview": "vite preview --port 8081",
-    "lint": "eslint --ext .js,.vue src",
+    "lint": "eslint src scripts vite.config.mjs eslint.config.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"scripts/tests/**/*.test.mjs\"",
+    "validate": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/validate-data.mjs",
     "words:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs",
     "words:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-sync.mjs --check",
     "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs"
   },
   "dependencies": {
     "vue": "^3.5.45",
-    "vue-i18n": "^11.4.19",
-    "vue-router": "^4.6.4"
+    "vue-i18n": "^11.4.23",
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@vitejs/plugin-vue": "^6.0.11",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^9.33.0",
+    "ajv": "^8.20.0",
+    "eslint": "^10.15.0",
+    "eslint-plugin-vue": "^10.12.1",
+    "globals": "^17.14.0",
+    "pdfjs-dist": "^6.5.438",
     "prettier": "3.9.10",
     "sass": "^1.69.5",
-    "vite": "^7.3.8"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "browser": true,
-      "node": true,
-      "es2021": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2021,
-      "sourceType": "module"
-    },
-    "rules": {}
+    "vite": "^7.3.8",
+    "vue-eslint-parser": "^10.4.2"
   },
   "browserslist": [
     "> 1%",

@@ -10,7 +10,11 @@
     <div class="app__body">
       <AppSidebar :is-open="sidebarOpen" @close="sidebarOpen = false" />
 
-      <main id="main-content" class="app__main">
+      <main
+        id="main-content"
+        class="app__main"
+        :class="{ 'app__main--wide': $route.path.startsWith('/admin') }"
+      >
         <router-view />
       </main>
     </div>
@@ -37,17 +41,20 @@ export default {
     }
   },
   watch: {
-    $route() {
+    $route(to) {
       // Close sidebar on route change (mobile)
       this.sidebarOpen = false
+      // Browser-tab title from chapters-index.json (route meta). Runs before the new page is
+      // created, so a page that sets its own document.title still wins.
+      if (to.meta.titleKey) document.title = `${this.$t(to.meta.titleKey)} | Portal Benga`
     }
   }
 }
 </script>
 
 <style lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .app {
   min-height: 100vh;
@@ -58,6 +65,13 @@ export default {
     display: flex;
     flex: 1;
     padding-top: $header-height;
+
+    // From 992 px the sidebar is always visible (fixed on the left): keep its width free, so the
+    // page is centred in the space next to it instead of under it. Below 992 px the sidebar is
+    // hidden and opens with the menu button in the header.
+    @include respond-to('lg') {
+      padding-left: $sidebar-width;
+    }
   }
 
   &__main {
@@ -69,6 +83,11 @@ export default {
 
     @include respond-below('md') {
       padding: $spacing-md;
+    }
+
+    // Developer pages (/admin/…, only during npm run serve) use the whole width
+    &--wide {
+      max-width: none;
     }
   }
 }

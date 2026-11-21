@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/word-registry.schema.json",
+  "title": "Word registry (src/data/lexicon/word-registry.json)",
+  "description": "Audio and Living Dictionary links of every Benga word form, keyed by word key. Written by `npm run words:sync`, `words:import` and /admin/palabras, and sometimes by hand. Guide: docs/WORD-REGISTRY.md",
+  "type": "object",
+  "properties": {
+    "_about": { "type": "string" },
+    "words": {
+      "type": "object",
+      "propertyNames": {
+        "description": "The word key (src/utils/audioId.js): lower-case letters, digits, '_' around accented letters, '-' between words.",
+        "pattern": "^[a-z0-9_-]+$"
+      },
+      "additionalProperties": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "required": ["words"],
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "properties": {
+        "word": { "$ref": "common.schema.json#/$defs/bengaText" },
+        "livingDictionaryId": {
+          "description": "Id at the end of the entry URL …/benga/entry/<id>, or null.",
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+            },
+            { "type": "null" }
+          ]
+        },
+        "audio": { "enum": ["missing", "recorded"] },
+        "audioFile": {
+          "description": "Cloudinary file name without .mp3, only when it differs from the key.",
+          "oneOf": [{ "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }, { "type": "null" }]
+        },
+        "notes": { "type": "string" }
+      },
+      "required": ["word", "livingDictionaryId", "audio", "audioFile", "notes"],
+      "additionalProperties": false
+    }
+  }
+}

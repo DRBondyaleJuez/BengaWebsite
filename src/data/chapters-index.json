@@ -1,128 +1,152 @@
 {
+  "_about": "THE list of chapters and sections: it builds the sidebar, the routes (src/router/index.js) and the previous/next buttons. Each section has either a component (a page in src/views) or a sectionFile (drawn by SectionPage.vue, or NounClassPage.vue when the file says \"layout\": \"noun-class\"). Guide: docs/CONTENT-GUIDE.md",
   "chapters": [
     {
       "id": "chapter1",
       "number": 1,
       "titleKey": "chapters.chapter1.title",
+      "path": "/capitulo-1",
+      "component": "chapter-1/ChapterOneIndex.vue",
       "sections": [
         {
           "id": "alphabet",
           "path": "/capitulo-1/alfabeto",
-          "titleKey": "chapters.chapter1.sections.alphabet"
+          "titleKey": "chapters.chapter1.sections.alphabet",
+          "component": "chapter-1/AlphabetSection.vue"
         },
         {
           "id": "diphthongs",
           "path": "/capitulo-1/diptongos",
-          "titleKey": "chapters.chapter1.sections.diphthongs"
+          "titleKey": "chapters.chapter1.sections.diphthongs",
+          "sectionFile": "sections/ch-1/diphthongs.json"
         },
         {
           "id": "triphthongs",
           "path": "/capitulo-1/triptongos",
-          "titleKey": "chapters.chapter1.sections.triphthongs"
+          "titleKey": "chapters.chapter1.sections.triphthongs",
+          "sectionFile": "sections/ch-1/triphthongs.json"
         },
         {
           "id": "consonants",
           "path": "/capitulo-1/consonantes",
-          "titleKey": "chapters.chapter1.sections.consonants"
+          "titleKey": "chapters.chapter1.sections.consonants",
+          "sectionFile": "sections/ch-1/consonants.json"
         }
-      ],
-      "path": "/capitulo-1"
+      ]
     },
     {
       "id": "chapter2",
       "number": 2,
       "titleKey": "chapters.chapter2.title",
+      "path": "/capitulo-2",
+      "component": "chapter-2/ChapterTwoIndex.vue",
       "sections": [
         {
           "id": "intro",
           "path": "/capitulo-2/introduccion",
-          "titleKey": "chapters.chapter2.sections.intro"
+          "titleKey": "chapters.chapter2.sections.intro",
+          "component": "chapter-2/NounsIntro.vue"
         },
         {
           "id": "class1",
           "path": "/capitulo-2/clase-1",
-          "titleKey": "chapters.chapter2.sections.class1"
+          "titleKey": "chapters.chapter2.sections.class1",
+          "sectionFile": "sections/ch-2/class-1.json"
         },
         {
           "id": "class2",
           "path": "/capitulo-2/clase-2",
-          "titleKey": "chapters.chapter2.sections.class2"
+          "titleKey": "chapters.chapter2.sections.class2",
+          "sectionFile": "sections/ch-2/class-2.json"
         },
         {
           "id": "class3",
           "path": "/capitulo-2/clase-3",
-          "titleKey": "chapters.chapter2.sections.class3"
+          "titleKey": "chapters.chapter2.sections.class3",
+          "sectionFile": "sections/ch-2/class-3.json"
         },
         {
           "id": "class4",
           "path": "/capitulo-2/clase-4",
-          "titleKey": "chapters.chapter2.sections.class4"
+          "titleKey": "chapters.chapter2.sections.class4",
+          "sectionFile": "sections/ch-2/class-4.json"
         },
         {
           "id": "class5",
           "path": "/capitulo-2/clase-5",
-          "titleKey": "chapters.chapter2.sections.class5"
+          "titleKey": "chapters.chapter2.sections.class5",
+          "sectionFile": "sections/ch-2/class-5.json"
         },
         {
           "id": "class6",
           "path": "/capitulo-2/clase-6",
-          "titleKey": "chapters.chapter2.sections.class6"
+          "titleKey": "chapters.chapter2.sections.class6",
+          "sectionFile": "sections/ch-2/class-6.json"
         },
         {
           "id": "class7",
           "path": "/capitulo-2/clase-7",
-          "titleKey": "chapters.chapter2.sections.class7"
+          "titleKey": "chapters.chapter2.sections.class7",
+          "sectionFile": "sections/ch-2/class-7.json"
         },
         {
           "id": "irregular",
           "path": "/capitulo-2/irregulares",
-          "titleKey": "chapters.chapter2.sections.irregular"
+          "titleKey": "chapters.chapter2.sections.irregular",
+          "component": "chapter-2/IrregularNouns.vue"
         },
         {
           "id": "verbal",
           "path": "/capitulo-2/verbales",
-          "titleKey": "chapters.chapter2.sections.verbal"
+          "titleKey": "chapters.chapter2.sections.verbal",
+          "component": "chapter-2/VerbalNouns.vue"
         },
         {
           "id": "noun-card-practice",
           "path": "/capitulo-2/practica",
-          "titleKey": "chapters.chapter2.sections.noun-card-practice"
+          "titleKey": "chapters.chapter2.sections.noun-card-practice",
+          "component": "chapter-2/NounPracticeGame.vue"
         }
-      ],
-      "path": "/capitulo-2"
+      ]
     },
     {
       "id": "chapter3",
       "number": 3,
       "titleKey": "chapters.chapter3.title",
+      "path": "/capitulo-3",
+      "component": "chapter-3/ChapterThreeIndex.vue",
       "sections": [
         {
           "id": "intro",
           "path": "/capitulo-3/introduccion",
-          "titleKey": "chapters.chapter3.sections.intro"
+          "titleKey": "chapters.chapter3.sections.intro",
+          "sectionFile": "sections/ch-3/adjectives-intro.json"
         },
         {
           "id": "regular",
           "path": "/capitulo-3/adjetivos-regulares",
-          "titleKey": "chapters.chapter3.sections.regular"
+          "titleKey": "chapters.chapter3.sections.regular",
+          "component": "chapter-3/RegularAdjectivesSection.vue"
         },
         {
           "id": "invariable",
           "path": "/capitulo-3/adjetivos-invariables",
-          "titleKey": "chapters.chapter3.sections.invariable"
+          "titleKey": "chapters.chapter3.sections.invariable",
+          "component": "chapter-3/InvariableAdjectivesSection.vue"
         },
         {
           "id": "comparatives",
           "path": "/capitulo-3/comparativos-superlativos",
-          "titleKey": "chapters.chapter3.sections.comparatives"
+          "titleKey": "chapters.chapter3.sections.comparatives",
+          "component": "chapter-3/ComparativesSuperlativesSection.vue"
         },
         {
           "id": "numerals",
           "path": "/capitulo-3/numerales-ordinales",
-          "titleKey": "chapters.chapter3.sections.numerals"
+          "titleKey": "chapters.chapter3.sections.numerals",
+          "component": "chapter-3/NumeralOrdinalAdjectivesSection.vue"
         }
-      ],
-      "path": "/capitulo-3"
+      ]
     }
   ]
 }

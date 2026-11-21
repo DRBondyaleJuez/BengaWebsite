@@ -15,31 +15,31 @@
           </router-link>
           <router-link to="/capitulo-2/clase-1" class="section-card">
             <h3>Clase 1: e → be</h3>
-            <p>Primera clase nominal</p>
+            <p>Clase nominal 1</p>
           </router-link>
           <router-link to="/capitulo-2/clase-2" class="section-card">
             <h3>Clase 2: i/di → ma</h3>
-            <p>Segunda clase nominal</p>
+            <p>Clase nominal 2</p>
           </router-link>
           <router-link to="/capitulo-2/clase-3" class="section-card">
             <h3>Clase 3: u/mú → me/mi</h3>
-            <p>Tercera clase nominal</p>
+            <p>Clase nominal 3</p>
           </router-link>
           <router-link to="/capitulo-2/clase-4" class="section-card">
             <h3>Clase 4: bo/ba → mi</h3>
-            <p>Cuarta clase nominal</p>
+            <p>Clase nominal 4</p>
           </router-link>
           <router-link to="/capitulo-2/clase-5" class="section-card">
             <h3>Clase 5: mo → ba</h3>
-            <p>Quinta clase nominal</p>
+            <p>Clase nominal 5</p>
           </router-link>
           <router-link to="/capitulo-2/clase-6" class="section-card">
             <h3>Clase 6: v → l</h3>
-            <p>Sexta clase nominal</p>
+            <p>Clase nominal 6</p>
           </router-link>
           <router-link to="/capitulo-2/clase-7" class="section-card">
             <h3>Clase 7: Invariables</h3>
-            <p>Séptima clase nominal</p>
+            <p>Clase nominal 7</p>
           </router-link>
           <router-link to="/capitulo-2/irregulares" class="section-card">
             <h3>Irregulares</h3>
@@ -72,15 +72,19 @@
       <div class="chapter-two__cta">
         <router-link to="/capitulo-2/introduccion" class="cta-button">Comenzar →</router-link>
       </div>
+      <SectionNavFooter />
     </div>
 
-    <router-view v-else />
+    <!-- key: every section gets a fresh page, even when two sections share SectionPage.vue -->
+    <router-view v-else :key="$route.path" />
   </div>
 </template>
 
 <script>
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 export default {
   name: 'ChapterTwoIndex',
+  components: { SectionNavFooter },
   data() {
     return {
       progress: {
@@ -123,8 +127,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use 'sass:color';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .chapter-two {
   width: 100%;
@@ -241,7 +246,7 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        background: darken($color-accent, 10%);
+        background: color.adjust($color-accent, $lightness: -10%);
         transform: translateY(-2px);
       }
     }

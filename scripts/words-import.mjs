@@ -40,7 +40,7 @@ function parseCsv(text) {
   let row = []
   let cell = ''
   let quoted = false
-  const source = text.replace(/^﻿/, '') // Excel adds an invisible BOM
+  const source = text.replace(/^\uFEFF/, '') // Excel adds an invisible BOM
   for (let i = 0; i < source.length; i++) {
     const character = source[i]
     if (quoted) {

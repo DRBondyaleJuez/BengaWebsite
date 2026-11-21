@@ -8,6 +8,11 @@
     "chapters": "Chapitres",
     "about": "À propos de l'auteur",
     "resources": "Ressources",
-    "download": "Télécharger PDF"
+    "download": "Télécharger PDF",
+    "pageNavigation": "Navigation entre les pages"
+  },
+  "content": {
+    "showAll": "Tout voir ({count})",
+    "showFewer": "Afficher moins"
   }
 }

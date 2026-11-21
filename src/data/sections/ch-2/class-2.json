@@ -1,0 +1,212 @@
+{
+  "id": "ch2-noun-class-2",
+  "chapter": 2,
+  "layout": "noun-class",
+  "title": {
+    "es": "Clase 2"
+  },
+  "subtitle": {
+    "es": "i / di → ma"
+  },
+  "source": {
+    "pdfPage": "9-10"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "i- / di-",
+      "to": "ma-",
+      "description": {
+        "es": "La inicial de muchas palabras de esta clase se convierte en el prefijo ma- en plural."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos con i-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "ibak_e_",
+        "ibala",
+        "ib_a_lu",
+        "ib_a_ng_a_",
+        "ib_a_t_a_",
+        "ibeku",
+        "ibend_e_",
+        "ib_e_k_e_",
+        "ikadu",
+        "ilale",
+        "ibomba",
+        "ihana",
+        "ihonga",
+        "ihuhu",
+        "ihuku",
+        "ijane",
+        "ikabo",
+        "ikalia",
+        "ikana",
+        "ikelenge",
+        "ik_e_l_e_n_e_",
+        "ik_e_luku",
+        "ikogo",
+        "iluku",
+        "it_a_nd_e_",
+        "iovenda",
+        "iv_e_",
+        "ibob_e_l_e_"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "variants",
+      "text": {
+        "es": "Ejemplos con di-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "diba",
+        "dib_e_",
+        "dik_e_",
+        "dimya",
+        "diso",
+        "dind_e_",
+        "dingongola",
+        "diny_a_",
+        "dit_a_",
+        "divy_a_"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Cambio inicial predecible"
+          },
+          "text": {
+            "es": "La clase 2 mantiene un prefijo plural muy estable: ma-."
+          }
+        },
+        {
+          "title": {
+            "es": "i- y di-"
+          },
+          "text": {
+            "es": "Las palabras con inicial i o di siguen el mismo esquema y se convierten en ma-."
+          }
+        },
+        {
+          "title": {
+            "es": "Concordancia"
+          },
+          "text": {
+            "es": "El plural del sustantivo afecta también al adjetivo que lo acompaña."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "exceptions",
+      "text": {
+        "es": "Excepciones"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Hay muchas excepciones en esta clase: nombres que empiezan por i- o di- y que, sin embargo, forman el plural con mi-, mâ- o mo- en lugar de ma-."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["di_a_", "dina", "dih_a_", "dy_a_mbi", "dyoba"]
+    },
+    {
+      "type": "note",
+      "variant": "small",
+      "text": {
+        "es": "Dyâmbi se pronuncia «Jombi» y Dyoba «Joba»."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "liquids",
+      "text": {
+        "es": "Excepción: líquidos siempre en plural"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Hay también algunos nombres de líquidos que los bengas no usan en singular y que forman el plural como los pertenecientes a esta clase."
+      }
+    },
+    {
+      "type": "examples",
+      "layout": "plural-only",
+      "entries": ["mavule", "many_a_ng_a_", "maku", "mak_a_nd_a_", "makiya", "miba"]
+    },
+    {
+      "type": "heading",
+      "id": "class-six",
+      "text": {
+        "es": "Excepción: nombres con i- que pertenecen a la clase 6"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Se hallan asimismo algunos nombres que, si bien empiezan con i- en el singular, no pertenecen a esta clase, sino a la sexta. Estos forman el plural mudando la i- radical en lo-."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["in_a_ni", "iboko", "ikadada"]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Compara cada forma singular y plural y repite el cambio ma-."
+        },
+        {
+          "es": "Forma frases con un nombre singular y luego en plural."
+        },
+        {
+          "es": "Escucha la entonación de los ejemplos para detectar la diferencia."
+        }
+      ]
+    }
+  ]
+}

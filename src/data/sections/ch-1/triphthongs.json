@@ -1,0 +1,291 @@
+{
+  "id": "ch1-triphthongs",
+  "chapter": 1,
+  "layout": "lesson",
+  "color": "secondary",
+  "title": {
+    "es": "De los Triptongos",
+    "en": "Triphthongs",
+    "fr": "Les Triphtongues"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "triphthongs-intro",
+      "text": {
+        "es": "Triptongos"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "Los triptongos son combinaciones de tres vocales que mantienen su sonido continuo."
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Estas y semejantes combinaciones se hallarán en gran número y variedad al registrar la conjugación de los verbos regulares en su voz pasiva."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "triphthongs-list",
+      "text": {
+        "es": "Triptongos"
+      }
+    },
+    {
+      "type": "sounds",
+      "color": "secondary",
+      "labelSize": "wide",
+      "items": [
+        {
+          "label": "aia",
+          "soundsLike": {
+            "es": "sonido continuo de a-i-a",
+            "en": "continuous ah-e-ah sound",
+            "fr": "son continu a-i-a"
+          },
+          "examples": [
+            {
+              "word": "paia",
+              "meaning": {
+                "es": "padre"
+              }
+            }
+          ]
+        },
+        {
+          "label": "aūe",
+          "soundsLike": {
+            "es": "sonido continuo de a-u-e",
+            "en": "continuous aw-e sound",
+            "fr": "son continu a-u-e"
+          },
+          "examples": [
+            {
+              "word": "nyaūe",
+              "meaning": {
+                "es": "no"
+              }
+            }
+          ]
+        },
+        {
+          "label": "iuūa",
+          "soundsLike": {
+            "es": "sonido continuo de i-u-ua",
+            "en": "continuous ew-nya sound",
+            "fr": "son continu i-u-nya"
+          },
+          "examples": [
+            {
+              "word": "iuūa",
+              "meaning": {
+                "es": "petición"
+              }
+            }
+          ]
+        },
+        {
+          "label": "iūē",
+          "soundsLike": {
+            "es": "sonido continuo de i-ue",
+            "en": "continuous e-oo-eh sound",
+            "fr": "son continu i-ue"
+          },
+          "examples": [
+            {
+              "word": "iūēla",
+              "meaning": {
+                "es": "hora"
+              }
+            }
+          ]
+        },
+        {
+          "label": "iūe",
+          "soundsLike": {
+            "es": "sonido continuo de i-ue",
+            "en": "continuous e-oo-eh sound",
+            "fr": "son continu i-ue"
+          },
+          "examples": [
+            {
+              "word": "iūedo",
+              "meaning": {
+                "es": "muerte"
+              }
+            }
+          ]
+        },
+        {
+          "label": "oūa",
+          "soundsLike": {
+            "es": "sonido continuo de o-ua",
+            "en": "continuous oh-oo-ah sound",
+            "fr": "son continu o-ua"
+          },
+          "examples": [
+            {
+              "word": "yoūakē",
+              "meaning": {
+                "es": "conocer"
+              }
+            }
+          ]
+        },
+        {
+          "label": "oūe",
+          "soundsLike": {
+            "es": "sonido continuo de o-ue",
+            "en": "continuous oh-oo-eh sound",
+            "fr": "son continu o-ue"
+          },
+          "examples": [
+            {
+              "word": "hoūe",
+              "meaning": {
+                "es": "cabellos"
+              }
+            }
+          ]
+        },
+        {
+          "label": "oūi",
+          "soundsLike": {
+            "es": "sonido continuo de o-ñi",
+            "en": "continuous o-nyi sound",
+            "fr": "son continu o-nyi"
+          },
+          "examples": [
+            {
+              "word": "ijoūia",
+              "meaning": {
+                "es": "mentir"
+              }
+            }
+          ]
+        },
+        {
+          "label": "uūa",
+          "soundsLike": {
+            "es": "sonido continuo de u-ua",
+            "en": "continuous oo-oo-ah sound",
+            "fr": "son continu u-ua"
+          },
+          "examples": [
+            {
+              "word": "uūaka",
+              "meaning": {
+                "es": "vomitar"
+              }
+            }
+          ]
+        },
+        {
+          "label": "uūi",
+          "soundsLike": {
+            "es": "sonido continuo de u-ui",
+            "en": "continuous oo-oo-ee sound",
+            "fr": "son continu u-ui"
+          },
+          "examples": [
+            {
+              "word": "Uvanguūi",
+              "meaning": {
+                "es": "Redentor"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūae",
+          "soundsLike": {
+            "es": "sonido continuo de u-a-e",
+            "en": "continuous w-a-e sound",
+            "fr": "son continu u-a-e"
+          },
+          "examples": [
+            {
+              "word": "ngūae",
+              "meaning": {
+                "es": "perdiz"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūea",
+          "soundsLike": {
+            "es": "sonido continuo de u-e-a",
+            "en": "continuous w-e-a sound",
+            "fr": "son continu u-e-a"
+          },
+          "examples": [
+            {
+              "word": "ūeango",
+              "meaning": {
+                "es": "digno"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūei",
+          "soundsLike": {
+            "es": "sonido continuo de u-e-i",
+            "en": "continuous w-e-i sound",
+            "fr": "son continu u-e-i"
+          },
+          "examples": [
+            {
+              "word": "mbūei",
+              "meaning": {
+                "es": "amigo"
+              }
+            }
+          ]
+        },
+        {
+          "label": "ūia",
+          "soundsLike": {
+            "es": "sonido continuo de u-i-a",
+            "en": "continuous w-i-a sound",
+            "fr": "son continu u-i-a"
+          },
+          "examples": [
+            {
+              "word": "mbūia",
+              "meaning": {
+                "es": "lluvia"
+              }
+            },
+            {
+              "word": "kaia",
+              "meaning": {
+                "es": "orangután"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "triphthongs-note",
+      "text": {
+        "es": "Nota Importante"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "important",
+      "text": {
+        "es": "Nótese que estas combinaciones aparecen frecuentemente en la conjugación de verbos regulares en voz pasiva. Ejemplos: haūudūendi (pasado del verbo hacer), Jaūē (pasado del verbo nacer), vēūēndi (pasado del verbo dar), Dubuūakuduūendi (pasado del verbo abrir)."
+      }
+    }
+  ]
+}

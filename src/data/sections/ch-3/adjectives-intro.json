@@ -1,0 +1,141 @@
+{
+  "id": "ch3-adjectives-intro",
+  "chapter": 3,
+  "title": {
+    "es": "Introducción a los Adjetivos"
+  },
+  "subtitle": {
+    "es": "Adjetivos - Capítulo 3 de Salvado y Cos"
+  },
+  "source": {
+    "pdfPage": 17
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "style": "box",
+      "text": {
+        "es": "Conceptos Fundamentales"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "es": "En la lengua Benga, los adjetivos constan de **número** y **clasificación**, pero no tienen caso ni género. A diferencia del español, carecen de grados de comparación convencionales. Los adjetivos se dividen en dos categorías principales: **variables e invariables**. Aunque en este capítulo hablaremos de unas reglas generales, es importante tener en cuenta que existen excepciones y variaciones en el uso de los adjetivos. En muchas ocasiones se apoyarán en el uso de preposiciones para poder usarse para referirse a algún sustantivo."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Características Principales"
+      }
+    },
+    {
+      "type": "concepts",
+      "look": "cards",
+      "items": [
+        {
+          "title": {
+            "es": "Concordancia con el Nombre"
+          },
+          "text": {
+            "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre."
+          },
+          "example": {
+            "es": "Adjetivo Būamu (bueno) modifica su raiz dependiendo del sustantivo al que acompaña:Epokolo eyamu (sombrero bueno) → Bepokolo beyamu (sombreros buenos)"
+          }
+        },
+        {
+          "title": {
+            "es": "Número y Clasificación"
+          },
+          "text": {
+            "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes)."
+          },
+          "example": {
+            "es": "La forma 'eyamu' (bueno singular) se convierte en 'beyamu', 'iyamu', 'maiyamu', etc."
+          }
+        },
+        {
+          "title": {
+            "es": "Ausencia de Género"
+          },
+          "text": {
+            "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino)."
+          },
+          "example": {
+            "es": "El mismo adjetivo sirve para múltiples conceptos sin cambio de género. Cambia si cambia la clase del sustantivo al cambiar de género."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "es": "Secciones del Capítulo"
+      }
+    },
+    {
+      "type": "links",
+      "items": [
+        {
+          "title": {
+            "es": "Adjetivos Variables"
+          },
+          "text": {
+            "es": "Adjetivos que cambian de forma según la clase del sustantivo que modifican."
+          },
+          "to": "/capitulo-3/adjetivos-regulares"
+        },
+        {
+          "title": {
+            "es": "Adjetivos Invariables"
+          },
+          "text": {
+            "es": "Adjetivos que no cambian de forma, usándose del mismo modo con cualquier sustantivo."
+          },
+          "to": "/capitulo-3/adjetivos-invariables"
+        },
+        {
+          "title": {
+            "es": "Comparativos y Superlativos"
+          },
+          "text": {
+            "es": "Los Benga expresan comparación y superioridad de maneras particulares, usando circunlocución, entonación y palabras específicas como 'kebaka' (sobresalir) y 'ūa' (exceder)."
+          },
+          "to": "/capitulo-3/comparativos-superlativos"
+        },
+        {
+          "title": {
+            "es": "Adjetivos Numerales"
+          },
+          "text": {
+            "es": "Sistema decimal donde los números se cuentan hasta 10, luego se reducen (diez y uno, diez y dos, etc.)."
+          },
+          "to": "/capitulo-3/numerales-ordinales"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "style": "highlight",
+      "text": {
+        "es": "Puntos Clave a Recordar"
+      }
+    },
+    {
+      "type": "checklist",
+      "items": [
+        {
+          "es": "Los adjetivos variables deben concordar en clasificación con el nombre que califican, tomando diversas inflexiones según la clase del nombre."
+        },
+        {
+          "es": "Los adjetivos variables cambian de forma según el número (singular/plural) y la clase del sustantivo (7 clases diferentes)."
+        },
+        {
+          "es": "A diferencia del español, los adjetivos en Benga no tienen género (masculino/femenino)."
+        }
+      ]
+    }
+  ]
+}

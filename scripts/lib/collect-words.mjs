@@ -3,6 +3,8 @@
  *
  * It reads two kinds of files:
  *   - src/data/**\/*.json        content stored as data
+ *   - src/data/lexicon/*.json    lexicon files: every singular / plural / word (no audio ids there)
+ *   - src/data/sections/**       section files: every "word" and "benga" text
  *   - src/views/**\/*.vue        content still written inside a page's data() block
  *                               (TODO(task 2.4): once all content lives in JSON, drop this part)
  *
@@ -22,6 +24,7 @@ import path from 'node:path'
 import vm from 'node:vm'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
+import { inflect } from '../../src/utils/concord.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const SRC = path.join(ROOT, 'src')
@@ -31,11 +34,81 @@ const PLAIN_WORD_KEYS = ['word', 'bengaForm', 'bengaSentence', 'benga', 'form', 
 const PLAIN_AUDIO_KEYS = ['audio', 'audioId']
 const PREFIXED_AUDIO_KEY = /^(.+?)Audio(Id)?$/
 
-/** Files that are not imported by the website and must not feed the registry. */
-const IGNORED_DATA_FILES = [
-  /chapter-2[\\/]class-\d\.json$/,
-  /chapter-2[\\/](nouns-intro|irregular-nouns|verbal-nouns)\.json$/
-]
+/** Files in src/data/lexicon that list words but are not lexicon files. */
+const LEXICON_META_FILES = ['word-registry.json', 'word-usage.json']
+
+/**
+ * Lexicon files (nouns.json…) have no audio ids: every form of every entry is a word the site
+ * shows (e.g. the practice game builds its cards from nouns.json).
+ */
+function lexiconWords(file) {
+  const relativeFile = path.relative(ROOT, file).replace(/\\/g, '/')
+  const results = []
+  for (const [id, entry] of Object.entries(JSON.parse(fs.readFileSync(file, 'utf8')).entries)) {
+    for (const form of ['singular', 'plural']) {
+      if (entry[form]?.word)
+        results.push({
+          word: entry[form].word,
+          storedAudioId: null,
+          file: relativeFile,
+          path: `${id}.${form}`
+        })
+    }
+    if (entry.word)
+      results.push({ word: entry.word, storedAudioId: null, file: relativeFile, path: id })
+  }
+  return results
+}
+
+/**
+ * Phrases a page COMPUTES instead of storing: the chapter-3 table «noun + adjective» for every
+ * class (regular-adjectives.json → commonAdjectives + exampleNouns, forms from the lexicon with
+ * the concord rule of src/utils/concord.js). Same result as RegularAdjectivesSection.vue.
+ */
+function concordPhrases(data) {
+  if (!Array.isArray(data.commonAdjectives) || !data.exampleNouns) return []
+  const lexicon = JSON.parse(
+    fs.readFileSync(path.join(SRC, 'data/lexicon/adjectives.json'), 'utf8')
+  ).entries
+  const results = []
+  for (const id of data.commonAdjectives) {
+    const adjective = lexicon[id]
+    if (!adjective) continue
+    for (const [nounClass, nouns] of Object.entries(data.exampleNouns)) {
+      for (const number of ['singular', 'plural']) {
+        const word = `${nouns[number]} ${inflect(adjective, Number(nounClass), number)}`
+        results.push({
+          word,
+          storedAudioId: null,
+          path: `commonAdjectives(${id}).${nounClass}.${number}`
+        })
+      }
+    }
+  }
+  return results
+}
+
+/**
+ * Section files have no audio ids either: every `word` (example items, sound cards) and every
+ * `benga` (table cells, dialogue lines) is a Benga text the site shows. Words given by lexicon id
+ * ("entries") are found through the lexicon files.
+ */
+function sectionWords(file) {
+  const relativeFile = path.relative(ROOT, file).replace(/\\/g, '/')
+  const results = []
+  const walk = (value, where) => {
+    if (Array.isArray(value)) value.forEach((item, index) => walk(item, `${where}[${index}]`))
+    else if (value && typeof value === 'object') {
+      for (const [key, child] of Object.entries(value)) {
+        if ((key === 'word' || key === 'benga') && typeof child === 'string')
+          results.push({ word: child.trim(), storedAudioId: null, file: relativeFile, path: where })
+        else walk(child, where ? `${where}.${key}` : key)
+      }
+    }
+  }
+  walk(JSON.parse(fs.readFileSync(file, 'utf8')), '')
+  return results
+}
 
 /** Folders of pages that show no Benga content (the admin page lists the registry itself). */
 const IGNORED_VIEW_FOLDERS = [/[\\/]views[\\/]admin[\\/]/]
@@ -63,7 +136,7 @@ function findPairs(value, currentPath, results) {
 
   for (const [key, audioValue] of Object.entries(value)) {
     if (typeof audioValue !== 'string') continue
-    let word = null
+    let word
     if (PLAIN_AUDIO_KEYS.includes(key)) {
       const wordKey = PLAIN_WORD_KEYS.find((candidate) => typeof value[candidate] === 'string')
       word = wordKey ? value[wordKey] : null
@@ -137,10 +210,19 @@ export function collectWords() {
   const results = []
 
   for (const file of listFiles(path.join(SRC, 'data'), '.json')) {
-    if (IGNORED_DATA_FILES.some((pattern) => pattern.test(file))) continue
-    if (file.includes(`${path.sep}lexicon${path.sep}`)) continue // the registry itself
+    if (file.includes(`${path.sep}lexicon${path.sep}`)) {
+      if (!LEXICON_META_FILES.includes(path.basename(file))) results.push(...lexiconWords(file))
+      continue // the registry itself is not content
+    }
+    if (file.includes(`${path.sep}schemas${path.sep}`)) continue // schemas and their examples are not site content
+    if (file.includes(`${path.sep}sections${path.sep}`)) {
+      results.push(...sectionWords(file))
+      continue
+    }
     const pairs = []
-    findPairs(JSON.parse(fs.readFileSync(file, 'utf8')), '', pairs)
+    const data = JSON.parse(fs.readFileSync(file, 'utf8'))
+    findPairs(data, '', pairs)
+    pairs.push(...concordPhrases(data))
     pairs.forEach((pair) =>
       results.push({ ...pair, file: path.relative(ROOT, file).replace(/\\/g, '/') })
     )
@@ -163,4 +245,4 @@ export function collectWords() {
   return results
 }
 
-export { ROOT }
+export { ROOT, readVueData }

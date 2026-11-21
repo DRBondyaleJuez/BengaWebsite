@@ -1,0 +1,117 @@
+{
+  "id": "ch2-noun-class-5",
+  "chapter": 2,
+  "layout": "noun-class",
+  "title": {
+    "es": "Clase 5"
+  },
+  "subtitle": {
+    "es": "mo → ba"
+  },
+  "source": {
+    "pdfPage": 12
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "mo-",
+      "to": "ba-",
+      "description": {
+        "es": "Los nombres de la clase 5 cambian la inicial mo- por ba- para expresarse en plural."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos Principales"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["mohano", "momo", "moto", "monda", "motoba", "mongolu"]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Patrón mo → ba"
+          },
+          "text": {
+            "es": "Este cambio es muy regular y se mantiene en la mayoría de los sustantivos."
+          }
+        },
+        {
+          "title": {
+            "es": "Plural claro"
+          },
+          "text": {
+            "es": "La oposición singular/plural se reconoce rápidamente por la nueva marca ba-."
+          }
+        },
+        {
+          "title": {
+            "es": "Memorización"
+          },
+          "text": {
+            "es": "La clase 5 es buena para practicar formación de plural por contraste."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "exceptions",
+      "text": {
+        "es": "Excepciones"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Ubapami, portador, no empieza por mo-, pero hace el plural como los nombres de esta clase 5."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["ubapami"]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Escribe la forma plural de cada palabra antes de comprobarla."
+        },
+        {
+          "es": "Haz frases breves con singular y plural alternados."
+        },
+        {
+          "es": "Escucha la diferencia tonal y léxica en cada ejemplo."
+        }
+      ]
+    }
+  ]
+}

@@ -28,16 +28,16 @@
     <!-- Adjectives List -->
     <section class="invariable-adjectives__list">
       <h2>Adjetivos Invariables</h2>
-      <div class="adjectives-grid">
-        <div class="adjective-card" v-for="(adj, idx) in adjectives" :key="`adj-${idx}`">
+      <CardGrid :items="adjectives" class="adjectives-grid" key-prefix="adj" v-slot="{ item: adj }">
+        <div class="adjective-card">
           <div class="adjective-card__bengaform">
-            <BengaWord :word="adj.bengaForm" />
+            <BengaWord :word="adj.word" />
           </div>
           <div class="adjective-card__meaning">
-            {{ adj.spanishMeaning }}
+            {{ $localized(adj.meaning) }}
           </div>
         </div>
-      </div>
+      </CardGrid>
     </section>
 
     <!-- Usage Examples -->
@@ -109,28 +109,22 @@
       </div>
     </section>
 
-    <!-- Navigation -->
-    <div class="invariable-adjectives__navigation">
-      <router-link to="/capitulo-3/adjetivos-regulares" class="nav-button nav-button--back">
-        ← Adjetivos Regulares
-      </router-link>
-      <router-link to="/capitulo-3" class="nav-button nav-button--index">
-        Índice del Capítulo
-      </router-link>
-      <router-link to="/capitulo-3/comparativos-superlativos" class="nav-button nav-button--next">
-        Siguiente: Comparativos →
-      </router-link>
-    </div>
+    <SectionNavFooter />
   </div>
 </template>
 
 <script>
+import CardGrid from '@/components/blocks/CardGrid.vue'
+import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import invariableAdjectivesData from '@/data/chapter-3/invariable-adjectives.json'
 import BengaWord from '@/components/content/BengaWord.vue'
+import { getAdjectives } from '@/services/adjectives'
 
 export default {
   name: 'InvariableAdjectivesSection',
   components: {
+    CardGrid,
+    SectionNavFooter,
     BengaWord
   },
   data() {
@@ -145,7 +139,8 @@ export default {
   },
   methods: {
     loadData() {
-      this.adjectives = invariableAdjectivesData.adjectives
+      // The list comes from the lexicon (lexicon/adjectives.json, kind "invariable")
+      this.adjectives = getAdjectives({ kind: 'invariable' })
       this.examples = invariableAdjectivesData.examples
       this.characteristics = invariableAdjectivesData.characteristics
     }
@@ -154,8 +149,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .invariable-adjectives {
   @include page-container;
@@ -431,48 +426,6 @@ export default {
     @media (max-width: 768px) {
       padding: 0.75rem;
       font-size: 0.9rem;
-    }
-  }
-}
-
-.invariable-adjectives__navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.nav-button {
-  @include button-base;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: $border-radius-base;
-  transition: all $transition-base;
-  text-align: center;
-
-  &--back,
-  &--index {
-    background-color: #f0f0f0;
-    color: $color-text-primary;
-
-    &:hover {
-      background-color: #e0e0e0;
-    }
-  }
-
-  &--next {
-    background-color: $color-primary;
-    color: white;
-
-    &:hover {
-      background-color: $color-primary-dark;
     }
   }
 }

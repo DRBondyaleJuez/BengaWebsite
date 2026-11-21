@@ -1,0 +1,170 @@
+{
+  "id": "ch2-noun-class-3",
+  "chapter": 2,
+  "layout": "noun-class",
+  "title": {
+    "es": "Clase 3"
+  },
+  "subtitle": {
+    "es": "u / mū → me / mi"
+  },
+  "source": {
+    "pdfPage": "10-11"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "u- / mú-",
+      "to": "me- / mi-",
+      "description": {
+        "es": "La clase 3 usa prefijos de plural con variantes me- y mi- según el caso inicial del sustantivo."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos con u-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "wbaha",
+        "wbalani",
+        "wbanga",
+        "wbango",
+        "wb_a_ki",
+        "wb_a_nd_a_",
+        "wbendi",
+        "wb_e_di",
+        "wbulubulu",
+        "wb_u_a",
+        "wd_a_mb_e_",
+        "wdumbu",
+        "wgangano",
+        "wgulu",
+        "wh_a_",
+        "wh_e_k_e_",
+        "wh_e_ng_e_",
+        "whiha",
+        "whinganakano",
+        "whingi"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "variants",
+      "text": {
+        "es": "Ejemplos con mū- / mu-"
+      }
+    },
+    {
+      "type": "examples",
+      "entries": [
+        "m_u_adi",
+        "m_u_ahi",
+        "m_u_ako",
+        "m_u_alika",
+        "m_u_ambo",
+        "m_u_anga",
+        "m_u_anjo",
+        "m_u_emba",
+        "m_u_e_ngi",
+        "m_u_e_ni",
+        "m_u_idi",
+        "m_u_indi",
+        "m_u_iya"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Prefijos plurales variables"
+          },
+          "text": {
+            "es": "La clase 3 presenta una alternancia entre me- y mi- según la raíz nominal."
+          }
+        },
+        {
+          "title": {
+            "es": "Raíces con u-"
+          },
+          "text": {
+            "es": "Los nombres con u- / w- tienden a pasar a me- en plural."
+          }
+        },
+        {
+          "title": {
+            "es": "Raíces con mú-"
+          },
+          "text": {
+            "es": "Los nombres con mú- / mu- se refuerzan con mi- como marca plural."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "exceptions",
+      "text": {
+        "es": "Excepciones"
+      }
+    },
+    {
+      "type": "note",
+      "variant": "info",
+      "text": {
+        "es": "Estos nombres de la clase 3 no siguen el cambio regular me- / mi- en el plural."
+      }
+    },
+    {
+      "type": "examples",
+      "entries": ["muajo", "molo"]
+    },
+    {
+      "type": "note",
+      "variant": "small",
+      "text": {
+        "es": "Mola pertenece a esta clase solo en lo que atañe al plural: su forma singular es una palabra distinta."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Identifica si la palabra pertenece a la variante u- o mu-."
+        },
+        {
+          "es": "Intenta transformar cada singular al plural sin mirar la respuesta."
+        },
+        {
+          "es": "Comparte los ejemplos con adjuntos para reforzar la concordancia."
+        }
+      ]
+    }
+  ]
+}

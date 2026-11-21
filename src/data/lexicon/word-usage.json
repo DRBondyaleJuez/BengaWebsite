@@ -3,74 +3,75 @@
   "words": {
     "_u_a_u_a_": {
       "spellings": ["ūâūâ"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "_u_eango": {
       "spellings": ["ūeango"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "_u_hi": {
       "spellings": ["ūhi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "au": {
       "spellings": ["au"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "b_u_alo": {
       "spellings": ["Būalo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "b_u_amu": {
       "spellings": ["būamu"],
-      "usedIn": ["src/data/chapter-1/alphabet.json", "src/views/chapter-1/AlphabetSection.vue"]
+      "usedIn": [
+        "src/data/chapter-1/alphabet.json",
+        "src/data/lexicon/adjectives.json",
+        "src/views/chapter-1/AlphabetSection.vue"
+      ]
     },
     "b_u_anga": {
       "spellings": ["Būanga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "b_u_ay_e_": {
       "spellings": ["Būayē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "b_u_e": {
       "spellings": ["Būe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "b_u_eka": {
       "spellings": ["Būeka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bab_u_e": {
       "spellings": ["babūe"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "bahano": {
       "spellings": ["Bahano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bajo": {
       "spellings": ["Bajo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bamo": {
       "spellings": ["Bamo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "banda": {
       "spellings": ["Banda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bangolu": {
       "spellings": ["Bangolu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bato": {
       "spellings": ["Bato"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bato-baiyamu": {
       "spellings": ["Bato baiyamu"],
@@ -78,254 +79,251 @@
     },
     "batoba": {
       "spellings": ["Batoba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "be_u_aha": {
       "spellings": ["Beūaha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beb_a_b_a_": {
       "spellings": ["Bebâbâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beb_u_ela": {
       "spellings": ["Bebūela"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebabadi": {
       "spellings": ["Bebabadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebadu": {
       "spellings": ["Bebadu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebamba": {
       "spellings": ["Bebamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebambamba": {
       "spellings": ["Bebambamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebambana": {
       "spellings": ["Bebambana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebano": {
       "spellings": ["Bebano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebodi": {
       "spellings": ["Bebodi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebok_u_edi": {
       "spellings": ["Bebokūedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebonga": {
       "spellings": ["Bebonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebuk_u_angonja": {
       "spellings": ["Bebukūangonja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebuki": {
       "spellings": ["Bebuki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebuma": {
       "spellings": ["Bebuma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebumulema": {
       "spellings": ["Bebumulema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bebungu": {
       "spellings": ["Bebungu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beby_a_by_a_": {
       "spellings": ["Bebyâbyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bedingiha": {
       "spellings": ["Bedingiha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bedoko": {
       "spellings": ["Bedoko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bedubu": {
       "spellings": ["Bedubu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beduka": {
       "spellings": ["Beduka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bedungu": {
       "spellings": ["Bedungu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "befu": {
       "spellings": ["Befu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beg_a_lani": {
       "spellings": ["Begâlani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beg_a_ndaga": {
       "spellings": ["Begândaga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beg_e_ja": {
       "spellings": ["Begēja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "begala": {
       "spellings": ["Begala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "begeno": {
       "spellings": ["Begeno"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "begombe": {
       "spellings": ["Begombe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beguba": {
       "spellings": ["Beguba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "begumia": {
       "spellings": ["Begumia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "begunguna": {
       "spellings": ["Begunguna"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beh_a_h_a_ni": {
       "spellings": ["Behâhâni"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beh_a_lia": {
       "spellings": ["Behâlia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beh_e_k_a_": {
       "spellings": ["Behēkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behadi": {
       "spellings": ["Behadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behavu": {
       "spellings": ["Behavu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beheheku": {
       "spellings": ["Beheheku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behek_u_e_": {
       "spellings": ["Behekūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behelele": {
       "spellings": ["Behelele"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behihila": {
       "spellings": ["Behihila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behila": {
       "spellings": ["Behila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behilibeja": {
       "spellings": ["Behilibeja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behini": {
       "spellings": ["Behini"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behongola": {
       "spellings": ["Behongola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behove": {
       "spellings": ["Behove"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behuhu": {
       "spellings": ["Behuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behuka": {
       "spellings": ["Behuka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behukuluku": {
       "spellings": ["Behukuluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "behut_e_": {
       "spellings": ["Behutē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bej_a_mbi": {
       "spellings": ["Bejâmbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bej_a_nj_a_": {
       "spellings": ["Bejânjâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beja": {
       "spellings": ["Beja"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "bejabavudi": {
       "spellings": ["Bejabavudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bejaka": {
       "spellings": ["Bejaka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bejalina": {
       "spellings": ["Bejalina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bejanganangobe": {
       "spellings": ["Bejanganangobe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bejanganangobo": {
       "spellings": ["Bejanganangobo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bejangina": {
       "spellings": ["Bejangina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_a_i": {
       "spellings": ["Bekâi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_a_i-bebe": {
       "spellings": ["Bekâi bebe"],
@@ -345,195 +343,195 @@
     },
     "bek_a_k_a_": {
       "spellings": ["Bekâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_a_k_a_l_a_": {
       "spellings": ["Bekâkâlâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_a_k_a_yi": {
       "spellings": ["Bekâkâyi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_a_mb_a_": {
       "spellings": ["Bekâmbâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_e_mb_e_": {
       "spellings": ["Bekēmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_e_nd_a_": {
       "spellings": ["Bekēndâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bek_u_ek_u_e": {
       "spellings": ["Bekūekūe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beka": {
       "spellings": ["Beka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekaba": {
       "spellings": ["Bekaba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekahi": {
       "spellings": ["Bekahi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekai": {
       "spellings": ["Bekai"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekalidi": {
       "spellings": ["Bekalidi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekano": {
       "spellings": ["Bekano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekedi": {
       "spellings": ["Bekedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekeha": {
       "spellings": ["Bekeha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekelekeke": {
       "spellings": ["Bekelekeke"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekendangolo": {
       "spellings": ["Bekendangolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekengo": {
       "spellings": ["Bekengo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekeyi": {
       "spellings": ["Bekeyi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekiki": {
       "spellings": ["Bekiki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekikindi": {
       "spellings": ["Bekikindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beko": {
       "spellings": ["Beko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekoda": {
       "spellings": ["Bekoda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekokobo": {
       "spellings": ["Bekokobo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekola": {
       "spellings": ["Bekola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekomba": {
       "spellings": ["Bekomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekoto": {
       "spellings": ["Bekoto"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekudikudi": {
       "spellings": ["Bekudikudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekuha": {
       "spellings": ["Bekuha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekukubi": {
       "spellings": ["Bekukubi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bekulu": {
       "spellings": ["Bekulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bel_a_ngi": {
       "spellings": ["Belângi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bel_e_bu": {
       "spellings": ["Belēbu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bel_e_mb_e_": {
       "spellings": ["Belēmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bel_e_ngi": {
       "spellings": ["Belēngi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belahe": {
       "spellings": ["Belahe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belandi": {
       "spellings": ["Belandi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belape": {
       "spellings": ["Belape"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bele": {
       "spellings": ["Bele"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belekanako": {
       "spellings": ["Belekanako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belembo": {
       "spellings": ["Belembo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belende": {
       "spellings": ["Belende"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belinga": {
       "spellings": ["Belinga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belolo": {
       "spellings": ["Belolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belombo": {
       "spellings": ["Belombo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "belongo": {
       "spellings": ["Belongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bem_e_n_a_": {
       "spellings": ["Bemēnâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bem_e_ng_u_e_": {
       "spellings": ["Bemēngūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bembe": {
       "spellings": ["bembe"],
@@ -541,267 +539,270 @@
     },
     "bemi": {
       "spellings": ["Bemi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bemina": {
       "spellings": ["Bemina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ben_a_": {
       "spellings": ["Benâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "benami": {
       "spellings": ["Benami"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "benangi": {
       "spellings": ["Benangi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bengamba": {
       "spellings": ["Bengamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "benge": {
       "spellings": ["Benge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bengumbi": {
       "spellings": ["Bengumbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beningo": {
       "spellings": ["Beningo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "benj_e_li": {
       "spellings": ["Benjēli"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "benjasigalanjenga": {
       "spellings": ["Benjasigalanjenga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bep_e_l_e_": {
       "spellings": ["Bepēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bep_e_lup_e_lu": {
       "spellings": ["Bepēlupēlu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepambo": {
       "spellings": ["Bepambo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepapi": {
       "spellings": ["Bepapi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepati": {
       "spellings": ["Bepati"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepedi": {
       "spellings": ["Bepedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepepa": {
       "spellings": ["Bepepa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepikiliedi": {
       "spellings": ["Bepikiliedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepima": {
       "spellings": ["Bepima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepokolo": {
       "spellings": ["Bepokolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepokolo-beyamu": {
       "spellings": ["Bepokolo beyamu"],
-      "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
+      "usedIn": [
+        "src/data/chapter-3/regular-adjectives.json",
+        "src/data/sections/ch-2/class-1.json"
+      ]
     },
     "bepondoma": {
       "spellings": ["Bepondoma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beponga": {
       "spellings": ["Beponga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bepota": {
       "spellings": ["Bepota"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bes_a_": {
       "spellings": ["Besâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bes_u_ag_e_nda": {
       "spellings": ["Besūagēnda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "besalagamb_u_e_": {
       "spellings": ["Besalagambūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "besuti": {
       "spellings": ["Besuti"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bet_a_k_a_": {
       "spellings": ["Betâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bet_a_ki": {
       "spellings": ["Betâki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bet_e_jani": {
       "spellings": ["Betējani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betema": {
       "spellings": ["Betema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betima": {
       "spellings": ["Betima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betimbe": {
       "spellings": ["Betimbe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betoli": {
       "spellings": ["Betoli"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betomba": {
       "spellings": ["Betomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betombi": {
       "spellings": ["Betombi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betundu": {
       "spellings": ["Betundu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "betunia": {
       "spellings": ["Betunia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bev_e_l_e_": {
       "spellings": ["Bevēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bev_e_l_e_hi": {
       "spellings": ["Bevēlēhi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beva": {
       "spellings": ["Beva"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevandi": {
       "spellings": ["Bevandi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevango": {
       "spellings": ["Bevango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevelse": {
       "spellings": ["Bevelse"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevema": {
       "spellings": ["Bevema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevemba": {
       "spellings": ["Bevemba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevila": {
       "spellings": ["Bevila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevindi": {
       "spellings": ["Bevindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevita": {
       "spellings": ["Bevita"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevudi": {
       "spellings": ["Bevudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevunga": {
       "spellings": ["Bevunga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bevuva": {
       "spellings": ["Bevuva"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beyake": {
       "spellings": ["Beyake"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beyok_u_edi": {
       "spellings": ["Beyokūedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "beyome": {
       "spellings": ["Beyome"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bi_a_k_a_": {
       "spellings": ["Biâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bi_e_ke": {
       "spellings": ["Biēke"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biaho": {
       "spellings": ["Biaho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biako": {
       "spellings": ["Biako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bialo": {
       "spellings": ["Bialo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biambe": {
       "spellings": ["Biambe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biapa": {
       "spellings": ["Biapa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biej_a_": {
       "spellings": ["Biejâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biima": {
       "spellings": ["Biima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "binaka": {
       "spellings": ["Binaka"],
@@ -809,51 +810,55 @@
     },
     "bioha": {
       "spellings": ["Bioha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bioma": {
       "spellings": ["Bioma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "biomu": {
       "spellings": ["Biomu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bob_a_bu": {
       "spellings": ["Bobâbu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bobako": {
       "spellings": ["Bobako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bobapami": {
       "spellings": ["Bobapami"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
+    },
+    "bobe": {
+      "spellings": ["bobe"],
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "boho": {
       "spellings": ["Boho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "boho-boyamu": {
       "spellings": ["Boho boyamu"],
       "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
     },
+    "bohole": {
+      "spellings": ["bohole"],
+      "usedIn": ["src/data/lexicon/adjectives.json"]
+    },
     "bojo_u_a": {
       "spellings": ["Bojoūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bok_a_": {
       "spellings": ["Bokâ"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass4.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "bokolo": {
       "spellings": ["Bokolo"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "bokolo-bokolo": {
       "spellings": ["Bokolo bokolo"],
@@ -861,7 +866,7 @@
     },
     "bolohi": {
       "spellings": ["Bolohi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bondi-babe": {
       "spellings": ["Bondi babe"],
@@ -879,17 +884,21 @@
       "spellings": ["Bondi bavindo"],
       "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
     },
+    "bonene": {
+      "spellings": ["bonene"],
+      "usedIn": ["src/data/lexicon/adjectives.json"]
+    },
     "bongo": {
       "spellings": ["Bongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bonyamo": {
       "spellings": ["Bonyamo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bova": {
       "spellings": ["Bova"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bova-bobe": {
       "spellings": ["Bova bobe"],
@@ -907,13 +916,17 @@
       "spellings": ["Bova bovindo"],
       "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
     },
+    "bovindo": {
+      "spellings": ["bovindo"],
+      "usedIn": ["src/data/lexicon/adjectives.json"]
+    },
     "bu_u_ha": {
       "spellings": ["Buūha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "bulu": {
       "spellings": ["Bulu"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "byelele": {
       "spellings": ["byelele"],
@@ -921,7 +934,7 @@
     },
     "de": {
       "spellings": ["De"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "de-de-de": {
       "spellings": ["De de de"],
@@ -929,315 +942,315 @@
     },
     "di_a_": {
       "spellings": ["Diâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dib_e_": {
       "spellings": ["Dibē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "diba": {
       "spellings": ["Diba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dih_a_": {
       "spellings": ["Dihâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dik_e_": {
       "spellings": ["Dikē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "diko": {
       "spellings": ["Diko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dimya": {
       "spellings": ["Dimya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dina": {
       "spellings": ["Dina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dind_e_": {
       "spellings": ["Dindē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dingongola": {
       "spellings": ["Dingongola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "diny_a_": {
       "spellings": ["Dinyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "diso": {
       "spellings": ["Diso"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dit_a_": {
       "spellings": ["Ditâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "divy_a_": {
       "spellings": ["Divyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dy_a_mbi": {
       "spellings": ["Dyâmbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dyate": {
       "spellings": ["Dyate"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "dyoba": {
       "spellings": ["Dyoba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "e_u_aha": {
       "spellings": ["Eūaha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eb_a_b_a_": {
       "spellings": ["Ebâbâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eb_u_ela": {
       "spellings": ["Ebūela"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebabadi": {
       "spellings": ["Ebabadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebadu": {
       "spellings": ["Ebadu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebamba": {
       "spellings": ["Ebamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebambamba": {
       "spellings": ["Ebambamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebambana": {
       "spellings": ["Ebambana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebano": {
       "spellings": ["Ebano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebodi": {
       "spellings": ["Ebodi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebok_u_edi": {
       "spellings": ["Ebokūedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebonga": {
       "spellings": ["Ebonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebuk_u_angonja": {
       "spellings": ["Ebukūangonja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebuki": {
       "spellings": ["Ebuki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebuma": {
       "spellings": ["Ebuma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebumulema": {
       "spellings": ["Ebumulema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ebungu": {
       "spellings": ["Ebungu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eby_a_by_a_": {
       "spellings": ["Ebyâbyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "edingiha": {
       "spellings": ["Edingiha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "edoko": {
       "spellings": ["Edoko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "edubu": {
       "spellings": ["Edubu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eduka": {
       "spellings": ["Eduka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "edungu": {
       "spellings": ["Edungu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "efu": {
       "spellings": ["Efu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eg_a_lani": {
       "spellings": ["Egâlani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eg_a_ndaga": {
       "spellings": ["Egândaga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eg_e_ja": {
       "spellings": ["Egēja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "egala": {
       "spellings": ["Egala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "egeno": {
       "spellings": ["Egeno"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "egombe": {
       "spellings": ["Egombe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eguba": {
       "spellings": ["Eguba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "egumia": {
       "spellings": ["Egumia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "egunguna": {
       "spellings": ["Egunguna"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eh_a_h_a_ni": {
       "spellings": ["Ehâhâni"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eh_a_lia": {
       "spellings": ["Ehâlia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eh_e_k_a_": {
       "spellings": ["Ehēkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehadi": {
       "spellings": ["Ehadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehavu": {
       "spellings": ["Ehavu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eheheku": {
       "spellings": ["Eheheku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehek_u_e_": {
       "spellings": ["Ehekūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehelele": {
       "spellings": ["Ehelele"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehihila": {
       "spellings": ["Ehihila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehila": {
       "spellings": ["Ehila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehilibeja": {
       "spellings": ["Ehilibeja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehini": {
       "spellings": ["Ehini"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehongola": {
       "spellings": ["Ehongola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehove": {
       "spellings": ["Ehove"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehuhu": {
       "spellings": ["Ehuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehuka": {
       "spellings": ["Ehuka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehukuluku": {
       "spellings": ["Ehukuluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ehut_e_": {
       "spellings": ["Ehutē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ej_a_mbi": {
       "spellings": ["Ejâmbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ej_a_nj_a_": {
       "spellings": ["Ejânjâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eja": {
       "spellings": ["Eja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejabavudi": {
       "spellings": ["Ejabavudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejaka": {
       "spellings": ["Ejaka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejalina": {
       "spellings": ["Ejalina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejanganangobe": {
       "spellings": ["Ejanganangobe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejanganangobo": {
       "spellings": ["Ejanganangobo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ejangina": {
       "spellings": ["Ejangina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_a_i": {
       "spellings": ["Ekâi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_a_i-ebe": {
       "spellings": ["Ekâi ebe"],
@@ -1257,550 +1270,534 @@
     },
     "ek_a_k_a_": {
       "spellings": ["Ekâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_a_k_a_l_a_": {
       "spellings": ["Ekâkâlâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_a_k_a_yi": {
       "spellings": ["Ekâkâyi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_a_mb_a_": {
       "spellings": ["Ekâmbâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_e_mb_e_": {
       "spellings": ["Ekēmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_e_nd_a_": {
       "spellings": ["Ekēndâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ek_u_ek_u_e": {
       "spellings": ["Ekūekūe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eka": {
       "spellings": ["Eka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekaba": {
       "spellings": ["Ekaba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekahi": {
       "spellings": ["Ekahi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekai": {
       "spellings": ["Ekai"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekalidi": {
       "spellings": ["Ekalidi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekano": {
       "spellings": ["Ekano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekedi": {
       "spellings": ["Ekedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekeha": {
       "spellings": ["Ekeha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekelekeke": {
       "spellings": ["Ekelekeke"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekendangolo": {
       "spellings": ["Ekendangolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekengo": {
       "spellings": ["Ekengo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekeyi": {
       "spellings": ["Ekeyi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekiki": {
       "spellings": ["Ekiki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekikindi": {
       "spellings": ["Ekikindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eko": {
       "spellings": ["Eko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekoda": {
       "spellings": ["Ekoda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekokobo": {
       "spellings": ["Ekokobo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekola": {
       "spellings": ["Ekola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekomba": {
       "spellings": ["Ekomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekoto": {
       "spellings": ["Ekoto"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekudikudi": {
       "spellings": ["Ekudikudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekuha": {
       "spellings": ["Ekuha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekukubi": {
       "spellings": ["Ekukubi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ekulu": {
       "spellings": ["Ekulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "el_a_ngi": {
       "spellings": ["Elângi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "el_e_bu": {
       "spellings": ["Elēbu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "el_e_mb_e_": {
       "spellings": ["Elēmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "el_e_ngi": {
       "spellings": ["Elēngi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elahe": {
       "spellings": ["Elahe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elandi": {
       "spellings": ["Elandi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elape": {
       "spellings": ["Elape"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ele": {
       "spellings": ["Ele"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elekanako": {
       "spellings": ["Elekanako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elembo": {
       "spellings": ["Elembo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elende": {
       "spellings": ["Elende"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elinga": {
       "spellings": ["Elinga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elolo": {
       "spellings": ["Elolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elombo": {
       "spellings": ["Elombo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "elongo": {
       "spellings": ["Elongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "em_e_n_a_": {
       "spellings": ["Emēnâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "em_e_ng_u_e_": {
       "spellings": ["Emēngūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "emi": {
       "spellings": ["Emi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "emina": {
       "spellings": ["Emina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "en_a_": {
       "spellings": ["Enâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "enami": {
       "spellings": ["Enami"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "enangi": {
       "spellings": ["Enangi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "engamba": {
       "spellings": ["Engamba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "enge": {
       "spellings": ["Enge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "engumbi": {
       "spellings": ["Engumbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eningo": {
       "spellings": ["Eningo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "enj_e_li": {
       "spellings": ["Enjēli"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "enjasigalanjenga": {
       "spellings": ["Enjasigalanjenga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ep_e_l_e_": {
       "spellings": ["Epēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ep_e_lup_e_lu": {
       "spellings": ["Epēlupēlu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epambo": {
       "spellings": ["Epambo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epapi": {
       "spellings": ["Epapi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epati": {
       "spellings": ["Epati"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epedi": {
       "spellings": ["Epedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epepa": {
       "spellings": ["Epepa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epikiliedi": {
       "spellings": ["Epikiliedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epima": {
       "spellings": ["Epima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epokolo": {
       "spellings": ["Epokolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epokolo-eyamu": {
       "spellings": ["Epokolo eyamu"],
-      "usedIn": ["src/data/chapter-3/regular-adjectives.json"]
+      "usedIn": [
+        "src/data/chapter-3/regular-adjectives.json",
+        "src/data/sections/ch-2/class-1.json"
+      ]
     },
     "epondoma": {
       "spellings": ["Epondoma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eponga": {
       "spellings": ["Eponga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "epota": {
       "spellings": ["Epota"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "es_a_": {
       "spellings": ["Esâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "es_u_ag_e_nda": {
       "spellings": ["Esūagēnda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "esalagamb_u_e_": {
       "spellings": ["Esalagambūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "esuti": {
       "spellings": ["Esuti"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "et_a_k_a_": {
       "spellings": ["Etâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "et_a_ki": {
       "spellings": ["Etâki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "et_e_jani": {
       "spellings": ["Etējani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etema": {
       "spellings": ["Etema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etima": {
       "spellings": ["Etima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etimbe": {
       "spellings": ["Etimbe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etoli": {
       "spellings": ["Etoli"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etomba": {
       "spellings": ["Etomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etombi": {
       "spellings": ["Etombi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etundu": {
       "spellings": ["Etundu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "etunia": {
       "spellings": ["Etunia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ev_e_l_e_": {
       "spellings": ["Evēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ev_e_l_e_hi": {
       "spellings": ["Evēlēhi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eva": {
       "spellings": ["Eva"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evandi": {
       "spellings": ["Evandi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evango": {
       "spellings": ["Evango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evelse": {
       "spellings": ["Evelse"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evema": {
       "spellings": ["Evema"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evemba": {
       "spellings": ["Evemba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evila": {
       "spellings": ["Evila"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evindi": {
       "spellings": ["Evindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evita": {
       "spellings": ["Evita"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evudi": {
       "spellings": ["Evudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evunga": {
       "spellings": ["Evunga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "evuva": {
       "spellings": ["Evuva"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eyake": {
       "spellings": ["Eyake"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eyok_u_edi": {
       "spellings": ["Eyokūedi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "eyome": {
       "spellings": ["Eyome"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "fala": {
       "spellings": ["Fala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "fato": {
       "spellings": ["Fato"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "fula": {
       "spellings": ["Fula"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "h_a_k_a_": {
       "spellings": ["Hâkâ"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "h_u_e_": {
-      "spellings": ["hūē", "Hūē"],
+      "spellings": ["Hūē", "hūē"],
       "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
-        "src/views/chapter-1/DiphthongsSection.vue",
+        "src/data/lexicon/nouns.json",
+        "src/data/sections/ch-1/diphthongs.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
     "hako": {
       "spellings": ["Hako"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "hapi": {
       "spellings": ["Hapi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "henga": {
       "spellings": ["Henga"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "ho_u_e": {
-      "spellings": ["hoūe", "Hoūe"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/TriphthongsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Hoūe", "hoūe"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/triphthongs.json"]
     },
     "ho_u_e_": {
       "spellings": ["Hoūē"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "honji": {
       "spellings": ["Honji"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "huhamba": {
       "spellings": ["Huhamba"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "i_u_e_la": {
       "spellings": ["iūēla"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "i_u_edo": {
       "spellings": ["iūedo"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ib_a_lu": {
       "spellings": ["Ibâlu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ib_a_ng_a_": {
       "spellings": ["Ibângâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ib_a_t_a_": {
       "spellings": ["Ibâtâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ib_e_k_e_": {
       "spellings": ["Ibēkē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibak_e_": {
       "spellings": ["Ibakē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibala": {
       "spellings": ["Ibala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibeku": {
       "spellings": ["Ibeku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibend_e_": {
       "spellings": ["Ibendē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibina": {
-      "spellings": ["ibina"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ibina", "ibina"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ibob_e_l_e_": {
       "spellings": ["Ibobēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "iboko": {
       "spellings": ["Iboko"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibomba": {
       "spellings": ["Ibomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ibongo-iyamu": {
       "spellings": ["Ibongo iyamu"],
@@ -1808,114 +1805,107 @@
     },
     "ihana": {
       "spellings": ["Ihana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ihonga": {
       "spellings": ["Ihonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ihuhu": {
       "spellings": ["Ihuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ihuku": {
       "spellings": ["Ihuku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ijane": {
       "spellings": ["Ijane"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ijanja": {
-      "spellings": ["ijanja", "Ijanja"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ijanja", "ijanja"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ijo_u_ia": {
       "spellings": ["ijoūia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ik_e_l_e_n_e_": {
       "spellings": ["Ikēlēnē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ik_e_luku": {
       "spellings": ["Ikēluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikabo": {
       "spellings": ["Ikabo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikadada": {
       "spellings": ["Ikadada"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikadu": {
       "spellings": ["Ikadu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikala": {
-      "spellings": ["ikala"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ikala", "ikala"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ikalia": {
       "spellings": ["Ikalia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikalidi": {
-      "spellings": ["ikalidi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ikalidi", "ikalidi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ikalo": {
-      "spellings": ["ikalo"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ikalo", "ikalo"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ikana": {
       "spellings": ["Ikana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikelenge": {
       "spellings": ["Ikelenge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ikogo": {
       "spellings": ["Ikogo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ilale": {
       "spellings": ["Ilale"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ilanga": {
-      "spellings": ["ilanga"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ilanga", "ilanga"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ilangidi": {
-      "spellings": ["ilangidi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ilangidi", "ilangidi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ilende": {
-      "spellings": ["ilende"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ilende", "ilende"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ilonga": {
-      "spellings": ["ilonga", "Ilonga"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ilonga", "ilonga"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ilongidi": {
-      "spellings": ["ilongidi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ilongidi", "ilongidi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "iluku": {
       "spellings": ["Iluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ilutu-ibe": {
       "spellings": ["Ilutu ibe"],
@@ -1935,15 +1925,11 @@
     },
     "in_a_ni": {
       "spellings": ["Inâni"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "iovenda": {
       "spellings": ["Iovenda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ipivi": {
       "spellings": ["ipivi"],
@@ -1951,11 +1937,7 @@
     },
     "it_a_nd_e_": {
       "spellings": ["Itândē", "itândē"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/VerbalNouns.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "itutu": {
       "spellings": ["itutu"],
@@ -1963,18 +1945,15 @@
     },
     "iu_u_a": {
       "spellings": ["iuūa"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "iv_e_": {
       "spellings": ["Ivē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "j_a_ng_a_": {
       "spellings": ["Jângâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "janjaka": {
       "spellings": ["Janjaka"],
@@ -1982,31 +1961,31 @@
     },
     "jonda": {
       "spellings": ["Jonda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "jubu": {
       "spellings": ["Jubu"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "jumba": {
       "spellings": ["Jumba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "k_a_": {
       "spellings": ["Kâ"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "k_a_la": {
       "spellings": ["Kâla"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "k_a_nde": {
       "spellings": ["Kânde"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "k_a_t_a_": {
       "spellings": ["Kâtâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "k_e_ny_e_ng_e_": {
       "spellings": ["kēnyēngē"],
@@ -2014,14 +1993,11 @@
     },
     "kabala": {
       "spellings": ["Kabala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "kaia": {
       "spellings": ["kaia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "kalaka": {
       "spellings": ["kalaka", "Kalaka"],
@@ -2037,23 +2013,23 @@
     },
     "kama": {
       "spellings": ["Kama"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "kango": {
       "spellings": ["Kango"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "kapi": {
       "spellings": ["Kapi"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "kena": {
       "spellings": ["Kena"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "kiji": {
       "spellings": ["Kiji"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "kodokodo": {
       "spellings": ["kodokodo"],
@@ -2061,15 +2037,15 @@
     },
     "kono": {
       "spellings": ["Kono"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "kopia": {
       "spellings": ["Kopia"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "kuma": {
       "spellings": ["Kuma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "kya": {
       "spellings": ["kya"],
@@ -2081,11 +2057,11 @@
     },
     "laha": {
       "spellings": ["Laha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "langa": {
       "spellings": ["Langa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "langaka": {
       "spellings": ["Langaka"],
@@ -2093,19 +2069,19 @@
     },
     "lembo": {
       "spellings": ["Lembo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "leya": {
       "spellings": ["Leya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "li_a_": {
       "spellings": ["Liâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "liho": {
       "spellings": ["Liho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "liho-lobe": {
       "spellings": ["Liho lobe"],
@@ -2125,11 +2101,11 @@
     },
     "lijo": {
       "spellings": ["Lijo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lit_u_a": {
       "spellings": ["Litūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "litua-loyamu": {
       "spellings": ["Litua loyamu"],
@@ -2137,39 +2113,27 @@
     },
     "loboko": {
       "spellings": ["Loboko"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lohi": {
       "spellings": ["Lohi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lokadada": {
       "spellings": ["Lokadada"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lololombo": {
       "spellings": ["Lololombo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lombongo": {
       "spellings": ["Lombongo"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "lon_a_ni": {
       "spellings": ["Lonâni"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass2.vue",
-        "src/views/chapter-2/NounClass6.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "longaka": {
       "spellings": ["Longaka"],
@@ -2177,140 +2141,135 @@
     },
     "longangambi": {
       "spellings": ["Longangambi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "longunguhu": {
       "spellings": ["Longunguhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "lopupuhu": {
       "spellings": ["Lopupuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "loyonda": {
       "spellings": ["Loyonda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_a_k_a_": {
       "spellings": ["Mâkâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_a_mb_e_": {
       "spellings": ["Mâmbē"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "m_a_mbi": {
       "spellings": ["Mâmbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_adi": {
       "spellings": ["Mūadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_ahi": {
       "spellings": ["Mūahi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_ako": {
       "spellings": ["Mūako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_alika": {
       "spellings": ["Mūalika"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_ambo": {
       "spellings": ["Mūambo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_ana": {
       "spellings": ["mūana"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "m_u_anga": {
       "spellings": ["Mūanga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_anjo": {
       "spellings": ["Mūanjo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_e_ngi": {
       "spellings": ["Mūēngi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_e_ni": {
       "spellings": ["Mūēni"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_emba": {
       "spellings": ["Mūemba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_idi": {
-      "spellings": ["mūidi", "Mūidi"],
-      "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/DiphthongsSection.vue",
-        "src/views/chapter-2/NounClass3.vue"
-      ]
+      "spellings": ["Mūidi", "mūidi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/diphthongs.json"]
     },
     "m_u_indi": {
       "spellings": ["Mūindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "m_u_iya": {
       "spellings": ["Mūiya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mab_a_lu": {
       "spellings": ["Mabâlu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mab_a_ng_a_": {
       "spellings": ["Mabângâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mab_a_t_a_": {
       "spellings": ["Mabâtâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mab_e_": {
       "spellings": ["Mabē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mab_e_k_e_": {
       "spellings": ["Mabēkē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "maba": {
       "spellings": ["Maba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabak_e_": {
       "spellings": ["Mabakē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabala": {
       "spellings": ["Mabala"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabeku": {
       "spellings": ["Mabeku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabend_e_": {
       "spellings": ["Mabendē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabob_e_l_e_": {
       "spellings": ["Mabobēlē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabomba": {
       "spellings": ["Mabomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mabongo-maiyamu": {
       "spellings": ["Mabongo maiyamu"],
@@ -2318,103 +2277,103 @@
     },
     "mahana": {
       "spellings": ["Mahana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mahonga": {
       "spellings": ["Mahonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mahuhu": {
       "spellings": ["Mahuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mahuku": {
       "spellings": ["Mahuku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "maj_e_njina": {
       "spellings": ["Majênjina"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "majan_e_": {
       "spellings": ["Majanē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "majanja": {
       "spellings": ["Majanja"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "mak_a_nd_a_": {
       "spellings": ["Makândâ"],
-      "usedIn": ["src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mak_e_": {
       "spellings": ["Makē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mak_e_l_e_n_e_": {
       "spellings": ["Makēlēnē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mak_e_luku": {
       "spellings": ["Makēluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "maka": {
       "spellings": ["Maka"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "makabo": {
       "spellings": ["Makabo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makadu": {
       "spellings": ["Makadu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makalia": {
       "spellings": ["Makalia"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makana": {
       "spellings": ["Makana"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makelenge": {
       "spellings": ["Makelenge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makiya": {
       "spellings": ["Makiya"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mako": {
       "spellings": ["Mako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "makogo": {
       "spellings": ["Makogo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "maku": {
       "spellings": ["Maku"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mal_a_ng_a_": {
       "spellings": ["Malângâ"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "malale": {
       "spellings": ["Malale"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "malonga": {
       "spellings": ["Malonga"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "maluku": {
       "spellings": ["Maluku"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "malutu-mabe": {
       "spellings": ["Malutu mabe"],
@@ -2434,27 +2393,27 @@
     },
     "mamya": {
       "spellings": ["Mamya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mand_e_": {
       "spellings": ["Mandē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "manga": {
       "spellings": ["Manga"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mangongola": {
       "spellings": ["Mangongola"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "many_a_": {
       "spellings": ["Manyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "many_a_ng_a_": {
       "spellings": ["Manyângâ"],
-      "usedIn": ["src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "manyung_a_": {
       "spellings": ["manyungâ"],
@@ -2462,117 +2421,111 @@
     },
     "maso": {
       "spellings": ["Maso"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mat_a_": {
       "spellings": ["Matâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mat_a_nd_e_": {
       "spellings": ["Matândē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mav_e_": {
       "spellings": ["Mavē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mavenda": {
       "spellings": ["Mavenda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mavule": {
       "spellings": ["Mavule"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mavy_a_": {
       "spellings": ["Mavyâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mb_a_ng_a_": {
       "spellings": ["Mbângâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mb_e_ba": {
       "spellings": ["mbēba"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_a": {
       "spellings": ["Mbūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mb_u_edi": {
       "spellings": ["mbūedi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_ei": {
       "spellings": ["mbūei"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "mb_u_engamb_u_enga": {
       "spellings": ["mbūengambūenga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mb_u_ia": {
       "spellings": ["mbūia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "mbadi": {
       "spellings": ["Mbadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mbai": {
       "spellings": ["Mbai"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mbalanga": {
       "spellings": ["Mbalanga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mbambai": {
       "spellings": ["mbambai"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbana": {
       "spellings": ["Mbana"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mbanja": {
       "spellings": ["Mbanja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mbeya": {
       "spellings": ["mbeya"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbimba": {
       "spellings": ["mbimba"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mboi": {
-      "spellings": ["mboi", "Mboi"],
+      "spellings": ["Mboi", "mboi"],
       "usedIn": [
-        "src/data/chapter-1/diphthongs.json",
-        "src/views/chapter-1/DiphthongsSection.vue",
+        "src/data/lexicon/nouns.json",
+        "src/data/sections/ch-1/diphthongs.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
     "mboka": {
       "spellings": ["mboka"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbuja": {
       "spellings": ["Mbuja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mbute": {
       "spellings": ["mbute"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "mbyu": {
       "spellings": ["mbyu"],
@@ -2580,7 +2533,7 @@
     },
     "meb_a_ki": {
       "spellings": ["Mebâki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meb_a_ki-meyamu": {
       "spellings": ["Mebâki meyamu"],
@@ -2588,91 +2541,91 @@
     },
     "meb_a_nd_a_": {
       "spellings": ["Mebândâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meb_e_di": {
       "spellings": ["Mebēdi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meb_u_a": {
       "spellings": ["Mebūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebaha": {
       "spellings": ["Mebaha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebalani": {
       "spellings": ["Mebalani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebanga": {
       "spellings": ["Mebanga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebango": {
       "spellings": ["Mebango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebendi": {
       "spellings": ["Mebendi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mebulubulu": {
       "spellings": ["Mebulubulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "med_a_mb_e_": {
       "spellings": ["Medâmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "medumbu": {
       "spellings": ["Medumbu"],
-      "usedIn": ["src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "megangano": {
       "spellings": ["Megangano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "megulu": {
       "spellings": ["Megulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meh_a_": {
       "spellings": ["Mehâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meh_e_k_e_": {
       "spellings": ["Mehēkē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "meh_e_ng_e_": {
       "spellings": ["Mehēngē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mehiha": {
       "spellings": ["Mehiha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mehinganakano": {
       "spellings": ["Mehinganakano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mehingi": {
       "spellings": ["Mehingi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "melangi": {
       "spellings": ["Melangi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "melendi": {
       "spellings": ["Melendi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "melohi": {
       "spellings": ["Melohi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "met_e_-mebe": {
       "spellings": ["Metē mebe"],
@@ -2692,111 +2645,107 @@
     },
     "mi_a_": {
       "spellings": ["Miâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mi_e_ngi": {
       "spellings": ["Miēngi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mi_e_ni": {
       "spellings": ["Miēni"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miadi": {
       "spellings": ["Miadi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miahi": {
       "spellings": ["Miahi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miako": {
       "spellings": ["Miako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mialika": {
       "spellings": ["Mialika"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mialo": {
       "spellings": ["Mialo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miambo": {
       "spellings": ["Miambo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mianga": {
       "spellings": ["Mianga"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/NounClass3.vue",
-        "src/views/chapter-2/NounClass4.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mianjo": {
       "spellings": ["Mianjo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miay_e_": {
       "spellings": ["Miayē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mib_a_bu": {
       "spellings": ["Mibâbu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miba": {
       "spellings": ["Miba"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "mibako": {
       "spellings": ["Mibako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mie": {
       "spellings": ["Mie"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mieka": {
       "spellings": ["Mieka"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miemba": {
       "spellings": ["Miemba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mih_a_": {
       "spellings": ["Mihâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miidi": {
       "spellings": ["Miidi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miindi": {
       "spellings": ["Miindi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miiya": {
       "spellings": ["Miiya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mijo_u_a": {
       "spellings": ["Mijoūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mina": {
       "spellings": ["Mina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mingomo": {
       "spellings": ["Mingomo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mioho": {
       "spellings": ["Mioho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mioho-meyamu": {
       "spellings": ["Mioho meyamu"],
@@ -2804,15 +2753,15 @@
     },
     "miok_a_": {
       "spellings": ["Miokâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miolo": {
       "spellings": ["Miolo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miongo": {
       "spellings": ["Miongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "miova-mebe": {
       "spellings": ["Miova mebe"],
@@ -2832,27 +2781,27 @@
     },
     "miva": {
       "spellings": ["Miva"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass4.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "moda": {
       "spellings": ["Moda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass2.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mohano": {
       "spellings": ["Mohano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "molo": {
       "spellings": ["Molo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "momo": {
       "spellings": ["Momo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "monda": {
       "spellings": ["Monda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "mondi-ube": {
       "spellings": ["Mondi ube"],
@@ -2872,11 +2821,11 @@
     },
     "mongolu": {
       "spellings": ["Mongolu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "moto": {
       "spellings": ["Moto"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "moto-uyamu": {
       "spellings": ["Moto uyamu"],
@@ -2884,16 +2833,17 @@
     },
     "motoba": {
       "spellings": ["Motoba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "muajo": {
       "spellings": ["Muajo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "myadi": {
       "spellings": ["myadi", "Myadi"],
       "usedIn": [
         "src/data/chapter-1/alphabet.json",
+        "src/data/lexicon/nouns.json",
         "src/views/chapter-1/AlphabetSection.vue",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
@@ -2904,24 +2854,19 @@
     },
     "nd_a_l_a_": {
       "spellings": ["ndâlâ"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nd_a_t_a_": {
       "spellings": ["Ndâtâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nd_e_mb_e_": {
       "spellings": ["ndēmbē"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndabo": {
-      "spellings": ["ndabo", "Ndabo"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Ndabo", "ndabo"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ndabo-eyamu": {
       "spellings": ["Ndabo eyamu"],
@@ -2933,24 +2878,19 @@
     },
     "ndaga": {
       "spellings": ["Ndaga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndembo": {
-      "spellings": ["ndembo", "Ndembo"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Ndembo", "ndembo"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ndiba": {
       "spellings": ["Ndiba"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "nditi": {
       "spellings": ["nditi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndo-ebe": {
       "spellings": ["Ndo ebe"],
@@ -2986,399 +2926,363 @@
     },
     "ndoba": {
       "spellings": ["Ndoba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndomi": {
       "spellings": ["ndomi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ndomina": {
       "spellings": ["Ndomina"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndonda": {
       "spellings": ["Ndonda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndonga": {
       "spellings": ["Ndonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndongo": {
       "spellings": ["Ndongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ndumba": {
-      "spellings": ["ndumba", "Ndumba"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Ndumba", "ndumba"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "nenge": {
       "spellings": ["Nenge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ng_a_mbi": {
       "spellings": ["Ngâmbi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ng_a_nd_a_": {
       "spellings": ["Ngândâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ng_a_nde": {
-      "spellings": ["ngânde", "Ngânde"],
+      "spellings": ["Ngânde", "ngânde"],
       "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
+        "src/data/lexicon/nouns.json",
+        "src/data/sections/ch-1/consonants.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
     "ng_a_u_e_": {
       "spellings": ["Ngâūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ng_e_b_e_": {
       "spellings": ["ngēbē"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ng_u_ae": {
       "spellings": ["ngūae"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ng_u_ahi": {
       "spellings": ["ngūahi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ng_u_anjang_u_anja": {
       "spellings": ["Ngūanjangūanja"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "ng_u_ea": {
       "spellings": ["ngūea"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngabo": {
       "spellings": ["Ngabo"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "ngadi": {
       "spellings": ["ngadi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngaho": {
       "spellings": ["Ngaho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngama": {
       "spellings": ["Ngama"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngambi": {
       "spellings": ["Ngambi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngandi": {
       "spellings": ["Ngandi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngando": {
       "spellings": ["Ngando"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nganga": {
       "spellings": ["Nganga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngani": {
       "spellings": ["Ngani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nganiyango": {
       "spellings": ["Nganiyango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngebo": {
       "spellings": ["ngebo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngejangeja": {
       "spellings": ["Ngejangeja"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngenga": {
       "spellings": ["Ngenga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nginga": {
       "spellings": ["nginga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngomba": {
       "spellings": ["Ngomba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngonda": {
       "spellings": ["ngonda"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ngonga": {
       "spellings": ["Ngonga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ngudi": {
-      "spellings": ["ngudi", "Ngudi"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Ngudi", "ngudi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "ngumu": {
       "spellings": ["Ngumu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nj_a_ku": {
       "spellings": ["njâku"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nj_e_ngi": {
       "spellings": ["njēngi"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njadi": {
-      "spellings": ["njadi", "Njadi"],
-      "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "spellings": ["Njadi", "njadi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/data/sections/ch-1/consonants.json"]
     },
     "njea": {
-      "spellings": ["njea", "Njea"],
+      "spellings": ["Njea", "njea"],
       "usedIn": [
-        "src/data/chapter-1/consonants.json",
-        "src/views/chapter-1/ConsonantsSection.vue",
+        "src/data/lexicon/nouns.json",
+        "src/data/sections/ch-1/consonants.json",
         "src/views/chapter-2/IrregularNouns.vue"
       ]
     },
     "njimbili": {
       "spellings": ["njimbili"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njongo": {
       "spellings": ["njongo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "njunga": {
       "spellings": ["njunga"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_a_nd_a_": {
       "spellings": ["nyândâ"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_e_l_e_li": {
       "spellings": ["nyēlēli"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "ny_e_nj_e_": {
       "spellings": ["Nyēnjē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ny_e_vi": {
       "spellings": ["Nyēvi"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "nya_u_e": {
       "spellings": ["nyaūe"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "nyanda": {
       "spellings": ["nyanda"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyang_u_a-dit_a_": {
       "spellings": ["Nyangūa ditâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nyati": {
       "spellings": ["Nyati"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "nyele": {
       "spellings": ["nyele"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyeti": {
       "spellings": ["Nyeti"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "nyilo": {
       "spellings": ["nyilo"],
-      "usedIn": ["src/data/chapter-1/consonants.json", "src/views/chapter-1/ConsonantsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/consonants.json"]
     },
     "nyu_u_e_": {
       "spellings": ["Nyuūē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "p_a_k_u_e_p_a_k_u_e_": {
       "spellings": ["Pâkūēpâkūē"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "p_a_l_a_l_a_p_a_l_a_l_a_": {
       "spellings": ["Pâlâlâpâlâlâ"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_a_nd_a_": {
       "spellings": ["Pândâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "p_e_kejomu": {
       "spellings": ["Pēkejomu"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_e_ki-p_e_ki": {
       "spellings": ["Pēki Pēki"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "p_u_isi": {
       "spellings": ["Pūisi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pago": {
       "spellings": ["Pago"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "paha": {
       "spellings": ["Paha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "paia": {
       "spellings": ["paia"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "pala": {
       "spellings": ["Pala"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "panga": {
       "spellings": ["Panga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pani": {
       "spellings": ["Pani"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "pavo": {
       "spellings": ["Pavo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pemb_e_": {
       "spellings": ["Pembē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "penda": {
       "spellings": ["Penda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "penge": {
       "spellings": ["Penge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "peta": {
       "spellings": ["Peta"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "pika": {
       "spellings": ["Pika"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pimba": {
       "spellings": ["Pimba"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pita": {
       "spellings": ["Pita"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "pivi": {
       "spellings": ["Pivi"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "pogo": {
       "spellings": ["Pogo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pojaengo": {
       "spellings": ["Pojaengo"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "poke": {
       "spellings": ["Poke"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "poli": {
       "spellings": ["Poli"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "poso": {
       "spellings": ["Poso"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "potapota": {
       "spellings": ["Potapota"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "poti": {
       "spellings": ["Poti"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "pudi": {
       "spellings": ["Pudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "sago": {
       "spellings": ["Sago"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "sango": {
       "spellings": ["Sango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "senge": {
       "spellings": ["Senge"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "sikulu": {
       "spellings": ["Sikulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "t_a_nd_a_k_a_": {
       "spellings": ["tândâkâ", "Tândâkâ"],
@@ -3390,7 +3294,7 @@
     },
     "t_a_ndal_a_nda": {
       "spellings": ["Tândalânda"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "ta": {
       "spellings": ["ta"],
@@ -3398,11 +3302,11 @@
     },
     "tagulu": {
       "spellings": ["Tagulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tanana": {
       "spellings": ["Tanana"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "tataka": {
       "spellings": ["tataka"],
@@ -3410,66 +3314,55 @@
     },
     "tekai": {
       "spellings": ["tekai"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "tina": {
       "spellings": ["Tina"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "tito": {
       "spellings": ["Tito"],
-      "usedIn": [
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-2/IrregularNouns.vue",
-        "src/views/chapter-2/NounClass7.vue"
-      ]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "toko": {
       "spellings": ["Toko"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tolongo": {
       "spellings": ["Tolongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tombo": {
       "spellings": ["Tombo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tonda": {
       "spellings": ["Tonda"],
-      "usedIn": ["src/views/chapter-2/IrregularNouns.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/IrregularNouns.vue"]
     },
     "tongo": {
       "spellings": ["Tongo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tudi": {
       "spellings": ["Tudi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tuma": {
       "spellings": ["Tuma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tungu": {
       "spellings": ["Tungu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "tyoli": {
       "spellings": ["Tyoli"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass7.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "u_u_aka": {
       "spellings": ["uūaka"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "ub_a_ki-uyamu": {
       "spellings": ["Ubâki uyamu"],
@@ -3477,27 +3370,27 @@
     },
     "ubapami": {
       "spellings": ["Ubapami"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass5.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "ukali": {
-      "spellings": ["ukali", "Ukali"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ukali", "ukali"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ukuge": {
       "spellings": ["Ukuge"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "ulangi": {
-      "spellings": ["ulangi", "Ulangi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ulangi", "ulangi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ulendi": {
-      "spellings": ["ulendi", "Ulendi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ulendi", "ulendi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ulongi": {
-      "spellings": ["ulongi", "Ulongi"],
-      "usedIn": ["src/views/chapter-2/VerbalNouns.vue"]
+      "spellings": ["Ulongi", "ulongi"],
+      "usedIn": ["src/data/lexicon/nouns.json", "src/views/chapter-2/VerbalNouns.vue"]
     },
     "ut_e_-ube": {
       "spellings": ["Utē ube"],
@@ -3517,34 +3410,31 @@
     },
     "uvangu_u_i": {
       "spellings": ["Uvanguūi"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "veivei": {
       "spellings": ["Veivei"],
-      "usedIn": ["src/data/chapter-3/invariable-adjectives.json"]
+      "usedIn": ["src/data/lexicon/adjectives.json"]
     },
     "veya": {
       "spellings": ["Veya"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vi_a_": {
       "spellings": ["Viâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "viaha": {
       "spellings": ["Viaha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vianga": {
       "spellings": ["Vianga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "viho": {
       "spellings": ["Viho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "viho-vibe": {
       "spellings": ["Viho vibe"],
@@ -3564,27 +3454,27 @@
     },
     "vijo": {
       "spellings": ["Vijo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vilolombo": {
       "spellings": ["Vilolombo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vingangambi": {
       "spellings": ["Vingangambi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vingunguhu": {
       "spellings": ["Vingunguhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vipupuhu": {
       "spellings": ["Vipupuhu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vit_u_a": {
       "spellings": ["Vitūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vitua-viyamu": {
       "spellings": ["Vitua viyamu"],
@@ -3592,19 +3482,19 @@
     },
     "viu": {
       "spellings": ["viu"],
-      "usedIn": ["src/data/chapter-1/diphthongs.json", "src/views/chapter-1/DiphthongsSection.vue"]
+      "usedIn": ["src/data/sections/ch-1/diphthongs.json"]
     },
     "viyembo": {
       "spellings": ["Viyembo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "viyohi": {
       "spellings": ["Viyohi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "viyonda": {
       "spellings": ["Viyonda"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass6.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "vy_a_": {
       "spellings": ["vyâ"],
@@ -3616,100 +3506,99 @@
     },
     "wb_a_ki": {
       "spellings": ["Wbâki"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wb_a_nd_a_": {
       "spellings": ["Wbândâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wb_e_di": {
       "spellings": ["Wbēdi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wb_u_a": {
       "spellings": ["Wbūa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbaha": {
       "spellings": ["Wbaha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbalani": {
       "spellings": ["Wbalani"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbanga": {
       "spellings": ["Wbanga"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbango": {
       "spellings": ["Wbango"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbendi": {
       "spellings": ["Wbendi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wbulubulu": {
       "spellings": ["Wbulubulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wd_a_mb_e_": {
       "spellings": ["Wdâmbē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wdumbu": {
       "spellings": ["Wdumbu"],
-      "usedIn": ["src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wgangano": {
       "spellings": ["Wgangano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wgulu": {
       "spellings": ["Wgulu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wh_a_": {
       "spellings": ["Whâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wh_e_k_e_": {
       "spellings": ["Whēkē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "wh_e_ng_e_": {
       "spellings": ["Whēngē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "whiha": {
       "spellings": ["Whiha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "whinganakano": {
       "spellings": ["Whinganakano"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "whingi": {
       "spellings": ["Whingi"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass3.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "y_a_k_a_": {
       "spellings": ["yâkâ", "Yâkâ"],
       "usedIn": [
         "src/data/chapter-1/alphabet.json",
-        "src/data/chapter-2/noun-practice-deck.json",
-        "src/views/chapter-1/AlphabetSection.vue",
-        "src/views/chapter-2/NounClass1.vue"
+        "src/data/lexicon/nouns.json",
+        "src/views/chapter-1/AlphabetSection.vue"
       ]
     },
     "y_e_j_a_": {
       "spellings": ["Yējâ"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "y_e_k_e_": {
       "spellings": ["Yēkē"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "y_e_m_e_": {
       "spellings": ["yēmē"],
@@ -3717,7 +3606,7 @@
     },
     "yaho": {
       "spellings": ["Yaho"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yakia": {
       "spellings": ["yakia"],
@@ -3725,42 +3614,39 @@
     },
     "yako": {
       "spellings": ["Yako"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yalo": {
       "spellings": ["Yalo"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yambe": {
       "spellings": ["Yambe"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yapa": {
       "spellings": ["Yapa"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yima": {
       "spellings": ["Yima"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yo_u_ak_e_": {
       "spellings": ["yoūakē"],
-      "usedIn": [
-        "src/data/chapter-1/triphthongs.json",
-        "src/views/chapter-1/TriphthongsSection.vue"
-      ]
+      "usedIn": ["src/data/sections/ch-1/triphthongs.json"]
     },
     "yoha": {
       "spellings": ["Yoha"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yoma": {
       "spellings": ["Yoma"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yomu": {
       "spellings": ["Yomu"],
-      "usedIn": ["src/data/chapter-2/noun-practice-deck.json", "src/views/chapter-2/NounClass1.vue"]
+      "usedIn": ["src/data/lexicon/nouns.json"]
     },
     "yongo": {
       "spellings": ["yongo"],

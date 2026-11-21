@@ -145,11 +145,13 @@ import {
   LIVING_DICTIONARY_ENTRY,
   LIVING_DICTIONARY_SEARCH
 } from '@/config/external'
+import { audioUrlFor, dictionarySearchUrl, dictionaryUrlFor } from '@/utils/linkRules'
+import { audioState, play } from '@/services/audioPlayer'
 
 const ROWS_PER_PAGE = 50
 const EDITABLE_FIELDS = ['word', 'livingDictionaryId', 'audio', 'audioFile', 'notes']
 const LIVING_DICTIONARY_ID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i
-/** Address of the save endpoint added to the dev server in vue.config.js. */
+/** Address of the save endpoint added to the dev server in vite.config.mjs. */
 const SAVE_ENDPOINT = '/__dev/word-registry'
 /**
  * Saving rewrites the registry file, and the dev server then reloads this page.
@@ -226,7 +228,7 @@ export default {
       const savedMessage = sessionStorage.getItem(SAVED_MESSAGE_KEY)
       if (savedMessage) this.message = { type: 'success', text: savedMessage }
       sessionStorage.removeItem(SAVED_MESSAGE_KEY)
-    } catch (error) {
+    } catch {
       // Storage can be blocked (private mode); the message is only a convenience.
     }
   },
@@ -265,20 +267,26 @@ export default {
       if (match) row.livingDictionaryId = match[0].toLowerCase()
       this.markChanged(row)
     },
+    // Same link rules as the public pages (src/utils/linkRules.js).
     searchUrl(row) {
-      const query = JSON.stringify({ query: String(row.word).toLowerCase() })
-      return `${LIVING_DICTIONARY_SEARCH}?q=${encodeURIComponent(query)}`
+      return dictionarySearchUrl(row.word, LIVING_DICTIONARY_SEARCH)
     },
     entryUrl(row) {
-      return `${LIVING_DICTIONARY_ENTRY}/${row.livingDictionaryId}`
+      return dictionaryUrlFor(row.word, row, {
+        entryBase: LIVING_DICTIONARY_ENTRY,
+        searchBase: LIVING_DICTIONARY_SEARCH
+      })
     },
-    playAudio(row) {
-      new Audio(`${CLOUDINARY_BASE}/${row.audioFile || row.key}.mp3`).play().catch(() => {
+    // Shared player (src/services/audioPlayer.js): stops any other sound first.
+    async playAudio(row) {
+      const url = audioUrlFor(row.key, row, CLOUDINARY_BASE)
+      await play(url)
+      if (audioState.error === url) {
         this.message = {
           type: 'error',
           text: `No se encontró el audio de «${row.word}» en Cloudinary (${row.audioFile || row.key}.mp3).`
         }
-      })
+      }
     },
     shortFileName(file) {
       return file.split('/').pop()
@@ -300,7 +308,7 @@ export default {
         this.message = { type: 'success', text }
         try {
           sessionStorage.setItem(SAVED_MESSAGE_KEY, text)
-        } catch (error) {
+        } catch {
           // Ignore: see SAVED_MESSAGE_KEY.
         }
         this.savedValues = Object.freeze(this.registryWords())
@@ -345,8 +353,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/styles/variables';
-@import '@/styles/mixins';
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
 
 .word-admin {
   max-width: 100%;

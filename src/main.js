@@ -6,6 +6,7 @@ import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import router from './router'
+import { localized } from './utils/localized'
 import es from './locales/es.json'
 import en from './locales/en.json'
 import fr from './locales/fr.json'
@@ -22,4 +23,11 @@ const i18n = createI18n({
   messages: { es, en, fr }
 })
 
-createApp(App).use(router).use(i18n).mount('#app')
+const app = createApp(App)
+
+// `$localized(text)` in any template: shows a translated text { es, en, fr } in the visitor's
+// language, falling back to Spanish (src/utils/localized.js). Reading `locale.value` here makes
+// the page update by itself when the visitor switches language.
+app.config.globalProperties.$localized = (text) => localized(text, i18n.global.locale.value)
+
+app.use(router).use(i18n).mount('#app')

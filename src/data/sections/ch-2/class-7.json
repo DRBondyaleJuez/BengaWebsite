@@ -1,0 +1,189 @@
+{
+  "id": "ch2-noun-class-7",
+  "chapter": 2,
+  "layout": "noun-class",
+  "title": {
+    "es": "Clase 7"
+  },
+  "subtitle": {
+    "es": "Singular = Plural"
+  },
+  "source": {
+    "pdfPage": "13-14"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "id": "pattern",
+      "text": {
+        "es": "Patrón de Transformación"
+      }
+    },
+    {
+      "type": "pattern",
+      "from": "hako / tuma / mbadi / ndabo / nganga / sango",
+      "to": "hako / tuma / mbadi / ndabo / nganga / sango",
+      "description": {
+        "es": "Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número."
+      }
+    },
+    {
+      "type": "heading",
+      "id": "examples",
+      "text": {
+        "es": "Ejemplos del libro ({count})"
+      }
+    },
+    {
+      "type": "examples",
+      "layout": "single",
+      "entries": [
+        "fala",
+        "fato",
+        "fula",
+        "dyate",
+        "hako",
+        "hapi",
+        "ho_u_e",
+        "j_a_ng_a_",
+        "jonda",
+        "jumba",
+        "kabala",
+        "k_a_t_a_",
+        "kono",
+        "kuma",
+        "m_a_k_a_",
+        "pago",
+        "paha",
+        "panga",
+        "tagulu",
+        "tina",
+        "tito",
+        "toko",
+        "tolongo",
+        "tombo",
+        "tongo",
+        "tudi",
+        "tuma",
+        "tungu",
+        "tyoli",
+        "mbadi",
+        "mbalanga",
+        "mbanja",
+        "mb_a_ng_a_",
+        "mbuja",
+        "mb_u_a",
+        "ndabo",
+        "ndaga",
+        "nd_a_t_a_",
+        "ndembo",
+        "ndoba",
+        "ndomina",
+        "ndonda",
+        "ndonga",
+        "ndongo",
+        "ndumba",
+        "penge",
+        "pani",
+        "pavo",
+        "p_a_nd_a_",
+        "penda",
+        "pemb_e_",
+        "pika",
+        "pimba",
+        "pita",
+        "pogo",
+        "poke",
+        "poti",
+        "pudi",
+        "p_u_isi",
+        "sago",
+        "sango",
+        "senge",
+        "sikulu",
+        "nenge",
+        "ngabo",
+        "ngaho",
+        "ngama",
+        "ngambi",
+        "ngando",
+        "ngandi",
+        "ngani",
+        "nganga",
+        "nganiyango",
+        "ng_a_mbi",
+        "ng_a_nd_a_",
+        "ng_a_u_e_",
+        "ngejangeja",
+        "ngenga",
+        "ngomba",
+        "ngonga",
+        "ngudi",
+        "ngumu",
+        "njadi",
+        "njadi~2",
+        "nyang_u_a-dit_a_",
+        "nyu_u_e_",
+        "nyeti",
+        "ny_e_nj_e_"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "concepts",
+      "text": {
+        "es": "Conceptos Clave"
+      }
+    },
+    {
+      "type": "concepts",
+      "items": [
+        {
+          "title": {
+            "es": "Invariable"
+          },
+          "text": {
+            "es": "En esta clase, la forma del nombre no cambia entre singular y plural."
+          }
+        },
+        {
+          "title": {
+            "es": "Contexto gramatical"
+          },
+          "text": {
+            "es": "El número se infiere por los modificadores, los adjetivos o el contexto de la frase."
+          }
+        },
+        {
+          "title": {
+            "es": "Gran grupo"
+          },
+          "text": {
+            "es": "Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla."
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "practice",
+      "text": {
+        "es": "Para Practicar"
+      }
+    },
+    {
+      "type": "practice",
+      "items": [
+        {
+          "es": "Observa que la forma del nombre no cambia entre singular y plural."
+        },
+        {
+          "es": "Busca el número por el adjetivo o por el contexto en la oración."
+        },
+        {
+          "es": "Memoriza ejemplos comunes para reconocer la clase rápidamente."
+        }
+      ]
+    }
+  ]
+}

@@ -3,12 +3,19 @@
     "title": "Portal de Aprendizaje Benga",
     "subtitle": "Basado en la gramática de Salvado y Cos"
   },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "selectLanguage": "Seleccionar idioma"
+  },
   "nav": {
     "home": "Inicio",
     "chapters": "Capítulos",
     "about": "Sobre el Autor",
     "resources": "Recursos",
-    "download": "Descargar PDF"
+    "download": "Descargar PDF",
+    "pageNavigation": "Navegación entre páginas"
   },
   "chapters": {
     "chapter1": {
@@ -24,13 +31,13 @@
       "title": "Capítulo 2: Sustantivos",
       "sections": {
         "intro": "Clasificación de los Nombres",
-        "class1": "Primera Clase (e → be)",
-        "class2": "Segunda Clase (i/di → ma)",
-        "class3": "Tercera Clase (u/mū → me/mi)",
-        "class4": "Cuarta Clase (bo/bū → mi)",
-        "class5": "Quinta Clase (mo → ba)",
-        "class6": "Sexta Clase (v → l)",
-        "class7": "Séptima Clase (invariables)",
+        "class1": "Clase 1 (e → be)",
+        "class2": "Clase 2 (i/di → ma)",
+        "class3": "Clase 3 (u/mū → me/mi)",
+        "class4": "Clase 4 (bo/bū → mi)",
+        "class5": "Clase 5 (mo → ba)",
+        "class6": "Clase 6 (v → l)",
+        "class7": "Clase 7 (invariables)",
         "irregular": "Nombres Irregulares",
         "verbal": "Nombres Derivados",
         "noun-card-practice": "Práctica Interactiva"
@@ -78,7 +85,9 @@
     "importantNote": "Nota Importante",
     "firstConsonantRule": "Regla de la Primera Consonante",
     "nasalSounds": "Sonidos Nasales",
-    "greekExample": "Ejemplo"
+    "greekExample": "Ejemplo",
+    "showAll": "Ver todas ({count})",
+    "showFewer": "Mostrar menos"
   },
   "audio": {
     "play": "Reproducir pronunciación",
