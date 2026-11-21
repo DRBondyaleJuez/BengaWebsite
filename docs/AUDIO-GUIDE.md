@@ -64,6 +64,24 @@ Words that appear on no page yet (`usedIn` empty) can be left for later.
 
 Only words marked `recorded` get a play button, so the site never links to a missing file.
 
+## 3b. The easy way: /admin/audios
+
+While `npm run serve` is running, open **http://localhost:8080/admin/audios** (it does not exist in
+the published site). With the three Cloudinary keys in `.env.local` (step 3.2) it:
+
+- lists every word and phrase and checks which have a file in Cloudinary (and whether the
+  registry agrees; «Marcar como grabadas las que ya están» fixes the registry in one click),
+- plays the file of each word,
+- **records** a word with the microphone (allow it in the browser), lets you listen to the take,
+  and **uploads** it under the word's audio id, replacing an older one; or uploads an audio file
+  you already have (**Subir archivo**). The word is marked `recorded` automatically,
+- shows the space used: the size of the audio files and the account storage and credits Cloudinary
+  reports (it cannot measure one folder on its own).
+
+The browser records WebM/Opus (Safari: MP4); Cloudinary stores it and converts it to MP3 when the
+site asks for `<audioId>.mp3`, so no editing is needed. The key and secret stay on this computer:
+the page talks to the dev server (`scripts/lib/audio-admin.mjs`), which talks to Cloudinary.
+
 ## 4. Replacing a recording
 
 Upload the new file with the **same name** and _Overwrite_ on. Cloudinary caches files: if the old

@@ -15,8 +15,6 @@
  * Guide: docs/AUDIO-GUIDE.md
  */
 import fs from 'node:fs'
-import path from 'node:path'
-import { ROOT } from './lib/collect-words.mjs'
 import {
   loadRegistry,
   saveRegistry,
@@ -25,54 +23,12 @@ import {
   REGISTRY_FILE
 } from './lib/registry.mjs'
 import { planAudioSync } from './lib/audio-sync.mjs'
+import { cloudinaryConfig, listAudioFiles, MISSING_CONFIG_MESSAGE } from './lib/cloudinary.mjs'
 
 const args = process.argv.slice(2)
 const CHECK_ONLY = args.includes('--check')
 const UNMARK = args.includes('--unmark')
 const listFile = args.includes('--list') ? args[args.indexOf('--list') + 1] : null
-
-/** Reads KEY=value lines of .env.local (without overriding variables that are already set). */
-function loadEnvLocal() {
-  const file = path.join(ROOT, '.env.local')
-  if (!fs.existsSync(file)) return
-  for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
-    const match = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/)
-    if (match && !(match[1] in process.env))
-      process.env[match[1]] = match[2].replace(/^["']|["']$/g, '')
-  }
-}
-
-/** Public ids of every audio file in the Cloudinary account (Admin API, 500 per page). */
-async function listCloudinaryFiles() {
-  const {
-    CLOUDINARY_CLOUD_NAME: cloud,
-    CLOUDINARY_API_KEY: key,
-    CLOUDINARY_API_SECRET: secret
-  } = process.env
-  if (!cloud || !key || !secret) {
-    throw new Error(
-      'Missing CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY or CLOUDINARY_API_SECRET in .env.local ' +
-        '(see the header of scripts/audio-sync.mjs), or use --list files.txt'
-    )
-  }
-  const auth = 'Basic ' + Buffer.from(`${key}:${secret}`).toString('base64')
-  const files = []
-  let cursor = null
-  do {
-    const query = new URLSearchParams({ max_results: '500' })
-    if (process.env.CLOUDINARY_FOLDER) query.set('prefix', process.env.CLOUDINARY_FOLDER)
-    if (cursor) query.set('next_cursor', cursor)
-    const url = `https://api.cloudinary.com/v1_1/${cloud}/resources/video/upload?${query}`
-    const response = await fetch(url, { headers: { Authorization: auth } })
-    if (!response.ok) {
-      throw new Error(`Cloudinary answered ${response.status} ${response.statusText}`)
-    }
-    const page = await response.json()
-    files.push(...page.resources.map((resource) => resource.public_id))
-    cursor = page.next_cursor || null
-  } while (cursor)
-  return files
-}
 
 function printList(title, items, limit = 30) {
   if (!items.length) return
@@ -89,8 +45,8 @@ async function main() {
       .split(/\r?\n/)
       .filter((line) => line.trim())
   } else {
-    loadEnvLocal()
-    files = await listCloudinaryFiles()
+    if (!cloudinaryConfig()) throw new Error(MISSING_CONFIG_MESSAGE)
+    files = (await listAudioFiles()).map((file) => file.id)
   }
 
   const registry = loadRegistry()
