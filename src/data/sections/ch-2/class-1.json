@@ -4,11 +4,13 @@
   "layout": "noun-class",
   "title": {
     "es": "Clase 1",
-    "en": "Class 1"
+    "en": "Class 1",
+    "fr": "Classe 1"
   },
   "subtitle": {
     "es": "e → be / y → bi",
-    "en": "e → be / y → bi"
+    "en": "e → be / y → bi",
+    "fr": "e → be / y → bi"
   },
   "source": {
     "pdfPage": "8-9"
@@ -19,7 +21,8 @@
       "id": "pattern",
       "text": {
         "es": "Patrón de Transformación",
-        "en": "Transformation Pattern"
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -28,7 +31,8 @@
       "to": "be-",
       "description": {
         "es": "La vocal inicial 'e' se reemplaza con el prefijo 'be-' en forma plural",
-        "en": "The initial vowel 'e' is replaced by the prefix 'be-' in the plural form"
+        "en": "The initial vowel 'e' is replaced by the prefix 'be-' in the plural form",
+        "fr": "La voyelle initiale « e » est remplacée par le préfixe « be- » au pluriel"
       }
     },
     {
@@ -36,7 +40,8 @@
       "id": "examples",
       "text": {
         "es": "Ejemplos Principales",
-        "en": "Main Examples"
+        "en": "Main Examples",
+        "fr": "Exemples principaux"
       }
     },
     {
@@ -57,14 +62,16 @@
       "id": "variants",
       "text": {
         "es": "Patrón Variant: Palabras que comienzan con 'y'",
-        "en": "Variant Pattern: Words beginning with 'y'"
+        "en": "Variant Pattern: Words beginning with 'y'",
+        "fr": "Schéma variant : mots commençant par « y »"
       }
     },
     {
       "type": "paragraph",
       "text": {
         "es": "Los nombres que comienzan con 'y' siguen la misma regla, pero transformando 'y' en 'bi' en plural:",
-        "en": "Nouns beginning with 'y' follow the same rule, but 'y' becomes 'bi' in the plural:"
+        "en": "Nouns beginning with 'y' follow the same rule, but 'y' becomes 'bi' in the plural:",
+        "fr": "Les noms commençant par « y » suivent la même règle, mais « y » devient « bi » au pluriel :"
       }
     },
     {
@@ -95,7 +102,8 @@
       "id": "concordance",
       "text": {
         "es": "Concordancia con Adjetivos",
-        "en": "Agreement with Adjectives"
+        "en": "Agreement with Adjectives",
+        "fr": "Accord avec les adjectifs"
       }
     },
     {
@@ -103,42 +111,49 @@
       "columns": [
         {
           "es": "Número",
-          "en": "Number"
+          "en": "Number",
+          "fr": "Nombre"
         },
         {
           "es": "Ejemplo",
-          "en": "Example"
+          "en": "Example",
+          "fr": "Exemple"
         },
         {
           "es": "Traducción",
-          "en": "Translation"
+          "en": "Translation",
+          "fr": "Traduction"
         }
       ],
       "rows": [
         [
           {
             "es": "Singular",
-            "en": "Singular"
+            "en": "Singular",
+            "fr": "Singulier"
           },
           {
             "benga": "Epokolo eyamu"
           },
           {
             "es": "Sombrero bueno",
-            "en": "Good hat"
+            "en": "Good hat",
+            "fr": "Bon chapeau"
           }
         ],
         [
           {
             "es": "Plural",
-            "en": "Plural"
+            "en": "Plural",
+            "fr": "Pluriel"
           },
           {
             "benga": "Bepokolo beyamu"
           },
           {
             "es": "Sombreros buenos",
-            "en": "Good hats"
+            "en": "Good hats",
+            "fr": "Bons chapeaux"
           }
         ]
       ]
@@ -148,7 +163,8 @@
       "variant": "info",
       "text": {
         "es": "La forma del adjetivo cambia junto con el nombre, manteniéndose la concordancia",
-        "en": "The adjective form changes along with the noun, keeping agreement"
+        "en": "The adjective form changes along with the noun, keeping agreement",
+        "fr": "La forme de l’adjectif change en même temps que le nom, ce qui maintient l’accord"
       }
     },
     {
@@ -156,7 +172,8 @@
       "id": "concepts",
       "text": {
         "es": "Conceptos Clave",
-        "en": "Key Concepts"
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -165,31 +182,37 @@
         {
           "title": {
             "es": "Cambio Radical Simple",
-            "en": "Simple Radical Change"
+            "en": "Simple Radical Change",
+            "fr": "Changement radical simple"
           },
           "text": {
             "es": "Esta es la clase más simple porque el cambio es predecible y consistente",
-            "en": "This is the simplest class because the change is predictable and consistent"
+            "en": "This is the simplest class because the change is predictable and consistent",
+            "fr": "C’est la classe la plus simple, car le changement est prévisible et constant"
           }
         },
         {
           "title": {
             "es": "Patrón e → be",
-            "en": "Pattern e → be"
+            "en": "Pattern e → be",
+            "fr": "Schéma e → be"
           },
           "text": {
             "es": "Todos los nombres de esta clase siguen este mismo patrón sin excepción",
-            "en": "All nouns in this class follow this same pattern without exception"
+            "en": "All nouns in this class follow this same pattern without exception",
+            "fr": "Tous les noms de cette classe suivent ce même schéma, sans exception"
           }
         },
         {
           "title": {
             "es": "Variante y → bi",
-            "en": "Variant y → bi"
+            "en": "Variant y → bi",
+            "fr": "Variante y → bi"
           },
           "text": {
             "es": "Los nombres que comienzan con 'y' (consonante semivocal) siguen la misma lógica",
-            "en": "Nouns beginning with 'y' (a semivowel consonant) follow the same logic"
+            "en": "Nouns beginning with 'y' (a semivowel consonant) follow the same logic",
+            "fr": "Les noms commençant par « y » (consonne semi-voyelle) suivent la même logique"
           }
         }
       ]
@@ -199,7 +222,8 @@
       "id": "practice",
       "text": {
         "es": "Para Practicar",
-        "en": "To Practise"
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
@@ -207,19 +231,23 @@
       "items": [
         {
           "es": "Cubre la columna plural y trata de transformar cada nombre singular",
-          "en": "Cover the plural column and try to transform each singular noun"
+          "en": "Cover the plural column and try to transform each singular noun",
+          "fr": "Cachez la colonne du pluriel et essayez de transformer chaque nom au singulier"
         },
         {
           "es": "Forma frases usando el adjetivo \"eyamu\" (bueno) con cada nombre",
-          "en": "Make phrases using the adjective \"eyamu\" (good) with each noun"
+          "en": "Make phrases using the adjective \"eyamu\" (good) with each noun",
+          "fr": "Formez des phrases avec l’adjectif « eyamu » (bon) et chaque nom"
         },
         {
           "es": "Intenta agregar otros adjetivos que conozcas y mantener la concordancia",
-          "en": "Try adding other adjectives you know and keep the agreement"
+          "en": "Try adding other adjectives you know and keep the agreement",
+          "fr": "Essayez d’ajouter d’autres adjectifs que vous connaissez en maintenant l’accord"
         },
         {
           "es": "Escucha la pronunciación de cada palabra en plural",
-          "en": "Listen to the pronunciation of each plural word"
+          "en": "Listen to the pronunciation of each plural word",
+          "fr": "Écoutez la prononciation de chaque mot au pluriel"
         }
       ]
     }

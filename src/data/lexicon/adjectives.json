@@ -37,7 +37,8 @@
       },
       "meaning": {
         "es": "Bueno",
-        "en": "Good"
+        "en": "Good",
+        "fr": "Bon"
       },
       "source": {
         "pdfPage": "17-18",
@@ -51,7 +52,8 @@
       "stem": "-be",
       "meaning": {
         "es": "Malo",
-        "en": "Bad"
+        "en": "Bad",
+        "fr": "Mauvais"
       },
       "source": {
         "pdfPage": 18,
@@ -65,7 +67,8 @@
       "stem": "-nene",
       "meaning": {
         "es": "Grande",
-        "en": "Big"
+        "en": "Big",
+        "fr": "Grand"
       },
       "source": {
         "pdfPage": 18,
@@ -79,7 +82,8 @@
       "stem": "-hole",
       "meaning": {
         "es": "Pequeño",
-        "en": "Small"
+        "en": "Small",
+        "fr": "Petit"
       },
       "source": {
         "pdfPage": 18,
@@ -93,7 +97,8 @@
       "stem": "-vindo",
       "meaning": {
         "es": "Negro",
-        "en": "Black"
+        "en": "Black",
+        "fr": "Noir"
       },
       "source": {
         "pdfPage": 18,
@@ -106,7 +111,8 @@
       "word": "De",
       "meaning": {
         "es": "Derecho, recto",
-        "en": "Straight, upright"
+        "en": "Straight, upright",
+        "fr": "Droit, rectiligne"
       },
       "source": {
         "pdfPage": 18,
@@ -119,7 +125,8 @@
       "word": "Tanana",
       "meaning": {
         "es": "Blanco",
-        "en": "White"
+        "en": "White",
+        "fr": "Blanc"
       },
       "source": {
         "pdfPage": 18,
@@ -132,7 +139,8 @@
       "word": "Huhamba",
       "meaning": {
         "es": "Desnudo, descubierto",
-        "en": "Naked, uncovered"
+        "en": "Naked, uncovered",
+        "fr": "Nu, découvert"
       },
       "source": {
         "pdfPage": 18,
@@ -145,7 +153,8 @@
       "word": "Pala",
       "meaning": {
         "es": "Relleno, atestado",
-        "en": "Filled, crammed"
+        "en": "Filled, crammed",
+        "fr": "Rempli, bourré"
       },
       "source": {
         "pdfPage": 18,
@@ -158,7 +167,8 @@
       "word": "Nyēvi",
       "meaning": {
         "es": "Brillante, hermoso",
-        "en": "Bright, beautiful"
+        "en": "Bright, beautiful",
+        "fr": "Brillant, beau"
       },
       "source": {
         "pdfPage": 18,
@@ -171,7 +181,8 @@
       "word": "Pivi",
       "meaning": {
         "es": "Espeso, denso",
-        "en": "Thick, dense"
+        "en": "Thick, dense",
+        "fr": "Épais, dense"
       },
       "source": {
         "pdfPage": 18,
@@ -184,7 +195,8 @@
       "word": "Pēki Pēki",
       "meaning": {
         "es": "Perpetuo, constante",
-        "en": "Perpetual, constant"
+        "en": "Perpetual, constant",
+        "fr": "Perpétuel, constant"
       },
       "source": {
         "pdfPage": 18,
@@ -197,7 +209,8 @@
       "word": "Potapota",
       "meaning": {
         "es": "Áspero, tosco",
-        "en": "Rough, coarse"
+        "en": "Rough, coarse",
+        "fr": "Rugueux, grossier"
       },
       "source": {
         "pdfPage": 18,
@@ -210,7 +223,8 @@
       "word": "Pojaengo",
       "meaning": {
         "es": "Anticuado, viejo",
-        "en": "Outdated, old"
+        "en": "Outdated, old",
+        "fr": "Désuet, vieux"
       },
       "source": {
         "pdfPage": 18,
@@ -223,7 +237,8 @@
       "word": "Bokolo",
       "meaning": {
         "es": "Duro, difícil, riguroso",
-        "en": "Hard, difficult, strict"
+        "en": "Hard, difficult, strict",
+        "fr": "Dur, difficile, rigoureux"
       },
       "source": {
         "pdfPage": 18,
@@ -236,7 +251,8 @@
       "word": "Veivei",
       "meaning": {
         "es": "Rojo, encarnado",
-        "en": "Red, crimson"
+        "en": "Red, crimson",
+        "fr": "Rouge, vermeil"
       },
       "source": {
         "pdfPage": 18,
@@ -249,7 +265,8 @@
       "word": "Kopia",
       "meaning": {
         "es": "Prieto, avaro",
-        "en": "Tight, miserly"
+        "en": "Tight, miserly",
+        "fr": "Serré, avare"
       },
       "source": {
         "pdfPage": 18,
@@ -262,7 +279,8 @@
       "word": "Ukuge",
       "meaning": {
         "es": "Pobre, necesitado",
-        "en": "Poor, needy"
+        "en": "Poor, needy",
+        "fr": "Pauvre, nécessiteux"
       },
       "source": {
         "pdfPage": 18,
@@ -275,7 +293,8 @@
       "word": "Poso",
       "meaning": {
         "es": "Superior, sobre todo",
-        "en": "Superior, above all"
+        "en": "Superior, above all",
+        "fr": "Supérieur, par-dessus tout"
       },
       "source": {
         "pdfPage": 18,
@@ -288,7 +307,8 @@
       "word": "Kena",
       "meaning": {
         "es": "De tamaño extraordinario",
-        "en": "Of extraordinary size"
+        "en": "Of extraordinary size",
+        "fr": "D'une taille extraordinaire"
       },
       "source": {
         "pdfPage": 18,
@@ -301,7 +321,8 @@
       "word": "Pēkejomu",
       "meaning": {
         "es": "Eterno, sin fin",
-        "en": "Eternal, endless"
+        "en": "Eternal, endless",
+        "fr": "Éternel, sans fin"
       },
       "source": {
         "pdfPage": 18,
@@ -314,7 +335,8 @@
       "word": "Pâlâlâpâlâlâ",
       "meaning": {
         "es": "Veloz, con delicadeza",
-        "en": "Swift, delicately"
+        "en": "Swift, delicately",
+        "fr": "Rapide, avec délicatesse"
       },
       "source": {
         "pdfPage": 18,
@@ -327,7 +349,8 @@
       "word": "Tândalânda",
       "meaning": {
         "es": "Peculiar, escogido",
-        "en": "Peculiar, chosen"
+        "en": "Peculiar, chosen",
+        "fr": "Particulier, choisi"
       },
       "source": {
         "pdfPage": 18,

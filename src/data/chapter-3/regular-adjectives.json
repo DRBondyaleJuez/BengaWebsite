@@ -2,30 +2,36 @@
   "sectionId": "variable-adjectives",
   "title": {
     "es": "Adjetivos Variables",
-    "en": "Variable Adjectives"
+    "en": "Variable Adjectives",
+    "fr": "Adjectifs variables"
   },
   "subtitle": {
     "es": "Flexión según clase nominal",
-    "en": "Inflection by noun class"
+    "en": "Inflection by noun class",
+    "fr": "Flexion selon la classe nominale"
   },
   "overview": {
     "es": "Los adjetivos variables toman su forma correspondiente a singular y plural, concordando en clasificación con los nombres que califican.",
-    "en": "Variable adjectives take their corresponding singular and plural forms, agreeing in classification with the nouns they qualify."
+    "en": "Variable adjectives take their corresponding singular and plural forms, agreeing in classification with the nouns they qualify.",
+    "fr": "Les adjectifs variables prennent leur forme correspondante au singulier et au pluriel, en s'accordant en classification avec les noms qu'ils qualifient."
   },
   "classes": [
     {
       "classId": 1,
       "classType": {
         "es": "Clase 1",
-        "en": "Class 1"
+        "en": "Class 1",
+        "fr": "Classe 1"
       },
       "nounClassRule": {
         "es": "Empieza con 'e' o 'y' en singular y antepone 'be' o 'bi' en plural",
-        "en": "Begins with 'e' or 'y' in the singular and takes 'be' or 'bi' in the plural"
+        "en": "Begins with 'e' or 'y' in the singular and takes 'be' or 'bi' in the plural",
+        "fr": "Commence par « e » ou « y » au singulier et prend « be » ou « bi » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'e' o 'ey' en singular y añade 'b' al comienzo en plural",
-        "en": "Replaces the first syllable with 'e' or 'ey' in the singular and adds 'b' at the beginning in the plural"
+        "en": "Replaces the first syllable with 'e' or 'ey' in the singular and adds 'b' at the beginning in the plural",
+        "fr": "Remplace la première syllabe par « e » ou « ey » au singulier et ajoute « b » au début au pluriel"
       },
       "nounExample": "Epokolo",
       "adjectiveExample": "eyamu",
@@ -34,7 +40,8 @@
         "highlight": "ey",
         "spanishTranslation": {
           "es": "Sombrero bueno",
-          "en": "Good hat"
+          "en": "Good hat",
+          "fr": "Bon chapeau"
         },
         "audioId": "epokolo-eyamu"
       },
@@ -43,7 +50,8 @@
         "highlight": "bey",
         "spanishTranslation": {
           "es": "Sombreros buenos",
-          "en": "Good hats"
+          "en": "Good hats",
+          "fr": "Bons chapeaux"
         },
         "audioId": "bepokolo-beyamu"
       }
@@ -52,15 +60,18 @@
       "classId": 2,
       "classType": {
         "es": "Clase 2",
-        "en": "Class 2"
+        "en": "Class 2",
+        "fr": "Classe 2"
       },
       "nounClassRule": {
         "es": "Empieza con 'i' o 'di' en singular y se cambia por 'ma' en plural",
-        "en": "Begins with 'i' or 'di' in the singular and changes to 'ma' in the plural"
+        "en": "Begins with 'i' or 'di' in the singular and changes to 'ma' in the plural",
+        "fr": "Commence par « i » ou « di » au singulier et devient « ma » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'i' o 'iy' en singular y por 'ma' o 'may' en plural",
-        "en": "Replaces the first syllable with 'i' or 'iy' in the singular and with 'ma' or 'may' in the plural"
+        "en": "Replaces the first syllable with 'i' or 'iy' in the singular and with 'ma' or 'may' in the plural",
+        "fr": "Remplace la première syllabe par « i » ou « iy » au singulier et par « ma » ou « may » au pluriel"
       },
       "nounExample": "Ibongo",
       "adjectiveExample": "iyamu",
@@ -69,7 +80,8 @@
         "highlight": "iy",
         "spanishTranslation": {
           "es": "Desembarcadero bueno",
-          "en": "Good landing place"
+          "en": "Good landing place",
+          "fr": "Bon débarcadère"
         },
         "audioId": "ibongo-iyamu"
       },
@@ -78,7 +90,8 @@
         "highlight": "maiy",
         "spanishTranslation": {
           "es": "Desembarcaderos buenos",
-          "en": "Good landing places"
+          "en": "Good landing places",
+          "fr": "Bons débarcadères"
         },
         "audioId": "mabongo-maiyamu"
       }
@@ -87,15 +100,18 @@
       "classId": 3,
       "classType": {
         "es": "Clase 3",
-        "en": "Class 3"
+        "en": "Class 3",
+        "fr": "Classe 3"
       },
       "nounClassRule": {
         "es": "Empieza con 'u' o 'mū' en singular y se cambia por 'me' o 'mi' en plural",
-        "en": "Begins with 'u' or 'mū' in the singular and changes to 'me' or 'mi' in the plural"
+        "en": "Begins with 'u' or 'mū' in the singular and changes to 'me' or 'mi' in the plural",
+        "fr": "Commence par « u » ou « mū » au singulier et devient « me » ou « mi » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'me' o 'mey' en plural",
-        "en": "Replaces the first syllable with 'u' or 'uy' in the singular and with 'me' or 'mey' in the plural"
+        "en": "Replaces the first syllable with 'u' or 'uy' in the singular and with 'me' or 'mey' in the plural",
+        "fr": "Remplace la première syllabe par « u » ou « uy » au singulier et par « me » ou « mey » au pluriel"
       },
       "nounExample": "Ubâki",
       "adjectiveExample": "uyamu",
@@ -104,7 +120,8 @@
         "highlight": "uy",
         "spanishTranslation": {
           "es": "Hacha buena",
-          "en": "Good axe"
+          "en": "Good axe",
+          "fr": "Bonne hache"
         },
         "audioId": "ub_a_ki-uyamu"
       },
@@ -113,7 +130,8 @@
         "highlight": "mey",
         "spanishTranslation": {
           "es": "Hachas buenas",
-          "en": "Good axes"
+          "en": "Good axes",
+          "fr": "Bonnes haches"
         },
         "audioId": "meb_a_ki-meyamu"
       }
@@ -122,15 +140,18 @@
       "classId": 4,
       "classType": {
         "es": "Clase 4",
-        "en": "Class 4"
+        "en": "Class 4",
+        "fr": "Classe 4"
       },
       "nounClassRule": {
         "es": "Empieza con 'bo' o 'bū' en singular y se cambia por 'mi' en plural",
-        "en": "Begins with 'bo' or 'bū' in the singular and changes to 'mi' in the plural"
+        "en": "Begins with 'bo' or 'bū' in the singular and changes to 'mi' in the plural",
+        "fr": "Commence par « bo » ou « bū » au singulier et devient « mi » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'bo' o 'boy' en singular y por 'me' o 'mey' en plural",
-        "en": "Replaces the first syllable with 'bo' or 'boy' in the singular and with 'me' or 'mey' in the plural"
+        "en": "Replaces the first syllable with 'bo' or 'boy' in the singular and with 'me' or 'mey' in the plural",
+        "fr": "Remplace la première syllabe par « bo » ou « boy » au singulier et par « me » ou « mey » au pluriel"
       },
       "nounExample": "Boho",
       "adjectiveExample": "boyamu",
@@ -139,7 +160,8 @@
         "highlight": "boy",
         "spanishTranslation": {
           "es": "Cara buena",
-          "en": "Good face"
+          "en": "Good face",
+          "fr": "Bon visage"
         },
         "audioId": "boho-boyamu"
       },
@@ -148,7 +170,8 @@
         "highlight": "mey",
         "spanishTranslation": {
           "es": "Caras buenas",
-          "en": "Good faces"
+          "en": "Good faces",
+          "fr": "Bons visages"
         },
         "audioId": "mioho-meyamu"
       }
@@ -157,15 +180,18 @@
       "classId": 5,
       "classType": {
         "es": "Clase 5",
-        "en": "Class 5"
+        "en": "Class 5",
+        "fr": "Classe 5"
       },
       "nounClassRule": {
         "es": "Empieza con 'mo' en singular y se cambia por 'ba' en plural",
-        "en": "Begins with 'mo' in the singular and changes to 'ba' in the plural"
+        "en": "Begins with 'mo' in the singular and changes to 'ba' in the plural",
+        "fr": "Commence par « mo » au singulier et devient « ba » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'u' o 'uy' en singular y por 'ba' o 'baiy' en plural",
-        "en": "Replaces the first syllable with 'u' or 'uy' in the singular and with 'ba' or 'baiy' in the plural"
+        "en": "Replaces the first syllable with 'u' or 'uy' in the singular and with 'ba' or 'baiy' in the plural",
+        "fr": "Remplace la première syllabe par « u » ou « uy » au singulier et par « ba » ou « baiy » au pluriel"
       },
       "nounExample": "Moto",
       "adjectiveExample": "uyamu",
@@ -174,7 +200,8 @@
         "highlight": "uy",
         "spanishTranslation": {
           "es": "Persona buena",
-          "en": "Good person"
+          "en": "Good person",
+          "fr": "Bonne personne"
         },
         "audioId": "moto-uyamu"
       },
@@ -183,7 +210,8 @@
         "highlight": "baiy",
         "spanishTranslation": {
           "es": "Personas buenas",
-          "en": "Good people"
+          "en": "Good people",
+          "fr": "Bonnes personnes"
         },
         "audioId": "bato-baiyamu"
       }
@@ -192,15 +220,18 @@
       "classId": 6,
       "classType": {
         "es": "Clase 6",
-        "en": "Class 6"
+        "en": "Class 6",
+        "fr": "Classe 6"
       },
       "nounClassRule": {
         "es": "Empieza con 'v' en singular y por 'l' en plural",
-        "en": "Begins with 'v' in the singular and with 'l' in the plural"
+        "en": "Begins with 'v' in the singular and with 'l' in the plural",
+        "fr": "Commence par « v » au singulier et par « l » au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'vi' en singular y por 'lo' en plural",
-        "en": "Replaces the first syllable with 'vi' in the singular and with 'lo' in the plural"
+        "en": "Replaces the first syllable with 'vi' in the singular and with 'lo' in the plural",
+        "fr": "Remplace la première syllabe par « vi » au singulier et par « lo » au pluriel"
       },
       "nounExample": "Vitua",
       "adjectiveExample": "viyamu",
@@ -209,7 +240,8 @@
         "highlight": "viy",
         "spanishTranslation": {
           "es": "Candela buena",
-          "en": "Good candle"
+          "en": "Good candle",
+          "fr": "Bonne bougie"
         },
         "audioId": "vitua-viyamu"
       },
@@ -218,7 +250,8 @@
         "highlight": "loy",
         "spanishTranslation": {
           "es": "Candelas buenas",
-          "en": "Good candles"
+          "en": "Good candles",
+          "fr": "Bonnes bougies"
         },
         "audioId": "litua-loyamu"
       }
@@ -227,15 +260,18 @@
       "classId": 7,
       "classType": {
         "es": "Clase 7",
-        "en": "Class 7"
+        "en": "Class 7",
+        "fr": "Classe 7"
       },
       "nounClassRule": {
         "es": "Empieza con consonantes no mencionadas en las otras clases o combinaciones de consonantes en singular y no cambian en plural",
-        "en": "Begins with consonants not mentioned in the other classes, or consonant clusters, in the singular and does not change in the plural"
+        "en": "Begins with consonants not mentioned in the other classes, or consonant clusters, in the singular and does not change in the plural",
+        "fr": "Commence par des consonnes non mentionnées dans les autres classes, ou par des groupes de consonnes, au singulier et ne change pas au pluriel"
       },
       "adjectiveClassRule": {
         "es": "Sustituye la primera sílaba por 'e' en singular y por 'i' en plural",
-        "en": "Replaces the first syllable with 'e' in the singular and with 'i' in the plural"
+        "en": "Replaces the first syllable with 'e' in the singular and with 'i' in the plural",
+        "fr": "Remplace la première syllabe par « e » au singulier et par « i » au pluriel"
       },
       "nounExample": "Ndabo",
       "adjectiveExample": "eyamu",
@@ -244,7 +280,8 @@
         "highlight": "ey",
         "spanishTranslation": {
           "es": "Casa buena",
-          "en": "Good house"
+          "en": "Good house",
+          "fr": "Bonne maison"
         },
         "audioId": "ndabo-eyamu"
       },
@@ -253,7 +290,8 @@
         "highlight": "iy",
         "spanishTranslation": {
           "es": "Casas buenas",
-          "en": "Good houses"
+          "en": "Good houses",
+          "fr": "Bonnes maisons"
         },
         "audioId": "ndabo-iyamu"
       }
@@ -293,19 +331,23 @@
   "notes": [
     {
       "es": "Con pocas excepciones, todos los adjetivos varían concordando con el sustantivo de su respectiva clase",
-      "en": "With few exceptions, all adjectives vary in agreement with the noun of their respective class"
+      "en": "With few exceptions, all adjectives vary in agreement with the noun of their respective class",
+      "fr": "À quelques exceptions près, tous les adjectifs varient en s'accordant avec le nom de leur classe respective"
     },
     {
       "es": "El adjetivo 'būamu' (bueno) toma formas como eyamu, beyamu, iyamu, maiyamu, etc. para concordar con los nombres de cada clase",
-      "en": "The adjective 'būamu' (good) takes forms such as eyamu, beyamu, iyamu, maiyamu, etc. to agree with the nouns of each class"
+      "en": "The adjective 'būamu' (good) takes forms such as eyamu, beyamu, iyamu, maiyamu, etc. to agree with the nouns of each class",
+      "fr": "L'adjectif « būamu » (bon) prend des formes comme eyamu, beyamu, iyamu, maiyamu, etc. pour s'accorder avec les noms de chaque classe"
     },
     {
       "es": "La sílaba resaltada de cada adjetivo es la que marca la concordancia con la clase del sustantivo",
-      "en": "The highlighted syllable of each adjective is the one that marks agreement with the noun's class"
+      "en": "The highlighted syllable of each adjective is the one that marks agreement with the noun's class",
+      "fr": "La syllabe mise en évidence de chaque adjectif est celle qui marque l'accord avec la classe du nom"
     },
     {
       "es": "La concordancia es obligatoria en la lengua Benga",
-      "en": "Agreement is mandatory in the Benga language"
+      "en": "Agreement is mandatory in the Benga language",
+      "fr": "L'accord est obligatoire en langue benga"
     }
   ]
 }

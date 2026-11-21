@@ -14,14 +14,16 @@
       "id": "consonants-intro",
       "text": {
         "es": "Consonantes",
-        "en": "Consonants"
+        "en": "Consonants",
+        "fr": "Consonnes"
       }
     },
     {
       "type": "paragraph",
       "text": {
         "es": "Si bien es verdad que las consonantes se nos presentan todas y cada una de ellas con su sonido claro y bien definido; sin embargo, por apartarse algunas de ellas de la pronunciación española, hay que decir algo sobre este punto.",
-        "en": "While it is true that each and every one of the consonants has a clear and well-defined sound, some of them depart from Spanish pronunciation, so something must be said on this point."
+        "en": "While it is true that each and every one of the consonants has a clear and well-defined sound, some of them depart from Spanish pronunciation, so something must be said on this point.",
+        "fr": "S'il est vrai que chacune des consonnes a un son clair et bien défini, certaines d'entre elles s'écartent toutefois de la prononciation espagnole ; il faut donc dire quelques mots à ce sujet."
       }
     },
     {
@@ -29,7 +31,8 @@
       "id": "simple-consonants",
       "text": {
         "es": "Consonantes Simples",
-        "en": "Simple Consonants"
+        "en": "Simple Consonants",
+        "fr": "Consonnes simples"
       }
     },
     {
@@ -46,7 +49,8 @@
           },
           "note": {
             "es": "No hay que equivocar el sonido de la b con el de la v. Una mala pronunciación podría producir una palabra diferente. El oído del benga es muy delicado en este punto.",
-            "en": "The sound of b must not be mistaken for that of v. A poor pronunciation could produce a different word. The Benga ear is very sensitive on this point."
+            "en": "The sound of b must not be mistaken for that of v. A poor pronunciation could produce a different word. The Benga ear is very sensitive on this point.",
+            "fr": "Il ne faut pas confondre le son du b avec celui du v. Une mauvaise prononciation pourrait produire un mot différent. L'oreille du Benga est très fine sur ce point."
           }
         },
         {
@@ -58,7 +62,8 @@
           },
           "note": {
             "es": "Tanto en principio como en medio de dicción tiene el mismo sonido dental, fuerte como en castellano.",
-            "en": "At the beginning and in the middle of a word it has the same dental sound, strong as in Castilian."
+            "en": "At the beginning and in the middle of a word it has the same dental sound, strong as in Castilian.",
+            "fr": "Au début comme au milieu d'un mot, il a le même son dental, fort comme en castillan."
           }
         },
         {
@@ -78,7 +83,8 @@
           },
           "note": {
             "es": "Se pronunciará, pues, ga, ge, gi, go, gu, sin diferencia ninguna. De su sonido, antes de consonante, se tratará en otro lugar.",
-            "en": "It is therefore pronounced ga, ge, gi, go, gu, with no difference at all. Its sound before a consonant will be dealt with elsewhere."
+            "en": "It is therefore pronounced ga, ge, gi, go, gu, with no difference at all. Its sound before a consonant will be dealt with elsewhere.",
+            "fr": "On prononcera donc ga, ge, gi, go, gu, sans aucune différence. Son son devant une consonne sera traité ailleurs."
           }
         },
         {
@@ -90,7 +96,8 @@
           },
           "note": {
             "es": " No hay que confundir el sonido aspirado (inglés house, hello) con el gutural o velar (español jota, jamón), pues son del todo diferentes.",
-            "en": " The aspirated sound (English house, hello) must not be confused with the guttural or velar sound (Spanish jota, jamón), as they are entirely different."
+            "en": " The aspirated sound (English house, hello) must not be confused with the guttural or velar sound (Spanish jota, jamón), as they are entirely different.",
+            "fr": "Il ne faut pas confondre le son aspiré (anglais house, hello) avec le son guttural ou vélaire (jota espagnole, jamón), car ils sont tout à fait différents."
           }
         },
         {
@@ -102,7 +109,8 @@
           },
           "note": {
             "es": "El sonido de ésta es en todos los casos, sin excepción alguna, el de la j francesa.",
-            "en": "Its sound is in all cases, without any exception, that of the French j."
+            "en": "Its sound is in all cases, without any exception, that of the French j.",
+            "fr": "Son son est, dans tous les cas, sans aucune exception, celui du j français."
           }
         },
         {
@@ -114,7 +122,8 @@
           },
           "note": {
             "es": "Esta, a más de su propio sonido invariable, suple la ausencia de las consonantes c y q.",
-            "en": "Besides its own invariable sound, this letter takes the place of the missing consonants c and q."
+            "en": "Besides its own invariable sound, this letter takes the place of the missing consonants c and q.",
+            "fr": "Outre son propre son invariable, cette lettre remplace l'absence des consonnes c et q."
           }
         },
         {
@@ -126,7 +135,8 @@
           },
           "note": {
             "es": "La encontramos seguida de vocal como en castellano, pero no en forma líquida acompañando a otra consonante como en flor, blanco, pleno...",
-            "en": "We find it followed by a vowel as in Castilian, but not in liquid form accompanying another consonant as in flor, blanco, pleno..."
+            "en": "We find it followed by a vowel as in Castilian, but not in liquid form accompanying another consonant as in flor, blanco, pleno...",
+            "fr": "On le trouve suivi d'une voyelle comme en castillan, mais pas sous forme liquide accompagnant une autre consonne comme dans flor, blanco, pleno..."
           }
         },
         {
@@ -138,7 +148,8 @@
           },
           "note": {
             "es": "Puede aparecer en combinacion con otras consonantes, como mb, de las que se hablará más adelante.",
-            "en": "It can appear in combination with other consonants, such as mb, which will be discussed later."
+            "en": "It can appear in combination with other consonants, such as mb, which will be discussed later.",
+            "fr": "Elle peut apparaître en combinaison avec d'autres consonnes, comme mb, dont il sera question plus loin."
           }
         },
         {
@@ -150,7 +161,8 @@
           },
           "note": {
             "es": "Puede aparecer en combinacion con otras consonantes, como nd, ng, nj, ny, etc., de las que se hablará más adelante.",
-            "en": "It can appear in combination with other consonants, such as nd, ng, nj, ny, etc., which will be discussed later."
+            "en": "It can appear in combination with other consonants, such as nd, ng, nj, ny, etc., which will be discussed later.",
+            "fr": "Elle peut apparaître en combinaison avec d'autres consonnes, comme nd, ng, nj, ny, etc., dont il sera question plus loin."
           }
         },
         {
@@ -170,7 +182,8 @@
           },
           "note": {
             "es": "Sólo se halla en principio de dicción y de sílaba; por lo mismo, su sonido es siempre fuerte, como lo es en saco.",
-            "en": "It is found only at the beginning of a word or syllable; therefore its sound is always strong, as in saco."
+            "en": "It is found only at the beginning of a word or syllable; therefore its sound is always strong, as in saco.",
+            "fr": "On ne le trouve qu'au début d'un mot et d'une syllabe ; son son est donc toujours fort, comme dans saco."
           }
         },
         {
@@ -182,7 +195,8 @@
           },
           "note": {
             "es": "Comienza siempre la sílaba, y suena: ta, te, ti, to, tu, exceptuando la voz Tyoli, que suena Tcholi.",
-            "en": "It always begins the syllable and sounds ta, te, ti, to, tu, except for the word Tyoli, which sounds Tcholi."
+            "en": "It always begins the syllable and sounds ta, te, ti, to, tu, except for the word Tyoli, which sounds Tcholi.",
+            "fr": "Elle commence toujours la syllabe et se prononce ta, te, ti, to, tu, à l'exception du mot Tyoli, qui se prononce Tcholi."
           }
         },
         {
@@ -194,7 +208,8 @@
           },
           "note": {
             "es": "Fuerza notable y algo más marcada que la que se nota en las palabras hueso, huevo, Huesca.",
-            "en": "A notable force, somewhat more marked than that heard in the words hueso, huevo, Huesca."
+            "en": "A notable force, somewhat more marked than that heard in the words hueso, huevo, Huesca.",
+            "fr": "Une force notable, un peu plus marquée que celle que l'on perçoit dans les mots hueso, huevo, Huesca."
           }
         },
         {
@@ -206,7 +221,8 @@
           },
           "note": {
             "es": "Para acertar con el sonido fuerte de esta letra, es preciso modular el labio inferior, poniéndole en contacto con los dientes superiores, como para pronunciar la letra F, cuidando de no confundirle con el de la b. ejemplo \"bueno\" y \"voluntad\".",
-            "en": "To get the strong sound of this letter right, the lower lip must be shaped so that it touches the upper teeth, as if to pronounce the letter F, taking care not to confuse it with that of b. Example: \"bueno\" and \"voluntad\"."
+            "en": "To get the strong sound of this letter right, the lower lip must be shaped so that it touches the upper teeth, as if to pronounce the letter F, taking care not to confuse it with that of b. Example: \"bueno\" and \"voluntad\".",
+            "fr": "Pour bien réaliser le son fort de cette lettre, il faut moduler la lèvre inférieure en la mettant en contact avec les dents supérieures, comme pour prononcer la lettre F, en veillant à ne pas la confondre avec le b. Exemple : « bueno » et « voluntad »."
           }
         },
         {
@@ -218,7 +234,8 @@
           },
           "note": {
             "es": "Es a la vez vocal y consonante",
-            "en": "It is both a vowel and a consonant"
+            "en": "It is both a vowel and a consonant",
+            "fr": "Elle est à la fois voyelle et consonne"
           }
         }
       ]
@@ -228,7 +245,8 @@
       "id": "consonant-combinations",
       "text": {
         "es": "Combinaciones de Consonantes",
-        "en": "Consonant Combinations"
+        "en": "Consonant Combinations",
+        "fr": "Combinaisons de consonnes"
       }
     },
     {
@@ -236,7 +254,8 @@
       "variant": "rule",
       "text": {
         "es": "Para acertar con el verdadero sonido de estas combinaciones se hace casi necesaria la viva voz sigiendo esta regla muy sencilla en muchos de los casos: Considerar su primera consonante como muda. Figúremonos que la m y la n se llaman em, en, y luego que la e precedente desaparece; con esto tendremos ya un sonido obscuro como de um, un, algo nasal, articulándolo con la boca cerrada. A falta de ejemplo en nuestra lengua española, podemos valernos de la voz griega mna que se lee en el Sagrado Evangelio (Luc., XIX, 13, etc.), y tendremos un equivalente.",
-        "en": "To get the true sound of these combinations, the spoken voice is almost necessary, following this very simple rule in many cases: consider their first consonant as mute. Let us imagine that m and n are called em, en, and then that the preceding e disappears; we then have an obscure sound like um, un, somewhat nasal, articulated with the mouth closed. Lacking an example in our Spanish language, we can use the Greek word mna found in the Holy Gospel (Luke XIX, 13, etc.), and we will have an equivalent."
+        "en": "To get the true sound of these combinations, the spoken voice is almost necessary, following this very simple rule in many cases: consider their first consonant as mute. Let us imagine that m and n are called em, en, and then that the preceding e disappears; we then have an obscure sound like um, un, somewhat nasal, articulated with the mouth closed. Lacking an example in our Spanish language, we can use the Greek word mna found in the Holy Gospel (Luke XIX, 13, etc.), and we will have an equivalent.",
+        "fr": "Pour bien saisir le véritable son de ces combinaisons, la voix vive est presque nécessaire ; on suivra cette règle très simple dans bien des cas : considérer leur première consonne comme muette. Imaginons que m et n s'appellent em, en, puis que le e initial disparaît ; nous obtenons alors un son sourd comme um, un, un peu nasal, articulé la bouche fermée. À défaut d'exemple dans notre langue espagnole, nous pouvons recourir au mot grec mna que l'on lit dans le saint Évangile (Luc, XIX, 13, etc.), et nous aurons un équivalent."
       }
     },
     {
@@ -254,56 +273,64 @@
               "word": "mbambai",
               "meaning": {
                 "es": "en verdad",
-                "en": "in truth"
+                "en": "in truth",
+                "fr": "en vérité"
               }
             },
             {
               "word": "mbeya",
               "meaning": {
                 "es": "marmita",
-                "en": "cooking pot"
+                "en": "cooking pot",
+                "fr": "marmite"
               }
             },
             {
               "word": "mbēba",
               "meaning": {
                 "es": "filo de espada",
-                "en": "sword edge"
+                "en": "sword edge",
+                "fr": "tranchant d'épée"
               }
             },
             {
               "word": "mbimba",
               "meaning": {
                 "es": "cólera",
-                "en": "anger"
+                "en": "anger",
+                "fr": "colère"
               }
             },
             {
               "word": "mboka",
               "meaning": {
                 "es": "pueblo",
-                "en": "village"
+                "en": "village",
+                "fr": "village"
               }
             },
             {
               "word": "mbute",
               "meaning": {
                 "es": "botella",
-                "en": "bottle"
+                "en": "bottle",
+                "fr": "bouteille"
               }
             },
             {
               "word": "mbūedi",
               "meaning": {
                 "es": "cautivo",
-                "en": "captive"
+                "en": "captive",
+                "fr": "captif"
               }
             },
             {
               "word": "mbūengambūenga",
               "meaning": {
                 "es": "inconstante",
-                "en": "inconstant"
+                "en": "inconstant",
+                "fr": "inconstant"
               }
             }
           ]
@@ -320,49 +347,56 @@
               "word": "ndabo",
               "meaning": {
                 "es": "casa",
-                "en": "house"
+                "en": "house",
+                "fr": "maison"
               }
             },
             {
               "word": "ndâlâ",
               "meaning": {
                 "es": "sueño",
-                "en": "dream"
+                "en": "dream",
+                "fr": "rêve"
               }
             },
             {
               "word": "ndembo",
               "meaning": {
                 "es": "señal",
-                "en": "sign"
+                "en": "sign",
+                "fr": "signe"
               }
             },
             {
               "word": "ndēmbē",
               "meaning": {
                 "es": "niño",
-                "en": "child"
+                "en": "child",
+                "fr": "enfant"
               }
             },
             {
               "word": "nditi",
               "meaning": {
                 "es": "templanza",
-                "en": "temperance"
+                "en": "temperance",
+                "fr": "tempérance"
               }
             },
             {
               "word": "ndomi",
               "meaning": {
                 "es": "hermano",
-                "en": "brother"
+                "en": "brother",
+                "fr": "frère"
               }
             },
             {
               "word": "ndumba",
               "meaning": {
                 "es": "huésped",
-                "en": "guest"
+                "en": "guest",
+                "fr": "hôte"
               }
             }
           ]
@@ -379,63 +413,72 @@
               "word": "ngadi",
               "meaning": {
                 "es": "trueno",
-                "en": "thunder"
+                "en": "thunder",
+                "fr": "tonnerre"
               }
             },
             {
               "word": "ngânde",
               "meaning": {
                 "es": "luna",
-                "en": "moon"
+                "en": "moon",
+                "fr": "lune"
               }
             },
             {
               "word": "ngebo",
               "meaning": {
                 "es": "burla",
-                "en": "mockery"
+                "en": "mockery",
+                "fr": "moquerie"
               }
             },
             {
               "word": "ngēbē",
               "meaning": {
                 "es": "compasión",
-                "en": "compassion"
+                "en": "compassion",
+                "fr": "compassion"
               }
             },
             {
               "word": "nginga",
               "meaning": {
                 "es": "selva",
-                "en": "jungle, forest"
+                "en": "jungle, forest",
+                "fr": "forêt, jungle"
               }
             },
             {
               "word": "ngonda",
               "meaning": {
                 "es": "pecho",
-                "en": "chest"
+                "en": "chest",
+                "fr": "poitrine"
               }
             },
             {
               "word": "ngudi",
               "meaning": {
                 "es": "fuerza, poder",
-                "en": "strength, power"
+                "en": "strength, power",
+                "fr": "force, pouvoir"
               }
             },
             {
               "word": "ngūahi",
               "meaning": {
                 "es": "vara",
-                "en": "rod"
+                "en": "rod",
+                "fr": "bâton"
               }
             },
             {
               "word": "ngūea",
               "meaning": {
                 "es": "cerdo",
-                "en": "pig"
+                "en": "pig",
+                "fr": "porc"
               }
             }
           ]
@@ -452,49 +495,56 @@
               "word": "njadi",
               "meaning": {
                 "es": "yunque",
-                "en": "anvil"
+                "en": "anvil",
+                "fr": "enclume"
               }
             },
             {
               "word": "njâku",
               "meaning": {
                 "es": "elefante",
-                "en": "elephant"
+                "en": "elephant",
+                "fr": "éléphant"
               }
             },
             {
               "word": "njea",
               "meaning": {
                 "es": "camino",
-                "en": "path"
+                "en": "path",
+                "fr": "chemin"
               }
             },
             {
               "word": "njēngi",
               "meaning": {
                 "es": "helecho",
-                "en": "fern"
+                "en": "fern",
+                "fr": "fougère"
               }
             },
             {
               "word": "njimbili",
               "meaning": {
                 "es": "estabilidad, firmeza",
-                "en": "stability, firmness"
+                "en": "stability, firmness",
+                "fr": "stabilité, fermeté"
               }
             },
             {
               "word": "njongo",
               "meaning": {
                 "es": "jeringa",
-                "en": "syringe"
+                "en": "syringe",
+                "fr": "seringue"
               }
             },
             {
               "word": "njunga",
               "meaning": {
                 "es": "mediación",
-                "en": "mediation"
+                "en": "mediation",
+                "fr": "médiation"
               }
             }
           ]
@@ -511,35 +561,40 @@
               "word": "nyanda",
               "meaning": {
                 "es": "uña",
-                "en": "fingernail"
+                "en": "fingernail",
+                "fr": "ongle"
               }
             },
             {
               "word": "nyândâ",
               "meaning": {
                 "es": "cebolla",
-                "en": "onion"
+                "en": "onion",
+                "fr": "oignon"
               }
             },
             {
               "word": "nyele",
               "meaning": {
                 "es": "ostra",
-                "en": "oyster"
+                "en": "oyster",
+                "fr": "huître"
               }
             },
             {
               "word": "nyēlēli",
               "meaning": {
                 "es": "estrella",
-                "en": "star"
+                "en": "star",
+                "fr": "étoile"
               }
             },
             {
               "word": "nyilo",
               "meaning": {
                 "es": "áncora",
-                "en": "anchor"
+                "en": "anchor",
+                "fr": "ancre"
               }
             }
           ]

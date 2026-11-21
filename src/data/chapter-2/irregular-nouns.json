@@ -5,112 +5,128 @@
       "word": "Hoūē",
       "meaning": {
         "es": "Cabellera, pelo",
-        "en": "Head of hair, hair"
+        "en": "Head of hair, hair",
+        "fr": "Chevelure, cheveux"
       }
     },
     {
       "word": "Honji",
       "meaning": {
         "es": "Heno, yerba",
-        "en": "Hay, grass"
+        "en": "Hay, grass",
+        "fr": "Foin, herbe"
       }
     },
     {
       "word": "Jubu",
       "meaning": {
         "es": "Ceniza",
-        "en": "Ash"
+        "en": "Ash",
+        "fr": "Cendre"
       }
     },
     {
       "word": "Mavule",
       "meaning": {
         "es": "Aceite",
-        "en": "Oil"
+        "en": "Oil",
+        "fr": "Huile"
       }
     },
     {
       "word": "Miba",
       "meaning": {
         "es": "Agua",
-        "en": "Water"
+        "en": "Water",
+        "fr": "Eau"
       }
     },
     {
       "word": "Makiya",
       "meaning": {
         "es": "Sangre",
-        "en": "Blood"
+        "en": "Blood",
+        "fr": "Sang"
       }
     },
     {
       "word": "Maku",
       "meaning": {
         "es": "Licor, caña",
-        "en": "Liquor, cane spirit"
+        "en": "Liquor, cane spirit",
+        "fr": "Liqueur, eau-de-vie de canne"
       }
     },
     {
       "word": "Tito",
       "meaning": {
         "es": "Animal",
-        "en": "Animal"
+        "en": "Animal",
+        "fr": "Animal"
       }
     },
     {
       "word": "Malângâ",
       "meaning": {
         "es": "Flores de los árboles",
-        "en": "Tree blossoms"
+        "en": "Tree blossoms",
+        "fr": "Fleurs des arbres"
       }
     },
     {
       "word": "Majênjina",
       "meaning": {
         "es": "Rayos de la aurora",
-        "en": "Rays of dawn"
+        "en": "Rays of dawn",
+        "fr": "Rayons de l'aurore"
       }
     },
     {
       "word": "Mbana",
       "meaning": {
         "es": "Pinzas, tenazuelas",
-        "en": "Tweezers, small tongs"
+        "en": "Tweezers, small tongs",
+        "fr": "Pinces, petites tenailles"
       }
     },
     {
       "word": "Mbai",
       "meaning": {
         "es": "Virutas, astillas",
-        "en": "Shavings, splinters"
+        "en": "Shavings, splinters",
+        "fr": "Copeaux, éclats"
       }
     },
     {
       "word": "Mâmbē",
       "meaning": {
         "es": "Sobras, mendrugos",
-        "en": "Leftovers, crusts"
+        "en": "Leftovers, crusts",
+        "fr": "Restes, croûtons"
       }
     },
     {
       "word": "Lombongo",
       "meaning": {
         "es": "Mosquitos",
-        "en": "Mosquitoes"
+        "en": "Mosquitoes",
+        "fr": "Moustiques"
       }
     },
     {
       "word": "Kiji",
       "meaning": {
         "es": "Rastrojo",
-        "en": "Stubble"
+        "en": "Stubble",
+        "fr": "Chaume"
       }
     },
     {
       "word": "Hako",
       "meaning": {
         "es": "Hormiga, etc.",
-        "en": "Ant, etc."
+        "en": "Ant, etc.",
+        "fr": "Fourmi, etc."
       }
     }
   ],
@@ -119,203 +135,232 @@
       "word": "Hâkâ",
       "meaning": {
         "es": "Ápice, punta",
-        "en": "Apex, tip"
+        "en": "Apex, tip",
+        "fr": "Sommet, pointe"
       }
     },
     {
       "word": "Ngânde",
       "meaning": {
         "es": "Luna",
-        "en": "Moon"
+        "en": "Moon",
+        "fr": "Lune"
       }
     },
     {
       "word": "Myadi",
       "meaning": {
         "es": "Agonía",
-        "en": "Agony"
+        "en": "Agony",
+        "fr": "Agonie"
       }
     },
     {
       "word": "Ngabo",
       "meaning": {
         "es": "Porción, división",
-        "en": "Portion, division"
+        "en": "Portion, division",
+        "fr": "Portion, division"
       }
     },
     {
       "word": "Tina",
       "meaning": {
         "es": "Origen, causa",
-        "en": "Origin, cause"
+        "en": "Origin, cause",
+        "fr": "Origine, cause"
       }
     },
     {
       "word": "Pâkūēpâkūē",
       "meaning": {
         "es": "Verdad",
-        "en": "Truth"
+        "en": "Truth",
+        "fr": "Vérité"
       }
     },
     {
       "word": "Kâla",
       "meaning": {
         "es": "Reloj de caja",
-        "en": "Case clock"
+        "en": "Case clock",
+        "fr": "Horloge à caisse"
       }
     },
     {
       "word": "Ndiba",
       "meaning": {
         "es": "Profundidad",
-        "en": "Depth"
+        "en": "Depth",
+        "fr": "Profondeur"
       }
     },
     {
       "word": "Kapi",
       "meaning": {
         "es": "Remo",
-        "en": "Oar"
+        "en": "Oar",
+        "fr": "Rame"
       }
     },
     {
       "word": "Kama",
       "meaning": {
         "es": "Ciento",
-        "en": "Hundred"
+        "en": "Hundred",
+        "fr": "Cent"
       }
     },
     {
       "word": "Nyati",
       "meaning": {
         "es": "Buey",
-        "en": "Ox"
+        "en": "Ox",
+        "fr": "Bœuf"
       }
     },
     {
       "word": "Pita",
       "meaning": {
         "es": "Pólvora",
-        "en": "Gunpowder"
+        "en": "Gunpowder",
+        "fr": "Poudre à canon"
       }
     },
     {
       "word": "Ngūanjangūanja",
       "meaning": {
         "es": "Diligencia",
-        "en": "Diligence"
+        "en": "Diligence",
+        "fr": "Diligence"
       }
     },
     {
       "word": "Bokâ",
       "meaning": {
         "es": "Estación lluviosa",
-        "en": "Rainy season"
+        "en": "Rainy season",
+        "fr": "Saison des pluies"
       }
     },
     {
       "word": "Bulu",
       "meaning": {
         "es": "Noche",
-        "en": "Night"
+        "en": "Night",
+        "fr": "Nuit"
       }
     },
     {
       "word": "Manga",
       "meaning": {
         "es": "Mar",
-        "en": "Sea"
+        "en": "Sea",
+        "fr": "Mer"
       }
     },
     {
       "word": "Njea",
       "meaning": {
         "es": "Sendero",
-        "en": "Path"
+        "en": "Path",
+        "fr": "Sentier"
       }
     },
     {
       "word": "Poli",
       "meaning": {
         "es": "Trigo",
-        "en": "Wheat"
+        "en": "Wheat",
+        "fr": "Blé"
       }
     },
     {
       "word": "Tonda",
       "meaning": {
         "es": "Diluvio",
-        "en": "Flood"
+        "en": "Flood",
+        "fr": "Déluge"
       }
     },
     {
       "word": "Henga",
       "meaning": {
         "es": "Ocio",
-        "en": "Leisure"
+        "en": "Leisure",
+        "fr": "Loisir"
       }
     },
     {
       "word": "Hūē",
       "meaning": {
         "es": "Paz",
-        "en": "Peace"
+        "en": "Peace",
+        "fr": "Paix"
       }
     },
     {
       "word": "Maka",
       "meaning": {
         "es": "Jugo",
-        "en": "Juice"
+        "en": "Juice",
+        "fr": "Jus"
       }
     },
     {
       "word": "Kango",
       "meaning": {
         "es": "Sabor, gusto",
-        "en": "Flavour, taste"
+        "en": "Flavour, taste",
+        "fr": "Saveur, goût"
       }
     },
     {
       "word": "Kâ",
       "meaning": {
         "es": "Caracol grande",
-        "en": "Large snail"
+        "en": "Large snail",
+        "fr": "Gros escargot"
       }
     },
     {
       "word": "Kânde",
       "meaning": {
         "es": "Perseverancia",
-        "en": "Perseverance"
+        "en": "Perseverance",
+        "fr": "Persévérance"
       }
     },
     {
       "word": "Pani",
       "meaning": {
         "es": "Uso, hábito",
-        "en": "Use, habit"
+        "en": "Use, habit",
+        "fr": "Usage, habitude"
       }
     },
     {
       "word": "Beja",
       "meaning": {
         "es": "Alimento",
-        "en": "Food"
+        "en": "Food",
+        "fr": "Nourriture"
       }
     },
     {
       "word": "Mboi",
       "meaning": {
         "es": "Miel",
-        "en": "Honey"
+        "en": "Honey",
+        "fr": "Miel"
       }
     },
     {
       "word": "Peta",
       "meaning": {
         "es": "Disputa, etc.",
-        "en": "Dispute, etc."
+        "en": "Dispute, etc.",
+        "fr": "Dispute, etc."
       }
     }
   ]

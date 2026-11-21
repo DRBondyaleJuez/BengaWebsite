@@ -4,11 +4,13 @@
   "layout": "noun-class",
   "title": {
     "es": "Clase 7",
-    "en": "Class 7"
+    "en": "Class 7",
+    "fr": "Classe 7"
   },
   "subtitle": {
     "es": "Singular = Plural",
-    "en": "Singular = Plural"
+    "en": "Singular = Plural",
+    "fr": "Singulier = Pluriel"
   },
   "source": {
     "pdfPage": "13-14"
@@ -19,7 +21,8 @@
       "id": "pattern",
       "text": {
         "es": "Patrón de Transformación",
-        "en": "Transformation Pattern"
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -28,7 +31,8 @@
       "to": "hako / tuma / mbadi / ndabo / nganga / sango",
       "description": {
         "es": "Son muy numerosos, ya que siguen esta regla muchos de los que empiezan por consonante y casi todos los que comienzan con doble consonante. Por los adjuntos que les acompañan se conocerá la diversidad del número.",
-        "en": "They are very numerous, since this rule is followed by many of those that begin with a consonant and almost all of those that begin with a double consonant. The number is recognised by the accompanying modifiers."
+        "en": "They are very numerous, since this rule is followed by many of those that begin with a consonant and almost all of those that begin with a double consonant. The number is recognised by the accompanying modifiers.",
+        "fr": "Ils sont très nombreux, car cette règle s’applique à beaucoup de noms commençant par une consonne et à presque tous ceux qui commencent par une double consonne. Le nombre se reconnaît grâce aux mots qui les accompagnent."
       }
     },
     {
@@ -36,7 +40,8 @@
       "id": "examples",
       "text": {
         "es": "Ejemplos del libro ({count})",
-        "en": "Examples from the book ({count})"
+        "en": "Examples from the book ({count})",
+        "fr": "Exemples du livre ({count})"
       }
     },
     {
@@ -138,7 +143,8 @@
       "id": "concepts",
       "text": {
         "es": "Conceptos Clave",
-        "en": "Key Concepts"
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -147,31 +153,37 @@
         {
           "title": {
             "es": "Invariable",
-            "en": "Invariable"
+            "en": "Invariable",
+            "fr": "Invariable"
           },
           "text": {
             "es": "En esta clase, la forma del nombre no cambia entre singular y plural.",
-            "en": "In this class, the form of the noun does not change between singular and plural."
+            "en": "In this class, the form of the noun does not change between singular and plural.",
+            "fr": "Dans cette classe, la forme du nom ne change pas entre le singulier et le pluriel."
           }
         },
         {
           "title": {
             "es": "Contexto gramatical",
-            "en": "Grammatical context"
+            "en": "Grammatical context",
+            "fr": "Contexte grammatical"
           },
           "text": {
             "es": "El número se infiere por los modificadores, los adjetivos o el contexto de la frase.",
-            "en": "The number is inferred from modifiers, adjectives or the context of the sentence."
+            "en": "The number is inferred from modifiers, adjectives or the context of the sentence.",
+            "fr": "Le nombre se déduit des déterminants, des adjectifs ou du contexte de la phrase."
           }
         },
         {
           "title": {
             "es": "Gran grupo",
-            "en": "Large group"
+            "en": "Large group",
+            "fr": "Grand groupe"
           },
           "text": {
             "es": "Muchos de los nombres que empiezan por consonante y casi todos los que comienzan con doble consonante siguen esta regla.",
-            "en": "Many of the nouns that begin with a consonant and almost all of those that begin with a double consonant follow this rule."
+            "en": "Many of the nouns that begin with a consonant and almost all of those that begin with a double consonant follow this rule.",
+            "fr": "Beaucoup de noms commençant par une consonne et presque tous ceux qui commencent par une double consonne suivent cette règle."
           }
         }
       ]
@@ -181,7 +193,8 @@
       "id": "practice",
       "text": {
         "es": "Para Practicar",
-        "en": "To Practise"
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
@@ -189,15 +202,18 @@
       "items": [
         {
           "es": "Observa que la forma del nombre no cambia entre singular y plural.",
-          "en": "Notice that the form of the noun does not change between singular and plural."
+          "en": "Notice that the form of the noun does not change between singular and plural.",
+          "fr": "Remarquez que la forme du nom ne change pas entre le singulier et le pluriel."
         },
         {
           "es": "Busca el número por el adjetivo o por el contexto en la oración.",
-          "en": "Look for the number in the adjective or in the context of the sentence."
+          "en": "Look for the number in the adjective or in the context of the sentence.",
+          "fr": "Cherchez le nombre dans l’adjectif ou dans le contexte de la phrase."
         },
         {
           "es": "Memoriza ejemplos comunes para reconocer la clase rápidamente.",
-          "en": "Memorise common examples to recognise the class quickly."
+          "en": "Memorise common examples to recognise the class quickly.",
+          "fr": "Mémorisez des exemples courants pour reconnaître rapidement la classe."
         }
       ]
     }

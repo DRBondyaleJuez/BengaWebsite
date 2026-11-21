@@ -13,14 +13,16 @@
       "id": "diphthongs-intro",
       "text": {
         "es": "Diptongos",
-        "en": "Diphthongs"
+        "en": "Diphthongs",
+        "fr": "Diphtongues"
       }
     },
     {
       "type": "paragraph",
       "text": {
         "es": "Podemos combinar dos vocales anteriormente descritas para formar diptongos. Algunos de los comunes en Benga son los siguientes:.",
-        "en": "We can combine two of the vowels described above to form diphthongs. Some of the common ones in Benga are the following:"
+        "en": "We can combine two of the vowels described above to form diphthongs. Some of the common ones in Benga are the following:",
+        "fr": "Nous pouvons combiner deux des voyelles décrites précédemment pour former des diphtongues. Voici quelques-unes des plus courantes en benga :"
       }
     },
     {
@@ -42,7 +44,8 @@
               "word": "tekai",
               "meaning": {
                 "es": "cáscara",
-                "en": "shell, husk"
+                "en": "shell, husk",
+                "fr": "coque, écorce"
               }
             }
           ]
@@ -59,7 +62,8 @@
               "word": "au",
               "meaning": {
                 "es": "pronombre y signo negativo",
-                "en": "pronoun and negative sign"
+                "en": "pronoun and negative sign",
+                "fr": "pronom et signe négatif"
               }
             }
           ]
@@ -76,7 +80,8 @@
               "word": "viu",
               "meaning": {
                 "es": "obscuridad",
-                "en": "darkness"
+                "en": "darkness",
+                "fr": "obscurité"
               }
             }
           ]
@@ -93,7 +98,8 @@
               "word": "mboi",
               "meaning": {
                 "es": "miel",
-                "en": "honey"
+                "en": "honey",
+                "fr": "miel"
               }
             }
           ]
@@ -110,7 +116,8 @@
               "word": "mūana",
               "meaning": {
                 "es": "niño, hijo",
-                "en": "child, son"
+                "en": "child, son",
+                "fr": "enfant, fils"
               }
             }
           ]
@@ -127,7 +134,8 @@
               "word": "babūe",
               "meaning": {
                 "es": "inteligible",
-                "en": "intelligible"
+                "en": "intelligible",
+                "fr": "intelligible"
               }
             }
           ]
@@ -144,7 +152,8 @@
               "word": "ūâūâ",
               "meaning": {
                 "es": "aprisa, pronto",
-                "en": "quickly, soon"
+                "en": "quickly, soon",
+                "fr": "vite, bientôt"
               }
             }
           ]
@@ -161,7 +170,8 @@
               "word": "hūē",
               "meaning": {
                 "es": "nosotros",
-                "en": "we"
+                "en": "we",
+                "fr": "nous"
               }
             }
           ]
@@ -178,7 +188,8 @@
               "word": "mūidi",
               "meaning": {
                 "es": "banco, margen",
-                "en": "bank, margin"
+                "en": "bank, margin",
+                "fr": "banc, bord"
               }
             }
           ]

@@ -4,11 +4,13 @@
   "layout": "noun-class",
   "title": {
     "es": "Clase 6",
-    "en": "Class 6"
+    "en": "Class 6",
+    "fr": "Classe 6"
   },
   "subtitle": {
     "es": "v → l",
-    "en": "v → l"
+    "en": "v → l",
+    "fr": "v → l"
   },
   "source": {
     "pdfPage": "12-13"
@@ -19,7 +21,8 @@
       "id": "pattern",
       "text": {
         "es": "Patrón de Transformación",
-        "en": "Transformation Pattern"
+        "en": "Transformation Pattern",
+        "fr": "Schéma de transformation"
       }
     },
     {
@@ -28,7 +31,8 @@
       "to": "l-",
       "description": {
         "es": "La clase 6 muestra un cambio consonántico por el cual la fricativa inicial cambia al plural por l-.",
-        "en": "Class 6 shows a consonant change in which the initial fricative changes to l- in the plural."
+        "en": "Class 6 shows a consonant change in which the initial fricative changes to l- in the plural.",
+        "fr": "La classe 6 présente un changement consonantique : la fricative initiale devient l- au pluriel."
       }
     },
     {
@@ -36,7 +40,8 @@
       "id": "examples",
       "text": {
         "es": "Ejemplos Principales",
-        "en": "Main Examples"
+        "en": "Main Examples",
+        "fr": "Exemples principaux"
       }
     },
     {
@@ -60,7 +65,8 @@
       "id": "concepts",
       "text": {
         "es": "Conceptos Clave",
-        "en": "Key Concepts"
+        "en": "Key Concepts",
+        "fr": "Concepts clés"
       }
     },
     {
@@ -69,31 +75,37 @@
         {
           "title": {
             "es": "Cambio consonántico",
-            "en": "Consonant change"
+            "en": "Consonant change",
+            "fr": "Changement consonantique"
           },
           "text": {
             "es": "La clase 6 es especialmente interesante porque el cambio ocurre en la consonante inicial.",
-            "en": "Class 6 is especially interesting because the change occurs in the initial consonant."
+            "en": "Class 6 is especially interesting because the change occurs in the initial consonant.",
+            "fr": "La classe 6 est particulièrement intéressante parce que le changement se produit sur la consonne initiale."
           }
         },
         {
           "title": {
             "es": "v → l",
-            "en": "v → l"
+            "en": "v → l",
+            "fr": "v → l"
           },
           "text": {
             "es": "El patrón v- en singular se transforma por l- en plural con cierta regularidad.",
-            "en": "The singular v- pattern changes to l- in the plural with some regularity."
+            "en": "The singular v- pattern changes to l- in the plural with some regularity.",
+            "fr": "Le v- du singulier se transforme en l- au pluriel avec une certaine régularité."
           }
         },
         {
           "title": {
             "es": "Observación",
-            "en": "Observation"
+            "en": "Observation",
+            "fr": "Observation"
           },
           "text": {
             "es": "Algunos ejemplos muestran alternancias adicionales dentro de la raíz, pero la lógica principal es clara.",
-            "en": "Some examples show additional alternations within the root, but the main logic is clear."
+            "en": "Some examples show additional alternations within the root, but the main logic is clear.",
+            "fr": "Certains exemples présentent des alternances supplémentaires à l’intérieur de la racine, mais la logique principale est claire."
           }
         }
       ]
@@ -103,7 +115,8 @@
       "id": "exceptions",
       "text": {
         "es": "Excepciones",
-        "en": "Exceptions"
+        "en": "Exceptions",
+        "fr": "Exceptions"
       }
     },
     {
@@ -111,7 +124,8 @@
       "variant": "info",
       "text": {
         "es": "Estos nombres empiezan por vi- como los de esta clase, pero hacen el plural con l- en lugar de li- inicial. Además, las excepciones anotadas en la clase 2 (los que empiezan por i- y hacen el plural en lo-) pertenecen también a esta clase 6.",
-        "en": "These nouns begin with vi- like those of this class, but they form the plural with l- instead of an initial li-. In addition, the exceptions noted in class 2 (those beginning with i- that form the plural in lo-) also belong to this class 6."
+        "en": "These nouns begin with vi- like those of this class, but they form the plural with l- instead of an initial li-. In addition, the exceptions noted in class 2 (those beginning with i- that form the plural in lo-) also belong to this class 6.",
+        "fr": "Ces noms commencent par vi- comme ceux de cette classe, mais ils forment leur pluriel avec l- au lieu d’un li- initial. De plus, les exceptions notées dans la classe 2 (celles qui commencent par i- et forment leur pluriel en lo-) appartiennent aussi à cette classe 6."
       }
     },
     {
@@ -123,7 +137,8 @@
       "variant": "small",
       "text": {
         "es": "En la clase 2 se mencionaron la serie i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), que es la misma formación de esta clase 6.",
-        "en": "In class 2 the series i- → lo- was mentioned (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), which is the same formation as in this class 6."
+        "en": "In class 2 the series i- → lo- was mentioned (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), which is the same formation as in this class 6.",
+        "fr": "Dans la classe 2, on a mentionné la série i- → lo- (Inâni → Lonâni, Iboko → Loboko, Ikadada → Lokadada), qui est la même formation que celle de cette classe 6."
       }
     },
     {
@@ -135,7 +150,8 @@
       "id": "practice",
       "text": {
         "es": "Para Practicar",
-        "en": "To Practise"
+        "en": "To Practise",
+        "fr": "À pratiquer"
       }
     },
     {
@@ -143,15 +159,18 @@
       "items": [
         {
           "es": "Identifica la consonante inicial de cada sustantivo y luego busca el plural.",
-          "en": "Identify the initial consonant of each noun and then look for the plural."
+          "en": "Identify the initial consonant of each noun and then look for the plural.",
+          "fr": "Identifiez la consonne initiale de chaque nom, puis cherchez le pluriel."
         },
         {
           "es": "Prueba sustituir v- por l- antes de mirar la respuesta.",
-          "en": "Try replacing v- with l- before looking at the answer."
+          "en": "Try replacing v- with l- before looking at the answer.",
+          "fr": "Essayez de remplacer v- par l- avant de regarder la réponse."
         },
         {
           "es": "Repite los ejemplos orales para acostumbrarte a la forma plural.",
-          "en": "Repeat the examples aloud to get used to the plural form."
+          "en": "Repeat the examples aloud to get used to the plural form.",
+          "fr": "Répétez les exemples à voix haute pour vous habituer à la forme du pluriel."
         }
       ]
     }

@@ -2,29 +2,34 @@
   "sectionId": "comparatives-superlatives",
   "title": {
     "es": "Comparativos y Superlativos",
-    "en": "Comparatives and Superlatives"
+    "en": "Comparatives and Superlatives",
+    "fr": "Comparatifs et superlatifs"
   },
   "subtitle": {
     "es": "Expresiones de comparación y grado",
-    "en": "Expressions of comparison and degree"
+    "en": "Expressions of comparison and degree",
+    "fr": "Expressions de la comparaison et du degré"
   },
   "overview": {
     "es": "Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los objetos se comparan usando una variedad de formas: circunlocución, entonación particular, énfasis consabido, y especialmente las palabras 'kebaka' (sobresalir) y 'ña' (exceder).",
-    "en": "Adjectives in Benga lack the traditional degrees of comparison. However, objects are compared using a variety of means: circumlocution, particular intonation, understood emphasis, and especially the words 'kebaka' (to excel) and 'ña' (to exceed)."
+    "en": "Adjectives in Benga lack the traditional degrees of comparison. However, objects are compared using a variety of means: circumlocution, particular intonation, understood emphasis, and especially the words 'kebaka' (to excel) and 'ña' (to exceed).",
+    "fr": "Les adjectifs en benga n'ont pas les degrés de comparaison traditionnels. Cependant, on compare les objets par divers moyens : la périphrase, une intonation particulière, une emphase convenue, et surtout les mots « kebaka » (l'emporter sur) et « ña » (dépasser)."
   },
   "keyWords": [
     {
       "bengaForm": "Kebaka",
       "spanishMeaning": {
         "es": " sobresalir, destacar",
-        "en": "to excel, to stand out"
+        "en": "to excel, to stand out",
+        "fr": "l'emporter sur, se distinguer"
       }
     },
     {
       "bengaForm": "ña",
       "spanishMeaning": {
         "es": "exceder, superar",
-        "en": "to exceed, to surpass"
+        "en": "to exceed, to surpass",
+        "fr": "dépasser, surpasser"
       }
     }
   ],
@@ -32,42 +37,48 @@
     {
       "spanishMeaning": {
         "es": "Mi sombrero es mejor que el tuyo",
-        "en": "My hat is better than yours"
+        "en": "My hat is better than yours",
+        "fr": "Mon chapeau est meilleur que le tien"
       },
       "phrases": {
         "palabras": "Epokolo ami e kebaka ndi edi",
         "pronunciacion": "Epokol' amé ekebakend edi",
         "traduccionLiteral": {
           "es": "Sombrero mío sobresale (al) tuyo",
-          "en": "Hat mine excels (over) yours"
+          "en": "Hat mine excels (over) yours",
+          "fr": "Chapeau mien l'emporte (sur) le tien"
         }
       }
     },
     {
       "spanishMeaning": {
         "es": "Este pez es más grande que aquél",
-        "en": "This fish is bigger than that one"
+        "en": "This fish is bigger than that one",
+        "fr": "Ce poisson est plus grand que celui-là"
       },
       "phrases": {
         "palabras": "Ejaka tékai e ndi eniné da na tekayene",
         "pronunciacion": "Ejaka tekaiendi nént na n'ayene",
         "traduccionLiteral": {
           "es": "Pez éste es grande, excede aquél",
-          "en": "Fish this is big, exceeds that one"
+          "en": "Fish this is big, exceeds that one",
+          "fr": "Poisson celui-ci est grand, dépasse celui-là"
         }
       }
     },
     {
       "spanishMeaning": {
         "es": "Matuta es más viejo que Ibiya",
-        "en": "Matuta is older than Ibiya"
+        "en": "Matuta is older than Ibiya",
+        "fr": "Matuta est plus vieux qu'Ibiya"
       },
       "phrases": {
         "palabras": "Matuta mlbia, Matuta nutodu",
         "pronunciacion": "Matuta m'Ibia, Matuta m'utodu",
         "traduccionLiteral": {
           "es": "Matuta é Ibia, Matuta es viejo",
-          "en": "Matuta é Ibia, Matuta is old"
+          "en": "Matuta é Ibia, Matuta is old",
+          "fr": "Matuta é Ibia, Matuta est vieux"
         }
       }
     }
@@ -76,42 +87,48 @@
     {
       "spanishMeaning": {
         "es": "Mi sombrero es el mejor de todos",
-        "en": "My hat is the best of all"
+        "en": "My hat is the best of all",
+        "fr": "Mon chapeau est le meilleur de tous"
       },
       "phrases": {
         "palabras": "Epokolo eame e kebake ndi bihépi",
         "pronunciacion": "Epokol' ame ekebakéndi bihépi",
         "traduccionLiteral": {
           "es": "Sombrero mío sobresale (a) todos",
-          "en": "Hat mine excels (over) all"
+          "en": "Hat mine excels (over) all",
+          "fr": "Chapeau mien l'emporte (sur) tous"
         }
       }
     },
     {
       "spanishMeaning": {
         "es": "Este es el pez más grande que he visto",
-        "en": "This is the biggest fish I have seen"
+        "en": "This is the biggest fish I have seen",
+        "fr": "C'est le plus gros poisson que j'aie vu"
       },
       "phrases": {
         "palabras": "Ekai emdi edyaka enin? mete e ami e ha yéné vákaé",
         "pronunciacion": "Ekai'ndi'jaka nént méte cami ehayént vakué",
         "traduccionLiteral": {
           "es": "Este es pescado grande en verdad, por mí visto jamás",
-          "en": "This is a big fish indeed, seen never by me"
+          "en": "This is a big fish indeed, seen never by me",
+          "fr": "Ceci est un gros poisson en vérité, par moi vu jamais"
         }
       }
     },
     {
       "spanishMeaning": {
         "es": "El mejor de los libros es la Sagrada Escritura",
-        "en": "The best of books is Holy Scripture"
+        "en": "The best of books is Holy Scripture",
+        "fr": "Le meilleur des livres est l'Écriture sainte"
       },
       "phrases": {
         "palabras": "Bible ndi ejanganangobo eyamu da na bihépi",
         "pronunciacion": "Bible ndi ejanganangobo eyamu da na bihépi",
         "traduccionLiteral": {
           "es": "Biblia es libro bueno (a) todos",
-          "en": "Bible is book good (to) all"
+          "en": "Bible is book good (to) all",
+          "fr": "Bible est livre bon (à) tous"
         }
       }
     }
@@ -119,48 +136,55 @@
   "alternativeForm": {
     "description": {
       "es": "Hay una forma más sencilla y acomodada al castellano: usar 'va' en sentido de 'más'. Esta forma se acomoda principalmente con quienes han aprendido inglés, francés, etc.",
-      "en": "There is a simpler form, better suited to Spanish: use 'va' in the sense of 'more'. This form suits mainly those who have learned English, French, etc."
+      "en": "There is a simpler form, better suited to Spanish: use 'va' in the sense of 'more'. This form suits mainly those who have learned English, French, etc.",
+      "fr": "Il existe une forme plus simple et plus proche de l'espagnol : employer « va » au sens de « plus ». Cette forme convient surtout à ceux qui ont appris l'anglais, le français, etc."
     },
     "examples": [
       {
         "spanishMeaning": {
           "es": "Este país es más cálido que el nuestro",
-          "en": "This country is warmer than ours"
+          "en": "This country is warmer than ours",
+          "fr": "Ce pays est plus chaud que le nôtre"
         },
         "bengaForm": "Ehihí tékae e ndi yomu ña na eyahu"
       },
       {
         "spanishMeaning": {
           "es": "Estos libros son mejores que aquéllos",
-          "en": "These books are better than those"
+          "en": "These books are better than those",
+          "fr": "Ces livres sont meilleurs que ceux-là"
         },
         "bengaForm": "Bejanangobo tékabe bendi ña na Vepúlas ekabens"
       },
       {
         "spanishMeaning": {
           "es": "Ulendo es más grande que aquel niño",
-          "en": "Ulendo is bigger than that child"
+          "en": "Ulendo is bigger than that child",
+          "fr": "Ulendo est plus grand que cet enfant"
         },
         "bengaForm": "Ulindá a ndi utodu aa na maa'tikane"
       },
       {
         "spanishMeaning": {
           "es": "Condino es menos lindo que Iquito",
-          "en": "Condino is less pretty than Iquito"
+          "en": "Condino is less pretty than Iquito",
+          "fr": "Condino est moins joli qu'Iquito"
         },
         "bengaForm": "Ikito elanga aa na Kondinyo"
       },
       {
         "spanishMeaning": {
           "es": "Coto no es mejor que Cuango",
-          "en": "Coto is not better than Cuango"
+          "en": "Coto is not better than Cuango",
+          "fr": "Coto n'est pas meilleur que Cuango"
         },
         "bengaForm": "Koto a bé ua na Kaango"
       },
       {
         "spanishMeaning": {
           "es": "El justo vive más tranquilo que el pecador",
-          "en": "The righteous live more peacefully than the sinner"
+          "en": "The righteous live more peacefully than the sinner",
+          "fr": "Le juste vit plus tranquillement que le pécheur"
         },
         "bengaForm": "Ba'yamu bana idiyedi via huat da na babe"
       }
@@ -170,42 +194,48 @@
     {
       "spanishMeaning": {
         "es": "La Iglesia de Roma es la más grande de todas",
-        "en": "The Church of Rome is the greatest of all"
+        "en": "The Church of Rome is the greatest of all",
+        "fr": "L'Église de Rome est la plus grande de toutes"
       },
       "bengaForm": "Iglesia ja Roma e ndi bonzné da na jehépi"
     },
     {
       "spanishMeaning": {
         "es": "El oro es el más apreciado de los metales",
-        "en": "Gold is the most prized of metals"
+        "en": "Gold is the most prized of metals",
+        "fr": "L'or est le plus précieux des métaux"
       },
       "bengaForm": "Hika'veyu e tándáknindi qa na'kzi y¿hipi"
     },
     {
       "spanishMeaning": {
         "es": "Tu maestro es el más sabio de todos",
-        "en": "Your teacher is the wisest of all"
+        "en": "Your teacher is the wisest of all",
+        "fr": "Votre maître est le plus sage de tous"
       },
       "bengaForm": "Uyokudi múami a ndi yokuñango úa na bhepi"
     },
     {
       "spanishMeaning": {
         "es": "La caridad es la más excelente de las virtudes",
-        "en": "Charity is the most excellent of the virtues"
+        "en": "Charity is the most excellent of the virtues",
+        "fr": "La charité est la plus excellente des vertus"
       },
       "bengaForm": "Ttándé a ndi baamu bonén? úa na virtudes jeh'pi"
     },
     {
       "spanishMeaning": {
         "es": "El sol es brillantísimo, más que todos los cuerpos luminosos",
-        "en": "The sun is extremely bright, more than all luminous bodies"
+        "en": "The sun is extremely bright, more than all luminous bodies",
+        "fr": "Le soleil est très brillant, plus que tous les corps lumineux"
       },
       "bengaForm": "Joba ima bae eit2, da na e panyak: yehepi"
     },
     {
       "spanishMeaning": {
         "es": "La luna no es tan brillante como el sol",
-        "en": "The moon is not as bright as the sun"
+        "en": "The moon is not as bright as the sun",
+        "fr": "La lune n'est pas aussi brillante que le soleil"
       },
       "bengaForm": "Ngánd ya sainaka panika joba"
     }
@@ -213,19 +243,23 @@
   "notes": [
     {
       "es": "Los Bengas usan énfasis y entonación para indicar extremos en calidad y cantidad",
-      "en": "The Benga people use emphasis and intonation to indicate extremes of quality and quantity"
+      "en": "The Benga people use emphasis and intonation to indicate extremes of quality and quantity",
+      "fr": "Les Bengas utilisent l'emphase et l'intonation pour indiquer les extrêmes en qualité et en quantité"
     },
     {
       "es": "No hay descripción escrita que pueda hacerlo inteligible: se requiere la viva voz",
-      "en": "No written description can make it intelligible: the living voice is required"
+      "en": "No written description can make it intelligible: the living voice is required",
+      "fr": "Aucune description écrite ne peut le rendre intelligible : la voix vive est indispensable"
     },
     {
       "es": "Las circunlocuciones apropiadas al objeto son frecuentes",
-      "en": "Circumlocutions suited to the object are frequent"
+      "en": "Circumlocutions suited to the object are frequent",
+      "fr": "Les périphrases adaptées à l'objet sont fréquentes"
     },
     {
       "es": "La entonación peculiar y el énfasis son elementales en la expresión de comparación",
-      "en": "Peculiar intonation and emphasis are essential in expressing comparison"
+      "en": "Peculiar intonation and emphasis are essential in expressing comparison",
+      "fr": "L'intonation particulière et l'accent d'insistance sont essentiels pour exprimer la comparaison"
     }
   ]
 }
