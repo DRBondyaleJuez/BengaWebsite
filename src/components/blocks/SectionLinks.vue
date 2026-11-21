@@ -5,7 +5,9 @@
       <div class="section-item__content">
         <h3>{{ item.title }}</h3>
         <p>{{ item.text }}</p>
-        <router-link :to="item.to" class="section-link"> {{ linkLabel }} → </router-link>
+        <router-link :to="item.to" class="section-link">
+          {{ linkLabel || $t('content.learnMore') }} →
+        </router-link>
       </div>
     </div>
   </div>
@@ -28,7 +30,8 @@ export default {
   props: {
     /** [{ title, text, to }] — `to` is a site URL. */
     items: { type: Array, required: true },
-    linkLabel: { type: String, default: 'Aprende más' }
+    /** Default: «Aprende más» in the visitor's language (content.learnMore) */
+    linkLabel: { type: String, default: null }
   }
 }
 </script>

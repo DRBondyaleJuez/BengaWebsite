@@ -52,7 +52,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Living Dictionary
+                {{ $t('components.footer.livingDictionary') }}
               </a>
             </li>
             <li>
@@ -62,7 +62,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                SIL International
+                {{ $t('components.footer.silInternational') }}
               </a>
             </li>
             <li>
@@ -89,7 +89,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Wikimedia Commons
+                {{ $t('components.footer.wikimediaCommons') }}
               </a>
             </li>
             <li>
@@ -99,7 +99,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Guinea Ecuatorial
+                {{ $t('components.footer.guineaEcuatorial') }}
               </a>
             </li>
             <li>
@@ -109,7 +109,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Lenguas Ndowe
+                {{ $t('components.footer.lenguasNdowe') }}
               </a>
             </li>
           </ul>
@@ -123,7 +123,8 @@
         </div>
         <div class="footer__attribution">
           <p class="footer__text-small">
-            Built with <span class="footer__heart">♥</span> for language preservation
+            {{ $t('components.footer.builtWith') }} <span class="footer__heart">♥</span>
+            {{ $t('components.footer.forLanguagePreservation') }}
           </p>
         </div>
       </div>

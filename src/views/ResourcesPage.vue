@@ -8,9 +8,7 @@
       <div class="resources__container">
         <h1 class="resources__title">{{ $t('nav.resources') }}</h1>
         <p class="resources__subtitle">
-          {{
-            $t('resources.subtitle') || 'Herramientas y referencias para el aprendizaje del Benga'
-          }}
+          {{ $t('resources.subtitle') }}
         </p>
       </div>
     </header>
@@ -19,43 +17,41 @@
     <div class="resources__container">
       <!-- Primary Sources -->
       <section class="resources__section">
-        <h2>{{ $t('resources.primarySources') || 'Fuentes Primarias' }}</h2>
+        <h2>{{ $t('resources.primarySources') }}</h2>
 
         <div class="resources__cards-grid">
           <div class="resources__card resources__card--primary">
             <div class="resources__card-icon">📄</div>
-            <h3>{{ $t('about.masterwork') || 'Gramática Original de Salvadó y Cos' }}</h3>
+            <h3>{{ $t('about.masterwork') }}</h3>
             <p>
-              La obra completa de 1891 en formato PDF. Este es el documento original que forma la
-              base de todo este portal.
+              {{ $t('pages.resources.obraCompleta1891Formato') }}
             </p>
-            <a :href="bookPdfUrl" class="resources__button" download> Descargar PDF </a>
+            <a :href="bookPdfUrl" class="resources__button" download>
+              {{ $t('pages.resources.descargarPdf') }}
+            </a>
           </div>
 
           <div class="resources__card resources__card--primary">
             <div class="resources__card-icon">🎧</div>
-            <h3>{{ $t('resources.audioFiles') || 'Archivos de Audio' }}</h3>
+            <h3>{{ $t('resources.audioFiles') }}</h3>
             <p>
-              Pronunciaciones de palabras Benga recopiladas por hablantes nativos. Estos archivos
-              están alojados en Cloudinary.
+              {{ $t('pages.resources.pronunciacionesPalabrasBengaRecopiladas') }}
             </p>
-            <p class="resources__coming-soon">En desarrollo...</p>
+            <p class="resources__coming-soon">{{ $t('pages.resources.desarrollo') }}</p>
           </div>
         </div>
       </section>
 
       <!-- Learning Tools -->
       <section class="resources__section">
-        <h2>{{ $t('resources.learningTools') || 'Herramientas de Aprendizaje' }}</h2>
+        <h2>{{ $t('resources.learningTools') }}</h2>
 
         <div class="resources__cards-grid">
           <div class="resources__card">
             <div class="resources__card-icon">📖</div>
-            <h3>Living Dictionary</h3>
+            <h3>{{ $t('pages.resources.livingDictionary') }}</h3>
             <p>
-              Un diccionario comunitario que documenta el Benga con contribuciones de hablantes
-              nativos. Puedes explorar palabras, escuchar pronunciaciones y aprender usos
-              contextuales.
+              {{ $t('pages.resources.diccionarioComunitarioDocumentaBenga') }}
             </p>
             <a
               :href="livingDictionaryHome"
@@ -63,17 +59,15 @@
               rel="noopener noreferrer"
               class="resources__button resources__button--external"
             >
-              Visitar Living Dictionary ↗
+              {{ $t('pages.resources.visitarLivingDictionary') }}
             </a>
           </div>
 
           <div class="resources__card">
             <div class="resources__card-icon">🔍</div>
-            <h3>SIL International</h3>
+            <h3>{{ $t('pages.resources.silInternational') }}</h3>
             <p>
-              La Institución Lingüística de Verano trabaja en documentación de lenguas minoritarias.
-              Sus recursos incluyen información sobre lenguas Ndowe y técnicas de documentación
-              lingüística.
+              {{ $t('pages.resources.institucionLinguisticaVeranoTrabaja') }}
             </p>
             <a
               href="https://www.sil.org/"
@@ -81,16 +75,15 @@
               rel="noopener noreferrer"
               class="resources__button resources__button--external"
             >
-              Visitar SIL ↗
+              {{ $t('pages.resources.visitarSil') }}
             </a>
           </div>
 
           <div class="resources__card">
             <div class="resources__card-icon">📚</div>
-            <h3>Wikipedia - Ndowe Languages</h3>
+            <h3>{{ $t('pages.resources.wikipediaNdoweLanguages') }}</h3>
             <p>
-              Artículo informativo sobre la familia de lenguas Ndowe, incluyendo el Benga.
-              Proporciona contexto geográfico, histórico y cultural.
+              {{ $t('pages.resources.articuloInformativoSobreFamilia') }}
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Ndowe_languages"
@@ -98,16 +91,15 @@
               rel="noopener noreferrer"
               class="resources__button resources__button--external"
             >
-              Leer en Wikipedia ↗
+              {{ $t('pages.resources.leerWikipedia') }}
             </a>
           </div>
 
           <div class="resources__card">
             <div class="resources__card-icon">🗺️</div>
-            <h3>Wikimedia Commons</h3>
+            <h3>{{ $t('pages.resources.wikimediaCommons') }}</h3>
             <p>
-              Repositorio de imágenes, mapas y documentos históricos libres de derechos. Útil para
-              recursos visuales sobre Guinea Ecuatorial y la región de Corisco.
+              {{ $t('pages.resources.repositorioImagenesMapasDocumentos') }}
             </p>
             <a
               href="https://commons.wikimedia.org/"
@@ -115,7 +107,7 @@
               rel="noopener noreferrer"
               class="resources__button resources__button--external"
             >
-              Visitar Wikimedia Commons ↗
+              {{ $t('pages.resources.visitarWikimediaCommons') }}
             </a>
           </div>
         </div>
@@ -123,27 +115,26 @@
 
       <!-- Reference Materials -->
       <section class="resources__section">
-        <h2>{{ $t('resources.references') || 'Materiales de Referencia' }}</h2>
+        <h2>{{ $t('resources.references') }}</h2>
 
         <div class="resources__reference-list">
           <div class="resources__reference-item">
-            <h3>🌍 Geografía de Guinea Ecuatorial</h3>
-            <p>Información sobre la isla de Corisco y los alrededores donde se habla el Benga.</p>
+            <h3>{{ $t('pages.resources.geografiaGuineaEcuatorial') }}</h3>
+            <p>{{ $t('pages.resources.informacionSobreIslaCorisco') }}</p>
             <a
               href="https://en.wikipedia.org/wiki/Equatorial_Guinea"
               target="_blank"
               rel="noopener noreferrer"
               class="resources__link"
             >
-              Leer más →
+              {{ $t('pages.resources.leerMas') }}
             </a>
           </div>
 
           <div class="resources__reference-item">
-            <h3>👥 Cultura Ndowe</h3>
+            <h3>{{ $t('pages.resources.culturaNdowe') }}</h3>
             <p>
-              Información sobre el pueblo Ndowe, sus tradiciones y su importancia cultural en la
-              región del Golfo de Guinea.
+              {{ $t('pages.resources.informacionSobrePuebloNdowe') }}
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Ndowe_people"
@@ -151,15 +142,14 @@
               rel="noopener noreferrer"
               class="resources__link"
             >
-              Leer más →
+              {{ $t('pages.resources.leerMas') }}
             </a>
           </div>
 
           <div class="resources__reference-item">
-            <h3>🕰️ Historia de Guinea Ecuatorial</h3>
+            <h3>{{ $t('pages.resources.historiaGuineaEcuatorial') }}</h3>
             <p>
-              Contexto histórico que ayuda a entender la época en que Salvadó y Cos escribió su
-              gramática.
+              {{ $t('pages.resources.contextoHistoricoAyudaEntender') }}
             </p>
             <a
               href="https://en.wikipedia.org/wiki/History_of_Equatorial_Guinea"
@@ -167,15 +157,14 @@
               rel="noopener noreferrer"
               class="resources__link"
             >
-              Leer más →
+              {{ $t('pages.resources.leerMas') }}
             </a>
           </div>
 
           <div class="resources__reference-item">
-            <h3>🎓 Investigación Lingüística Contemporánea</h3>
+            <h3>{{ $t('pages.resources.investigacionLinguisticaContemporanea') }}</h3>
             <p>
-              Estudios recientes sobre documentación de lenguas, preservación lingüística y
-              revitalización.
+              {{ $t('pages.resources.estudiosRecientesSobreDocumentacion') }}
             </p>
             <a
               href="https://www.linguisticsociety.org/"
@@ -183,7 +172,7 @@
               rel="noopener noreferrer"
               class="resources__link"
             >
-              Linguistic Society of America →
+              {{ $t('pages.resources.linguisticSocietyOfAmerica') }}
             </a>
           </div>
         </div>
@@ -191,60 +180,54 @@
 
       <!-- Study Tips -->
       <section class="resources__section resources__tips-section">
-        <h2>{{ $t('resources.studyTips') || 'Consejos para Estudiar Benga' }}</h2>
+        <h2>{{ $t('resources.studyTips') }}</h2>
 
         <div class="resources__tips-grid">
           <div class="resources__tip-card">
             <span class="resources__tip-number">1</span>
-            <h3>Empieza por el Alfabeto</h3>
+            <h3>{{ $t('pages.resources.empiezaPorAlfabeto') }}</h3>
             <p>
-              Familiarízate con los sonidos básicos y el sistema de escritura Benga antes de pasar a
-              estructuras más complejas.
+              {{ $t('pages.resources.familiarizateConSonidosBasicos') }}
             </p>
           </div>
 
           <div class="resources__tip-card">
             <span class="resources__tip-number">2</span>
-            <h3>Escucha Pronunciaciones</h3>
+            <h3>{{ $t('pages.resources.escuchaPronunciaciones') }}</h3>
             <p>
-              Usa los archivos de audio disponibles en el portal. La pronunciación correcta es
-              crucial en Benga.
+              {{ $t('pages.resources.usaArchivosAudioDisponibles') }}
             </p>
           </div>
 
           <div class="resources__tip-card">
             <span class="resources__tip-number">3</span>
-            <h3>Aprende Cognados</h3>
+            <h3>{{ $t('pages.resources.aprendeCognados') }}</h3>
             <p>
-              Identifica palabras que se parecen a términos en otras lenguas Ndowe o lenguas bantu
-              relacionadas.
+              {{ $t('pages.resources.identificaPalabrasSeParecen') }}
             </p>
           </div>
 
           <div class="resources__tip-card">
             <span class="resources__tip-number">4</span>
-            <h3>Memoriza Clases Nominales</h3>
+            <h3>{{ $t('pages.resources.memorizaClasesNominales') }}</h3>
             <p>
-              El sistema de siete clases nominales es fundamental para la gramática Benga. Dedica
-              tiempo a aprenderlas bien.
+              {{ $t('pages.resources.sistemaSieteClasesNominales') }}
             </p>
           </div>
 
           <div class="resources__tip-card">
             <span class="resources__tip-number">5</span>
-            <h3>Practica con Ejemplos</h3>
+            <h3>{{ $t('pages.resources.practicaConEjemplos') }}</h3>
             <p>
-              El portal proporciona cientos de ejemplos. Úsalos para ver cómo funcionan las reglas
-              en contexto real.
+              {{ $t('pages.resources.portalProporcionaCientosEjemplos') }}
             </p>
           </div>
 
           <div class="resources__tip-card">
             <span class="resources__tip-number">6</span>
-            <h3>Conecta con la Comunidad</h3>
+            <h3>{{ $t('pages.resources.conectaConComunidad') }}</h3>
             <p>
-              Si es posible, conecta con hablantes nativos de Benga o comunidades de investigadores
-              interesados en la lengua.
+              {{ $t('pages.resources.siEsPosibleConecta') }}
             </p>
           </div>
         </div>
@@ -252,40 +235,27 @@
 
       <!-- Community -->
       <section class="resources__section">
-        <h2>{{ $t('footer.community') || 'Comunidad' }}</h2>
+        <h2>{{ $t('footer.community') }}</h2>
 
         <div class="resources__community-content">
           <p>
-            El aprendizaje del Benga es mejor cuando se hace en comunidad. Aquí hay formas de
-            conectar:
+            {{ $t('pages.resources.aprendizajeBengaEsMejor') }}
           </p>
 
           <ul>
-            <li>
-              <strong>Living Dictionary:</strong> Contribuye con pronunciaciones y usos de palabras
-              Benga
-            </li>
-            <li>
-              <strong>SIL Communities:</strong> Participa en iniciativas de documentación y
-              preservación lingüística
-            </li>
-            <li>
-              <strong>Comunidad Ndowe:</strong> Busca grupos culturales y educativos Ndowe en línea
-              o localmente
-            </li>
-            <li>
-              <strong>Universidades:</strong> Algunos programas de lingüística africana pueden
-              ofrecerte oportunidades de aprendizaje especializado
-            </li>
+            <li v-html="$t('pages.resources.livingDictionaryContribuyeCon')"></li>
+            <li v-html="$t('pages.resources.silCommunitiesParticipaIniciativas')"></li>
+            <li v-html="$t('pages.resources.comunidadNdoweBuscaGrupos')"></li>
+            <li v-html="$t('pages.resources.universidadesAlgunosProgramasLinguistica')"></li>
           </ul>
 
           <div class="resources__contribute-box">
             <h3>{{ $t('footer.contribute') }}</h3>
             <p>
-              ¿Tienes recursos que agregar? ¿Correcciones o sugerencias? Nos gustaría saber de ti.
+              {{ $t('pages.resources.tienesRecursosAgregarCorrecciones') }}
             </p>
             <router-link to="/" class="resources__contribute-button">
-              Conectar con Nosotros
+              {{ $t('pages.resources.conectarConNosotros') }}
             </router-link>
           </div>
         </div>
@@ -306,7 +276,7 @@ export default {
     }
   },
   created() {
-    document.title = 'Recursos - ' + this.$t('nav.resources')
+    document.title = this.$t('pages.resources.pageTitle', { resources: this.$t('nav.resources') })
   }
 }
 </script>
@@ -582,7 +552,7 @@ export default {
         padding-left: $spacing-lg;
         line-height: $line-height-loose;
 
-        strong {
+        :deep(strong) {
           color: $color-primary;
         }
       }

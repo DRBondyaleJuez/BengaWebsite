@@ -8,7 +8,9 @@
       <div v-if="layout !== 'single' && item.plural" class="example-plural">
         <BengaWord :word="item.plural.word" :meaning="item.plural.meaning" block />
       </div>
-      <span v-if="layout === 'plural-only'" class="plural-only-tag">{{ badge }}</span>
+      <span v-if="layout === 'plural-only'" class="plural-only-tag">{{
+        badge || $t('content.pluralOnly')
+      }}</span>
     </div>
   </CardGrid>
 </template>
@@ -43,7 +45,8 @@ export default {
       default: 'pairs',
       validator: (value) => ['pairs', 'single', 'plural-only'].includes(value)
     },
-    badge: { type: String, default: 'Solo plural' },
+    /** Default: «Solo plural» in the visitor's language (content.pluralOnly) */
+    badge: { type: String, default: null },
     /** Prefix of the cards' keys, so two grids on one page never share keys. */
     keyPrefix: { type: String, default: 'ex' }
   }

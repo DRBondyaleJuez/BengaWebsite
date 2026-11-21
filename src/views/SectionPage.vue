@@ -107,7 +107,7 @@
           "
         />
         <p v-else-if="isDev" class="section-page__unknown">
-          Bloque desconocido: «{{ block.type }}» (añade su componente en SectionPage.vue)
+          {{ $t('components.sectionPage.bloqueDesconocidoAnadeSu', { type: block.type }) }}
         </p>
       </template>
     </component>

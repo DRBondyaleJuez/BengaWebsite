@@ -1,5 +1,5 @@
 <template>
-  <nav class="chapter-nav" aria-label="Chapter navigation">
+  <nav class="chapter-nav" :aria-label="$t('components.chapterNav.chapterNavigation')">
     <ul class="chapter-nav__list">
       <li v-for="chapter in chapters" :key="chapter.id" class="chapter-nav__item">
         <button
