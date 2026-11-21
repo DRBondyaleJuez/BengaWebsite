@@ -1,0 +1,197 @@
+{
+  "_about": "Content of VerbalNouns.vue (Spanish + translations). Benga words are plain strings; every text a visitor reads in Spanish is { \"es\": …, \"en\": …, \"fr\": … }. Guide: docs/TRANSLATIONS.md",
+  "abstractNouns": [
+    {
+      "imperative": "Tândâkâ",
+      "imperativeMeaning": {
+        "es": "ama tú"
+      },
+      "nominalForm": "itândē",
+      "meaning": {
+        "es": "amor"
+      }
+    },
+    {
+      "imperative": "Binaka",
+      "imperativeMeaning": {
+        "es": "aborrece tú"
+      },
+      "nominalForm": "ibina",
+      "meaning": {
+        "es": "odio"
+      }
+    },
+    {
+      "imperative": "Kalaka",
+      "imperativeMeaning": {
+        "es": "habla tú"
+      },
+      "nominalForm": "ikala",
+      "meaning": {
+        "es": "razonamiento"
+      }
+    },
+    {
+      "imperative": "Langaka",
+      "imperativeMeaning": {
+        "es": "lee tú"
+      },
+      "nominalForm": "ilanga",
+      "meaning": {
+        "es": "lectura"
+      }
+    },
+    {
+      "imperative": "Longaka",
+      "imperativeMeaning": {
+        "es": "edifica tú"
+      },
+      "nominalForm": "ilonga",
+      "meaning": {
+        "es": "edificio"
+      }
+    },
+    {
+      "imperative": "Lēndēkē",
+      "imperativeMeaning": {
+        "es": "escribe tú"
+      },
+      "nominalForm": "ilende",
+      "meaning": {
+        "es": "escritura"
+      }
+    },
+    {
+      "imperative": "Kalakia",
+      "imperativeMeaning": {
+        "es": "ora tú"
+      },
+      "nominalForm": "ikalo",
+      "meaning": {
+        "es": "oración"
+      }
+    },
+    {
+      "imperative": "Janjaka",
+      "imperativeMeaning": {
+        "es": "trabaja tú"
+      },
+      "nominalForm": "ijanja",
+      "meaning": {
+        "es": "trabajo"
+      }
+    }
+  ],
+  "agentNouns": [
+    {
+      "imperative": "Longaka",
+      "imperativeMeaning": {
+        "es": "edifica tú"
+      },
+      "nominalForm": "ulongi",
+      "meaning": {
+        "es": "arquitecto"
+      }
+    },
+    {
+      "imperative": "Langaka",
+      "imperativeMeaning": {
+        "es": "lee tú"
+      },
+      "nominalForm": "ulangi",
+      "meaning": {
+        "es": "lector"
+      }
+    },
+    {
+      "imperative": "Kalaka",
+      "imperativeMeaning": {
+        "es": "habla tú"
+      },
+      "nominalForm": "ukali",
+      "meaning": {
+        "es": "orador"
+      }
+    },
+    {
+      "imperative": "Lēndēkē",
+      "imperativeMeaning": {
+        "es": "escribe tú"
+      },
+      "nominalForm": "ulendi",
+      "meaning": {
+        "es": "escritor"
+      }
+    }
+  ],
+  "modalityNouns": [
+    {
+      "actionForm": "Ulongi",
+      "actionFormMeaning": {
+        "es": "arquitecto"
+      },
+      "nominalForm": "ilongidi",
+      "meaning": {
+        "es": "modo de construir"
+      }
+    },
+    {
+      "actionForm": "Ulangi",
+      "actionFormMeaning": {
+        "es": "lector"
+      },
+      "nominalForm": "ilangidi",
+      "meaning": {
+        "es": "modo de leer"
+      }
+    },
+    {
+      "actionForm": "Ukali",
+      "actionFormMeaning": {
+        "es": "orador"
+      },
+      "nominalForm": "ikalidi",
+      "meaning": {
+        "es": "modo de hablar"
+      }
+    }
+  ],
+  "typeSummary": [
+    {
+      "type": {
+        "es": "Abstracto"
+      },
+      "formation": {
+        "es": "Imperativo de 2.ª persona singular sin su última sílaba, con i inicial"
+      },
+      "example": "Tândâkâ → itândē",
+      "nounClass": {
+        "es": "Clase 2"
+      }
+    },
+    {
+      "type": {
+        "es": "De acción"
+      },
+      "formation": {
+        "es": "Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal"
+      },
+      "example": "Longaka → ulongi",
+      "nounClass": {
+        "es": "Clase 3"
+      }
+    },
+    {
+      "type": {
+        "es": "De modo"
+      },
+      "formation": {
+        "es": "Nombre de acción con su u inicial mudada en i y terminación en -di"
+      },
+      "example": "Ulongi → ilongidi",
+      "nounClass": {
+        "es": "—"
+      }
+    }
+  ]
+}

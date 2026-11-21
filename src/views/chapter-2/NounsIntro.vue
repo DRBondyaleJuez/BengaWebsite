@@ -1,70 +1,58 @@
 <template>
   <div class="nouns-intro">
     <div class="nouns-intro__header">
-      <h1>Introducción a la Clasificación Nominal</h1>
-      <p>El sistema de siete clases del Benga</p>
+      <h1>{{ $t('pages.nounsIntro.introduccionClasificacionNominal') }}</h1>
+      <p>{{ $t('pages.nounsIntro.sistemaSieteClasesBenga') }}</p>
     </div>
 
     <section class="nouns-intro__overview">
-      <h2>¿Qué es la Clasificación Nominal?</h2>
+      <h2>{{ $t('pages.nounsIntro.esClasificacionNominal') }}</h2>
       <p>
-        La clasificación de los nombres depende del modo con que forman sus plurales y toman sus
-        correspondientes adjuntos. Esta es, sin duda, la parte más interesante de la lengua Benga.
-        Los nombres que forman su plural bajo una misma forma se reúnen en una clase, tomando los
-        mismos o semejantes adjetivos.
+        {{ $t('pages.nounsIntro.clasificacionNombresDependeModo') }}
       </p>
     </section>
 
     <section class="nouns-intro__principles">
-      <h2>Tres Principios Clave</h2>
+      <h2>{{ $t('pages.nounsIntro.tresPrincipiosClave') }}</h2>
       <div class="principles-grid">
         <div class="principle-card">
           <div class="principle-number">1</div>
-          <h3>Plurales Agrupados</h3>
+          <h3>{{ $t('pages.nounsIntro.pluralesAgrupados') }}</h3>
           <p>
-            Los nombres que forman su plural del mismo modo pertenecen a la misma clase y toman los
-            mismos adjuntos.
+            {{ $t('pages.nounsIntro.nombresFormanSuPlural') }}
           </p>
         </div>
         <div class="principle-card">
           <div class="principle-number">2</div>
-          <h3>Cambios Radicales</h3>
+          <h3>{{ $t('pages.nounsIntro.cambiosRadicales') }}</h3>
           <p>
-            En contraste con las lenguas romances, el cambio en la formación del plural está al
-            comienzo en la radical, no en la terminación.
+            {{ $t('pages.nounsIntro.contrasteConLenguasRomances') }}
           </p>
         </div>
         <div class="principle-card">
           <div class="principle-number">3</div>
-          <h3>Concordancia Rigurosa</h3>
+          <h3>{{ $t('pages.nounsIntro.concordanciaRigurosa') }}</h3>
           <p>
-            Los adjuntos (adjetivos, pronombres, preposiciones...) deben concordar con la clase del
-            nombre, tanto en singular como en plural. Siendo estos elementos que están vinculados,
-            rodean o van unidos al sustantivo como
+            {{ $t('pages.nounsIntro.adjuntosAdjetivosPronombresPreposiciones') }}
           </p>
         </div>
       </div>
     </section>
 
     <section class="nouns-intro__complexity">
-      <h2>Simplificación Pedagógica</h2>
-      <p>
-        <strong>Dato histórico:</strong> De trece diferentes maneras pueden formarse los plurales en
-        el Benga. Sin embargo, para simplificar el aprendizaje, los reducimos a siete clases
-        principales reuniendo bajo una misma clase todos los nombres que toman los mismos adjuntos,
-        aunque no formen el plural exactamente del mismo modo.
-      </p>
+      <h2>{{ $t('pages.nounsIntro.simplificacionPedagogica') }}</h2>
+      <p v-html="$t('pages.nounsIntro.datoHistoricoTreceDiferentes')"></p>
     </section>
 
     <section class="nouns-intro__classes">
-      <h2>Las Siete Clases</h2>
+      <h2>{{ $t('pages.nounsIntro.sieteClases') }}</h2>
       <div class="classes-table">
         <div class="class-row header">
-          <div>Clase</div>
-          <div>Singular</div>
-          <div>Plural</div>
-          <div>Ejemplo</div>
-          <div>Enlace</div>
+          <div>{{ $t('pages.nounsIntro.clase') }}</div>
+          <div>{{ $t('pages.nounsIntro.singular') }}</div>
+          <div>{{ $t('pages.nounsIntro.plural') }}</div>
+          <div>{{ $t('pages.nounsIntro.ejemplo') }}</div>
+          <div>{{ $t('pages.nounsIntro.enlace') }}</div>
         </div>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-1" custom>
           <div
@@ -74,11 +62,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Primera</strong></div>
-            <div class="pattern">e- / y-</div>
+            <div><strong>1</strong></div>
+            <div class="pattern">{{ $t('pages.nounsIntro.e') }}</div>
             <div class="pattern">be- / bi-</div>
             <div class="example">Epokolo → Bepokolo</div>
-            <div>Ver Clase →</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-2" custom>
@@ -89,11 +77,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Segunda</strong></div>
+            <div><strong>2</strong></div>
             <div class="pattern">i- / di-</div>
             <div class="pattern">ma-</div>
             <div class="example">Ibakē → Mabakē</div>
-            <div>Ver Clase →</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-3" custom>
@@ -104,11 +92,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Tercera</strong></div>
+            <div><strong>3</strong></div>
             <div class="pattern">u- / mū-</div>
             <div class="pattern">me / mi-</div>
-            <div class="example">Ubâki → Mebâki</div>
-            <div>Ver Clase →</div>
+            <div class="example">{{ $t('pages.nounsIntro.ubakiMebaki') }}</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-4" custom>
@@ -119,11 +107,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Cuarta</strong></div>
+            <div><strong>4</strong></div>
             <div class="pattern">bo- / ba-</div>
             <div class="pattern">mi-</div>
             <div class="example">Bobako → Mibako</div>
-            <div>Ver Clase →</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-5" custom>
@@ -134,11 +122,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Quinta</strong></div>
+            <div><strong>5</strong></div>
             <div class="pattern">mo-</div>
             <div class="pattern">ba-</div>
-            <div class="example">Momo → Bamo</div>
-            <div>Ver Clase →</div>
+            <div class="example">{{ $t('pages.nounsIntro.momoBamo') }}</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-6" custom>
@@ -149,11 +137,11 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Sexta</strong></div>
+            <div><strong>6</strong></div>
             <div class="pattern">v-</div>
             <div class="pattern">l-</div>
             <div class="example">Veya → Leya</div>
-            <div>Ver Clase →</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
         <router-link v-slot="{ navigate }" to="/capitulo-2/clase-7" custom>
@@ -164,66 +152,55 @@
             @click="navigate"
             @keydown.enter="navigate"
           >
-            <div><strong>Séptima</strong></div>
-            <div class="pattern">Invariable</div>
-            <div class="pattern">Invariable</div>
-            <div class="example">Fala → Fala</div>
-            <div>Ver Clase →</div>
+            <div><strong>7</strong></div>
+            <div class="pattern">{{ $t('pages.nounsIntro.invariable') }}</div>
+            <div class="pattern">{{ $t('pages.nounsIntro.invariable') }}</div>
+            <div class="example">{{ $t('pages.nounsIntro.falaFala') }}</div>
+            <div>{{ $t('pages.nounsIntro.verClase') }}</div>
           </div>
         </router-link>
       </div>
     </section>
 
     <section class="nouns-intro__concordance">
-      <h2>Ejemplo de Concordancia</h2>
+      <h2>{{ $t('pages.nounsIntro.ejemploConcordancia') }}</h2>
       <p>
-        La concordancia es fundamental en Benga. Cuando un nombre pertenece a una clase, todos los
-        adjetivos que lo acompañan deben adoptar la forma correspondiente a esa clase:
+        {{ $t('pages.nounsIntro.concordanciaEsFundamentalBenga') }}
       </p>
       <div class="concordance-example">
         <div class="example-set">
-          <h4>Singular</h4>
+          <h4>{{ $t('pages.nounsIntro.singular') }}</h4>
           <p class="bengatext"><span class="benga">Epokolo eyamu</span></p>
-          <p class="translation">Sombrero bueno</p>
+          <p class="translation">{{ $t('pages.nounsIntro.sombreroBueno') }}</p>
         </div>
         <div class="example-set">
-          <h4>Plural</h4>
+          <h4>{{ $t('pages.nounsIntro.plural') }}</h4>
           <p class="bengatext"><span class="benga">Bepokolo beyamu</span></p>
-          <p class="translation">Sombreros buenos</p>
+          <p class="translation">{{ $t('pages.nounsIntro.sombrerosBuenos') }}</p>
         </div>
       </div>
       <p>
-        Esto será desarrollado más en sucesivos capitulos. También afecta a otros adjuntos como
-        pronombre y preposiciones entre otros.
+        {{ $t('pages.nounsIntro.estoSeraDesarrolladoMas') }}
       </p>
     </section>
 
     <section class="nouns-intro__practice">
-      <h2>Consejo Práctico</h2>
+      <h2>{{ $t('pages.nounsIntro.consejoPractico') }}</h2>
       <div class="practice-box">
-        <p>
-          <strong>Memoriza los patrones iniciales:</strong> El primer paso es identificar la forma
-          inicial del nombre singular. Esto te indicará automáticamente la clase y, por lo tanto, el
-          patrón que debe seguir en plural.
-        </p>
-        <p>
-          <strong>Agrupa palabras por clase:</strong> No memorices palabras al azar. En su lugar,
-          crea grupos de palabras pertenecientes a la misma clase para ver el patrón claramente.
-        </p>
-        <p>
-          <strong>Practica concordancia:</strong> No aprendas sólo palabras aisladas. Usa cada
-          nombre con un adjetivo para entrenar tu intuición sobre la concordancia.
-        </p>
+        <p v-html="$t('pages.nounsIntro.memorizaPatronesInicialesPrimer')"></p>
+        <p v-html="$t('pages.nounsIntro.agrupaPalabrasPorClase')"></p>
+        <p v-html="$t('pages.nounsIntro.practicaConcordanciaNoAprendas')"></p>
       </div>
     </section>
 
     <section class="nouns-intro__cta">
-      <h2>¡Comienza Ahora!</h2>
+      <h2>{{ $t('pages.nounsIntro.comienzaAhora') }}</h2>
       <p>
-        Estás listo para explorar cada clase nominal. Comienza con la Clase 1, que es la más simple
-        y accesible.
+        {{ $t('pages.nounsIntro.estasListoParaExplorar') }}
       </p>
-      <router-link to="/capitulo-2/clase-1" class="cta-button"> Ir a Clase 1 → </router-link>
+      <router-link to="/capitulo-2/clase-1" class="cta-button">
+        {{ $t('pages.nounsIntro.irClase1') }}
+      </router-link>
     </section>
     <SectionNavFooter />
   </div>
@@ -235,7 +212,7 @@ export default {
   name: 'NounsIntro',
   components: { SectionNavFooter },
   created() {
-    document.title = 'Introducción a Clasificación Nominal | Portal Benga'
+    document.title = `${this.$t('pages.nounsIntro.pageTitle')} | Portal Benga`
   }
 }
 </script>

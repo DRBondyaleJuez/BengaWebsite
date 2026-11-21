@@ -1,0 +1,277 @@
+{
+  "_about": "Content of IrregularNouns.vue (Spanish + translations). Benga words are plain strings; every text a visitor reads in Spanish is { \"es\": …, \"en\": …, \"fr\": … }. Guide: docs/TRANSLATIONS.md",
+  "pluralOnlyNouns": [
+    {
+      "word": "Hoūē",
+      "meaning": {
+        "es": "Cabellera, pelo"
+      }
+    },
+    {
+      "word": "Honji",
+      "meaning": {
+        "es": "Heno, yerba"
+      }
+    },
+    {
+      "word": "Jubu",
+      "meaning": {
+        "es": "Ceniza"
+      }
+    },
+    {
+      "word": "Mavule",
+      "meaning": {
+        "es": "Aceite"
+      }
+    },
+    {
+      "word": "Miba",
+      "meaning": {
+        "es": "Agua"
+      }
+    },
+    {
+      "word": "Makiya",
+      "meaning": {
+        "es": "Sangre"
+      }
+    },
+    {
+      "word": "Maku",
+      "meaning": {
+        "es": "Licor, caña"
+      }
+    },
+    {
+      "word": "Tito",
+      "meaning": {
+        "es": "Animal"
+      }
+    },
+    {
+      "word": "Malângâ",
+      "meaning": {
+        "es": "Flores de los árboles"
+      }
+    },
+    {
+      "word": "Majênjina",
+      "meaning": {
+        "es": "Rayos de la aurora"
+      }
+    },
+    {
+      "word": "Mbana",
+      "meaning": {
+        "es": "Pinzas, tenazuelas"
+      }
+    },
+    {
+      "word": "Mbai",
+      "meaning": {
+        "es": "Virutas, astillas"
+      }
+    },
+    {
+      "word": "Mâmbē",
+      "meaning": {
+        "es": "Sobras, mendrugos"
+      }
+    },
+    {
+      "word": "Lombongo",
+      "meaning": {
+        "es": "Mosquitos"
+      }
+    },
+    {
+      "word": "Kiji",
+      "meaning": {
+        "es": "Rastrojo"
+      }
+    },
+    {
+      "word": "Hako",
+      "meaning": {
+        "es": "Hormiga, etc."
+      }
+    }
+  ],
+  "singularOnlyNouns": [
+    {
+      "word": "Hâkâ",
+      "meaning": {
+        "es": "Ápice, punta"
+      }
+    },
+    {
+      "word": "Ngânde",
+      "meaning": {
+        "es": "Luna"
+      }
+    },
+    {
+      "word": "Myadi",
+      "meaning": {
+        "es": "Agonía"
+      }
+    },
+    {
+      "word": "Ngabo",
+      "meaning": {
+        "es": "Porción, división"
+      }
+    },
+    {
+      "word": "Tina",
+      "meaning": {
+        "es": "Origen, causa"
+      }
+    },
+    {
+      "word": "Pâkūēpâkūē",
+      "meaning": {
+        "es": "Verdad"
+      }
+    },
+    {
+      "word": "Kâla",
+      "meaning": {
+        "es": "Reloj de caja"
+      }
+    },
+    {
+      "word": "Ndiba",
+      "meaning": {
+        "es": "Profundidad"
+      }
+    },
+    {
+      "word": "Kapi",
+      "meaning": {
+        "es": "Remo"
+      }
+    },
+    {
+      "word": "Kama",
+      "meaning": {
+        "es": "Ciento"
+      }
+    },
+    {
+      "word": "Nyati",
+      "meaning": {
+        "es": "Buey"
+      }
+    },
+    {
+      "word": "Pita",
+      "meaning": {
+        "es": "Pólvora"
+      }
+    },
+    {
+      "word": "Ngūanjangūanja",
+      "meaning": {
+        "es": "Diligencia"
+      }
+    },
+    {
+      "word": "Bokâ",
+      "meaning": {
+        "es": "Estación lluviosa"
+      }
+    },
+    {
+      "word": "Bulu",
+      "meaning": {
+        "es": "Noche"
+      }
+    },
+    {
+      "word": "Manga",
+      "meaning": {
+        "es": "Mar"
+      }
+    },
+    {
+      "word": "Njea",
+      "meaning": {
+        "es": "Sendero"
+      }
+    },
+    {
+      "word": "Poli",
+      "meaning": {
+        "es": "Trigo"
+      }
+    },
+    {
+      "word": "Tonda",
+      "meaning": {
+        "es": "Diluvio"
+      }
+    },
+    {
+      "word": "Henga",
+      "meaning": {
+        "es": "Ocio"
+      }
+    },
+    {
+      "word": "Hūē",
+      "meaning": {
+        "es": "Paz"
+      }
+    },
+    {
+      "word": "Maka",
+      "meaning": {
+        "es": "Jugo"
+      }
+    },
+    {
+      "word": "Kango",
+      "meaning": {
+        "es": "Sabor, gusto"
+      }
+    },
+    {
+      "word": "Kâ",
+      "meaning": {
+        "es": "Caracol grande"
+      }
+    },
+    {
+      "word": "Kânde",
+      "meaning": {
+        "es": "Perseverancia"
+      }
+    },
+    {
+      "word": "Pani",
+      "meaning": {
+        "es": "Uso, hábito"
+      }
+    },
+    {
+      "word": "Beja",
+      "meaning": {
+        "es": "Alimento"
+      }
+    },
+    {
+      "word": "Mboi",
+      "meaning": {
+        "es": "Miel"
+      }
+    },
+    {
+      "word": "Peta",
+      "meaning": {
+        "es": "Disputa, etc."
+      }
+    }
+  ]
+}

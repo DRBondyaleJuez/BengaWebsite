@@ -52,7 +52,9 @@
           v-else-if="block.type === 'practice'"
           :items="block.items.map((item) => $localized(item))"
         />
-        <p v-else-if="isDev" class="unknown-block">Bloque desconocido: «{{ block.type }}»</p>
+        <p v-else-if="isDev" class="unknown-block">
+          {{ $t('pages.nounClass.bloqueDesconocido', { type: block.type }) }}
+        </p>
       </template>
     </section>
 

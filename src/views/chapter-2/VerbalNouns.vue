@@ -1,25 +1,21 @@
 <template>
   <div class="verbal-nouns">
     <div class="verbal-nouns__header">
-      <h1>Nombres Derivados</h1>
-      <p class="subtitle">Nombres que se derivan de otras palabras</p>
+      <h1>{{ $t('pages.verbalNouns.nombresDerivados') }}</h1>
+      <p class="subtitle">{{ $t('pages.verbalNouns.nombresSeDerivanOtras') }}</p>
     </div>
 
     <section class="verbal-nouns__intro">
       <p>
-        Los nombres que derivan de otras palabras pueden dividirse en tres clases: nombres
-        abstractos derivados de imperativos verbales, nombres agenciales derivados de imperativos
-        verbales y nombres de modos derivados de los sustantivos agenciales o sustantivos
-        abstractos.
+        {{ $t('pages.verbalNouns.nombresDerivanOtrasPalabras') }}
       </p>
     </section>
 
     <!-- Class 1: Abstract Nouns -->
     <section class="verbal-nouns__class-1">
-      <h2>CLASE PRIMERA: Nombres Abstractos</h2>
+      <h2>{{ $t('pages.verbalNouns.clasePrimeraNombresAbstractos') }}</h2>
       <p class="rule">
-        Estos se forman de la segunda persona del singular del imperativo, quitándole la última
-        sílaba y anteponiendo a la palabra la letra i.
+        {{ $t('pages.verbalNouns.estosSeFormanSegunda') }}
       </p>
 
       <CardGrid
@@ -31,29 +27,33 @@
         <div class="example-card">
           <div class="example-group">
             <div class="example-form">
-              <span class="label">Imperativo</span>
-              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.imperativo') }}</span>
+              <BengaWord
+                :word="example.imperative"
+                :meaning="$localized(example.imperativeMeaning)"
+                block
+              />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
-              <span class="label">Nombre</span>
-              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.nombre') }}</span>
+              <BengaWord :word="example.nominalForm" :meaning="$localized(example.meaning)" block />
             </div>
           </div>
         </div>
       </CardGrid>
       <p class="classification-note">
-        En la clasificación, estos nombres pertenecen a la
-        <a href="/capitulo-2/clase-2">clase 2</a> en su número singular. (i->ma)
+        {{ $t('pages.verbalNouns.clasificacionEstosNombresPertenecen') }}
+        <a href="/capitulo-2/clase-2">{{ $t('pages.verbalNouns.clase2') }}</a>
+        {{ $t('pages.verbalNouns.suNumeroSingularI') }}
       </p>
     </section>
 
     <!-- Class 2: Action Nouns -->
     <section class="verbal-nouns__class-2">
-      <h2>CLASE SEGUNDA: Nombres Agenciales</h2>
+      <h2>{{ $t('pages.verbalNouns.claseSegundaNombresAgenciales') }}</h2>
       <p class="rule">
-        Estos se forman asimismo de la segunda persona del singular del imperativo, quitando la
-        última sílaba, anteponiendo a la palabra la letra u y la última letra siendo i.
+        {{ $t('pages.verbalNouns.estosSeFormanAsimismo') }}
       </p>
 
       <CardGrid
@@ -65,30 +65,33 @@
         <div class="example-card">
           <div class="example-group">
             <div class="example-form">
-              <span class="label">Imperativo</span>
-              <BengaWord :word="example.imperative" :meaning="example.imperativeMeaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.imperativo') }}</span>
+              <BengaWord
+                :word="example.imperative"
+                :meaning="$localized(example.imperativeMeaning)"
+                block
+              />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
-              <span class="label">Nombre</span>
-              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.nombre') }}</span>
+              <BengaWord :word="example.nominalForm" :meaning="$localized(example.meaning)" block />
             </div>
           </div>
         </div>
       </CardGrid>
       <p class="classification-note">
-        Estos nombres pertenecen a la <a href="/capitulo-2/clase-3">clase 3</a> en la formación del
-        plural. u->me
+        {{ $t('pages.verbalNouns.estosNombresPertenecen') }}
+        <a href="/capitulo-2/clase-3">{{ $t('pages.verbalNouns.clase3') }}</a>
+        {{ $t('pages.verbalNouns.formacionPluralUMe') }}
       </p>
     </section>
 
     <!-- Class 3: Modality Nouns -->
     <section class="verbal-nouns__class-3">
-      <h2>CLASE TERCERA: Nombres de Modo</h2>
+      <h2>{{ $t('pages.verbalNouns.claseTerceraNombresModo') }}</h2>
       <p class="rule">
-        Estos se reforman mudando la "u" inicial de los nombres agenciales por una "i", y añadiendo
-        "di" a su terminación. (Se podría entender también como sustituyendo la última letra de los
-        nombres abstractos por "idi"
+        {{ $t('pages.verbalNouns.estosSeReformanMudando') }}
       </p>
 
       <CardGrid
@@ -100,13 +103,17 @@
         <div class="example-card">
           <div class="example-group">
             <div class="example-form">
-              <span class="label">Nombre de acción</span>
-              <BengaWord :word="example.actionForm" :meaning="example.actionFormMeaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.nombreAccion') }}</span>
+              <BengaWord
+                :word="example.actionForm"
+                :meaning="$localized(example.actionFormMeaning)"
+                block
+              />
             </div>
             <span class="arrow" aria-hidden="true">→</span>
             <div class="example-form">
-              <span class="label">Nombre de modo</span>
-              <BengaWord :word="example.nominalForm" :meaning="example.meaning" block />
+              <span class="label">{{ $t('pages.verbalNouns.nombreModo') }}</span>
+              <BengaWord :word="example.nominalForm" :meaning="$localized(example.meaning)" block />
             </div>
           </div>
         </div>
@@ -115,51 +122,49 @@
 
     <!-- Comparison Table -->
     <section class="verbal-nouns__summary">
-      <h2>Los tres tipos en resumen</h2>
+      <h2>{{ $t('pages.verbalNouns.tresTiposResumen') }}</h2>
       <div class="summary-table">
         <div class="summary-row header">
-          <div>Tipo</div>
-          <div>Formación</div>
-          <div>Ejemplo</div>
-          <div>Clase nominal</div>
+          <div>{{ $t('pages.verbalNouns.tipo') }}</div>
+          <div>{{ $t('pages.verbalNouns.formacion') }}</div>
+          <div>{{ $t('pages.verbalNouns.ejemplo') }}</div>
+          <div>{{ $t('pages.verbalNouns.claseNominal') }}</div>
         </div>
-        <div class="summary-row" v-for="row in typeSummary" :key="row.type">
-          <div class="label">{{ row.type }}</div>
-          <div>{{ row.formation }}</div>
+        <div class="summary-row" v-for="row in typeSummary" :key="row.example">
+          <div class="label">{{ $localized(row.type) }}</div>
+          <div>{{ $localized(row.formation) }}</div>
           <div class="example">{{ row.example }}</div>
-          <div>{{ row.nounClass }}</div>
+          <div>{{ $localized(row.nounClass) }}</div>
         </div>
       </div>
     </section>
 
     <!-- Key Concepts -->
     <section class="verbal-nouns__concepts">
-      <h2>Conceptos Clave</h2>
+      <h2>{{ $t('pages.verbalNouns.conceptosClave') }}</h2>
       <div class="concepts-grid">
         <div class="concept-card">
-          <h4>Imperativo de partida</h4>
+          <h4>{{ $t('pages.verbalNouns.imperativoPartida') }}</h4>
           <p>
-            Las dos primeras clases nacen de la segunda persona del singular del imperativo, sin su
-            última sílaba
+            {{ $t('pages.verbalNouns.dosPrimerasClasesNacen') }}
           </p>
         </div>
         <div class="concept-card">
-          <h4>Vocal precedente</h4>
+          <h4>{{ $t('pages.verbalNouns.vocalPrecedente') }}</h4>
           <p>
-            En la clase segunda esa vocal se omite o se muda, y de ahí sale la forma ulongi, ulangi,
-            ukali
+            {{ $t('pages.verbalNouns.claseSegundaEsaVocal') }}
           </p>
         </div>
         <div class="concept-card">
-          <h4>Terminación en -di</h4>
+          <h4>{{ $t('pages.verbalNouns.terminacionDi') }}</h4>
           <p>
-            La clase tercera parte del nombre de acción: muda su u inicial por i y añade di al final
+            {{ $t('pages.verbalNouns.claseTerceraParteNombre') }}
           </p>
         </div>
         <div class="concept-card">
-          <h4>Una misma raíz</h4>
+          <h4>{{ $t('pages.verbalNouns.mismaRaiz') }}</h4>
           <p>
-            Longaka, ulongi e ilongidi muestran cómo una sola raíz verbal produce los tres tipos
+            {{ $t('pages.verbalNouns.longakaUlongiEIlongidi') }}
           </p>
         </div>
       </div>
@@ -167,25 +172,26 @@
 
     <!-- Examples of Productivity -->
     <section class="verbal-nouns__productivity">
-      <h2>Ejemplo con las tres derivaciones</h2>
-      <p>
-        Los tres derivaciones: aplicando cada regla a la misma raíz verbal se obtienen los tres
-        tipos de nombres. Así ocurre con la raíz "<em>long</em>" de <em>Longaka</em>, «edifica tú»:
-      </p>
+      <h2>{{ $t('pages.verbalNouns.ejemploConTresDerivaciones') }}</h2>
+      <p v-html="$t('pages.verbalNouns.tresDerivacionesAplicandoCada')"></p>
 
       <div class="productivity-example">
         <div class="derivations-grid">
           <div class="derivation-item">
-            <div class="derivation-label">Clase primera · abstracto</div>
-            <BengaWord word="ilonga" meaning="edificio" block />
+            <div class="derivation-label">{{ $t('pages.verbalNouns.clasePrimeraAbstracto') }}</div>
+            <BengaWord word="ilonga" :meaning="$t('pages.verbalNouns.meaningEdificio')" block />
           </div>
           <div class="derivation-item">
-            <div class="derivation-label">Clase segunda · agenciales</div>
-            <BengaWord word="ulongi" meaning="arquitecto" block />
+            <div class="derivation-label">{{ $t('pages.verbalNouns.claseSegundaAgenciales') }}</div>
+            <BengaWord word="ulongi" :meaning="$t('pages.verbalNouns.meaningArquitecto')" block />
           </div>
           <div class="derivation-item">
-            <div class="derivation-label">Clase tercera · de modo</div>
-            <BengaWord word="ilongidi" meaning="modo de construir" block />
+            <div class="derivation-label">{{ $t('pages.verbalNouns.claseTerceraModo') }}</div>
+            <BengaWord
+              word="ilongidi"
+              :meaning="$t('pages.verbalNouns.meaningModoConstruir')"
+              block
+            />
           </div>
         </div>
       </div>
@@ -193,15 +199,12 @@
 
     <!-- Practice -->
     <section class="verbal-nouns__practice">
-      <h2>Para Practicar</h2>
+      <h2>{{ $t('pages.verbalNouns.paraPracticar') }}</h2>
       <ol>
-        <li>Memoriza las tres reglas de formación y a qué forma de partida arranca cada una</li>
-        <li>Toma un imperativo nuevo y deduce su nombre abstracto y su nombre de acción</li>
-        <li>
-          Parte de un nombre de acción y construye su nombre de modo con la terminación
-          <strong>-di</strong>
-        </li>
-        <li>Comprueba en la tabla de resumen a qué clase nominal pertenece cada forma</li>
+        <li>{{ $t('pages.verbalNouns.memorizaTresReglasFormacion') }}</li>
+        <li>{{ $t('pages.verbalNouns.tomaImperativoNuevoDeduce') }}</li>
+        <li v-html="$t('pages.verbalNouns.parteNombreAccionConstruye')"></li>
+        <li>{{ $t('pages.verbalNouns.compruebaTablaResumenClase') }}</li>
       </ol>
     </section>
 
@@ -210,6 +213,7 @@
 </template>
 
 <script>
+import verbalNounsData from '@/data/chapter-2/verbal-nouns.json'
 import CardGrid from '@/components/blocks/CardGrid.vue'
 import SectionNavFooter from '@/components/blocks/SectionNavFooter.vue'
 import BengaWord from '@/components/content/BengaWord.vue'
@@ -218,178 +222,11 @@ export default {
   name: 'VerbalNouns',
   components: { CardGrid, BengaWord, SectionNavFooter },
   data() {
-    return {
-      abstractNouns: [
-        {
-          imperative: 'Tândâkâ',
-          imperativeAudio: 't_a_nd_a_k_a_',
-          imperativeMeaning: 'ama tú',
-          nominalForm: 'itândē',
-          nominalAudio: 'it_a_nd_e_',
-          meaning: 'amor'
-        },
-        {
-          imperative: 'Binaka',
-          imperativeAudio: 'binaka',
-          imperativeMeaning: 'aborrece tú',
-          nominalForm: 'ibina',
-          nominalAudio: 'ibina',
-          meaning: 'odio'
-        },
-        {
-          imperative: 'Kalaka',
-          imperativeAudio: 'kalaka',
-          imperativeMeaning: 'habla tú',
-          nominalForm: 'ikala',
-          nominalAudio: 'ikala',
-          meaning: 'razonamiento'
-        },
-        {
-          imperative: 'Langaka',
-          imperativeAudio: 'langaka',
-          imperativeMeaning: 'lee tú',
-          nominalForm: 'ilanga',
-          nominalAudio: 'ilanga',
-          meaning: 'lectura'
-        },
-        {
-          imperative: 'Longaka',
-          imperativeAudio: 'longaka',
-          imperativeMeaning: 'edifica tú',
-          nominalForm: 'ilonga',
-          nominalAudio: 'ilonga',
-          meaning: 'edificio'
-        },
-        {
-          imperative: 'Lēndēkē',
-          imperativeAudio: 'l_e_nd_e_k_e_',
-          imperativeMeaning: 'escribe tú',
-          nominalForm: 'ilende',
-          nominalAudio: 'ilende',
-          meaning: 'escritura'
-        },
-        {
-          imperative: 'Kalakia',
-          imperativeAudio: 'kalakia',
-          imperativeMeaning: 'ora tú',
-          nominalForm: 'ikalo',
-          nominalAudio: 'ikalo',
-          meaning: 'oración'
-        },
-        {
-          imperative: 'Janjaka',
-          imperativeAudio: 'janjaka',
-          imperativeMeaning: 'trabaja tú',
-          nominalForm: 'ijanja',
-          nominalAudio: 'ijanja',
-          meaning: 'trabajo'
-        }
-      ],
-      abstractNounsExamples: [
-        {
-          singular: { word: 'Ilonga', audio: 'ilonga', meaning: 'edificio' },
-          plural: { word: 'Malonga', audio: 'malonga', meaning: 'edificios' }
-        },
-        {
-          singular: { word: 'Ijanja', audio: 'ijanja', meaning: 'trabajo' },
-          plural: { word: 'Majanja', audio: 'majanja', meaning: 'trabajos' }
-        }
-      ],
-      agentNouns: [
-        {
-          imperative: 'Longaka',
-          imperativeAudio: 'longaka',
-          imperativeMeaning: 'edifica tú',
-          nominalForm: 'ulongi',
-          nominalAudio: 'ulongi',
-          meaning: 'arquitecto'
-        },
-        {
-          imperative: 'Langaka',
-          imperativeAudio: 'langaka',
-          imperativeMeaning: 'lee tú',
-          nominalForm: 'ulangi',
-          nominalAudio: 'ulangi',
-          meaning: 'lector'
-        },
-        {
-          imperative: 'Kalaka',
-          imperativeAudio: 'kalaka',
-          imperativeMeaning: 'habla tú',
-          nominalForm: 'ukali',
-          nominalAudio: 'ukali',
-          meaning: 'orador'
-        },
-        {
-          imperative: 'Lēndēkē',
-          imperativeAudio: 'l_e_nd_e_k_e_',
-          imperativeMeaning: 'escribe tú',
-          nominalForm: 'ulendi',
-          nominalAudio: 'ulendi',
-          meaning: 'escritor'
-        }
-      ],
-      agentNounsExamples: [
-        {
-          singular: { word: 'Ulangi', audio: 'ulangi', meaning: 'lector' },
-          plural: { word: 'Melangi', audio: 'melangi', meaning: 'lectores' }
-        },
-        {
-          singular: { word: 'Ulendi', audio: 'ulendi', meaning: 'escritor' },
-          plural: { word: 'Melendi', audio: 'melendi', meaning: 'escritores' }
-        }
-      ],
-      modalityNouns: [
-        {
-          actionForm: 'Ulongi',
-          actionFormAudio: 'ulongi',
-          actionFormMeaning: 'arquitecto',
-          nominalForm: 'ilongidi',
-          nominalAudio: 'ilongidi',
-          meaning: 'modo de construir'
-        },
-        {
-          actionForm: 'Ulangi',
-          actionFormAudio: 'ulangi',
-          actionFormMeaning: 'lector',
-          nominalForm: 'ilangidi',
-          nominalAudio: 'ilangidi',
-          meaning: 'modo de leer'
-        },
-        {
-          actionForm: 'Ukali',
-          actionFormAudio: 'ukali',
-          actionFormMeaning: 'orador',
-          nominalForm: 'ikalidi',
-          nominalAudio: 'ikalidi',
-          meaning: 'modo de hablar'
-        }
-      ],
-      typeSummary: [
-        {
-          type: 'Abstracto',
-          formation: 'Imperativo de 2.ª persona singular sin su última sílaba, con i inicial',
-          example: 'Tândâkâ → itândē',
-          nounClass: 'Clase 2'
-        },
-        {
-          type: 'De acción',
-          formation:
-            'Imperativo de 2.ª persona singular sin su última sílaba, omitiendo o cambiando por i la última vocal',
-          example: 'Longaka → ulongi',
-          nounClass: 'Clase 3'
-        },
-        {
-          type: 'De modo',
-          formation: 'Nombre de acción con su u inicial mudada en i y terminación en -di',
-          example: 'Ulongi → ilongidi',
-          nounClass: '—'
-        }
-      ]
-    }
+    // Words and texts of this page: @/data/chapter-2/verbal-nouns.json
+    return { ...verbalNounsData }
   },
   created() {
-    document.title = 'Nombres Derivados | Portal Benga'
+    document.title = `${this.$t('pages.verbalNouns.pageTitle')} | Portal Benga`
   }
 }
 </script>

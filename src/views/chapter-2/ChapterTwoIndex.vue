@@ -2,62 +2,62 @@
   <div class="chapter-two">
     <div v-if="$route.name === 'Chapter2Index'">
       <div class="chapter-two__header">
-        <h1>Capítulo 2: Del Nombre Sustantivo</h1>
-        <p>Clasificación nominal - El sistema de siete clases del Benga</p>
+        <h1>{{ $t('pages.chapter2Index.capitulo2NombreSustantivo') }}</h1>
+        <p>{{ $t('pages.chapter2Index.clasificacionNominalSistemaSiete') }}</p>
       </div>
 
       <section class="chapter-two__sections">
-        <h2>Secciones del Capítulo</h2>
+        <h2>{{ $t('pages.chapter2Index.seccionesCapitulo') }}</h2>
         <div class="sections-grid">
           <router-link to="/capitulo-2/introduccion" class="section-card">
-            <h3>Introducción</h3>
-            <p>Aprende los principios de clasificación</p>
+            <h3>{{ $t('pages.chapter2Index.introduccion') }}</h3>
+            <p>{{ $t('pages.chapter2Index.aprendePrincipiosClasificacion') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-1" class="section-card">
-            <h3>Clase 1: e → be</h3>
-            <p>Clase nominal 1</p>
+            <h3>{{ $t('pages.chapter2Index.clase1EBe') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal1') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-2" class="section-card">
-            <h3>Clase 2: i/di → ma</h3>
-            <p>Clase nominal 2</p>
+            <h3>{{ $t('pages.chapter2Index.clase2IDi') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal2') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-3" class="section-card">
-            <h3>Clase 3: u/mú → me/mi</h3>
-            <p>Clase nominal 3</p>
+            <h3>{{ $t('pages.chapter2Index.clase3UMu') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal3') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-4" class="section-card">
-            <h3>Clase 4: bo/ba → mi</h3>
-            <p>Clase nominal 4</p>
+            <h3>{{ $t('pages.chapter2Index.clase4BoBa') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal4') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-5" class="section-card">
-            <h3>Clase 5: mo → ba</h3>
-            <p>Clase nominal 5</p>
+            <h3>{{ $t('pages.chapter2Index.clase5MoBa') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal5') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-6" class="section-card">
-            <h3>Clase 6: v → l</h3>
-            <p>Clase nominal 6</p>
+            <h3>{{ $t('pages.chapter2Index.clase6VL') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal6') }}</p>
           </router-link>
           <router-link to="/capitulo-2/clase-7" class="section-card">
-            <h3>Clase 7: Invariables</h3>
-            <p>Clase nominal 7</p>
+            <h3>{{ $t('pages.chapter2Index.clase7Invariables') }}</h3>
+            <p>{{ $t('pages.chapter2Index.claseNominal7') }}</p>
           </router-link>
           <router-link to="/capitulo-2/irregulares" class="section-card">
-            <h3>Irregulares</h3>
-            <p>Excepciones nominales</p>
+            <h3>{{ $t('pages.chapter2Index.irregulares') }}</h3>
+            <p>{{ $t('pages.chapter2Index.excepcionesNominales') }}</p>
           </router-link>
           <router-link to="/capitulo-2/verbales" class="section-card">
-            <h3>Nombres Derivados</h3>
+            <h3>{{ $t('pages.chapter2Index.nombresDerivados') }}</h3>
             <p>Nominalizaciones</p>
           </router-link>
           <router-link to="/capitulo-2/practica" class="section-card">
-            <h3>Práctica Interactiva</h3>
-            <p>Juego de tarjetas: singular, plural y clases</p>
+            <h3>{{ $t('pages.chapter2Index.practicaInteractiva') }}</h3>
+            <p>{{ $t('pages.chapter2Index.juegoTarjetasSingularPlural') }}</p>
           </router-link>
         </div>
       </section>
 
       <section class="chapter-two__progress">
-        <h2>Mi Progreso</h2>
+        <h2>{{ $t('pages.chapter2Index.miProgreso') }}</h2>
         <div class="progress-items">
           <div class="progress-item" v-for="(value, key) in progress" :key="key">
             <input type="checkbox" :id="`ch2-${key}`" v-model="progress[key]" />
@@ -70,7 +70,9 @@
       </section>
 
       <div class="chapter-two__cta">
-        <router-link to="/capitulo-2/introduccion" class="cta-button">Comenzar →</router-link>
+        <router-link to="/capitulo-2/introduccion" class="cta-button">{{
+          $t('pages.chapter2Index.comenzar')
+        }}</router-link>
       </div>
       <SectionNavFooter />
     </div>
@@ -121,7 +123,7 @@ export default {
     if (savedProgress) {
       this.progress = JSON.parse(savedProgress)
     }
-    document.title = 'Capítulo 2: Del Nombre Sustantivo | Portal Benga'
+    document.title = `${this.$t('pages.chapter2Index.pageTitle')} | Portal Benga`
   }
 }
 </script>
