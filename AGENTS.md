@@ -112,6 +112,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - `src/data/lexicon/word-usage.json` is generated; never edit it.
 - OCR doubts are corrected at `/admin/ocr` (same dev-only mechanism); corrections go to `docs/ocr/ocr-corrections.json` and into the improved PDF with `python scripts/ocr-pdf.py --reuse` (docs/OCR.md).
 - **Audio pipeline** (guide: `docs/AUDIO-GUIDE.md`): `npm run audio:checklist` writes `docs/audio/recording-checklist.csv` (what to record); after uploading to Cloudinary `npm run audio:sync` marks the words `recorded` (needs `.env.local` with the Cloudinary keys, never committed). Sentences are recorded like words (same key rule). `/admin/audios` (dev-only) lists the words, checks Cloudinary, plays, records and uploads audio and shows the space used (`scripts/lib/audio-admin.mjs`, `cloudinary.mjs`; endpoints `/__dev/audio/*` in `vite.config.mjs`). `PlayAllButton` plays a list of words in order through `playAll()` of the shared player; it is hidden until at least one of its words is recorded.
+- **Living Dictionary import** (guide: `docs/LIVING-DICTIONARY-IMPORT.md`): `npm run ld:import -- <folder>` checks a CSV + audio folder and writes a preview; `--send` writes to livingdictionaries.app through its Write API (`LD_API_KEY=ldk_…`, `LD_DICTIONARY_ID` in `.env.local`), never overwrites existing entries, never invents speakers, resumes from `ld-import/ledger.json` and fills `livingDictionaryId` in the registry. Logic in `scripts/lib/living-dictionary.mjs` (tested).
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
@@ -270,7 +271,7 @@ benga-grammar-website/
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
 ├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
-├── scripts/                     # Node tools: validate-data, words-sync, words-import, i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
+├── scripts/                     # Node tools: validate-data, words-sync, words-import, ld-import (Living Dictionary), i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
 ├── eslint.config.mjs            # ESLint rules (flat config)

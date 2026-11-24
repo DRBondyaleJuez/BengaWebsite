@@ -25,3 +25,6 @@ pnpm-debug.log*
 context
 # Raw OCR cache of scripts/ocr-pdf.py
 .ocr-cache/
+
+# Output of npm run ld:import (preview, payload, ledger)
+ld-import/
