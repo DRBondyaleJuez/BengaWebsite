@@ -28,3 +28,6 @@ context
 
 # Output of npm run ld:import (preview, payload, ledger)
 ld-import/
+
+# Living Dictionary sync logs and reports (docs/LD-ROADMAP.md, REVIEW-LOG R-044)
+ld-sync/

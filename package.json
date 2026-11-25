@@ -19,7 +19,8 @@
     "ld:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-import.mjs",
     "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs",
     "ld:source": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-source.mjs",
-    "ld:pull": "node --experimental-sqlite --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-pull.mjs"
+    "ld:pull": "node --experimental-sqlite --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-pull.mjs",
+    "ld:link": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-link.mjs"
   },
   "dependencies": {
     "vue": "^3.5.45",
