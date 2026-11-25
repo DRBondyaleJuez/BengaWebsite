@@ -8,6 +8,7 @@
  *   src/data/lexicon/*.json          (every other file there is a lexicon file; from task 2.4)
  *   src/data/sections/**\/*.json     (from Phase 3)
  *   src/data/exercises/*.json        (from Phase 8)
+ *   src/data/dictionary/{entries,sentences,base}.json (dictionary workspace, from task L1.2)
  *   the Benga words of the current pages (same collector as `npm run words:sync`)
  *
  * The checks themselves are in scripts/lib/validate.mjs; this file only loads and prints.
@@ -18,6 +19,12 @@ import path from 'node:path'
 import { ROOT, collectWords } from './lib/collect-words.mjs'
 import { loadSchemas } from './lib/schemas.mjs'
 import { validateContent, CHECKS } from './lib/validate.mjs'
+import {
+  PARTS_OF_SPEECH,
+  SEMANTIC_DOMAINS,
+  RELATION_TYPES,
+  REVIEW_CATEGORIES
+} from './lib/ld/vocab.mjs'
 
 const SHOW_ALL = process.argv.includes('--all')
 const LINES_PER_GROUP = 10
@@ -68,6 +75,17 @@ function main() {
     ),
     sections: loadAll(listJson(path.join(data, 'sections'), true), unreadable),
     exercises: loadAll(listJson(path.join(data, 'exercises')), unreadable),
+    dictionary: {
+      entries: optional(path.join(data, 'dictionary/entries.json')),
+      sentences: optional(path.join(data, 'dictionary/sentences.json')),
+      base: optional(path.join(data, 'dictionary/base.json')),
+      vocab: {
+        pos: new Set(PARTS_OF_SPEECH.map((item) => item.code)),
+        domains: new Set(SEMANTIC_DOMAINS.map((item) => item.key)),
+        relations: new Set(RELATION_TYPES.map((item) => item.type)),
+        review: new Set(REVIEW_CATEGORIES.map((item) => item.id))
+      }
+    },
     pageWords: collectWords(),
     fileExists: (relativePath) => fs.existsSync(path.join(ROOT, relativePath))
   }
@@ -96,7 +114,8 @@ function printReport(problems, stats) {
     `  read: chapters-index, word registry (${stats.registryWords} words), ` +
       `${stats.lexiconFiles} lexicon file(s) (${stats.lexiconEntries} entries), ` +
       `${stats.sectionFiles} section file(s), ${stats.exerciseFiles} exercise file(s), ` +
-      `${stats.pageWords} Benga words on the current pages`
+      `${stats.pageWords} Benga words on the current pages, ` +
+      `dictionary workspace (${stats.dictionaryEntries} entries, ${stats.dictionarySentences} sentences)`
   )
 
   for (const [check, title] of Object.entries(CHECKS)) {

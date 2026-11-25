@@ -194,3 +194,97 @@ test('legacy audio ids: one note per word, listing every file', () => {
   assert.equal(notes[0].file, 'src/data/deck.json, src/views/C.vue')
   assert.equal(only(run(content), 'error').length, 0) // notes never fail the check
 })
+
+// ---- dictionary workspace (task L1.4) ----------------------------------------------------------
+
+const ENTRY_ID = '1820bdc3-3418-4600-862f-3692f6a36bd8'
+const SENSE_ID = '5b2a1f0e-6c1d-4f8a-9a3e-2d4c6b8e0f12'
+const SENTENCE_ID = '9d0e3c2b-1a4f-4b6e-8c7d-5e6f7a8b9c0d'
+const VOCAB = {
+  pos: new Set(['n', 'v']),
+  domains: new Set(['1.4']),
+  relations: new Set(['synonym']),
+  review: new Set(['other'])
+}
+function dictionaryContent() {
+  const content = goodContent()
+  content.dictionary = {
+    vocab: VOCAB,
+    entries: {
+      kind: 'entries',
+      entries: {
+        [ENTRY_ID]: {
+          id: ENTRY_ID,
+          lexeme: 'Epokolo',
+          senses: [
+            {
+              id: SENSE_ID,
+              partsOfSpeech: ['n'],
+              semanticDomains: ['1.4'],
+              sentenceIds: [SENTENCE_ID]
+            }
+          ],
+          siteKeys: ['epokolo'],
+          sync: { state: 'synced' }
+        }
+      }
+    },
+    sentences: {
+      kind: 'sentences',
+      sentences: {
+        [SENTENCE_ID]: {
+          id: SENTENCE_ID,
+          text: 'Epokolo bobe',
+          senseIds: [SENSE_ID],
+          sync: { state: 'synced' }
+        }
+      }
+    }
+  }
+  return content
+}
+const dictionaryProblems = (content) =>
+  run(content).problems.filter((problem) => problem.check === 'dictionary')
+
+test('dictionary: a correct workspace has no problems', () => {
+  assert.deepEqual(dictionaryProblems(dictionaryContent()), [])
+})
+
+test('dictionary: broken links between records are errors', () => {
+  const content = dictionaryContent()
+  content.dictionary.entries.entries[ENTRY_ID].senses[0].sentenceIds = [
+    '00000000-0000-4000-8000-000000000000'
+  ]
+  const problems = dictionaryProblems(content)
+  assert.ok(problems.some((p) => p.level === 'error' && /Example sentence/.test(p.message)))
+  assert.ok(
+    problems.some((p) => p.level === 'error' && /Linked sense|doesn't exist/.test(p.message))
+  )
+})
+
+test('dictionary: unknown codes and site links are warnings', () => {
+  const content = dictionaryContent()
+  const entry = content.dictionary.entries.entries[ENTRY_ID]
+  entry.senses[0].partsOfSpeech = ['sustantivo']
+  entry.senses[0].semanticDomains = ['99']
+  entry.siteKeys = ['nope']
+  const warnings = dictionaryProblems(content).filter((p) => p.level === 'warning')
+  assert.equal(warnings.length, 3)
+})
+
+test('dictionary: Spanish accents are only a note (never corrected by rule)', () => {
+  const content = dictionaryContent()
+  content.dictionary.sentences.sentences[SENTENCE_ID].text = 'Epokolo bobé'
+  const [problem] = dictionaryProblems(content)
+  assert.equal(problem.level, 'info')
+})
+
+test('dictionary: a registry id missing from the workspace is a warning', () => {
+  const content = dictionaryContent()
+  content.registry.words.epokolo.livingDictionaryId = '11111111-1111-4111-8111-111111111111'
+  assert.ok(
+    dictionaryProblems(content).some(
+      (p) => p.level === 'warning' && /not in the dictionary/.test(p.message)
+    )
+  )
+})

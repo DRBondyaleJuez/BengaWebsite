@@ -341,6 +341,7 @@ Long groups show 10 lines; `npm run validate -- --all` shows everything.
 | Word registry | its schema; each key still matches its word; `audioFile` only on recorded words |
 | Benga spelling | in the lexicon, sections and current pages: `c q r x z ñ` and the Spanish accents `á é í ó ú` |
 | Old audio ids | typed ids next to words in old page data that differ from the rule |
+| Dictionary workspace | schema of `src/data/dictionary/*.json`, links between entries, senses and sentences (errors), unknown part-of-speech / domain codes and site links (warnings), Spanish accents or non-Benga letters (notes only: the dictionary's spelling is never corrected by rule) |
 
 The schemas live in `src/data/schemas/`; correct example files are in `src/data/schemas/examples/`.
 In VS Code you can hover a field in a schema to read its description.

@@ -224,16 +224,16 @@ Branch: `feat/ld-foundations`
 
 Branch: `feat/ld-workspace`
 
-- [ ] **L1.1 Schemas for entries and sentences**
+- [x] **L1.1 Schemas for entries and sentences**
   - **Prompt:** "Task L1.1: write JSON Schemas `dictionary-entry` and `dictionary-sentence` in `src/data/schemas/` following docs/LD-ROADMAP.md section 5 (fields of LD + review, suggestions, siteKeys, sync). Examples in `schemas/examples/`, tests in `schemas.test.mjs`, a section in CONTENT-GUIDE.md. Benga fields are plain strings; translations are { es, en, fr }."
   - **Commit:** `feat(schemas): add dictionary entry and sentence schemas`
-- [ ] **L1.2 First pull from the snapshot**
+- [x] **L1.2 First pull from the snapshot**
   - **Prompt:** "Task L1.2: `npm run ld:pull` downloads the snapshot (no key), reads it read-only (node:sqlite or sql.js, tell me which and why) and writes `src/data/dictionary/entries.json`, `sentences.json` and `base.json`. Keep the dictionary's wording exactly (NFC, no accent changes). Print a report: counts, entries without gloss per language, without audio, duplicates by spelling. Don't change anything in LD."
   - **Commit:** `feat(ld): pull the dictionary into a local workspace`
-- [ ] **L1.3 Link the workspace with the website's words**
+- [x] **L1.3 Link the workspace with the website's words**
   - **Prompt:** "Task L1.3: match workspace entries to word-registry keys with `toAudioId` (exact spelling, then case-insensitive, then 'same word without accents' only as a suggestion with review). Fill `siteKeys` and the registry's `livingDictionaryId` only when empty. Report: LD words not on the site, site words not in LD (grouped by lexicon file and class), spelling differences (e.g. `Hāngā` in LD vs `Hângâ` in the book) → REVIEW-LOG, never auto-fix."
   - **Commit:** `feat(ld): link dictionary entries to the site's word registry`
-- [ ] **L1.4 Validation**
+- [x] **L1.4 Validation**
   - **Prompt:** "Task L1.4: add the workspace to `npm run validate`: schema, unique ids, sentence links exist, POS/domain codes known, Benga orthography warnings (never errors) on lexemes and sentences, registry links point to real entries. A test per check in `validate.test.mjs`."
   - **Commit:** `feat(validate): check the dictionary workspace`
 
