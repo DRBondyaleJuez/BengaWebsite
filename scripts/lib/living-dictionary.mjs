@@ -7,7 +7,7 @@
  *   uuid5()            fixed ids, so sending the same row twice never creates a duplicate
  *   resolvePartOfSpeech(), resolveSemanticDomain()   accept LD codes, English or Spanish names
  *   checkRow()         one spreadsheet row → { entry payload, audio files, problems }
- * Network part: ldClient() — only used with `--send`.
+ * Network part: ldClient() from ./ld/client.mjs — only used with `--send`.
  */
 import crypto from 'node:crypto'
 import { toAudioId } from '../../src/utils/audioId.js'
@@ -319,56 +319,5 @@ export function findDuplicates(checked) {
 
 // ---- network ----------------------------------------------------------------------------------
 
-export const LD_API = 'https://livingdictionaries.app/api/v1'
-
-/**
- * Tiny client of the Living Dictionaries Write API. The key (ldk_…) stays in .env.local.
- * Every method throws with the server's message when a request fails.
- */
-export function ldClient({ apiKey, dictionary, base = LD_API, fetchImpl = fetch }) {
-  const root = `${base}/dictionaries/${encodeURIComponent(dictionary)}`
-  async function call(method, path, body, isForm = false) {
-    const headers = {
-      Authorization: `Bearer ${apiKey}`,
-      'User-Agent': 'benga-portal-ld-import/1.0'
-    }
-    if (body && !isForm) headers['Content-Type'] = 'application/json'
-    const response = await fetchImpl(`${root}${path}`, {
-      method,
-      headers,
-      body: body ? (isForm ? body : JSON.stringify(body)) : undefined,
-      redirect: 'error' // a redirect would silently turn a POST into a GET (API guide)
-    })
-    const text = await response.text()
-    let json
-    try {
-      json = text ? JSON.parse(text) : null
-    } catch {
-      json = { raw: text }
-    }
-    if (!response.ok) {
-      const message = json?.error?.message || json?.error || json?.message || text.slice(0, 300)
-      throw new Error(`Living Dictionaries ${method} ${path} → ${response.status}: ${message}`)
-    }
-    return json
-  }
-  return {
-    dictionaryInfo: () => call('GET', ''),
-    speakers: () => call('GET', '/speakers'),
-    sources: () => call('GET', '/sources'),
-    /** Entries whose headword is exactly `lexeme`. */
-    findEntries: (lexeme) =>
-      call('GET', `/entries?${new URLSearchParams({ lexeme, match: 'exact', limit: '20' })}`),
-    postEntries: (entries, importId) => call('POST', '/entries', { entries, import_id: importId }),
-    /** kind: 'entry' | 'sentence' */
-    postAudio: (kind, ownerId, { id, buffer, fileName, speakerId, source }) => {
-      const form = new FormData()
-      form.append('id', id)
-      if (speakerId) form.append('speaker_id', speakerId)
-      if (source) form.append('source', source)
-      form.append('file', new Blob([buffer]), fileName)
-      const owner = kind === 'entry' ? 'entries' : 'sentences'
-      return call('POST', `/${owner}/${ownerId}/audio`, form, true)
-    }
-  }
-}
+// The client lives in ./ld/client.mjs (throttling, retries, logging); re-exported for ld-import.
+export { ldClient, LD_API } from './ld/client.mjs'
