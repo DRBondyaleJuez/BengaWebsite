@@ -124,6 +124,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - The book lexicon (`lexicon/*.json`) and the dictionary workspace (`src/data/dictionary/`, planned) are linked through `word-registry.json` and compared, never overwritten automatically (REVIEW-LOG R-037).
 - Audio from the dictionary is copied to Cloudinary (remote-URL upload, key = `toAudioId`) so the website keeps playing from Cloudinary; the public LD media URL is not used directly on the site.
 - The audio → IPA tool lives in a separate folder `../benga-phonetics` (Python); spelling → IPA rules may live in `src/utils/`.
+- Living Dictionary commands: `npm run ld:pull` (snapshot → `src/data/dictionary/`, refuses to overwrite unsent local changes), `npm run ld:link` (dictionary ↔ word-registry links, report in `ld-sync/link-report.md`), `npm run ld:source` (book source; `--create` only after the developer approves). Every request to LD goes through `scripts/lib/ld/client.mjs`.
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
@@ -192,6 +193,7 @@ benga-grammar-website/
 │   │   └── index.js             # Fixed routes + chapter routes GENERATED from data/chapters-index.json
 │   ├── config/
 │   │   └── external.js          # ALL external URLs: Cloudinary, Living Dictionary, book PDF
+│   │   └── ld.js                # Living Dictionary bridge settings (dictionary id, default speaker, book source); no secrets
 │   ├── utils/                   # Pure helpers (no imports) shared with scripts/, each with tests
 │   │   ├── audioId.js           # toAudioId(word): THE word-key rule
 │   │   ├── localized.js         # localized(text, locale): pick a language, fall back to es ($localized)
@@ -220,6 +222,10 @@ benga-grammar-website/
 │   │   └── fr.json              # French (only nav/app keys so far)
 │   ├── data/
 │   │   ├── schemas/             # JSON Schemas = the rules for content files (+ examples/)
+│   │   ├── dictionary/          # Workspace = local copy of the Living Dictionary (npm run ld:pull; docs/CONTENT-GUIDE.md §8)
+│   │   │   ├── entries.json, sentences.json   # edited by /admin/living-dictionary (planned UI) via /__dev/ld/*
+│   │   │   ├── base.json        # GENERATED: the dictionary as last read (detects local changes)
+│   │   │   └── vocab/           # parts of speech, semantic domains, relation types, review categories (Spanish labels)
 │   │   ├── lexicon/
 │   │   │   ├── adjectives.json     # Chapter-3 adjectives (lexicon schema): the adjective pages read it
 │   │   │   ├── nouns.json          # Chapter-2 nouns (lexicon schema): source of truth since task 2.5
@@ -282,7 +288,7 @@ benga-grammar-website/
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
 ├── docs/                        # ROADMAP, LD-ROADMAP, LIVING-DICTIONARY-IMPORT, AUDIO-GUIDE, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
-├── scripts/                     # Node tools: validate-data, words-sync, words-import, ld-import (Living Dictionary), i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
+├── scripts/                     # Node tools: ld-pull / ld-link / ld-source / ld-import (Living Dictionary; logic in lib/ld/: client, snapshot, workspace, link, vocab, check-dictionary, admin-api), validate-data, words-sync, words-import, ld-import (Living Dictionary), i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
 ├── eslint.config.mjs            # ESLint rules (flat config)

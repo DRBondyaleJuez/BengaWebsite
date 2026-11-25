@@ -22,3 +22,6 @@ Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md) (the book) and
 | `npm run words:import -- list.csv` | Fill the word registry from a spreadsheet |
 | `npm run audio:checklist` / `audio:sync` | Recording list and Cloudinary audio state ([guide](docs/AUDIO-GUIDE.md)) |
 | `npm run ld:import -- <folder>` | Check a CSV + audio folder for the Living Dictionary; `--send` writes it ([guide](docs/LIVING-DICTIONARY-IMPORT.md)) |
+| `npm run ld:pull` | Copy the Living Dictionary into `src/data/dictionary/` (public snapshot, no key) ([plan](docs/LD-ROADMAP.md)) |
+| `npm run ld:link` | Link dictionary entries with the site's words; report in `ld-sync/link-report.md` |
+| `npm run ld:source` | Show (or `-- --create`) the book's citation source on the dictionary |

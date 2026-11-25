@@ -216,7 +216,7 @@ Branch: `feat/ld-foundations`
   - **Why:** the form shows your Spanish lists; LD stores codes.
   - **Prompt:** "Task L0.3: create `src/data/dictionary/vocab/parts-of-speech.json` (the 91 LD codes with the exact Spanish labels from my list, English name and a one-line Spanish help text, grouped: sustantivos, verbos, pronombres, …), `semantic-domains.json` (keys + my Spanish names + English, as a tree), `relation-types.json` (LD slugs + Spanish labels and help from the 'Entradas relacionadas' texts) and `review-categories.json`. Make `living-dictionary.mjs` read them instead of its own tables. Tests: every code unique, every label found, my 91 values all mapped."
   - **Commit:** `feat(ld): add part-of-speech, domain and relation vocabularies`
-- [ ] **L0.4 Register the book as a source and set the default speaker** *(writes to LD: you approve first)*
+- [ ] **L0.4 Register the book as a source and set the default speaker** *(writes to LD: you approve first)* — *2026-11-25: settings and `npm run ld:source` committed; the source is NOT created yet: run `npm run ld:source -- --create` once you approve the record*
   - **Prompt:** "Task L0.4: show me the source record you would create for Salvado y Cos (slug `salvado-y-cos-1891`, title, year, author, link to the PDF) and, once I approve, create it with `POST …/sources`. Add `LD_DEFAULT_SPEAKER` (Upango Bondyale Oko's id) to `src/config/ld.js` (non-secret settings: dictionary id, default speaker, limits). Log both in REVIEW-LOG R-039."
   - **Commit:** `feat(ld): register the book source and default speaker`
 
