@@ -18,7 +18,8 @@
     "audio:sync": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/audio-sync.mjs",
     "ld:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-import.mjs",
     "words:import": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/words-import.mjs",
-    "ld:source": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-source.mjs"
+    "ld:source": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-source.mjs",
+    "ld:pull": "node --experimental-sqlite --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-pull.mjs"
   },
   "dependencies": {
     "vue": "^3.5.45",

@@ -52,7 +52,7 @@ function sortByKey(object) {
   )
 }
 
-async function writeJson(file, data) {
+export async function writeJson(file, data) {
   const options = (await prettier.resolveConfig(file)) || {}
   // Start from an indented layout so Prettier keeps one field per line (easier to read and diff).
   const text = await prettier.format(JSON.stringify(data, null, 2), { ...options, parser: 'json' })

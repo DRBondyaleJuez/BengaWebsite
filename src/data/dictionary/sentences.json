@@ -1,0 +1,869 @@
+{
+  "_about": "Local copy of the Benga Living Dictionary example sentences (same rules as entries.json). Guide: docs/CONTENT-GUIDE.md section 8.",
+  "kind": "sentences",
+  "pulledAt": "2026-11-25T21:03:23.067Z",
+  "sentences": {
+    "ad073386-e654-4632-8762-9e1c98c42361": {
+      "id": "ad073386-e654-4632-8762-9e1c98c42361",
+      "text": "Akeva na beja",
+      "translations": {
+        "en": "Thank you for the food/the meal",
+        "fr": "Merci pour la nourriture/ le repas",
+        "es": "Gracias por la comida"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "371d1004-283a-4a88-891b-51266a3c3aab",
+          "storagePath": "benga/audio/371d1004-283a-4a88-891b-51266a3c3aab.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["98332560-7baa-415d-97e0-37a31a7fc3cb"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.876Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "bb2ee3c2-5696-47ec-8605-9fdea922811d": {
+      "id": "bb2ee3c2-5696-47ec-8605-9fdea922811d",
+      "text": "Akeva na Monda",
+      "translations": {
+        "en": "Thanks for the call",
+        "fr": "Merci pour l'apel",
+        "es": "Gracias por la llamada"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["548cd8ed-c27e-4078-92c7-b3f7904aced4"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:53:33.132Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "5b257970-70ba-4884-8d9c-b02d8ed5cd7d": {
+      "id": "5b257970-70ba-4884-8d9c-b02d8ed5cd7d",
+      "text": "Âve le njale",
+      "translations": {
+        "en": "Who are you?",
+        "es": "Quien eres tú?",
+        "fr": "Qui es toi?"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": [],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "fdb280cc-bfe2-464a-86bb-b4dade275027": {
+      "id": "fdb280cc-bfe2-464a-86bb-b4dade275027",
+      "text": "Âvē le njale?",
+      "translations": {
+        "en": "Who are you?",
+        "es": "Quién eres tú?",
+        "fr": "Qui es toi?"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["99b09884-2e40-4669-b407-ed3046cc79cb"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T13:36:25.505Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "34c21662-6ef7-434d-a44f-198f3d55b40a": {
+      "id": "34c21662-6ef7-434d-a44f-198f3d55b40a",
+      "text": "Ba ndabo ya Mambo ba diyakandi o ihuku",
+      "translations": {
+        "en": "The ones of the Mambo lineage live in the corner",
+        "es": "Los del linaje de Mambo viven en la esquina",
+        "fr": "Les membres de la lignée des Mambo habitent au coin de la rue"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["4471cb28-2569-4873-ad19-e1c5d9f6d67a"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "5f5d5fa3-f575-4230-9c11-4b587a1e52ce": {
+      "id": "5f5d5fa3-f575-4230-9c11-4b587a1e52ce",
+      "text": "Bana ba tondokondi Majoka",
+      "translations": {
+        "en": "Children like games/ Like to play",
+        "es": "A los niños/niñas les gusta el juego / les gusta jugar",
+        "fr": "Les enfants aiment les jeux/ aiment jouer"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "12c406ff-e8fc-4040-88ce-a3dd342fb53c",
+          "storagePath": "benga/audio/12c406ff-e8fc-4040-88ce-a3dd342fb53c.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["10404b31-2e02-4d81-aa13-6773f48b07c5"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-14T16:11:15.909Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "97388c27-2d8f-4857-ae54-a4a4e9e5f80f": {
+      "id": "97388c27-2d8f-4857-ae54-a4a4e9e5f80f",
+      "text": "Betaka oba",
+      "translations": {
+        "en": "Go up",
+        "es": "Sube arriba",
+        "fr": "monte en haut"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["693df875-1f0a-49b2-a06f-0d714a9e3832"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "c66a057d-0033-40b9-bfeb-37b9f3d70360": {
+      "id": "c66a057d-0033-40b9-bfeb-37b9f3d70360",
+      "text": "Dikáká epělě oba ya tagulu",
+      "translations": {
+        "en": "Put a plate on top of the table",
+        "es": "Pon un plato encima de la mesa",
+        "fr": "Mets un plat sur la table."
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["1fc70a1b-2f89-46b8-9fb3-26b2dd503332"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "15d92ffd-c458-4fb6-9d39-d9b8dd11f15b": {
+      "id": "15d92ffd-c458-4fb6-9d39-d9b8dd11f15b",
+      "text": "Dina j'âvē lēndja",
+      "translations": {
+        "es": "Cual es tu nombre?"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["8baeb5e3-3766-4f51-82c8-dc46911749d9"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-08-20T09:06:49.295Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "31b46b9e-1dce-4b0f-924e-64f4ed68bab1": {
+      "id": "31b46b9e-1dce-4b0f-924e-64f4ed68bab1",
+      "text": "Dyango dja etongâ ibē na usāsā",
+      "translations": {
+        "en": "The green mango has no sweetness",
+        "es": "El mango verde no tiene dulzor",
+        "fr": "Le mangue verte n'est pas sucrée."
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["852cfb2e-637e-41cf-827f-d982cf973a6b"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.875Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "f9c2d593-fff2-4f2b-89e6-9030f4609131": {
+      "id": "f9c2d593-fff2-4f2b-89e6-9030f4609131",
+      "text": "Eko ehakandi mehio",
+      "translations": {
+        "es": "La pierna duele"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["23f5d111-ebc4-47ec-b90d-b3f3524700ea"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-08-20T10:19:30.260Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "73c8efa6-0ab4-4034-aa4a-31ca7da46843": {
+      "id": "73c8efa6-0ab4-4034-aa4a-31ca7da46843",
+      "text": "Ele ya mboka endi na malongo",
+      "translations": {
+        "en": "The tree of the village has flowers / the tree of the village is with flowers",
+        "es": "El arbol del pueblo tiene flores / El árbol del pueblo está con flores",
+        "fr": "L'arbre du village a des fleurs / L'arbre du village est en fleurs"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["a61a8d3f-e642-4abd-b860-7c8390f2a1db"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.873Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "6cb50b5d-c0b6-4275-92d5-018abfbf774e": {
+      "id": "6cb50b5d-c0b6-4275-92d5-018abfbf774e",
+      "text": "Enâ ehakimba mehio",
+      "translations": null,
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "1f36889e-9a55-4850-9c52-8a409c2f67c3",
+          "storagePath": "benga/audio/1f36889e-9a55-4850-9c52-8a409c2f67c3.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": [],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-18T14:32:34.988Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "6b842649-6fda-44af-aa7e-06c0dba8acc7": {
+      "id": "6b842649-6fda-44af-aa7e-06c0dba8acc7",
+      "text": "Enô ehakimba mehio",
+      "translations": {
+        "en": "My hand hurts",
+        "es": "Me duele la mano",
+        "fr": "J'ai mal à la main"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "6015e207-1001-43be-9248-e9b3d4dd4994",
+          "storagePath": "benga/audio/6015e207-1001-43be-9248-e9b3d4dd4994.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["f3dc9371-281a-47cd-a922-9e9b4e387493"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-18T16:17:21.939Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "ca84a5a7-dae2-4929-9660-f4daf60cb0df": {
+      "id": "ca84a5a7-dae2-4929-9660-f4daf60cb0df",
+      "text": "Epape ya ELé",
+      "translations": {
+        "es": "La Corteza de un arbol",
+        "fr": "L'écorce d'un arbre",
+        "en": "The bark of a tree"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "ca784297-a46f-4aa1-bc5e-18e7798956fa",
+          "storagePath": "benga/audio/ca784297-a46f-4aa1-bc5e-18e7798956fa.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["5be00493-9734-4b75-bf35-8b67841dfbe0"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-18T11:59:04.041Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "d826beed-e14a-4ccb-9ae7-4f370f545898": {
+      "id": "d826beed-e14a-4ccb-9ae7-4f370f545898",
+      "text": "Hâ jokakandi sânghé",
+      "translations": {
+        "en": "we are playing cards",
+        "es": "Jugamos à las cartas / Estamos jugando a las cartas",
+        "fr": "Nous jouons aux cartes/ Nous sommes en train de joeur au cartes"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "21d8b94e-dfbd-4238-9566-cd0a7775b0c7",
+          "storagePath": "benga/audio/21d8b94e-dfbd-4238-9566-cd0a7775b0c7.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["fede26ff-b5f3-4f09-9ae8-c3957c809a9d"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-14T16:31:26.355Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "a20dd0ff-24e2-476e-b26f-15167628a762": {
+      "id": "a20dd0ff-24e2-476e-b26f-15167628a762",
+      "text": "Hāngā ya mboka benga ebetakuduendi oba",
+      "translations": {
+        "fr": "Le drapeau du peuple Benga flotte haut.",
+        "en": "The flag of the Benga people is raised high",
+        "es": "La bandera del pueblo Benga se iza arriba"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["a84404c2-a0c1-4a0f-bf40-8f7dcaab411e"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-08-10T19:34:40.015Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "e2195e91-7698-4c8e-bddd-d087f41cf45f": {
+      "id": "e2195e91-7698-4c8e-bddd-d087f41cf45f",
+      "text": "Hilake oba na menanga",
+      "translations": {
+        "en": "Look at the sky with stars",
+        "es": "Mira el cielo con las estrellas",
+        "fr": "Regarde le ciel avec des étoiles"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["29c2246f-bd54-490a-a34c-9c84e5c59ba0"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.875Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "4af7755c-2c81-405f-bb6a-4285389ea712": {
+      "id": "4af7755c-2c81-405f-bb6a-4285389ea712",
+      "text": "Hue be ndoba tepe",
+      "translations": {
+        "en": "We aren't enemies either",
+        "es": "Nosotros tampoco somos enemigos",
+        "fr": "Nous ne sommes pas non plus ennemis"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["487c7caf-4f38-4c2f-b234-2997771cb3cf"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "d478ad66-e6c4-4511-aa1d-1780cc929b8b": {
+      "id": "d478ad66-e6c4-4511-aa1d-1780cc929b8b",
+      "text": "Ilukakand'iyambaka bekoyi",
+      "translations": {
+        "en": "I have to cook banana plantain",
+        "es": "Tengo que cocinar/ Debo cocinar Platanos",
+        "fr": "Je dois cuisiner des bananes plantain"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "ba78f203-976f-4aef-9d87-bc9a1f5cccec",
+          "storagePath": "benga/audio/ba78f203-976f-4aef-9d87-bc9a1f5cccec.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["005c043d-920c-4f91-8286-5c4993d3ecc6"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-14T15:58:42.981Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "3fe6b338-2a61-4a9d-a249-960c14c192b3": {
+      "id": "3fe6b338-2a61-4a9d-a249-960c14c192b3",
+      "text": "Mbambame a yambakandi beja beite",
+      "translations": {
+        "es": "Mi abuela cocina mucha comida",
+        "en": "My grandmother cooks a lot of food",
+        "fr": "Ma grand-mère prépare beaucoup de nourriture"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "ff83fe62-e0aa-49f6-96fb-8545cd761b5f",
+          "storagePath": "benga/audio/ff83fe62-e0aa-49f6-96fb-8545cd761b5f.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["eee5ee33-efcd-4aea-9c6e-cd22958aa02e"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-03T19:19:46.181Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "81da42f3-e9b9-4280-b74d-cab837aa4cde": {
+      "id": "81da42f3-e9b9-4280-b74d-cab837aa4cde",
+      "text": "Muana a jokakandi o uhuenje",
+      "translations": {
+        "en": "The child plays outside",
+        "es": "El niño esta jugando afuera",
+        "fr": "L'enfant joue dehors"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "ea0394ad-e7fc-407e-a5ce-3def67c41127",
+          "storagePath": "benga/audio/ea0394ad-e7fc-407e-a5ce-3def67c41127.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["7de1346d-dc40-425b-830f-28f52bfbfcd5"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-11T19:42:36.043Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "fc390127-18ce-4b3b-b47d-0e7ebb6e7a75": {
+      "id": "fc390127-18ce-4b3b-b47d-0e7ebb6e7a75",
+      "text": "Nalandi o pitale ka sokue tombo",
+      "translations": {
+        "en": "I go to the hospital to get the inyection",
+        "es": "Voy al hospital a que me pongan la inyección",
+        "fr": "Je vais à l'hôpital pour me faire une piqûre"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["3fc08d0e-27a9-4519-ad8b-37224f8cc70e"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "840ad87d-bdc9-454c-9d84-d269b2ed2620": {
+      "id": "840ad87d-bdc9-454c-9d84-d269b2ed2620",
+      "text": "Ndabo amē endi ya ikona ebē ya betimbē",
+      "translations": {
+        "en": "My house is made of clay not made of wood",
+        "es": "Mi casa es de barro no es de madera",
+        "fr": "Ma maison est en terre, pas en bois"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["b57e488b-5eb6-4535-b435-0ddc8ee80bc7"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-08-10T17:02:45.615Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "d9b51926-9864-41c2-973d-ef4f15dd6a36": {
+      "id": "d9b51926-9864-41c2-973d-ef4f15dd6a36",
+      "text": "Nongoko miba o idango jandiba",
+      "translations": {
+        "en": "Get the water from the deep well",
+        "es": "Coge agua del pozo profundo",
+        "fr": "Va puiser de l'eau au puits profond"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["7c2ddf4d-4d70-4a60-92d7-1126425e75be"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "e2e1a02e-aaa7-40c9-bf82-117ca0cc8b23": {
+      "id": "e2e1a02e-aaa7-40c9-bf82-117ca0cc8b23",
+      "text": "O ndiba budu ndi tongo na miba",
+      "translations": {
+        "en": "In the depth of the cave there is a spring",
+        "es": "En la profundidad de la cueva hay un manantial",
+        "fr": "En la profundeur de la grotte se trouve une source"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["0e932e9d-9e6f-46db-b729-cd0001d80581"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.875Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "adab4f2b-662e-4b62-acc8-d11a6752cae4": {
+      "id": "adab4f2b-662e-4b62-acc8-d11a6752cae4",
+      "text": "O peneke mbolo!",
+      "translations": {
+        "en": "Not even greeting!",
+        "es": "Ni siquiera un saludo!",
+        "fr": "Pas même un salut !"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["43669a34-4383-4f52-a4b0-8e9e07396d37"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "c243b841-3bd1-4b12-a6d4-20ccfa0e9f47": {
+      "id": "c243b841-3bd1-4b12-a6d4-20ccfa0e9f47",
+      "text": "Paia andi Uhanga",
+      "translations": {
+        "es": "Mi Padre es médico",
+        "fr": "Mon pere est médecin",
+        "en": "Father is a doctor"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "c7a19769-bb95-4ce8-a2e1-a407a8737719",
+          "storagePath": "benga/audio/c7a19769-bb95-4ce8-a2e1-a407a8737719.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["ca139888-b92f-4c18-9425-1152b5d98fcb"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-11T18:59:22.663Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "8ed83ea0-f42e-4beb-9589-ae22a4075296": {
+      "id": "8ed83ea0-f42e-4beb-9589-ae22a4075296",
+      "text": "Sânâ evake mba landi o essendâ",
+      "translations": {
+        "en": "Next week I am going to travel",
+        "es": "La proxima semana voy a viajar",
+        "fr": "La semaine prochaine je vais voyager"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "ca33297b-9605-45a9-8e8f-0d64cb94ce92",
+          "storagePath": "benga/audio/ca33297b-9605-45a9-8e8f-0d64cb94ce92.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["cd81004b-b61b-4a70-a7d7-224627965f7e"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-18T14:27:32.823Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "7f9aebd3-63ad-49aa-8ed0-826fe6b749b6": {
+      "id": "7f9aebd3-63ad-49aa-8ed0-826fe6b749b6",
+      "text": "tâlâkide épape t'ejadi o jâmbe yéne",
+      "translations": {
+        "en": "Pick up that piece of bark that’s by the door.",
+        "es": "Recoge esa corteza que està en la puerta",
+        "fr": "Ramasse cette écorce qui est devant la porte."
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "8eb58f31-c4b9-48a9-b8c2-c9b950c82811",
+          "storagePath": "benga/audio/8eb58f31-c4b9-48a9-b8c2-c9b950c82811.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["5be00493-9734-4b75-bf35-8b67841dfbe0"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-24T15:14:51.248Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "c963060b-d0fb-474c-8148-bf515f9f2696": {
+      "id": "c963060b-d0fb-474c-8148-bf515f9f2696",
+      "text": "Umba itumakandi na tombo na nyonge",
+      "translations": {
+        "en": "I sow with needle and thread",
+        "es": "Yo coso con aguja e hilo",
+        "fr": "Je couds à l'aiguille et au fil"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["661a04ae-2afd-4a03-b8fb-f9be5ba0f7de"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-23T15:24:14.874Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "f4f89a97-8e67-4df2-ba46-b5c3545273f1": {
+      "id": "f4f89a97-8e67-4df2-ba46-b5c3545273f1",
+      "text": "Vekemba mbute a miba",
+      "translations": {
+        "en": "Give a bottle of water",
+        "es": "Dame una botella de agua",
+        "fr": "Donne-moi une boutteille d'eau"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [],
+      "senseIds": ["59a957ee-1fa3-4e11-b53b-cc01dc935245"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-09-18T06:56:03.285Z",
+        "version": 0,
+        "lastError": null
+      }
+    },
+    "91d43268-522f-46cc-b8ee-dd68118f5646": {
+      "id": "91d43268-522f-46cc-b8ee-dd68118f5646",
+      "text": "Vekemba tombo",
+      "translations": {
+        "en": "give me the needle",
+        "fr": "Donne-moi l'aiguille.",
+        "es": "Dame la aguja"
+      },
+      "translationStatus": {},
+      "speakerId": null,
+      "citations": [],
+      "audio": [
+        {
+          "id": "28489e18-c5db-4d8a-9d0d-320546ac3116",
+          "storagePath": "benga/audio/28489e18-c5db-4d8a-9d0d-320546ac3116.wav",
+          "speakerIds": ["1c4b6e9a-a62e-4296-aa28-0b143744b323"]
+        }
+      ],
+      "senseIds": ["c143a6fc-9764-44ad-863b-3a5c3c502ac0"],
+      "textId": null,
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": {
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-18T20:38:06.812Z",
+        "version": 0,
+        "lastError": null
+      }
+    }
+  }
+}

@@ -192,3 +192,10 @@ test('dictionary workspace rejects typical mistakes', () => {
   for (const field of ['sync', 'review', 'suggestions', 'siteKeys']) delete base.entries[id][field]
   assertValid('dictionary', base)
 })
+
+test('the real dictionary workspace files follow their schema', () => {
+  for (const name of ['entries', 'sentences', 'base']) {
+    const file = path.join(ROOT, 'src/data/dictionary', `${name}.json`)
+    if (fs.existsSync(file)) assertValid('dictionary', readJson(file))
+  }
+})
