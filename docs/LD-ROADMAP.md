@@ -241,10 +241,10 @@ Branch: `feat/ld-workspace`
 
 Branch: `feat/ld-admin-api`
 
-- [ ] **L2.1 Read/write endpoints**
+- [x] **L2.1 Read/write endpoints**
   - **Prompt:** "Task L2.1: add `/__dev/ld/*` to vite.config.mjs (serve only, loopback only), logic in `scripts/lib/ld/workspace.mjs`: list/get/save entry and sentence, create with uuid5 id, delete local-only (never in LD here), atomic file writes, a version number per record so two tabs can't overwrite each other (409). Saving marks `sync.state = local-changes`. Tests without the server."
   - **Commit:** `feat(ld): add local endpoints to read and edit the workspace`
-- [ ] **L2.2 Keep the site in step on every save**
+- [x] **L2.2 Keep the site in step on every save**
   - **Why:** you asked that the site's files stay up to date when a word changes.
   - **Prompt:** "Task L2.2: after each save, update the registry links of that entry (livingDictionaryId, audio state) and regenerate `word-usage.json` only if needed. Never touch nouns.json/adjectives.json: if the gloss of a linked book word differs, show it in the form's 'En la web' card instead."
   - **Commit:** `feat(ld): keep the word registry in sync with workspace edits`
