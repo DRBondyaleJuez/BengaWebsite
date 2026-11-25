@@ -344,3 +344,26 @@ Long groups show 10 lines; `npm run validate -- --all` shows everything.
 
 The schemas live in `src/data/schemas/`; correct example files are in `src/data/schemas/examples/`.
 In VS Code you can hover a field in a schema to read its description.
+
+## 8. The dictionary workspace (`dictionary.schema.json`)
+
+A local copy of the Benga Living Dictionary that the admin `/admin/living-dictionary` edits and
+syncs (plan: [LD-ROADMAP.md](LD-ROADMAP.md)). It is separate from the book lexicon above: the two
+are linked word by word through the word registry and never overwrite each other.
+
+| File | `kind` | What it holds |
+|---|---|---|
+| `src/data/dictionary/entries.json` | `entries` | every dictionary word: `lexeme`, `senses` (glosses es/en/fr, `partsOfSpeech`, `semanticDomains`, `nounClass`, `pluralForm`, `sentenceIds`…), `audio`, `relations`, plus local fields `siteKeys`, `review`, `suggestions`, `sync` |
+| `src/data/dictionary/sentences.json` | `sentences` | example sentences: `text` (Benga), `translations`, `translationStatus` (`machine` / `reviewed` / `published`), `audio`, `senseIds` + the same local fields |
+| `src/data/dictionary/base.json` | `base` | the dictionary exactly as last read (no local fields): comparing it with the workspace shows what you changed |
+| `src/data/dictionary/vocab/*.json` | — | lists with Spanish labels: parts of speech, semantic domains, relation types, review categories |
+
+Rules:
+
+- Keys are the Living Dictionaries ids (UUID). New words get a fixed id (uuid5), so sending them
+  twice never duplicates them.
+- Benga text is copied exactly as the dictionary has it: never "corrected" by a rule. Doubts go in
+  `review` (a plain question) or in `docs/REVIEW-LOG.md`.
+- Claude's proposals go in `suggestions` and only become values when a person accepts them.
+- `sync.state`: `synced` · `local-changes` · `new` · `conflict` · `error`.
+- Example: `src/data/schemas/examples/dictionary-entries.example.json`.

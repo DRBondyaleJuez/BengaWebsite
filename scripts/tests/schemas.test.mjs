@@ -144,3 +144,51 @@ test('exercise needs items or a generator, not both', () => {
   })
   assert.ok(generator)
 })
+
+test('dictionary workspace rejects typical mistakes', () => {
+  const entries = example('dictionary-entries.example.json')
+  const [id] = Object.keys(entries.entries)
+  const variant = (change) => {
+    const copy = clone(entries)
+    change(copy.entries[id])
+    return copy
+  }
+  assertInvalid(
+    'dictionary',
+    variant((e) => delete e.sync),
+    'workspace entry without sync state'
+  )
+  assertInvalid(
+    'dictionary',
+    variant((e) => (e.senses = [])),
+    'entry without senses'
+  )
+  assertInvalid(
+    'dictionary',
+    variant((e) => (e.lexem = 'x')),
+    'typo in a field name'
+  )
+  assertInvalid(
+    'dictionary',
+    variant((e) => (e.sync.state = 'done')),
+    'unknown sync state'
+  )
+  assertInvalid(
+    'dictionary',
+    variant((e) => (e.senses[0].glosses.de = 'Baum')),
+    'unknown gloss language'
+  )
+  assertInvalid(
+    'dictionary',
+    variant((e) => (e.review = { category: 'other' })),
+    'review without a note'
+  )
+  const bad = clone(entries)
+  bad.entries['not-a-uuid'] = bad.entries[id]
+  assertInvalid('dictionary', bad, 'entry key is not an LD id')
+  // base.json holds only what the dictionary has: no local fields
+  const base = { kind: 'base', pulledAt: null, entries: clone(entries.entries), sentences: {} }
+  assertInvalid('dictionary', base, 'base entry with local fields (sync, review…)')
+  for (const field of ['sync', 'review', 'suggestions', 'siteKeys']) delete base.entries[id][field]
+  assertValid('dictionary', base)
+})
