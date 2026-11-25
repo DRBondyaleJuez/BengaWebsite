@@ -113,6 +113,17 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - OCR doubts are corrected at `/admin/ocr` (same dev-only mechanism); corrections go to `docs/ocr/ocr-corrections.json` and into the improved PDF with `python scripts/ocr-pdf.py --reuse` (docs/OCR.md).
 - **Audio pipeline** (guide: `docs/AUDIO-GUIDE.md`): `npm run audio:checklist` writes `docs/audio/recording-checklist.csv` (what to record); after uploading to Cloudinary `npm run audio:sync` marks the words `recorded` (needs `.env.local` with the Cloudinary keys, never committed). Sentences are recorded like words (same key rule). `/admin/audios` (dev-only) lists the words, checks Cloudinary, plays, records and uploads audio and shows the space used (`scripts/lib/audio-admin.mjs`, `cloudinary.mjs`; endpoints `/__dev/audio/*` in `vite.config.mjs`). `PlayAllButton` plays a list of words in order through `playAll()` of the shared player; it is hidden until at least one of its words is recorded.
 - **Living Dictionary import** (guide: `docs/LIVING-DICTIONARY-IMPORT.md`): `npm run ld:import -- <folder>` checks a CSV + audio folder and writes a preview; `--send` writes to livingdictionaries.app through its Write API (`LD_API_KEY=ldk_…`, `LD_DICTIONARY_ID` in `.env.local`), never overwrites existing entries, never invents speakers, resumes from `ld-import/ledger.json` and fills `livingDictionaryId` in the registry. Logic in `scripts/lib/living-dictionary.mjs` (tested).
+
+### Living Dictionary Bridge (plan: `docs/LD-ROADMAP.md`, phases L0–L9)
+- `/admin/living-dictionary` (dev-only, planned) controls the Benga dictionary on livingdictionaries.app (id `benga`). Before any LD task read the roadmap's sections 3 (responsible use) and 4 (sync rules), and the API front door `https://livingdictionaries.app/api/v1` → the guide for the job.
+- The key (`LD_API_KEY` in `.env.local`) is used only by Node code (scripts, Vite dev endpoints). Never in `src/` code that reaches the browser, never printed.
+- Syncs are manual only (button or `npm run ld:*`): bulk reads come from the public snapshot, writes go in throttled batches, only changed fields are sent, every push has an `import_id`, and every run is logged.
+- **Never invent Benga** (words, forms, sentences) for the dictionary. Claude adds *suggestions* (translations of glosses, part of speech, domain, noun class, scientific names, relations, transcriptions) plus a review flag with a plain-language question; a human accepts them. AI translations of example sentences go up with `translation_meta: machine`.
+- Never overwrite or "tidy" the dictionary's existing wording, spelling or diacritics by rule: list the case in `docs/REVIEW-LOG.md` and let the developer decide.
+- Audio is attributed to a real registered speaker: default **Upango Bondyale Oko**, others only when the developer says so. Words from the book cite source `salvado-y-cos-1891` with the page.
+- The book lexicon (`lexicon/*.json`) and the dictionary workspace (`src/data/dictionary/`, planned) are linked through `word-registry.json` and compared, never overwritten automatically (REVIEW-LOG R-037).
+- Audio from the dictionary is copied to Cloudinary (remote-URL upload, key = `toAudioId`) so the website keeps playing from Cloudinary; the public LD media URL is not used directly on the site.
+- The audio → IPA tool lives in a separate folder `../benga-phonetics` (Python); spelling → IPA rules may live in `src/utils/`.
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
@@ -270,7 +281,7 @@ benga-grammar-website/
 │           ├── InvariableAdjectivesSection.vue
 │           ├── ComparativesSuperlativesSection.vue
 │           └── NumeralOrdinalAdjectivesSection.vue
-├── docs/                        # ROADMAP, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
+├── docs/                        # ROADMAP, LD-ROADMAP, LIVING-DICTIONARY-IMPORT, AUDIO-GUIDE, REVIEW-LOG, WORKING-WITH-AI, WORD-REGISTRY, CONTENT-GUIDE, TRANSLATIONS, OCR (+ ocr/ocr-doubts.csv, ocr/ocr-corrections.json, translations/doubts.json)
 ├── scripts/                     # Node tools: validate-data, words-sync, words-import, ld-import (Living Dictionary), i18n-report (translation coverage), lib/translations-save.mjs (writer of /admin/translations), extract-ch2 (one-time, task 2.4), ocr-pdf.py (Python: new OCR of the book), lib/ (schemas.mjs, validate.mjs, …), tests/, imports/
 ├── context/                     # Git-ignored: private prompts and notes
 ├── package.json                 # Scripts (serve, build, preview, lint, format, test, words:*)
@@ -285,7 +296,7 @@ benga-grammar-website/
 ```
 
 ## Roadmap and Workflow
-- **The plan:** `docs/ROADMAP.md` lists every phase, task and subtask with a prompt and a commit name. Tick a task's box when it is committed. This replaces the old week-by-week plan.
+- **The plan:** `docs/ROADMAP.md` lists every phase, task and subtask with a prompt and a commit name; `docs/LD-ROADMAP.md` does the same for the Living Dictionary bridge (phases L0–L9). Tick a task's box when it is committed. This replaces the old week-by-week plan.
 - **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
 - **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
 - **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.

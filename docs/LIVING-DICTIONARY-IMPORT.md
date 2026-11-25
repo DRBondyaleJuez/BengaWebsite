@@ -116,47 +116,23 @@ numerals), `8` Time, `9` Location and directions, `10` Grammar.
 If something goes wrong: the key can be deleted on the Agents page; every entry of a run has the
 batch label printed at the end, which the Living Dictionaries team can use to find or remove it.
 
-## 6. Proposed next steps (to build together)
+## 6. Next steps: the Living Dictionary bridge
 
-| Step                              | What                                                                                                                                                                                                                    |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A. MVP (done)**                 | `npm run ld:import`: CSV + audio folder → checks → preview → send, resumable, linked back to the site.                                                                                                                  |
-| B. Admin page                     | `/admin/living-dictionary` (dev only, like `/admin/audios`): choose the folder, edit rows in a table, preview and «Enviar» button, progress bar.                                                                         |
-| C. Excel directly                 | Read `.xlsx` without saving as CSV (needs a library such as `exceljs`).                                                                                                                                                 |
-| D. Read the dictionary            | Download the whole dictionary (the API offers a SQLite snapshot) to fill every `livingDictionaryId` automatically and to show in `/admin/palabras` which site words are missing from the dictionary.                   |
-| E. Send the site's own words      | Turn `lexicon/nouns.json` and `adjectives.json` (≈460 words of the book, with es/en/fr meanings, class, plural, book page) into a sheet for this tool, cited to Salvado y Cos. Needs care with words the dictionary already has. |
-| F. Reuse audio                    | Send the recordings made in `/admin/audios` (Cloudinary) to the matching dictionary entries in the same run.                                                                                                            |
-| G. Play dictionary audio on site  | Use recordings made in the dictionary on the website (idea, 2026-11-25). See section 7.                                                                                                                                  |
+This command is the first piece of a bigger plan: `/admin/living-dictionary`, a control centre
+to see, edit, record and sync the Benga dictionary from the website's admin. The plan, with a
+prompt and a commit name for every task, is **[LD-ROADMAP.md](LD-ROADMAP.md)**. The ideas listed
+here before (admin page, reading the dictionary, sending the book's words, reusing audio) are
+phases L1–L7 there.
 
-## 7. Idea: play the dictionary's audio on the website
+## 7. Playing the dictionary's audio on the website
 
-Checked in the API docs on 2026-11-25:
-
-- Every read call needs the `ldk_…` key. An audio comes back as a `storage_path`. The file is
-  fetched with `GET /api/v1/dictionaries/{id}/media/{storage_path}`, which also needs the key and
-  then redirects to the file in storage. A page's `<audio>` tag cannot send the key, and the key
-  must never be in the website's code (anyone could read it). So the site **cannot point straight
-  at the API**.
-- The public snapshot (`https://snapshots.livingdictionaries.app/dictionaries/{id}.db.gz`, no key)
-  lists the audio rows but has no file URLs.
-- The docs don't say whether the storage address the redirect lands on is public and permanent.
-  The audio format and any limit on reusing the files elsewhere aren't stated either. The
-  dictionary asks to credit the dictionary and the Living Tongues Institute and to link back,
-  because the recordings are of real named people.
-
-Possible designs, to decide once there is a key to test with:
-
-1. **Copy at build time (recommended).** A script (`npm run ld:pull-audio`) runs on the
-   developer's computer with the key, downloads each linked word's audio and uploads it to
-   Cloudinary under the word's audio id. The registry is then marked `recorded`. The site keeps
-   using Cloudinary (fast, mp3, no key in the browser), and the dictionary becomes the place
-   where recordings are made. The credit line would name the speaker.
-2. **Store the storage address.** If the redirect target turns out to be public and permanent, the
-   script saves that address in the registry (e.g. an `audioUrl` field) and `getAudioUrl()`
-   uses it. That means no second copy, but it depends on Living Dictionaries' storage never
-   changing.
-3. **A server in between** that adds the key. This doesn't work for a static site, so it isn't
-   an option today.
+Checked on 2026-11-25 with a read-only call: the API's media route redirects to a public file
+`https://media.livingdictionaries.app/benga/audio/<id>.wav` (no key needed for the file). The
+recordings are WAV (~0.9 MB each), too heavy to stream directly on every page, and the address is
+not documented as permanent. Decision: **copy them into Cloudinary** (one remote-URL upload per
+file, delivered as mp3 under the word's audio id) and keep the website playing from Cloudinary.
+That is task L6.1 of [LD-ROADMAP.md](LD-ROADMAP.md). The site credits the speaker and links back
+to the dictionary, as Living Dictionaries asks.
 
 Sources: [Living Dictionaries API](https://livingdictionaries.app/api/v1),
 [importing guide](https://livingdictionaries.app/api/v1/guides/importing),
