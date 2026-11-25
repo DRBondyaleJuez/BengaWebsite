@@ -74,7 +74,7 @@ Principles:
 | Photos | `POST …/senses/{id}/photos` (≤ 10 MB) |
 | Relations | `POST …/relationships`: `synonym, antonym, see_also, spelling_variant, dialectal_variant, homophone, hypernym/hyponym, holonym/meronym, derived_from/root_of, borrowed_from/loaned_to, cognate` + custom types |
 | Fields of an entry | lexeme, homograph, **phonetic**, interlinearization, morphology, notes, linguistic_history, **scientific_names**, tone_class, dialects, tags, citations (source + page), places, etymologies |
-| Fields of a sense | glosses (es/en/fr), definition, **parts_of_speech** (the 90 codes of your list), **semantic_domains** (your list), write-in domains, **noun_class**, plural_form, variant, example sentences, photos |
+| Fields of a sense | glosses (es/en/fr), definition, **parts_of_speech** (the 91 codes of your list), **semantic_domains** (your list), write-in domains, **noun_class**, plural_form, variant, example sentences, photos |
 | Undo a batch | every push has an `import_id` → `POST …/entries/batch-delete` (dry run + confirm) |
 | Talk to the LD team | `POST …/feedback` |
 
@@ -168,7 +168,7 @@ These come from the API guides. They are not optional.
 - `sentences.json`: text, translations `{es,en,fr}` + `translationStatus`, linked senses, audio,
   same `review` / `suggestions` / `sync`.
 - `src/data/dictionary/vocab/`: the lists with Spanish labels and help texts: parts of speech
-  (your 90 values ↔ LD codes), semantic domains, relation types, review categories.
+  (your 91 values ↔ LD codes), semantic domains, relation types, review categories.
 - Sync logs: `ld-sync/runs/<date>-<kind>.json` (git-ignored, R-044) with every item's result and
   error category. The admin's Sincronización page reads them.
 - `word-registry.json` stays the hinge for the website. A link step fills `livingDictionaryId`,
@@ -195,7 +195,7 @@ Review categories (small fixed list, same in our UI and in LD's queue): `missing
 | **Grabar** | `…/grabar` | Recording session for elders (L6.5): huge word, one big button, listen, keep or repeat, next |
 | **Importar carpeta** | `…/importar` | The existing `ld:import` (CSV + audio folder) with a progress tracker |
 
-Design: same colours as the site, cards and chips, dropdowns for long lists (90 parts of speech
+Design: same colours as the site, cards and chips, dropdowns for long lists (91 parts of speech
 in groups, domains as a tree with search), tooltips (ⓘ) explaining fields in Spanish,
 confirmation dialogs before anything is sent, toasts for results, keyboard friendly, big
 targets.
@@ -208,13 +208,13 @@ Branch: `feat/ld-foundations`
 
 - [x] **L0.1 Roadmap, rules and doubts** *(done 2026-11-25)*
   - **Commit:** `docs(ld): add the living dictionary bridge roadmap`
-- [ ] **L0.2 A polite API client**
+- [x] **L0.2 A polite API client**
   - **Why:** every later task talks to LD; throttling, retries, logging and the key must live in one place.
   - **Prompt:** "Task L0.2: read docs/LD-ROADMAP.md sections 3–4. Move the LD client out of `scripts/lib/living-dictionary.mjs` into `scripts/lib/ld/client.mjs` with: request queue (one at a time, min interval per kind), retries with backoff and `Retry-After`, stop after 3 consecutive failures, `redirect: 'error'` on writes, User-Agent with version, an `onEvent` hook that the sync log will use, and read helpers `dictionary()`, `entry(id)`, `findEntries()`, `changedSince()`, `downloadSnapshot()`. Keep `ld:import` working. Tests with a fake fetch, no real calls."
   - **Commit:** `refactor(ld): add a throttled living dictionary client`
-- [ ] **L0.3 Vocabularies with Spanish labels**
+- [x] **L0.3 Vocabularies with Spanish labels**
   - **Why:** the form shows your Spanish lists; LD stores codes.
-  - **Prompt:** "Task L0.3: create `src/data/dictionary/vocab/parts-of-speech.json` (the 90 LD codes with the exact Spanish labels from my list, English name and a one-line Spanish help text, grouped: sustantivos, verbos, pronombres, …), `semantic-domains.json` (keys + my Spanish names + English, as a tree), `relation-types.json` (LD slugs + Spanish labels and help from the 'Entradas relacionadas' texts) and `review-categories.json`. Make `living-dictionary.mjs` read them instead of its own tables. Tests: every code unique, every label found, my 90 values all mapped."
+  - **Prompt:** "Task L0.3: create `src/data/dictionary/vocab/parts-of-speech.json` (the 91 LD codes with the exact Spanish labels from my list, English name and a one-line Spanish help text, grouped: sustantivos, verbos, pronombres, …), `semantic-domains.json` (keys + my Spanish names + English, as a tree), `relation-types.json` (LD slugs + Spanish labels and help from the 'Entradas relacionadas' texts) and `review-categories.json`. Make `living-dictionary.mjs` read them instead of its own tables. Tests: every code unique, every label found, my 91 values all mapped."
   - **Commit:** `feat(ld): add part-of-speech, domain and relation vocabularies`
 - [ ] **L0.4 Register the book as a source and set the default speaker** *(writes to LD: you approve first)*
   - **Prompt:** "Task L0.4: show me the source record you would create for Salvado y Cos (slug `salvado-y-cos-1891`, title, year, author, link to the PDF) and, once I approve, create it with `POST …/sources`. Add `LD_DEFAULT_SPEAKER` (Upango Bondyale Oko's id) to `src/config/ld.js` (non-secret settings: dictionary id, default speaker, limits). Log both in REVIEW-LOG R-039."

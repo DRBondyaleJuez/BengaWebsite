@@ -1,0 +1,140 @@
+{
+  "_about": "Living Dictionaries global relation types between entries, with Spanish labels.",
+  "items": [
+    {
+      "type": "synonym",
+      "es": "Sinónimo",
+      "help": {
+        "es": "Las dos palabras significan lo mismo o casi lo mismo."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "antonym",
+      "es": "Antónimo",
+      "help": {
+        "es": "Las dos palabras tienen significados opuestos."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "see_also",
+      "es": "Ver también",
+      "help": {
+        "es": "La otra palabra está relacionada y puede interesar a quien lee esta."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "spelling_variant",
+      "es": "Variante ortográfica",
+      "help": {
+        "es": "Las dos palabras son la misma escrita de otra manera."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "dialectal_variant",
+      "es": "Variante dialectal",
+      "help": {
+        "es": "Las dos palabras son la misma en dialectos distintos."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "homophone",
+      "es": "Homófono",
+      "help": {
+        "es": "Las dos palabras suenan igual pero significan cosas distintas."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "cognate",
+      "es": "Cognado",
+      "help": {
+        "es": "Las dos palabras vienen de un origen común, normalmente en lenguas emparentadas."
+      },
+      "symmetric": true,
+      "inverse": null
+    },
+    {
+      "type": "hypernym",
+      "es": "Más amplio que",
+      "help": {
+        "es": "Esta palabra es la categoría más amplia que incluye a la otra (animal es más amplio que perro)."
+      },
+      "symmetric": false,
+      "inverse": "hyponym"
+    },
+    {
+      "type": "hyponym",
+      "es": "Más específico que",
+      "help": {
+        "es": "Esta palabra es un tipo específico de la otra (perro es más específico que animal)."
+      },
+      "symmetric": false,
+      "inverse": "hypernym"
+    },
+    {
+      "type": "holonym",
+      "es": "Tiene parte",
+      "help": {
+        "es": "La otra palabra nombra una parte de esta (mano tiene parte dedo)."
+      },
+      "symmetric": false,
+      "inverse": "meronym"
+    },
+    {
+      "type": "meronym",
+      "es": "Parte de",
+      "help": {
+        "es": "Esta palabra nombra una parte de la otra (dedo es parte de mano)."
+      },
+      "symmetric": false,
+      "inverse": "holonym"
+    },
+    {
+      "type": "derived_from",
+      "es": "Derivado de",
+      "help": {
+        "es": "Esta palabra se formó a partir de la otra (maestro deriva de enseñar)."
+      },
+      "symmetric": false,
+      "inverse": "root_of"
+    },
+    {
+      "type": "root_of",
+      "es": "Raíz de",
+      "help": {
+        "es": "La otra palabra se formó a partir de esta (enseñar es raíz de maestro)."
+      },
+      "symmetric": false,
+      "inverse": "derived_from"
+    },
+    {
+      "type": "borrowed_from",
+      "es": "Tomado de",
+      "help": {
+        "es": "Esta palabra fue adoptada de la otra palabra, a menudo de otra lengua."
+      },
+      "symmetric": false,
+      "inverse": "loaned_to"
+    },
+    {
+      "type": "loaned_to",
+      "es": "Prestado a",
+      "help": {
+        "es": "La otra palabra fue adoptada a partir de esta, a menudo en otra lengua."
+      },
+      "symmetric": false,
+      "inverse": "borrowed_from"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "_about": "Categories of doubts a reviewer can flag on an entry, with Spanish labels.",
+  "items": [
+    {
+      "id": "missing_gloss",
+      "es": "Falta traducción",
+      "help": {
+        "es": "La palabra no tiene traducción al español, inglés o francés."
+      }
+    },
+    {
+      "id": "uncertain_gloss",
+      "es": "Traducción dudosa",
+      "help": {
+        "es": "La traducción puede ser incorrecta o incompleta."
+      }
+    },
+    {
+      "id": "uncertain_pos",
+      "es": "Categoría gramatical dudosa",
+      "help": {
+        "es": "No se sabe si la categoría gramatical (sustantivo, verbo…) es correcta."
+      }
+    },
+    {
+      "id": "uncertain_domain",
+      "es": "Dominio dudoso",
+      "help": {
+        "es": "No se sabe si el dominio semántico es correcto."
+      }
+    },
+    {
+      "id": "uncertain_noun_class",
+      "es": "Clase nominal dudosa",
+      "help": {
+        "es": "No se sabe si la clase nominal es correcta."
+      }
+    },
+    {
+      "id": "uncertain_spelling",
+      "es": "Ortografía dudosa",
+      "help": {
+        "es": "La escritura de la palabra puede tener errores."
+      }
+    },
+    {
+      "id": "possible_duplicate",
+      "es": "Posible duplicado",
+      "help": {
+        "es": "Puede haber otra entrada con la misma palabra."
+      }
+    },
+    {
+      "id": "audio_issue",
+      "es": "Problema de audio",
+      "help": {
+        "es": "El audio falta, está cortado o no corresponde a la palabra."
+      }
+    },
+    {
+      "id": "needs_example",
+      "es": "Falta ejemplo",
+      "help": {
+        "es": "La entrada necesita una frase de ejemplo."
+      }
+    },
+    {
+      "id": "other",
+      "es": "Otro",
+      "help": {
+        "es": "Otra duda que no encaja en las demás categorías."
+      }
+    }
+  ]
+}

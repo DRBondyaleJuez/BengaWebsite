@@ -24,7 +24,7 @@ import { loadEnvLocal } from './lib/cloudinary.mjs'
 import { loadRegistry, saveRegistry, normaliseEntry } from './lib/registry.mjs'
 import {
   AUDIO_EXTENSIONS,
-  SEMANTIC_DOMAINS,
+  domainLabel,
   checkRow,
   findDuplicates,
   ldClient
@@ -286,7 +286,7 @@ function renderPreview(items) {
       .map(([lang, text]) => `<b>${lang}</b> ${escape(text)}`)
       .join(' · ')
     const domains = (sense.semantic_domains || [])
-      .map((key) => `${key} ${escape(SEMANTIC_DOMAINS[key][1])}`)
+      .map((key) => `${key} ${escape(domainLabel(key))}`)
       .concat((sense.write_in_semantic_domains || []).map((d) => `${escape(d)} (texto libre)`))
       .join(', ')
     const example = sense.example_sentences?.[0]

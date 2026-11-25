@@ -88,8 +88,8 @@ big; the same word twice without a homograph number.
 
 ## 4. Semantic fields (Living Dictionaries list)
 
-Write the key or the name. The full list with English and Spanish names is `SEMANTIC_DOMAINS` in
-`scripts/lib/living-dictionary.mjs`. Main groups: `1` Universe and nature (`1.4` plants, `1.5`
+Write the key or the name. The full list with English and Spanish names is in
+`src/data/dictionary/vocab/semantic-domains.json`. Main groups: `1` Universe and nature (`1.4` plants, `1.5`
 animals, `1.7` birds, `1.8` fish…), `2` People (`2.1` body parts, `2.6` kinship…), `3` Language
 and mind, `4` Names, `5` Daily life (`5.1` household, `5.3` food, `5.4` clothing, `5.11` hunting
 and fishing…), `6` Physical actions (`6.5` states and characteristics), `7` Quantities (`7.1`

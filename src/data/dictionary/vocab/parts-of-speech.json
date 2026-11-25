@@ -1,0 +1,874 @@
+{
+  "_about": "Living Dictionaries part-of-speech codes with the Spanish labels shown in the admin. Source: LD API SenseInput.parts_of_speech.",
+  "groups": [
+    {
+      "id": "nouns",
+      "label": {
+        "es": "Sustantivos",
+        "en": "Nouns"
+      },
+      "codes": ["n", "n.f", "n.m", "n pl", "na", "ni", "pr.n", "np"]
+    },
+    {
+      "id": "verbs",
+      "label": {
+        "es": "Verbos",
+        "en": "Verbs"
+      },
+      "codes": [
+        "v",
+        "v.aux",
+        "vt",
+        "vi",
+        "vd",
+        "va",
+        "vai",
+        "vai/ii",
+        "vii",
+        "vta",
+        "vti",
+        "act.v",
+        "stat.v",
+        "caus.v",
+        "vp",
+        "ger",
+        "pple",
+        "msd",
+        "imp",
+        "v.prdg"
+      ]
+    },
+    {
+      "id": "pronouns",
+      "label": {
+        "es": "Pronombres",
+        "en": "Pronouns"
+      },
+      "codes": [
+        "pro",
+        "pers",
+        "poss",
+        "refl",
+        "reflpro",
+        "rel",
+        "relpro",
+        "pro.a",
+        "pro.i",
+        "indfpro"
+      ]
+    },
+    {
+      "id": "adj-adv",
+      "label": {
+        "es": "Adjetivos y adverbios",
+        "en": "Adjectives and adverbs"
+      },
+      "codes": ["adj", "adv", "ap", "adv.p", "dim"]
+    },
+    {
+      "id": "det-dem",
+      "label": {
+        "es": "Determinantes y demostrativos",
+        "en": "Determiners and demonstratives"
+      },
+      "codes": [
+        "det",
+        "dem",
+        "dem.a",
+        "dem.i",
+        "dem.loc",
+        "art",
+        "def",
+        "indf",
+        "quan",
+        "num",
+        "no"
+      ]
+    },
+    {
+      "id": "particles",
+      "label": {
+        "es": "Partículas y marcadores",
+        "en": "Particles and markers"
+      },
+      "codes": [
+        "prep",
+        "conj",
+        "int",
+        "p",
+        "neg",
+        "q",
+        "comp",
+        "post",
+        "adp",
+        "pn",
+        "pv",
+        "pn/v",
+        "tns",
+        "asp",
+        "mod",
+        "n.cls",
+        "quot",
+        "obj",
+        "clf",
+        "ideo",
+        "e.w",
+        "m.w"
+      ]
+    },
+    {
+      "id": "affixes",
+      "label": {
+        "es": "Afijos",
+        "en": "Affixes"
+      },
+      "codes": ["pref", "suff", "n.pref", "n.suff", "v.pref", "v.suff"]
+    },
+    {
+      "id": "phrases",
+      "label": {
+        "es": "Frases y oraciones",
+        "en": "Phrases and sentences"
+      },
+      "codes": ["phr", "sent", "cpd", "redup"]
+    },
+    {
+      "id": "other",
+      "label": {
+        "es": "Otros",
+        "en": "Other"
+      },
+      "codes": ["pl", "punc", "idf", "acr", "cntr"]
+    }
+  ],
+  "items": [
+    {
+      "code": "n",
+      "es": "sustantivo",
+      "en": "noun",
+      "help": {
+        "es": "Palabra que nombra personas, animales, cosas o ideas."
+      }
+    },
+    {
+      "code": "n.f",
+      "es": "sustantivo femenino",
+      "en": "noun, feminine",
+      "help": {
+        "es": "Sustantivo de género femenino."
+      }
+    },
+    {
+      "code": "n.m",
+      "es": "sustantivo masculino",
+      "en": "noun, masculine",
+      "help": {
+        "es": "Sustantivo de género masculino."
+      }
+    },
+    {
+      "code": "pro",
+      "es": "pronombre",
+      "en": "pronoun",
+      "help": {
+        "es": "Palabra que sustituye a un sustantivo."
+      }
+    },
+    {
+      "code": "v",
+      "es": "verbo",
+      "en": "verb",
+      "help": {
+        "es": "Palabra que expresa una acción, un proceso o un estado."
+      }
+    },
+    {
+      "code": "adj",
+      "es": "adjetivo",
+      "en": "adjective",
+      "help": {
+        "es": "Palabra que describe o califica a un sustantivo."
+      }
+    },
+    {
+      "code": "adv",
+      "es": "adverbio",
+      "en": "adverb",
+      "help": {
+        "es": "Palabra que modifica a un verbo, un adjetivo u otro adverbio."
+      }
+    },
+    {
+      "code": "prep",
+      "es": "preposición",
+      "en": "preposition",
+      "help": {
+        "es": "Palabra que va delante de un sustantivo y marca su relación con otra palabra."
+      }
+    },
+    {
+      "code": "conj",
+      "es": "conjunción",
+      "en": "conjunction",
+      "help": {
+        "es": "Palabra que une palabras o frases."
+      }
+    },
+    {
+      "code": "det",
+      "es": "determinante",
+      "en": "determiner",
+      "help": {
+        "es": "Palabra que acompaña al sustantivo y lo concreta, como un artículo o un posesivo."
+      }
+    },
+    {
+      "code": "int",
+      "es": "interjección",
+      "en": "interjection",
+      "help": {
+        "es": "Palabra suelta que expresa una emoción o una reacción."
+      }
+    },
+    {
+      "code": "no",
+      "es": "número",
+      "en": "number",
+      "help": {
+        "es": "Palabra que expresa una cantidad."
+      }
+    },
+    {
+      "code": "dem",
+      "es": "demostrativo",
+      "en": "demonstrative",
+      "help": {
+        "es": "Palabra que señala algo por su cercanía, como este o ese."
+      }
+    },
+    {
+      "code": "n pl",
+      "es": "sustantivo plural",
+      "en": "plural noun",
+      "help": {
+        "es": "Sustantivo que solo se usa en plural."
+      }
+    },
+    {
+      "code": "phr",
+      "es": "frase",
+      "en": "phrase",
+      "help": {
+        "es": "Grupo de palabras que funciona como una unidad."
+      }
+    },
+    {
+      "code": "p",
+      "es": "partícula",
+      "en": "particle",
+      "help": {
+        "es": "Palabra pequeña que añade un matiz y no encaja en otra categoría."
+      }
+    },
+    {
+      "code": "neg",
+      "es": "negativo",
+      "en": "negative",
+      "help": {
+        "es": "Palabra o marca que niega."
+      }
+    },
+    {
+      "code": "quan",
+      "es": "cuantificador",
+      "en": "quantifier",
+      "help": {
+        "es": "Palabra que indica cantidad, como mucho o poco."
+      }
+    },
+    {
+      "code": "rel",
+      "es": "relativo",
+      "en": "relative",
+      "help": {
+        "es": "Palabra que introduce una oración que describe a un sustantivo."
+      }
+    },
+    {
+      "code": "v.aux",
+      "es": "verbo auxiliar",
+      "en": "auxiliary verb",
+      "help": {
+        "es": "Verbo que ayuda a otro a formar tiempos u otros matices."
+      }
+    },
+    {
+      "code": "dem.a",
+      "es": "demostrativo animado",
+      "en": "animate demonstrative",
+      "help": {
+        "es": "Demostrativo que se usa con seres animados."
+      }
+    },
+    {
+      "code": "dem.i",
+      "es": "demostrativo inanimado",
+      "en": "inanimate demonstrative",
+      "help": {
+        "es": "Demostrativo que se usa con cosas inanimadas."
+      }
+    },
+    {
+      "code": "dem.loc",
+      "es": "demostrativo locativo",
+      "en": "locative demonstrative",
+      "help": {
+        "es": "Demostrativo que señala un lugar, como aquí o allí."
+      }
+    },
+    {
+      "code": "dim",
+      "es": "diminutivo",
+      "en": "diminutive",
+      "help": {
+        "es": "Forma que indica algo pequeño o cariñoso."
+      }
+    },
+    {
+      "code": "na",
+      "es": "sustantivo animado",
+      "en": "animate noun",
+      "help": {
+        "es": "Sustantivo que nombra un ser animado."
+      }
+    },
+    {
+      "code": "ni",
+      "es": "sustantivo inanimado",
+      "en": "inanimate noun",
+      "help": {
+        "es": "Sustantivo que nombra algo inanimado."
+      }
+    },
+    {
+      "code": "pl",
+      "es": "plural",
+      "en": "plural",
+      "help": {
+        "es": "Forma en plural de una palabra."
+      }
+    },
+    {
+      "code": "pn",
+      "es": "prenombre",
+      "en": "prenoun",
+      "help": {
+        "es": "Elemento que va antes del sustantivo."
+      }
+    },
+    {
+      "code": "pv",
+      "es": "preverbo",
+      "en": "preverb",
+      "help": {
+        "es": "Elemento que va antes del verbo."
+      }
+    },
+    {
+      "code": "pn/v",
+      "es": "prenombre / preverbo",
+      "en": "prenoun / preverb",
+      "help": {
+        "es": "Elemento que puede ir antes del sustantivo o del verbo."
+      }
+    },
+    {
+      "code": "pro.a",
+      "es": "pronombre animado",
+      "en": "animate pronoun",
+      "help": {
+        "es": "Pronombre que sustituye a un ser animado."
+      }
+    },
+    {
+      "code": "pro.i",
+      "es": "pronombre inanimado",
+      "en": "inanimate pronoun",
+      "help": {
+        "es": "Pronombre que sustituye a algo inanimado."
+      }
+    },
+    {
+      "code": "redup",
+      "es": "reduplicación",
+      "en": "reduplication",
+      "help": {
+        "es": "Palabra formada repitiendo una parte o la palabra entera."
+      }
+    },
+    {
+      "code": "refl",
+      "es": "reflexivo",
+      "en": "reflexive",
+      "help": {
+        "es": "Forma que indica que la acción recae sobre el propio sujeto."
+      }
+    },
+    {
+      "code": "vai",
+      "es": "verbo intransitivo animado",
+      "en": "animate intransitive verb",
+      "help": {
+        "es": "Verbo sin objeto cuyo sujeto es animado."
+      }
+    },
+    {
+      "code": "vai/ii",
+      "es": "verbo intransitivo animado / inanimado",
+      "en": "animate / inanimate intransitive verb",
+      "help": {
+        "es": "Verbo sin objeto que admite un sujeto animado o inanimado."
+      }
+    },
+    {
+      "code": "vii",
+      "es": "verbo intransitivo inanimado",
+      "en": "inanimate intransitive verb",
+      "help": {
+        "es": "Verbo sin objeto cuyo sujeto es inanimado."
+      }
+    },
+    {
+      "code": "vta",
+      "es": "verbo transitivo animado",
+      "en": "transitive animate verb",
+      "help": {
+        "es": "Verbo con objeto animado."
+      }
+    },
+    {
+      "code": "vti",
+      "es": "verbo transitivo inanimado",
+      "en": "transitive inanimate verb",
+      "help": {
+        "es": "Verbo con objeto inanimado."
+      }
+    },
+    {
+      "code": "imp",
+      "es": "imperativo",
+      "en": "imperative/command marker",
+      "help": {
+        "es": "Marca que convierte el verbo en una orden."
+      }
+    },
+    {
+      "code": "pref",
+      "es": "prefijo",
+      "en": "prefix",
+      "help": {
+        "es": "Elemento que se añade al inicio de una palabra."
+      }
+    },
+    {
+      "code": "punc",
+      "es": "ortografía",
+      "en": "punctuation",
+      "help": {
+        "es": "Signo de puntuación o de escritura."
+      }
+    },
+    {
+      "code": "suff",
+      "es": "sufijo",
+      "en": "suffix",
+      "help": {
+        "es": "Elemento que se añade al final de una palabra."
+      }
+    },
+    {
+      "code": "vt",
+      "es": "verbo transitivo",
+      "en": "transitive verb",
+      "help": {
+        "es": "Verbo que lleva complemento directo."
+      }
+    },
+    {
+      "code": "vi",
+      "es": "verbo intransitivo",
+      "en": "intransitive verb",
+      "help": {
+        "es": "Verbo que no lleva complemento directo."
+      }
+    },
+    {
+      "code": "comp",
+      "es": "complement(ador)",
+      "en": "complement(izer)",
+      "help": {
+        "es": "Palabra que introduce una oración subordinada."
+      }
+    },
+    {
+      "code": "cpd",
+      "es": "compuesto",
+      "en": "compound",
+      "help": {
+        "es": "Palabra formada por la unión de dos o más palabras."
+      }
+    },
+    {
+      "code": "pple",
+      "es": "participio",
+      "en": "participle",
+      "help": {
+        "es": "Forma del verbo que funciona como adjetivo o forma tiempos compuestos."
+      }
+    },
+    {
+      "code": "sent",
+      "es": "oración",
+      "en": "sentence",
+      "help": {
+        "es": "Oración completa."
+      }
+    },
+    {
+      "code": "pr.n",
+      "es": "nombre propio",
+      "en": "proper noun",
+      "help": {
+        "es": "Nombre de una persona, lugar u otra cosa única."
+      }
+    },
+    {
+      "code": "np",
+      "es": "frase nominal",
+      "en": "noun phrase",
+      "help": {
+        "es": "Grupo de palabras cuyo núcleo es un sustantivo."
+      }
+    },
+    {
+      "code": "vp",
+      "es": "frase verbal",
+      "en": "verb phrase",
+      "help": {
+        "es": "Grupo de palabras cuyo núcleo es un verbo."
+      }
+    },
+    {
+      "code": "ap",
+      "es": "frase adjetival",
+      "en": "adjective phrase",
+      "help": {
+        "es": "Grupo de palabras cuyo núcleo es un adjetivo."
+      }
+    },
+    {
+      "code": "adv.p",
+      "es": "frase adverbial",
+      "en": "adverb phrase",
+      "help": {
+        "es": "Grupo de palabras cuyo núcleo es un adverbio."
+      }
+    },
+    {
+      "code": "q",
+      "es": "marca de pregunta",
+      "en": "question marker",
+      "help": {
+        "es": "Marca que convierte una frase en pregunta."
+      }
+    },
+    {
+      "code": "ger",
+      "es": "gerundio",
+      "en": "gerund",
+      "help": {
+        "es": "Forma del verbo que expresa una acción en curso, como cantando."
+      }
+    },
+    {
+      "code": "art",
+      "es": "artículo",
+      "en": "article",
+      "help": {
+        "es": "Palabra que acompaña al sustantivo, como el o un."
+      }
+    },
+    {
+      "code": "post",
+      "es": "postposición",
+      "en": "postposition",
+      "help": {
+        "es": "Palabra que va detrás del sustantivo y marca su relación con otra palabra."
+      }
+    },
+    {
+      "code": "e.w",
+      "es": "palabra de entrada / partícula del discurso",
+      "en": "entry word / discourse particle",
+      "help": {
+        "es": "Palabra que abre una frase o ayuda a organizar el discurso."
+      }
+    },
+    {
+      "code": "m.w",
+      "es": "término de medición",
+      "en": "measure word",
+      "help": {
+        "es": "Palabra que se usa para contar o medir cosas."
+      }
+    },
+    {
+      "code": "msd",
+      "es": "masdar",
+      "en": "masdar",
+      "help": {
+        "es": "Nombre que se forma a partir de un verbo."
+      }
+    },
+    {
+      "code": "idf",
+      "es": "idafa",
+      "en": "idafa",
+      "help": {
+        "es": "Construcción del árabe que enlaza dos sustantivos."
+      }
+    },
+    {
+      "code": "v.prdg",
+      "es": "paradigma verbal",
+      "en": "verbal paradigm",
+      "help": {
+        "es": "Modelo con todas las formas de un verbo."
+      }
+    },
+    {
+      "code": "acr",
+      "es": "acrónimo",
+      "en": "acronym",
+      "help": {
+        "es": "Palabra formada con las iniciales de otras."
+      }
+    },
+    {
+      "code": "cntr",
+      "es": "contracción",
+      "en": "contraction",
+      "help": {
+        "es": "Palabra acortada a partir de dos o más palabras."
+      }
+    },
+    {
+      "code": "num",
+      "es": "numeral",
+      "en": "numeral",
+      "help": {
+        "es": "Palabra que expresa un número."
+      }
+    },
+    {
+      "code": "act.v",
+      "es": "verbo activo",
+      "en": "active verb",
+      "help": {
+        "es": "Verbo que expresa una acción."
+      }
+    },
+    {
+      "code": "stat.v",
+      "es": "verbo estativo",
+      "en": "stative verb",
+      "help": {
+        "es": "Verbo que expresa un estado."
+      }
+    },
+    {
+      "code": "caus.v",
+      "es": "verbo causativo",
+      "en": "causative verb",
+      "help": {
+        "es": "Verbo que expresa hacer que algo ocurra."
+      }
+    },
+    {
+      "code": "v.suff",
+      "es": "sufijo verbal",
+      "en": "verb suffix",
+      "help": {
+        "es": "Elemento que se añade al final del verbo."
+      }
+    },
+    {
+      "code": "n.suff",
+      "es": "sufijo sustantivo",
+      "en": "noun suffix",
+      "help": {
+        "es": "Elemento que se añade al final del sustantivo."
+      }
+    },
+    {
+      "code": "n.pref",
+      "es": "prefijo de sustantivo",
+      "en": "noun prefix",
+      "help": {
+        "es": "Elemento que se añade al inicio del sustantivo, como el prefijo de clase."
+      }
+    },
+    {
+      "code": "v.pref",
+      "es": "prefijo verbal",
+      "en": "verb prefix",
+      "help": {
+        "es": "Elemento que se añade al inicio del verbo."
+      }
+    },
+    {
+      "code": "ideo",
+      "es": "ideófono (onomatopeya / expresivos)",
+      "en": "ideophone (onomatoepia / expressives)",
+      "help": {
+        "es": "Palabra que imita un sonido o expresa una sensación."
+      }
+    },
+    {
+      "code": "clf",
+      "es": "clasificador",
+      "en": "classifier",
+      "help": {
+        "es": "Palabra que clasifica el sustantivo según su tipo."
+      }
+    },
+    {
+      "code": "tns",
+      "es": "marcador de tiempo",
+      "en": "tense marker",
+      "help": {
+        "es": "Marca que indica cuándo ocurre la acción."
+      }
+    },
+    {
+      "code": "asp",
+      "es": "marcador de aspecto",
+      "en": "aspect marker",
+      "help": {
+        "es": "Marca que indica cómo se desarrolla la acción."
+      }
+    },
+    {
+      "code": "mod",
+      "es": "indicador de modo",
+      "en": "mood marker",
+      "help": {
+        "es": "Marca que indica la actitud del hablante ante la acción."
+      }
+    },
+    {
+      "code": "n.cls",
+      "es": "marcador de clase de sustantivo",
+      "en": "noun class marker",
+      "help": {
+        "es": "Marca que indica la clase nominal de un sustantivo."
+      }
+    },
+    {
+      "code": "quot",
+      "es": "cuotativo",
+      "en": "quotative",
+      "help": {
+        "es": "Marca que indica que se cita lo dicho por otra persona."
+      }
+    },
+    {
+      "code": "adp",
+      "es": "adposición",
+      "en": "adposition",
+      "help": {
+        "es": "Palabra que marca la relación de un sustantivo, delante o detrás de él."
+      }
+    },
+    {
+      "code": "def",
+      "es": "artículo definido",
+      "en": "definite article",
+      "help": {
+        "es": "Artículo que señala algo conocido, como el."
+      }
+    },
+    {
+      "code": "indf",
+      "es": "artículo indefinido",
+      "en": "indefinite article",
+      "help": {
+        "es": "Artículo que señala algo no concreto, como un."
+      }
+    },
+    {
+      "code": "indfpro",
+      "es": "pronombre indefinido",
+      "en": "indefinite pronoun",
+      "help": {
+        "es": "Pronombre que no señala a alguien concreto, como alguien."
+      }
+    },
+    {
+      "code": "pers",
+      "es": "pronombre personal",
+      "en": "personal pronoun",
+      "help": {
+        "es": "Pronombre que indica quién habla, a quién se habla o de quién se habla."
+      }
+    },
+    {
+      "code": "poss",
+      "es": "pronombre posesivo",
+      "en": "possessive pronoun",
+      "help": {
+        "es": "Pronombre que indica posesión, como mío."
+      }
+    },
+    {
+      "code": "reflpro",
+      "es": "pronombre reflexivo",
+      "en": "reflexive pronoun",
+      "help": {
+        "es": "Pronombre que se refiere al propio sujeto."
+      }
+    },
+    {
+      "code": "relpro",
+      "es": "pronombre relativo",
+      "en": "relative pronoun",
+      "help": {
+        "es": "Pronombre que introduce una oración que describe a un sustantivo."
+      }
+    },
+    {
+      "code": "vd",
+      "es": "verbo ditransitivo",
+      "en": "ditransitive verb",
+      "help": {
+        "es": "Verbo que lleva dos complementos, como dar."
+      }
+    },
+    {
+      "code": "va",
+      "es": "ambitransitivo",
+      "en": "ambitransitive",
+      "help": {
+        "es": "Verbo que puede usarse con o sin complemento directo."
+      }
+    },
+    {
+      "code": "obj",
+      "es": "marcador de objeto",
+      "en": "object marker",
+      "help": {
+        "es": "Marca que señala el objeto de la acción."
+      }
+    }
+  ]
+}
