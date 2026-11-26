@@ -66,16 +66,12 @@
         </a>
       </header>
 
-      <div v-if="conflict" class="entry-form__alert" role="alert">
-        <p>{{ conflict }}</p>
-        <button type="button" class="ld-btn" @click="reload">Recargar y perder mis cambios</button>
-      </div>
-      <div v-if="actionError" class="entry-form__alert" role="alert">
-        <p>{{ actionError }}</p>
-        <ul v-if="errorDetails.length">
-          <li v-for="detail in errorDetails.slice(0, 5)" :key="detail">{{ detail }}</li>
-        </ul>
-      </div>
+      <FormAlerts
+        :conflict="conflict"
+        :error="actionError"
+        :details="errorDetails"
+        @reload="load"
+      />
 
       <WordCard :entry="draft" :entries="entries" @set="set" />
 
@@ -92,22 +88,24 @@
         <button type="button" class="ld-btn" @click="addSense">+ Añadir sentido</button>
       </p>
 
-      <div class="entry-form__bar" :class="{ 'entry-form__bar--dirty': dirty }">
-        <span class="entry-form__status" aria-live="polite">
-          {{ dirty ? 'Hay cambios sin guardar' : 'Todo guardado' }}
-        </span>
-        <button type="button" class="ld-btn" :disabled="!dirty || saving" @click="discard">
-          Descartar cambios
-        </button>
-        <button
-          type="button"
-          class="entry-form__primary"
-          :disabled="!dirty || saving || !draft.lexeme.trim()"
-          @click="save"
-        >
-          {{ saving ? 'Guardando…' : 'Guardar' }}
-        </button>
-      </div>
+      <ExamplesCard
+        :senses="draft.senses"
+        :sentences="sentences"
+        :saved-sense-ids="savedSenseIds"
+        :busy="linking"
+        :back-path="$route.fullPath"
+        @link="linkSentence"
+        @unlink="unlinkSentence"
+        @create="createExample"
+      />
+
+      <FormBar
+        :dirty="dirty"
+        :saving="saving"
+        :can-save="Boolean(draft.lexeme.trim())"
+        @discard="discard"
+        @save="save"
+      />
     </template>
   </section>
 </template>
@@ -115,54 +113,62 @@
 <script>
 /**
  * Word form of /admin/living-dictionary (phase L4): `…/entrada/:id` edits one entry, `…/entrada/nueva`
- * creates one. The page keeps a working copy (`draft`) of the record, the cards send
- * `set(path, value)` and this page applies it. Saving is a PUT with the record's version (409 if
+ * creates one. The page keeps a working copy (`draft`) of the record (form/formMixin.js), the cards
+ * send `set(path, value)` and this page applies it. Saving is a PUT with the record's version (409 if
  * another tab saved first). Leaving with unsaved changes asks first (route guard + beforeunload).
- * Nothing here talks to Living Dictionaries.
+ * Example sentences are their own records: linking one saves the sentence right away and the page
+ * takes over the links the server updated (refreshLinks). Nothing here talks to Living Dictionaries.
  */
+import formMixin from './form/formMixin'
 import WordCard from './form/WordCard.vue'
 import SenseCard from './form/SenseCard.vue'
+import ExamplesCard from './form/ExamplesCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
+import FormBar from './form/FormBar.vue'
+import FormAlerts from './form/FormAlerts.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import { toast } from '@/components/admin/toast'
 import { LIVING_DICTIONARY_ENTRY } from '@/config/external'
-import { getEntry, getEntries, createEntry, saveEntry } from './ldApi'
-import { setField, canonicalJson } from '@/utils/dictionaryPaths'
+import {
+  getEntry,
+  getEntries,
+  createEntry,
+  saveEntry,
+  getSentences,
+  saveSentence,
+  createSentence
+} from './ldApi'
 import { findSimilar, emptySense } from '@/utils/dictionaryForm'
 
-const LEAVE_QUESTION = 'Hay cambios sin guardar en esta ficha. ¿Salir y perderlos?'
 const clone = (value) => JSON.parse(JSON.stringify(value))
 
 export default {
   name: 'EntryForm',
-  components: { WordCard, SenseCard, SymbolInput, StatusBadge },
+  components: {
+    WordCard,
+    SenseCard,
+    ExamplesCard,
+    SymbolInput,
+    FormBar,
+    FormAlerts,
+    StatusBadge
+  },
+  mixins: [formMixin],
   props: {
     id: { type: String, required: true }
   },
   data() {
     return {
-      loading: true,
-      loadError: '',
-      draft: null,
-      // the record as last loaded or saved (not reactive: only compared and copied)
-      saved: null,
       base: null,
       entries: [],
-      saving: false,
-      actionError: '',
-      errorDetails: [],
-      conflict: '',
+      sentences: [],
+      linking: false,
       newEntry: { lexeme: '', homograph: '', es: '' }
     }
   },
   computed: {
     isNew() {
       return this.id === 'nueva'
-    },
-    dirty() {
-      return (
-        Boolean(this.draft && this.saved) && canonicalJson(this.draft) !== canonicalJson(this.saved)
-      )
     },
     dictionaryLink() {
       return `${LIVING_DICTIONARY_ENTRY}/${this.draft.id}`
@@ -178,29 +184,21 @@ export default {
     },
     canCreate() {
       return Boolean(this.newEntry.lexeme.trim()) && !this.similar.some((item) => item.duplicate)
+    },
+    savedSenseIds() {
+      return (this.saved?.senses || []).map((sense) => sense.id)
     }
   },
   watch: {
     id: { immediate: true, handler: 'load' }
   },
-  created() {
-    window.addEventListener('beforeunload', this.warnBeforeUnload)
-  },
-  beforeUnmount() {
-    window.removeEventListener('beforeunload', this.warnBeforeUnload)
-  },
   beforeRouteLeave() {
-    if (this.dirty && !window.confirm(LEAVE_QUESTION)) return false
+    return this.confirmLeave()
   },
   beforeRouteUpdate() {
-    if (this.dirty && !window.confirm(LEAVE_QUESTION)) return false
+    return this.confirmLeave()
   },
   methods: {
-    warnBeforeUnload(event) {
-      if (!this.dirty) return
-      event.preventDefault()
-      event.returnValue = ''
-    },
     entryPath(id) {
       return { path: `/admin/living-dictionary/entrada/${id}` }
     },
@@ -211,20 +209,22 @@ export default {
     },
     async load() {
       this.loading = true
-      this.loadError = ''
-      this.actionError = ''
-      this.errorDetails = []
-      this.conflict = ''
+      this.resetMessages()
       this.draft = null
       this.saved = null
       try {
         if (this.isNew) {
           this.entries = await getEntries()
         } else {
-          const [{ record, base }, entries] = await Promise.all([getEntry(this.id), getEntries()])
+          const [{ record, base }, entries, sentences] = await Promise.all([
+            getEntry(this.id),
+            getEntries(),
+            getSentences()
+          ])
           this.adoptRecord(record)
           this.base = base
           this.entries = entries
+          this.sentences = sentences
         }
       } catch (error) {
         this.loadError =
@@ -235,19 +235,8 @@ export default {
         this.loading = false
       }
     },
-    adoptRecord(record) {
-      this.saved = clone(record)
-      this.draft = clone(record)
-    },
-    reload() {
-      this.load()
-    },
-    discard() {
-      if (this.dirty && !window.confirm('¿Descartar los cambios sin guardar?')) return
-      this.adoptRecord(this.saved)
-    },
-    set(path, value) {
-      setField(this.draft, this.saved, path, value)
+    async sendRecord(draft) {
+      return (await saveEntry(draft)).entry
     },
     addSense() {
       this.draft.senses.push(emptySense(crypto.randomUUID()))
@@ -268,26 +257,49 @@ export default {
       if (!window.confirm(`¿Quitar el sentido «${text}»? Se aplica al guardar.`)) return
       this.draft.senses.splice(index, 1)
     },
-    async save() {
-      this.saving = true
-      this.actionError = ''
-      this.errorDetails = []
-      try {
-        const { entry } = await saveEntry(this.draft)
-        this.adoptRecord(entry)
-        this.conflict = ''
-        toast('Guardado en la copia local (aún no enviado al diccionario)', { type: 'success' })
-      } catch (error) {
-        if (error.status === 409) this.conflict = error.message
-        else {
-          this.actionError = error.message
-          this.errorDetails = (error.details || []).map((detail) =>
-            typeof detail === 'string' ? detail : JSON.stringify(detail)
-          )
+    // ---- example sentences: saved right away, the server keeps both sides in step ------------
+    async refreshLinks() {
+      const [{ record }, sentences] = await Promise.all([getEntry(this.id), getSentences()])
+      this.sentences = sentences
+      this.adoptServerFields(record, (target, fresh) => {
+        for (const sense of target.senses) {
+          const server = fresh.senses.find((item) => item.id === sense.id)
+          if (server) sense.sentenceIds = clone(server.sentenceIds || [])
         }
-      } finally {
-        this.saving = false
+      })
+    },
+    async changeLinks(action) {
+      this.linking = true
+      try {
+        await action()
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
       }
+      try {
+        await this.refreshLinks()
+      } catch (error) {
+        toast(`No se pudo releer la palabra: ${error.message}`, { type: 'error' })
+      } finally {
+        this.linking = false
+      }
+    },
+    changeSentenceSenses(sentenceId, change) {
+      return this.changeLinks(() => {
+        const sentence = this.sentences.find((item) => item.id === sentenceId)
+        return saveSentence({ ...sentence, senseIds: change(sentence.senseIds || []) })
+      })
+    },
+    linkSentence(senseId, sentenceId) {
+      return this.changeSentenceSenses(sentenceId, (ids) => [...new Set([...ids, senseId])])
+    },
+    unlinkSentence(senseId, sentenceId) {
+      return this.changeSentenceSenses(sentenceId, (ids) => ids.filter((id) => id !== senseId))
+    },
+    createExample(senseId, { text, es }) {
+      return this.changeLinks(async () => {
+        await createSentence({ text, translations: es ? { es } : null, senseIds: [senseId] })
+        toast('Oración creada y enlazada', { type: 'success' })
+      })
     },
     async create() {
       this.saving = true
@@ -375,51 +387,12 @@ export default {
     color: $color-error;
   }
 
-  &__alert {
-    margin-bottom: $spacing-md;
-    padding: $spacing-sm $spacing-md;
-    background: rgba($color-error, 0.08);
-    border-left: 4px solid $color-error;
-
-    p {
-      margin: 0 0 $spacing-sm;
-    }
-  }
-
   &__add-sense {
     margin: 0 0 $spacing-lg;
   }
 
   &__primary {
     @include button-primary;
-  }
-
-  &__bar {
-    position: sticky;
-    bottom: 0;
-    z-index: 5;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: $spacing-sm $spacing-md;
-    margin-top: $spacing-lg;
-    padding: $spacing-sm $spacing-md;
-    background: $color-surface;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
-
-    &--dirty {
-      border-color: $color-accent;
-      background: #fff8e1;
-    }
-  }
-
-  &__status {
-    margin-right: auto;
-    font-size: $font-size-sm;
-    color: $color-text-secondary;
   }
 }
 </style>

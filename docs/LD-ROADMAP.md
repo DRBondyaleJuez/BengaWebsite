@@ -275,7 +275,7 @@ Branch: `feat/ld-forms`
 - [x] **L4.1 Word form: headword and senses**
   - **Prompt:** "Task L4.1: `…/entrada/:id` and `/nueva`. Card 'Palabra' (lexeme with â ē ū buttons, homograph, phonetic with an IPA keyboard popover). Card per sense: glosses es/en/fr, parts of speech (ChipSelect, groups, Spanish labels, tooltip help), semantic domains (TreeSelect), noun class (select 1–7 + 'otra' with free text, help explaining the classes with link to the site pages), plural, variant, definition. 'Añadir sentido' button. Unsaved-changes guard. While typing a new lexeme, warn 'Ya existe' with links."
   - **Commit:** `feat(admin): add the dictionary word form`
-- [ ] **L4.2 Example sentences in the form + sentence form**
+- [x] **L4.2 Example sentences in the form + sentence form**
   - **Commit:** `feat(admin): add example sentences and the sentence form`
 - [ ] **L4.3 'Más campos' card**
   - **Prompt:** "Task L4.3: collapsed card with notes (markdown), morphology, interlinearization, scientific names, tone class, dialects, tags, citations (source + page, default the book). Only filled fields show when collapsed."
