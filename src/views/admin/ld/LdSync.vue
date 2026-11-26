@@ -92,6 +92,8 @@
       </div>
     </section>
 
+    <SyncHistory ref="history" :busy="busy" @retry="retry" />
+
     <AdminModal v-model:open="confirmPush" title="Enviar a Living Dictionaries">
       <p>
         Se enviarán <strong>{{ pushCount }}</strong> registros a
@@ -136,6 +138,7 @@ import InfoTip from '@/components/admin/InfoTip.vue'
 import AdminModal from '@/components/admin/AdminModal.vue'
 import { toast } from '@/components/admin/toast'
 import SyncPreview from './SyncPreview.vue'
+import SyncHistory from './SyncHistory.vue'
 import { getSyncStatus, startSync, waitForRun } from './ldApi'
 
 const KINDS = { pull: 'traer de LD', push: 'enviar cambios', undo: 'deshacer un envío' }
@@ -157,7 +160,7 @@ const PULL_CHANGES = ['new-in-ld', 'changed-in-ld', 'both-changed', 'conflict', 
 
 export default {
   name: 'LdSync',
-  components: { InfoTip, AdminModal, SyncPreview },
+  components: { InfoTip, AdminModal, SyncPreview, SyncHistory },
   data() {
     return {
       running: null,
@@ -167,6 +170,7 @@ export default {
       confirmPull: false,
       pushPreview: null,
       pushResult: null,
+      pushOnly: [],
       confirmPush: false,
       deletions: false,
       progress: { pull: '', push: '' }
@@ -190,13 +194,24 @@ export default {
     kindLabel: (kind) => KINDS[kind] || kind,
     operationLabel: (operation) => OPERATIONS[operation] || operation,
     async previewPush() {
+      this.pushOnly = []
       this.pushResult = null
       const run = await this.run('push', 'check', { deletions: this.deletions })
       this.pushPreview = run?.status === 'done' ? run.preview : null
     },
+    /** «Reintentar fallidos»: a preview of only those, then the usual confirmation. */
+    async retry(ids) {
+      this.pushOnly = ids
+      this.pushResult = null
+      const run = await this.run('push', 'check', { only: ids })
+      this.pushPreview = run?.status === 'done' ? run.preview : null
+      document.getElementById('enviar')?.scrollIntoView({ behavior: 'smooth' })
+    },
     async applyPush() {
       this.confirmPush = false
-      const run = await this.run('push', 'apply', { deletions: this.deletions })
+      const only = this.pushOnly
+      this.pushOnly = []
+      const run = await this.run('push', 'apply', { deletions: this.deletions, only })
       this.pushPreview = null
       if (!run) return
       this.pushResult = run
@@ -237,6 +252,7 @@ export default {
       } finally {
         this.busy = false
         this.running = null
+        if (mode === 'apply') this.$refs.history?.load()
       }
     },
     async applyPull() {

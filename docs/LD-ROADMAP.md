@@ -308,7 +308,7 @@ Branch: `feat/ld-sync`
 - [x] **L5.3 Push only changes**
   - **Prompt:** "Task L5.3: 'Enviar cambios' (button + `npm run ld:push`): preview grouped by word (exact fields, before → after), then: new entries via POST (batches ≤ 200, import_id `benga-portal-<date>`), changes via batch-update, sentences, relations, review flags, images; check each result, re-read the changed entries through the API to verify, update base. Words with errors get `sync.state=error` + message. Never deletes in LD in this task."
   - **Commit:** `feat(ld): push local changes to the living dictionary`
-- [ ] **L5.4 Sync log, error categories and UI**
+- [x] **L5.4 Sync log, error categories and UI**
   - **Prompt:** "Task L5.4: write every run to `ld-sync/runs/*.json` (items with word, operation, status, HTTP code, error category, message). Page `…/sincronizacion`: runs list with totals, errors grouped by category with explanation and suggested fix in Spanish, links to words, 'Reintentar fallidos'. Table filter 'Con errores de sincronización'."
   - **Commit:** `feat(admin): add the sync history and error report`
 - [ ] **L5.5 Conflict resolution**

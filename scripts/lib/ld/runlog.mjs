@@ -42,9 +42,22 @@ export function startRun({ kind, mode, runId, dir = RUNS_DIR, now = () => new Da
     // at most a few writes per second while running; always on the last one
     if (!force && Date.now() - last < 300) return
     last = Date.now()
+    const text = JSON.stringify(run, null, 2) + '\n'
     const temporary = `${file}.tmp`
-    fs.writeFileSync(temporary, JSON.stringify(run, null, 2) + '\n')
-    fs.renameSync(temporary, file)
+    fs.writeFileSync(temporary, text)
+    // Windows refuses to replace a file another process is reading (the admin polls it): retry,
+    // then write in place (a reader may see a half file once; it just reads again)
+    for (let attempt = 0; attempt < 5; attempt += 1) {
+      try {
+        fs.renameSync(temporary, file)
+        return
+      } catch (error) {
+        if (!['EPERM', 'EBUSY', 'EACCES'].includes(error.code)) throw error
+        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 30)
+      }
+    }
+    fs.writeFileSync(file, text)
+    fs.rmSync(temporary, { force: true })
   }
   write(true)
   return {
@@ -101,5 +114,10 @@ export function listRuns(dir = RUNS_DIR) {
 export function readRun(id, dir = RUNS_DIR) {
   if (!/^[\w.-]+$/.test(id)) return null
   const file = path.join(dir, `${id}.json`)
-  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null
+  if (!fs.existsSync(file)) return null
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'))
+  } catch {
+    return null // being written right now: the page asks again
+  }
 }
