@@ -299,7 +299,7 @@ Branch: `feat/ld-forms`
 
 Branch: `feat/ld-sync`
 
-- [ ] **L5.1 Change detection (three-way)**
+- [x] **L5.1 Change detection (three-way)**
   - **Prompt:** "Task L5.1: `scripts/lib/ld/diff.mjs`: compare base, workspace and a fresh LD state per field (lexeme, glosses per language, POS, domains, …, sentences, relations, review). Output a changeset: new, changed (field list), deleted-locally, changed-in-LD, conflicts. Pure functions with many tests (multi-language overlay, arrays replaced, senses matched by id)."
   - **Commit:** `feat(ld): detect local and remote changes per field`
 - [ ] **L5.2 Pull with merge**
