@@ -10,7 +10,7 @@
       <p>
         {{ $t('pages.comparatives.adjetivosBengaCarecenGrados') }}
         <span class="bengaform">kebaka</span> {{ $t('pages.comparatives.sobresalir') }}
-        <span class="bengaform">ña</span> {{ $t('pages.comparatives.exceder') }}
+        <span class="bengaform">ūa</span> {{ $t('pages.comparatives.exceder') }}
       </p>
     </section>
 
@@ -31,7 +31,7 @@
       <p class="usage-note">
         {{ $t('pages.comparatives.seUtilizanParaComparar') }}
         <span class="bengaform">kebaka</span> {{ $t('pages.comparatives.sobresalir') }}
-        <span class="bengaform">ña</span> {{ $t('pages.comparatives.exceder') }}
+        <span class="bengaform">ūa</span> {{ $t('pages.comparatives.exceder') }}
       </p>
       <div class="examples-container">
         <div class="example-card" v-for="(comp, idx) in comparatives" :key="`comp-${idx}`">
