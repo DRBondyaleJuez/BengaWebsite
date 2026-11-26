@@ -259,7 +259,7 @@ Branch: `feat/ld-admin-ui`
 - [x] **L3.2 Routes, navigation and Panel**
   - **Prompt:** "Task L3.2: add the `/admin/living-dictionary` route group (dev only, like the other admin pages), a 'Living Dictionary' entry in AdminNav, and the Panel page from LD-ROADMAP section 6 (counts, last syncs, next-step cards). Buttons for syncs are disabled placeholders until phase L5/L6."
   - **Commit:** `feat(admin): add the living dictionary panel`
-- [ ] **L3.3 Entries table**
+- [x] **L3.3 Entries table**
   - **Prompt:** "Task L3.3: `…/entradas`: list and table views (like the LD screenshots, but cleaner), search ignoring accents and case with typo tolerance 0–3, all filters of section 6 with counts, sort A–Z / recently changed / needs review first, column chooser, pagination 50, filters saved in the URL. Badges: needs review (orange), local changes (blue), conflict/error (red), no audio. Clicking a row opens the form."
   - **Commit:** `feat(admin): add the dictionary entries table`
 - [ ] **L3.4 Sentences table**

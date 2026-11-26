@@ -111,6 +111,12 @@ const routes = [
               meta: { title: 'Living Dictionary · Panel' }
             },
             {
+              path: 'entradas',
+              name: 'LdEntries',
+              component: () => import('@/views/admin/ld/LdEntries.vue'),
+              meta: { title: 'Living Dictionary · Entradas' }
+            },
+            {
               path: 'kit',
               name: 'LdUiKit',
               component: () => import('@/views/admin/ld/UiKitDemo.vue')
