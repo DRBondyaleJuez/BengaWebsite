@@ -29,7 +29,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["5", "2", "2.7", "3", "3.2"],
           "writeInDomains": [],
-          "nounClass": "7a clase, 7e classe",
+          "nounClass": "7",
           "pluralForm": "Akeva",
           "variant": null,
           "conceptId": null,
@@ -48,12 +48,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": [],
-      "review": null,
+      "review": {
+        "category": "uncertain_pos",
+        "note": "«Akeva» (gracias) está como sustantivo. ¿Debería tener dos sentidos: uno como sustantivo y otro como interjección?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-23T13:48:10.599Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -107,7 +113,13 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["_a_v_e_"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
         "state": "synced",
@@ -142,7 +154,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["5", "5.3"],
           "writeInDomains": [],
-          "nounClass": "1a clase",
+          "nounClass": "1",
           "pluralForm": "Beja",
           "variant": null,
           "conceptId": null,
@@ -164,9 +176,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-03T19:19:39.135Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -196,7 +208,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["3", "5", "2.6", "4.1"],
           "writeInDomains": [],
-          "nounClass": "2ª Clase",
+          "nounClass": "2",
           "pluralForm": "Mina",
           "variant": null,
           "conceptId": null,
@@ -220,12 +232,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["dina", "mina"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-08-20T08:37:17.474Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -255,7 +273,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1.4", "5.2", "5.3"],
           "writeInDomains": [],
-          "nounClass": "2ª Clase",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -279,12 +297,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["dyango"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-08-10T18:53:42.027Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -314,7 +338,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.1"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Beko",
           "variant": null,
           "conceptId": null,
@@ -338,12 +362,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["beko", "eko"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-01T21:43:37.791Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -373,7 +403,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1.4", "5.2"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Bele",
           "variant": null,
           "conceptId": null,
@@ -397,12 +427,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["bele", "ele"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-01T21:58:27.715Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -432,7 +468,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.1"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Benâ",
           "variant": null,
           "conceptId": null,
@@ -454,9 +490,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-15T18:39:00.271Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -482,7 +518,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1", "1.4"],
           "writeInDomains": [],
-          "nounClass": "1era Clase",
+          "nounClass": "1",
           "pluralForm": "Bepape",
           "variant": null,
           "conceptId": null,
@@ -507,15 +543,15 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-18T11:41:09.183Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
     "ab7b1df3-547b-4f20-a2c5-94ff932e38f1": {
       "id": "ab7b1df3-547b-4f20-a2c5-94ff932e38f1",
-      "lexeme": "Hāngā",
+      "lexeme": "Hanga",
       "homograph": null,
       "phonetic": null,
       "interlinearization": null,
@@ -539,8 +575,8 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.8"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
-          "pluralForm": "Hāngā",
+          "nounClass": "7",
+          "pluralForm": "Hanga",
           "variant": null,
           "conceptId": null,
           "citations": [],
@@ -575,13 +611,19 @@
       ],
       "relations": [],
       "ldReview": null,
-      "siteKeys": ["h_a_ng_a_"],
-      "review": null,
+      "siteKeys": [],
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-08-10T18:29:55.191Z",
-        "version": 0,
+        "version": 2,
         "lastError": null
       }
     },
@@ -593,7 +635,9 @@
       "interlinearization": null,
       "morphology": null,
       "toneClass": null,
-      "notes": null,
+      "notes": {
+        "es": "Clase 2: empiezan con I y toman el plural con Ma (Ijoka / Majoka)."
+      },
       "linguisticHistory": null,
       "scientificNames": [],
       "dialects": [],
@@ -611,7 +655,7 @@
           "partsOfSpeech": ["v"],
           "semanticDomains": ["2.7", "3.1", "5", "5.14"],
           "writeInDomains": [],
-          "nounClass": "2a classe ( empiezan con I y toman el plural con Ma) Ijoka/Majoka",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -624,12 +668,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": [],
-      "review": null,
+      "review": {
+        "category": "uncertain_noun_class",
+        "note": "El sentido «Jugar» (v) tiene la clase nominal 2. ¿Debe tener clase nominal?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-14T16:18:07.508Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -707,7 +757,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.7"],
           "writeInDomains": [],
-          "nounClass": "2e Classe",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -723,9 +773,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-14T15:41:30.372Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -774,7 +824,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["3", "2.7"],
           "writeInDomains": [],
-          "nounClass": "7ª clase",
+          "nounClass": "7",
           "pluralForm": "Mbolo",
           "variant": null,
           "conceptId": null,
@@ -798,12 +848,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["mbolo"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-15T19:03:31.500Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -833,7 +889,7 @@
           "partsOfSpeech": ["n", "ni"],
           "semanticDomains": ["5", "5.1", "5.3"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Mbute",
           "variant": null,
           "conceptId": null,
@@ -857,12 +913,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["mbute"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-15T19:47:33.457Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -892,7 +954,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["3"],
           "writeInDomains": [],
-          "nounClass": "3a",
+          "nounClass": "3",
           "pluralForm": "Myonda",
           "variant": null,
           "conceptId": null,
@@ -914,9 +976,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-24T15:04:41.919Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -946,7 +1008,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.6", "5"],
           "writeInDomains": [],
-          "nounClass": "5a Classe Nominal",
+          "nounClass": "5",
           "pluralForm": "Bana",
           "variant": null,
           "conceptId": null,
@@ -968,9 +1030,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-11T19:35:30.112Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1000,7 +1062,7 @@
           "partsOfSpeech": ["prep"],
           "semanticDomains": [],
           "writeInDomains": [],
-          "nounClass": "7e,",
+          "nounClass": "7",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -1013,12 +1075,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": [],
-      "review": null,
+      "review": {
+        "category": "uncertain_noun_class",
+        "note": "El sentido «Por, con» (prep) tiene la clase nominal 7. ¿Debe tener clase nominal?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-23T15:30:42.278Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1048,7 +1116,7 @@
           "partsOfSpeech": ["n", "ni"],
           "semanticDomains": ["5", "9", "1.5", "2.7", "5.1", "5.13"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Ndabo / Mandabo",
           "variant": null,
           "conceptId": null,
@@ -1067,7 +1135,7 @@
           "partsOfSpeech": ["n", "ni"],
           "semanticDomains": ["2", "2.6", "4.1"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Ndabo",
           "variant": null,
           "conceptId": null,
@@ -1096,12 +1164,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["ndabo"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 3 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-15T21:12:01.433Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1131,7 +1205,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["9", "1.2", "1.8", "4.2", "5.11", "5.13", "7.2", "2.3"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Ndiba",
           "variant": null,
           "conceptId": null,
@@ -1179,12 +1253,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["ndiba"],
-      "review": null,
+      "review": {
+        "category": "uncertain_pos",
+        "note": "El campo «Clase de sustantivos» del sentido «Profundo / Profunda» contiene todas las formas del adjetivo (1ª: Endiba, 2ª: Jandiba, 3ª: Muandiba, 4ª: Buandiba, 5ª: Mua…). ¿Es «Ndiba» solo el sustantivo «profundidad»? ¿Cómo quieres guardar las formas del adjetivo?\n\nEsta palabra tiene 3 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-21T19:36:08.152Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1214,7 +1294,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2", "2.7", "5.14"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Ndoba",
           "variant": null,
           "conceptId": null,
@@ -1238,12 +1318,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["ndoba"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 2 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-21T18:58:59.169Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1345,7 +1431,13 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["oba"],
-      "review": null,
+      "review": {
+        "category": "audio_issue",
+        "note": "Esta palabra tiene 4 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
         "state": "synced",
@@ -1380,7 +1472,7 @@
           "partsOfSpeech": ["n", "n.m"],
           "semanticDomains": ["2.6", "5"],
           "writeInDomains": [],
-          "nounClass": "7a classe",
+          "nounClass": "7",
           "pluralForm": "Paia",
           "variant": null,
           "conceptId": null,
@@ -1402,9 +1494,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-10T19:13:25.670Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1453,7 +1545,13 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["s_a_n_a_"],
-      "review": null,
+      "review": {
+        "category": "possible_duplicate",
+        "note": "«Sânâ» (domingo) y «sânâ» (semana) son dos entradas. Parece la misma palabra con dos sentidos. ¿La dejamos como una entrada con dos sentidos?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
         "state": "synced",
@@ -1470,7 +1568,9 @@
       "interlinearization": null,
       "morphology": null,
       "toneClass": null,
-      "notes": null,
+      "notes": {
+        "es": "Clase 7: la misma forma sirve para singular y plural."
+      },
       "linguisticHistory": null,
       "scientificNames": [],
       "dialects": [],
@@ -1488,7 +1588,7 @@
           "partsOfSpeech": [],
           "semanticDomains": ["5", "7", "10.2"],
           "writeInDomains": [],
-          "nounClass": "7e classe ( Anuncia a la vez el singular y el plural)",
+          "nounClass": "7",
           "pluralForm": "Sânâ",
           "variant": null,
           "conceptId": null,
@@ -1507,12 +1607,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["s_a_n_a_"],
-      "review": null,
+      "review": {
+        "category": "uncertain_noun_class",
+        "note": "El sentido «Semana» (sin categoría) tiene la clase nominal 7. ¿Debe tener clase nominal?\n\n«Sânâ» (domingo) y «sânâ» (semana) son dos entradas. Parece la misma palabra con dos sentidos. ¿La dejamos como una entrada con dos sentidos?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-18T14:23:07.324Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1542,7 +1648,7 @@
           "partsOfSpeech": ["n", "ni"],
           "semanticDomains": ["5.1", "5.12"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Tombo",
           "variant": null,
           "conceptId": null,
@@ -1561,7 +1667,7 @@
           "partsOfSpeech": ["n", "ni"],
           "semanticDomains": ["2.4", "5.9"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
+          "nounClass": "7",
           "pluralForm": "Tombo",
           "variant": null,
           "conceptId": null,
@@ -1595,12 +1701,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["tombo"],
-      "review": null,
+      "review": {
+        "category": "possible_duplicate",
+        "note": "Hay dos entradas «Tombo» y algunos sentidos repetidos o vacíos (aguja, inyección). ¿Las unimos en una sola entrada con dos sentidos (aguja e inyección) y quitamos el sentido repetido y el vacío?\n\nEsta palabra tiene 4 audios. Algunos pueden ser de las oraciones de ejemplo, que antes se guardaban aquí. Lo normal: un audio de la palabra, quizá uno del plural, y cada oración con su propio audio. ¿Cuál es el de la palabra?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-03-15T20:40:58.391Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     },
@@ -1630,7 +1742,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.7", "5.7", "5.12"],
           "writeInDomains": [],
-          "nounClass": "7eme Classe",
+          "nounClass": "7",
           "pluralForm": "Tombo",
           "variant": null,
           "conceptId": null,
@@ -1658,12 +1770,18 @@
       "relations": [],
       "ldReview": null,
       "siteKeys": ["tombo"],
-      "review": null,
+      "review": {
+        "category": "possible_duplicate",
+        "note": "Hay dos entradas «Tombo» y algunos sentidos repetidos o vacíos (aguja, inyección). ¿Las unimos en una sola entrada con dos sentidos (aguja e inyección) y quitamos el sentido repetido y el vacío?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
-        "state": "synced",
+        "state": "local-changes",
         "ldUpdatedAt": "2026-11-18T20:34:41.772Z",
-        "version": 0,
+        "version": 1,
         "lastError": null
       }
     }

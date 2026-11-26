@@ -2985,10 +2985,10 @@
     },
     "h_a_ng_a_": {
       "word": "Hāngā",
-      "livingDictionaryId": "ab7b1df3-547b-4f20-a2c5-94ff932e38f1",
+      "livingDictionaryId": null,
       "audio": "missing",
       "audioFile": null,
-      "notes": "Living Dictionary writes it with ā (macron); same key as Hângâ"
+      "notes": "Según el desarrollador (2026-11-26) «Hângâ» del libro no es «bandera»: la bandera es «Hanga» en el diccionario. REVIEW-LOG R-037."
     },
     "h_u_e_": {
       "word": "hūē",

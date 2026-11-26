@@ -430,7 +430,13 @@
       "senseIds": ["a84404c2-a0c1-4a0f-bf40-8f7dcaab411e"],
       "textId": null,
       "siteKeys": [],
-      "review": null,
+      "review": {
+        "category": "uncertain_spelling",
+        "note": "La palabra «bandera» se escribe ahora «Hanga» (sin acentos). Esta oración dice «Hāngā ya mboka benga ebetakuduendi oba». ¿Cambiamos también aquí «Hāngā» por «Hanga»?",
+        "by": "claude",
+        "at": "2026-11-26T00:00:00.000Z",
+        "sendToLd": false
+      },
       "suggestions": [],
       "sync": {
         "state": "synced",
