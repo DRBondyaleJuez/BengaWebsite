@@ -62,6 +62,13 @@
         <StatusBadge v-if="draft.review" status="review" />
       </header>
 
+      <ConflictCard
+        :record="saved"
+        kind="sentences"
+        :disabled="dirty"
+        @resolved="onConflictResolved"
+      />
+
       <FormAlerts
         :conflict="conflict"
         :error="actionError"
@@ -136,6 +143,7 @@ import LinkedWordsCard from './form/LinkedWordsCard.vue'
 import CitationsEditor from './form/CitationsEditor.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
+import ConflictCard from './ConflictCard.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import { toast } from '@/components/admin/toast'
 import {
@@ -153,6 +161,7 @@ import { orthographyWarnings } from '@/utils/dictionaryChecks'
 export default {
   name: 'SentenceForm',
   components: {
+    ConflictCard,
     FormCard,
     SymbolInput,
     SearchPicker,
@@ -227,6 +236,11 @@ export default {
     return this.confirmLeave()
   },
   methods: {
+    /** L5.5: a conflict was resolved on the server (null = deleted here too). */
+    onConflictResolved(record) {
+      if (record) this.adoptRecord(record)
+      else this.$router.push('/admin/living-dictionary/oraciones')
+    },
     sentencePath(id) {
       return { path: `/admin/living-dictionary/oracion/${id}` }
     },

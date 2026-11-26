@@ -327,3 +327,21 @@ export function mergeRemote(base, local, remote, kind) {
     }))
   }
 }
+
+/** Writes `value` at `path` (a field or one language of a multi-text); null/'' clears it. */
+export function setPath(record, path, value) {
+  const source = structuredClone(record)
+  const segments = path.split(/\.(?![^[]*\])/)
+  const last = segments.pop()
+  let parent = segments.length ? getPath(source, segments.join('.')) : source
+  if ((parent === null || parent === undefined) && segments.length) {
+    // e.g. glosses is null: create it in the source so copyPath brings the language over
+    const owner = segments.length > 1 ? getPath(source, segments.slice(0, -1).join('.')) : source
+    const name = segments.at(-1)
+    owner[name] = {}
+    parent = owner[name]
+  }
+  if (value === null || value === undefined || value === '') delete parent[last]
+  else parent[last] = value
+  return copyPath(record, source, path)
+}

@@ -71,6 +71,13 @@
         </a>
       </header>
 
+      <ConflictCard
+        :record="saved"
+        kind="entries"
+        :disabled="dirty"
+        @resolved="onConflictResolved"
+      />
+
       <FormAlerts
         :conflict="conflict"
         :error="actionError"
@@ -171,6 +178,7 @@ import ChecklistBar from './form/ChecklistBar.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
+import ConflictCard from './ConflictCard.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import { toast } from '@/components/admin/toast'
 import { LIVING_DICTIONARY_ENTRY } from '@/config/external'
@@ -193,6 +201,7 @@ const clone = (value) => JSON.parse(JSON.stringify(value))
 export default {
   name: 'EntryForm',
   components: {
+    ConflictCard,
     WordCard,
     SenseCard,
     AudioCard,
@@ -260,6 +269,11 @@ export default {
     return this.confirmLeave()
   },
   methods: {
+    /** L5.5: a conflict was resolved on the server (null = deleted here too). */
+    onConflictResolved(record) {
+      if (record) this.adoptRecord(record)
+      else this.$router.push('/admin/living-dictionary/entradas')
+    },
     orthographyWarnings,
     senseWarnings,
     entryPath(id) {

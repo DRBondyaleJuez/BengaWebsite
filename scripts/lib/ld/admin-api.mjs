@@ -12,6 +12,7 @@
  *   DELETE /entries/:id             removes it here; if it is in LD, it is deleted there only by a
  *                                   push with «Incluir borrados» (task L5.6)
  *   POST   /entries/restore         { id }: brings back a deleted entry from base.json
+ *   POST   /entries/resolve         { id, field, choice: ld|mine|value, value? }: one conflict (L5.5)
  *   POST   /entries/bulk            { ids, action, value }: same change on many entries (applyBulk)
  *   GET|POST|PUT|DELETE /sentences… same for sentences
  *   /sync/*                         runs of ld:pull / ld:push / ld:undo (sync-api.mjs)
@@ -37,7 +38,7 @@ import { LD_DICTIONARY_ID } from '../../../src/config/ld.js'
 import { linkEntries } from './link.mjs'
 import { LOCAL_FIELDS } from './workspace.mjs'
 import { handleSyncRequest, isSyncRunning } from './sync-api.mjs'
-import { diffRecord } from './diff.mjs'
+import { diffRecord, copyPath, setPath, getPath } from './diff.mjs'
 import {
   validateMedia,
   mediaExtension,
@@ -236,6 +237,55 @@ export function applyBulk(
   return { changed, skipped }
 }
 
+/**
+ * Resolves one conflict of a record (task L5.5). After a pull, base = what LD has, so:
+ *   ld    → the field takes LD's value · mine → your value stays (it is sent with the next push)
+ *   value → a value you typed (e.g. a mix of both)
+ * Field "*" means the record was deleted in LD: ld → delete it here too, mine → send it again.
+ * Returns the record (or null when it was deleted). Logs the decision in record.history.
+ */
+export function resolveConflict(
+  record,
+  baseRecord,
+  { field, choice, value },
+  now = () => new Date().toISOString()
+) {
+  const conflicts = record.sync?.conflicts || []
+  const conflict = conflicts.find((item) => item.field === field)
+  if (!conflict) throw new Error('Ese campo no está en conflicto')
+  if (!['ld', 'mine', 'value'].includes(choice)) throw new Error('Elige «ld», «mine» o «value»')
+  if (field === '*' && choice === 'ld') return null
+  const before = field === '*' ? null : (getPath(record, field) ?? null)
+  const result = structuredClone(record)
+  if (field !== '*') {
+    if (choice === 'ld') copyPath(result, baseRecord || {}, field)
+    if (choice === 'value') setPath(result, field, value)
+  }
+  const after = field === '*' ? null : (getPath(result, field) ?? null)
+  result.history = [
+    ...(result.history || []),
+    {
+      at: now(),
+      field,
+      from: before,
+      to: after,
+      by: 'human',
+      action: `resolved-conflict:${choice}`
+    }
+  ]
+  const left = conflicts.filter((item) => item.field !== field)
+  const { conflicts: removed, ...sync } = result.sync
+  void removed
+  const kind = 'senses' in result ? 'entries' : 'sentences'
+  result.sync = {
+    ...sync,
+    ...(left.length ? { conflicts: left } : {}),
+    state: left.length ? 'conflict' : syncStateOf(result, field === '*' ? null : baseRecord, kind),
+    version: (record.sync?.version ?? 0) + 1
+  }
+  return result
+}
+
 function emptySense(entryId) {
   return {
     id: newId('sense', `${entryId}#0`),
@@ -413,6 +463,24 @@ export async function handleLdRequest({ method, pathname, body }, store) {
   }
 
   if (method === 'GET' && !id) return reply(200, { [kind.file]: Object.values(records) })
+
+  // POST /entries/resolve { id, field, choice, value }: one conflict (L5.5)
+  if (method === 'POST' && id === 'resolve') {
+    const current = records[body?.id]
+    if (!current) return notFound(body?.id)
+    let resolved
+    try {
+      resolved = resolveConflict(current, baseRecords[body.id], body)
+    } catch (error) {
+      return reply(400, { error: error.message })
+    }
+    if (resolved) return persist(resolved)
+    delete records[body.id]
+    if (kind.file === 'entries') await relinkSite(store, workspace)
+    else if (syncSentenceLinks(workspace, body.id, [])) await store.saveEntries(workspace.entries)
+    await kind.save(records)
+    return reply(200, { deleted: body.id })
+  }
 
   // POST /entries/restore { id }: undo a local deletion of a record that is in LD
   if (method === 'POST' && id === 'restore') {

@@ -93,3 +93,7 @@ export function toBase64(blob) {
     reader.readAsDataURL(blob)
   })
 }
+
+/** Resolves one conflict (L5.5): choice 'ld' | 'mine' | 'value'. kind: 'entries' | 'sentences'. */
+export const resolveConflict = (kind, id, { field, choice, value }) =>
+  request('POST', `/${kind}/resolve`, { id, field, choice, value })

@@ -332,3 +332,46 @@ test('pending files are served by exact name only', async () => {
   assert.equal((await call(store, 'GET', '/pending-media/../entries.json')).status, 404)
   assert.equal((await call(store, 'GET', '/pending-media/0.wav')).status, 404)
 })
+
+test('resolveConflict: LD value, my value, a typed value, deleted in LD', async () => {
+  const { resolveConflict } = await import('../lib/ld/admin-api.mjs')
+  const S = '11111111-1111-4111-8111-111111111111'
+  const base = {
+    id: 'e',
+    lexeme: 'Ele',
+    senses: [{ id: S, nounClass: '3', glosses: { es: 'Árbol' } }]
+  }
+  const field = `senses[${S}].nounClass`
+  const record = {
+    ...base,
+    senses: [{ id: S, nounClass: '2', glosses: { es: 'Árbol' } }],
+    sync: {
+      state: 'conflict',
+      version: 4,
+      conflicts: [{ field, base: '1', local: '2', remote: '3' }]
+    }
+  }
+  const ld = resolveConflict(record, base, { field, choice: 'ld' }, () => 'now')
+  assert.equal(ld.senses[0].nounClass, '3')
+  assert.equal(ld.sync.state, 'synced')
+  assert.equal(ld.sync.conflicts, undefined)
+  assert.equal(ld.sync.version, 5)
+  assert.deepEqual(ld.history[0], {
+    at: 'now',
+    field,
+    from: '2',
+    to: '3',
+    by: 'human',
+    action: 'resolved-conflict:ld'
+  })
+  const mine = resolveConflict(record, base, { field, choice: 'mine' })
+  assert.equal(mine.senses[0].nounClass, '2')
+  assert.equal(mine.sync.state, 'local-changes')
+  const typed = resolveConflict(record, base, { field, choice: 'value', value: '7' })
+  assert.equal(typed.senses[0].nounClass, '7')
+  assert.throws(() => resolveConflict(record, base, { field: 'lexeme', choice: 'ld' }))
+
+  const gone = { ...record, sync: { state: 'conflict', conflicts: [{ field: '*' }] } }
+  assert.equal(resolveConflict(gone, null, { field: '*', choice: 'ld' }), null)
+  assert.equal(resolveConflict(gone, null, { field: '*', choice: 'mine' }).sync.state, 'new')
+})

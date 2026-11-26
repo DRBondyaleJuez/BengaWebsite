@@ -187,3 +187,16 @@ test('mergeRemote takes LD changes and keeps local edits and conflicts', () => {
     { field: `senses[${S1}].nounClass`, base: '1', local: '2', remote: '3' }
   ])
 })
+
+test('setPath writes a field or one language', async () => {
+  const { setPath } = await import('../lib/ld/diff.mjs')
+  const record = entry()
+  setPath(record, `senses[${S1}].nounClass`, '7')
+  assert.equal(record.senses[0].nounClass, '7')
+  setPath(record, `senses[${S1}].glosses.fr`, 'Arbre')
+  assert.deepEqual(record.senses[0].glosses, { es: 'Árbol', en: 'Tree', fr: 'Arbre' })
+  setPath(record, 'notes.es', 'Una nota')
+  assert.deepEqual(record.notes, { es: 'Una nota' })
+  setPath(record, 'notes.es', '')
+  assert.equal(record.notes, null)
+})

@@ -311,7 +311,7 @@ Branch: `feat/ld-sync`
 - [x] **L5.4 Sync log, error categories and UI**
   - **Prompt:** "Task L5.4: write every run to `ld-sync/runs/*.json` (items with word, operation, status, HTTP code, error category, message). Page `…/sincronizacion`: runs list with totals, errors grouped by category with explanation and suggested fix in Spanish, links to words, 'Reintentar fallidos'. Table filter 'Con errores de sincronización'."
   - **Commit:** `feat(admin): add the sync history and error report`
-- [ ] **L5.5 Conflict resolution**
+- [x] **L5.5 Conflict resolution**
   - **Prompt:** "Task L5.5: in the form, a conflict shows both values with the differences highlighted and buttons 'Usar la de LD' / 'Usar la mía' / 'Editar'."
   - **Commit:** `feat(admin): resolve sync conflicts side by side`
 - [x] **L5.6 Deletions and undo** *(always with your confirmation)*
