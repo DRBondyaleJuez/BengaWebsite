@@ -11,7 +11,12 @@
     <form v-else-if="isNew" class="entry-form__new" @submit.prevent="create">
       <h2>Añadir palabra</h2>
       <div class="ld-grid">
-        <SymbolInput v-model="newEntry.lexeme" label="Palabra en benga" required />
+        <SymbolInput
+          v-model="newEntry.lexeme"
+          label="Palabra en benga"
+          required
+          :warnings="orthographyWarnings(newEntry.lexeme)"
+        />
         <label class="ld-field">
           <span>
             Homógrafo
@@ -73,7 +78,9 @@
         @reload="load"
       />
 
-      <WordCard :entry="draft" :entries="entries" @set="set" />
+      <ChecklistBar :entry="draft" />
+
+      <WordCard :entry="draft" :entries="entries" :warnings="wordWarnings" @set="set" />
 
       <SenseCard
         v-for="(sense, index) in draft.senses"
@@ -81,6 +88,7 @@
         :sense="sense"
         :index="index"
         :remove-blocked-reason="removeBlockedReason(sense, index)"
+        :warnings="senseWarnings(sense)"
         @set="set"
         @remove="removeSense(index)"
       />
@@ -101,6 +109,7 @@
         :saved-sense-ids="savedSenseIds"
         :busy="linking"
         :back-path="$route.fullPath"
+        :orthography="orthographyWarnings"
         @link="linkSentence"
         @unlink="unlinkSentence"
         @create="createExample"
@@ -125,6 +134,8 @@
         @accept="onAcceptSuggestion"
         @reject="onRejectSuggestion"
       />
+
+      <WebCard :entry="draft" />
 
       <FormBar
         :dirty="dirty"
@@ -155,6 +166,8 @@ import MoreFieldsCard from './form/MoreFieldsCard.vue'
 import RelationsCard from './form/RelationsCard.vue'
 import ImagesCard from './form/ImagesCard.vue'
 import ReviewCard from './form/ReviewCard.vue'
+import WebCard from './form/WebCard.vue'
+import ChecklistBar from './form/ChecklistBar.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
@@ -173,6 +186,7 @@ import {
   createSentence
 } from './ldApi'
 import { findSimilar, emptySense } from '@/utils/dictionaryForm'
+import { orthographyWarnings, senseWarnings } from '@/utils/dictionaryChecks'
 
 const clone = (value) => JSON.parse(JSON.stringify(value))
 
@@ -187,6 +201,8 @@ export default {
     RelationsCard,
     ImagesCard,
     ReviewCard,
+    WebCard,
+    ChecklistBar,
     SymbolInput,
     FormBar,
     FormAlerts,
@@ -224,6 +240,9 @@ export default {
     canCreate() {
       return Boolean(this.newEntry.lexeme.trim()) && !this.similar.some((item) => item.duplicate)
     },
+    wordWarnings() {
+      return { lexeme: orthographyWarnings(this.draft?.lexeme) }
+    },
     allTags() {
       return [...new Set(this.entries.flatMap((entry) => entry.tags || []))].sort()
     },
@@ -241,6 +260,8 @@ export default {
     return this.confirmLeave()
   },
   methods: {
+    orthographyWarnings,
+    senseWarnings,
     entryPath(id) {
       return { path: `/admin/living-dictionary/entrada/${id}` }
     },

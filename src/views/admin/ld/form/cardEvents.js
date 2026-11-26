@@ -9,7 +9,10 @@ export function openCard(id) {
   setTimeout(() => {
     const element = document.getElementById(id)
     if (!element) return
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    window.scrollTo({
+      top: element.getBoundingClientRect().top + window.scrollY - 80,
+      behavior: 'smooth'
+    })
     element.querySelector('button, input, select, textarea')?.focus({ preventScroll: true })
   }, 50)
 }

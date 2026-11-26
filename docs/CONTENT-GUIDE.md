@@ -368,3 +368,37 @@ Rules:
 - Claude's proposals go in `suggestions` and only become values when a person accepts them.
 - `sync.state`: `synced` · `local-changes` · `new` · `conflict` · `error`.
 - Example: `src/data/schemas/examples/dictionary-entries.example.json`.
+
+### The forms (phase L4)
+
+Click a row of the tables (the filters stay in «Volver») or «Añadir palabra» / «Añadir oración»:
+
+| Route (under `/admin/living-dictionary`) | Page | Cards |
+|---|---|---|
+| `entrada/:id`, `entrada/nueva` | `views/admin/ld/EntryForm.vue` | checklist · Palabra · one Sentido per meaning · Audio · Ejemplos · Más campos · Relaciones · Imagen · Revisión y sugerencias · En la web |
+| `oracion/:id`, `oracion/nueva` | `views/admin/ld/SentenceForm.vue` | Oración · Traducciones (with status) · Audio · Palabras (linked senses) · Citas · Revisión y sugerencias |
+
+How they work (cards are in `views/admin/ld/form/`, all collapsible):
+
+- The page edits a copy of the record (`draft`, `form/formMixin.js`); a card never changes its props,
+  it sends `set(path, value)` (paths like `senses[0].glosses.fr`, `src/utils/dictionaryPaths.js`).
+  Saving is a PUT with the record's `sync.version` (409 → «Recarga»). Leaving with unsaved changes
+  asks first.
+- **Examples** and **audio / pictures** are saved at once, because they are records (or files) of
+  their own: linking a sentence saves the *sentence* (the server keeps `sense.sentenceIds` and
+  `sentence.senseIds` in step) and the form re-reads the links.
+- **New audio / pictures** go through `POST /__dev/ld/entries|sentences/:id/media`
+  (`{ kind, senseId?, fileName, dataBase64, speakerId?, … }`; audio ≤ 25 MB, photos ≤ 10 MB, rules in
+  `src/utils/mediaRules.js`). The file is kept in `ld-sync/pending-media/<uuid>.<ext>` (git-ignored)
+  and the record gets an item with `storagePath: null` and `pendingFile`, shown as «pendiente de
+  enviar». Phase L6 sends them. Only pending items can be removed here. Playback: Cloudinary
+  (`audio.cloudinary`) → `LD_MEDIA_BASE/<storagePath>` → the local file (`GET /__dev/ld/pending-media/<file>`).
+- **Suggestions** (`entry.suggestions`: `{ id, field, value, reason, by, at }`): Aceptar writes `value`
+  at `field` in the form and a line in the local `history` (`{ at, field, from, to, by: 'human',
+  action: 'accepted-suggestion' }`); Rechazar logs `rejected-suggestion` (its `to` is the proposal
+  that was NOT applied). Logic: `src/utils/dictionarySuggestions.js`.
+- **Checks** (`src/utils/dictionaryChecks.js`): the checklist at the top, orthography warnings (letters
+  `c q r x z ñ` and `á é í ó ú` in the headword, plural, variant and sentence text: warnings only,
+  never corrected), and the read-only card «En la web» (site words from `siteKeys`, the pages that
+  use them from `word-usage.json`, book gloss from `lexicon/nouns.json` / `adjectives.json` next to
+  the dictionary's).

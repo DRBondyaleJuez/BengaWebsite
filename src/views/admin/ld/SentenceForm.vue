@@ -148,6 +148,7 @@ import {
   removeMedia
 } from './ldApi'
 import { plain } from '@/utils/dictionaryFilters'
+import { orthographyWarnings } from '@/utils/dictionaryChecks'
 
 export default {
   name: 'SentenceForm',
@@ -233,10 +234,7 @@ export default {
       const word = this.senseWords[id]
       return word ? `${word.lexeme} · sentido ${word.index + 1}` : id
     },
-    /** Orthography checks come with task L4.8. */
-    orthographyWarnings() {
-      return []
-    },
+    orthographyWarnings,
     async load() {
       this.loading = true
       this.resetMessages()

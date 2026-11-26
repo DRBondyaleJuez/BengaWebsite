@@ -291,7 +291,7 @@ Branch: `feat/ld-forms`
 - [x] **L4.7 Review and suggestions card**
   - **Prompt:** "Task L4.7: card 'Revisión': flag 'Necesita revisión' with category and note (who and when). Suggestions from Claude listed with field, proposed value, reason: buttons Aceptar / Editar y aceptar / Rechazar. Accepting writes the field and keeps a small history line. Filter in the tables: 'Sugerencias pendientes'."
   - **Commit:** `feat(admin): add review flags and suggestions to the forms`
-- [ ] **L4.8 Form checks and 'En la web' card**
+- [x] **L4.8 Form checks and 'En la web' card**
   - **Prompt:** "Task L4.8: a checklist at the top of the form (gloss es/en/fr, part of speech, domain, audio, example) with jump links; orthography warnings; card 'En la web' showing the linked site words, the pages that use them, the book gloss vs dictionary gloss side by side."
   - **Commit:** `feat(admin): add completeness checks and site links to the form`
 
