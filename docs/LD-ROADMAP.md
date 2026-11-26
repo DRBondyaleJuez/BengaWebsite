@@ -277,7 +277,7 @@ Branch: `feat/ld-forms`
   - **Commit:** `feat(admin): add the dictionary word form`
 - [x] **L4.2 Example sentences in the form + sentence form**
   - **Commit:** `feat(admin): add example sentences and the sentence form`
-- [ ] **L4.3 'Más campos' card**
+- [x] **L4.3 'Más campos' card**
   - **Prompt:** "Task L4.3: collapsed card with notes (markdown), morphology, interlinearization, scientific names, tone class, dialects, tags, citations (source + page, default the book). Only filled fields show when collapsed."
   - **Commit:** `feat(admin): add optional dictionary fields`
 - [ ] **L4.4 Relations**

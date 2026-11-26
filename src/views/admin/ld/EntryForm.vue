@@ -99,6 +99,8 @@
         @create="createExample"
       />
 
+      <MoreFieldsCard :entry="draft" :tag-suggestions="allTags" @set="set" />
+
       <FormBar
         :dirty="dirty"
         :saving="saving"
@@ -123,6 +125,7 @@ import formMixin from './form/formMixin'
 import WordCard from './form/WordCard.vue'
 import SenseCard from './form/SenseCard.vue'
 import ExamplesCard from './form/ExamplesCard.vue'
+import MoreFieldsCard from './form/MoreFieldsCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
@@ -148,6 +151,7 @@ export default {
     WordCard,
     SenseCard,
     ExamplesCard,
+    MoreFieldsCard,
     SymbolInput,
     FormBar,
     FormAlerts,
@@ -184,6 +188,9 @@ export default {
     },
     canCreate() {
       return Boolean(this.newEntry.lexeme.trim()) && !this.similar.some((item) => item.duplicate)
+    },
+    allTags() {
+      return [...new Set(this.entries.flatMap((entry) => entry.tags || []))].sort()
     },
     savedSenseIds() {
       return (this.saved?.senses || []).map((sense) => sense.id)

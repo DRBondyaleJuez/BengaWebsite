@@ -2,7 +2,8 @@
   FormCard - collapsible card of the dictionary forms.
   Props: id (anchor for the jump links), title, summary (text shown when collapsed),
          open (initial state, default true), badge (small text next to the title).
-  Slots: default (body), actions (buttons in the header, e.g. «Quitar sentido»).
+  Slots: default (body), actions (buttons in the header, e.g. «Quitar sentido»), collapsed
+         (shown instead of the body while the card is closed).
   Opens by itself when openCard(id) is called (src/views/admin/ld/form/cardEvents.js).
   Also provides the shared look of the form fields to its content (.ld-field, .ld-grid, …).
 -->
@@ -23,6 +24,9 @@
       </button>
       <div v-if="$slots.actions" class="form-card__actions"><slot name="actions" /></div>
     </header>
+    <div v-if="!isOpen && $slots.collapsed" class="form-card__collapsed">
+      <slot name="collapsed" />
+    </div>
     <div v-show="isOpen" :id="`${id}-body`" class="form-card__body"><slot /></div>
   </section>
 </template>
@@ -126,6 +130,11 @@ export default {
 
   &__body {
     padding: 0 $spacing-md $spacing-md;
+  }
+
+  &__collapsed {
+    padding: 0 $spacing-md $spacing-md 2.4rem;
+    font-size: $font-size-sm;
   }
 
   @include ld-fields;
