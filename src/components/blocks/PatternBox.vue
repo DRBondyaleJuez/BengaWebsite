@@ -100,6 +100,22 @@ export default {
     color: $color-accent;
     font-weight: bold;
   }
+
+  // Phones: singular above plural, smaller boxes, so the pattern never needs a wider screen (R-031)
+  @include respond-below('sm') {
+    flex-direction: column;
+    gap: $spacing-sm;
+    padding: $spacing-md;
+
+    .pattern-item .pattern-value {
+      font-size: 1.4rem;
+      padding: $spacing-sm $spacing-md;
+    }
+
+    .pattern-arrow {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .pattern-description {

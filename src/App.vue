@@ -84,14 +84,24 @@ export default {
   }
 
   &__main {
+    // --page-gutter: inner side padding of the page wrappers (views use var(--page-gutter)).
+    --page-gutter: #{$spacing-lg};
     flex: 1;
     padding: $spacing-xl;
     max-width: $max-content-width;
     margin: 0 auto;
     width: 100%;
+    min-width: 0;
 
-    @include respond-below('md') {
+    // Below 992 px the menu is folded into the header button: use less side space (R-031)
+    @include respond-below('lg') {
+      --page-gutter: #{$spacing-xs};
       padding: $spacing-md;
+    }
+
+    @include respond-below('sm') {
+      --page-gutter: 0;
+      padding: $spacing-md $spacing-sm;
     }
 
     // Developer pages (/admin/…, only during npm run serve) use the whole width
