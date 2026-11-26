@@ -253,7 +253,7 @@ Branch: `feat/ld-admin-api`
 
 Branch: `feat/ld-admin-ui`
 
-- [ ] **L3.1 Admin UI kit**
+- [x] **L3.1 Admin UI kit**
   - **Prompt:** "Task L3.1: create small reusable admin components in `src/components/admin/`: DataTable (sortable, sticky header, row click), FilterPanel, ChipSelect (multi-select with search and groups), TreeSelect (domains), InfoTip (ⓘ tooltip, keyboard accessible), Modal, Drawer, Toast, StatusBadge, EmptyState. Style with the site variables, BEM. Show them on a hidden `/admin/living-dictionary/kit` page for me to try."
   - **Commit:** `feat(admin): add reusable admin ui components`
 - [ ] **L3.2 Routes, navigation and Panel**

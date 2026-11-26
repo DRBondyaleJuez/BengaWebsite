@@ -98,6 +98,11 @@ const routes = [
           path: '/admin/audios',
           name: 'AudiosAdmin',
           component: () => import('@/views/admin/AudiosAdmin.vue')
+        },
+        {
+          path: '/admin/living-dictionary/kit',
+          name: 'LdUiKit',
+          component: () => import('@/views/admin/ld/UiKitDemo.vue')
         }
       ]
     : []),
