@@ -246,9 +246,9 @@
           <h2>{{ $t('chapter1.whatNext') }}</h2>
           <div class="chapter-one__next-preview">
             <p v-html="$t('pages.chapter1Index.vezDominesFundamentosFoneticos')"></p>
-            <button class="chapter-one__next-button" disabled>
-              {{ $t('pages.chapter1Index.capitulo2Proximamente') }}
-            </button>
+            <router-link to="/capitulo-2" class="chapter-one__next-button">
+              {{ $t('pages.chapter1Index.siguienteCapitulo2') }}
+            </router-link>
           </div>
         </section>
 
@@ -661,14 +661,23 @@ export default {
   }
 
   &__next-button {
+    display: inline-block;
     padding: $spacing-md $spacing-lg;
-    background: $color-text-muted;
+    background: $color-primary;
     color: $color-text-inverse;
-    border: none;
     border-radius: 6px;
     font-weight: $font-weight-semibold;
-    cursor: not-allowed;
-    opacity: 0.7;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-primary-dark;
+      color: $color-text-inverse;
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
   }
 
   &__cta-section {
