@@ -106,6 +106,33 @@ async function relinkSite(store, workspace) {
   return { entriesChanged, registryLinks: Object.keys(registryUpdates).length }
 }
 
+/**
+ * A sentence is an example of the senses in its senseIds: keep each sense's sentenceIds in step
+ * (added or removed), and update the sync state of the entries that changed.
+ * @returns {boolean} whether some entry changed
+ */
+export function syncSentenceLinks(workspace, sentenceId, senseIds = []) {
+  let changed = false
+  for (const entry of Object.values(workspace.entries)) {
+    let entryChanged = false
+    for (const sense of entry.senses) {
+      const linked = (sense.sentenceIds || []).includes(sentenceId)
+      const wanted = senseIds.includes(sense.id)
+      if (linked === wanted) continue
+      sense.sentenceIds = wanted
+        ? [...(sense.sentenceIds || []), sentenceId]
+        : sense.sentenceIds.filter((id) => id !== sentenceId)
+      entryChanged = true
+    }
+    if (entryChanged) {
+      const state = syncStateOf(entry, workspace.base.entries?.[entry.id])
+      entry.sync = { ...entry.sync, state, version: (entry.sync?.version ?? 0) + 1 }
+      changed = true
+    }
+  }
+  return changed
+}
+
 function emptySense(entryId) {
   return {
     id: newId('sense', `${entryId}#0`),
@@ -144,6 +171,9 @@ export async function handleLdRequest({ method, pathname, body }, store) {
     records[record.id] = record
     let links = { registryLinks: 0 }
     if (kind.file === 'entries') links = await relinkSite(store, workspace)
+    else if (syncSentenceLinks(workspace, record.id, record.senseIds || [])) {
+      await store.saveEntries(workspace.entries)
+    }
     await kind.save(records)
     return reply(200, {
       [collection === 'entries' ? 'entry' : 'sentence']: records[record.id],
@@ -254,6 +284,7 @@ export async function handleLdRequest({ method, pathname, body }, store) {
     }
     delete records[id]
     if (kind.file === 'entries') await relinkSite(store, workspace)
+    else if (syncSentenceLinks(workspace, id, [])) await store.saveEntries(workspace.entries)
     await kind.save(records)
     return reply(200, { deleted: id })
   }

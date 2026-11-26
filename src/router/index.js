@@ -117,6 +117,12 @@ const routes = [
               meta: { title: 'Living Dictionary · Entradas' }
             },
             {
+              path: 'oraciones',
+              name: 'LdSentences',
+              component: () => import('@/views/admin/ld/LdSentences.vue'),
+              meta: { title: 'Living Dictionary · Oraciones' }
+            },
+            {
               path: 'kit',
               name: 'LdUiKit',
               component: () => import('@/views/admin/ld/UiKitDemo.vue')

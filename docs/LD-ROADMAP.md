@@ -262,7 +262,7 @@ Branch: `feat/ld-admin-ui`
 - [x] **L3.3 Entries table**
   - **Prompt:** "Task L3.3: `…/entradas`: list and table views (like the LD screenshots, but cleaner), search ignoring accents and case with typo tolerance 0–3, all filters of section 6 with counts, sort A–Z / recently changed / needs review first, column chooser, pagination 50, filters saved in the URL. Badges: needs review (orange), local changes (blue), conflict/error (red), no audio. Clicking a row opens the form."
   - **Commit:** `feat(admin): add the dictionary entries table`
-- [ ] **L3.4 Sentences table**
+- [x] **L3.4 Sentences table**
   - **Commit:** `feat(admin): add the dictionary sentences table`
 - [ ] **L3.5 Bulk actions**
   - **Prompt:** "Task L3.5: select rows → mark/clear review, add a semantic domain, set part of speech, add a tag, export selection as CSV (for printing word lists for recording sessions). Confirmation dialog shows how many words change."

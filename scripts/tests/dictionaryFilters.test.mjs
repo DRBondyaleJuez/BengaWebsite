@@ -140,3 +140,43 @@ test('sorting and pages', () => {
   assert.equal(page.pages, 2)
   assert.equal(page.rows.length, 1)
 })
+
+test('sentence rows and filters', async () => {
+  const { sentenceRow, sentenceFiltersFromQuery, filterSentenceRows, sortSentenceRows } =
+    await import('../../src/utils/dictionaryFilters.js')
+  const words = { 'Ele-1': { entryId: 'Ele', lexeme: 'Ele' } }
+  const sentences = [
+    sentenceRow(
+      {
+        id: 's1',
+        text: 'Ele ya mboka',
+        translations: { es: 'El árbol del pueblo', en: 'The village tree' },
+        translationStatus: { en: 'machine' },
+        senseIds: ['Ele-1'],
+        audio: [{ id: 'a' }],
+        sync: { state: 'synced' }
+      },
+      words
+    ),
+    sentenceRow(
+      { id: 's2', text: 'Âve le njale', translations: null, senseIds: [], sync: { state: 'new' } },
+      words
+    )
+  ]
+  assert.deepEqual(sentences[0].machine, ['en'])
+  assert.equal(sentences[0].wordsText, 'Ele')
+  const pick = (query) =>
+    filterSentenceRows(sentences, sentenceFiltersFromQuery(query)).map((row) => row.id)
+  assert.deepEqual(pick({ falta: 'fr' }), ['s1', 's2'])
+  assert.deepEqual(pick({ falta: 'es' }), ['s2'])
+  assert.deepEqual(pick({ maquina: 'si' }), ['s1'])
+  assert.deepEqual(pick({ palabra: 'no' }), ['s2'])
+  assert.deepEqual(pick({ audio: 'si' }), ['s1'])
+  assert.deepEqual(pick({ q: 'arbol pueblo' }), ['s1'])
+  assert.deepEqual(pick({ estado: 'new' }), ['s2'])
+  assert.deepEqual(
+    sortSentenceRows(sentences).map((row) => row.id),
+    ['s2', 's1']
+  )
+  assert.deepEqual(sortSentenceRows(sentences, 'recientes')[0].id, 's2')
+})

@@ -135,6 +135,13 @@ test('sentences: create and save', async () => {
   const saved = await call(store, 'PUT', `/sentences/${sentence.id}`, { sentence, version: 1 })
   assert.equal(saved.status, 200)
   assert.equal(saved.json.sentence.sync.state, 'new')
+  // the linked sense lists the sentence as an example; the entry now differs from LD
+  assert.deepEqual(store.data.entries[ELE].senses[0].sentenceIds, [sentence.id])
+  assert.equal(store.data.entries[ELE].sync.state, 'local-changes')
+  // deleting the sentence removes the link again
+  await call(store, 'DELETE', `/sentences/${sentence.id}`)
+  assert.deepEqual(store.data.entries[ELE].senses[0].sentenceIds, [])
+  assert.equal(store.data.entries[ELE].sync.state, 'synced')
 })
 
 test('sync state ignores local fields and key order', () => {

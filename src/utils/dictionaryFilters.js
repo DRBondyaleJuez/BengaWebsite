@@ -209,3 +209,61 @@ export function paginate(rows, page, size = 50) {
   const current = Math.min(Math.max(1, page), pages)
   return { rows: rows.slice((current - 1) * size, current * size), page: current, pages }
 }
+
+// ---- sentences (task L3.4) ------------------------------------------------------------------
+
+/** Everything a sentences-table row needs. `senseWords` maps sense id → { entryId, lexeme }. */
+export function sentenceRow(sentence, senseWords = {}) {
+  const translations = sentence.translations || {}
+  const status = sentence.translationStatus || {}
+  const words = (sentence.senseIds || []).map((id) => senseWords[id]).filter(Boolean)
+  return {
+    id: sentence.id,
+    text: sentence.text,
+    es: translations.es || '',
+    en: translations.en || '',
+    fr: translations.fr || '',
+    machine: ['es', 'en', 'fr'].filter((lang) => status[lang] === 'machine'),
+    words,
+    wordsText: words.map((word) => word.lexeme).join(', '),
+    audioCount: (sentence.audio || []).length,
+    missing: { es: !translations.es, en: !translations.en, fr: !translations.fr },
+    review: sentence.review || null,
+    suggestions: (sentence.suggestions || []).length,
+    state: sentence.sync?.state || 'synced'
+  }
+}
+
+/** Sentence filters: the shared ones plus ?maquina=si (machine translation) and ?palabra=si|no. */
+export function sentenceFiltersFromQuery(query = {}) {
+  const base = filtersFromQuery(query)
+  const yesNo = (value) => (value === 'si' || value === 'no' ? value : '')
+  return { ...base, maquina: yesNo(query.maquina), palabra: yesNo(query.palabra) }
+}
+
+export function filterSentenceRows(rows, filters) {
+  return rows.filter((row) => {
+    if (filters.q) {
+      const text = [row.text, row.es, row.en, row.fr, row.wordsText].join(' ')
+      if (!matchesText(text, filters.q, filters.tol)) return false
+    }
+    if (filters.falta.length && !filters.falta.some((key) => row.missing[key])) return false
+    if (!yes(filters.audio, row.audioCount > 0)) return false
+    if (!yes(filters.maquina, row.machine.length > 0)) return false
+    if (!yes(filters.palabra, row.words.length > 0)) return false
+    if (filters.revision && (filters.revision === 'no' ? row.review : !row.review)) return false
+    if (filters.estado.length && !filters.estado.includes(row.state)) return false
+    return true
+  })
+}
+
+export function sortSentenceRows(rows, order = 'az') {
+  const sorted = [...rows].sort((a, b) => collator.compare(a.text, b.text))
+  if (order === 'za') sorted.reverse()
+  if (order === 'revision') sorted.sort((a, b) => Number(!a.review) - Number(!b.review))
+  if (order === 'recientes') {
+    const changed = (row) => (row.state === 'synced' ? 1 : 0)
+    sorted.sort((a, b) => changed(a) - changed(b))
+  }
+  return sorted
+}
