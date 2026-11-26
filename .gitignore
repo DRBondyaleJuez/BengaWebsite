@@ -35,3 +35,5 @@ ld-sync/
 # Logs are never kept in git (REVIEW-LOG R-044)
 *.log
 logs/
+# Claude Code worktrees of helper sessions
+.claude/worktrees/

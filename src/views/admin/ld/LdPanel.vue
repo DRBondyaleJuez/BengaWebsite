@@ -30,7 +30,10 @@
           </p>
           <ul class="ld-panel__actions">
             <li v-for="action in actions" :key="action.text">
-              <button type="button" class="ld-panel__action" disabled :title="action.when">
+              <router-link v-if="action.to" :to="action.to" class="ld-panel__action">
+                <span aria-hidden="true">{{ action.icon }}</span> {{ action.text }}
+              </router-link>
+              <button v-else type="button" class="ld-panel__action" disabled :title="action.when">
                 <span aria-hidden="true">{{ action.icon }}</span> {{ action.text }}
               </button>
               <span class="ld-panel__muted">
@@ -92,10 +95,17 @@ export default {
         {
           icon: '⬇️',
           text: 'Traer de Living Dictionaries',
-          when: 'Botón en la fase L5',
-          command: 'npm run ld:pull'
+          when: 'Muestra antes qué cambiaría',
+          command: 'npm run ld:pull',
+          to: '/admin/living-dictionary/sincronizacion#traer'
         },
-        { icon: '⬆️', text: 'Enviar cambios', when: 'Fase L5 (con vista previa)' },
+        {
+          icon: '⬆️',
+          text: 'Enviar cambios',
+          when: 'Con vista previa y confirmación',
+          command: 'npm run ld:push',
+          to: '/admin/living-dictionary/sincronizacion#enviar'
+        },
         { icon: '☁️', text: 'Copiar audios a Cloudinary', when: 'Fase L6' }
       ]
     }

@@ -111,6 +111,12 @@ const routes = [
               meta: { title: 'Living Dictionary · Panel' }
             },
             {
+              path: 'sincronizacion',
+              name: 'LdSync',
+              component: () => import('@/views/admin/ld/LdSync.vue'),
+              meta: { title: 'Living Dictionary · Sincronización' }
+            },
+            {
               path: 'entradas',
               name: 'LdEntries',
               component: () => import('@/views/admin/ld/LdEntries.vue'),

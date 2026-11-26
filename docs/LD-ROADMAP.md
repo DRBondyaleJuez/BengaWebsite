@@ -302,7 +302,7 @@ Branch: `feat/ld-sync`
 - [x] **L5.1 Change detection (three-way)**
   - **Prompt:** "Task L5.1: `scripts/lib/ld/diff.mjs`: compare base, workspace and a fresh LD state per field (lexeme, glosses per language, POS, domains, …, sentences, relations, review). Output a changeset: new, changed (field list), deleted-locally, changed-in-LD, conflicts. Pure functions with many tests (multi-language overlay, arrays replaced, senses matched by id)."
   - **Commit:** `feat(ld): detect local and remote changes per field`
-- [ ] **L5.2 Pull with merge**
+- [x] **L5.2 Pull with merge**
   - **Prompt:** "Task L5.2: 'Traer de LD' (button + `npm run ld:pull`): download the snapshot, compute the changeset, preview modal (what will update locally, conflicts), apply on confirm: remote-only changes update the workspace and base, conflicts are marked and kept for you. Log the run."
   - **Commit:** `feat(ld): pull dictionary changes with conflict detection`
 - [ ] **L5.3 Push only changes**

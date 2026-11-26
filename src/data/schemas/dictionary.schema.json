@@ -368,6 +368,24 @@
             }
           },
           "additionalProperties": false
+        },
+        "conflicts": {
+          "description": "Fields changed both here and in Living Dictionaries since the last pull (field \"*\" = the whole record was deleted there). Resolved in the form (L5.5).",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field": {
+                "type": "string",
+                "minLength": 1
+              },
+              "base": {},
+              "local": {},
+              "remote": {}
+            },
+            "required": ["field"],
+            "additionalProperties": false
+          }
         }
       },
       "required": ["state"],

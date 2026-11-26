@@ -12,6 +12,7 @@
  *   DELETE /entries/:id             only entries that exist only here (state "new")
  *   POST   /entries/bulk            { ids, action, value }: same change on many entries (applyBulk)
  *   GET|POST|PUT|DELETE /sentences… same for sentences
+ *   /sync/*                         runs of ld:pull / ld:push / ld:undo (sync-api.mjs)
  *
  * Every save: schema check, sync state from the comparison with base, version + 1, and the
  * site's word registry gets the entry's dictionary id when it was empty (L2.2).
@@ -23,6 +24,7 @@ import { toAudioId } from '../../../src/utils/audioId.js'
 import { LD_DICTIONARY_ID } from '../../../src/config/ld.js'
 import { linkEntries } from './link.mjs'
 import { LOCAL_FIELDS } from './workspace.mjs'
+import { handleSyncRequest, isSyncRunning } from './sync-api.mjs'
 
 const URL_NAMESPACE = '6ba7b811-9dad-11d1-80b4-00c04fd430c8'
 /** Same id rule as ld-import: sending the same word twice never creates two entries. */
@@ -224,6 +226,14 @@ function emptySense(entryId) {
 export async function handleLdRequest({ method, pathname, body }, store) {
   const parts = pathname.split('/').filter(Boolean) // ['entries', '<id>']
   const [collection, id] = parts
+  if (collection === 'sync') {
+    return handleSyncRequest({ method, parts: parts.slice(1), body }, store.syncDeps)
+  }
+  if (method !== 'GET' && isSyncRunning()) {
+    return reply(423, {
+      error: 'Hay una sincronización en curso: espera a que termine para guardar cambios.'
+    })
+  }
   const workspace = await store.load()
 
   if (method === 'GET' && collection === 'summary') return reply(200, summary(workspace))

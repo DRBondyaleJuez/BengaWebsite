@@ -44,3 +44,27 @@ export const deleteSentence = (id) => request('DELETE', `/sentences/${id}`)
 /** Same change on many entries in one save: { ids, action, value } → { changed, skipped }. */
 export const bulkEntries = (ids, action, value = {}) =>
   request('POST', '/entries/bulk', { ids, action, value })
+
+// ---- sync runs (scripts/lib/ld/sync-api.mjs) ----
+export const getSyncStatus = () => request('GET', '/sync/status').then((json) => json.running)
+export const getSyncRuns = () => request('GET', '/sync/runs').then((json) => json.runs)
+export const getSyncRun = (id) => request('GET', `/sync/runs/${id}`).then((json) => json.run)
+/** Starts ld:pull / ld:push / ld:undo; resolves with the runId to follow. */
+export const startSync = (kind, mode, options = {}) =>
+  request('POST', '/sync/start', { kind, mode, options }).then((json) => json.runId)
+
+/** Polls a run until it ends; onProgress(run) gets every state. Resolves with the final run. */
+export async function waitForRun(runId, onProgress = () => {}) {
+  for (;;) {
+    await new Promise((resolve) => setTimeout(resolve, 800))
+    let run = null
+    try {
+      run = await getSyncRun(runId)
+    } catch (error) {
+      if (error.status !== 404) throw error // the log file may not exist for a moment
+    }
+    if (!run) continue
+    onProgress(run)
+    if (run.status !== 'running') return run
+  }
+}

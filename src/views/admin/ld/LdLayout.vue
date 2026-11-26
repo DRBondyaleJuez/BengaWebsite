@@ -6,7 +6,7 @@
         <p>
           Copia local del diccionario
           <a :href="dictionaryUrl" target="_blank" rel="noopener">livingdictionaries.app/benga ↗</a
-          >. Lo que cambies aquí no se envía hasta que pulses «Enviar cambios» (fase L5).
+          >. Lo que cambies aquí no se envía hasta que pulses «Enviar cambios» en Sincronización.
         </p>
       </div>
       <nav class="ld-admin__tabs" aria-label="Secciones del diccionario">
@@ -39,7 +39,8 @@
 <script>
 /**
  * Frame of /admin/living-dictionary (dev only): title, tabs and the page of the chosen tab.
- * Pages: LdPanel (Panel), LdEntries (Entradas), LdSentences (Oraciones). Plan: docs/LD-ROADMAP.md.
+ * Pages: LdPanel (Panel), LdEntries (Entradas), LdSentences (Oraciones), LdSync (Sincronización).
+ * Plan: docs/LD-ROADMAP.md.
  */
 import ToastHost from '@/components/admin/ToastHost.vue'
 import { LIVING_DICTIONARY_HOME } from '@/config/external'
@@ -53,10 +54,10 @@ export default {
       tabs: [
         { to: '/admin/living-dictionary', text: 'Panel', icon: '🏠', exact: true },
         { to: '/admin/living-dictionary/entradas', text: 'Entradas', icon: '📖' },
-        { to: '/admin/living-dictionary/oraciones', text: 'Oraciones', icon: '💬' }
+        { to: '/admin/living-dictionary/oraciones', text: 'Oraciones', icon: '💬' },
+        { to: '/admin/living-dictionary/sincronizacion', text: 'Sincronización', icon: '🔄' }
       ],
       soon: [
-        { text: 'Sincronización', icon: '🔄', phase: 'fase L5' },
         { text: 'Grabar', icon: '🎙️', phase: 'fase L6' }
       ]
     }
