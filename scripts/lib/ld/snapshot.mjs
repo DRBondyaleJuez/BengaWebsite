@@ -230,7 +230,11 @@ export function readSnapshot(db) {
         review && review.category
           ? { category: review.category, note: review.note || '', by: 'ld' }
           : null,
-      updatedAt: row.updated_at
+      // newest change of the entry or any of its senses (a sense edit does not touch the entry row)
+      updatedAt: latest([
+        row.updated_at,
+        ...(sensesByEntry.get(row.id) || []).map((s) => s.updated_at)
+      ])
     }
   }
 
@@ -263,6 +267,12 @@ export function readSnapshot(db) {
     'SELECT id, name, decade, gender, birthplace FROM speakers ORDER BY name'
   )
   return { entries, sentences, speakers: speakers.map((row) => ({ ...row })) }
+}
+
+/** The newest of several ISO dates (null when there is none). */
+export function latest(dates) {
+  const valid = dates.filter(Boolean)
+  return valid.length ? valid.reduce((a, b) => (Date.parse(b) > Date.parse(a) ? b : a)) : null
 }
 
 /** Notes may be markdown in one language or keyed by language; keep es/en/fr/default. */

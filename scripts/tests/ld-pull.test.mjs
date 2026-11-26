@@ -131,3 +131,17 @@ test('fieldLabel names paths in Spanish', () => {
   assert.equal(fieldLabel('relations[synonym|x||]'), 'relación «synonym»')
   assert.equal(fieldLabel('*'), 'la entrada entera')
 })
+
+test('a snapshot older than base (lagging behind a push) is ignored', () => {
+  const { workspace, remote, ids } = setup()
+  workspace.base.entries[ids.theirs.id] = { ...ids.theirs, updatedAt: '2026-11-27T12:00:00Z' }
+  const plan = planPull(workspace, remote)
+  assert.deepEqual(plan.stale, ['Beja'])
+  assert.equal(
+    plan.entries.find((item) => item.label === 'Beja'),
+    undefined
+  )
+  const { entries, base } = applyPull(workspace, remote, 'now')
+  assert.equal(entries[ids.theirs.id].senses[0].glosses.fr, undefined)
+  assert.equal(base.entries[ids.theirs.id].updatedAt, '2026-11-27T12:00:00Z')
+})

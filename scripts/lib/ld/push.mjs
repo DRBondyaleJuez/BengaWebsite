@@ -15,6 +15,7 @@
  * the site), records in conflict, audio (phase L6). Things the API cannot remove (a tag, a
  * dialect, a citation, a sentence link) are listed as warnings for you to do on the LD website.
  */
+import { latest } from './snapshot.mjs'
 import { recordStatus, getPath, isMediaPath, canonicalValue, sameValue } from './diff.mjs'
 import { syncStateOf, ldFieldsOf } from './admin-api.mjs'
 import { fieldLabel } from '../../../src/utils/ldFieldLabels.js'
@@ -438,7 +439,7 @@ export function fromApiEntry(json) {
         fromSense: null,
         toSense: relation.related?.sense_id || null
       })),
-    updatedAt: entry.updated_at || null
+    updatedAt: latest([entry.updated_at, ...(entry.senses || []).map((sense) => sense.updated_at)])
   }
 }
 

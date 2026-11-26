@@ -59,6 +59,7 @@ try {
   const preview = {
     readAt: remote.readAt,
     counts: plan.counts,
+    stale: plan.stale,
     entries: plan.entries.map((item) =>
       labelled(item, workspace.entries[item.id] || remote.entries[item.id])
     ),
@@ -80,6 +81,11 @@ try {
     if (items.length > 15) console.log(`     … y ${items.length - 15} más`)
   }
   if (!plan.entries.length && !plan.sentences.length) console.log('  Todo igual.')
+  if (plan.stale.length) {
+    console.log(
+      `  (${plan.stale.length} registros de la copia pública son más antiguos que lo que ya enviaste y leíste: se ignoran: ${plan.stale.join(', ')})`
+    )
+  }
 
   if (checkOnly) {
     log.finish('done')
@@ -92,7 +98,9 @@ try {
   await saveBase(result.base)
   await saveEntries(result.entries, remote.readAt)
   await saveSentences(result.sentences, remote.readAt)
-  for (const [operation, words] of Object.entries(result.summary)) {
+  const { stale, ...done } = result.summary
+  void stale
+  for (const [operation, words] of Object.entries(done)) {
     for (const word of words) log.item({ word, operation, status: 'ok' })
   }
   log.finish('done')

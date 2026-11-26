@@ -56,13 +56,45 @@ export async function readRemote(dictionary, { fresh = false, fetchImpl } = {}) 
   }
 }
 
+/**
+ * The snapshot can be ~30 min behind LD. A record in it that is OLDER than the one in base (e.g.
+ * read back right after «Enviar cambios») would look like LD undoing your push: such records are
+ * replaced by the base one, and counted as `stale`.
+ */
+export function withoutStale(base, remote) {
+  const result = {
+    ...remote,
+    entries: { ...remote.entries },
+    sentences: { ...remote.sentences },
+    stale: []
+  }
+  for (const kind of ['entries', 'sentences']) {
+    for (const [id, record] of Object.entries(remote[kind] || {})) {
+      const known = base[kind]?.[id]
+      if (
+        known?.updatedAt &&
+        record.updatedAt &&
+        Date.parse(record.updatedAt) < Date.parse(known.updatedAt)
+      ) {
+        result[kind][id] = known
+        result.stale.push(kind === 'entries' ? known.lexeme : known.text)
+      }
+    }
+  }
+  return result
+}
+
 /** What a pull would do: the changeset between base, workspace and the remote state. */
 export function planPull(workspace, remote) {
-  return diffWorkspace({
-    base: workspace.base,
-    workspace,
-    remote: { entries: remote.entries, sentences: remote.sentences }
-  })
+  const current = withoutStale(workspace.base, remote)
+  return {
+    ...diffWorkspace({
+      base: workspace.base,
+      workspace,
+      remote: { entries: current.entries, sentences: current.sentences }
+    }),
+    stale: current.stale
+  }
 }
 
 const withoutUpdatedAt = (record) => {
@@ -76,7 +108,8 @@ const withoutUpdatedAt = (record) => {
  * Applies a pull. Pure: returns new objects, the caller saves them.
  * @returns {{ entries, sentences, base, summary: { updated, added, removed, conflicts } }}
  */
-export function applyPull(workspace, remote, pulledAt) {
+export function applyPull(workspace, fromSnapshot, pulledAt) {
+  const remote = withoutStale(workspace.base, fromSnapshot)
   const summary = { updated: [], added: [], removed: [], conflicts: [] }
   const result = { entries: {}, sentences: {} }
   for (const kind of ['entries', 'sentences']) {
@@ -150,6 +183,6 @@ export function applyPull(workspace, remote, pulledAt) {
     entries: result.entries,
     sentences: result.sentences,
     base: { pulledAt, entries: remote.entries, sentences: remote.sentences },
-    summary
+    summary: { ...summary, stale: remote.stale }
   }
 }
