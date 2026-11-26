@@ -39,8 +39,8 @@
 <script>
 /**
  * Frame of /admin/living-dictionary (dev only): title, tabs and the page of the chosen tab.
- * Pages: LdPanel (Panel), LdEntries (Entradas), LdSentences (Oraciones), LdSync (Sincronización).
- * Plan: docs/LD-ROADMAP.md.
+ * Pages: LdPanel (Panel), LdEntries (Entradas), LdSentences (Oraciones), LdSync (Sincronización)
+ * and the forms EntryForm / SentenceForm (`entrada/:id`, `oracion/:id`). Plan: docs/LD-ROADMAP.md.
  */
 import ToastHost from '@/components/admin/ToastHost.vue'
 import { LIVING_DICTIONARY_HOME } from '@/config/external'
@@ -53,8 +53,13 @@ export default {
       dictionaryUrl: LIVING_DICTIONARY_HOME,
       tabs: [
         { to: '/admin/living-dictionary', text: 'Panel', icon: '🏠', exact: true },
-        { to: '/admin/living-dictionary/entradas', text: 'Entradas', icon: '📖' },
-        { to: '/admin/living-dictionary/oraciones', text: 'Oraciones', icon: '💬' },
+        { to: '/admin/living-dictionary/entradas', text: 'Entradas', icon: '📖', also: 'entrada/' },
+        {
+          to: '/admin/living-dictionary/oraciones',
+          text: 'Oraciones',
+          icon: '💬',
+          also: 'oracion/'
+        },
         { to: '/admin/living-dictionary/sincronizacion', text: 'Sincronización', icon: '🔄' }
       ],
       soon: [{ text: 'Grabar', icon: '🎙️', phase: 'fase L6' }]
@@ -63,7 +68,11 @@ export default {
   methods: {
     isActive(tab) {
       const path = this.$route.path.replace(/\/$/, '')
-      return tab.exact ? path === tab.to : path.startsWith(tab.to)
+      if (tab.exact) return path === tab.to
+      return (
+        path.startsWith(tab.to) ||
+        (tab.also && path.startsWith(`/admin/living-dictionary/${tab.also}`))
+      )
     }
   }
 }

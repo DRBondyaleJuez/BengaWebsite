@@ -129,6 +129,20 @@ const routes = [
               meta: { title: 'Living Dictionary · Oraciones' }
             },
             {
+              path: 'entrada/:id',
+              name: 'LdEntry',
+              component: () => import('@/views/admin/ld/EntryForm.vue'),
+              props: true,
+              meta: { title: 'Living Dictionary · Ficha de palabra' }
+            },
+            {
+              path: 'oracion/:id',
+              name: 'LdSentence',
+              component: () => import('@/views/admin/ld/SentenceForm.vue'),
+              props: true,
+              meta: { title: 'Living Dictionary · Ficha de oración' }
+            },
+            {
               path: 'kit',
               name: 'LdUiKit',
               component: () => import('@/views/admin/ld/UiKitDemo.vue')

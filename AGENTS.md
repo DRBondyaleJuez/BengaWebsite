@@ -127,6 +127,7 @@ A Vue 3 educational website teaching the Benga language (Ndowe language family) 
 - Living Dictionary commands: `npm run ld:pull` («Traer de LD»: snapshot → `src/data/dictionary/`, merges LD changes, keeps yours, marks conflicts; `ld:pull:check` previews), `npm run ld:push` («Enviar cambios»: only changed fields, read back to verify, at most `LD_LIMITS.recordsPerPush` records; `ld:push:check` previews; deletions only with `--deletions`), `npm run ld:undo -- <import_id>` (deletes the entries a push created; `--check` first, then `--confirm <count>`), `npm run ld:link` (dictionary ↔ word-registry links, report in `ld-sync/link-report.md`), `npm run ld:source` (book source; `--create` only after the developer approves). Every request to LD goes through `scripts/lib/ld/client.mjs`; every run is logged in `ld-sync/runs/` (git-ignored) and shown at `/admin/living-dictionary/sincronizacion`.
 - In Windows PowerShell `npm run x -- --flag` drops the `--`: use the `:check` scripts or `node scripts/ld-push.mjs --flag`.
 - Sync logic: `scripts/lib/ld/diff.mjs` (three-way comparison by field path; NFC), `pull.mjs` (merge; snapshot records older than base are ignored because the snapshot lags ~30 min), `push.mjs` (plan, payloads, run, verification), `sync-api.mjs` (the admin starts the scripts as child processes; edits get 423 while a run writes), `runlog.mjs`. Field names in Spanish: `src/utils/ldFieldLabels.js`; error help: `src/utils/ldErrorHelp.js`.
+- Forms (phase L4, guide: `docs/CONTENT-GUIDE.md` §8): `…/entrada/:id` and `…/oracion/:id`. New recordings and pictures are stored as «pendiente de enviar» (`storagePath: null` + `pendingFile` in `ld-sync/pending-media/`, git-ignored) through `POST /__dev/ld/*/:id/media`; phase L6 sends them. Their URLs come from `src/services/ldMedia.js` (addresses in `src/config/external.js`: `LD_MEDIA_BASE`, `LD_PENDING_MEDIA_BASE`). Accepting a suggestion always leaves a line in the record's local `history`.
 - The developer can edit the registry at `/admin/palabras`, which only exists during `npm run serve` and saves through a local-only endpoint defined in `vite.config.mjs` (plugin `word-registry-endpoint`).
 
 ### Audio ID (word key) Convention
@@ -203,10 +204,16 @@ benga-grammar-website/
 │   │   ├── inlineMarkup.js      # **bold** in section-file texts, everything else escaped
 │   │   ├── concord.js           # CONCORD_PREFIXES + inflect(): class prefix + stem of variable adjectives
 │   │   ├── csv.js               # parseCsv(): CSV text → objects (Excel/Python CSV, BOM, quotes)
-│   │   └── translationRows.js   # every translatable text as a row (benga, es/en/fr, page, book page): /admin/translations
+│   │   ├── translationRows.js   # every translatable text as a row (benga, es/en/fr, page, book page): /admin/translations
+│   │   ├── dictionaryPaths.js   # getPath / setPath / setField / canonicalJson: edit a dictionary record by path (forms, suggestions)
+│   │   ├── dictionaryForm.js    # noun classes, emptySense, findSimilar («Ya existe»), insertAt (word form rules)
+│   │   ├── dictionarySuggestions.js  # accept / reject a suggestion, fieldLabel (+ history line)
+│   │   ├── dictionaryChecks.js  # orthography warnings, completeness checklist, book gloss and pages of a word («En la web»)
+│   │   └── mediaRules.js        # accepted audio / photo files, sizes, where a recording is played from
 │   ├── services/
 │   │   ├── wordLinks.js         # word → registry entry → audio URL / dictionary link
 │   │   ├── audioPlayer.js       # ONE shared player: play(url) / stop() / audioState (never new Audio() in a page)
+│   │   ├── ldMedia.js           # ldMediaUrl(media): Cloudinary copy → LD media host → local pending file (dictionary admin)
 │   │   ├── nouns.js             # getNouns({ nounClass, withBothForms }) from lexicon/nouns.json
 │   │   └── adjectives.js        # getAdjectives({ kind }), getAdjective(id), inflect() from lexicon/adjectives.json
 │   ├── assets/
@@ -282,7 +289,13 @@ benga-grammar-website/
 │       ├── admin/
 │       │   ├── WordRegistryAdmin.vue   # /admin/palabras, dev-only (npm run serve)
 │       │   ├── OcrReviewAdmin.vue      # /admin/ocr, dev-only: correct OCR doubts with the PDF page beside
-│       │   └── TranslationsAdmin.vue   # /admin/translations, dev-only: edit every text (benga, es, en, fr), resolve doubts
+│       │   ├── TranslationsAdmin.vue   # /admin/translations, dev-only: edit every text (benga, es, en, fr), resolve doubts
+│       │   └── ld/                     # /admin/living-dictionary (dev-only): LdLayout, LdPanel, LdEntries, LdSentences + the forms
+│       │       ├── EntryForm.vue       # entrada/:id and /nueva: word form (cards in form/)
+│       │       ├── SentenceForm.vue    # oracion/:id and /nueva: sentence form
+│       │       ├── ldApi.js, vocab.js  # calls to /__dev/ld/* and the vocabularies with Spanish labels
+│       │       └── form/               # FormCard, formMixin, SymbolInput (â ē ū + IPA), WordCard, SenseCard, AudioCard, ExamplesCard,
+│       │                               # MoreFieldsCard, RelationsCard, ImagesCard, ReviewCard, WebCard, ChecklistBar, FormBar…
 │       └── chapter-3/
 │           ├── ChapterThreeIndex.vue
 │           ├── RegularAdjectivesSection.vue

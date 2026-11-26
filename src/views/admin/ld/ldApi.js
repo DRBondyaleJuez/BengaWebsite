@@ -71,3 +71,25 @@ export async function waitForRun(runId, onProgress = () => {}) {
     if (run.status !== 'running') return run
   }
 }
+
+/**
+ * New audio or photo for an entry (`collection` 'entries') or a sentence ('sentences'):
+ * { kind: 'audio'|'photo', senseId?, fileName, dataBase64, speakerId?, source?, photographer? }.
+ * The file stays in ld-sync/pending-media until phase L6 sends it. Returns the changed record.
+ */
+export const addMedia = (collection, id, payload) =>
+  request('POST', `/${collection}/${id}/media`, payload)
+
+/** Removes a media item that was never sent (its local file goes too). */
+export const removeMedia = (collection, id, mediaId) =>
+  request('DELETE', `/${collection}/${id}/media/${mediaId}`)
+
+/** A File or Blob as base64 text (without the data: prefix). */
+export function toBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.onload = () => resolve(String(reader.result).split(',')[1] || '')
+    reader.onerror = () => reject(new Error('No se pudo leer el archivo'))
+    reader.readAsDataURL(blob)
+  })
+}

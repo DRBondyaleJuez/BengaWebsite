@@ -130,63 +130,6 @@
         </nav>
       </div>
     </div>
-
-    <AdminDrawer v-model:open="detailOpen" title="Oración">
-      <div v-if="detail" class="ld-sentences__detail">
-        <p class="ld-sentences__benga ld-sentences__big">{{ detail.text }}</p>
-        <StatusBadge :status="detail.state" />
-        <div v-if="detail.review" class="ld-sentences__review" role="note">
-          <strong>Necesita revisión</strong>
-          <p>{{ detail.review.note }}</p>
-        </div>
-        <dl>
-          <template v-for="lang in languages" :key="lang.code">
-            <dt>{{ lang.label }}</dt>
-            <dd>
-              <GlossCell :text="detail[lang.code]" />
-              <small v-if="detail.machine.includes(lang.code)"> (automática, sin revisar)</small>
-            </dd>
-          </template>
-          <dt>Palabras</dt>
-          <dd>{{ detail.wordsText || 'sin enlazar' }}</dd>
-          <dt>Audios</dt>
-          <dd>{{ detail.audioCount }}</dd>
-        </dl>
-        <p class="ld-sentences__help">La ficha para editar oraciones llega en la fase L4.</p>
-      </div>
-    </AdminDrawer>
-
-    <AdminModal v-model:open="newOpen" title="Añadir oración">
-      <form id="ld-new-sentence" class="ld-sentences__form" @submit.prevent="createNew">
-        <label>
-          Oración en benga
-          <textarea v-model="draft.text" required rows="2"></textarea>
-        </label>
-        <div v-if="sameText" class="ld-sentences__warning" role="status">
-          Ya existe esta oración: «{{ sameText.text }}».
-        </div>
-        <label>
-          Traducción al español <small>(opcional)</small>
-          <input v-model="draft.es" />
-        </label>
-        <label>
-          Palabra de la que es ejemplo <small>(opcional)</small>
-          <ChipSelect
-            v-model="draft.senseIds"
-            :options="senseOptions"
-            :max="3"
-            label="Palabra"
-            placeholder="Buscar palabra…"
-          />
-        </label>
-      </form>
-      <template #footer>
-        <button type="button" class="ld-sentences__link" @click="newOpen = false">Cancelar</button>
-        <button type="submit" form="ld-new-sentence" class="ld-sentences__add" :disabled="saving">
-          Guardar en la copia local
-        </button>
-      </template>
-    </AdminModal>
   </section>
 </template>
 
@@ -199,16 +142,11 @@
 import DataTable from '@/components/admin/DataTable.vue'
 import FilterPanel from '@/components/admin/FilterPanel.vue'
 import FilterGroup from '@/components/admin/FilterGroup.vue'
-import ChipSelect from '@/components/admin/ChipSelect.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import EmptyState from '@/components/admin/EmptyState.vue'
-import AdminDrawer from '@/components/admin/AdminDrawer.vue'
-import AdminModal from '@/components/admin/AdminModal.vue'
-import { toast } from '@/components/admin/toast'
 import GlossCell from './GlossCell.vue'
-import { getEntries, getSentences, createSentence } from './ldApi'
+import { getEntries, getSentences } from './ldApi'
 import {
-  plain,
   sentenceRow,
   sentenceFiltersFromQuery,
   filterSentenceRows,
@@ -223,11 +161,8 @@ export default {
     DataTable,
     FilterPanel,
     FilterGroup,
-    ChipSelect,
     StatusBadge,
     EmptyState,
-    AdminDrawer,
-    AdminModal,
     GlossCell
   },
   data() {
@@ -250,7 +185,8 @@ export default {
           title: 'Traducción automática',
           help: 'Traducciones hechas por Claude u otra máquina que una persona aún no revisó.'
         },
-        { key: 'revision', title: 'Necesita revisión' }
+        { key: 'revision', title: 'Necesita revisión' },
+        { key: 'sugerencias', title: 'Sugerencias pendientes' }
       ],
       yesNo: [
         { value: '', label: 'Todas' },
@@ -265,12 +201,7 @@ export default {
         { key: 'wordsText', label: 'Palabras' },
         { key: 'audioCount', label: 'Audio', align: 'center' },
         { key: 'state', label: 'Estado', align: 'center' }
-      ],
-      detail: null,
-      detailOpen: false,
-      newOpen: false,
-      draft: { text: '', es: '', senseIds: [] },
-      saving: false
+      ]
     }
   },
   computed: {
@@ -291,12 +222,6 @@ export default {
       }
       return map
     },
-    senseOptions() {
-      return Object.entries(this.senseWords).map(([id, word]) => ({
-        value: id,
-        label: `${word.lexeme}${word.gloss ? ` (${word.gloss})` : ''}`
-      }))
-    },
     rows() {
       return this.sentences.map((sentence) => sentenceRow(sentence, this.senseWords))
     },
@@ -311,12 +236,8 @@ export default {
       return (
         f.falta.length +
         f.estado.length +
-        ['audio', 'palabra', 'maquina', 'revision'].filter((key) => f[key]).length
+        ['audio', 'palabra', 'maquina', 'revision', 'sugerencias'].filter((key) => f[key]).length
       )
-    },
-    sameText() {
-      const text = plain(this.draft.text)
-      return text ? this.rows.find((row) => plain(row.text) === text) : null
     }
   },
   async created() {
@@ -349,32 +270,18 @@ export default {
         current.includes(value) ? current.filter((item) => item !== value) : [...current, value]
       )
     },
+    /** Opens the form of a sentence; «Volver» returns to this list with the same filters. */
     openDetail(row) {
-      this.detail = row
-      this.detailOpen = true
+      this.$router.push({
+        path: `/admin/living-dictionary/oracion/${row.id}`,
+        query: { volver: this.$route.fullPath }
+      })
     },
     openNew() {
-      this.draft = { text: '', es: '', senseIds: [] }
-      this.newOpen = true
-    },
-    async createNew() {
-      this.saving = true
-      try {
-        await createSentence({
-          text: this.draft.text.trim(),
-          translations: this.draft.es.trim() ? { es: this.draft.es.trim() } : null,
-          senseIds: this.draft.senseIds
-        })
-        toast('Oración guardada en la copia local (aún no enviada al diccionario)', {
-          type: 'success'
-        })
-        this.newOpen = false
-        await this.load()
-      } catch (error) {
-        toast(error.message, { type: 'error', timeout: 8000 })
-      } finally {
-        this.saving = false
-      }
+      this.$router.push({
+        path: '/admin/living-dictionary/oracion/nueva',
+        query: { volver: this.$route.fullPath }
+      })
     }
   }
 }

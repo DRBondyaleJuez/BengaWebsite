@@ -250,6 +250,7 @@ export function filterSentenceRows(rows, filters) {
     if (filters.falta.length && !filters.falta.some((key) => row.missing[key])) return false
     if (!yes(filters.audio, row.audioCount > 0)) return false
     if (!yes(filters.maquina, row.machine.length > 0)) return false
+    if (!yes(filters.sugerencias, row.suggestions > 0)) return false
     if (!yes(filters.palabra, row.words.length > 0)) return false
     if (filters.revision && (filters.revision === 'no' ? row.review : !row.review)) return false
     if (filters.estado.length && !filters.estado.includes(row.state)) return false

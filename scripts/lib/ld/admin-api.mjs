@@ -15,11 +15,21 @@
  *   POST   /entries/bulk            { ids, action, value }: same change on many entries (applyBulk)
  *   GET|POST|PUT|DELETE /sentences… same for sentences
  *   /sync/*                         runs of ld:pull / ld:push / ld:undo (sync-api.mjs)
+ *   POST   /entries/:id/media       new audio or photo { kind, senseId?, fileName, dataBase64,
+ *                                   speakerId?, source?, photographer? }: the file is kept in
+ *                                   ld-sync/pending-media/ and the record gets a "pending" item
+ *                                   (storagePath null, pendingFile set); sent in phase L6
+ *   POST   /sentences/:id/media     same, audio only
+ *   DELETE /entries/:id/media/:mediaId   remove a media item that was never sent (and its file)
+ *   GET    /pending-media/<file>    the bytes of a pending file (answer { status, file, contentType })
  *
  * Every save: schema check, sync state from the comparison with base, version + 1, and the
  * site's word registry gets the entry's dictionary id when it was empty (L2.2).
  * handleLdRequest() takes a `store`, so tests use an in-memory one.
  */
+import fs from 'node:fs'
+import path from 'node:path'
+import { randomUUID } from 'node:crypto'
 import { loadSchemas } from '../schemas.mjs'
 import { uuid5 } from '../living-dictionary.mjs'
 import { toAudioId } from '../../../src/utils/audioId.js'
@@ -28,6 +38,13 @@ import { linkEntries } from './link.mjs'
 import { LOCAL_FIELDS } from './workspace.mjs'
 import { handleSyncRequest, isSyncRunning } from './sync-api.mjs'
 import { diffRecord } from './diff.mjs'
+import {
+  validateMedia,
+  mediaExtension,
+  isPendingMediaName,
+  isPendingMedia,
+  contentTypeOf
+} from '../../../src/utils/mediaRules.js'
 
 const URL_NAMESPACE = '6ba7b811-9dad-11d1-80b4-00c04fd430c8'
 /** Same id rule as ld-import: sending the same word twice never creates two entries. */
@@ -70,6 +87,9 @@ export function syncStateOf(
   if (!baseRecord) return 'new'
   return diffRecord(baseRecord, record, baseRecord, kind).local.length ? 'local-changes' : 'synced'
 }
+
+/** Folder (relative to the project, git-ignored) where new recordings and pictures wait to be sent. */
+export const PENDING_MEDIA_DIR = 'ld-sync/pending-media'
 
 const reply = (status, json) => ({ status, json })
 const notFound = (what) => reply(404, { error: `No existe: ${what}` })
@@ -243,6 +263,14 @@ export async function handleLdRequest({ method, pathname, body }, store) {
       error: 'Hay una sincronización en curso: espera a que termine para guardar cambios.'
     })
   }
+
+  // the bytes of a pending file: answered as { file, contentType }, the Vite middleware streams it
+  if (method === 'GET' && collection === 'pending-media') {
+    if (parts.length !== 2 || !isPendingMediaName(id)) return notFound(pathname)
+    const file = store.pendingMediaPath(id)
+    return file ? { status: 200, file, contentType: contentTypeOf(id) } : notFound(id)
+  }
+
   const workspace = await store.load()
 
   if (method === 'GET' && collection === 'summary') return reply(200, summary(workspace))
@@ -271,7 +299,7 @@ export async function handleLdRequest({ method, pathname, body }, store) {
     sentences: { file: 'sentences', label: (r) => r.text, save: store.saveSentences }
   }
   const kind = kinds[collection]
-  if (!kind || parts.length > 2) return notFound(pathname)
+  if (!kind || (parts.length > 2 && parts[2] !== 'media')) return notFound(pathname)
   const records = workspace[kind.file]
   const baseRecords = workspace.base[kind.file] || {}
 
@@ -289,6 +317,99 @@ export async function handleLdRequest({ method, pathname, body }, store) {
       [collection === 'entries' ? 'entry' : 'sentence']: records[record.id],
       ...links
     })
+  }
+
+  /** A record changed by the server itself (media): sync state from the comparison with base, version + 1. */
+  function touched(record) {
+    const state = syncStateOf(record, baseRecords[record.id])
+    record.sync = {
+      ...record.sync,
+      state: record.sync?.state === 'conflict' && state !== 'synced' ? 'conflict' : state,
+      version: (record.sync?.version ?? 0) + 1
+    }
+    return record
+  }
+
+  if (parts[2] === 'media') return handleMedia()
+
+  async function handleMedia() {
+    const current = records[id]
+    if (!current) return notFound(id)
+    const next = JSON.parse(JSON.stringify(current))
+
+    if (method === 'POST' && parts.length === 3) {
+      const {
+        kind: mediaKind,
+        senseId,
+        fileName,
+        dataBase64,
+        speakerId,
+        source,
+        photographer
+      } = body || {}
+      if (mediaKind === 'photo' && kind.file !== 'entries') {
+        return reply(400, { error: 'Las fotos solo se añaden a las palabras' })
+      }
+      const buffer = Buffer.from(String(dataBase64 || ''), 'base64')
+      const problem = validateMedia({ kind: mediaKind, fileName, size: buffer.length })
+      if (problem) return reply(400, { error: problem })
+      const sense = mediaKind === 'photo' ? next.senses.find((item) => item.id === senseId) : null
+      if (mediaKind === 'photo' && !sense) {
+        return reply(400, { error: 'Falta el sentido al que pertenece la foto' })
+      }
+      const mediaId = store.newMediaId ? store.newMediaId() : randomUUID()
+      const pendingFile = await store.savePendingMedia(
+        `${mediaId}.${mediaExtension(fileName, mediaKind)}`,
+        buffer
+      )
+      if (mediaKind === 'audio') {
+        next.audio = [
+          ...(next.audio || []),
+          {
+            id: mediaId,
+            storagePath: null,
+            speakerIds: speakerId ? [speakerId] : [],
+            ...(source ? { source } : {}),
+            pendingFile
+          }
+        ]
+      } else {
+        sense.photos = [
+          ...(sense.photos || []),
+          {
+            id: mediaId,
+            storagePath: null,
+            ...(source ? { source } : {}),
+            ...(photographer ? { photographer } : {}),
+            pendingFile
+          }
+        ]
+      }
+      const result = await persist(touched(next))
+      if (result.status !== 200) await store.deletePendingMedia(pendingFile)
+      return result.status === 200 ? reply(201, result.json) : result
+    }
+
+    if (method === 'DELETE' && parts.length === 4) {
+      const mediaId = parts[3]
+      const owners = [next, ...(next.senses || [])]
+      const list = owners
+        .flatMap((owner) => [owner.audio, owner.photos])
+        .find((items) => items?.some((item) => item.id === mediaId))
+      const item = list?.find((entry) => entry.id === mediaId)
+      if (!item) return notFound(mediaId)
+      if (!isPendingMedia(item)) {
+        return reply(409, {
+          error:
+            'Ya está en Living Dictionaries: quitarlo allí es un paso aparte con confirmación (fase L5).'
+        })
+      }
+      list.splice(list.indexOf(item), 1)
+      const result = await persist(touched(next))
+      if (result.status === 200) await store.deletePendingMedia(item.pendingFile)
+      return result
+    }
+    return reply(405, { error: `${method} no se admite aquí` })
   }
 
   if (method === 'GET' && !id) return reply(200, { [kind.file]: Object.values(records) })
@@ -426,6 +547,7 @@ export async function handleLdRequest({ method, pathname, body }, store) {
 export async function fileStore() {
   const workspaceModule = await import('./workspace.mjs')
   const registryModule = await import('../registry.mjs')
+  const { ROOT: root } = await import('../collect-words.mjs')
   return {
     load: () => workspaceModule.loadWorkspace(),
     saveEntries: (entries) =>
@@ -436,7 +558,23 @@ export async function fileStore() {
         workspaceModule.loadWorkspace().base.pulledAt ?? null
       ),
     loadRegistry: () => registryModule.loadRegistry(),
-    saveRegistry: (words) => registryModule.saveRegistry(words)
+    saveRegistry: (words) => registryModule.saveRegistry(words),
+    // files of new recordings and pictures waiting to be sent (folder PENDING_MEDIA_DIR)
+    savePendingMedia: async (name, buffer) => {
+      const dir = path.join(root, PENDING_MEDIA_DIR)
+      fs.mkdirSync(dir, { recursive: true })
+      fs.writeFileSync(path.join(dir, name), buffer)
+      return `${PENDING_MEDIA_DIR}/${name}`
+    },
+    deletePendingMedia: async (pendingFile) => {
+      const name = path.basename(String(pendingFile))
+      if (isPendingMediaName(name))
+        fs.rmSync(path.join(root, PENDING_MEDIA_DIR, name), { force: true })
+    },
+    pendingMediaPath: (name) => {
+      const file = path.join(root, PENDING_MEDIA_DIR, name)
+      return isPendingMediaName(name) && fs.existsSync(file) ? file : null
+    }
   }
 }
 

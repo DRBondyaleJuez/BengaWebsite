@@ -272,26 +272,26 @@ Branch: `feat/ld-admin-ui`
 
 Branch: `feat/ld-forms`
 
-- [ ] **L4.1 Word form: headword and senses**
+- [x] **L4.1 Word form: headword and senses**
   - **Prompt:** "Task L4.1: `…/entrada/:id` and `/nueva`. Card 'Palabra' (lexeme with â ē ū buttons, homograph, phonetic with an IPA keyboard popover). Card per sense: glosses es/en/fr, parts of speech (ChipSelect, groups, Spanish labels, tooltip help), semantic domains (TreeSelect), noun class (select 1–7 + 'otra' with free text, help explaining the classes with link to the site pages), plural, variant, definition. 'Añadir sentido' button. Unsaved-changes guard. While typing a new lexeme, warn 'Ya existe' with links."
   - **Commit:** `feat(admin): add the dictionary word form`
-- [ ] **L4.2 Example sentences in the form + sentence form**
+- [x] **L4.2 Example sentences in the form + sentence form**
   - **Commit:** `feat(admin): add example sentences and the sentence form`
-- [ ] **L4.3 'Más campos' card**
+- [x] **L4.3 'Más campos' card**
   - **Prompt:** "Task L4.3: collapsed card with notes (markdown), morphology, interlinearization, scientific names, tone class, dialects, tags, citations (source + page, default the book). Only filled fields show when collapsed."
   - **Commit:** `feat(admin): add optional dictionary fields`
-- [ ] **L4.4 Relations**
+- [x] **L4.4 Relations**
   - **Prompt:** "Task L4.4: card 'Relaciones': search another entry, choose a type with the Spanish explanations from the 'Entradas relacionadas' panel, optional sense on each side, list with remove. Stored in the workspace; sent in L5.3."
   - **Commit:** `feat(admin): add word relations`
-- [ ] **L4.5 Audio card**
+- [x] **L4.5 Audio card**
   - **Prompt:** "Task L4.5: list the entry's recordings (play from Cloudinary if copied, else from the LD media URL), speaker shown; record (reuse /admin/audios recorder) or upload a file; speaker dropdown preselected with the default speaker. New audio is saved locally as 'pendiente de enviar' (sent in L6.2). Same card on the sentence form."
   - **Commit:** `feat(admin): add the audio card to the dictionary forms`
-- [ ] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)
+- [x] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)
   - **Commit:** `feat(admin): add optional images to senses`
-- [ ] **L4.7 Review and suggestions card**
+- [x] **L4.7 Review and suggestions card**
   - **Prompt:** "Task L4.7: card 'Revisión': flag 'Necesita revisión' with category and note (who and when). Suggestions from Claude listed with field, proposed value, reason: buttons Aceptar / Editar y aceptar / Rechazar. Accepting writes the field and keeps a small history line. Filter in the tables: 'Sugerencias pendientes'."
   - **Commit:** `feat(admin): add review flags and suggestions to the forms`
-- [ ] **L4.8 Form checks and 'En la web' card**
+- [x] **L4.8 Form checks and 'En la web' card**
   - **Prompt:** "Task L4.8: a checklist at the top of the form (gloss es/en/fr, part of speech, domain, audio, example) with jump links; orthography warnings; card 'En la web' showing the linked site words, the pages that use them, the book gloss vs dictionary gloss side by side."
   - **Commit:** `feat(admin): add completeness checks and site links to the form`
 
