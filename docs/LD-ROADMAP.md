@@ -256,7 +256,7 @@ Branch: `feat/ld-admin-ui`
 - [x] **L3.1 Admin UI kit**
   - **Prompt:** "Task L3.1: create small reusable admin components in `src/components/admin/`: DataTable (sortable, sticky header, row click), FilterPanel, ChipSelect (multi-select with search and groups), TreeSelect (domains), InfoTip (ⓘ tooltip, keyboard accessible), Modal, Drawer, Toast, StatusBadge, EmptyState. Style with the site variables, BEM. Show them on a hidden `/admin/living-dictionary/kit` page for me to try."
   - **Commit:** `feat(admin): add reusable admin ui components`
-- [ ] **L3.2 Routes, navigation and Panel**
+- [x] **L3.2 Routes, navigation and Panel**
   - **Prompt:** "Task L3.2: add the `/admin/living-dictionary` route group (dev only, like the other admin pages), a 'Living Dictionary' entry in AdminNav, and the Panel page from LD-ROADMAP section 6 (counts, last syncs, next-step cards). Buttons for syncs are disabled placeholders until phase L5/L6."
   - **Commit:** `feat(admin): add the living dictionary panel`
 - [ ] **L3.3 Entries table**

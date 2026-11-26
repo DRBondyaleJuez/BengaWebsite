@@ -100,9 +100,22 @@ const routes = [
           component: () => import('@/views/admin/AudiosAdmin.vue')
         },
         {
-          path: '/admin/living-dictionary/kit',
-          name: 'LdUiKit',
-          component: () => import('@/views/admin/ld/UiKitDemo.vue')
+          // Living Dictionary bridge (docs/LD-ROADMAP.md): frame with tabs + one page per tab
+          path: '/admin/living-dictionary',
+          component: () => import('@/views/admin/ld/LdLayout.vue'),
+          children: [
+            {
+              path: '',
+              name: 'LdPanel',
+              component: () => import('@/views/admin/ld/LdPanel.vue'),
+              meta: { title: 'Living Dictionary · Panel' }
+            },
+            {
+              path: 'kit',
+              name: 'LdUiKit',
+              component: () => import('@/views/admin/ld/UiKitDemo.vue')
+            }
+          ]
         }
       ]
     : []),
