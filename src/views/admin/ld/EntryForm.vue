@@ -110,6 +110,14 @@
 
       <RelationsCard :entry="draft" :entries="entries" @set="set" />
 
+      <ImagesCard
+        :senses="draft.senses"
+        :saved-sense-ids="savedSenseIds"
+        :upload="uploadMedia"
+        :remove="removePendingMedia"
+        :busy="linking"
+      />
+
       <FormBar
         :dirty="dirty"
         :saving="saving"
@@ -137,6 +145,7 @@ import AudioCard from './form/AudioCard.vue'
 import ExamplesCard from './form/ExamplesCard.vue'
 import MoreFieldsCard from './form/MoreFieldsCard.vue'
 import RelationsCard from './form/RelationsCard.vue'
+import ImagesCard from './form/ImagesCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
@@ -167,6 +176,7 @@ export default {
     ExamplesCard,
     MoreFieldsCard,
     RelationsCard,
+    ImagesCard,
     SymbolInput,
     FormBar,
     FormAlerts,

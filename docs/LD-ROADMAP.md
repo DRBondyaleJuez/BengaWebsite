@@ -286,7 +286,7 @@ Branch: `feat/ld-forms`
 - [x] **L4.5 Audio card**
   - **Prompt:** "Task L4.5: list the entry's recordings (play from Cloudinary if copied, else from the LD media URL), speaker shown; record (reuse /admin/audios recorder) or upload a file; speaker dropdown preselected with the default speaker. New audio is saved locally as 'pendiente de enviar' (sent in L6.2). Same card on the sentence form."
   - **Commit:** `feat(admin): add the audio card to the dictionary forms`
-- [ ] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)
+- [x] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)
   - **Commit:** `feat(admin): add optional images to senses`
 - [ ] **L4.7 Review and suggestions card**
   - **Prompt:** "Task L4.7: card 'Revisión': flag 'Necesita revisión' with category and note (who and when). Suggestions from Claude listed with field, proposed value, reason: buttons Aceptar / Editar y aceptar / Rechazar. Accepting writes the field and keeps a small history line. Filter in the tables: 'Sugerencias pendientes'."
