@@ -233,6 +233,16 @@ export function ldClient({
     patchSentence: (sentenceId, patch) =>
       call('PATCH', `/sentences/${encodeURIComponent(sentenceId)}`, { body: patch }),
     createSource: (source) => call('POST', '/sources', { body: source }),
+    /**
+     * Deletes the entries created with one import_id. dryRun: only counts (writes nothing);
+     * the real run needs that exact count as confirmCount (LD answers 409 otherwise).
+     */
+    batchDelete: (importId, { dryRun = false, confirmCount } = {}) =>
+      call('POST', '/entries/batch-delete', {
+        body: dryRun
+          ? { import_id: importId, dry_run: true }
+          : { import_id: importId, confirm_count: confirmCount }
+      }),
     postRelationships: (relationships) =>
       call('POST', '/relationships', { body: { relationships } }),
     /** kind: 'entry' | 'sentence'. Attribution: speakerId and/or source (required by LD). */

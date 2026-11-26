@@ -303,6 +303,7 @@ export function planPush(workspace, { only = [], deletions = false, limit } = {}
         }
       } else if (status === 'deleted-locally') {
         item.status = 'delete'
+        item.restorable = true
         item.deletions = [
           { kind: kind === 'entries' ? 'entry' : 'sentence', id, label: item.label }
         ]
@@ -672,7 +673,51 @@ export async function runPush({
     }
   }
 
-  // 6. deletions (only when asked; the admin confirms them twice)
+  // 6. deletions (only when asked; the admin confirms them twice). LD removes the links of a
+  // deleted record itself; the same links are removed here from base and the workspace.
+  const refreshState = (record, kind) => {
+    const state = syncStateOf(record, base[kind][record.id])
+    if (record.sync?.state !== 'conflict') record.sync = { ...record.sync, state }
+  }
+  const forgetSentence = (sentenceId) => {
+    delete base.sentences[sentenceId]
+    for (const kind of ['base', 'local']) {
+      const list = kind === 'base' ? base.entries : entries
+      for (const entry of Object.values(list)) {
+        for (const sense of entry.senses) {
+          if ((sense.sentenceIds || []).includes(sentenceId)) {
+            sense.sentenceIds = sense.sentenceIds.filter((id) => id !== sentenceId)
+          }
+        }
+      }
+    }
+    for (const entry of Object.values(entries))
+      if (base.entries[entry.id]) refreshState(entry, 'entries')
+  }
+  const forgetEntry = (entryId) => {
+    delete base.entries[entryId]
+    for (const list of [base.entries, entries]) {
+      for (const entry of Object.values(list)) {
+        if ((entry.relations || []).some((relation) => relation.to === entryId)) {
+          entry.relations = entry.relations.filter((relation) => relation.to !== entryId)
+        }
+      }
+    }
+    const gone = new Set((workspace.base.entries[entryId]?.senses || []).map((sense) => sense.id))
+    for (const [list, kind] of [
+      [base.sentences, 'base'],
+      [sentences, 'local']
+    ]) {
+      for (const sentence of Object.values(list)) {
+        if ((sentence.senseIds || []).some((id) => gone.has(id))) {
+          sentence.senseIds = sentence.senseIds.filter((id) => !gone.has(id))
+          if (kind === 'local' && base.sentences[sentence.id]) refreshState(sentence, 'sentences')
+        }
+      }
+    }
+    for (const entry of Object.values(entries))
+      if (base.entries[entry.id]) refreshState(entry, 'entries')
+  }
   if (deletions) {
     const PATHS = {
       relationship: (id) => `/relationships/${id}`,
@@ -696,8 +741,8 @@ export async function runPush({
           status: 'ok',
           fields: [what]
         })
-        if (kind === 'entry') delete base.entries[id]
-        if (kind === 'sentence') delete base.sentences[id]
+        if (kind === 'entry') forgetEntry(id)
+        if (kind === 'sentence') forgetSentence(id)
         done.add(item.id)
       } catch (error) {
         fail(item, 'delete', error)

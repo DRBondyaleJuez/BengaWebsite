@@ -60,6 +60,10 @@
         <button type="button" class="ld-sync__button" :disabled="busy" @click="previewPush">
           Ver qué se enviaría
         </button>
+        <label class="ld-sync__check">
+          <input v-model="deletions" type="checkbox" :disabled="busy" @change="previewPush" />
+          Incluir borrados (palabras, sentidos, oraciones o relaciones que quitaste aquí)
+        </label>
         <button
           v-if="pushPreview"
           type="button"
@@ -74,7 +78,7 @@
       <p v-if="pushPreview?.more" class="ld-sync__muted">
         {{ pushPreview.more }} más quedan para el siguiente envío.
       </p>
-      <SyncPreview v-if="pushPreview" :preview="pushPreview" direction="push" />
+      <SyncPreview v-if="pushPreview" :preview="pushPreview" direction="push" @restore="restore" />
       <div v-if="pushResult" class="ld-sync__result">
         <h3>Resultado del envío</h3>
         <ul>
@@ -92,7 +96,36 @@
       </div>
     </section>
 
-    <SyncHistory ref="history" :busy="busy" @retry="retry" />
+    <SyncHistory ref="history" :busy="busy" @retry="retry" @undo="previewUndo" />
+
+    <AdminModal v-model:open="undoOpen" title="Deshacer un envío">
+      <template v-if="undoPreview">
+        <p>
+          El envío <code>{{ undoPreview.importId }}</code> creó
+          <strong>{{ undoPreview.count }}</strong> palabras en Living Dictionaries
+          <template v-if="undoPreview.sample.length">
+            (por ejemplo: {{ undoPreview.sample.join(', ') }})</template
+          >. Se borrarán allí; aquí siguen como «nuevas».
+        </p>
+        <p>
+          Los cambios a palabras que ya existían no se deshacen. Para confirmar, escribe el número
+          <strong>{{ undoPreview.count }}</strong
+          >:
+        </p>
+        <input v-model="undoTyped" class="ld-sync__confirm-input" inputmode="numeric" />
+      </template>
+      <template #footer>
+        <button type="button" class="ld-sync__link" @click="undoOpen = false">Cancelar</button>
+        <button
+          type="button"
+          class="ld-sync__button ld-sync__button--danger"
+          :disabled="!undoPreview || String(undoPreview.count) !== undoTyped.trim()"
+          @click="applyUndo"
+        >
+          Borrar {{ undoPreview?.count }} en LD
+        </button>
+      </template>
+    </AdminModal>
 
     <AdminModal v-model:open="confirmPush" title="Enviar a Living Dictionaries">
       <p>
@@ -102,9 +135,22 @@
         cambiados.
       </p>
       <p>Cada palabra se vuelve a leer después para comprobar que quedó bien.</p>
+      <template v-if="needsDeleteWord">
+        <p class="ld-sync__danger">
+          ⚠ Además se <strong>borrarán {{ deleteCount }}</strong> cosas en Living Dictionaries (en
+          rojo en la lista). Borrar allí no se puede deshacer desde aquí. Para confirmar, escribe
+          <strong>BORRAR</strong>:
+        </p>
+        <input v-model="deleteTyped" class="ld-sync__confirm-input" autocomplete="off" />
+      </template>
       <template #footer>
         <button type="button" class="ld-sync__link" @click="confirmPush = false">Cancelar</button>
-        <button type="button" class="ld-sync__button ld-sync__button--primary" @click="applyPush">
+        <button
+          type="button"
+          class="ld-sync__button ld-sync__button--primary"
+          :disabled="needsDeleteWord && deleteTyped.trim() !== 'BORRAR'"
+          @click="applyPush"
+        >
           Enviar ahora
         </button>
       </template>
@@ -139,7 +185,7 @@ import AdminModal from '@/components/admin/AdminModal.vue'
 import { toast } from '@/components/admin/toast'
 import SyncPreview from './SyncPreview.vue'
 import SyncHistory from './SyncHistory.vue'
-import { getSyncStatus, startSync, waitForRun } from './ldApi'
+import { getSyncStatus, startSync, waitForRun, restoreEntry, restoreSentence } from './ldApi'
 
 const KINDS = { pull: 'traer de LD', push: 'enviar cambios', undo: 'deshacer un envío' }
 const MODES = { check: 'vista previa', apply: 'aplicando' }
@@ -171,12 +217,24 @@ export default {
       pushPreview: null,
       pushResult: null,
       pushOnly: [],
+      deleteTyped: '',
+      undoOpen: false,
+      undoPreview: null,
+      undoTyped: '',
       confirmPush: false,
       deletions: false,
       progress: { pull: '', push: '' }
     }
   },
   computed: {
+    deleteCount() {
+      return [...(this.pushPreview?.entries || []), ...(this.pushPreview?.sentences || [])]
+        .filter((item) => ['create', 'update', 'delete'].includes(item.status))
+        .reduce((n, item) => n + (item.deletions?.length || 0), 0)
+    },
+    needsDeleteWord() {
+      return this.deletions && this.deleteCount > 0
+    },
     pushCount() {
       if (!this.pushPreview) return 0
       const counts = this.pushPreview.counts
@@ -199,6 +257,32 @@ export default {
       const run = await this.run('push', 'check', { deletions: this.deletions })
       this.pushPreview = run?.status === 'done' ? run.preview : null
     },
+    async restore(item) {
+      try {
+        await (item.kind === 'sentences' ? restoreSentence(item.id) : restoreEntry(item.id))
+        toast(`«${item.label}» recuperada`, { type: 'success' })
+        this.previewPush()
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+      }
+    },
+    async previewUndo(importId) {
+      this.undoPreview = null
+      this.undoTyped = ''
+      const run = await this.run('undo', 'check', { importId })
+      if (run?.status === 'done') {
+        this.undoPreview = run.preview
+        this.undoOpen = true
+      }
+    },
+    async applyUndo() {
+      const { importId, count } = this.undoPreview
+      this.undoOpen = false
+      const run = await this.run('undo', 'apply', { importId, confirmCount: count })
+      if (run?.status === 'done') {
+        toast(`Deshecho: ${count} palabras borradas en LD`, { type: 'success' })
+      }
+    },
     /** «Reintentar fallidos»: a preview of only those, then the usual confirmation. */
     async retry(ids) {
       this.pushOnly = ids
@@ -209,6 +293,7 @@ export default {
     },
     async applyPush() {
       this.confirmPush = false
+      this.deleteTyped = ''
       const only = this.pushOnly
       this.pushOnly = []
       const run = await this.run('push', 'apply', { deletions: this.deletions, only })
@@ -381,6 +466,19 @@ export default {
 
   &__result-item--failed {
     color: $color-error;
+  }
+
+  &__danger {
+    color: $color-error;
+  }
+
+  &__confirm-input {
+    width: 100%;
+    max-width: 240px;
+    padding: $spacing-xs $spacing-sm;
+    border: 1px solid $color-error;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
   }
 
   &__link {

@@ -24,6 +24,7 @@
     "ld:pull:check": "node --experimental-sqlite --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-pull.mjs --check",
     "ld:push": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-push.mjs",
     "ld:push:check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-push.mjs --check",
+    "ld:undo": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-undo.mjs",
     "ld:link": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/ld-link.mjs"
   },
   "dependencies": {

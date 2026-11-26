@@ -16,6 +16,14 @@
         <li v-for="item in group.items" :key="item.kind + item.id" class="sync-preview__item">
           <router-link :to="linkOf(item)" class="sync-preview__word">{{ item.label }}</router-link>
           <span v-if="item.kind === 'sentences'" class="sync-preview__kind">oración</span>
+          <button
+            v-if="item.restorable"
+            type="button"
+            class="sync-preview__restore"
+            @click="$emit('restore', item)"
+          >
+            ↩ Recuperar
+          </button>
           <ul v-if="item.changes?.length" class="sync-preview__changes">
             <li v-for="(change, index) in item.changes" :key="index">
               <span class="sync-preview__field">{{ change.label }}:</span>
@@ -64,6 +72,7 @@ const GROUPS = {
 
 export default {
   name: 'SyncPreview',
+  emits: ['restore'],
   props: {
     preview: { type: Object, required: true },
     direction: { type: String, default: 'pull' }
@@ -173,6 +182,17 @@ export default {
     margin-right: $spacing-xs;
     color: $color-text-muted;
     font-size: $font-size-xs;
+  }
+
+  &__restore {
+    margin-right: $spacing-xs;
+    padding: 0 $spacing-xs;
+    background: none;
+    border: 1px solid $color-primary;
+    border-radius: $border-radius-sm;
+    color: $color-primary-dark;
+    font-size: $font-size-xs;
+    cursor: pointer;
   }
 
   &__fields {

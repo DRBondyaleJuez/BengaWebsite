@@ -57,9 +57,7 @@ export default {
         { to: '/admin/living-dictionary/oraciones', text: 'Oraciones', icon: '💬' },
         { to: '/admin/living-dictionary/sincronizacion', text: 'Sincronización', icon: '🔄' }
       ],
-      soon: [
-        { text: 'Grabar', icon: '🎙️', phase: 'fase L6' }
-      ]
+      soon: [{ text: 'Grabar', icon: '🎙️', phase: 'fase L6' }]
     }
   },
   methods: {

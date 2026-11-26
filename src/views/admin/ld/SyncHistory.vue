@@ -58,6 +58,16 @@
           Reintentar los {{ retryIds.length }} fallidos
         </button>
 
+        <button
+          v-if="canUndo"
+          type="button"
+          class="sync-history__undo"
+          :disabled="busy"
+          @click="$emit('undo', selected.importId)"
+        >
+          ↶ Deshacer este envío (borra en LD las {{ createdCount }} palabras que creó)
+        </button>
+
         <details v-if="okItems.length" class="sync-history__ok">
           <summary>✓ {{ okItems.length }} correctas</summary>
           <ul>
@@ -91,7 +101,7 @@ const STATUS = { running: 'en curso', done: 'terminado', failed: 'falló', halte
 export default {
   name: 'SyncHistory',
   props: { busy: { type: Boolean, default: false } },
-  emits: ['retry'],
+  emits: ['retry', 'undo'],
   data() {
     return { runs: [], selected: null }
   },
@@ -112,6 +122,13 @@ export default {
         groups.get(category).items.push(item)
       }
       return [...groups.values()]
+    },
+    createdCount() {
+      return this.items.filter((i) => i.operation === 'create' && i.status === 'ok').length
+    },
+    canUndo() {
+      const run = this.selected
+      return run.kind === 'push' && run.mode === 'apply' && run.importId && this.createdCount > 0
     },
     retryIds() {
       return [...new Set(this.items.filter((i) => i.status === 'failed' && i.id).map((i) => i.id))]
@@ -260,6 +277,17 @@ export default {
     &:disabled {
       opacity: 0.5;
     }
+  }
+
+  &__undo {
+    display: block;
+    margin-top: $spacing-sm;
+    padding: $spacing-xs $spacing-md;
+    background: $color-surface;
+    border: 1px solid $color-error;
+    border-radius: $border-radius-sm;
+    color: $color-error;
+    cursor: pointer;
   }
 
   &__ok {

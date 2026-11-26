@@ -253,3 +253,24 @@ test('fromApiEntry reads the API shape (main, senses[].sentences)', () => {
     ['r1']
   )
 })
+
+test('runPush deletes only with the option and forgets the record in base', async () => {
+  const workspace = workspaceWith()
+  delete workspace.entries[ID(2)]
+  const plan = planPush(workspace, { deletions: true })
+  assert.equal(plan.entries.find((item) => item.label === 'Beja').restorable, true)
+  const client = fakeClient({ read: apiRead('Ele', '1') })
+  const result = await runPush({ workspace, plan, client, importId: 'x', deletions: true })
+  assert.ok(
+    client.calls.some(([method, path]) => method === 'DELETE' && path === `/entries/${ID(2)}`)
+  )
+  assert.equal(result.base.entries[ID(2)], undefined)
+
+  const without = await runPush({
+    workspace,
+    plan: planPush(workspace),
+    client: fakeClient({ read: apiRead('Ele', '1') }),
+    importId: 'x'
+  })
+  assert.ok(without.base.entries[ID(2)])
+})

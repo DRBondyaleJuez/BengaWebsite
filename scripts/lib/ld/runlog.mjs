@@ -101,6 +101,8 @@ export function listRuns(dir = RUNS_DIR) {
           ...rest,
           itemCount: items.length,
           failedCount: items.filter((item) => item.status === 'failed').length,
+          createdCount: items.filter((item) => item.operation === 'create' && item.status === 'ok')
+            .length,
           hasPreview: Boolean(preview)
         }
       } catch {

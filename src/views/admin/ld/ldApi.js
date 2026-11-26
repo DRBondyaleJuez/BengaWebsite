@@ -33,6 +33,8 @@ export const createEntry = (data) => request('POST', '/entries', data)
 export const saveEntry = (entry) =>
   request('PUT', `/entries/${entry.id}`, { entry, version: entry.sync?.version ?? 0 })
 export const deleteEntry = (id) => request('DELETE', `/entries/${id}`)
+/** Brings back an entry deleted here that is still in Living Dictionaries. */
+export const restoreEntry = (id) => request('POST', '/entries/restore', { id })
 
 export const getSentences = () => request('GET', '/sentences').then((json) => json.sentences)
 export const getSentence = (id) => request('GET', `/sentences/${id}`)
@@ -40,6 +42,7 @@ export const createSentence = (data) => request('POST', '/sentences', data)
 export const saveSentence = (sentence) =>
   request('PUT', `/sentences/${sentence.id}`, { sentence, version: sentence.sync?.version ?? 0 })
 export const deleteSentence = (id) => request('DELETE', `/sentences/${id}`)
+export const restoreSentence = (id) => request('POST', '/sentences/restore', { id })
 
 /** Same change on many entries in one save: { ids, action, value } → { changed, skipped }. */
 export const bulkEntries = (ids, action, value = {}) =>

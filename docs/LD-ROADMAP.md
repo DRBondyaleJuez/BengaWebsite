@@ -314,7 +314,7 @@ Branch: `feat/ld-sync`
 - [ ] **L5.5 Conflict resolution**
   - **Prompt:** "Task L5.5: in the form, a conflict shows both values with the differences highlighted and buttons 'Usar la de LD' / 'Usar la mía' / 'Editar'."
   - **Commit:** `feat(admin): resolve sync conflicts side by side`
-- [ ] **L5.6 Deletions and undo** *(always with your confirmation)*
+- [x] **L5.6 Deletions and undo** *(always with your confirmation)*
   - **Prompt:** "Task L5.6: deleting a word/sense/sentence that exists in LD becomes a pending deletion shown in red in the push preview with a second confirmation. 'Deshacer un envío' uses batch-delete by import_id with dry run (count) + confirm."
   - **Commit:** `feat(ld): support deletions and undoing a push`
 

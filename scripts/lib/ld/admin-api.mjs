@@ -9,7 +9,9 @@
  *   GET    /entries/:id             { entry, base, sentences } (base = as last read from LD)
  *   POST   /entries                 create: { lexeme, homograph?, senses? } → new entry ("new")
  *   PUT    /entries/:id             save: { entry, version } (409 if someone saved in between)
- *   DELETE /entries/:id             only entries that exist only here (state "new")
+ *   DELETE /entries/:id             removes it here; if it is in LD, it is deleted there only by a
+ *                                   push with «Incluir borrados» (task L5.6)
+ *   POST   /entries/restore         { id }: brings back a deleted entry from base.json
  *   POST   /entries/bulk            { ids, action, value }: same change on many entries (applyBulk)
  *   GET|POST|PUT|DELETE /sentences… same for sentences
  *   /sync/*                         runs of ld:pull / ld:push / ld:undo (sync-api.mjs)
@@ -291,6 +293,30 @@ export async function handleLdRequest({ method, pathname, body }, store) {
 
   if (method === 'GET' && !id) return reply(200, { [kind.file]: Object.values(records) })
 
+  // POST /entries/restore { id }: undo a local deletion of a record that is in LD
+  if (method === 'POST' && id === 'restore') {
+    const restoreId = body?.id
+    if (records[restoreId]) return reply(409, { error: 'No está borrado' })
+    const original = baseRecords[restoreId]
+    if (!original) return notFound(restoreId)
+    const { updatedAt, ldReview, ...fields } = original
+    void updatedAt
+    const record = {
+      ...fields,
+      ...(kind.file === 'entries' ? { ldReview: ldReview ?? null } : {}),
+      siteKeys: [],
+      review: null,
+      suggestions: [],
+      sync: {
+        state: 'synced',
+        ldUpdatedAt: original.updatedAt ?? null,
+        version: 1,
+        lastError: null
+      }
+    }
+    return persist(record)
+  }
+
   if (method === 'GET') {
     const record = records[id]
     if (!record) return notFound(id)
@@ -384,17 +410,13 @@ export async function handleLdRequest({ method, pathname, body }, store) {
   if (method === 'DELETE' && id) {
     const current = records[id]
     if (!current) return notFound(id)
-    if (baseRecords[id]) {
-      return reply(409, {
-        error:
-          'Está en Living Dictionaries: borrarlo allí es un paso aparte con confirmación (tarea L5.6).'
-      })
-    }
+    // A record that is in LD stays there until a push with «Incluir borrados» (confirmed twice);
+    // until then it can be brought back with /restore.
     delete records[id]
     if (kind.file === 'entries') await relinkSite(store, workspace)
     else if (syncSentenceLinks(workspace, id, [])) await store.saveEntries(workspace.entries)
     await kind.save(records)
-    return reply(200, { deleted: id })
+    return reply(200, { deleted: id, pendingInLd: Boolean(baseRecords[id]) })
   }
 
   return reply(405, { error: `${method} no se admite aquí` })

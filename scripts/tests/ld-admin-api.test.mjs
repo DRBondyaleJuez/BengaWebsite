@@ -117,8 +117,19 @@ test('creating: fixed id, duplicates refused, only local records can be deleted'
   assert.notEqual(second.json.entry.id, entry.id)
   assert.notEqual(second.json.entry.senses[0].id, entry.senses[0].id)
   assert.equal((await call(store, 'POST', '/entries', { lexeme: ' ' })).status, 400)
-  assert.equal((await call(store, 'DELETE', `/entries/${ELE}`)).status, 409) // exists in LD
-  assert.equal((await call(store, 'DELETE', `/entries/${entry.id}`)).status, 200)
+  const removed = await call(store, 'DELETE', `/entries/${entry.id}`)
+  assert.deepEqual(removed.json, { deleted: entry.id, pendingInLd: false })
+})
+
+test('deleting a record that is in LD leaves it pending; restore brings it back', async () => {
+  const store = memoryStore()
+  const removed = await call(store, 'DELETE', `/entries/${ELE}`)
+  assert.equal(removed.json.pendingInLd, true)
+  assert.equal((await call(store, 'GET', `/entries/${ELE}`)).status, 404)
+  const restored = await call(store, 'POST', '/entries/restore', { id: ELE })
+  assert.equal(restored.status, 200)
+  assert.equal(restored.json.entry.sync.state, 'synced')
+  assert.equal((await call(store, 'POST', '/entries/restore', { id: ELE })).status, 409)
 })
 
 test('sentences: create and save', async () => {
