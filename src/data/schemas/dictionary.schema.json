@@ -474,6 +474,31 @@
         },
         "sync": {
           "$ref": "#/$defs/sync"
+        },
+        "history": {
+          "description": "Local log of accepted suggestions and resolved conflicts (never sent).",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "at": {
+                "type": "string"
+              },
+              "field": {
+                "type": "string"
+              },
+              "from": {},
+              "to": {},
+              "by": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              }
+            },
+            "required": ["at", "field"],
+            "additionalProperties": false
+          }
         }
       },
       "required": ["sync"],
@@ -555,6 +580,31 @@
         },
         "sync": {
           "$ref": "#/$defs/sync"
+        },
+        "history": {
+          "description": "Local log of accepted suggestions and resolved conflicts (never sent).",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "at": {
+                "type": "string"
+              },
+              "field": {
+                "type": "string"
+              },
+              "from": {},
+              "to": {},
+              "by": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string"
+              }
+            },
+            "required": ["at", "field"],
+            "additionalProperties": false
+          }
         }
       },
       "required": ["sync"],

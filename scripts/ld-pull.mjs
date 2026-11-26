@@ -15,6 +15,7 @@ import {
   saveBase,
   saveEntries,
   saveSentences,
+  saveSpeakers,
   toWorkspaceRecord
 } from './lib/ld/workspace.mjs'
 import { LD_DICTIONARY_ID } from '../src/config/ld.js'
@@ -98,6 +99,8 @@ if (checkOnly) {
   console.log('\n(Solo comprobación: no se escribió nada.)')
   process.exit(0)
 }
+// Speakers are never edited here, so they are always refreshed.
+await saveSpeakers(data.speakers)
 if (unsent.length) {
   console.error(
     `\n✗ Hay ${unsent.length} cambios locales sin enviar; no se sobrescribe nada:\n  ${unsent
