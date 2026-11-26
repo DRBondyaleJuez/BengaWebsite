@@ -17,6 +17,7 @@
  */
 import { toAudioId } from '../../src/utils/audioId.js'
 import { baseWordOf } from './schemas.mjs'
+import { checkDictionary } from './ld/check-dictionary.mjs'
 
 /** Group names, in report order, with a one-line explanation for the report. */
 export const CHECKS = {
@@ -25,7 +26,8 @@ export const CHECKS = {
   references: 'References point to things that exist',
   registry: 'Word registry is consistent',
   orthography: 'Benga spelling (AGENTS.md → Benga Orthography Rules)',
-  legacy: 'Hand-typed audio ids left in old page data'
+  legacy: 'Hand-typed audio ids left in old page data',
+  dictionary: 'Dictionary workspace (src/data/dictionary)'
 }
 
 /** Letters that are not used in Benga spelling. */
@@ -42,6 +44,7 @@ const HOMONYM = /~[0-9]+$/
  * @param {Object<string, object>} content.lexicons - { "src/data/lexicon/nouns.json": data, ... }
  * @param {Object<string, object>} content.sections - { "src/data/sections/ch-2/class-1.json": data, ... }
  * @param {Object<string, object>} content.exercises - { "src/data/exercises/x.json": data, ... }
+ * @param {object} [content.dictionary] - { entries, sentences, base, vocab } of src/data/dictionary (scripts/lib/ld/check-dictionary.mjs)
  * @param {Array} content.pageWords - Benga words found in the current pages (scripts/lib/collect-words.mjs)
  * @param {(path: string) => boolean} content.fileExists - is there a file at this project-relative path?
  * @param {(schema: string, data: object) => {valid: boolean, errors: string[]}} check - from loadSchemas()
@@ -58,6 +61,7 @@ export function validateContent(content, check) {
     lexicons = {},
     sections = {},
     exercises = {},
+    dictionary = null,
     pageWords = [],
     fileExists = () => true
   } = content
@@ -335,6 +339,11 @@ export function validateContent(content, check) {
     )
   }
 
+  // 8. Dictionary workspace -------------------------------------------------------------------------
+  const dictionaryStats = dictionary
+    ? checkDictionary(dictionary, { registryWords: registry?.words || {}, add, schemaCheck })
+    : { entries: 0, sentences: 0 }
+
   const count = (level) => problems.filter((problem) => problem.level === level).length
   return {
     problems,
@@ -345,6 +354,8 @@ export function validateContent(content, check) {
       exerciseFiles: Object.keys(exercises).length,
       registryWords: registry && registry.words ? Object.keys(registry.words).length : 0,
       pageWords: pageWords.length,
+      dictionaryEntries: dictionaryStats.entries,
+      dictionarySentences: dictionaryStats.sentences,
       errors: count('error'),
       warnings: count('warning'),
       infos: count('info')

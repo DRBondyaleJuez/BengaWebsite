@@ -1,0 +1,54 @@
+{
+  "_about": "Example of src/data/dictionary/entries.json (docs/CONTENT-GUIDE.md section 8).",
+  "kind": "entries",
+  "pulledAt": "2026-11-25T10:00:00.000Z",
+  "entries": {
+    "1820bdc3-3418-4600-862f-3692f6a36bd8": {
+      "id": "1820bdc3-3418-4600-862f-3692f6a36bd8",
+      "lexeme": "Ele",
+      "homograph": null,
+      "phonetic": null,
+      "scientificNames": [],
+      "citations": [{ "slug": "salvado-y-cos-1891", "locator": "p. 14" }],
+      "senses": [
+        {
+          "id": "5b2a1f0e-6c1d-4f8a-9a3e-2d4c6b8e0f12",
+          "glosses": { "es": "Árbol", "en": "Tree", "fr": "Arbre" },
+          "partsOfSpeech": ["n"],
+          "semanticDomains": ["1.4", "5.2"],
+          "nounClass": "1",
+          "pluralForm": "Bele",
+          "sentenceIds": ["9d0e3c2b-1a4f-4b6e-8c7d-5e6f7a8b9c0d"]
+        }
+      ],
+      "audio": [
+        {
+          "id": "0ea67f0a-4ae1-4484-bc15-04000e8077ae",
+          "storagePath": "benga/audio/0ea67f0a-4ae1-4484-bc15-04000e8077ae.wav",
+          "speakerIds": ["024ea143-a828-4ab7-ac73-9bcbb7e15d75"],
+          "cloudinary": null
+        }
+      ],
+      "relations": [],
+      "siteKeys": ["ele"],
+      "review": {
+        "category": "uncertain_noun_class",
+        "note": "El libro pone «Ele» en la clase 1 con plural «Bele». ¿Es correcta la clase 1?",
+        "by": "claude",
+        "at": "2026-11-25T10:00:00.000Z",
+        "sendToLd": false
+      },
+      "suggestions": [
+        {
+          "id": "s1",
+          "field": "senses[0].semanticDomains",
+          "value": ["1.4"],
+          "reason": "Es una planta; «Agricultura» (5.2) parece de más.",
+          "by": "claude",
+          "at": "2026-11-25T10:00:00.000Z"
+        }
+      ],
+      "sync": { "state": "local-changes", "ldUpdatedAt": "2026-03-01T21:58:27.715Z", "version": 3 }
+    }
+  }
+}

@@ -311,7 +311,7 @@ export default {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: $spacing-lg;
+  padding: var(--page-gutter, #{$spacing-lg});
 
   &__header {
     background: linear-gradient(135deg, #2d5a27 0%, #4a7c4e 100%);
@@ -614,7 +614,7 @@ export default {
   }
 
   @include respond-below('md') {
-    padding: $spacing-md;
+    padding: var(--page-gutter, #{$spacing-md});
 
     &__header {
       padding: 1.5rem $spacing-md;

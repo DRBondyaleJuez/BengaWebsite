@@ -52,12 +52,15 @@ function sortByKey(object) {
   )
 }
 
-async function writeJson(file, data) {
+export async function writeJson(file, data) {
   const options = (await prettier.resolveConfig(file)) || {}
   // Start from an indented layout so Prettier keeps one field per line (easier to read and diff).
   const text = await prettier.format(JSON.stringify(data, null, 2), { ...options, parser: 'json' })
   fs.mkdirSync(path.dirname(file), { recursive: true })
-  fs.writeFileSync(file, text)
+  // Write a temporary file first: a crash or a second save never leaves half a file behind.
+  const temporary = `${file}.${process.pid}.tmp`
+  fs.writeFileSync(temporary, text)
+  fs.renameSync(temporary, file)
 }
 
 export async function saveRegistry(words) {

@@ -1,0 +1,23 @@
+{
+  "_about": "Example of src/data/dictionary/sentences.json (docs/CONTENT-GUIDE.md section 8).",
+  "kind": "sentences",
+  "pulledAt": "2026-11-25T10:00:00.000Z",
+  "sentences": {
+    "9d0e3c2b-1a4f-4b6e-8c7d-5e6f7a8b9c0d": {
+      "id": "9d0e3c2b-1a4f-4b6e-8c7d-5e6f7a8b9c0d",
+      "text": "Ele ya mboka endi na malongo",
+      "translations": {
+        "es": "El árbol del pueblo tiene flores",
+        "en": "The tree of the village has flowers",
+        "fr": "L'arbre du village a des fleurs"
+      },
+      "translationStatus": { "fr": "machine" },
+      "audio": [],
+      "senseIds": ["5b2a1f0e-6c1d-4f8a-9a3e-2d4c6b8e0f12"],
+      "siteKeys": [],
+      "review": null,
+      "suggestions": [],
+      "sync": { "state": "synced", "ldUpdatedAt": "2026-03-01T21:58:27.715Z", "version": 0 }
+    }
+  }
+}

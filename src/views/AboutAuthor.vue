@@ -288,7 +288,7 @@ export default {
     z-index: 2;
     max-width: $max-page-width;
     margin: 0 auto;
-    padding: 0 $spacing-lg;
+    padding: 0 var(--page-gutter, #{$spacing-lg});
   }
 
   &__title {

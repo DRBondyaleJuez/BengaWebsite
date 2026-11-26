@@ -1,0 +1,564 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://benga-grammar.local/schemas/dictionary.schema.json",
+  "title": "Dictionary workspace (local copy of the Benga Living Dictionary)",
+  "description": "Shapes of src/data/dictionary/entries.json, sentences.json and base.json (docs/LD-ROADMAP.md section 5, docs/CONTENT-GUIDE.md section 8). Field names are camelCase versions of the Living Dictionaries API fields. Benga text is a plain string, never translated.",
+  "type": "object",
+  "properties": {
+    "_about": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": ["entries", "sentences", "base"]
+    },
+    "pulledAt": {
+      "description": "When the dictionary was last read (ISO).",
+      "type": ["string", "null"]
+    },
+    "entries": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": true
+    },
+    "sentences": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": ["kind"],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "entries"
+          }
+        }
+      },
+      "then": {
+        "required": ["entries"],
+        "properties": {
+          "entries": {
+            "additionalProperties": {
+              "$ref": "#/$defs/entry"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "sentences"
+          }
+        }
+      },
+      "then": {
+        "required": ["sentences"],
+        "properties": {
+          "sentences": {
+            "additionalProperties": {
+              "$ref": "#/$defs/sentence"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "base"
+          }
+        }
+      },
+      "then": {
+        "required": ["entries", "sentences", "pulledAt"],
+        "properties": {
+          "entries": {
+            "additionalProperties": {
+              "$ref": "#/$defs/ldEntry"
+            }
+          },
+          "sentences": {
+            "additionalProperties": {
+              "$ref": "#/$defs/ldSentence"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "id": {
+      "description": "A Living Dictionaries id (UUID). New local records get a uuid5 so sending them twice never duplicates.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "text": {
+      "type": ["string", "null"]
+    },
+    "multiText": {
+      "description": "Text keyed by language: es/en/fr (gloss languages) or default (Benga). Any may be missing.",
+      "type": ["object", "null"],
+      "properties": {
+        "default": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "fr": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string"
+        }
+      },
+      "required": ["slug"],
+      "additionalProperties": false
+    },
+    "audio": {
+      "description": "A recording. storagePath is null while it only exists locally (pendingFile).",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "storagePath": {
+          "type": ["string", "null"]
+        },
+        "speakerIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source": {
+          "type": ["string", "null"]
+        },
+        "clipStartMs": {
+          "type": ["integer", "null"]
+        },
+        "clipEndMs": {
+          "type": ["integer", "null"]
+        },
+        "pendingFile": {
+          "description": "Local file waiting to be sent (path relative to the project).",
+          "type": "string"
+        },
+        "cloudinary": {
+          "description": "Cloudinary file name (word key) once copied, else null.",
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["id"],
+      "additionalProperties": false
+    },
+    "photo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "storagePath": {
+          "type": ["string", "null"]
+        },
+        "source": {
+          "type": ["string", "null"]
+        },
+        "photographer": {
+          "type": ["string", "null"]
+        },
+        "pendingFile": {
+          "type": "string"
+        }
+      },
+      "required": ["id"],
+      "additionalProperties": false
+    },
+    "sense": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "glosses": {
+          "$ref": "#/$defs/multiText"
+        },
+        "definition": {
+          "$ref": "#/$defs/multiText"
+        },
+        "partsOfSpeech": {
+          "description": "Living Dictionaries codes (src/data/dictionary/vocab/parts-of-speech.json).",
+          "$ref": "#/$defs/strings"
+        },
+        "semanticDomains": {
+          "description": "Domain keys like \"5.3\" (vocab/semantic-domains.json).",
+          "$ref": "#/$defs/strings"
+        },
+        "writeInDomains": {
+          "$ref": "#/$defs/strings"
+        },
+        "nounClass": {
+          "$ref": "#/$defs/text"
+        },
+        "pluralForm": {
+          "$ref": "#/$defs/text"
+        },
+        "variant": {
+          "$ref": "#/$defs/text"
+        },
+        "conceptId": {
+          "$ref": "#/$defs/text"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "sentenceIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "photos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/photo"
+          }
+        }
+      },
+      "required": ["id"],
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": ["string", "null"]
+        },
+        "type": {
+          "description": "A slug of vocab/relation-types.json (synonym, antonym, hypernym…).",
+          "type": "string"
+        },
+        "to": {
+          "$ref": "#/$defs/id"
+        },
+        "fromSense": {
+          "type": ["string", "null"]
+        },
+        "toSense": {
+          "type": ["string", "null"]
+        },
+        "note": {
+          "$ref": "#/$defs/multiText"
+        }
+      },
+      "required": ["type", "to"],
+      "additionalProperties": false
+    },
+    "review": {
+      "description": "\"Necesita revisión\": a plain-language question for a human (vocab/review-categories.json).",
+      "type": ["object", "null"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "by": {
+          "enum": ["claude", "human", "ld"]
+        },
+        "at": {
+          "type": "string"
+        },
+        "sendToLd": {
+          "type": "boolean"
+        }
+      },
+      "required": ["category", "note"],
+      "additionalProperties": false
+    },
+    "suggestion": {
+      "description": "A proposed value (usually from Claude) waiting for a human to accept or reject it.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field": {
+          "description": "Path of the field, e.g. senses[0].glosses.fr",
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {},
+        "reason": {
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "at": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "field", "value"],
+      "additionalProperties": false
+    },
+    "sync": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "description": "synced = same as the dictionary · local-changes = edited here, not sent · new = only here · conflict = changed here and there · error = last send failed",
+          "enum": ["synced", "local-changes", "new", "conflict", "error"]
+        },
+        "ldUpdatedAt": {
+          "type": ["string", "null"]
+        },
+        "version": {
+          "description": "Raised on every local save (protects against two tabs overwriting each other).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "lastError": {
+          "type": ["object", "null"],
+          "properties": {
+            "category": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "at": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": ["state"],
+      "additionalProperties": false
+    },
+    "entryFields": {
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "lexeme": {
+          "type": "string",
+          "minLength": 1
+        },
+        "homograph": {
+          "$ref": "#/$defs/text"
+        },
+        "phonetic": {
+          "$ref": "#/$defs/text"
+        },
+        "interlinearization": {
+          "$ref": "#/$defs/text"
+        },
+        "morphology": {
+          "$ref": "#/$defs/text"
+        },
+        "toneClass": {
+          "$ref": "#/$defs/text"
+        },
+        "notes": {
+          "$ref": "#/$defs/multiText"
+        },
+        "linguisticHistory": {
+          "$ref": "#/$defs/multiText"
+        },
+        "scientificNames": {
+          "$ref": "#/$defs/strings"
+        },
+        "dialects": {
+          "$ref": "#/$defs/strings"
+        },
+        "tags": {
+          "$ref": "#/$defs/strings"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "senses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sense"
+          },
+          "minItems": 1
+        },
+        "audio": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/audio"
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relation"
+          }
+        },
+        "ldReview": {
+          "description": "The review flag as it is in the dictionary (read only here).",
+          "$ref": "#/$defs/review"
+        },
+        "updatedAt": {
+          "description": "When the dictionary last changed this record (ISO). Only in base.json.",
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["id", "lexeme", "senses"]
+    },
+    "ldEntry": {
+      "description": "An entry as read from Living Dictionaries (base.json).",
+      "type": "object",
+      "$ref": "#/$defs/entryFields",
+      "unevaluatedProperties": false
+    },
+    "entry": {
+      "description": "An entry of the workspace: the dictionary's fields plus local ones.",
+      "type": "object",
+      "$ref": "#/$defs/entryFields",
+      "properties": {
+        "siteKeys": {
+          "description": "word-registry keys this entry feeds on the website.",
+          "$ref": "#/$defs/strings"
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "suggestions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/suggestion"
+          }
+        },
+        "sync": {
+          "$ref": "#/$defs/sync"
+        }
+      },
+      "required": ["sync"],
+      "unevaluatedProperties": false
+    },
+    "sentenceFields": {
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "translations": {
+          "$ref": "#/$defs/multiText"
+        },
+        "translationStatus": {
+          "description": "Per language: machine (unreviewed AI/MT) · reviewed (checked by a person) · published (quoted from a publication).",
+          "type": "object",
+          "propertyNames": {
+            "enum": ["es", "en", "fr"]
+          },
+          "additionalProperties": {
+            "enum": ["machine", "reviewed", "published"]
+          }
+        },
+        "speakerId": {
+          "$ref": "#/$defs/text"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "audio": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/audio"
+          }
+        },
+        "senseIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "textId": {
+          "$ref": "#/$defs/text"
+        },
+        "updatedAt": {
+          "description": "When the dictionary last changed this record (ISO). Only in base.json.",
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["id", "text"]
+    },
+    "ldSentence": {
+      "type": "object",
+      "$ref": "#/$defs/sentenceFields",
+      "unevaluatedProperties": false
+    },
+    "sentence": {
+      "type": "object",
+      "$ref": "#/$defs/sentenceFields",
+      "properties": {
+        "siteKeys": {
+          "$ref": "#/$defs/strings"
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        },
+        "suggestions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/suggestion"
+          }
+        },
+        "sync": {
+          "$ref": "#/$defs/sync"
+        }
+      },
+      "required": ["sync"],
+      "unevaluatedProperties": false
+    }
+  }
+}

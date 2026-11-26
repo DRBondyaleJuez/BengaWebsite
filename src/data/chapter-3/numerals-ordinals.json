@@ -19,7 +19,7 @@
     "1-10": [
       {
         "number": 1,
-        "bengaForm": "Páka",
+        "bengaForm": "Pâkâ",
         "spanishForm": {
           "es": "Uno",
           "en": "One",
@@ -112,7 +112,7 @@
     "11-20": [
       {
         "number": 11,
-        "bengaForm": "Dyom na páka",
+        "bengaForm": "Dyom na pâkâ",
         "spanishForm": {
           "es": "Once",
           "en": "Eleven",
@@ -204,7 +204,7 @@
     "21-100": [
       {
         "number": 21,
-        "bengaForm": "Mabo mabale na páka",
+        "bengaForm": "Mabo mabale na pâkâ",
         "spanishForm": {
           "es": "Veintiuno",
           "en": "Twenty-one",
@@ -287,7 +287,7 @@
     "101-1000": [
       {
         "number": 101,
-        "bengaForm": "Kama na páka",
+        "bengaForm": "Kama na pâkâ",
         "spanishForm": {
           "es": "Ciento uno",
           "en": "One hundred and one",
@@ -458,7 +458,7 @@
           "en": "Class 7",
           "fr": "Classe 7"
         },
-        "uno": "Páka",
+        "uno": "Pâkâ",
         "dos": "Tbabale",
         "tres": "Ilalo",
         "cuatro": "Inai",
@@ -575,7 +575,7 @@
     },
     "examples": [
       {
-        "bengaForm": "Páka páka",
+        "bengaForm": "Pâkâ pâkâ",
         "spanishMeaning": {
           "es": "De uno en uno",
           "en": "One by one",
@@ -674,9 +674,9 @@
       "fr": "Lorsque le compte comprend des unités, des dizaines et des centaines, le nom est répété"
     },
     {
-      "es": "Ejemplo: 'ciento veinticinco pañuelos' = Kama bevéléhi páka, na mabo mabale na bevelehi betano",
-      "en": "Example: 'one hundred and twenty-five handkerchiefs' = Kama bevéléhi páka, na mabo mabale na bevelehi betano",
-      "fr": "Exemple : « cent vingt-cinq mouchoirs » = Kama bevéléhi páka, na mabo mabale na bevelehi betano"
+      "es": "Ejemplo: 'ciento veinticinco pañuelos' = Kama bevéléhi pâkâ, na mabo mabale na bevelehi betano",
+      "en": "Example: 'one hundred and twenty-five handkerchiefs' = Kama bevéléhi pâkâ, na mabo mabale na bevelehi betano",
+      "fr": "Exemple : « cent vingt-cinq mouchoirs » = Kama bevéléhi pâkâ, na mabo mabale na bevelehi betano"
     }
   ]
 }

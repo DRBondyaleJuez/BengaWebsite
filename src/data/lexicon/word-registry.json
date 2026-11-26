@@ -745,7 +745,7 @@
     },
     "beko": {
       "word": "Beko",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "7d2851f2-f884-476c-b784-055170e6773c",
       "audio": "missing",
       "audioFile": null,
       "notes": ""
@@ -864,7 +864,7 @@
     },
     "bele": {
       "word": "Bele",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "1820bdc3-3418-4600-862f-3692f6a36bd8",
       "audio": "missing",
       "audioFile": null,
       "notes": ""
@@ -955,7 +955,7 @@
     },
     "ben_a_": {
       "word": "Benâ",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "9b0fb8a4-e76e-4d83-bf79-32a6dd3f23cc",
       "audio": "missing",
       "audioFile": null,
       "notes": ""
@@ -2985,10 +2985,10 @@
     },
     "h_a_ng_a_": {
       "word": "Hāngā",
-      "livingDictionaryId": "ab7b1df3-547b-4f20-a2c5-94ff932e38f1",
+      "livingDictionaryId": null,
       "audio": "missing",
       "audioFile": null,
-      "notes": "Living Dictionary writes it with ā (macron); same key as Hângâ"
+      "notes": "Según el desarrollador (2026-11-26) «Hângâ» del libro no es «bandera»: la bandera es «Hanga» en el diccionario. REVIEW-LOG R-037."
     },
     "h_u_e_": {
       "word": "hūē",
@@ -3818,7 +3818,7 @@
     },
     "m_u_ana": {
       "word": "mūana",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "d96498f8-d92d-4637-9d2d-35cfd137a07e",
       "audio": "missing",
       "audioFile": null,
       "notes": ""
@@ -4777,7 +4777,7 @@
     },
     "mina": {
       "word": "Mina",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "944ef682-bdf6-4876-af27-7189fde3cf7b",
       "audio": "missing",
       "audioFile": null,
       "notes": ""
@@ -4889,7 +4889,7 @@
     },
     "monda": {
       "word": "Monda",
-      "livingDictionaryId": null,
+      "livingDictionaryId": "65cedd78-9a3c-4330-89fe-c00364908106",
       "audio": "missing",
       "audioFile": null,
       "notes": ""

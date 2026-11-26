@@ -289,7 +289,7 @@ export default {
   z-index: 3;
   max-width: $max-page-width;
   margin: 0 auto;
-  padding: 0 $spacing-lg;
+  padding: 0 var(--page-gutter, #{$spacing-lg});
   text-align: center;
 }
 
@@ -371,7 +371,7 @@ export default {
   &__container {
     max-width: $max-page-width;
     margin: 0 auto;
-    padding: 0 $spacing-lg;
+    padding: 0 var(--page-gutter, #{$spacing-lg});
   }
 
   &__intro-section {

@@ -5,6 +5,9 @@
 > **Commit** (the message to use when the task is done).
 > Tick the box `[x]` when a task is committed.
 >
+> **Second track:** the Living Dictionary bridge (`/admin/living-dictionary`, sync, audio,
+> Claude-assisted content, phonetics) has its own plan with phases L0–L9: [LD-ROADMAP.md](LD-ROADMAP.md).
+>
 > Commit names follow *Conventional Commits*: `type(area): what changed`
 > — `feat` = new feature, `fix` = bug fix, `refactor` = same behaviour, cleaner code,
 > `docs` = documentation, `chore` = housekeeping, `build` = tooling, `test` = tests.

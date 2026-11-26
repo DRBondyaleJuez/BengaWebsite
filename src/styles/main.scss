@@ -2,6 +2,15 @@
 @use 'mixins' as *;
 
 // Global styles
+
+// Width includes padding and border everywhere: a box with width 100% + padding never gets wider
+// than its container (this made several pages wider than a phone screen, REVIEW-LOG R-031).
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;

@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       links: [
+        { to: '/admin/living-dictionary', text: 'Living Dictionary' },
         { to: '/admin/palabras', text: 'Palabras' },
         { to: '/admin/audios', text: 'Audios' },
         { to: '/admin/translations', text: 'Traducciones' },

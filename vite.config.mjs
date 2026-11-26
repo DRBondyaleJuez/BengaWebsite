@@ -117,13 +117,56 @@ const audioEndpoint = () => ({
   }
 })
 
+/**
+ * /admin/living-dictionary reads and edits the dictionary workspace (src/data/dictionary) through
+ * /__dev/ld/* (routes in scripts/lib/ld/admin-api.mjs). Only from this computer, JSON only, one
+ * request at a time. It never contacts Living Dictionaries: syncing is a separate step.
+ */
+const livingDictionaryEndpoint = () => ({
+  name: 'living-dictionary-endpoint',
+  apply: 'serve',
+  configureServer(server) {
+    server.middlewares.use('/__dev/ld', (request, response) => {
+      const send = ({ status, json }) => {
+        response.statusCode = status
+        response.setHeader('Content-Type', 'application/json')
+        response.end(JSON.stringify(json))
+      }
+      if (!LOCAL_ADDRESSES.includes(request.socket.remoteAddress)) {
+        return send({ status: 403, json: { error: 'Only allowed from this computer' } })
+      }
+      let body = ''
+      request.on('data', (chunk) => (body += chunk))
+      request.on('end', async () => {
+        try {
+          const { handleSerially, fileStore } = await import('./scripts/lib/ld/admin-api.mjs')
+          const url = new URL(request.url, 'http://localhost')
+          send(
+            await handleSerially(
+              {
+                method: request.method,
+                pathname: url.pathname,
+                body: body ? JSON.parse(body) : null
+              },
+              await fileStore()
+            )
+          )
+        } catch (error) {
+          send({ status: 500, json: { error: error.message } })
+        }
+      })
+    })
+  }
+})
+
 export default defineConfig({
   plugins: [
     vue(),
     wordRegistryEndpoint(),
     ocrCorrectionsEndpoint(),
     translationsEndpoint(),
-    audioEndpoint()
+    audioEndpoint(),
+    livingDictionaryEndpoint()
   ],
   define: {
     // vue-i18n build options: full install, no legacy API (we use composition mode), no devtools

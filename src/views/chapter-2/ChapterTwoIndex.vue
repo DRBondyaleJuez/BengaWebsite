@@ -137,7 +137,7 @@ export default {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: $spacing-lg;
+  padding: var(--page-gutter, #{$spacing-lg});
 
   &__header {
     background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);

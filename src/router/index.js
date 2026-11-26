@@ -98,6 +98,36 @@ const routes = [
           path: '/admin/audios',
           name: 'AudiosAdmin',
           component: () => import('@/views/admin/AudiosAdmin.vue')
+        },
+        {
+          // Living Dictionary bridge (docs/LD-ROADMAP.md): frame with tabs + one page per tab
+          path: '/admin/living-dictionary',
+          component: () => import('@/views/admin/ld/LdLayout.vue'),
+          children: [
+            {
+              path: '',
+              name: 'LdPanel',
+              component: () => import('@/views/admin/ld/LdPanel.vue'),
+              meta: { title: 'Living Dictionary · Panel' }
+            },
+            {
+              path: 'entradas',
+              name: 'LdEntries',
+              component: () => import('@/views/admin/ld/LdEntries.vue'),
+              meta: { title: 'Living Dictionary · Entradas' }
+            },
+            {
+              path: 'oraciones',
+              name: 'LdSentences',
+              component: () => import('@/views/admin/ld/LdSentences.vue'),
+              meta: { title: 'Living Dictionary · Oraciones' }
+            },
+            {
+              path: 'kit',
+              name: 'LdUiKit',
+              component: () => import('@/views/admin/ld/UiKitDemo.vue')
+            }
+          ]
         }
       ]
     : []),

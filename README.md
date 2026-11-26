@@ -2,7 +2,8 @@
 
 Interactive website teaching the Benga language, based on Salvado y Cos's grammar.
 Built with Vue 3 + Vite. Project rules for humans and AI: [AGENTS.md](AGENTS.md).
-Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md).
+Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md) (the book) and
+[docs/LD-ROADMAP.md](docs/LD-ROADMAP.md) (the Living Dictionary bridge at `/admin/living-dictionary`).
 
 ## Commands
 
@@ -19,3 +20,8 @@ Plan and progress: [docs/ROADMAP.md](docs/ROADMAP.md).
 | `npm run words:sync` | Update the word registry after changing content ([guide](docs/WORD-REGISTRY.md)) |
 | `npm run words:check` | Same report without changing files |
 | `npm run words:import -- list.csv` | Fill the word registry from a spreadsheet |
+| `npm run audio:checklist` / `audio:sync` | Recording list and Cloudinary audio state ([guide](docs/AUDIO-GUIDE.md)) |
+| `npm run ld:import -- <folder>` | Check a CSV + audio folder for the Living Dictionary; `--send` writes it ([guide](docs/LIVING-DICTIONARY-IMPORT.md)) |
+| `npm run ld:pull` | Copy the Living Dictionary into `src/data/dictionary/` (public snapshot, no key) ([plan](docs/LD-ROADMAP.md)) |
+| `npm run ld:link` | Link dictionary entries with the site's words; report in `ld-sync/link-report.md` |
+| `npm run ld:source` | Show (or `-- --create`) the book's citation source on the dictionary |

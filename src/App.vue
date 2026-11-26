@@ -7,15 +7,12 @@
 
     <AppHeader @toggle-sidebar="sidebarOpen = !sidebarOpen" />
 
-    <div class="app__body">
-      <AppSidebar :is-open="sidebarOpen" @close="sidebarOpen = false" />
+    <div class="app__body" :class="{ 'app__body--admin': isAdmin }">
+      <!-- The chapter list is not needed on the developer pages: they use the whole width -->
+      <AppSidebar v-if="!isAdmin" :is-open="sidebarOpen" @close="sidebarOpen = false" />
 
-      <main
-        id="main-content"
-        class="app__main"
-        :class="{ 'app__main--wide': $route.path.startsWith('/admin') }"
-      >
-        <AdminNav v-if="$route.path.startsWith('/admin')" />
+      <main id="main-content" class="app__main" :class="{ 'app__main--wide': isAdmin }">
+        <AdminNav v-if="isAdmin" />
         <router-view />
       </main>
     </div>
@@ -43,6 +40,12 @@ export default {
       sidebarOpen: false
     }
   },
+  computed: {
+    /** Developer pages (/admin/…, only during npm run serve). */
+    isAdmin() {
+      return this.$route.path.startsWith('/admin')
+    }
+  },
   watch: {
     $route(to) {
       // Close sidebar on route change (mobile)
@@ -50,6 +53,7 @@ export default {
       // Browser-tab title from chapters-index.json (route meta). Runs before the new page is
       // created, so a page that sets its own document.title still wins.
       if (to.meta.titleKey) document.title = `${this.$t(to.meta.titleKey)} | Portal Benga`
+      else if (to.meta.title) document.title = to.meta.title
     },
     // New language: the tab title follows (pages only set theirs when they open)
     '$i18n.locale'() {
@@ -81,17 +85,31 @@ export default {
     @include respond-to('lg') {
       padding-left: $sidebar-width;
     }
+
+    &--admin {
+      padding-left: 0 !important;
+    }
   }
 
   &__main {
+    // --page-gutter: inner side padding of the page wrappers (views use var(--page-gutter)).
+    --page-gutter: #{$spacing-lg};
     flex: 1;
     padding: $spacing-xl;
     max-width: $max-content-width;
     margin: 0 auto;
     width: 100%;
+    min-width: 0;
 
-    @include respond-below('md') {
+    // Below 992 px the menu is folded into the header button: use less side space (R-031)
+    @include respond-below('lg') {
+      --page-gutter: #{$spacing-xs};
       padding: $spacing-md;
+    }
+
+    @include respond-below('sm') {
+      --page-gutter: 0;
+      padding: $spacing-md $spacing-sm;
     }
 
     // Developer pages (/admin/…, only during npm run serve) use the whole width

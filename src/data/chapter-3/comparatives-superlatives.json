@@ -11,9 +11,9 @@
     "fr": "Expressions de la comparaison et du degré"
   },
   "overview": {
-    "es": "Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los objetos se comparan usando una variedad de formas: circunlocución, entonación particular, énfasis consabido, y especialmente las palabras 'kebaka' (sobresalir) y 'ña' (exceder).",
-    "en": "Adjectives in Benga lack the traditional degrees of comparison. However, objects are compared using a variety of means: circumlocution, particular intonation, understood emphasis, and especially the words 'kebaka' (to excel) and 'ña' (to exceed).",
-    "fr": "Les adjectifs en benga n'ont pas les degrés de comparaison traditionnels. Cependant, on compare les objets par divers moyens : la périphrase, une intonation particulière, une emphase convenue, et surtout les mots « kebaka » (l'emporter sur) et « ña » (dépasser)."
+    "es": "Los adjetivos en Benga carecen de los grados de comparación tradicionales. Sin embargo, los objetos se comparan usando una variedad de formas: circunlocución, entonación particular, énfasis consabido, y especialmente las palabras 'kebaka' (sobresalir) y 'ūa' (exceder).",
+    "en": "Adjectives in Benga lack the traditional degrees of comparison. However, objects are compared using a variety of means: circumlocution, particular intonation, understood emphasis, and especially the words 'kebaka' (to excel) and 'ūa' (to exceed).",
+    "fr": "Les adjectifs en benga n'ont pas les degrés de comparaison traditionnels. Cependant, on compare les objets par divers moyens : la périphrase, une intonation particulière, une emphase convenue, et surtout les mots « kebaka » (l'emporter sur) et « ūa » (dépasser)."
   },
   "keyWords": [
     {
@@ -25,7 +25,7 @@
       }
     },
     {
-      "bengaForm": "ña",
+      "bengaForm": "ūa",
       "spanishMeaning": {
         "es": "exceder, superar",
         "en": "to exceed, to surpass",
@@ -146,7 +146,7 @@
           "en": "This country is warmer than ours",
           "fr": "Ce pays est plus chaud que le nôtre"
         },
-        "bengaForm": "Ehihí tékae e ndi yomu ña na eyahu"
+        "bengaForm": "Ehihí tékae e ndi yomu ūa na eyahu"
       },
       {
         "spanishMeaning": {
@@ -154,7 +154,7 @@
           "en": "These books are better than those",
           "fr": "Ces livres sont meilleurs que ceux-là"
         },
-        "bengaForm": "Bejanangobo tékabe bendi ña na Vepúlas ekabens"
+        "bengaForm": "Bejanangobo tékabe bendi ūa na Vepúlas ekabens"
       },
       {
         "spanishMeaning": {
