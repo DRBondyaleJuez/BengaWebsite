@@ -305,7 +305,7 @@ Branch: `feat/ld-sync`
 - [x] **L5.2 Pull with merge**
   - **Prompt:** "Task L5.2: 'Traer de LD' (button + `npm run ld:pull`): download the snapshot, compute the changeset, preview modal (what will update locally, conflicts), apply on confirm: remote-only changes update the workspace and base, conflicts are marked and kept for you. Log the run."
   - **Commit:** `feat(ld): pull dictionary changes with conflict detection`
-- [ ] **L5.3 Push only changes**
+- [x] **L5.3 Push only changes**
   - **Prompt:** "Task L5.3: 'Enviar cambios' (button + `npm run ld:push`): preview grouped by word (exact fields, before → after), then: new entries via POST (batches ≤ 200, import_id `benga-portal-<date>`), changes via batch-update, sentences, relations, review flags, images; check each result, re-read the changed entries through the API to verify, update base. Words with errors get `sync.state=error` + message. Never deletes in LD in this task."
   - **Commit:** `feat(ld): push local changes to the living dictionary`
 - [ ] **L5.4 Sync log, error categories and UI**

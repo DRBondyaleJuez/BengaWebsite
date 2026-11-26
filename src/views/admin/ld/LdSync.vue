@@ -43,6 +43,71 @@
       <SyncPreview v-if="pullPreview" :preview="pullPreview" direction="pull" />
     </section>
 
+    <!-- ---- Enviar cambios ------------------------------------------------------------------- -->
+    <section id="enviar" class="ld-sync__card">
+      <h2>
+        ⬆️ Enviar cambios
+        <InfoTip
+          text="Envía solo los campos que cambiaste aquí desde la última lectura. Antes pregunta a Living Dictionaries qué cambió allí: esas palabras esperan a que las traigas. Después vuelve a leer cada palabra enviada para comprobarla."
+        />
+      </h2>
+      <p class="ld-sync__muted">
+        Como mucho {{ pushPreview?.limit ?? 10 }} registros por envío. Las marcas «Necesita
+        revisión» solo se envían si marcaste «Enviar esta marca» en la ficha. Los audios van aparte
+        (fase L6).
+      </p>
+      <div class="ld-sync__buttons">
+        <button type="button" class="ld-sync__button" :disabled="busy" @click="previewPush">
+          Ver qué se enviaría
+        </button>
+        <button
+          v-if="pushPreview"
+          type="button"
+          class="ld-sync__button ld-sync__button--primary"
+          :disabled="busy || !pushCount"
+          @click="confirmPush = true"
+        >
+          Enviar {{ pushCount }} registros
+        </button>
+      </div>
+      <p v-if="progress.push" class="ld-sync__progress" role="status">{{ progress.push }}</p>
+      <p v-if="pushPreview?.more" class="ld-sync__muted">
+        {{ pushPreview.more }} más quedan para el siguiente envío.
+      </p>
+      <SyncPreview v-if="pushPreview" :preview="pushPreview" direction="push" />
+      <div v-if="pushResult" class="ld-sync__result">
+        <h3>Resultado del envío</h3>
+        <ul>
+          <li
+            v-for="(item, index) in pushResult.items"
+            :key="index"
+            :class="`ld-sync__result-item ld-sync__result-item--${item.status}`"
+          >
+            {{ item.status === 'ok' ? '✓' : '✗' }} <strong>{{ item.word }}</strong> ·
+            {{ operationLabel(item.operation) }}
+            <template v-if="item.fields?.length"> ({{ item.fields.join(', ') }})</template>
+            <template v-if="item.message">: {{ item.message }}</template>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <AdminModal v-model:open="confirmPush" title="Enviar a Living Dictionaries">
+      <p>
+        Se enviarán <strong>{{ pushCount }}</strong> registros a
+        <strong>livingdictionaries.app/benga</strong>: {{ pushPreview?.counts.create || 0 }} nuevos
+        y {{ pushPreview?.counts.update || 0 }}
+        cambiados.
+      </p>
+      <p>Cada palabra se vuelve a leer después para comprobar que quedó bien.</p>
+      <template #footer>
+        <button type="button" class="ld-sync__link" @click="confirmPush = false">Cancelar</button>
+        <button type="button" class="ld-sync__button ld-sync__button--primary" @click="applyPush">
+          Enviar ahora
+        </button>
+      </template>
+    </AdminModal>
+
     <AdminModal v-model:open="confirmPull" title="Traer cambios de Living Dictionaries">
       <p>
         Se actualizarán <strong>{{ pullChanges }}</strong> registros de la copia local con lo que
@@ -75,6 +140,18 @@ import { getSyncStatus, startSync, waitForRun } from './ldApi'
 
 const KINDS = { pull: 'traer de LD', push: 'enviar cambios', undo: 'deshacer un envío' }
 const MODES = { check: 'vista previa', apply: 'aplicando' }
+const OPERATIONS = {
+  create: 'creada',
+  update: 'cambios enviados',
+  verify: 'comprobada',
+  relation: 'relación',
+  photo: 'imagen',
+  delete: 'borrado',
+  updated: 'actualizada',
+  added: 'añadida',
+  removed: 'quitada',
+  conflicts: 'en conflicto'
+}
 /** Statuses of a pull preview that change the local copy. */
 const PULL_CHANGES = ['new-in-ld', 'changed-in-ld', 'both-changed', 'conflict', 'deleted-in-ld']
 
@@ -88,10 +165,19 @@ export default {
       fresh: false,
       pullPreview: null,
       confirmPull: false,
-      progress: { pull: '' }
+      pushPreview: null,
+      pushResult: null,
+      confirmPush: false,
+      deletions: false,
+      progress: { pull: '', push: '' }
     }
   },
   computed: {
+    pushCount() {
+      if (!this.pushPreview) return 0
+      const counts = this.pushPreview.counts
+      return (counts.create || 0) + (counts.update || 0) + (this.deletions ? counts.delete || 0 : 0)
+    },
     pullChanges() {
       if (!this.pullPreview) return 0
       return PULL_CHANGES.reduce((n, status) => n + (this.pullPreview.counts[status] || 0), 0)
@@ -102,6 +188,26 @@ export default {
   },
   methods: {
     kindLabel: (kind) => KINDS[kind] || kind,
+    operationLabel: (operation) => OPERATIONS[operation] || operation,
+    async previewPush() {
+      this.pushResult = null
+      const run = await this.run('push', 'check', { deletions: this.deletions })
+      this.pushPreview = run?.status === 'done' ? run.preview : null
+    },
+    async applyPush() {
+      this.confirmPush = false
+      const run = await this.run('push', 'apply', { deletions: this.deletions })
+      this.pushPreview = null
+      if (!run) return
+      this.pushResult = run
+      const failed = run.totals.failed || 0
+      toast(
+        failed
+          ? `Envío terminado con ${failed} errores: míralos abajo y en el historial`
+          : 'Envío terminado y comprobado',
+        { type: failed ? 'error' : 'success', timeout: 8000 }
+      )
+    },
     modeLabel: (mode) => MODES[mode] || mode,
     /** Starts a run and waits for it; returns the final run (or null on error). */
     async run(kind, mode, options = {}) {
@@ -240,6 +346,25 @@ export default {
 
   &__progress {
     font-weight: $font-weight-semibold;
+  }
+
+  &__result {
+    margin-top: $spacing-md;
+
+    h3 {
+      margin: 0 0 $spacing-xs;
+      font-size: $font-size-base;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: $spacing-md;
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__result-item--failed {
+    color: $color-error;
   }
 
   &__link {

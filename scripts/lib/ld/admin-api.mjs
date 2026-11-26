@@ -25,6 +25,7 @@ import { LD_DICTIONARY_ID } from '../../../src/config/ld.js'
 import { linkEntries } from './link.mjs'
 import { LOCAL_FIELDS } from './workspace.mjs'
 import { handleSyncRequest, isSyncRunning } from './sync-api.mjs'
+import { diffRecord } from './diff.mjs'
 
 const URL_NAMESPACE = '6ba7b811-9dad-11d1-80b4-00c04fd430c8'
 /** Same id rule as ld-import: sending the same word twice never creates two entries. */
@@ -54,12 +55,18 @@ export function ldFieldsOf(record) {
   return result
 }
 
-/** synced / local-changes / new, from the comparison with the record last read from LD. */
-export function syncStateOf(record, baseRecord) {
+/**
+ * synced / local-changes / new, from the comparison with the record last read from LD. Compared
+ * field by field like a push would (diff.mjs): an empty list and a missing one are the same, and
+ * so are two Unicode forms of the same text.
+ */
+export function syncStateOf(
+  record,
+  baseRecord,
+  kind = 'senses' in (record || {}) ? 'entries' : 'sentences'
+) {
   if (!baseRecord) return 'new'
-  return canonical(ldFieldsOf(record)) === canonical(ldFieldsOf(baseRecord))
-    ? 'synced'
-    : 'local-changes'
+  return diffRecord(baseRecord, record, baseRecord, kind).local.length ? 'local-changes' : 'synced'
 }
 
 const reply = (status, json) => ({ status, json })

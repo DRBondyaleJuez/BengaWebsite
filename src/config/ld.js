@@ -37,5 +37,10 @@ export const LD_IMPORT_PREFIX = 'benga-portal'
 /** Our own limits on top of the client's pauses (docs/LD-ROADMAP.md section 4). */
 export const LD_LIMITS = {
   batchSize: 200,
-  mediaPerRun: 100
+  mediaPerRun: 100,
+  /**
+   * Most records one «Enviar cambios» may send (entries + sentences). Kept at 10 while the bridge
+   * is being tried out (developer's instruction, 2026-11-27); raise it for the big sync.
+   */
+  recordsPerPush: 10
 }
