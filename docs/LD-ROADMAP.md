@@ -264,7 +264,7 @@ Branch: `feat/ld-admin-ui`
   - **Commit:** `feat(admin): add the dictionary entries table`
 - [x] **L3.4 Sentences table**
   - **Commit:** `feat(admin): add the dictionary sentences table`
-- [ ] **L3.5 Bulk actions**
+- [x] **L3.5 Bulk actions**
   - **Prompt:** "Task L3.5: select rows → mark/clear review, add a semantic domain, set part of speech, add a tag, export selection as CSV (for printing word lists for recording sessions). Confirmation dialog shows how many words change."
   - **Commit:** `feat(admin): add bulk actions to the dictionary tables`
 

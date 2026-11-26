@@ -40,3 +40,7 @@ export const createSentence = (data) => request('POST', '/sentences', data)
 export const saveSentence = (sentence) =>
   request('PUT', `/sentences/${sentence.id}`, { sentence, version: sentence.sync?.version ?? 0 })
 export const deleteSentence = (id) => request('DELETE', `/sentences/${id}`)
+
+/** Same change on many entries in one save: { ids, action, value } → { changed, skipped }. */
+export const bulkEntries = (ids, action, value = {}) =>
+  request('POST', '/entries/bulk', { ids, action, value })

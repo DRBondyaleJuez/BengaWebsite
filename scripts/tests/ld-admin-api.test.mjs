@@ -154,3 +154,63 @@ test('sync state ignores local fields and key order', () => {
     canonical({ a: [2, { c: 2, d: 1 }], b: 1 })
   )
 })
+
+test('bulk actions: one save, skipped entries explained', async () => {
+  const store = memoryStore()
+  const created = await call(store, 'POST', '/entries', { lexeme: 'Epokolo' })
+  const newId = created.json.entry.id
+  store.saves.length = 0
+  const ids = [ELE, newId, 'missing']
+  const domain = await call(store, 'POST', '/entries/bulk', {
+    ids,
+    action: 'domain-add',
+    value: { key: '5.4' }
+  })
+  assert.deepEqual(domain.json.changed, [ELE, newId])
+  assert.equal(domain.json.skipped[0].reason, 'no existe')
+  assert.deepEqual(store.saves, ['entries']) // one write for all
+  assert.deepEqual(store.data.entries[ELE].senses[0].semanticDomains, ['5.4'])
+  assert.equal(store.data.entries[ELE].sync.state, 'local-changes')
+  assert.equal(store.data.entries[newId].sync.state, 'new')
+
+  const again = await call(store, 'POST', '/entries/bulk', {
+    ids: [ELE],
+    action: 'domain-add',
+    value: { key: '5.4' }
+  })
+  assert.equal(again.json.skipped[0].reason, 'ya lo tenía')
+
+  const review = await call(store, 'POST', '/entries/bulk', {
+    ids: [ELE],
+    action: 'review-set',
+    value: { category: 'other', note: '¿Es correcto?' }
+  })
+  assert.deepEqual(review.json.changed, [ELE])
+  assert.equal(store.data.entries[ELE].review.by, 'human')
+  assert.equal(store.data.entries[ELE].sync.state, 'local-changes') // review is local only
+
+  const bad = await call(store, 'POST', '/entries/bulk', {
+    ids: [ELE],
+    action: 'review-set',
+    value: {}
+  })
+  assert.equal(bad.status, 400)
+  const unknown = await call(store, 'POST', '/entries/bulk', { ids: [ELE], action: 'explode' })
+  assert.equal(unknown.status, 400)
+})
+
+test('bulk part of speech only for entries with one sense', async () => {
+  const store = memoryStore()
+  store.data.entries[ELE].senses.push({
+    id: '6b2a1f0e-6c1d-4f8a-9a3e-2d4c6b8e0f12',
+    partsOfSpeech: [],
+    sentenceIds: []
+  })
+  const result = await call(store, 'POST', '/entries/bulk', {
+    ids: [ELE],
+    action: 'pos-set',
+    value: { code: 'v' }
+  })
+  assert.deepEqual(result.json.changed, [])
+  assert.match(result.json.skipped[0].reason, /varios sentidos/)
+})

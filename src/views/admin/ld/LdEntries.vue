@@ -164,6 +164,39 @@
         </p>
         <p v-if="error" class="ld-entries__error" role="alert">{{ error }}</p>
 
+        <div
+          v-if="view === 'tabla'"
+          class="ld-entries__bulk"
+          :class="{ 'ld-entries__bulk--on': selected.length }"
+        >
+          <template v-if="selected.length">
+            <strong>{{ selected.length }} seleccionadas</strong>
+            <button
+              v-for="action in bulkActions"
+              :key="action.id"
+              type="button"
+              @click="openBulk(action)"
+            >
+              {{ action.label }}
+            </button>
+            <button type="button" @click="exportCsv">⬇ Exportar CSV</button>
+            <button type="button" class="ld-entries__link" @click="selected = []">
+              Deseleccionar
+            </button>
+          </template>
+          <template v-else>
+            <span>Marca filas para cambiar varias a la vez.</span>
+            <button
+              v-if="filtered.length"
+              type="button"
+              class="ld-entries__link"
+              @click="selected = filtered.map((row) => row.id)"
+            >
+              Seleccionar las {{ filtered.length }} filtradas
+            </button>
+          </template>
+        </div>
+
         <DataTable
           v-if="view === 'tabla'"
           :columns="columns"
@@ -172,6 +205,8 @@
           :sort-key="sortKey"
           :sort-dir="sortDir"
           region-label="Entradas del diccionario"
+          selectable
+          v-model:selected="selected"
           @sort="onSort"
           @row-click="openDetail"
         >
@@ -269,6 +304,58 @@
       <EntryDetail v-if="detail" :entry="detail" :sentences="sentencesById" />
     </AdminDrawer>
 
+    <AdminModal v-model:open="bulkOpen" :title="bulk ? bulk.label : ''">
+      <form v-if="bulk" id="ld-bulk" class="ld-entries__form" @submit.prevent="runBulk">
+        <p>
+          Se cambiarán <strong>{{ selected.length }}</strong> entradas en la copia local. Nada se
+          envía al diccionario hasta «Enviar cambios».
+        </p>
+        <template v-if="bulk.id === 'review-set'">
+          <label>
+            Motivo
+            <select v-model="bulkValue.category" required>
+              <option v-for="category in reviewCategories" :key="category.id" :value="category.id">
+                {{ category.es }}
+              </option>
+            </select>
+          </label>
+          <label>
+            Nota (una pregunta clara)
+            <textarea v-model="bulkValue.note" rows="3" required></textarea>
+          </label>
+        </template>
+        <label v-else-if="bulk.id === 'domain-add'">
+          Dominio semántico (se añade a todos los sentidos)
+          <select v-model="bulkValue.key" required>
+            <option v-for="option in domainOptions" :key="option.value" :value="option.value">
+              {{ option.parent ? '— ' : '' }}{{ option.label }}
+            </option>
+          </select>
+        </label>
+        <label v-else-if="bulk.id === 'pos-set'">
+          Categoría gramatical (solo palabras con un sentido)
+          <select v-model="bulkValue.code" required>
+            <optgroup v-for="group in posGroups" :key="group.label" :label="group.label">
+              <option v-for="option in group.options" :key="option.value" :value="option.value">
+                {{ option.label }}
+              </option>
+            </optgroup>
+          </select>
+        </label>
+        <label v-else-if="bulk.id === 'tag-add'">
+          Etiqueta
+          <input v-model="bulkValue.name" required placeholder="p. ej. Salvado y Cos 1891" />
+        </label>
+        <p v-else>Se quitará la marca «Necesita revisión» de estas entradas.</p>
+      </form>
+      <template #footer>
+        <button type="button" class="ld-entries__link" @click="bulkOpen = false">Cancelar</button>
+        <button type="submit" form="ld-bulk" class="ld-entries__add" :disabled="saving">
+          Aplicar a {{ selected.length }}
+        </button>
+      </template>
+    </AdminModal>
+
     <AdminModal v-model:open="newOpen" title="Añadir palabra">
       <form id="ld-new-entry" class="ld-entries__form" @submit.prevent="createNew">
         <label>
@@ -334,7 +421,7 @@ import AdminModal from '@/components/admin/AdminModal.vue'
 import { toast } from '@/components/admin/toast'
 import EntryDetail from './EntryDetail.vue'
 import GlossCell from './GlossCell.vue'
-import { getEntries, getSentences, createEntry, saveEntry } from './ldApi'
+import { getEntries, getSentences, createEntry, saveEntry, bulkEntries } from './ldApi'
 import { POS_OPTIONS, DOMAIN_OPTIONS, REVIEW_CATEGORIES, posLabel, domainLabel } from './vocab'
 import {
   plain,
@@ -430,6 +517,17 @@ export default {
       detailOpen: false,
       newOpen: false,
       newEntry: { lexeme: '', homograph: '', es: '' },
+      selected: [],
+      bulk: null,
+      bulkOpen: false,
+      bulkValue: {},
+      bulkActions: [
+        { id: 'review-set', label: '⚑ Marcar revisión' },
+        { id: 'review-clear', label: '✓ Quitar revisión' },
+        { id: 'domain-add', label: '+ Dominio' },
+        { id: 'pos-set', label: '+ Categoría' },
+        { id: 'tag-add', label: '+ Etiqueta' }
+      ],
       saving: false
     }
   },
@@ -463,6 +561,18 @@ export default {
       for (const row of this.rows)
         for (const code of row.pos) counts.set(code, (counts.get(code) || 0) + 1)
       return POS_OPTIONS.map((option) => ({ ...option, count: counts.get(option.value) || 0 }))
+    },
+    posGroups() {
+      const groups = []
+      for (const option of POS_OPTIONS) {
+        let group = groups.find((item) => item.label === option.group)
+        if (!group) {
+          group = { label: option.group, options: [] }
+          groups.push(group)
+        }
+        group.options.push(option)
+      }
+      return groups
     },
     sentencesById() {
       return Object.fromEntries(this.sentences.map((sentence) => [sentence.id, sentence]))
@@ -545,6 +655,72 @@ export default {
     openDetail(row) {
       this.detail = this.entries.find((entry) => entry.id === row.id) || null
       this.detailOpen = Boolean(this.detail)
+    },
+    openBulk(action) {
+      this.bulk = action
+      this.bulkValue = action.id === 'review-set' ? { category: 'other', note: '' } : {}
+      this.bulkOpen = true
+    },
+    async runBulk() {
+      this.saving = true
+      try {
+        const { changed, skipped } = await bulkEntries(this.selected, this.bulk.id, this.bulkValue)
+        const notes = skipped
+          .filter((item) => item.word)
+          .map((item) => `${item.word}: ${item.reason}`)
+        const message =
+          `${changed.length} entradas cambiadas` +
+          (notes.length ? ` · sin cambiar: ${notes.join('; ')}` : '')
+        toast(message, {
+          type: changed.length ? 'success' : 'info',
+          timeout: notes.length ? 10000 : 4000
+        })
+        this.bulkOpen = false
+        await this.load()
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+      } finally {
+        this.saving = false
+      }
+    },
+    exportCsv() {
+      const rows = this.rows.filter((row) => this.selected.includes(row.id))
+      const header = [
+        'palabra',
+        'homografo',
+        'espanol',
+        'ingles',
+        'frances',
+        'categoria',
+        'dominios',
+        'clase',
+        'plural',
+        'audios'
+      ]
+      const cell = (value) => '"' + String(value ?? '').replace(/"/g, '""') + '"'
+      const lines = rows.map((row) =>
+        [
+          row.lexeme,
+          row.homograph,
+          row.es,
+          row.en,
+          row.fr,
+          row.pos.map(posLabel).join(', '),
+          row.domains.map(domainLabel).join(', '),
+          row.nounClasses.join(', '),
+          row.plural,
+          row.audioCount
+        ]
+          .map(cell)
+          .join(';')
+      )
+      // ";" and a BOM so Excel in Spanish opens it in columns with the accents right
+      const text = '\ufeff' + [header.join(';'), ...lines].join('\r\n')
+      const link = document.createElement('a')
+      link.href = URL.createObjectURL(new Blob([text], { type: 'text/csv;charset=utf-8' }))
+      link.download = `palabras-benga-${new Date().toISOString().slice(0, 10)}.csv`
+      link.click()
+      URL.revokeObjectURL(link.href)
     },
     openNew() {
       this.newEntry = { lexeme: '', homograph: '', es: '' }
@@ -825,6 +1001,38 @@ export default {
 
     em {
       margin-right: $spacing-xs;
+    }
+  }
+
+  &__bulk {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $spacing-xs $spacing-sm;
+    min-height: 2.5rem;
+    margin-bottom: $spacing-sm;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $border-radius-sm;
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+
+    &--on {
+      background: rgba($color-primary, 0.08);
+      color: $color-text-primary;
+    }
+
+    button:not(.ld-entries__link) {
+      padding: 2px $spacing-sm;
+      background: $color-surface;
+      border: 1px solid $color-primary;
+      border-radius: $border-radius-sm;
+      color: $color-primary-dark;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-primary;
+        color: $color-text-inverse;
+      }
     }
   }
 

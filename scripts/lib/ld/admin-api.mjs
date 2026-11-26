@@ -10,6 +10,7 @@
  *   POST   /entries                 create: { lexeme, homograph?, senses? } → new entry ("new")
  *   PUT    /entries/:id             save: { entry, version } (409 if someone saved in between)
  *   DELETE /entries/:id             only entries that exist only here (state "new")
+ *   POST   /entries/bulk            { ids, action, value }: same change on many entries (applyBulk)
  *   GET|POST|PUT|DELETE /sentences… same for sentences
  *
  * Every save: schema check, sync state from the comparison with base, version + 1, and the
@@ -133,6 +134,77 @@ export function syncSentenceLinks(workspace, sentenceId, senseIds = []) {
   return changed
 }
 
+/**
+ * Bulk actions of the entries table (task L3.5). Applies one change to many entries and returns
+ * what changed and what was skipped (with the reason, in Spanish, for the result message).
+ *   review-set { category, note } · review-clear · domain-add { key } (every sense)
+ *   pos-set { code } (only entries with ONE sense: with several, which sense is meant is unclear)
+ *   tag-add { name }
+ */
+export function applyBulk(
+  workspace,
+  { ids = [], action, value = {} },
+  now = () => new Date().toISOString()
+) {
+  const changed = []
+  const skipped = []
+  for (const id of ids) {
+    const entry = workspace.entries[id]
+    if (!entry) {
+      skipped.push({ id, reason: 'no existe' })
+      continue
+    }
+    const before = canonical(entry)
+    if (action === 'review-set') {
+      if (!value.category || !value.note) throw new Error('Falta la categoría o la nota')
+      entry.review = {
+        category: value.category,
+        note: value.note,
+        by: 'human',
+        at: now(),
+        sendToLd: false
+      }
+    } else if (action === 'review-clear') {
+      entry.review = null
+    } else if (action === 'domain-add') {
+      if (!value.key) throw new Error('Falta el dominio')
+      for (const sense of entry.senses) {
+        sense.semanticDomains = [...new Set([...(sense.semanticDomains || []), value.key])]
+      }
+    } else if (action === 'pos-set') {
+      if (!value.code) throw new Error('Falta la categoría gramatical')
+      if (entry.senses.length !== 1) {
+        skipped.push({
+          id,
+          word: entry.lexeme,
+          reason: 'tiene varios sentidos: elígela en su ficha'
+        })
+        continue
+      }
+      const sense = entry.senses[0]
+      sense.partsOfSpeech = [...new Set([...(sense.partsOfSpeech || []), value.code])]
+    } else if (action === 'tag-add') {
+      const name = String(value.name || '').trim()
+      if (!name) throw new Error('Falta la etiqueta')
+      entry.tags = [...new Set([...(entry.tags || []), name])]
+    } else {
+      throw new Error(`Acción desconocida: ${action}`)
+    }
+    if (canonical(entry) === before) {
+      skipped.push({ id, word: entry.lexeme, reason: 'ya lo tenía' })
+      continue
+    }
+    const state = syncStateOf(entry, workspace.base.entries?.[id])
+    entry.sync = {
+      ...entry.sync,
+      state: entry.sync?.state === 'conflict' && state !== 'synced' ? 'conflict' : state,
+      version: (entry.sync?.version ?? 0) + 1
+    }
+    changed.push(id)
+  }
+  return { changed, skipped }
+}
+
 function emptySense(entryId) {
   return {
     id: newId('sense', `${entryId}#0`),
@@ -155,6 +227,25 @@ export async function handleLdRequest({ method, pathname, body }, store) {
   const workspace = await store.load()
 
   if (method === 'GET' && collection === 'summary') return reply(200, summary(workspace))
+
+  if (method === 'POST' && collection === 'entries' && id === 'bulk') {
+    let result
+    try {
+      result = applyBulk(workspace, body || {})
+    } catch (error) {
+      return reply(400, { error: error.message })
+    }
+    if (result.changed.length) {
+      const validation = check({
+        kind: 'entries',
+        entries: Object.fromEntries(result.changed.map((key) => [key, workspace.entries[key]]))
+      })
+      if (!validation.valid)
+        return reply(400, { error: 'Datos no válidos', details: validation.errors })
+      await store.saveEntries(workspace.entries)
+    }
+    return reply(200, result)
+  }
 
   const kinds = {
     entries: { file: 'entries', label: (r) => r.lexeme, save: store.saveEntries },
