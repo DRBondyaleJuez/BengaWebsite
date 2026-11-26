@@ -2,6 +2,7 @@
  * Vite configuration: how the site is served during development (`npm run serve`)
  * and built for publishing (`npm run build`). Replaces the old vue.config.js (vue-cli).
  */
+import fs from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -122,6 +123,25 @@ const audioEndpoint = () => ({
  * /__dev/ld/* (routes in scripts/lib/ld/admin-api.mjs). Only from this computer, JSON only, one
  * request at a time. It never contacts Living Dictionaries: syncing is a separate step.
  */
+/** Streams a local file for the dictionary admin; answers Range requests so audio can seek. */
+function sendFile(request, response, { status, file, contentType }) {
+  const { size } = fs.statSync(file)
+  const range = /^bytes=(\d*)-(\d*)$/.exec(request.headers.range || '')
+  let start = 0
+  let end = size - 1
+  if (range && (range[1] || range[2])) {
+    start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]))
+    end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1
+    response.statusCode = 206
+    response.setHeader('Content-Range', `bytes ${start}-${end}/${size}`)
+  } else response.statusCode = status
+  response.setHeader('Content-Type', contentType)
+  response.setHeader('Accept-Ranges', 'bytes')
+  response.setHeader('Cache-Control', 'no-store')
+  response.setHeader('Content-Length', end - start + 1)
+  fs.createReadStream(file, { start, end }).pipe(response)
+}
+
 const livingDictionaryEndpoint = () => ({
   name: 'living-dictionary-endpoint',
   apply: 'serve',
@@ -135,22 +155,31 @@ const livingDictionaryEndpoint = () => ({
       if (!LOCAL_ADDRESSES.includes(request.socket.remoteAddress)) {
         return send({ status: 403, json: { error: 'Only allowed from this computer' } })
       }
+      // recordings and pictures arrive as base64 inside the JSON (up to 25 MB of audio)
+      const LIMIT = 40 * 1024 * 1024
       let body = ''
-      request.on('data', (chunk) => (body += chunk))
+      let tooBig = false
+      request.on('data', (chunk) => {
+        if (body.length + chunk.length > LIMIT) tooBig = true
+        else body += chunk
+      })
       request.on('end', async () => {
         try {
+          if (tooBig)
+            return send({ status: 413, json: { error: 'El archivo es demasiado grande' } })
           const { handleSerially, fileStore } = await import('./scripts/lib/ld/admin-api.mjs')
           const url = new URL(request.url, 'http://localhost')
-          send(
-            await handleSerially(
-              {
-                method: request.method,
-                pathname: url.pathname,
-                body: body ? JSON.parse(body) : null
-              },
-              await fileStore()
-            )
+          const result = await handleSerially(
+            {
+              method: request.method,
+              pathname: url.pathname,
+              body: body ? JSON.parse(body) : null
+            },
+            await fileStore()
           )
+          // a pending recording or picture: stream the file (with Range, which audio needs)
+          if (result.file) return sendFile(request, response, result)
+          send(result)
         } catch (error) {
           send({ status: 500, json: { error: error.message } })
         }

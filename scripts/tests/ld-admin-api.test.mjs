@@ -38,10 +38,22 @@ function memoryStore() {
     bele: { word: 'Bele', livingDictionaryId: null }
   }
   const saves = []
+  const files = new Map()
+  let mediaCount = 0
   return {
     data,
     registry,
     saves,
+    files,
+    newMediaId: () => `00000000-0000-4000-8000-${String(++mediaCount).padStart(12, '0')}`,
+    savePendingMedia: async (name, buffer) => {
+      files.set(name, buffer)
+      return `ld-sync/pending-media/${name}`
+    },
+    deletePendingMedia: async (pendingFile) => {
+      files.delete(String(pendingFile).split('/').pop())
+    },
+    pendingMediaPath: (name) => (files.has(name) ? `/tmp/${name}` : null),
     load: async () => clone(data),
     saveEntries: async (entries) => {
       data.entries = clone(entries)
@@ -213,4 +225,99 @@ test('bulk part of speech only for entries with one sense', async () => {
   })
   assert.deepEqual(result.json.changed, [])
   assert.match(result.json.skipped[0].reason, /varios sentidos/)
+})
+
+// ---- media (task L4.5 / L4.6) ----------------------------------------------------------------
+
+const wavBody = (extra = {}) => ({
+  kind: 'audio',
+  fileName: 'toma.wav',
+  dataBase64: Buffer.from('RIFFdata').toString('base64'),
+  speakerId: '024ea143-a828-4ab7-ac73-9bcbb7e15d75',
+  ...extra
+})
+
+test('new audio is kept as a pending file and marks the entry as changed', async () => {
+  const store = memoryStore()
+  const { status, json } = await call(store, 'POST', `/entries/${ELE}/media`, wavBody())
+  assert.equal(status, 201)
+  const [audio] = json.entry.audio
+  assert.equal(audio.storagePath, null)
+  assert.match(audio.pendingFile, /^ld-sync\/pending-media\/0{8}-0000-4000-8000-0{11}1\.wav$/)
+  assert.deepEqual(audio.speakerIds, ['024ea143-a828-4ab7-ac73-9bcbb7e15d75'])
+  assert.equal(json.entry.sync.state, 'local-changes')
+  assert.equal(json.entry.sync.version, 1)
+  assert.equal(store.files.size, 1)
+  assert.equal(store.files.get(`${audio.id}.wav`).toString(), 'RIFFdata')
+})
+
+test('new audio for a sentence; photos only for words', async () => {
+  const store = memoryStore()
+  const created = await call(store, 'POST', '/sentences', { text: 'Akeva na beja' })
+  const sentenceId = created.json.sentence.id
+  const ok = await call(store, 'POST', `/sentences/${sentenceId}/media`, wavBody())
+  assert.equal(ok.status, 201)
+  assert.equal(ok.json.sentence.audio.length, 1)
+  assert.equal(ok.json.sentence.sync.state, 'new')
+  const photo = await call(
+    store,
+    'POST',
+    `/sentences/${sentenceId}/media`,
+    wavBody({ kind: 'photo', fileName: 'a.jpg' })
+  )
+  assert.equal(photo.status, 400)
+})
+
+test('a photo goes to the chosen sense', async () => {
+  const store = memoryStore()
+  const body = wavBody({ kind: 'photo', fileName: 'ele.PNG', senseId: SENSE, photographer: 'Ana' })
+  const { status, json } = await call(store, 'POST', `/entries/${ELE}/media`, body)
+  assert.equal(status, 201)
+  const [photo] = json.entry.senses[0].photos
+  assert.equal(photo.photographer, 'Ana')
+  assert.match(photo.pendingFile, /\.png$/)
+  const noSense = await call(store, 'POST', `/entries/${ELE}/media`, { ...body, senseId: 'nope' })
+  assert.equal(noSense.status, 400)
+})
+
+test('media is refused when the format or size is wrong, and nothing is kept', async () => {
+  const store = memoryStore()
+  const bad = await call(store, 'POST', `/entries/${ELE}/media`, wavBody({ fileName: 'a.exe' }))
+  assert.equal(bad.status, 400)
+  assert.match(bad.json.error, /Formato/)
+  const empty = await call(store, 'POST', `/entries/${ELE}/media`, wavBody({ dataBase64: '' }))
+  assert.equal(empty.status, 400)
+  assert.equal((await call(store, 'POST', `/entries/nope/media`, wavBody())).status, 404)
+  assert.equal(store.files.size, 0)
+  assert.equal(store.data.entries[ELE].audio.length, 0)
+})
+
+test('only pending media can be removed, and its file goes with it', async () => {
+  const store = memoryStore()
+  const added = await call(store, 'POST', `/entries/${ELE}/media`, wavBody())
+  const mediaId = added.json.entry.audio[0].id
+  const removed = await call(store, 'DELETE', `/entries/${ELE}/media/${mediaId}`)
+  assert.equal(removed.status, 200)
+  assert.equal(removed.json.entry.audio.length, 0)
+  assert.equal(store.files.size, 0)
+  assert.equal(removed.json.entry.sync.state, 'synced')
+  assert.equal((await call(store, 'DELETE', `/entries/${ELE}/media/${mediaId}`)).status, 404)
+
+  // a recording that is already in Living Dictionaries is not removed here
+  store.data.entries[ELE].audio = [{ id: 'a1', storagePath: 'benga/audio/a1.wav', speakerIds: [] }]
+  const sent = await call(store, 'DELETE', `/entries/${ELE}/media/a1`)
+  assert.equal(sent.status, 409)
+})
+
+test('pending files are served by exact name only', async () => {
+  const store = memoryStore()
+  const added = await call(store, 'POST', `/entries/${ELE}/media`, wavBody())
+  const name = added.json.entry.audio[0].pendingFile.split('/').pop()
+  const file = await call(store, 'GET', `/pending-media/${name}`)
+  assert.equal(file.status, 200)
+  assert.equal(file.contentType, 'audio/wav')
+  assert.ok(file.file.endsWith(name))
+  assert.equal((await call(store, 'GET', '/pending-media/..%2f..%2f.env')).status, 404)
+  assert.equal((await call(store, 'GET', '/pending-media/../entries.json')).status, 404)
+  assert.equal((await call(store, 'GET', '/pending-media/0.wav')).status, 404)
 })

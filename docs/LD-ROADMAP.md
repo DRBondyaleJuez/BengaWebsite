@@ -283,7 +283,7 @@ Branch: `feat/ld-forms`
 - [x] **L4.4 Relations**
   - **Prompt:** "Task L4.4: card 'Relaciones': search another entry, choose a type with the Spanish explanations from the 'Entradas relacionadas' panel, optional sense on each side, list with remove. Stored in the workspace; sent in L5.3."
   - **Commit:** `feat(admin): add word relations`
-- [ ] **L4.5 Audio card**
+- [x] **L4.5 Audio card**
   - **Prompt:** "Task L4.5: list the entry's recordings (play from Cloudinary if copied, else from the LD media URL), speaker shown; record (reuse /admin/audios recorder) or upload a file; speaker dropdown preselected with the default speaker. New audio is saved locally as 'pendiente de enviar' (sent in L6.2). Same card on the sentence form."
   - **Commit:** `feat(admin): add the audio card to the dictionary forms`
 - [ ] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)

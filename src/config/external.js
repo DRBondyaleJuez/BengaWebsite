@@ -29,6 +29,18 @@ export const LIVING_DICTIONARY_ENTRY = `${LIVING_DICTIONARY_HOME}/entry`
 export const LIVING_DICTIONARY_SEARCH = `${LIVING_DICTIONARY_HOME}/entries`
 
 /**
+ * Public media host of Living Dictionaries: a recording or picture of the dictionary is
+ * `${LD_MEDIA_BASE}/<storagePath>` (admin forms of /admin/living-dictionary only).
+ */
+export const LD_MEDIA_BASE = 'https://media.livingdictionaries.app'
+
+/**
+ * Admin only: local recordings and pictures not sent yet (folder ld-sync/pending-media), served by
+ * the dev server (vite.config.mjs, /__dev/ld/*). Never exists in the published site.
+ */
+export const LD_PENDING_MEDIA_BASE = '/__dev/ld/pending-media'
+
+/**
  * The Salvado y Cos grammar PDF (file in `public/downloads/`).
  * BASE_URL is the folder the site is published in ('/' by default), so the
  * link keeps working if the site is hosted in a sub-folder.

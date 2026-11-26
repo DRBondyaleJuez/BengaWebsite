@@ -82,6 +82,8 @@
 
       <TranslationsCard :sentence="draft" @set="set" />
 
+      <AudioCard :audio="draft.audio || []" :upload="uploadMedia" :remove="removePendingMedia" />
+
       <LinkedWordsCard
         :sense-ids="draft.senseIds || []"
         :sense-words="senseWords"
@@ -120,13 +122,22 @@ import FormCard from './form/FormCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import SearchPicker from './form/SearchPicker.vue'
 import TranslationsCard from './form/TranslationsCard.vue'
+import AudioCard from './form/AudioCard.vue'
 import LinkedWordsCard from './form/LinkedWordsCard.vue'
 import CitationsEditor from './form/CitationsEditor.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import { toast } from '@/components/admin/toast'
-import { getSentence, getSentences, getEntries, createSentence, saveSentence } from './ldApi'
+import {
+  getSentence,
+  getSentences,
+  getEntries,
+  createSentence,
+  saveSentence,
+  addMedia,
+  removeMedia
+} from './ldApi'
 import { plain } from '@/utils/dictionaryFilters'
 
 export default {
@@ -136,6 +147,7 @@ export default {
     SymbolInput,
     SearchPicker,
     TranslationsCard,
+    AudioCard,
     LinkedWordsCard,
     CitationsEditor,
     FormBar,
@@ -236,6 +248,30 @@ export default {
     },
     async sendRecord(draft) {
       return (await saveSentence(draft)).sentence
+    },
+    adoptMedia(fresh) {
+      this.adoptServerFields(fresh, (target, server) => {
+        target.audio = JSON.parse(JSON.stringify(server.audio || []))
+      })
+    },
+    /** @returns {Promise<boolean>} whether the file was saved */
+    async uploadMedia(payload) {
+      try {
+        this.adoptMedia((await addMedia('sentences', this.id, payload)).sentence)
+        toast('Guardado como «pendiente de enviar» (se envía en la fase L6)', { type: 'success' })
+        return true
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+        return false
+      }
+    },
+    async removePendingMedia(mediaId) {
+      if (!window.confirm('¿Quitar este archivo? Aún no se había enviado al diccionario.')) return
+      try {
+        this.adoptMedia((await removeMedia('sentences', this.id, mediaId)).sentence)
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+      }
     },
     async create() {
       this.saving = true

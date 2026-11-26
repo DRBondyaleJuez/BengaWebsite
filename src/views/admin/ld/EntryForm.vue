@@ -88,6 +88,13 @@
         <button type="button" class="ld-btn" @click="addSense">+ Añadir sentido</button>
       </p>
 
+      <AudioCard
+        :audio="draft.audio || []"
+        :upload="uploadMedia"
+        :remove="removePendingMedia"
+        :busy="linking"
+      />
+
       <ExamplesCard
         :senses="draft.senses"
         :sentences="sentences"
@@ -126,6 +133,7 @@
 import formMixin from './form/formMixin'
 import WordCard from './form/WordCard.vue'
 import SenseCard from './form/SenseCard.vue'
+import AudioCard from './form/AudioCard.vue'
 import ExamplesCard from './form/ExamplesCard.vue'
 import MoreFieldsCard from './form/MoreFieldsCard.vue'
 import RelationsCard from './form/RelationsCard.vue'
@@ -140,6 +148,8 @@ import {
   getEntries,
   createEntry,
   saveEntry,
+  addMedia,
+  removeMedia,
   getSentences,
   saveSentence,
   createSentence
@@ -153,6 +163,7 @@ export default {
   components: {
     WordCard,
     SenseCard,
+    AudioCard,
     ExamplesCard,
     MoreFieldsCard,
     RelationsCard,
@@ -311,6 +322,35 @@ export default {
         await createSentence({ text, translations: es ? { es } : null, senseIds: [senseId] })
         toast('Oración creada y enlazada', { type: 'success' })
       })
+    },
+    // ---- audio (and pictures): the server keeps the files and updates the record ---------------
+    adoptMedia(fresh) {
+      this.adoptServerFields(fresh, (target, server) => {
+        target.audio = clone(server.audio || [])
+        for (const sense of target.senses) {
+          const match = server.senses.find((item) => item.id === sense.id)
+          if (match) sense.photos = clone(match.photos || [])
+        }
+      })
+    },
+    /** @returns {Promise<boolean>} whether the file was saved */
+    async uploadMedia(payload) {
+      try {
+        this.adoptMedia((await addMedia('entries', this.id, payload)).entry)
+        toast('Guardado como «pendiente de enviar» (se envía en la fase L6)', { type: 'success' })
+        return true
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+        return false
+      }
+    },
+    async removePendingMedia(mediaId) {
+      if (!window.confirm('¿Quitar este archivo? Aún no se había enviado al diccionario.')) return
+      try {
+        this.adoptMedia((await removeMedia('entries', this.id, mediaId)).entry)
+      } catch (error) {
+        toast(error.message, { type: 'error', timeout: 8000 })
+      }
     },
     async create() {
       this.saving = true
