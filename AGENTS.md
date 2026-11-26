@@ -306,7 +306,7 @@ benga-grammar-website/
 - **Doubts and decisions:** `docs/REVIEW-LOG.md` (see "Review Log" above).
 - **How to work with the AI:** `docs/WORKING-WITH-AI.md`.
 - **Commits:** Conventional Commits, `type(area): summary` (`feat`, `fix`, `refactor`, `docs`, `chore`, `style`, `build`, `test`), one task or subtask per commit, on a branch per phase.
-- **Versions:** `package.json` is the source of truth for dependencies. ESLint 10 and vue-router 5 since R-018; Vite 8 is tracked in REVIEW-LOG R-030.
+- **Versions:** `package.json` is the source of truth for dependencies. ESLint 10 and vue-router 5 since R-018; Vite 8 since R-030. `package.json` has `"type": "module"`: every `.js` file is an ES module.
 
 ### Planned pieces from the original plan (not built yet)
 Kept so the original intentions are not lost; the roadmap phase that covers each is in brackets.

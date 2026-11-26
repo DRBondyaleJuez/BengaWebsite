@@ -1,6 +1,7 @@
 {
   "name": "benga-grammar-website",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "serve": "vite",
@@ -37,7 +38,7 @@
     "pdfjs-dist": "^6.5.438",
     "prettier": "3.9.10",
     "sass": "^1.69.5",
-    "vite": "^7.3.8",
+    "vite": "^8.3.8",
     "vue-eslint-parser": "^10.4.2"
   },
   "browserslist": [
