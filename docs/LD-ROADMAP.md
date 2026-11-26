@@ -280,7 +280,7 @@ Branch: `feat/ld-forms`
 - [x] **L4.3 'Más campos' card**
   - **Prompt:** "Task L4.3: collapsed card with notes (markdown), morphology, interlinearization, scientific names, tone class, dialects, tags, citations (source + page, default the book). Only filled fields show when collapsed."
   - **Commit:** `feat(admin): add optional dictionary fields`
-- [ ] **L4.4 Relations**
+- [x] **L4.4 Relations**
   - **Prompt:** "Task L4.4: card 'Relaciones': search another entry, choose a type with the Spanish explanations from the 'Entradas relacionadas' panel, optional sense on each side, list with remove. Stored in the workspace; sent in L5.3."
   - **Commit:** `feat(admin): add word relations`
 - [ ] **L4.5 Audio card**

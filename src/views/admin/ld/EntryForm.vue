@@ -101,6 +101,8 @@
 
       <MoreFieldsCard :entry="draft" :tag-suggestions="allTags" @set="set" />
 
+      <RelationsCard :entry="draft" :entries="entries" @set="set" />
+
       <FormBar
         :dirty="dirty"
         :saving="saving"
@@ -126,6 +128,7 @@ import WordCard from './form/WordCard.vue'
 import SenseCard from './form/SenseCard.vue'
 import ExamplesCard from './form/ExamplesCard.vue'
 import MoreFieldsCard from './form/MoreFieldsCard.vue'
+import RelationsCard from './form/RelationsCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
@@ -152,6 +155,7 @@ export default {
     SenseCard,
     ExamplesCard,
     MoreFieldsCard,
+    RelationsCard,
     SymbolInput,
     FormBar,
     FormAlerts,
