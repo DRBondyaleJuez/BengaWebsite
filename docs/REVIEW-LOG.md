@@ -56,6 +56,11 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-045](#r-045) | 🟢 | L0.1 | How to mark book words sent to the dictionary | L7.4 |
 | [R-046](#r-046) | ⚪ | L0.1 | Phonetic transcription conventions (/ /, [ ], tone) | L8.1 |
 | [R-047](#r-047) | 🟢 | L0.1 | Browser WebM recordings and the dictionary | L6.2 |
+| [R-048](#r-048) | 🔴 | L5.3 | Raise the 10-records-per-push limit for the big sync | big sync |
+| [R-049](#r-049) | 🔴 | L5.3 | 13 entries still have the old noun-class wording in LD | big sync |
+| [R-050](#r-050) | 🔴 | L5.3 | Hanga: the plural was renamed too | big sync |
+| [R-051](#r-051) | 🔴 | L5.3 | What the API cannot remove (tags, dialects, citations, sentence links) | big sync |
+| [R-052](#r-052) | 🔴 | L5.3 | LD's import-audit script is not available to us | big sync |
 
 ---
 
@@ -560,6 +565,61 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Doubt:** If WebM is refused or doesn't play in every browser, recordings need converting first.
 - **Suggestion:** Test with one recording on a test entry; if needed convert to WAV in the browser (no extra software) before sending.
 - **Resolution:** 2026-11-26 · Existing dictionary audio is WAV, so browser recordings (WebM) are converted to WAV in the browser before sending (task L6.2).
+
+---
+
+### R-048
+**Raise the 10-records-per-push limit for the big sync**
+- **Status:** 🔴 Open
+- **Found in:** L5.3
+- **Where:** `src/config/ld.js` → `LD_LIMITS.recordsPerPush`
+- **Doubt:** You asked to send at most 10 words while the bridge is tried out, so every «Enviar cambios» stops at 10 records (the rest wait for the next run). For the big sync that means many runs.
+- **Suggestion:** When translations, OCR and word doubts are ready, raise it to 200 (one batch; the client still pauses between requests) and do one preview first.
+- **Resolution:**
+
+---
+
+### R-049
+**13 entries still have the old noun-class wording in LD**
+- **Status:** 🔴 Open
+- **Found in:** L5.3 (live test, 2026-11-27)
+- **Where:** `/admin/living-dictionary/sincronizacion` → «Ver qué se enviaría»: Akeva, Mbolo, Mbute, Monda, Mūana, Na, Ndabo, Ndiba, Ndoba, Paia, sânâ, Tombo (2 entries)
+- **Doubt:** The live test sent 10 entries (Beja, Dina, Dyango, Eko, Ele, Enâ, Epape, Hanga, Ijoka, Majoka), all verified by reading them back. The other 13 still have the reduced noun class only locally. Akeva, Tombo and sânâ also have open questions (R-040).
+- **Suggestion:** Send them with the big sync, after R-040 is decided.
+- **Resolution:**
+
+---
+
+### R-050
+**Hanga: the plural was renamed too**
+- **Status:** 🔴 Open
+- **Found in:** L5.3 (live test)
+- **Where:** entry Hanga (flag) in LD: `plural_form` `Hāngā → Hanga`, same as the headword (R-037)
+- **Doubt:** Following R-037 ("the flag is Hanga") the plural form was renamed together with the headword. Class 7 words keep the same form in the plural, so this looks right, but it was not asked explicitly.
+- **Suggestion:** Confirm, or say the plural form to use; it is a one-field change in the form.
+- **Resolution:**
+
+---
+
+### R-051
+**What the API cannot remove (tags, dialects, citations, sentence links)**
+- **Status:** 🔴 Open
+- **Found in:** L5.3
+- **Where:** `scripts/lib/ld/push.mjs` (`ADDITIVE` fields)
+- **Doubt:** A Living Dictionaries PATCH only adds tags, dialects, citations and example-sentence links; it never removes them. If you remove one in the admin, the push shows a warning («solo se puede en la web de LD») and the entry stays "con cambios" until it is removed there by hand. There are DELETE routes for tags and dialects (by their LD id) that the bridge does not use yet.
+- **Suggestion:** Remove them on the LD website for now; if it happens often, add the tag/dialect unlink routes (needs their ids from the snapshot).
+- **Resolution:**
+
+---
+
+### R-052
+**LD's import-audit script is not available to us**
+- **Status:** 🔴 Open
+- **Found in:** L5.3 (reading LD's importing guide)
+- **Where:** https://livingdictionaries.app/api/v1/guides/importing (steps 1.3 and 2.1)
+- **Doubt:** The guide asks big imports to run `scripts/import-audit/audit.py` from LD's own tooling before the first write. That tool is not in the public API. Our own checks (`npm run validate`, the push preview, per-item results, read-back verification) cover the same points for small batches.
+- **Suggestion:** Before the big sync, ask the LD team through their feedback form whether the audit is expected for an editor pushing edits (not a file import), and where to get it.
+- **Resolution:**
 
 ---
 
