@@ -61,6 +61,8 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-050](#r-050) | 🔴 | L5.3 | Hanga: the plural was renamed too | big sync |
 | [R-051](#r-051) | 🔴 | L5.3 | What the API cannot remove (tags, dialects, citations, sentence links) | big sync |
 | [R-052](#r-052) | 🔴 | L5.3 | LD's import-audit script is not available to us | big sync |
+| [R-053](#r-053) | 🔴 | L4.8 | Is `ê` (Nyênjê) a Benga letter? Orthography warnings | big sync |
+| [R-054](#r-054) | 🔴 | L4.4 | Relations: is the inverse created by LD? | big sync |
 
 ---
 
@@ -619,6 +621,28 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** https://livingdictionaries.app/api/v1/guides/importing (steps 1.3 and 2.1)
 - **Doubt:** The guide asks big imports to run `scripts/import-audit/audit.py` from LD's own tooling before the first write. That tool is not in the public API. Our own checks (`npm run validate`, the push preview, per-item results, read-back verification) cover the same points for small batches.
 - **Suggestion:** Before the big sync, ask the LD team through their feedback form whether the audit is expected for an editor pushing edits (not a file import), and where to get it.
+- **Resolution:**
+
+---
+
+### R-053
+**Is `ê` (Nyênjê) a Benga letter? Orthography warnings in the forms**
+- **Status:** 🔴 Open
+- **Found in:** L4.8
+- **Where:** `src/utils/dictionaryChecks.js` · AGENTS.md → Benga Orthography Rules · book PDF p. 14 (`Nyênjê, cangrejo`)
+- **Doubt:** The forms warn about `c q r x z ñ` and `á é í ó ú` (never correct them). The book prints `ê` in words like *Nyênjê*, but the vowel inventory in AGENTS.md is `a, â, e, ē, i, o, u, ū` and does not list `ê`. So `ê` gets no warning. Several existing dictionary words will show warnings in their forms.
+- **Suggestion:** Say whether `ê` is the book's way of writing `ē` (then warn and suggest `ē`) or a separate letter (then add it to the inventory).
+- **Resolution:**
+
+---
+
+### R-054
+**Relations: is the inverse created by LD?**
+- **Status:** 🔴 Open
+- **Found in:** L4.4 / L5.3
+- **Where:** card «Relaciones» of the word form · `scripts/lib/ld/push.mjs` (relations step)
+- **Doubt:** A relation is stored once, on the word where you add it (e.g. Ele → *hiperónimo* → X). LD's API shows relations with a direction ("forward" / "inverse"), so it probably shows the inverse on the other word by itself, but no relation has been sent yet to confirm it.
+- **Suggestion:** In the big sync, send one relation first and look at both words on the LD website.
 - **Resolution:**
 
 ---
