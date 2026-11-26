@@ -300,10 +300,6 @@
       </div>
     </div>
 
-    <AdminDrawer v-model:open="detailOpen" :title="detail ? detail.lexeme : ''">
-      <EntryDetail v-if="detail" :entry="detail" :sentences="sentencesById" />
-    </AdminDrawer>
-
     <AdminModal v-model:open="bulkOpen" :title="bulk ? bulk.label : ''">
       <form v-if="bulk" id="ld-bulk" class="ld-entries__form" @submit.prevent="runBulk">
         <p>
@@ -355,49 +351,6 @@
         </button>
       </template>
     </AdminModal>
-
-    <AdminModal v-model:open="newOpen" title="Añadir palabra">
-      <form id="ld-new-entry" class="ld-entries__form" @submit.prevent="createNew">
-        <label>
-          Palabra en benga
-          <input ref="newWord" v-model="newEntry.lexeme" required autocomplete="off" />
-        </label>
-        <p class="ld-entries__letters">
-          Letras:
-          <button
-            v-for="letter in ['â', 'ē', 'ū']"
-            :key="letter"
-            type="button"
-            @click="newEntry.lexeme += letter"
-          >
-            {{ letter }}
-          </button>
-        </p>
-        <div v-if="similar.length" class="ld-entries__warning" role="status">
-          <strong>Ya existe:</strong>
-          <span v-for="row in similar" :key="row.id">
-            {{ row.lexeme }}<sup v-if="row.homograph">{{ row.homograph }}</sup> ({{
-              row.es || 'sin traducción'
-            }})
-          </span>
-          <span>Si es otra palabra que se escribe igual, pon un número de homógrafo.</span>
-        </div>
-        <label>
-          Homógrafo <small>(solo si ya existe otra palabra escrita igual: 1, 2…)</small>
-          <input v-model="newEntry.homograph" inputmode="numeric" />
-        </label>
-        <label>
-          Traducción al español <small>(opcional)</small>
-          <input v-model="newEntry.es" />
-        </label>
-      </form>
-      <template #footer>
-        <button type="button" class="ld-entries__link" @click="newOpen = false">Cancelar</button>
-        <button type="submit" form="ld-new-entry" class="ld-entries__add" :disabled="saving">
-          Guardar en la copia local
-        </button>
-      </template>
-    </AdminModal>
   </section>
 </template>
 
@@ -406,7 +359,7 @@
  * Entries table of /admin/living-dictionary (task L3.3): search (accents ignored, typo
  * tolerance), filters in a side panel, sorting, table or list view, column chooser, pages of 50,
  * filters kept in the URL (the Panel links here with them). Logic: src/utils/dictionaryFilters.js.
- * Clicking a row shows its details; the full form comes in phase L4.
+ * Clicking a row opens its form (EntryForm.vue, `…/entrada/:id`); «Volver» keeps the filters.
  */
 import DataTable from '@/components/admin/DataTable.vue'
 import FilterPanel from '@/components/admin/FilterPanel.vue'
@@ -416,15 +369,12 @@ import TreeSelect from '@/components/admin/TreeSelect.vue'
 import InfoTip from '@/components/admin/InfoTip.vue'
 import StatusBadge from '@/components/admin/StatusBadge.vue'
 import EmptyState from '@/components/admin/EmptyState.vue'
-import AdminDrawer from '@/components/admin/AdminDrawer.vue'
 import AdminModal from '@/components/admin/AdminModal.vue'
 import { toast } from '@/components/admin/toast'
-import EntryDetail from './EntryDetail.vue'
 import GlossCell from './GlossCell.vue'
-import { getEntries, getSentences, createEntry, saveEntry, bulkEntries } from './ldApi'
+import { getEntries, bulkEntries } from './ldApi'
 import { POS_OPTIONS, DOMAIN_OPTIONS, REVIEW_CATEGORIES, posLabel, domainLabel } from './vocab'
 import {
-  plain,
   entryRow,
   filtersFromQuery,
   queryFromFilters,
@@ -467,16 +417,13 @@ export default {
     InfoTip,
     StatusBadge,
     EmptyState,
-    AdminDrawer,
     AdminModal,
-    EntryDetail,
     GlossCell
   },
   data() {
     const settings = readSettings()
     return {
       entries: [],
-      sentences: [],
       loading: true,
       error: '',
       view: settings.view || 'tabla',
@@ -513,10 +460,6 @@ export default {
       ],
       reviewCategories: REVIEW_CATEGORIES,
       domainOptions: DOMAIN_OPTIONS,
-      detail: null,
-      detailOpen: false,
-      newOpen: false,
-      newEntry: { lexeme: '', homograph: '', es: '' },
       selected: [],
       bulk: null,
       bulkOpen: false,
@@ -573,21 +516,19 @@ export default {
         group.options.push(option)
       }
       return groups
-    },
-    sentencesById() {
-      return Object.fromEntries(this.sentences.map((sentence) => [sentence.id, sentence]))
-    },
-    similar() {
-      const word = plain(this.newEntry.lexeme)
-      if (!word) return []
-      return this.rows.filter((row) => plain(row.lexeme) === word)
     }
   },
   watch: {
     '$route.query.nueva': {
       immediate: true,
       handler(value) {
-        if (value) this.openNew()
+        // the Panel links here with ?nueva=1 («Añadir palabra»): go straight to the new-word form
+        if (value) {
+          this.$router.replace({
+            path: '/admin/living-dictionary/entrada/nueva',
+            query: { volver: '/admin/living-dictionary/entradas' }
+          })
+        }
       }
     }
   },
@@ -600,7 +541,7 @@ export default {
     async load() {
       this.loading = true
       try {
-        ;[this.entries, this.sentences] = await Promise.all([getEntries(), getSentences()])
+        this.entries = await getEntries()
         this.error = ''
       } catch (error) {
         this.error = `No se pudo leer el diccionario local: ${error.message}`
@@ -652,9 +593,12 @@ export default {
         : [...this.hiddenColumns, key]
       this.saveSettings()
     },
+    /** Opens the form of an entry; «Volver» returns to this list with the same filters. */
     openDetail(row) {
-      this.detail = this.entries.find((entry) => entry.id === row.id) || null
-      this.detailOpen = Boolean(this.detail)
+      this.$router.push({
+        path: `/admin/living-dictionary/entrada/${row.id}`,
+        query: { volver: this.$route.fullPath }
+      })
     },
     openBulk(action) {
       this.bulk = action
@@ -723,35 +667,10 @@ export default {
       URL.revokeObjectURL(link.href)
     },
     openNew() {
-      this.newEntry = { lexeme: '', homograph: '', es: '' }
-      this.newOpen = true
-      this.$nextTick(() => this.$refs.newWord?.focus())
-    },
-    async createNew() {
-      this.saving = true
-      try {
-        const { lexeme, homograph, es } = this.newEntry
-        const { entry } = await createEntry({ lexeme, homograph: homograph.trim() || null })
-        if (es.trim()) {
-          // the first sense gets the Spanish gloss right away
-          entry.senses[0].glosses = { es: es.trim() }
-          await saveEntry(entry)
-        }
-        toast(`«${lexeme}» guardada en la copia local (aún no enviada al diccionario)`, {
-          type: 'success'
-        })
-        this.newOpen = false
-        if (this.$route.query.nueva) {
-          const query = { ...this.$route.query }
-          delete query.nueva
-          this.$router.replace({ query })
-        }
-        await this.load()
-      } catch (error) {
-        toast(error.message, { type: 'error', timeout: 8000 })
-      } finally {
-        this.saving = false
-      }
+      this.$router.push({
+        path: '/admin/living-dictionary/entrada/nueva',
+        query: { volver: this.$route.fullPath }
+      })
     }
   }
 }

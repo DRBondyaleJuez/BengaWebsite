@@ -1,0 +1,100 @@
+// Shared look of the fields and buttons of the dictionary forms (.ld-grid, .ld-field, .ld-btn,
+// .ld-warning, .ld-benga). Included by FormCard and the form pages:
+//   .form-card { @include ld-fields; }
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+@mixin ld-fields {
+  :deep(.ld-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
+
+  :deep(.ld-field) {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+    min-width: 0;
+    font-weight: $font-weight-semibold;
+
+    small {
+      font-weight: normal;
+      color: $color-text-muted;
+    }
+
+    input:not([type='checkbox']):not([type='radio']),
+    select,
+    textarea {
+      width: 100%;
+      padding: $spacing-sm;
+      border: 1px solid #c9c2b5;
+      border-radius: $border-radius-sm;
+      font: inherit;
+      font-weight: normal;
+
+      &:focus-visible {
+        @include focus-ring;
+      }
+    }
+  }
+
+  :deep(.ld-help) {
+    margin: 0 0 $spacing-sm;
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+  }
+
+  :deep(.ld-btn) {
+    padding: $spacing-xs $spacing-md;
+    background: $color-surface;
+    border: 1px solid $color-primary;
+    border-radius: $border-radius-sm;
+    color: $color-primary-dark;
+    font: inherit;
+    font-size: $font-size-sm;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      background: $color-primary;
+      color: $color-text-inverse;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
+  }
+
+  :deep(.ld-btn--danger) {
+    border-color: $color-error;
+    color: $color-error;
+
+    &:hover:not(:disabled) {
+      background: $color-error;
+      color: $color-text-inverse;
+    }
+  }
+
+  :deep(.ld-warning) {
+    margin: 0 0 $spacing-md;
+    padding: $spacing-sm $spacing-md;
+    background: rgba($color-warning, 0.15);
+    border-left: 4px solid $color-warning;
+    font-size: $font-size-sm;
+
+    ul {
+      margin: 0;
+      padding-left: $spacing-lg;
+    }
+  }
+
+  :deep(.ld-benga) {
+    @include benga-word-style;
+  }
+}
