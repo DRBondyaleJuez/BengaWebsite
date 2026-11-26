@@ -145,6 +145,7 @@ test('error categories', () => {
   assert.equal(errorCategory(401), 'auth')
   assert.equal(errorCategory(404), 'not_found')
   assert.equal(errorCategory(400, 'source slug not found'), 'source_missing')
+  assert.equal(errorCategory(400, "invalid source type 'book'"), 'validation')
   assert.equal(errorCategory(413), 'media_too_big')
   assert.equal(errorCategory(503), 'server')
   assert.equal(errorCategory(null), 'network')

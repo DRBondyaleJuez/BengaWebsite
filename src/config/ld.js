@@ -27,7 +27,7 @@ export const LD_BOOK_SOURCE = {
   year: '1891',
   citation:
     'Salvadó y Cos, Francisco (1891). Colección de apuntes preliminares sobre la lengua benga ó bea: introducción á una gramática de este idioma que se habla en la isla de Corisco, pueblos de su bahía é islas adyacentes. Madrid: Imprenta de A. Pérez Dubrull.',
-  type: 'book',
+  type: 'grammar',
   license: 'Public domain'
 }
 

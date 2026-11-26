@@ -1,7 +1,7 @@
 {
   "_about": "Local copy of the Benga Living Dictionary entries, edited at /admin/living-dictionary and synced with npm run ld:pull / ld:push. Never correct Benga text by rule. Guide: docs/CONTENT-GUIDE.md section 8.",
   "kind": "entries",
-  "pulledAt": "2026-11-25T21:03:23.067Z",
+  "pulledAt": "2026-11-26T02:29:49.636Z",
   "entries": {
     "4bb65904-2bfe-43b8-9f14-bf0980a78089": {
       "id": "4bb65904-2bfe-43b8-9f14-bf0980a78089",

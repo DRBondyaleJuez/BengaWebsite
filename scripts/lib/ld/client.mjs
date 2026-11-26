@@ -49,8 +49,9 @@ export function errorCategory(status, message = '') {
   if (status === 429) return 'rate_limited'
   if (status >= 500) return 'server'
   if (status === 400 || status === 422) {
-    if (text.includes('speaker')) return 'speaker_missing'
-    if (text.includes('source') || text.includes('slug')) return 'source_missing'
+    const missing = /unknown|not found|does not exist|no such/.test(text)
+    if (missing && text.includes('speaker')) return 'speaker_missing'
+    if (missing && (text.includes('source') || text.includes('slug'))) return 'source_missing'
     if (text.includes('too large') || text.includes('size')) return 'media_too_big'
     return 'validation'
   }
