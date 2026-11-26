@@ -100,6 +100,14 @@
         <CitationsEditor :citations="draft.citations || []" @update="set('citations', $event)" />
       </FormCard>
 
+      <ReviewCard
+        :record="draft"
+        kind="oración"
+        @set="set"
+        @accept="onAcceptSuggestion"
+        @reject="onRejectSuggestion"
+      />
+
       <FormBar
         :dirty="dirty"
         :saving="saving"
@@ -123,6 +131,7 @@ import SymbolInput from './form/SymbolInput.vue'
 import SearchPicker from './form/SearchPicker.vue'
 import TranslationsCard from './form/TranslationsCard.vue'
 import AudioCard from './form/AudioCard.vue'
+import ReviewCard from './form/ReviewCard.vue'
 import LinkedWordsCard from './form/LinkedWordsCard.vue'
 import CitationsEditor from './form/CitationsEditor.vue'
 import FormBar from './form/FormBar.vue'
@@ -148,6 +157,7 @@ export default {
     SearchPicker,
     TranslationsCard,
     AudioCard,
+    ReviewCard,
     LinkedWordsCard,
     CitationsEditor,
     FormBar,

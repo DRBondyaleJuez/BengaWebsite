@@ -288,7 +288,7 @@ Branch: `feat/ld-forms`
   - **Commit:** `feat(admin): add the audio card to the dictionary forms`
 - [x] **L4.6 Image card** (collapsed, optional, per sense, ≤ 10 MB, sent in L5.3)
   - **Commit:** `feat(admin): add optional images to senses`
-- [ ] **L4.7 Review and suggestions card**
+- [x] **L4.7 Review and suggestions card**
   - **Prompt:** "Task L4.7: card 'Revisión': flag 'Necesita revisión' with category and note (who and when). Suggestions from Claude listed with field, proposed value, reason: buttons Aceptar / Editar y aceptar / Rechazar. Accepting writes the field and keeps a small history line. Filter in the tables: 'Sugerencias pendientes'."
   - **Commit:** `feat(admin): add review flags and suggestions to the forms`
 - [ ] **L4.8 Form checks and 'En la web' card**

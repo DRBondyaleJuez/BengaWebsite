@@ -11,6 +11,7 @@
  */
 import { toast } from '@/components/admin/toast'
 import { setField, canonicalJson } from '@/utils/dictionaryPaths'
+import { acceptSuggestion, rejectSuggestion } from '@/utils/dictionarySuggestions'
 
 export const LEAVE_QUESTION = 'Hay cambios sin guardar en esta ficha. ¿Salir y perderlos?'
 const clone = (value) => JSON.parse(JSON.stringify(value))
@@ -76,6 +77,24 @@ export default {
     },
     set(path, value) {
       setField(this.draft, this.saved, path, value)
+    },
+    /** Suggestions: accepting changes the draft only («Guardar» saves it); both leave a history line. */
+    onAcceptSuggestion(id, value) {
+      try {
+        acceptSuggestion(this.draft, this.saved, id, value)
+        toast('Sugerencia aplicada a la ficha: pulsa «Guardar» para conservarla', {
+          type: 'success'
+        })
+      } catch (error) {
+        toast(error.message, { type: 'error' })
+      }
+    },
+    onRejectSuggestion(id) {
+      try {
+        rejectSuggestion(this.draft, id)
+      } catch (error) {
+        toast(error.message, { type: 'error' })
+      }
     },
     async save() {
       this.saving = true

@@ -118,6 +118,14 @@
         :busy="linking"
       />
 
+      <ReviewCard
+        :record="draft"
+        kind="palabra"
+        @set="set"
+        @accept="onAcceptSuggestion"
+        @reject="onRejectSuggestion"
+      />
+
       <FormBar
         :dirty="dirty"
         :saving="saving"
@@ -146,6 +154,7 @@ import ExamplesCard from './form/ExamplesCard.vue'
 import MoreFieldsCard from './form/MoreFieldsCard.vue'
 import RelationsCard from './form/RelationsCard.vue'
 import ImagesCard from './form/ImagesCard.vue'
+import ReviewCard from './form/ReviewCard.vue'
 import SymbolInput from './form/SymbolInput.vue'
 import FormBar from './form/FormBar.vue'
 import FormAlerts from './form/FormAlerts.vue'
@@ -177,6 +186,7 @@ export default {
     MoreFieldsCard,
     RelationsCard,
     ImagesCard,
+    ReviewCard,
     SymbolInput,
     FormBar,
     FormAlerts,

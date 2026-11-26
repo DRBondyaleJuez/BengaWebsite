@@ -185,7 +185,8 @@ export default {
           title: 'Traducción automática',
           help: 'Traducciones hechas por Claude u otra máquina que una persona aún no revisó.'
         },
-        { key: 'revision', title: 'Necesita revisión' }
+        { key: 'revision', title: 'Necesita revisión' },
+        { key: 'sugerencias', title: 'Sugerencias pendientes' }
       ],
       yesNo: [
         { value: '', label: 'Todas' },
@@ -235,7 +236,7 @@ export default {
       return (
         f.falta.length +
         f.estado.length +
-        ['audio', 'palabra', 'maquina', 'revision'].filter((key) => f[key]).length
+        ['audio', 'palabra', 'maquina', 'revision', 'sugerencias'].filter((key) => f[key]).length
       )
     }
   },

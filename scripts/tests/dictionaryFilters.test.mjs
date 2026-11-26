@@ -154,6 +154,7 @@ test('sentence rows and filters', async () => {
         translationStatus: { en: 'machine' },
         senseIds: ['Ele-1'],
         audio: [{ id: 'a' }],
+        suggestions: [{ id: 'g', field: 'translations.fr', value: 'x' }],
         sync: { state: 'synced' }
       },
       words
@@ -172,6 +173,8 @@ test('sentence rows and filters', async () => {
   assert.deepEqual(pick({ maquina: 'si' }), ['s1'])
   assert.deepEqual(pick({ palabra: 'no' }), ['s2'])
   assert.deepEqual(pick({ audio: 'si' }), ['s1'])
+  assert.deepEqual(pick({ sugerencias: 'si' }), ['s1'])
+  assert.deepEqual(pick({ sugerencias: 'no' }), ['s2'])
   assert.deepEqual(pick({ q: 'arbol pueblo' }), ['s1'])
   assert.deepEqual(pick({ estado: 'new' }), ['s2'])
   assert.deepEqual(
