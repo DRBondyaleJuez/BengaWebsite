@@ -38,24 +38,24 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 | [R-027](#r-027) | 🟢 | 3.4 | Class 2 page shows «Conceptos Clave» twice | done |
 | [R-028](#r-028) | ⚪ | 3.7 | Alphabet page and chapter-3 pages are not section files yet | done |
 | [R-029](#r-029) | 🟢 | 3.5 | Chapter-3 introduction: `ña` uses ñ, and small Spanish typos | done |
-| [R-030](#r-030) | 🔴 | R-018 | Vite 8 is available (Vite 7 today) | Phase 9 |
-| [R-031](#r-031) | 🔴 | review fixes | On phones some pages are wider than the screen (pattern box) | any time |
-| [R-032](#r-032) | 🔴 | 4.1 | Chapter-1 index: long vowels written «á, é y ü» | any time |
-| [R-033](#r-033) | 🔴 | 4.1 | Chapter-1 index: outdated or odd wording | any time |
-| [R-034](#r-034) | 🔴 | 4.1 | Numerals and comparatives: Benga words with Spanish accents / OCR errors | 6.0a |
+| [R-030](#r-030) | 🟢 | R-018 | Vite 8 is available (Vite 7 today) | Phase 9 |
+| [R-031](#r-031) | 🟢 | review fixes | On phones some pages are wider than the screen (pattern box) | any time |
+| [R-032](#r-032) | 🟢 | 4.1 | Chapter-1 index: long vowels written «á, é y ü» | any time |
+| [R-033](#r-033) | 🟢 | 4.1 | Chapter-1 index: outdated or odd wording | any time |
+| [R-034](#r-034) | 🟡 | 4.1 | Numerals and comparatives: Benga words with Spanish accents / OCR errors | 6.0a |
 | [R-035](#r-035) | 🔴 | 4.4 | English and French translations are an AI draft | review |
-| [R-036](#r-036) | 🔴 | L0.1 | Living Dictionary is private: site links do not open for visitors | L9.4 |
-| [R-037](#r-037) | 🔴 | L0.1 | Book lexicon vs Living Dictionary: link and compare, never overwrite | L1.3 |
-| [R-038](#r-038) | 🔴 | L0.1 | Noun class written in many formats in the dictionary | L7.8 |
-| [R-039](#r-039) | 🔴 | L0.1 | Speakers: duplicate «Utati Bondjale/Bondyale Oko» and «test» | L0.4 |
-| [R-040](#r-040) | 🔴 | L0.1 | Duplicated or misplaced senses in current entries (Tombo, Sânâ…) | L7.8 |
-| [R-041](#r-041) | 🔴 | L0.1 | Send Claude review flags to the LD review queue? | L4.7 |
-| [R-042](#r-042) | 🔴 | L0.1 | Which recording plays when a word has several | L6.1 |
-| [R-043](#r-043) | 🔴 | L0.1 | Cloudinary file exists: keep or replace with the dictionary recording | L6.1 |
-| [R-044](#r-044) | 🔴 | L0.1 | Sync logs in git or local only | L5.4 |
-| [R-045](#r-045) | 🔴 | L0.1 | How to mark book words sent to the dictionary | L7.4 |
-| [R-046](#r-046) | 🔴 | L0.1 | Phonetic transcription conventions (/ /, [ ], tone) | L8.1 |
-| [R-047](#r-047) | 🔴 | L0.1 | Browser WebM recordings and the dictionary | L6.2 |
+| [R-036](#r-036) | 🟢 | L0.1 | Living Dictionary is private: site links do not open for visitors | L9.4 |
+| [R-037](#r-037) | 🟡 | L0.1 | Book lexicon vs Living Dictionary: link and compare, never overwrite | L1.3 |
+| [R-038](#r-038) | 🟡 | L0.1 | Noun class written in many formats in the dictionary | L7.8 |
+| [R-039](#r-039) | 🟢 | L0.1 | Speakers: duplicate «Utati Bondjale/Bondyale Oko» and «test» | L0.4 |
+| [R-040](#r-040) | 🟡 | L0.1 | Duplicated or misplaced senses in current entries (Tombo, Sânâ…) | L7.8 |
+| [R-041](#r-041) | 🟢 | L0.1 | Send Claude review flags to the LD review queue? | L4.7 |
+| [R-042](#r-042) | 🟡 | L0.1 | Which recording plays when a word has several | L6.1 |
+| [R-043](#r-043) | 🟢 | L0.1 | Cloudinary file exists: keep or replace with the dictionary recording | L6.1 |
+| [R-044](#r-044) | 🟢 | L0.1 | Sync logs in git or local only | L5.4 |
+| [R-045](#r-045) | 🟢 | L0.1 | How to mark book words sent to the dictionary | L7.4 |
+| [R-046](#r-046) | ⚪ | L0.1 | Phonetic transcription conventions (/ /, [ ], tone) | L8.1 |
+| [R-047](#r-047) | 🟢 | L0.1 | Browser WebM recordings and the dictionary | L6.2 |
 
 ---
 
@@ -369,54 +369,54 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 
 ### R-030
 **Vite 8 is available (Vite 7 today)**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** R-018 (upgrading ESLint and vue-router)
 - **Where:** `package.json` (`vite` ^7.3.8, `@vitejs/plugin-vue` 6) · `vite.config.mjs`
 - **Doubt:** Vite 8 (new bundler, Rolldown) is the current major. R-018 only covered ESLint, vue-router and vue-i18n, so I didn't change the build tool in the same step.
 - **Suggestion:** Upgrade in Phase 9 (or any time) on its own branch: `npm install -D vite@8`, then build, compare every page and check `npm run preview`.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Upgraded to Vite 8.3.8 (@vitejs/plugin-vue 6 already supports it); package.json now has "type": "module", which also removed the config-loader and Node module-type warnings. Build, tests, lint, validate and dev server checked. · commit `build: upgrade to vite 8`
 
 ### R-031
 **On phones some pages are wider than the screen (pattern box)**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** final check of the review-log fixes (420 px wide); already like this before (same in the baseline taken at the start)
 - **Where:** `/capitulo-2/clase-2` and other noun classes · `src/components/blocks/PatternBox.vue` (`.pattern-box`: two big `pattern-value` boxes side by side, 1.8 rem monospace, `padding 2rem`)
 - **Doubt:** At 420 px the page content needs ~452 px, so the phone browser zooms the whole page out a little and the right edge looks cut (header language menu, «ma-» box).
 - **Suggestion:** In `PatternBox`, below 576 px stack the two boxes (arrow ↓) or reduce the font size and padding; then check every page at 375 px for anything else wider than the screen.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Root cause: no global box-sizing, so wrappers with width 100% + padding were wider than the screen. Added `box-sizing: border-box` globally; below 992 px (menu folded into the header button) the main area and the page wrappers use less side padding (`--page-gutter`); the pattern box stacks singular above plural on phones. Checked all 26 pages at 900 and 375 px: no horizontal overflow. · commit `fix(responsive): keep pages within narrow screens and centre them`
 
 ---
 
 ### R-032
 **Chapter-1 index: the long vowels are written «á, é y ü»**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 4.1 (moving the chapter-1 texts into `es.json`)
 - **Where:** `src/locales/es.json` → `pages.chapter1Index.soloVocalesEU` (shown at `/capitulo-1`, «Vocales» card)
 - **Doubt:** The text says «Solo las vocales á, é y ü son "largas" (marca da con acento)». The site's vowel inventory is `a, â, e, ē, i, o, u, ū`, so the letters should be `â, ē, ū`; «marca da» is a typo for «marcadas». The English and French translations copy the same letters.
 - **Suggestion:** Change it to «Solo las vocales â, ē y ū …» (and check that the «largas» explanation matches the book), then update `en.json` / `fr.json` too.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Developer confirmed: «Solo las vocales â, ē y ū son "largas" (marcadas con acento)», es/en/fr. · commit `fix(ch1): correct the long vowels and outdated texts of the chapter-1 index`
 
 ---
 
 ### R-033
 **Chapter-1 index: outdated or odd wording**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** 4.1 / 4.4
 - **Where:** `src/locales/es.json` → `pages.chapter1Index.capitulo2Proximamente` («Capítulo 2 Próximamente», but chapter 2 exists), `…conectaPatronesBuscaSimilitudes` («una mental map»: English words in the Spanish text), `…letraFuncionaTantoComo` («patrones silábicos y de estrés»: in Spanish «acento» is the usual word)
 - **Doubt:** These texts were in the page before Phase 4; they were moved and translated as they are.
 - **Suggestion:** «Siguiente: Capítulo 2» with a link, «un mapa mental», «patrones silábicos y de acento». Change es, en and fr together.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Applied: «Siguiente: Capítulo 2» is now a link to /capitulo-2 (key `siguienteCapitulo2`), «un mapa mental», «patrones silábicos y de acento». · same commit as R-032
 
 ---
 
 ### R-034
 **Numerals and comparatives: Benga words with Spanish accents or OCR errors**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** 4.1 (chapter-3 data files moved to `{ es }` texts)
 - **Where:** `src/data/chapter-3/numerals-ordinals.json` (e.g. `Páka`), `src/data/chapter-3/comparatives-superlatives.json` (`ña`, which uses a letter Benga does not have)
 - **Doubt:** These Benga forms come from the old OCR (`á` instead of `â`, `ñ`) and are not shown with `BengaWord`. The translations keep them unchanged, as Benga words are never translated.
 - **Suggestion:** Fix them against the scan when the numerals are reworked (roadmap task 6.0a); the en/fr texts that quote them must be changed at the same time (`npm run i18n:report` does not see such changes, search for the word).
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Developer: «Páka» is «Pâkâ» and «ña» is probably «ūa». Fixed everywhere (numerals data incl. compounds and the en/fr texts quoting them, comparatives data and page). Other old-OCR forms of these two pages (e.g. «tékae», «Vepúlas») stay for task 6.0a, which redoes the numerals page from the improved OCR. · commit `fix(ch3): spell Pâkâ and ūa in the numeral and comparative pages`
 
 ---
 
@@ -427,139 +427,139 @@ Go through them every few tasks, decide, and fill in **Resolution**.
 - **Where:** `src/locales/en.json`, `src/locales/fr.json`, the `en` / `fr` fields of every data file; status table in `docs/TRANSLATIONS.md`
 - **Doubt:** All English and French texts were translated by AI from the Spanish (one translation per unique Spanish text, so the same phrase is translated the same way everywhere). No human has checked them yet. Old Spanish glosses of the book (19th century) may have been misunderstood; the doubtful ones are in `docs/translations/doubts.json` and are highlighted in `/admin/translations`.
 - **Suggestion:** A fluent speaker reviews the texts in `/admin/translations` (edit, tick «Resuelta» on resolved doubts, save) and ticks each part in the status table of `docs/TRANSLATIONS.md`. Start with the interface (`locales`) and the noun glosses (`lexicon/nouns.json`).
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Postponed by the developer. Remind them, together with the other pending checks (OCR doubts, R-040, R-042), before Phase 6 and when they ask what is left.
 
 ---
 
 ### R-036
 **The Benga Living Dictionary is private, so the site's dictionary links don't open for visitors**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1 (read-only check of the dictionary, 2026-11-25)
 - **Where:** `GET /api/v1/dictionaries/benga` → `"public": false` · `src/config/external.js` (`LIVING_DICTIONARY_ENTRY`) · every «Ver en Living Dictionary» link of `BengaWord`
 - **Doubt:** A private dictionary can only be read by its editors. Visitors who click a dictionary link on the website probably get a sign-in or "private" page. The API cannot change this setting (`public` is not writable on purpose); a manager does it on the dictionary's settings, possibly with the Living Dictionaries team.
 - **Suggestion:** Needs your decision: make the dictionary public when you feel its content is ready (then roadmap L9.4), or hide the dictionary links on the public site until then. Check the link while signed out to confirm.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Developer checked in a private window: the exact entry link opens the word page even though the dictionary is private. Links stay. The dictionary will be made public when it is more complete. Nothing to change now.
 
 ---
 
 ### R-037
 **Two records of Benga words: the book lexicon and the Living Dictionary**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** L0.1
 - **Where:** `src/data/lexicon/nouns.json`, `adjectives.json` (book, Salvado y Cos 1891) · `src/data/dictionary/*.json` (planned, copy of the Living Dictionary) · e.g. LD `Hāngā` vs book `Hângâ`
 - **Doubt:** The same word can have a different spelling or meaning in the book (1891) and in the community's dictionary. If one automatically overwrote the other, the site would either stop showing the book faithfully or the dictionary would get old spellings.
 - **Suggestion:** Keep both, linked word by word through the word registry. Differences are shown side by side (form card «En la web», report of L1.3) and only change when you decide. The dictionary's spelling is the one used for audio of dictionary words; the book pages keep the book's spelling.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Policy agreed (link and compare, never overwrite). Developer: the flag is «Hanga» without accents; the book's «Hângâ» is probably another word. Done locally: the dictionary entry «Hāngā» is renamed «Hanga» in the workspace (sent only after review in the push of L5.3), the registry no longer links the book's «Hângâ» to it (note added), and the sentence «Hāngā ya mboka…» has a local review question. Open: what «Hângâ» means in the book. · commit `feat(dictionary): normalise noun classes and add local review notes`
 
 ---
 
 ### R-038
 **Noun class is written in many different ways in the dictionary**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** L0.1
 - **Where:** Living Dictionary field «Clase de sustantivos»: `1ª Clase`, `1a clase`, `1era Clase`, `2e Classe`, `7a clase, 7e classe`, `3a`, `5a Classe Nominal`, `7e,`, `7e classe ( Anuncia a la vez el singular y el plural)`, and for the adjective `Ndiba` the whole paradigm `1ª: Endiba, 2ª: Jandiba, …`
 - **Doubt:** Filters and the website can't use the class reliably. The API guide says the manager's house style must be respected, so changing it is your decision.
 - **Suggestion:** One format, just the number `1`–`7` (the form shows «1ª clase» and the help text). Notes like «anuncia a la vez el singular y el plural» move to the entry's notes; the adjective paradigm moves to notes or to the plural/variant fields. Applied in L7.8 after you approve the list.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Agreed: noun class = just the number. Applied locally to every noun (extra text moved to the notes); sent after review in L5.3. Open: «Ndiba» may be only the noun «profundidad»; how adjectives go into the dictionary (variable adjectives change with the noun class, invariable ones with singular/plural or not at all) needs a separate discussion before L7.4. Ndiba has a local review question. · same commit as R-037
 
 ---
 
 ### R-039
 **Speakers: a possible duplicate and a test speaker**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1
 - **Where:** `GET /api/v1/dictionaries/benga/speakers`: «Utati Bondjale Oko» (3 recordings) and «Utati Bondyale Oko» (0), same decade and birthplace; «test» (0 recordings)
 - **Doubt:** They look like the same person written two ways (dj/dy), and a leftover test record. Speakers appear on the dictionary's public contributors page.
 - **Suggestion:** Confirm the right spelling; then merge the duplicate into it (`POST …/speakers/{id}/merge`) and delete «test» (only possible because it has no recordings). Default speaker for new audio: Upango Bondyale Oko (your instruction, 2026-11-25).
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Corrected by the developer in the dictionary (speakers now: Upango Bondyale Oko, Utati Bondjale Oko, Uyombo Makendengue Evita); workspace pulled again.
 
 ---
 
 ### R-040
 **Current dictionary entries that look duplicated or misplaced**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** L0.1
 - **Where:** Living Dictionary entries `Tombo` (senses: Inyección; Aguja; Aguja again; one empty sense), `Sânâ` (Domingo) and `sânâ` (Semana) as two entries, `Akeva` (Gracias) as noun class 7 «sustantivo», `Ijoka` (Jugar, verbo) with a noun-class note, `Mbolo` (Hola) with plural `Mbolouani`
 - **Doubt:** Some may be deliberate (separate recordings, different speakers), others mistakes. The guide warns not to merge by rule.
 - **Suggestion:** Go through this list in the admin (L7.8) and decide each one: delete the empty and repeated sense of `Tombo`; decide whether `Sânâ`/`sânâ` are one word with two meanings or two words (homograph numbers); check `Akeva`'s part of speech (interjection?).
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Developer will organise them: Tombo and Sânâ look like one word with two senses each; Akeva may need two senses (noun and interjection). Local review notes added to those entries (filter «Necesita revisión» in the admin). · same commit as R-037
 
 ---
 
 ### R-041
 **Should Claude's review flags also go to the dictionary's review queue?**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1
 - **Where:** entry field `review` (Living Dictionaries «Needs review» queue) · planned local flag «Necesita revisión»
 - **Doubt:** The LD queue is visible only to editors on their website but is included in the public snapshot file. Mirroring every doubt there helps other editors; keeping them local keeps the dictionary clean.
 - **Suggestion:** Keep all flags locally; send to LD only the ones you mark «enviar a LD» (questions an editor on their website could answer). Notes always written as plain questions with no personal data.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Review flags stay local (`sendToLd: false` by default).
 
 ---
 
 ### R-042
 **Which recording plays on the website when a word has several?**
-- **Status:** 🔴 Open
+- **Status:** 🟡 In progress
 - **Found in:** L0.1
 - **Where:** 13 entries have 2–4 recordings (e.g. `Oba` 4, `Tombo` 4, `Ndabo` 3), often one per meaning or per speaker
 - **Doubt:** The website's audio key is one file per word (`toAudioId`), so only one can be the main one.
 - **Suggestion:** Main = recording by Upango Bondyale Oko if there is one, else the oldest; the others are copied as alternates (`<key>~2`) for a future "otra voz" button. Homographs with different meanings may need their own keys.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Cause: before sentences existed in the dictionary, example audio was attached to the entry. Target: one audio for the word, maybe one for the plural, and each sentence with its own audio. Local review notes on the 13 words with several recordings; the developer will reorganise them. Until then L6.1 copies only words with one recording, or the one the developer marks.
 
 ---
 
 ### R-043
 **Cloudinary file already exists: keep it or replace it with the dictionary's recording?**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1
 - **Where:** Cloudinary folders `benga-words` / `benga-sentences`; recordings made in `/admin/audios` vs copies from the dictionary (L6.1)
 - **Doubt:** A word could get one recording made on the site and another in the dictionary.
 - **Suggestion:** Never replace automatically: the copy run lists these words and you choose per word. In future, record in the dictionary flow (forms / «Grabar») so there is one origin.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Recordings are made only in Living Dictionaries or in the bridge, never for a word that already has audio in LD. Cloudinary is a copy: when an LD recording changes (new audio id or file), L6.1 replaces the same Cloudinary file. Roadmap L6.1 updated.
 
 ---
 
 ### R-044
 **Sync logs: keep them in git or only on this computer?**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1
 - **Where:** planned `ld-sync/runs/*.json`
 - **Doubt:** In git they are a permanent history but add many files; local-only is lighter but is lost if the folder is deleted.
 - **Suggestion:** Local (git-ignored), keeping the last 200 runs; the workspace files themselves are in git, so content history is never lost.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · No logs in git: ld-sync/ (sync logs, reports), ld-import/, *.log and logs/ are git-ignored. Logs are read at the moment of the sync.
 
 ---
 
 ### R-045
 **How to mark the book's words when they go into the dictionary**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1 (task L7.4)
 - **Where:** ~460 words of `nouns.json` / `adjectives.json` not in the Living Dictionary
 - **Doubt:** They come from an 1891 grammar written by a Spanish missionary: some spellings or meanings may be old or not used today. Visitors of the dictionary should know where a word comes from.
 - **Suggestion:** Citation `salvado-y-cos-1891` + page on every entry (shown in «Fuentes»), plus a tag «Salvado y Cos 1891» so they can be filtered. Words a speaker confirms lose the tag or get a note. Send in batches of ~50 you approve.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Agreed (citation + tag «Salvado y Cos 1891»). Source created on the dictionary: slug `salvado-y-cos-1891`, type grammar. · commit `feat(ld): register the book as a source on the dictionary`
 
 ---
 
 ### R-046
 **Phonetic transcription conventions**
-- **Status:** 🔴 Open
+- **Status:** ⚪ Not needed now
 - **Found in:** L0.1 (phase L8)
 - **Where:** entry field «Fonético» (`phonetic`)
 - **Doubt:** Write phonemic `/…/` or phonetic `[…]`? Mark tone (Benga is a tonal Bantu language) and with which symbols (á à or ˥ ˩)? Who validates the rules?
 - **Suggestion:** Start phonemic `/…/` without tone from the spelling rules (L8.1), add tone only after the experiment (L8.4) and a check with a linguist or a fluent speaker who knows the tones.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Postponed to phase L8: decided when the phonetics program exists. The phonetic field is optional.
 
 ---
 
 ### R-047
 **Browser recordings are WebM: does the dictionary accept them?**
-- **Status:** 🔴 Open
+- **Status:** 🟢 Resolved
 - **Found in:** L0.1 (task L6.2)
 - **Where:** recorder of `/admin/audios` (WebM/Opus) · `POST …/entries/{id}/audio` (format list not documented; existing files are WAV)
 - **Doubt:** If WebM is refused or doesn't play in every browser, recordings need converting first.
 - **Suggestion:** Test with one recording on a test entry; if needed convert to WAV in the browser (no extra software) before sending.
-- **Resolution:**
+- **Resolution:** 2026-11-26 · Existing dictionary audio is WAV, so browser recordings (WebM) are converted to WAV in the browser before sending (task L6.2).
 
 ---
 

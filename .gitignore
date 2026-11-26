@@ -31,3 +31,7 @@ ld-import/
 
 # Living Dictionary sync logs and reports (docs/LD-ROADMAP.md, REVIEW-LOG R-044)
 ld-sync/
+
+# Logs are never kept in git (REVIEW-LOG R-044)
+*.log
+logs/
