@@ -176,9 +176,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-11-03T19:19:39.135Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -241,9 +241,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-08-20T08:37:17.474Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -306,9 +306,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-08-10T18:53:42.027Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -371,9 +371,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-03-01T21:43:37.791Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -436,9 +436,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-03-01T21:58:27.715Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -490,9 +490,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-03-15T18:39:00.271Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -543,9 +543,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-11-18T11:41:09.183Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },
@@ -621,9 +621,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
-        "ldUpdatedAt": "2026-08-10T18:29:55.191Z",
-        "version": 2,
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-26T23:26:10.791Z",
+        "version": 3,
         "lastError": null
       }
     },
@@ -677,9 +677,9 @@
       },
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
-        "ldUpdatedAt": "2026-11-14T16:18:07.508Z",
-        "version": 1,
+        "state": "synced",
+        "ldUpdatedAt": "2026-11-26T23:26:10.791Z",
+        "version": 2,
         "lastError": null
       }
     },
@@ -773,9 +773,9 @@
       "review": null,
       "suggestions": [],
       "sync": {
-        "state": "local-changes",
+        "state": "synced",
         "ldUpdatedAt": "2026-11-14T15:41:30.372Z",
-        "version": 1,
+        "version": 2,
         "lastError": null
       }
     },

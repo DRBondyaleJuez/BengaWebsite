@@ -126,7 +126,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["5", "5.3"],
           "writeInDomains": [],
-          "nounClass": "1a clase",
+          "nounClass": "1",
           "pluralForm": "Beja",
           "variant": null,
           "conceptId": null,
@@ -144,7 +144,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-11-03T19:19:39.135Z"
+      "updatedAt": "2026-11-26T23:25:55.667Z"
     },
     "944ef682-bdf6-4876-af27-7189fde3cf7b": {
       "id": "944ef682-bdf6-4876-af27-7189fde3cf7b",
@@ -172,7 +172,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["3", "5", "2.6", "4.1"],
           "writeInDomains": [],
-          "nounClass": "2ª Clase",
+          "nounClass": "2",
           "pluralForm": "Mina",
           "variant": null,
           "conceptId": null,
@@ -195,7 +195,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-08-20T08:37:17.474Z"
+      "updatedAt": "2026-11-26T23:25:55.667Z"
     },
     "1e9b5d37-8d32-4018-81a6-e33ec59dd9f8": {
       "id": "1e9b5d37-8d32-4018-81a6-e33ec59dd9f8",
@@ -223,7 +223,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1.4", "5.2", "5.3"],
           "writeInDomains": [],
-          "nounClass": "2ª Clase",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -246,7 +246,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-08-10T18:53:42.027Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "7d2851f2-f884-476c-b784-055170e6773c": {
       "id": "7d2851f2-f884-476c-b784-055170e6773c",
@@ -274,7 +274,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.1"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Beko",
           "variant": null,
           "conceptId": null,
@@ -297,7 +297,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-03-01T21:43:37.791Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "1820bdc3-3418-4600-862f-3692f6a36bd8": {
       "id": "1820bdc3-3418-4600-862f-3692f6a36bd8",
@@ -325,7 +325,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1.4", "5.2"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Bele",
           "variant": null,
           "conceptId": null,
@@ -348,7 +348,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-03-01T21:58:27.715Z"
+      "updatedAt": "2026-11-26T23:25:55.667Z"
     },
     "9b0fb8a4-e76e-4d83-bf79-32a6dd3f23cc": {
       "id": "9b0fb8a4-e76e-4d83-bf79-32a6dd3f23cc",
@@ -376,7 +376,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.1"],
           "writeInDomains": [],
-          "nounClass": "1ª Clase",
+          "nounClass": "1",
           "pluralForm": "Benâ",
           "variant": null,
           "conceptId": null,
@@ -394,7 +394,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-03-15T18:39:00.271Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "7132db2b-070c-4e47-a0b3-8537471ee68d": {
       "id": "7132db2b-070c-4e47-a0b3-8537471ee68d",
@@ -418,7 +418,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["1", "1.4"],
           "writeInDomains": [],
-          "nounClass": "1era Clase",
+          "nounClass": "1",
           "pluralForm": "Bepape",
           "variant": null,
           "conceptId": null,
@@ -439,11 +439,11 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-11-18T11:41:09.183Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "ab7b1df3-547b-4f20-a2c5-94ff932e38f1": {
       "id": "ab7b1df3-547b-4f20-a2c5-94ff932e38f1",
-      "lexeme": "Hāngā",
+      "lexeme": "Hanga",
       "homograph": null,
       "phonetic": null,
       "interlinearization": null,
@@ -467,8 +467,8 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.8"],
           "writeInDomains": [],
-          "nounClass": "7ª Clase",
-          "pluralForm": "Hāngā",
+          "nounClass": "7",
+          "pluralForm": "Hanga",
           "variant": null,
           "conceptId": null,
           "citations": [],
@@ -503,7 +503,7 @@
       ],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-08-10T18:29:55.191Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "b04cbb8f-0c52-43d9-8575-5f505a05de09": {
       "id": "b04cbb8f-0c52-43d9-8575-5f505a05de09",
@@ -513,7 +513,9 @@
       "interlinearization": null,
       "morphology": null,
       "toneClass": null,
-      "notes": null,
+      "notes": {
+        "es": "Clase 2: empiezan con I y toman el plural con Ma (Ijoka / Majoka)."
+      },
       "linguisticHistory": null,
       "scientificNames": [],
       "dialects": [],
@@ -531,7 +533,7 @@
           "partsOfSpeech": ["v"],
           "semanticDomains": ["2.7", "3.1", "5", "5.14"],
           "writeInDomains": [],
-          "nounClass": "2a classe ( empiezan con I y toman el plural con Ma) Ijoka/Majoka",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -543,7 +545,7 @@
       "audio": [],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-11-14T16:18:07.508Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "761bc388-ce49-4c64-83e0-1a5dcc2b2a12": {
       "id": "761bc388-ce49-4c64-83e0-1a5dcc2b2a12",
@@ -611,7 +613,7 @@
           "partsOfSpeech": ["n"],
           "semanticDomains": ["2.7"],
           "writeInDomains": [],
-          "nounClass": "2e Classe",
+          "nounClass": "2",
           "pluralForm": null,
           "variant": null,
           "conceptId": null,
@@ -623,7 +625,7 @@
       "audio": [],
       "relations": [],
       "ldReview": null,
-      "updatedAt": "2026-11-14T15:41:30.372Z"
+      "updatedAt": "2026-11-26T23:26:10.791Z"
     },
     "1a2634f9-218f-42d2-a42b-b413298bb248": {
       "id": "1a2634f9-218f-42d2-a42b-b413298bb248",
